@@ -1,0 +1,2505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Watcher.LoachGraphics
+  commentId: T:Watcher.LoachGraphics
+  id: LoachGraphics
+  parent: Watcher
+  children:
+  - Watcher.LoachGraphics.#ctor(PhysicalObject)
+  - Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Watcher.LoachGraphics.ApplyPaletteInDraw
+  - Watcher.LoachGraphics.BumpSize
+  - Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  - Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)
+  - Watcher.LoachGraphics.Digesting
+  - Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Watcher.LoachGraphics.Eyes
+  - Watcher.LoachGraphics.ForcedLookCreature
+  - Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Watcher.LoachGraphics.LookAtNothing
+  - Watcher.LoachGraphics.Props(System.Int32)
+  - Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)
+  - Watcher.LoachGraphics.Reset
+  - Watcher.LoachGraphics.RotPartsOwner
+  - Watcher.LoachGraphics.Rotted
+  - Watcher.LoachGraphics.Tentacles
+  - Watcher.LoachGraphics.Update
+  - Watcher.LoachGraphics.creatureLooker
+  langs:
+  - csharp
+  - vb
+  name: LoachGraphics
+  nameWithType: LoachGraphics
+  fullName: Watcher.LoachGraphics
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Watcher.LoachGraphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class LoachGraphics : GraphicsModule, IDrawable, ILookingAtCreatures, HasDanglers, DaddyGraphics.IHaveRotGraphics'
+    content.vb: Public Class LoachGraphics Inherits GraphicsModule Implements IDrawable, ILookingAtCreatures, HasDanglers, DaddyGraphics.IHaveRotGraphics
+  inheritance:
+  - System.Object
+  - Global.GraphicsModule
+  implements:
+  - Global.IDrawable
+  - Global.ILookingAtCreatures
+  - Global.HasDanglers
+  - Global.DaddyGraphics.IHaveRotGraphics
+  inheritedMembers:
+  - Global.GraphicsModule.internalContainerObjects
+  - Global.GraphicsModule.bodyParts
+  - Global.GraphicsModule.DEBUGLABELS
+  - Global.GraphicsModule.culled
+  - Global.GraphicsModule.lastCulled
+  - Global.GraphicsModule.dispose
+  - Global.GraphicsModule.cullRange
+  - Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  - Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  - Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  - Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  - Global.GraphicsModule.BringSpritesToFront
+  - Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  - Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  - Global.GraphicsModule.DeactivateRippleHybrid
+  - Global.GraphicsModule.owner
+  - Global.GraphicsModule.ShouldBeCulled
+  - Global.GraphicsModule.rippleHybridState
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Watcher.LoachGraphics.creatureLooker
+  commentId: F:Watcher.LoachGraphics.creatureLooker
+  id: creatureLooker
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: creatureLooker
+  nameWithType: LoachGraphics.creatureLooker
+  fullName: Watcher.LoachGraphics.creatureLooker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.LoachGraphics.creatureLooker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CreatureLooker creatureLooker
+    return:
+      type: Global.CreatureLooker
+    content.vb: Public creatureLooker As CreatureLooker
+- uid: Watcher.LoachGraphics.#ctor(PhysicalObject)
+  commentId: M:Watcher.LoachGraphics.#ctor(PhysicalObject)
+  id: '#ctor(PhysicalObject)'
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: LoachGraphics(PhysicalObject)
+  nameWithType: LoachGraphics.LoachGraphics(PhysicalObject)
+  fullName: Watcher.LoachGraphics.LoachGraphics(PhysicalObject)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Watcher.LoachGraphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public LoachGraphics(PhysicalObject po)
+    parameters:
+    - id: po
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>po</parameter>
+            <parameter>M:Watcher.LoachGraphics.#ctor(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(po As PhysicalObject)
+  overload: Watcher.LoachGraphics.#ctor*
+  nameWithType.vb: LoachGraphics.New(PhysicalObject)
+  fullName.vb: Watcher.LoachGraphics.New(PhysicalObject)
+  name.vb: New(PhysicalObject)
+- uid: Watcher.LoachGraphics.Update
+  commentId: M:Watcher.LoachGraphics.Update
+  id: Update
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: LoachGraphics.Update()
+  fullName: Watcher.LoachGraphics.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.GraphicsModule.Update
+  overload: Watcher.LoachGraphics.Update*
+- uid: Watcher.LoachGraphics.Reset
+  commentId: M:Watcher.LoachGraphics.Reset
+  id: Reset
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: LoachGraphics.Reset()
+  fullName: Watcher.LoachGraphics.Reset()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.Reset</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: Global.GraphicsModule.Reset
+  overload: Watcher.LoachGraphics.Reset*
+- uid: Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)
+  commentId: M:Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)
+  id: ReactToCreature(Tracker.CreatureRepresentation)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: ReactToCreature(CreatureRepresentation)
+  nameWithType: LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)
+  fullName: Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ReactToCreature(Tracker.CreatureRepresentation rep)
+    parameters:
+    - id: rep
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rep</parameter>
+            <parameter>M:Watcher.LoachGraphics.ReactToCreature(Tracker.CreatureRepresentation)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ReactToCreature(rep As Tracker.CreatureRepresentation)
+  overload: Watcher.LoachGraphics.ReactToCreature*
+- uid: Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.LoachGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Watcher.LoachGraphics.InitiateSprites*
+- uid: Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Watcher.LoachGraphics.DrawSprites*
+  nameWithType.vb: LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: Watcher.LoachGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:Watcher.LoachGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overridden: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  overload: Watcher.LoachGraphics.ApplyPalette*
+- uid: Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:Watcher.LoachGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overridden: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  overload: Watcher.LoachGraphics.AddToContainer*
+- uid: Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  commentId: M:Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  id: CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: CreatureInterestBonus(CreatureRepresentation, float)
+  nameWithType: LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  fullName: Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float CreatureInterestBonus(Tracker.CreatureRepresentation crit, float score)
+    parameters:
+    - id: crit
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: score
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>score</parameter>
+            <parameter>M:Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CreatureInterestBonus(crit As Tracker.CreatureRepresentation, score As Single) As Single
+  overload: Watcher.LoachGraphics.CreatureInterestBonus*
+  implements:
+  - Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  nameWithType.vb: LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  fullName.vb: Watcher.LoachGraphics.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  name.vb: CreatureInterestBonus(CreatureRepresentation, Single)
+- uid: Watcher.LoachGraphics.ForcedLookCreature
+  commentId: M:Watcher.LoachGraphics.ForcedLookCreature
+  id: ForcedLookCreature
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: ForcedLookCreature()
+  nameWithType: LoachGraphics.ForcedLookCreature()
+  fullName: Watcher.LoachGraphics.ForcedLookCreature()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.ForcedLookCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation ForcedLookCreature()
+    return:
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.LoachGraphics.ForcedLookCreature</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ForcedLookCreature() As Tracker.CreatureRepresentation
+  overload: Watcher.LoachGraphics.ForcedLookCreature*
+  implements:
+  - Global.ILookingAtCreatures.ForcedLookCreature
+- uid: Watcher.LoachGraphics.LookAtNothing
+  commentId: M:Watcher.LoachGraphics.LookAtNothing
+  id: LookAtNothing
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: LookAtNothing()
+  nameWithType: LoachGraphics.LookAtNothing()
+  fullName: Watcher.LoachGraphics.LookAtNothing()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.LookAtNothing</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LookAtNothing()
+    content.vb: Public Sub LookAtNothing()
+  overload: Watcher.LoachGraphics.LookAtNothing*
+  implements:
+  - Global.ILookingAtCreatures.LookAtNothing
+- uid: Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)
+  commentId: M:Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)
+  id: DanglerConnection(System.Int32,System.Single)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: DanglerConnection(int, float)
+  nameWithType: LoachGraphics.DanglerConnection(int, float)
+  fullName: Watcher.LoachGraphics.DanglerConnection(int, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 DanglerConnection(int index, float timeStacker)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.LoachGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DanglerConnection(index As Integer, timeStacker As Single) As Vector2
+  overload: Watcher.LoachGraphics.DanglerConnection*
+  implements:
+  - Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  nameWithType.vb: LoachGraphics.DanglerConnection(Integer, Single)
+  fullName.vb: Watcher.LoachGraphics.DanglerConnection(Integer, Single)
+  name.vb: DanglerConnection(Integer, Single)
+- uid: Watcher.LoachGraphics.Props(System.Int32)
+  commentId: M:Watcher.LoachGraphics.Props(System.Int32)
+  id: Props(System.Int32)
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Props(int)
+  nameWithType: LoachGraphics.Props(int)
+  fullName: Watcher.LoachGraphics.Props(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.LoachGraphics.Props(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Dangler.DanglerProps Props(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:Watcher.LoachGraphics.Props(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.Dangler.DanglerProps
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.LoachGraphics.Props(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function Props(index As Integer) As Dangler.DanglerProps
+  overload: Watcher.LoachGraphics.Props*
+  implements:
+  - Global.HasDanglers.Props(System.Int32)
+  nameWithType.vb: LoachGraphics.Props(Integer)
+  fullName.vb: Watcher.LoachGraphics.Props(Integer)
+  name.vb: Props(Integer)
+- uid: Watcher.LoachGraphics.Rotted
+  commentId: P:Watcher.LoachGraphics.Rotted
+  id: Rotted
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Rotted
+  nameWithType: LoachGraphics.Rotted
+  fullName: Watcher.LoachGraphics.Rotted
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.Rotted</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool Rotted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Rotted As Boolean
+  overload: Watcher.LoachGraphics.Rotted*
+- uid: Watcher.LoachGraphics.BumpSize
+  commentId: P:Watcher.LoachGraphics.BumpSize
+  id: BumpSize
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: BumpSize
+  nameWithType: LoachGraphics.BumpSize
+  fullName: Watcher.LoachGraphics.BumpSize
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.BumpSize</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float BumpSize { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property BumpSize As Single
+  overload: Watcher.LoachGraphics.BumpSize*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.BumpSize
+- uid: Watcher.LoachGraphics.RotPartsOwner
+  commentId: P:Watcher.LoachGraphics.RotPartsOwner
+  id: RotPartsOwner
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: RotPartsOwner
+  nameWithType: LoachGraphics.RotPartsOwner
+  fullName: Watcher.LoachGraphics.RotPartsOwner
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.RotPartsOwner</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyLongLegs.IHaveRotParts RotPartsOwner { get; }
+    parameters: []
+    return:
+      type: Global.DaddyLongLegs.IHaveRotParts
+    content.vb: Public ReadOnly Property RotPartsOwner As DaddyLongLegs.IHaveRotParts
+  overload: Watcher.LoachGraphics.RotPartsOwner*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.RotPartsOwner
+- uid: Watcher.LoachGraphics.ApplyPaletteInDraw
+  commentId: P:Watcher.LoachGraphics.ApplyPaletteInDraw
+  id: ApplyPaletteInDraw
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: ApplyPaletteInDraw
+  nameWithType: LoachGraphics.ApplyPaletteInDraw
+  fullName: Watcher.LoachGraphics.ApplyPaletteInDraw
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.ApplyPaletteInDraw</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool ApplyPaletteInDraw { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ApplyPaletteInDraw As Boolean
+  overload: Watcher.LoachGraphics.ApplyPaletteInDraw*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.ApplyPaletteInDraw
+- uid: Watcher.LoachGraphics.Digesting
+  commentId: P:Watcher.LoachGraphics.Digesting
+  id: Digesting
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Digesting
+  nameWithType: LoachGraphics.Digesting
+  fullName: Watcher.LoachGraphics.Digesting
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.Digesting</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float Digesting { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Digesting As Single
+  overload: Watcher.LoachGraphics.Digesting*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.Digesting
+- uid: Watcher.LoachGraphics.Eyes
+  commentId: P:Watcher.LoachGraphics.Eyes
+  id: Eyes
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Eyes
+  nameWithType: LoachGraphics.Eyes
+  fullName: Watcher.LoachGraphics.Eyes
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.Eyes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyGraphics.Eye[] Eyes { get; }
+    parameters: []
+    return:
+      type: Global.DaddyGraphics.Eye[]
+    content.vb: Public ReadOnly Property Eyes As DaddyGraphics.Eye()
+  overload: Watcher.LoachGraphics.Eyes*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.Eyes
+- uid: Watcher.LoachGraphics.Tentacles
+  commentId: P:Watcher.LoachGraphics.Tentacles
+  id: Tentacles
+  parent: Watcher.LoachGraphics
+  langs:
+  - csharp
+  - vb
+  name: Tentacles
+  nameWithType: LoachGraphics.Tentacles
+  fullName: Watcher.LoachGraphics.Tentacles
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.LoachGraphics.Tentacles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyTentacle[] Tentacles { get; }
+    parameters: []
+    return:
+      type: Global.DaddyTentacle[]
+    content.vb: Public ReadOnly Property Tentacles As DaddyTentacle()
+  overload: Watcher.LoachGraphics.Tentacles*
+  implements:
+  - Global.DaddyGraphics.IHaveRotGraphics.Tentacles
+references:
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.GraphicsModule
+  commentId: T:Global.GraphicsModule
+  isExternal: true
+  href: GraphicsModule.html
+  name: GraphicsModule
+  nameWithType: GraphicsModule
+  fullName: GraphicsModule
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: Global.ILookingAtCreatures
+  commentId: T:Global.ILookingAtCreatures
+  isExternal: true
+  href: ILookingAtCreatures.html
+  name: ILookingAtCreatures
+  nameWithType: ILookingAtCreatures
+  fullName: ILookingAtCreatures
+- uid: Global.HasDanglers
+  commentId: T:Global.HasDanglers
+  isExternal: true
+  href: HasDanglers.html
+  name: HasDanglers
+  nameWithType: HasDanglers
+  fullName: HasDanglers
+- uid: Global.DaddyGraphics.IHaveRotGraphics
+  commentId: T:Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: DaddyGraphics.html
+  name: DaddyGraphics.IHaveRotGraphics
+  nameWithType: DaddyGraphics.IHaveRotGraphics
+  fullName: DaddyGraphics.IHaveRotGraphics
+  spec.csharp:
+  - uid: Global.DaddyGraphics
+    name: DaddyGraphics
+    isExternal: true
+    href: DaddyGraphics.html
+  - name: .
+  - uid: Global.DaddyGraphics.IHaveRotGraphics
+    name: IHaveRotGraphics
+    isExternal: true
+    href: DaddyGraphics.IHaveRotGraphics.html
+  spec.vb:
+  - uid: Global.DaddyGraphics
+    name: DaddyGraphics
+    isExternal: true
+    href: DaddyGraphics.html
+  - name: .
+  - uid: Global.DaddyGraphics.IHaveRotGraphics
+    name: IHaveRotGraphics
+    isExternal: true
+    href: DaddyGraphics.IHaveRotGraphics.html
+- uid: Global.GraphicsModule.internalContainerObjects
+  commentId: F:Global.GraphicsModule.internalContainerObjects
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_internalContainerObjects
+  name: internalContainerObjects
+  nameWithType: GraphicsModule.internalContainerObjects
+  fullName: GraphicsModule.internalContainerObjects
+- uid: Global.GraphicsModule.bodyParts
+  commentId: F:Global.GraphicsModule.bodyParts
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_bodyParts
+  name: bodyParts
+  nameWithType: GraphicsModule.bodyParts
+  fullName: GraphicsModule.bodyParts
+- uid: Global.GraphicsModule.DEBUGLABELS
+  commentId: F:Global.GraphicsModule.DEBUGLABELS
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DEBUGLABELS
+  name: DEBUGLABELS
+  nameWithType: GraphicsModule.DEBUGLABELS
+  fullName: GraphicsModule.DEBUGLABELS
+- uid: Global.GraphicsModule.culled
+  commentId: F:Global.GraphicsModule.culled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_culled
+  name: culled
+  nameWithType: GraphicsModule.culled
+  fullName: GraphicsModule.culled
+- uid: Global.GraphicsModule.lastCulled
+  commentId: F:Global.GraphicsModule.lastCulled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_lastCulled
+  name: lastCulled
+  nameWithType: GraphicsModule.lastCulled
+  fullName: GraphicsModule.lastCulled
+- uid: Global.GraphicsModule.dispose
+  commentId: F:Global.GraphicsModule.dispose
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_dispose
+  name: dispose
+  nameWithType: GraphicsModule.dispose
+  fullName: GraphicsModule.dispose
+- uid: Global.GraphicsModule.cullRange
+  commentId: F:Global.GraphicsModule.cullRange
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_cullRange
+  name: cullRange
+  nameWithType: GraphicsModule.cullRange
+  fullName: GraphicsModule.cullRange
+- uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  commentId: M:Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  name: SuckedIntoShortCut(Vector2)
+  nameWithType: GraphicsModule.SuckedIntoShortCut(Vector2)
+  fullName: GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+    name: SuckedIntoShortCut
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+    name: SuckedIntoShortCut
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  name: PushOutOf(Vector2, float)
+  nameWithType: GraphicsModule.PushOutOf(Vector2, float)
+  fullName: GraphicsModule.PushOutOf(UnityEngine.Vector2, float)
+  nameWithType.vb: GraphicsModule.PushOutOf(Vector2, Single)
+  fullName.vb: GraphicsModule.PushOutOf(UnityEngine.Vector2, Single)
+  name.vb: PushOutOf(Vector2, Single)
+  spec.csharp:
+  - uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+    name: PushOutOf
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+    name: PushOutOf
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  commentId: M:Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  name: AddObjectToInternalContainer(IDrawable, int)
+  nameWithType: GraphicsModule.AddObjectToInternalContainer(IDrawable, int)
+  fullName: GraphicsModule.AddObjectToInternalContainer(IDrawable, int)
+  nameWithType.vb: GraphicsModule.AddObjectToInternalContainer(IDrawable, Integer)
+  fullName.vb: GraphicsModule.AddObjectToInternalContainer(IDrawable, Integer)
+  name.vb: AddObjectToInternalContainer(IDrawable, Integer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+    name: AddObjectToInternalContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+    name: AddObjectToInternalContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  commentId: M:Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  name: ReleaseAllInternallyContainedSprites()
+  nameWithType: GraphicsModule.ReleaseAllInternallyContainedSprites()
+  fullName: GraphicsModule.ReleaseAllInternallyContainedSprites()
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+    name: ReleaseAllInternallyContainedSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+    name: ReleaseAllInternallyContainedSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  name: ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  name: ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  name: ReleaseSpecificInternallyContainedObjectSprites(int)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)
+  nameWithType.vb: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  fullName.vb: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  name.vb: ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.GraphicsModule.BringSpritesToFront
+  commentId: M:Global.GraphicsModule.BringSpritesToFront
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  name: BringSpritesToFront()
+  nameWithType: GraphicsModule.BringSpritesToFront()
+  fullName: GraphicsModule.BringSpritesToFront()
+  spec.csharp:
+  - uid: Global.GraphicsModule.BringSpritesToFront
+    name: BringSpritesToFront
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.BringSpritesToFront
+    name: BringSpritesToFront
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  commentId: M:Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  name: HypothermiaColorBlend(Color)
+  nameWithType: GraphicsModule.HypothermiaColorBlend(Color)
+  fullName: GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  spec.csharp:
+  - uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+    name: HypothermiaColorBlend
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+    name: HypothermiaColorBlend
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  commentId: M:Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  name: ActivateRippleHybrid(float, RippleSide)
+  nameWithType: GraphicsModule.ActivateRippleHybrid(float, RippleHybridVFX.RippleSide)
+  fullName: GraphicsModule.ActivateRippleHybrid(float, Watcher.RippleHybridVFX.RippleSide)
+  nameWithType.vb: GraphicsModule.ActivateRippleHybrid(Single, RippleHybridVFX.RippleSide)
+  fullName.vb: GraphicsModule.ActivateRippleHybrid(Single, Watcher.RippleHybridVFX.RippleSide)
+  name.vb: ActivateRippleHybrid(Single, RippleSide)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+    name: ActivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Watcher.RippleHybridVFX.RippleSide
+    name: RippleSide
+    isExternal: true
+    href: Watcher.RippleHybridVFX.RippleSide.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+    name: ActivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Watcher.RippleHybridVFX.RippleSide
+    name: RippleSide
+    isExternal: true
+    href: Watcher.RippleHybridVFX.RippleSide.html
+  - name: )
+- uid: Global.GraphicsModule.DeactivateRippleHybrid
+  commentId: M:Global.GraphicsModule.DeactivateRippleHybrid
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  name: DeactivateRippleHybrid()
+  nameWithType: GraphicsModule.DeactivateRippleHybrid()
+  fullName: GraphicsModule.DeactivateRippleHybrid()
+  spec.csharp:
+  - uid: Global.GraphicsModule.DeactivateRippleHybrid
+    name: DeactivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.DeactivateRippleHybrid
+    name: DeactivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.owner
+  commentId: P:Global.GraphicsModule.owner
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_owner
+  name: owner
+  nameWithType: GraphicsModule.owner
+  fullName: GraphicsModule.owner
+- uid: Global.GraphicsModule.ShouldBeCulled
+  commentId: P:Global.GraphicsModule.ShouldBeCulled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ShouldBeCulled
+  name: ShouldBeCulled
+  nameWithType: GraphicsModule.ShouldBeCulled
+  fullName: GraphicsModule.ShouldBeCulled
+- uid: Global.GraphicsModule.rippleHybridState
+  commentId: P:Global.GraphicsModule.rippleHybridState
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_rippleHybridState
+  name: rippleHybridState
+  nameWithType: GraphicsModule.rippleHybridState
+  fullName: GraphicsModule.rippleHybridState
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.CreatureLooker
+  commentId: T:Global.CreatureLooker
+  isExternal: true
+  href: CreatureLooker.html
+  name: CreatureLooker
+  nameWithType: CreatureLooker
+  fullName: CreatureLooker
+- uid: Watcher.LoachGraphics.#ctor*
+  commentId: Overload:Watcher.LoachGraphics.#ctor
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics__ctor_PhysicalObject_
+  name: LoachGraphics
+  nameWithType: LoachGraphics.LoachGraphics
+  fullName: Watcher.LoachGraphics.LoachGraphics
+  nameWithType.vb: LoachGraphics.New
+  fullName.vb: Watcher.LoachGraphics.New
+  name.vb: New
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Global.GraphicsModule.Update
+  commentId: M:Global.GraphicsModule.Update
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_Update
+  name: Update()
+  nameWithType: GraphicsModule.Update()
+  fullName: GraphicsModule.Update()
+  spec.csharp:
+  - uid: Global.GraphicsModule.Update
+    name: Update
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.Update
+    name: Update
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Update
+  - name: (
+  - name: )
+- uid: Watcher.LoachGraphics.Update*
+  commentId: Overload:Watcher.LoachGraphics.Update
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Update
+  name: Update
+  nameWithType: LoachGraphics.Update
+  fullName: Watcher.LoachGraphics.Update
+- uid: Global.GraphicsModule.Reset
+  commentId: M:Global.GraphicsModule.Reset
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_Reset
+  name: Reset()
+  nameWithType: GraphicsModule.Reset()
+  fullName: GraphicsModule.Reset()
+  spec.csharp:
+  - uid: Global.GraphicsModule.Reset
+    name: Reset
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.Reset
+    name: Reset
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Reset
+  - name: (
+  - name: )
+- uid: Watcher.LoachGraphics.Reset*
+  commentId: Overload:Watcher.LoachGraphics.Reset
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Reset
+  name: Reset
+  nameWithType: LoachGraphics.Reset
+  fullName: Watcher.LoachGraphics.Reset
+- uid: Watcher.LoachGraphics.ReactToCreature*
+  commentId: Overload:Watcher.LoachGraphics.ReactToCreature
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_ReactToCreature_Tracker_CreatureRepresentation_
+  name: ReactToCreature
+  nameWithType: LoachGraphics.ReactToCreature
+  fullName: Watcher.LoachGraphics.ReactToCreature
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Watcher.LoachGraphics.InitiateSprites*
+  commentId: Overload:Watcher.LoachGraphics.InitiateSprites
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: LoachGraphics.InitiateSprites
+  fullName: Watcher.LoachGraphics.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Watcher.LoachGraphics.DrawSprites*
+  commentId: Overload:Watcher.LoachGraphics.DrawSprites
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: LoachGraphics.DrawSprites
+  fullName: Watcher.LoachGraphics.DrawSprites
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Watcher.LoachGraphics.ApplyPalette*
+  commentId: Overload:Watcher.LoachGraphics.ApplyPalette
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: LoachGraphics.ApplyPalette
+  fullName: Watcher.LoachGraphics.ApplyPalette
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Watcher.LoachGraphics.AddToContainer*
+  commentId: Overload:Watcher.LoachGraphics.AddToContainer
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: LoachGraphics.AddToContainer
+  fullName: Watcher.LoachGraphics.AddToContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Watcher.LoachGraphics.CreatureInterestBonus*
+  commentId: Overload:Watcher.LoachGraphics.CreatureInterestBonus
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  name: CreatureInterestBonus
+  nameWithType: LoachGraphics.CreatureInterestBonus
+  fullName: Watcher.LoachGraphics.CreatureInterestBonus
+- uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  commentId: M:Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  name: CreatureInterestBonus(CreatureRepresentation, float)
+  nameWithType: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  fullName: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  nameWithType.vb: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  fullName.vb: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  name.vb: CreatureInterestBonus(CreatureRepresentation, Single)
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+    name: CreatureInterestBonus
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+    name: CreatureInterestBonus
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Watcher.LoachGraphics.ForcedLookCreature*
+  commentId: Overload:Watcher.LoachGraphics.ForcedLookCreature
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_ForcedLookCreature
+  name: ForcedLookCreature
+  nameWithType: LoachGraphics.ForcedLookCreature
+  fullName: Watcher.LoachGraphics.ForcedLookCreature
+- uid: Global.ILookingAtCreatures.ForcedLookCreature
+  commentId: M:Global.ILookingAtCreatures.ForcedLookCreature
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  name: ForcedLookCreature()
+  nameWithType: ILookingAtCreatures.ForcedLookCreature()
+  fullName: ILookingAtCreatures.ForcedLookCreature()
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.ForcedLookCreature
+    name: ForcedLookCreature
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.ForcedLookCreature
+    name: ForcedLookCreature
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  - name: (
+  - name: )
+- uid: Watcher.LoachGraphics.LookAtNothing*
+  commentId: Overload:Watcher.LoachGraphics.LookAtNothing
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_LookAtNothing
+  name: LookAtNothing
+  nameWithType: LoachGraphics.LookAtNothing
+  fullName: Watcher.LoachGraphics.LookAtNothing
+- uid: Global.ILookingAtCreatures.LookAtNothing
+  commentId: M:Global.ILookingAtCreatures.LookAtNothing
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  name: LookAtNothing()
+  nameWithType: ILookingAtCreatures.LookAtNothing()
+  fullName: ILookingAtCreatures.LookAtNothing()
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.LookAtNothing
+    name: LookAtNothing
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.LookAtNothing
+    name: LookAtNothing
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  - name: (
+  - name: )
+- uid: Watcher.LoachGraphics.DanglerConnection*
+  commentId: Overload:Watcher.LoachGraphics.DanglerConnection
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_DanglerConnection_System_Int32_System_Single_
+  name: DanglerConnection
+  nameWithType: LoachGraphics.DanglerConnection
+  fullName: Watcher.LoachGraphics.DanglerConnection
+- uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  commentId: M:Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  parent: Global.HasDanglers
+  isExternal: true
+  href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  name: DanglerConnection(int, float)
+  nameWithType: HasDanglers.DanglerConnection(int, float)
+  fullName: HasDanglers.DanglerConnection(int, float)
+  nameWithType.vb: HasDanglers.DanglerConnection(Integer, Single)
+  fullName.vb: HasDanglers.DanglerConnection(Integer, Single)
+  name.vb: DanglerConnection(Integer, Single)
+  spec.csharp:
+  - uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+    name: DanglerConnection
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+    name: DanglerConnection
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Watcher.LoachGraphics.Props*
+  commentId: Overload:Watcher.LoachGraphics.Props
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Props_System_Int32_
+  name: Props
+  nameWithType: LoachGraphics.Props
+  fullName: Watcher.LoachGraphics.Props
+- uid: Global.HasDanglers.Props(System.Int32)
+  commentId: M:Global.HasDanglers.Props(System.Int32)
+  parent: Global.HasDanglers
+  isExternal: true
+  href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  name: Props(int)
+  nameWithType: HasDanglers.Props(int)
+  fullName: HasDanglers.Props(int)
+  nameWithType.vb: HasDanglers.Props(Integer)
+  fullName.vb: HasDanglers.Props(Integer)
+  name.vb: Props(Integer)
+  spec.csharp:
+  - uid: Global.HasDanglers.Props(System.Int32)
+    name: Props
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.HasDanglers.Props(System.Int32)
+    name: Props
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Dangler.DanglerProps
+  commentId: T:Global.Dangler.DanglerProps
+  isExternal: true
+  href: Dangler.html
+  name: Dangler.DanglerProps
+  nameWithType: Dangler.DanglerProps
+  fullName: Dangler.DanglerProps
+  spec.csharp:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: .
+  - uid: Global.Dangler.DanglerProps
+    name: DanglerProps
+    isExternal: true
+    href: Dangler.DanglerProps.html
+  spec.vb:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: .
+  - uid: Global.Dangler.DanglerProps
+    name: DanglerProps
+    isExternal: true
+    href: Dangler.DanglerProps.html
+- uid: Watcher.LoachGraphics.Rotted*
+  commentId: Overload:Watcher.LoachGraphics.Rotted
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Rotted
+  name: Rotted
+  nameWithType: LoachGraphics.Rotted
+  fullName: Watcher.LoachGraphics.Rotted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Watcher.LoachGraphics.BumpSize*
+  commentId: Overload:Watcher.LoachGraphics.BumpSize
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_BumpSize
+  name: BumpSize
+  nameWithType: LoachGraphics.BumpSize
+  fullName: Watcher.LoachGraphics.BumpSize
+- uid: Global.DaddyGraphics.IHaveRotGraphics.BumpSize
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.BumpSize
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_BumpSize
+  name: BumpSize
+  nameWithType: DaddyGraphics.IHaveRotGraphics.BumpSize
+  fullName: DaddyGraphics.IHaveRotGraphics.BumpSize
+- uid: Watcher.LoachGraphics.RotPartsOwner*
+  commentId: Overload:Watcher.LoachGraphics.RotPartsOwner
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_RotPartsOwner
+  name: RotPartsOwner
+  nameWithType: LoachGraphics.RotPartsOwner
+  fullName: Watcher.LoachGraphics.RotPartsOwner
+- uid: Global.DaddyGraphics.IHaveRotGraphics.RotPartsOwner
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.RotPartsOwner
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_RotPartsOwner
+  name: RotPartsOwner
+  nameWithType: DaddyGraphics.IHaveRotGraphics.RotPartsOwner
+  fullName: DaddyGraphics.IHaveRotGraphics.RotPartsOwner
+- uid: Global.DaddyLongLegs.IHaveRotParts
+  commentId: T:Global.DaddyLongLegs.IHaveRotParts
+  isExternal: true
+  href: DaddyLongLegs.html
+  name: DaddyLongLegs.IHaveRotParts
+  nameWithType: DaddyLongLegs.IHaveRotParts
+  fullName: DaddyLongLegs.IHaveRotParts
+  spec.csharp:
+  - uid: Global.DaddyLongLegs
+    name: DaddyLongLegs
+    isExternal: true
+    href: DaddyLongLegs.html
+  - name: .
+  - uid: Global.DaddyLongLegs.IHaveRotParts
+    name: IHaveRotParts
+    isExternal: true
+    href: DaddyLongLegs.IHaveRotParts.html
+  spec.vb:
+  - uid: Global.DaddyLongLegs
+    name: DaddyLongLegs
+    isExternal: true
+    href: DaddyLongLegs.html
+  - name: .
+  - uid: Global.DaddyLongLegs.IHaveRotParts
+    name: IHaveRotParts
+    isExternal: true
+    href: DaddyLongLegs.IHaveRotParts.html
+- uid: Watcher.LoachGraphics.ApplyPaletteInDraw*
+  commentId: Overload:Watcher.LoachGraphics.ApplyPaletteInDraw
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_ApplyPaletteInDraw
+  name: ApplyPaletteInDraw
+  nameWithType: LoachGraphics.ApplyPaletteInDraw
+  fullName: Watcher.LoachGraphics.ApplyPaletteInDraw
+- uid: Global.DaddyGraphics.IHaveRotGraphics.ApplyPaletteInDraw
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.ApplyPaletteInDraw
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_ApplyPaletteInDraw
+  name: ApplyPaletteInDraw
+  nameWithType: DaddyGraphics.IHaveRotGraphics.ApplyPaletteInDraw
+  fullName: DaddyGraphics.IHaveRotGraphics.ApplyPaletteInDraw
+- uid: Watcher.LoachGraphics.Digesting*
+  commentId: Overload:Watcher.LoachGraphics.Digesting
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Digesting
+  name: Digesting
+  nameWithType: LoachGraphics.Digesting
+  fullName: Watcher.LoachGraphics.Digesting
+- uid: Global.DaddyGraphics.IHaveRotGraphics.Digesting
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.Digesting
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_Digesting
+  name: Digesting
+  nameWithType: DaddyGraphics.IHaveRotGraphics.Digesting
+  fullName: DaddyGraphics.IHaveRotGraphics.Digesting
+- uid: Watcher.LoachGraphics.Eyes*
+  commentId: Overload:Watcher.LoachGraphics.Eyes
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Eyes
+  name: Eyes
+  nameWithType: LoachGraphics.Eyes
+  fullName: Watcher.LoachGraphics.Eyes
+- uid: Global.DaddyGraphics.IHaveRotGraphics.Eyes
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.Eyes
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_Eyes
+  name: Eyes
+  nameWithType: DaddyGraphics.IHaveRotGraphics.Eyes
+  fullName: DaddyGraphics.IHaveRotGraphics.Eyes
+- uid: Global.DaddyGraphics.Eye[]
+  isExternal: true
+  href: DaddyGraphics.Eye.html
+  name: Eye[]
+  nameWithType: DaddyGraphics.Eye[]
+  fullName: DaddyGraphics.Eye[]
+  nameWithType.vb: DaddyGraphics.Eye()
+  fullName.vb: DaddyGraphics.Eye()
+  name.vb: Eye()
+  spec.csharp:
+  - uid: Global.DaddyGraphics.Eye
+    name: Eye
+    isExternal: true
+    href: DaddyGraphics.Eye.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.DaddyGraphics.Eye
+    name: Eye
+    isExternal: true
+    href: DaddyGraphics.Eye.html
+  - name: (
+  - name: )
+- uid: Watcher.LoachGraphics.Tentacles*
+  commentId: Overload:Watcher.LoachGraphics.Tentacles
+  isExternal: true
+  href: Watcher.LoachGraphics.html#Watcher_LoachGraphics_Tentacles
+  name: Tentacles
+  nameWithType: LoachGraphics.Tentacles
+  fullName: Watcher.LoachGraphics.Tentacles
+- uid: Global.DaddyGraphics.IHaveRotGraphics.Tentacles
+  commentId: P:Global.DaddyGraphics.IHaveRotGraphics.Tentacles
+  parent: Global.DaddyGraphics.IHaveRotGraphics
+  isExternal: true
+  href: Global.DaddyGraphics.IHaveRotGraphics.html#DaddyGraphics_IHaveRotGraphics_Tentacles
+  name: Tentacles
+  nameWithType: DaddyGraphics.IHaveRotGraphics.Tentacles
+  fullName: DaddyGraphics.IHaveRotGraphics.Tentacles
+- uid: Global.DaddyTentacle[]
+  isExternal: true
+  href: DaddyTentacle.html
+  name: DaddyTentacle[]
+  nameWithType: DaddyTentacle[]
+  fullName: DaddyTentacle[]
+  nameWithType.vb: DaddyTentacle()
+  fullName.vb: DaddyTentacle()
+  name.vb: DaddyTentacle()
+  spec.csharp:
+  - uid: Global.DaddyTentacle
+    name: DaddyTentacle
+    isExternal: true
+    href: DaddyTentacle.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.DaddyTentacle
+    name: DaddyTentacle
+    isExternal: true
+    href: DaddyTentacle.html
+  - name: (
+  - name: )

@@ -1,0 +1,4541 @@
+### YamlMime:ManagedReference
+items:
+- uid: Menu.FastTravelScreen
+  commentId: T:Menu.FastTravelScreen
+  id: FastTravelScreen
+  parent: Menu
+  children:
+  - Menu.FastTravelScreen.#ctor(ProcessManager,ProcessManager.ProcessID)
+  - Menu.FastTravelScreen.ActiveWorld
+  - Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(System.Int32)
+  - Menu.FastTravelScreen.CurrentFood
+  - Menu.FastTravelScreen.DestroyChoiceMenu
+  - Menu.FastTravelScreen.DestroySlugcatButtons
+  - Menu.FastTravelScreen.FinalizeRegionSwitch(System.Int32)
+  - Menu.FastTravelScreen.FoodCountDownDone
+  - Menu.FastTravelScreen.FreezeMenuFunctions
+  - Menu.FastTravelScreen.GetOwnerType
+  - Menu.FastTravelScreen.GetRegionOrder
+  - Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)
+  - Menu.FastTravelScreen.GrafUpdate(System.Single)
+  - Menu.FastTravelScreen.IsFastTravelScreen
+  - Menu.FastTravelScreen.IsRegionsScreen
+  - Menu.FastTravelScreen.MapDiscoveryActive
+  - Menu.FastTravelScreen.MapInput
+  - Menu.FastTravelScreen.MapOwnerInRoomPosition
+  - Menu.FastTravelScreen.MapOwnerRoom
+  - Menu.FastTravelScreen.PlayHUDSound(SoundID)
+  - Menu.FastTravelScreen.RefreshInfoLabel
+  - Menu.FastTravelScreen.RevealMap
+  - Menu.FastTravelScreen.SelectNewShelter(System.Int32)
+  - Menu.FastTravelScreen.ShutDownProcess
+  - Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)
+  - Menu.FastTravelScreen.SpawnChoiceMenu
+  - Menu.FastTravelScreen.SpawnSlugcatButtons
+  - Menu.FastTravelScreen.Update
+  - Menu.FastTravelScreen.UpdateButtonInstructions
+  - Menu.FastTravelScreen.UpdateInfoText
+  - Menu.FastTravelScreen.WarpPointModeActive
+  - Menu.FastTravelScreen.accessibleRegions
+  - Menu.FastTravelScreen.activeMenuSlugcat
+  - Menu.FastTravelScreen.activeWorld
+  - Menu.FastTravelScreen.allRegions
+  - Menu.FastTravelScreen.backButton
+  - Menu.FastTravelScreen.blackFade
+  - Menu.FastTravelScreen.buttonInstruction
+  - Menu.FastTravelScreen.choiceBackground
+  - Menu.FastTravelScreen.choiceButtons
+  - Menu.FastTravelScreen.chooseButton
+  - Menu.FastTravelScreen.currentRegion
+  - Menu.FastTravelScreen.currentlyLoadingMapData
+  - Menu.FastTravelScreen.currentlyLoadingWorld
+  - Menu.FastTravelScreen.discoveredSheltersInRegion
+  - Menu.FastTravelScreen.fadeOutIllustration
+  - Menu.FastTravelScreen.fadeSprite
+  - Menu.FastTravelScreen.freezeCounter
+  - Menu.FastTravelScreen.fullBlackCounter
+  - Menu.FastTravelScreen.hud
+  - Menu.FastTravelScreen.initiateCharacterFastTravel
+  - Menu.FastTravelScreen.lastBlackFade
+  - Menu.FastTravelScreen.lastMapButton
+  - Menu.FastTravelScreen.lastShowMap
+  - Menu.FastTravelScreen.mapButtonPrompt
+  - Menu.FastTravelScreen.nextButton
+  - Menu.FastTravelScreen.playerShelters
+  - Menu.FastTravelScreen.prevButton
+  - Menu.FastTravelScreen.selectedShelter
+  - Menu.FastTravelScreen.showMap
+  - Menu.FastTravelScreen.slugcatButtons
+  - Menu.FastTravelScreen.slugcatLabels
+  - Menu.FastTravelScreen.startButton
+  - Menu.FastTravelScreen.subtitleLabel
+  - Menu.FastTravelScreen.upcomingRegion
+  - Menu.FastTravelScreen.warpPointModeAvailable
+  langs:
+  - csharp
+  - vb
+  name: FastTravelScreen
+  nameWithType: FastTravelScreen
+  fullName: Menu.FastTravelScreen
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Menu.FastTravelScreen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FastTravelScreen : Menu, IOwnAHUD'
+    content.vb: Public Class FastTravelScreen Inherits Menu Implements IOwnAHUD
+  inheritance:
+  - System.Object
+  - Global.MainLoopProcess
+  - Menu.Menu
+  implements:
+  - HUD.IOwnAHUD
+  inheritedMembers:
+  - Menu.Menu.pages
+  - Menu.Menu.mousePosition
+  - Menu.Menu.lastMousePos
+  - Menu.Menu.container
+  - Menu.Menu.cursorContainer
+  - Menu.Menu.scene
+  - Menu.Menu.mouseDown
+  - Menu.Menu.lastMouseDown
+  - Menu.Menu.selectedObject
+  - Menu.Menu.backObject
+  - Menu.Menu.pressButton
+  - Menu.Menu.holdButton
+  - Menu.Menu.lastHoldButton
+  - Menu.Menu.input
+  - Menu.Menu.lastInput
+  - Menu.Menu.currentPage
+  - Menu.Menu.soundLoop
+  - Menu.Menu.mySoundLoopID
+  - Menu.Menu.mySoundLoopName
+  - Menu.Menu.infolabelDirty
+  - Menu.Menu.infoLabel
+  - Menu.Menu.infoLabelFade
+  - Menu.Menu.lastInfoLabelFade
+  - Menu.Menu.infoLabelSin
+  - Menu.Menu.gradientsContainer
+  - Menu.Menu.mouseScrollWheelMovement
+  - Menu.Menu.init
+  - Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+  - Menu.Menu.GetFreezeMenuFunctions
+  - Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+  - Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+  - Menu.Menu.Translate(System.String)
+  - Menu.Menu.Translate(System.String,System.Int32)
+  - Menu.Menu.Init
+  - Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  - Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  - Menu.Menu.ResetSelection
+  - Menu.Menu.SliderSetValue(Menu.Slider,System.Single)
+  - Menu.Menu.ValueOfSlider(Menu.Slider)
+  - Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+  - Menu.Menu.PlaySound(SoundID)
+  - Menu.Menu.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  - Menu.Menu.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  - Menu.Menu.PlaySoundCustom(System.String,System.Single,System.Single,System.Single)
+  - Menu.Menu.PlayLoopCustom(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  - Menu.Menu.AllowDialogs
+  - Menu.Menu.ShowCursor
+  - Menu.Menu.ForceNoMouseMode
+  - Menu.Menu.Active
+  - Menu.Menu.HoldButtonDisregardingFreeze
+  - Menu.Menu.NonMouseInputDisregardingFreeze
+  - Menu.Menu.CurrLang
+  - Global.MainLoopProcess.manager
+  - Global.MainLoopProcess.ID
+  - Global.MainLoopProcess.framesPerSecond
+  - Global.MainLoopProcess.processActive
+  - Global.MainLoopProcess.RawUpdate(System.Single)
+  - Global.MainLoopProcess.TimeSpeedFac
+  - Global.MainLoopProcess.FadeInTime
+  - Global.MainLoopProcess.InitialBlackSeconds
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Menu.FastTravelScreen.hud
+  commentId: F:Menu.FastTravelScreen.hud
+  id: hud
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: hud
+  nameWithType: FastTravelScreen.hud
+  fullName: Menu.FastTravelScreen.hud
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.hud</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HUD hud
+    return:
+      type: HUD.HUD
+    content.vb: Public hud As HUD
+- uid: Menu.FastTravelScreen.allRegions
+  commentId: F:Menu.FastTravelScreen.allRegions
+  id: allRegions
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: allRegions
+  nameWithType: FastTravelScreen.allRegions
+  fullName: Menu.FastTravelScreen.allRegions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.allRegions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Region[] allRegions
+    return:
+      type: Global.Region[]
+    content.vb: Public allRegions As Region()
+- uid: Menu.FastTravelScreen.activeWorld
+  commentId: F:Menu.FastTravelScreen.activeWorld
+  id: activeWorld
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: activeWorld
+  nameWithType: FastTravelScreen.activeWorld
+  fullName: Menu.FastTravelScreen.activeWorld
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.activeWorld</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public World activeWorld
+    return:
+      type: Global.World
+    content.vb: Public activeWorld As World
+- uid: Menu.FastTravelScreen.discoveredSheltersInRegion
+  commentId: F:Menu.FastTravelScreen.discoveredSheltersInRegion
+  id: discoveredSheltersInRegion
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: discoveredSheltersInRegion
+  nameWithType: FastTravelScreen.discoveredSheltersInRegion
+  fullName: Menu.FastTravelScreen.discoveredSheltersInRegion
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.discoveredSheltersInRegion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<int> discoveredSheltersInRegion
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public discoveredSheltersInRegion As List(Of Integer)
+- uid: Menu.FastTravelScreen.selectedShelter
+  commentId: F:Menu.FastTravelScreen.selectedShelter
+  id: selectedShelter
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: selectedShelter
+  nameWithType: FastTravelScreen.selectedShelter
+  fullName: Menu.FastTravelScreen.selectedShelter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.selectedShelter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int selectedShelter
+    return:
+      type: System.Int32
+    content.vb: Public selectedShelter As Integer
+- uid: Menu.FastTravelScreen.accessibleRegions
+  commentId: F:Menu.FastTravelScreen.accessibleRegions
+  id: accessibleRegions
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: accessibleRegions
+  nameWithType: FastTravelScreen.accessibleRegions
+  fullName: Menu.FastTravelScreen.accessibleRegions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.accessibleRegions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<int> accessibleRegions
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public accessibleRegions As List(Of Integer)
+- uid: Menu.FastTravelScreen.currentRegion
+  commentId: F:Menu.FastTravelScreen.currentRegion
+  id: currentRegion
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: currentRegion
+  nameWithType: FastTravelScreen.currentRegion
+  fullName: Menu.FastTravelScreen.currentRegion
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.currentRegion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int currentRegion
+    return:
+      type: System.Int32
+    content.vb: Public currentRegion As Integer
+- uid: Menu.FastTravelScreen.upcomingRegion
+  commentId: F:Menu.FastTravelScreen.upcomingRegion
+  id: upcomingRegion
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: upcomingRegion
+  nameWithType: FastTravelScreen.upcomingRegion
+  fullName: Menu.FastTravelScreen.upcomingRegion
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.upcomingRegion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int upcomingRegion
+    return:
+      type: System.Int32
+    content.vb: Public upcomingRegion As Integer
+- uid: Menu.FastTravelScreen.fadeSprite
+  commentId: F:Menu.FastTravelScreen.fadeSprite
+  id: fadeSprite
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: fadeSprite
+  nameWithType: FastTravelScreen.fadeSprite
+  fullName: Menu.FastTravelScreen.fadeSprite
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.fadeSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FSprite fadeSprite
+    return:
+      type: Global.FSprite
+    content.vb: Public fadeSprite As FSprite
+- uid: Menu.FastTravelScreen.blackFade
+  commentId: F:Menu.FastTravelScreen.blackFade
+  id: blackFade
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: blackFade
+  nameWithType: FastTravelScreen.blackFade
+  fullName: Menu.FastTravelScreen.blackFade
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.blackFade</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float blackFade
+    return:
+      type: System.Single
+    content.vb: Public blackFade As Single
+- uid: Menu.FastTravelScreen.lastBlackFade
+  commentId: F:Menu.FastTravelScreen.lastBlackFade
+  id: lastBlackFade
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: lastBlackFade
+  nameWithType: FastTravelScreen.lastBlackFade
+  fullName: Menu.FastTravelScreen.lastBlackFade
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.lastBlackFade</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastBlackFade
+    return:
+      type: System.Single
+    content.vb: Public lastBlackFade As Single
+- uid: Menu.FastTravelScreen.fullBlackCounter
+  commentId: F:Menu.FastTravelScreen.fullBlackCounter
+  id: fullBlackCounter
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: fullBlackCounter
+  nameWithType: FastTravelScreen.fullBlackCounter
+  fullName: Menu.FastTravelScreen.fullBlackCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.fullBlackCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int fullBlackCounter
+    return:
+      type: System.Int32
+    content.vb: Public fullBlackCounter As Integer
+- uid: Menu.FastTravelScreen.lastMapButton
+  commentId: F:Menu.FastTravelScreen.lastMapButton
+  id: lastMapButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: lastMapButton
+  nameWithType: FastTravelScreen.lastMapButton
+  fullName: Menu.FastTravelScreen.lastMapButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.lastMapButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool lastMapButton
+    return:
+      type: System.Boolean
+    content.vb: Public lastMapButton As Boolean
+- uid: Menu.FastTravelScreen.showMap
+  commentId: F:Menu.FastTravelScreen.showMap
+  id: showMap
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: showMap
+  nameWithType: FastTravelScreen.showMap
+  fullName: Menu.FastTravelScreen.showMap
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.showMap</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool showMap
+    return:
+      type: System.Boolean
+    content.vb: Public showMap As Boolean
+- uid: Menu.FastTravelScreen.lastShowMap
+  commentId: F:Menu.FastTravelScreen.lastShowMap
+  id: lastShowMap
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: lastShowMap
+  nameWithType: FastTravelScreen.lastShowMap
+  fullName: Menu.FastTravelScreen.lastShowMap
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.lastShowMap</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool lastShowMap
+    return:
+      type: System.Boolean
+    content.vb: Public lastShowMap As Boolean
+- uid: Menu.FastTravelScreen.prevButton
+  commentId: F:Menu.FastTravelScreen.prevButton
+  id: prevButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: prevButton
+  nameWithType: FastTravelScreen.prevButton
+  fullName: Menu.FastTravelScreen.prevButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.prevButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BigArrowButton prevButton
+    return:
+      type: Menu.BigArrowButton
+    content.vb: Public prevButton As BigArrowButton
+- uid: Menu.FastTravelScreen.nextButton
+  commentId: F:Menu.FastTravelScreen.nextButton
+  id: nextButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: nextButton
+  nameWithType: FastTravelScreen.nextButton
+  fullName: Menu.FastTravelScreen.nextButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.nextButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BigArrowButton nextButton
+    return:
+      type: Menu.BigArrowButton
+    content.vb: Public nextButton As BigArrowButton
+- uid: Menu.FastTravelScreen.backButton
+  commentId: F:Menu.FastTravelScreen.backButton
+  id: backButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: backButton
+  nameWithType: FastTravelScreen.backButton
+  fullName: Menu.FastTravelScreen.backButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.backButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SimpleButton backButton
+    return:
+      type: Menu.SimpleButton
+    content.vb: Public backButton As SimpleButton
+- uid: Menu.FastTravelScreen.startButton
+  commentId: F:Menu.FastTravelScreen.startButton
+  id: startButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: startButton
+  nameWithType: FastTravelScreen.startButton
+  fullName: Menu.FastTravelScreen.startButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.startButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HoldButton startButton
+    return:
+      type: Menu.HoldButton
+    content.vb: Public startButton As HoldButton
+- uid: Menu.FastTravelScreen.mapButtonPrompt
+  commentId: F:Menu.FastTravelScreen.mapButtonPrompt
+  id: mapButtonPrompt
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: mapButtonPrompt
+  nameWithType: FastTravelScreen.mapButtonPrompt
+  fullName: Menu.FastTravelScreen.mapButtonPrompt
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.mapButtonPrompt</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuLabel mapButtonPrompt
+    return:
+      type: Menu.MenuLabel
+    content.vb: Public mapButtonPrompt As MenuLabel
+- uid: Menu.FastTravelScreen.buttonInstruction
+  commentId: F:Menu.FastTravelScreen.buttonInstruction
+  id: buttonInstruction
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: buttonInstruction
+  nameWithType: FastTravelScreen.buttonInstruction
+  fullName: Menu.FastTravelScreen.buttonInstruction
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.buttonInstruction</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuLabel buttonInstruction
+    return:
+      type: Menu.MenuLabel
+    content.vb: Public buttonInstruction As MenuLabel
+- uid: Menu.FastTravelScreen.freezeCounter
+  commentId: F:Menu.FastTravelScreen.freezeCounter
+  id: freezeCounter
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: freezeCounter
+  nameWithType: FastTravelScreen.freezeCounter
+  fullName: Menu.FastTravelScreen.freezeCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.freezeCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int freezeCounter
+    return:
+      type: System.Int32
+    content.vb: Public freezeCounter As Integer
+- uid: Menu.FastTravelScreen.fadeOutIllustration
+  commentId: F:Menu.FastTravelScreen.fadeOutIllustration
+  id: fadeOutIllustration
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: fadeOutIllustration
+  nameWithType: FastTravelScreen.fadeOutIllustration
+  fullName: Menu.FastTravelScreen.fadeOutIllustration
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.fadeOutIllustration</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float fadeOutIllustration
+    return:
+      type: System.Single
+    content.vb: Public fadeOutIllustration As Single
+- uid: Menu.FastTravelScreen.initiateCharacterFastTravel
+  commentId: F:Menu.FastTravelScreen.initiateCharacterFastTravel
+  id: initiateCharacterFastTravel
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: initiateCharacterFastTravel
+  nameWithType: FastTravelScreen.initiateCharacterFastTravel
+  fullName: Menu.FastTravelScreen.initiateCharacterFastTravel
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.initiateCharacterFastTravel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool initiateCharacterFastTravel
+    return:
+      type: System.Boolean
+    content.vb: Public initiateCharacterFastTravel As Boolean
+- uid: Menu.FastTravelScreen.playerShelters
+  commentId: F:Menu.FastTravelScreen.playerShelters
+  id: playerShelters
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: playerShelters
+  nameWithType: FastTravelScreen.playerShelters
+  fullName: Menu.FastTravelScreen.playerShelters
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.playerShelters</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public string[] playerShelters
+    return:
+      type: System.String[]
+    content.vb: Public playerShelters As String()
+- uid: Menu.FastTravelScreen.chooseButton
+  commentId: F:Menu.FastTravelScreen.chooseButton
+  id: chooseButton
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: chooseButton
+  nameWithType: FastTravelScreen.chooseButton
+  fullName: Menu.FastTravelScreen.chooseButton
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.chooseButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SimpleButton chooseButton
+    return:
+      type: Menu.SimpleButton
+    content.vb: Public chooseButton As SimpleButton
+- uid: Menu.FastTravelScreen.choiceButtons
+  commentId: F:Menu.FastTravelScreen.choiceButtons
+  id: choiceButtons
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: choiceButtons
+  nameWithType: FastTravelScreen.choiceButtons
+  fullName: Menu.FastTravelScreen.choiceButtons
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.choiceButtons</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<SimpleButton> choiceButtons
+    return:
+      type: System.Collections.Generic.List{Menu.SimpleButton}
+    content.vb: Public choiceButtons As List(Of SimpleButton)
+- uid: Menu.FastTravelScreen.choiceBackground
+  commentId: F:Menu.FastTravelScreen.choiceBackground
+  id: choiceBackground
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: choiceBackground
+  nameWithType: FastTravelScreen.choiceBackground
+  fullName: Menu.FastTravelScreen.choiceBackground
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.choiceBackground</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RoundedRect choiceBackground
+    return:
+      type: Menu.RoundedRect
+    content.vb: Public choiceBackground As RoundedRect
+- uid: Menu.FastTravelScreen.currentlyLoadingWorld
+  commentId: F:Menu.FastTravelScreen.currentlyLoadingWorld
+  id: currentlyLoadingWorld
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: currentlyLoadingWorld
+  nameWithType: FastTravelScreen.currentlyLoadingWorld
+  fullName: Menu.FastTravelScreen.currentlyLoadingWorld
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.currentlyLoadingWorld</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public World currentlyLoadingWorld
+    return:
+      type: Global.World
+    content.vb: Public currentlyLoadingWorld As World
+- uid: Menu.FastTravelScreen.currentlyLoadingMapData
+  commentId: F:Menu.FastTravelScreen.currentlyLoadingMapData
+  id: currentlyLoadingMapData
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: currentlyLoadingMapData
+  nameWithType: FastTravelScreen.currentlyLoadingMapData
+  fullName: Menu.FastTravelScreen.currentlyLoadingMapData
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.currentlyLoadingMapData</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Map.MapData currentlyLoadingMapData
+    return:
+      type: HUD.Map.MapData
+    content.vb: Public currentlyLoadingMapData As Map.MapData
+- uid: Menu.FastTravelScreen.slugcatButtons
+  commentId: F:Menu.FastTravelScreen.slugcatButtons
+  id: slugcatButtons
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: slugcatButtons
+  nameWithType: FastTravelScreen.slugcatButtons
+  fullName: Menu.FastTravelScreen.slugcatButtons
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.slugcatButtons</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<SimpleButton> slugcatButtons
+    return:
+      type: System.Collections.Generic.List{Menu.SimpleButton}
+    content.vb: Public slugcatButtons As List(Of SimpleButton)
+- uid: Menu.FastTravelScreen.slugcatLabels
+  commentId: F:Menu.FastTravelScreen.slugcatLabels
+  id: slugcatLabels
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: slugcatLabels
+  nameWithType: FastTravelScreen.slugcatLabels
+  fullName: Menu.FastTravelScreen.slugcatLabels
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.slugcatLabels</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<FSprite> slugcatLabels
+    return:
+      type: System.Collections.Generic.List{FSprite}
+    content.vb: Public slugcatLabels As List(Of FSprite)
+- uid: Menu.FastTravelScreen.activeMenuSlugcat
+  commentId: F:Menu.FastTravelScreen.activeMenuSlugcat
+  id: activeMenuSlugcat
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: activeMenuSlugcat
+  nameWithType: FastTravelScreen.activeMenuSlugcat
+  fullName: Menu.FastTravelScreen.activeMenuSlugcat
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.activeMenuSlugcat</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SlugcatStats.Name activeMenuSlugcat
+    return:
+      type: Global.SlugcatStats.Name
+    content.vb: Public activeMenuSlugcat As SlugcatStats.Name
+- uid: Menu.FastTravelScreen.subtitleLabel
+  commentId: F:Menu.FastTravelScreen.subtitleLabel
+  id: subtitleLabel
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: subtitleLabel
+  nameWithType: FastTravelScreen.subtitleLabel
+  fullName: Menu.FastTravelScreen.subtitleLabel
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.subtitleLabel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuLabel subtitleLabel
+    return:
+      type: Menu.MenuLabel
+    content.vb: Public subtitleLabel As MenuLabel
+- uid: Menu.FastTravelScreen.warpPointModeAvailable
+  commentId: F:Menu.FastTravelScreen.warpPointModeAvailable
+  id: warpPointModeAvailable
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: warpPointModeAvailable
+  nameWithType: FastTravelScreen.warpPointModeAvailable
+  fullName: Menu.FastTravelScreen.warpPointModeAvailable
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.FastTravelScreen.warpPointModeAvailable</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool warpPointModeAvailable
+    return:
+      type: System.Boolean
+    content.vb: Public warpPointModeAvailable As Boolean
+- uid: Menu.FastTravelScreen.GetRegionOrder
+  commentId: M:Menu.FastTravelScreen.GetRegionOrder
+  id: GetRegionOrder
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: GetRegionOrder()
+  nameWithType: FastTravelScreen.GetRegionOrder()
+  fullName: Menu.FastTravelScreen.GetRegionOrder()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.GetRegionOrder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> GetRegionOrder()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Menu.FastTravelScreen.GetRegionOrder</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetRegionOrder() As List(Of String)
+  overload: Menu.FastTravelScreen.GetRegionOrder*
+- uid: Menu.FastTravelScreen.#ctor(ProcessManager,ProcessManager.ProcessID)
+  commentId: M:Menu.FastTravelScreen.#ctor(ProcessManager,ProcessManager.ProcessID)
+  id: '#ctor(ProcessManager,ProcessManager.ProcessID)'
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: FastTravelScreen(ProcessManager, ProcessID)
+  nameWithType: FastTravelScreen.FastTravelScreen(ProcessManager, ProcessManager.ProcessID)
+  fullName: Menu.FastTravelScreen.FastTravelScreen(ProcessManager, ProcessManager.ProcessID)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Menu.FastTravelScreen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FastTravelScreen(ProcessManager manager, ProcessManager.ProcessID ID)
+    parameters:
+    - id: manager
+      type: Global.ProcessManager
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>manager</parameter>
+            <parameter>M:Menu.FastTravelScreen.#ctor(ProcessManager,ProcessManager.ProcessID)</parameter>
+          </include>
+        </markup>
+    - id: ID
+      type: Global.ProcessManager.ProcessID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:Menu.FastTravelScreen.#ctor(ProcessManager,ProcessManager.ProcessID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(manager As ProcessManager, ID As ProcessManager.ProcessID)
+  overload: Menu.FastTravelScreen.#ctor*
+  nameWithType.vb: FastTravelScreen.New(ProcessManager, ProcessManager.ProcessID)
+  fullName.vb: Menu.FastTravelScreen.New(ProcessManager, ProcessManager.ProcessID)
+  name.vb: New(ProcessManager, ProcessID)
+- uid: Menu.FastTravelScreen.Update
+  commentId: M:Menu.FastTravelScreen.Update
+  id: Update
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: FastTravelScreen.Update()
+  fullName: Menu.FastTravelScreen.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Menu.Menu.Update
+  overload: Menu.FastTravelScreen.Update*
+- uid: Menu.FastTravelScreen.GrafUpdate(System.Single)
+  commentId: M:Menu.FastTravelScreen.GrafUpdate(System.Single)
+  id: GrafUpdate(System.Single)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: GrafUpdate(float)
+  nameWithType: FastTravelScreen.GrafUpdate(float)
+  fullName: Menu.FastTravelScreen.GrafUpdate(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.GrafUpdate(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void GrafUpdate(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Menu.FastTravelScreen.GrafUpdate(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub GrafUpdate(timeStacker As Single)
+  overridden: Menu.Menu.GrafUpdate(System.Single)
+  overload: Menu.FastTravelScreen.GrafUpdate*
+  nameWithType.vb: FastTravelScreen.GrafUpdate(Single)
+  fullName.vb: Menu.FastTravelScreen.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+- uid: Menu.FastTravelScreen.RefreshInfoLabel
+  commentId: M:Menu.FastTravelScreen.RefreshInfoLabel
+  id: RefreshInfoLabel
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: RefreshInfoLabel()
+  nameWithType: FastTravelScreen.RefreshInfoLabel()
+  fullName: Menu.FastTravelScreen.RefreshInfoLabel()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.RefreshInfoLabel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RefreshInfoLabel()
+    content.vb: Public Sub RefreshInfoLabel()
+  overload: Menu.FastTravelScreen.RefreshInfoLabel*
+- uid: Menu.FastTravelScreen.UpdateInfoText
+  commentId: M:Menu.FastTravelScreen.UpdateInfoText
+  id: UpdateInfoText
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: UpdateInfoText()
+  nameWithType: FastTravelScreen.UpdateInfoText()
+  fullName: Menu.FastTravelScreen.UpdateInfoText()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.UpdateInfoText</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override string UpdateInfoText()
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Menu.FastTravelScreen.UpdateInfoText</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function UpdateInfoText() As String
+  overridden: Menu.Menu.UpdateInfoText
+  overload: Menu.FastTravelScreen.UpdateInfoText*
+- uid: Menu.FastTravelScreen.UpdateButtonInstructions
+  commentId: M:Menu.FastTravelScreen.UpdateButtonInstructions
+  id: UpdateButtonInstructions
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: UpdateButtonInstructions()
+  nameWithType: FastTravelScreen.UpdateButtonInstructions()
+  fullName: Menu.FastTravelScreen.UpdateButtonInstructions()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.UpdateButtonInstructions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateButtonInstructions()
+    content.vb: Public Sub UpdateButtonInstructions()
+  overload: Menu.FastTravelScreen.UpdateButtonInstructions*
+- uid: Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)
+  commentId: M:Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)
+  id: Singal(Menu.MenuObject,System.String)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: Singal(MenuObject, string)
+  nameWithType: FastTravelScreen.Singal(MenuObject, string)
+  fullName: Menu.FastTravelScreen.Singal(Menu.MenuObject, string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Singal(MenuObject sender, string message)
+    parameters:
+    - id: sender
+      type: Menu.MenuObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)</parameter>
+          </include>
+        </markup>
+    - id: message
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:Menu.FastTravelScreen.Singal(Menu.MenuObject,System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Singal(sender As MenuObject, message As String)
+  overridden: Menu.Menu.Singal(Menu.MenuObject,System.String)
+  overload: Menu.FastTravelScreen.Singal*
+  nameWithType.vb: FastTravelScreen.Singal(MenuObject, String)
+  fullName.vb: Menu.FastTravelScreen.Singal(Menu.MenuObject, String)
+  name.vb: Singal(MenuObject, String)
+- uid: Menu.FastTravelScreen.ShutDownProcess
+  commentId: M:Menu.FastTravelScreen.ShutDownProcess
+  id: ShutDownProcess
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: ShutDownProcess()
+  nameWithType: FastTravelScreen.ShutDownProcess()
+  fullName: Menu.FastTravelScreen.ShutDownProcess()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.ShutDownProcess</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ShutDownProcess()
+    content.vb: Public Overrides Sub ShutDownProcess()
+  overridden: Menu.Menu.ShutDownProcess
+  overload: Menu.FastTravelScreen.ShutDownProcess*
+- uid: Menu.FastTravelScreen.FinalizeRegionSwitch(System.Int32)
+  commentId: M:Menu.FastTravelScreen.FinalizeRegionSwitch(System.Int32)
+  id: FinalizeRegionSwitch(System.Int32)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: FinalizeRegionSwitch(int)
+  nameWithType: FastTravelScreen.FinalizeRegionSwitch(int)
+  fullName: Menu.FastTravelScreen.FinalizeRegionSwitch(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.FinalizeRegionSwitch(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FinalizeRegionSwitch(int newRegion)
+    parameters:
+    - id: newRegion
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRegion</parameter>
+            <parameter>M:Menu.FastTravelScreen.FinalizeRegionSwitch(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FinalizeRegionSwitch(newRegion As Integer)
+  overload: Menu.FastTravelScreen.FinalizeRegionSwitch*
+  nameWithType.vb: FastTravelScreen.FinalizeRegionSwitch(Integer)
+  fullName.vb: Menu.FastTravelScreen.FinalizeRegionSwitch(Integer)
+  name.vb: FinalizeRegionSwitch(Integer)
+- uid: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(System.Int32)
+  commentId: M:Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(System.Int32)
+  id: AddWorldLoaderResultToLoadedWorlds(System.Int32)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: AddWorldLoaderResultToLoadedWorlds(int)
+  nameWithType: FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(int)
+  fullName: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddWorldLoaderResultToLoadedWorlds(int reg)
+    parameters:
+    - id: reg
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>reg</parameter>
+            <parameter>M:Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddWorldLoaderResultToLoadedWorlds(reg As Integer)
+  overload: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds*
+  nameWithType.vb: FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(Integer)
+  fullName.vb: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds(Integer)
+  name.vb: AddWorldLoaderResultToLoadedWorlds(Integer)
+- uid: Menu.FastTravelScreen.SelectNewShelter(System.Int32)
+  commentId: M:Menu.FastTravelScreen.SelectNewShelter(System.Int32)
+  id: SelectNewShelter(System.Int32)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: SelectNewShelter(int)
+  nameWithType: FastTravelScreen.SelectNewShelter(int)
+  fullName: Menu.FastTravelScreen.SelectNewShelter(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.SelectNewShelter(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SelectNewShelter(int shelter)
+    parameters:
+    - id: shelter
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shelter</parameter>
+            <parameter>M:Menu.FastTravelScreen.SelectNewShelter(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SelectNewShelter(shelter As Integer)
+  overload: Menu.FastTravelScreen.SelectNewShelter*
+  nameWithType.vb: FastTravelScreen.SelectNewShelter(Integer)
+  fullName.vb: Menu.FastTravelScreen.SelectNewShelter(Integer)
+  name.vb: SelectNewShelter(Integer)
+- uid: Menu.FastTravelScreen.GetOwnerType
+  commentId: M:Menu.FastTravelScreen.GetOwnerType
+  id: GetOwnerType
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: GetOwnerType()
+  nameWithType: FastTravelScreen.GetOwnerType()
+  fullName: Menu.FastTravelScreen.GetOwnerType()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.GetOwnerType</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HUD.OwnerType GetOwnerType()
+    return:
+      type: HUD.HUD.OwnerType
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Menu.FastTravelScreen.GetOwnerType</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetOwnerType() As HUD.OwnerType
+  overload: Menu.FastTravelScreen.GetOwnerType*
+  implements:
+  - HUD.IOwnAHUD.GetOwnerType
+- uid: Menu.FastTravelScreen.PlayHUDSound(SoundID)
+  commentId: M:Menu.FastTravelScreen.PlayHUDSound(SoundID)
+  id: PlayHUDSound(SoundID)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: PlayHUDSound(SoundID)
+  nameWithType: FastTravelScreen.PlayHUDSound(SoundID)
+  fullName: Menu.FastTravelScreen.PlayHUDSound(SoundID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.PlayHUDSound(SoundID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayHUDSound(SoundID soundID)
+    parameters:
+    - id: soundID
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundID</parameter>
+            <parameter>M:Menu.FastTravelScreen.PlayHUDSound(SoundID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayHUDSound(soundID As SoundID)
+  overload: Menu.FastTravelScreen.PlayHUDSound*
+  implements:
+  - HUD.IOwnAHUD.PlayHUDSound(SoundID)
+- uid: Menu.FastTravelScreen.FoodCountDownDone
+  commentId: M:Menu.FastTravelScreen.FoodCountDownDone
+  id: FoodCountDownDone
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: FoodCountDownDone()
+  nameWithType: FastTravelScreen.FoodCountDownDone()
+  fullName: Menu.FastTravelScreen.FoodCountDownDone()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.FoodCountDownDone</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FoodCountDownDone()
+    content.vb: Public Sub FoodCountDownDone()
+  overload: Menu.FastTravelScreen.FoodCountDownDone*
+  implements:
+  - HUD.IOwnAHUD.FoodCountDownDone
+- uid: Menu.FastTravelScreen.SpawnChoiceMenu
+  commentId: M:Menu.FastTravelScreen.SpawnChoiceMenu
+  id: SpawnChoiceMenu
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: SpawnChoiceMenu()
+  nameWithType: FastTravelScreen.SpawnChoiceMenu()
+  fullName: Menu.FastTravelScreen.SpawnChoiceMenu()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.SpawnChoiceMenu</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpawnChoiceMenu()
+    content.vb: Public Sub SpawnChoiceMenu()
+  overload: Menu.FastTravelScreen.SpawnChoiceMenu*
+- uid: Menu.FastTravelScreen.DestroyChoiceMenu
+  commentId: M:Menu.FastTravelScreen.DestroyChoiceMenu
+  id: DestroyChoiceMenu
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: DestroyChoiceMenu()
+  nameWithType: FastTravelScreen.DestroyChoiceMenu()
+  fullName: Menu.FastTravelScreen.DestroyChoiceMenu()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.DestroyChoiceMenu</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DestroyChoiceMenu()
+    content.vb: Public Sub DestroyChoiceMenu()
+  overload: Menu.FastTravelScreen.DestroyChoiceMenu*
+- uid: Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)
+  commentId: M:Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)
+  id: GetRegionsVisited(SlugcatStats.Name)
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: GetRegionsVisited(Name)
+  nameWithType: FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)
+  fullName: Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<string> GetRegionsVisited(SlugcatStats.Name saveSlot)
+    parameters:
+    - id: saveSlot
+      type: Global.SlugcatStats.Name
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>saveSlot</parameter>
+            <parameter>M:Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Menu.FastTravelScreen.GetRegionsVisited(SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetRegionsVisited(saveSlot As SlugcatStats.Name) As List(Of String)
+  overload: Menu.FastTravelScreen.GetRegionsVisited*
+- uid: Menu.FastTravelScreen.SpawnSlugcatButtons
+  commentId: M:Menu.FastTravelScreen.SpawnSlugcatButtons
+  id: SpawnSlugcatButtons
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: SpawnSlugcatButtons()
+  nameWithType: FastTravelScreen.SpawnSlugcatButtons()
+  fullName: Menu.FastTravelScreen.SpawnSlugcatButtons()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.SpawnSlugcatButtons</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpawnSlugcatButtons()
+    content.vb: Public Sub SpawnSlugcatButtons()
+  overload: Menu.FastTravelScreen.SpawnSlugcatButtons*
+- uid: Menu.FastTravelScreen.DestroySlugcatButtons
+  commentId: M:Menu.FastTravelScreen.DestroySlugcatButtons
+  id: DestroySlugcatButtons
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: DestroySlugcatButtons()
+  nameWithType: FastTravelScreen.DestroySlugcatButtons()
+  fullName: Menu.FastTravelScreen.DestroySlugcatButtons()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.FastTravelScreen.DestroySlugcatButtons</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DestroySlugcatButtons()
+    content.vb: Public Sub DestroySlugcatButtons()
+  overload: Menu.FastTravelScreen.DestroySlugcatButtons*
+- uid: Menu.FastTravelScreen.ActiveWorld
+  commentId: P:Menu.FastTravelScreen.ActiveWorld
+  id: ActiveWorld
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: ActiveWorld
+  nameWithType: FastTravelScreen.ActiveWorld
+  fullName: Menu.FastTravelScreen.ActiveWorld
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.ActiveWorld</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public World ActiveWorld { get; }
+    parameters: []
+    return:
+      type: Global.World
+    content.vb: Public ReadOnly Property ActiveWorld As World
+  overload: Menu.FastTravelScreen.ActiveWorld*
+- uid: Menu.FastTravelScreen.FreezeMenuFunctions
+  commentId: P:Menu.FastTravelScreen.FreezeMenuFunctions
+  id: FreezeMenuFunctions
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: FreezeMenuFunctions
+  nameWithType: FastTravelScreen.FreezeMenuFunctions
+  fullName: Menu.FastTravelScreen.FreezeMenuFunctions
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.FreezeMenuFunctions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override bool FreezeMenuFunctions { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides ReadOnly Property FreezeMenuFunctions As Boolean
+  overridden: Menu.Menu.FreezeMenuFunctions
+  overload: Menu.FastTravelScreen.FreezeMenuFunctions*
+- uid: Menu.FastTravelScreen.IsFastTravelScreen
+  commentId: P:Menu.FastTravelScreen.IsFastTravelScreen
+  id: IsFastTravelScreen
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: IsFastTravelScreen
+  nameWithType: FastTravelScreen.IsFastTravelScreen
+  fullName: Menu.FastTravelScreen.IsFastTravelScreen
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.IsFastTravelScreen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsFastTravelScreen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFastTravelScreen As Boolean
+  overload: Menu.FastTravelScreen.IsFastTravelScreen*
+- uid: Menu.FastTravelScreen.IsRegionsScreen
+  commentId: P:Menu.FastTravelScreen.IsRegionsScreen
+  id: IsRegionsScreen
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: IsRegionsScreen
+  nameWithType: FastTravelScreen.IsRegionsScreen
+  fullName: Menu.FastTravelScreen.IsRegionsScreen
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.IsRegionsScreen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsRegionsScreen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRegionsScreen As Boolean
+  overload: Menu.FastTravelScreen.IsRegionsScreen*
+- uid: Menu.FastTravelScreen.WarpPointModeActive
+  commentId: P:Menu.FastTravelScreen.WarpPointModeActive
+  id: WarpPointModeActive
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: WarpPointModeActive
+  nameWithType: FastTravelScreen.WarpPointModeActive
+  fullName: Menu.FastTravelScreen.WarpPointModeActive
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.WarpPointModeActive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool WarpPointModeActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property WarpPointModeActive As Boolean
+  overload: Menu.FastTravelScreen.WarpPointModeActive*
+- uid: Menu.FastTravelScreen.CurrentFood
+  commentId: P:Menu.FastTravelScreen.CurrentFood
+  id: CurrentFood
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: CurrentFood
+  nameWithType: FastTravelScreen.CurrentFood
+  fullName: Menu.FastTravelScreen.CurrentFood
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.CurrentFood</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int CurrentFood { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentFood As Integer
+  overload: Menu.FastTravelScreen.CurrentFood*
+  implements:
+  - HUD.IOwnAHUD.CurrentFood
+- uid: Menu.FastTravelScreen.MapInput
+  commentId: P:Menu.FastTravelScreen.MapInput
+  id: MapInput
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: MapInput
+  nameWithType: FastTravelScreen.MapInput
+  fullName: Menu.FastTravelScreen.MapInput
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.MapInput</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Player.InputPackage MapInput { get; }
+    parameters: []
+    return:
+      type: Global.Player.InputPackage
+    content.vb: Public ReadOnly Property MapInput As Player.InputPackage
+  overload: Menu.FastTravelScreen.MapInput*
+  implements:
+  - HUD.IOwnAHUD.MapInput
+- uid: Menu.FastTravelScreen.RevealMap
+  commentId: P:Menu.FastTravelScreen.RevealMap
+  id: RevealMap
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: RevealMap
+  nameWithType: FastTravelScreen.RevealMap
+  fullName: Menu.FastTravelScreen.RevealMap
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.RevealMap</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool RevealMap { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RevealMap As Boolean
+  overload: Menu.FastTravelScreen.RevealMap*
+  implements:
+  - HUD.IOwnAHUD.RevealMap
+- uid: Menu.FastTravelScreen.MapOwnerInRoomPosition
+  commentId: P:Menu.FastTravelScreen.MapOwnerInRoomPosition
+  id: MapOwnerInRoomPosition
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: MapOwnerInRoomPosition
+  nameWithType: FastTravelScreen.MapOwnerInRoomPosition
+  fullName: Menu.FastTravelScreen.MapOwnerInRoomPosition
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.MapOwnerInRoomPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 MapOwnerInRoomPosition { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ReadOnly Property MapOwnerInRoomPosition As Vector2
+  overload: Menu.FastTravelScreen.MapOwnerInRoomPosition*
+  implements:
+  - HUD.IOwnAHUD.MapOwnerInRoomPosition
+- uid: Menu.FastTravelScreen.MapOwnerRoom
+  commentId: P:Menu.FastTravelScreen.MapOwnerRoom
+  id: MapOwnerRoom
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: MapOwnerRoom
+  nameWithType: FastTravelScreen.MapOwnerRoom
+  fullName: Menu.FastTravelScreen.MapOwnerRoom
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.MapOwnerRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int MapOwnerRoom { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MapOwnerRoom As Integer
+  overload: Menu.FastTravelScreen.MapOwnerRoom*
+  implements:
+  - HUD.IOwnAHUD.MapOwnerRoom
+- uid: Menu.FastTravelScreen.MapDiscoveryActive
+  commentId: P:Menu.FastTravelScreen.MapDiscoveryActive
+  id: MapDiscoveryActive
+  parent: Menu.FastTravelScreen
+  langs:
+  - csharp
+  - vb
+  name: MapDiscoveryActive
+  nameWithType: FastTravelScreen.MapDiscoveryActive
+  fullName: Menu.FastTravelScreen.MapDiscoveryActive
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.FastTravelScreen.MapDiscoveryActive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool MapDiscoveryActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property MapDiscoveryActive As Boolean
+  overload: Menu.FastTravelScreen.MapDiscoveryActive*
+  implements:
+  - HUD.IOwnAHUD.MapDiscoveryActive
+references:
+- uid: Menu
+  commentId: N:Menu
+  isExternal: true
+  href: Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.MainLoopProcess
+  commentId: T:Global.MainLoopProcess
+  isExternal: true
+  href: MainLoopProcess.html
+  name: MainLoopProcess
+  nameWithType: MainLoopProcess
+  fullName: MainLoopProcess
+- uid: Menu.Menu
+  commentId: T:Menu.Menu
+  parent: Menu
+  isExternal: true
+  href: Menu.Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu.Menu
+- uid: HUD.IOwnAHUD
+  commentId: T:HUD.IOwnAHUD
+  parent: HUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html
+  name: IOwnAHUD
+  nameWithType: IOwnAHUD
+  fullName: HUD.IOwnAHUD
+- uid: Menu.Menu.pages
+  commentId: F:Menu.Menu.pages
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_pages
+  name: pages
+  nameWithType: Menu.pages
+  fullName: Menu.Menu.pages
+- uid: Menu.Menu.mousePosition
+  commentId: F:Menu.Menu.mousePosition
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_mousePosition
+  name: mousePosition
+  nameWithType: Menu.mousePosition
+  fullName: Menu.Menu.mousePosition
+- uid: Menu.Menu.lastMousePos
+  commentId: F:Menu.Menu.lastMousePos
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_lastMousePos
+  name: lastMousePos
+  nameWithType: Menu.lastMousePos
+  fullName: Menu.Menu.lastMousePos
+- uid: Menu.Menu.container
+  commentId: F:Menu.Menu.container
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_container
+  name: container
+  nameWithType: Menu.container
+  fullName: Menu.Menu.container
+- uid: Menu.Menu.cursorContainer
+  commentId: F:Menu.Menu.cursorContainer
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_cursorContainer
+  name: cursorContainer
+  nameWithType: Menu.cursorContainer
+  fullName: Menu.Menu.cursorContainer
+- uid: Menu.Menu.scene
+  commentId: F:Menu.Menu.scene
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_scene
+  name: scene
+  nameWithType: Menu.scene
+  fullName: Menu.Menu.scene
+- uid: Menu.Menu.mouseDown
+  commentId: F:Menu.Menu.mouseDown
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_mouseDown
+  name: mouseDown
+  nameWithType: Menu.mouseDown
+  fullName: Menu.Menu.mouseDown
+- uid: Menu.Menu.lastMouseDown
+  commentId: F:Menu.Menu.lastMouseDown
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_lastMouseDown
+  name: lastMouseDown
+  nameWithType: Menu.lastMouseDown
+  fullName: Menu.Menu.lastMouseDown
+- uid: Menu.Menu.selectedObject
+  commentId: F:Menu.Menu.selectedObject
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_selectedObject
+  name: selectedObject
+  nameWithType: Menu.selectedObject
+  fullName: Menu.Menu.selectedObject
+- uid: Menu.Menu.backObject
+  commentId: F:Menu.Menu.backObject
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_backObject
+  name: backObject
+  nameWithType: Menu.backObject
+  fullName: Menu.Menu.backObject
+- uid: Menu.Menu.pressButton
+  commentId: F:Menu.Menu.pressButton
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_pressButton
+  name: pressButton
+  nameWithType: Menu.pressButton
+  fullName: Menu.Menu.pressButton
+- uid: Menu.Menu.holdButton
+  commentId: F:Menu.Menu.holdButton
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_holdButton
+  name: holdButton
+  nameWithType: Menu.holdButton
+  fullName: Menu.Menu.holdButton
+- uid: Menu.Menu.lastHoldButton
+  commentId: F:Menu.Menu.lastHoldButton
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_lastHoldButton
+  name: lastHoldButton
+  nameWithType: Menu.lastHoldButton
+  fullName: Menu.Menu.lastHoldButton
+- uid: Menu.Menu.input
+  commentId: F:Menu.Menu.input
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_input
+  name: input
+  nameWithType: Menu.input
+  fullName: Menu.Menu.input
+- uid: Menu.Menu.lastInput
+  commentId: F:Menu.Menu.lastInput
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_lastInput
+  name: lastInput
+  nameWithType: Menu.lastInput
+  fullName: Menu.Menu.lastInput
+- uid: Menu.Menu.currentPage
+  commentId: F:Menu.Menu.currentPage
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_currentPage
+  name: currentPage
+  nameWithType: Menu.currentPage
+  fullName: Menu.Menu.currentPage
+- uid: Menu.Menu.soundLoop
+  commentId: F:Menu.Menu.soundLoop
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_soundLoop
+  name: soundLoop
+  nameWithType: Menu.soundLoop
+  fullName: Menu.Menu.soundLoop
+- uid: Menu.Menu.mySoundLoopID
+  commentId: F:Menu.Menu.mySoundLoopID
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_mySoundLoopID
+  name: mySoundLoopID
+  nameWithType: Menu.mySoundLoopID
+  fullName: Menu.Menu.mySoundLoopID
+- uid: Menu.Menu.mySoundLoopName
+  commentId: F:Menu.Menu.mySoundLoopName
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_mySoundLoopName
+  name: mySoundLoopName
+  nameWithType: Menu.mySoundLoopName
+  fullName: Menu.Menu.mySoundLoopName
+- uid: Menu.Menu.infolabelDirty
+  commentId: F:Menu.Menu.infolabelDirty
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_infolabelDirty
+  name: infolabelDirty
+  nameWithType: Menu.infolabelDirty
+  fullName: Menu.Menu.infolabelDirty
+- uid: Menu.Menu.infoLabel
+  commentId: F:Menu.Menu.infoLabel
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_infoLabel
+  name: infoLabel
+  nameWithType: Menu.infoLabel
+  fullName: Menu.Menu.infoLabel
+- uid: Menu.Menu.infoLabelFade
+  commentId: F:Menu.Menu.infoLabelFade
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_infoLabelFade
+  name: infoLabelFade
+  nameWithType: Menu.infoLabelFade
+  fullName: Menu.Menu.infoLabelFade
+- uid: Menu.Menu.lastInfoLabelFade
+  commentId: F:Menu.Menu.lastInfoLabelFade
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_lastInfoLabelFade
+  name: lastInfoLabelFade
+  nameWithType: Menu.lastInfoLabelFade
+  fullName: Menu.Menu.lastInfoLabelFade
+- uid: Menu.Menu.infoLabelSin
+  commentId: F:Menu.Menu.infoLabelSin
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_infoLabelSin
+  name: infoLabelSin
+  nameWithType: Menu.infoLabelSin
+  fullName: Menu.Menu.infoLabelSin
+- uid: Menu.Menu.gradientsContainer
+  commentId: F:Menu.Menu.gradientsContainer
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_gradientsContainer
+  name: gradientsContainer
+  nameWithType: Menu.gradientsContainer
+  fullName: Menu.Menu.gradientsContainer
+- uid: Menu.Menu.mouseScrollWheelMovement
+  commentId: F:Menu.Menu.mouseScrollWheelMovement
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_mouseScrollWheelMovement
+  name: mouseScrollWheelMovement
+  nameWithType: Menu.mouseScrollWheelMovement
+  fullName: Menu.Menu.mouseScrollWheelMovement
+- uid: Menu.Menu.init
+  commentId: F:Menu.Menu.init
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_init
+  name: init
+  nameWithType: Menu.init
+  fullName: Menu.Menu.init
+- uid: Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+  commentId: M:Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_HorizontalMoveToGetCentered_ProcessManager_
+  name: HorizontalMoveToGetCentered(ProcessManager)
+  nameWithType: Menu.HorizontalMoveToGetCentered(ProcessManager)
+  fullName: Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+  spec.csharp:
+  - uid: Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+    name: HorizontalMoveToGetCentered
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_HorizontalMoveToGetCentered_ProcessManager_
+  - name: (
+  - uid: Global.ProcessManager
+    name: ProcessManager
+    isExternal: true
+    href: ProcessManager.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.HorizontalMoveToGetCentered(ProcessManager)
+    name: HorizontalMoveToGetCentered
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_HorizontalMoveToGetCentered_ProcessManager_
+  - name: (
+  - uid: Global.ProcessManager
+    name: ProcessManager
+    isExternal: true
+    href: ProcessManager.html
+  - name: )
+- uid: Menu.Menu.GetFreezeMenuFunctions
+  commentId: M:Menu.Menu.GetFreezeMenuFunctions
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_GetFreezeMenuFunctions
+  name: GetFreezeMenuFunctions()
+  nameWithType: Menu.GetFreezeMenuFunctions()
+  fullName: Menu.Menu.GetFreezeMenuFunctions()
+  spec.csharp:
+  - uid: Menu.Menu.GetFreezeMenuFunctions
+    name: GetFreezeMenuFunctions
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_GetFreezeMenuFunctions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.GetFreezeMenuFunctions
+    name: GetFreezeMenuFunctions
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_GetFreezeMenuFunctions
+  - name: (
+  - name: )
+- uid: Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+  commentId: M:Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_MenuColor_Menu_Menu_MenuColors_
+  name: MenuColor(MenuColors)
+  nameWithType: Menu.MenuColor(Menu.MenuColors)
+  fullName: Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+  spec.csharp:
+  - uid: Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+    name: MenuColor
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MenuColor_Menu_Menu_MenuColors_
+  - name: (
+  - uid: Menu.Menu.MenuColors
+    name: MenuColors
+    isExternal: true
+    href: Menu.Menu.MenuColors.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.MenuColor(Menu.Menu.MenuColors)
+    name: MenuColor
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MenuColor_Menu_Menu_MenuColors_
+  - name: (
+  - uid: Menu.Menu.MenuColors
+    name: MenuColors
+    isExternal: true
+    href: Menu.Menu.MenuColors.html
+  - name: )
+- uid: Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+  commentId: M:Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_MenuRGB_Menu_Menu_MenuColors_
+  name: MenuRGB(MenuColors)
+  nameWithType: Menu.MenuRGB(Menu.MenuColors)
+  fullName: Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+  spec.csharp:
+  - uid: Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+    name: MenuRGB
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MenuRGB_Menu_Menu_MenuColors_
+  - name: (
+  - uid: Menu.Menu.MenuColors
+    name: MenuColors
+    isExternal: true
+    href: Menu.Menu.MenuColors.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.MenuRGB(Menu.Menu.MenuColors)
+    name: MenuRGB
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MenuRGB_Menu_Menu_MenuColors_
+  - name: (
+  - uid: Menu.Menu.MenuColors
+    name: MenuColors
+    isExternal: true
+    href: Menu.Menu.MenuColors.html
+  - name: )
+- uid: Menu.Menu.Translate(System.String)
+  commentId: M:Menu.Menu.Translate(System.String)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Translate_System_String_
+  name: Translate(string)
+  nameWithType: Menu.Translate(string)
+  fullName: Menu.Menu.Translate(string)
+  nameWithType.vb: Menu.Translate(String)
+  fullName.vb: Menu.Menu.Translate(String)
+  name.vb: Translate(String)
+  spec.csharp:
+  - uid: Menu.Menu.Translate(System.String)
+    name: Translate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Translate_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.Translate(System.String)
+    name: Translate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Translate_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Menu.Menu.Translate(System.String,System.Int32)
+  commentId: M:Menu.Menu.Translate(System.String,System.Int32)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Translate_System_String_System_Int32_
+  name: Translate(string, int)
+  nameWithType: Menu.Translate(string, int)
+  fullName: Menu.Menu.Translate(string, int)
+  nameWithType.vb: Menu.Translate(String, Integer)
+  fullName.vb: Menu.Menu.Translate(String, Integer)
+  name.vb: Translate(String, Integer)
+  spec.csharp:
+  - uid: Menu.Menu.Translate(System.String,System.Int32)
+    name: Translate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Translate_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.Translate(System.String,System.Int32)
+    name: Translate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Translate_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Menu.Menu.Init
+  commentId: M:Menu.Menu.Init
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Init
+  name: Init()
+  nameWithType: Menu.Init()
+  fullName: Menu.Menu.Init()
+  spec.csharp:
+  - uid: Menu.Menu.Init
+    name: Init
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Init
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.Init
+    name: Init
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Init
+  - name: (
+  - name: )
+- uid: Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  commentId: M:Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_MutualHorizontalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  name: MutualHorizontalButtonBind(MenuObject, MenuObject)
+  nameWithType: Menu.MutualHorizontalButtonBind(MenuObject, MenuObject)
+  fullName: Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject, Menu.MenuObject)
+  spec.csharp:
+  - uid: Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject,Menu.MenuObject)
+    name: MutualHorizontalButtonBind
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MutualHorizontalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.MutualHorizontalButtonBind(Menu.MenuObject,Menu.MenuObject)
+    name: MutualHorizontalButtonBind
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MutualHorizontalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+- uid: Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  commentId: M:Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject,Menu.MenuObject)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_MutualVerticalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  name: MutualVerticalButtonBind(MenuObject, MenuObject)
+  nameWithType: Menu.MutualVerticalButtonBind(MenuObject, MenuObject)
+  fullName: Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject, Menu.MenuObject)
+  spec.csharp:
+  - uid: Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject,Menu.MenuObject)
+    name: MutualVerticalButtonBind
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MutualVerticalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.MutualVerticalButtonBind(Menu.MenuObject,Menu.MenuObject)
+    name: MutualVerticalButtonBind
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_MutualVerticalButtonBind_Menu_MenuObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+- uid: Menu.Menu.ResetSelection
+  commentId: M:Menu.Menu.ResetSelection
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_ResetSelection
+  name: ResetSelection()
+  nameWithType: Menu.ResetSelection()
+  fullName: Menu.Menu.ResetSelection()
+  spec.csharp:
+  - uid: Menu.Menu.ResetSelection
+    name: ResetSelection
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ResetSelection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.ResetSelection
+    name: ResetSelection
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ResetSelection
+  - name: (
+  - name: )
+- uid: Menu.Menu.SliderSetValue(Menu.Slider,System.Single)
+  commentId: M:Menu.Menu.SliderSetValue(Menu.Slider,System.Single)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_SliderSetValue_Menu_Slider_System_Single_
+  name: SliderSetValue(Slider, float)
+  nameWithType: Menu.SliderSetValue(Slider, float)
+  fullName: Menu.Menu.SliderSetValue(Menu.Slider, float)
+  nameWithType.vb: Menu.SliderSetValue(Slider, Single)
+  fullName.vb: Menu.Menu.SliderSetValue(Menu.Slider, Single)
+  name.vb: SliderSetValue(Slider, Single)
+  spec.csharp:
+  - uid: Menu.Menu.SliderSetValue(Menu.Slider,System.Single)
+    name: SliderSetValue
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_SliderSetValue_Menu_Slider_System_Single_
+  - name: (
+  - uid: Menu.Slider
+    name: Slider
+    isExternal: true
+    href: Menu.Slider.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.SliderSetValue(Menu.Slider,System.Single)
+    name: SliderSetValue
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_SliderSetValue_Menu_Slider_System_Single_
+  - name: (
+  - uid: Menu.Slider
+    name: Slider
+    isExternal: true
+    href: Menu.Slider.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.Menu.ValueOfSlider(Menu.Slider)
+  commentId: M:Menu.Menu.ValueOfSlider(Menu.Slider)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_ValueOfSlider_Menu_Slider_
+  name: ValueOfSlider(Slider)
+  nameWithType: Menu.ValueOfSlider(Slider)
+  fullName: Menu.Menu.ValueOfSlider(Menu.Slider)
+  spec.csharp:
+  - uid: Menu.Menu.ValueOfSlider(Menu.Slider)
+    name: ValueOfSlider
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ValueOfSlider_Menu_Slider_
+  - name: (
+  - uid: Menu.Slider
+    name: Slider
+    isExternal: true
+    href: Menu.Slider.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.ValueOfSlider(Menu.Slider)
+    name: ValueOfSlider
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ValueOfSlider_Menu_Slider_
+  - name: (
+  - uid: Menu.Slider
+    name: Slider
+    isExternal: true
+    href: Menu.Slider.html
+  - name: )
+- uid: Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+  commentId: M:Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_CommunicateWithUpcomingProcess_MainLoopProcess_
+  name: CommunicateWithUpcomingProcess(MainLoopProcess)
+  nameWithType: Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+  fullName: Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+  spec.csharp:
+  - uid: Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+- uid: Menu.Menu.PlaySound(SoundID)
+  commentId: M:Menu.Menu.PlaySound(SoundID)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_
+  name: PlaySound(SoundID)
+  nameWithType: Menu.PlaySound(SoundID)
+  fullName: Menu.Menu.PlaySound(SoundID)
+  spec.csharp:
+  - uid: Menu.Menu.PlaySound(SoundID)
+    name: PlaySound
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.PlaySound(SoundID)
+    name: PlaySound
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+- uid: Menu.Menu.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  commentId: M:Menu.Menu.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_System_Single_System_Single_System_Single_
+  name: PlaySound(SoundID, float, float, float)
+  nameWithType: Menu.PlaySound(SoundID, float, float, float)
+  fullName: Menu.Menu.PlaySound(SoundID, float, float, float)
+  nameWithType.vb: Menu.PlaySound(SoundID, Single, Single, Single)
+  fullName.vb: Menu.Menu.PlaySound(SoundID, Single, Single, Single)
+  name.vb: PlaySound(SoundID, Single, Single, Single)
+  spec.csharp:
+  - uid: Menu.Menu.PlaySound(SoundID,System.Single,System.Single,System.Single)
+    name: PlaySound
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.PlaySound(SoundID,System.Single,System.Single,System.Single)
+    name: PlaySound
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySound_SoundID_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.Menu.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:Menu.Menu.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_PlayLoop_SoundID_System_Single_System_Single_System_Single_System_Boolean_
+  name: PlayLoop(SoundID, float, float, float, bool)
+  nameWithType: Menu.PlayLoop(SoundID, float, float, float, bool)
+  fullName: Menu.Menu.PlayLoop(SoundID, float, float, float, bool)
+  nameWithType.vb: Menu.PlayLoop(SoundID, Single, Single, Single, Boolean)
+  fullName.vb: Menu.Menu.PlayLoop(SoundID, Single, Single, Single, Boolean)
+  name.vb: PlayLoop(SoundID, Single, Single, Single, Boolean)
+  spec.csharp:
+  - uid: Menu.Menu.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+    name: PlayLoop
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlayLoop_SoundID_System_Single_System_Single_System_Single_System_Boolean_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+    name: PlayLoop
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlayLoop_SoundID_System_Single_System_Single_System_Single_System_Boolean_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Menu.Menu.PlaySoundCustom(System.String,System.Single,System.Single,System.Single)
+  commentId: M:Menu.Menu.PlaySoundCustom(System.String,System.Single,System.Single,System.Single)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_PlaySoundCustom_System_String_System_Single_System_Single_System_Single_
+  name: PlaySoundCustom(string, float, float, float)
+  nameWithType: Menu.PlaySoundCustom(string, float, float, float)
+  fullName: Menu.Menu.PlaySoundCustom(string, float, float, float)
+  nameWithType.vb: Menu.PlaySoundCustom(String, Single, Single, Single)
+  fullName.vb: Menu.Menu.PlaySoundCustom(String, Single, Single, Single)
+  name.vb: PlaySoundCustom(String, Single, Single, Single)
+  spec.csharp:
+  - uid: Menu.Menu.PlaySoundCustom(System.String,System.Single,System.Single,System.Single)
+    name: PlaySoundCustom
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySoundCustom_System_String_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.PlaySoundCustom(System.String,System.Single,System.Single,System.Single)
+    name: PlaySoundCustom
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlaySoundCustom_System_String_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.Menu.PlayLoopCustom(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:Menu.Menu.PlayLoopCustom(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_PlayLoopCustom_System_String_System_Single_System_Single_System_Single_System_Boolean_
+  name: PlayLoopCustom(string, float, float, float, bool)
+  nameWithType: Menu.PlayLoopCustom(string, float, float, float, bool)
+  fullName: Menu.Menu.PlayLoopCustom(string, float, float, float, bool)
+  nameWithType.vb: Menu.PlayLoopCustom(String, Single, Single, Single, Boolean)
+  fullName.vb: Menu.Menu.PlayLoopCustom(String, Single, Single, Single, Boolean)
+  name.vb: PlayLoopCustom(String, Single, Single, Single, Boolean)
+  spec.csharp:
+  - uid: Menu.Menu.PlayLoopCustom(System.String,System.Single,System.Single,System.Single,System.Boolean)
+    name: PlayLoopCustom
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlayLoopCustom_System_String_System_Single_System_Single_System_Single_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.PlayLoopCustom(System.String,System.Single,System.Single,System.Single,System.Boolean)
+    name: PlayLoopCustom
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_PlayLoopCustom_System_String_System_Single_System_Single_System_Single_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Menu.Menu.AllowDialogs
+  commentId: P:Menu.Menu.AllowDialogs
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_AllowDialogs
+  name: AllowDialogs
+  nameWithType: Menu.AllowDialogs
+  fullName: Menu.Menu.AllowDialogs
+- uid: Menu.Menu.ShowCursor
+  commentId: P:Menu.Menu.ShowCursor
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_ShowCursor
+  name: ShowCursor
+  nameWithType: Menu.ShowCursor
+  fullName: Menu.Menu.ShowCursor
+- uid: Menu.Menu.ForceNoMouseMode
+  commentId: P:Menu.Menu.ForceNoMouseMode
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_ForceNoMouseMode
+  name: ForceNoMouseMode
+  nameWithType: Menu.ForceNoMouseMode
+  fullName: Menu.Menu.ForceNoMouseMode
+- uid: Menu.Menu.Active
+  commentId: P:Menu.Menu.Active
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Active
+  name: Active
+  nameWithType: Menu.Active
+  fullName: Menu.Menu.Active
+- uid: Menu.Menu.HoldButtonDisregardingFreeze
+  commentId: P:Menu.Menu.HoldButtonDisregardingFreeze
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_HoldButtonDisregardingFreeze
+  name: HoldButtonDisregardingFreeze
+  nameWithType: Menu.HoldButtonDisregardingFreeze
+  fullName: Menu.Menu.HoldButtonDisregardingFreeze
+- uid: Menu.Menu.NonMouseInputDisregardingFreeze
+  commentId: P:Menu.Menu.NonMouseInputDisregardingFreeze
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_NonMouseInputDisregardingFreeze
+  name: NonMouseInputDisregardingFreeze
+  nameWithType: Menu.NonMouseInputDisregardingFreeze
+  fullName: Menu.Menu.NonMouseInputDisregardingFreeze
+- uid: Menu.Menu.CurrLang
+  commentId: P:Menu.Menu.CurrLang
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_CurrLang
+  name: CurrLang
+  nameWithType: Menu.CurrLang
+  fullName: Menu.Menu.CurrLang
+- uid: Global.MainLoopProcess.manager
+  commentId: F:Global.MainLoopProcess.manager
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_manager
+  name: manager
+  nameWithType: MainLoopProcess.manager
+  fullName: MainLoopProcess.manager
+- uid: Global.MainLoopProcess.ID
+  commentId: F:Global.MainLoopProcess.ID
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_ID
+  name: ID
+  nameWithType: MainLoopProcess.ID
+  fullName: MainLoopProcess.ID
+- uid: Global.MainLoopProcess.framesPerSecond
+  commentId: F:Global.MainLoopProcess.framesPerSecond
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_framesPerSecond
+  name: framesPerSecond
+  nameWithType: MainLoopProcess.framesPerSecond
+  fullName: MainLoopProcess.framesPerSecond
+- uid: Global.MainLoopProcess.processActive
+  commentId: F:Global.MainLoopProcess.processActive
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_processActive
+  name: processActive
+  nameWithType: MainLoopProcess.processActive
+  fullName: MainLoopProcess.processActive
+- uid: Global.MainLoopProcess.RawUpdate(System.Single)
+  commentId: M:Global.MainLoopProcess.RawUpdate(System.Single)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  name: RawUpdate(float)
+  nameWithType: MainLoopProcess.RawUpdate(float)
+  fullName: MainLoopProcess.RawUpdate(float)
+  nameWithType.vb: MainLoopProcess.RawUpdate(Single)
+  fullName.vb: MainLoopProcess.RawUpdate(Single)
+  name.vb: RawUpdate(Single)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.MainLoopProcess.TimeSpeedFac
+  commentId: P:Global.MainLoopProcess.TimeSpeedFac
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_TimeSpeedFac
+  name: TimeSpeedFac
+  nameWithType: MainLoopProcess.TimeSpeedFac
+  fullName: MainLoopProcess.TimeSpeedFac
+- uid: Global.MainLoopProcess.FadeInTime
+  commentId: P:Global.MainLoopProcess.FadeInTime
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_FadeInTime
+  name: FadeInTime
+  nameWithType: MainLoopProcess.FadeInTime
+  fullName: MainLoopProcess.FadeInTime
+- uid: Global.MainLoopProcess.InitialBlackSeconds
+  commentId: P:Global.MainLoopProcess.InitialBlackSeconds
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_InitialBlackSeconds
+  name: InitialBlackSeconds
+  nameWithType: MainLoopProcess.InitialBlackSeconds
+  fullName: MainLoopProcess.InitialBlackSeconds
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: HUD.HUD
+  commentId: T:HUD.HUD
+  parent: HUD
+  isExternal: true
+  href: HUD.HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD.HUD
+- uid: Global.Region[]
+  isExternal: true
+  href: Region.html
+  name: Region[]
+  nameWithType: Region[]
+  fullName: Region[]
+  nameWithType.vb: Region()
+  fullName.vb: Region()
+  name.vb: Region()
+  spec.csharp:
+  - uid: Global.Region
+    name: Region
+    isExternal: true
+    href: Region.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.Region
+    name: Region
+    isExternal: true
+    href: Region.html
+  - name: (
+  - name: )
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.FSprite
+  commentId: T:Global.FSprite
+  isExternal: true
+  href: FSprite.html
+  name: FSprite
+  nameWithType: FSprite
+  fullName: FSprite
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Menu.BigArrowButton
+  commentId: T:Menu.BigArrowButton
+  parent: Menu
+  isExternal: true
+  href: Menu.BigArrowButton.html
+  name: BigArrowButton
+  nameWithType: BigArrowButton
+  fullName: Menu.BigArrowButton
+- uid: Menu.SimpleButton
+  commentId: T:Menu.SimpleButton
+  parent: Menu
+  isExternal: true
+  href: Menu.SimpleButton.html
+  name: SimpleButton
+  nameWithType: SimpleButton
+  fullName: Menu.SimpleButton
+- uid: Menu.HoldButton
+  commentId: T:Menu.HoldButton
+  parent: Menu
+  isExternal: true
+  href: Menu.HoldButton.html
+  name: HoldButton
+  nameWithType: HoldButton
+  fullName: Menu.HoldButton
+- uid: Menu.MenuLabel
+  commentId: T:Menu.MenuLabel
+  parent: Menu
+  isExternal: true
+  href: Menu.MenuLabel.html
+  name: MenuLabel
+  nameWithType: MenuLabel
+  fullName: Menu.MenuLabel
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{Menu.SimpleButton}
+  commentId: T:System.Collections.Generic.List{Menu.SimpleButton}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SimpleButton>
+  nameWithType: List<SimpleButton>
+  fullName: System.Collections.Generic.List<Menu.SimpleButton>
+  nameWithType.vb: List(Of SimpleButton)
+  fullName.vb: System.Collections.Generic.List(Of Menu.SimpleButton)
+  name.vb: List(Of SimpleButton)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Menu.SimpleButton
+    name: SimpleButton
+    isExternal: true
+    href: Menu.SimpleButton.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Menu.SimpleButton
+    name: SimpleButton
+    isExternal: true
+    href: Menu.SimpleButton.html
+  - name: )
+- uid: Menu.RoundedRect
+  commentId: T:Menu.RoundedRect
+  parent: Menu
+  isExternal: true
+  href: Menu.RoundedRect.html
+  name: RoundedRect
+  nameWithType: RoundedRect
+  fullName: Menu.RoundedRect
+- uid: HUD.Map.MapData
+  commentId: T:HUD.Map.MapData
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map.MapData
+  nameWithType: Map.MapData
+  fullName: HUD.Map.MapData
+  spec.csharp:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapData
+    name: MapData
+    isExternal: true
+    href: HUD.Map.MapData.html
+  spec.vb:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapData
+    name: MapData
+    isExternal: true
+    href: HUD.Map.MapData.html
+- uid: System.Collections.Generic.List{FSprite}
+  commentId: T:System.Collections.Generic.List{FSprite}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FSprite>
+  nameWithType: List<FSprite>
+  fullName: System.Collections.Generic.List<FSprite>
+  nameWithType.vb: List(Of FSprite)
+  fullName.vb: System.Collections.Generic.List(Of FSprite)
+  name.vb: List(Of FSprite)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.FSprite
+    name: FSprite
+    isExternal: true
+    href: FSprite.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.FSprite
+    name: FSprite
+    isExternal: true
+    href: FSprite.html
+  - name: )
+- uid: Global.SlugcatStats.Name
+  commentId: T:Global.SlugcatStats.Name
+  isExternal: true
+  href: SlugcatStats.html
+  name: SlugcatStats.Name
+  nameWithType: SlugcatStats.Name
+  fullName: SlugcatStats.Name
+  spec.csharp:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+  spec.vb:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+- uid: Menu.FastTravelScreen.GetRegionOrder*
+  commentId: Overload:Menu.FastTravelScreen.GetRegionOrder
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_GetRegionOrder
+  name: GetRegionOrder
+  nameWithType: FastTravelScreen.GetRegionOrder
+  fullName: Menu.FastTravelScreen.GetRegionOrder
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Menu.FastTravelScreen.#ctor*
+  commentId: Overload:Menu.FastTravelScreen.#ctor
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen__ctor_ProcessManager_ProcessManager_ProcessID_
+  name: FastTravelScreen
+  nameWithType: FastTravelScreen.FastTravelScreen
+  fullName: Menu.FastTravelScreen.FastTravelScreen
+  nameWithType.vb: FastTravelScreen.New
+  fullName.vb: Menu.FastTravelScreen.New
+  name.vb: New
+- uid: Global.ProcessManager
+  commentId: T:Global.ProcessManager
+  isExternal: true
+  href: ProcessManager.html
+  name: ProcessManager
+  nameWithType: ProcessManager
+  fullName: ProcessManager
+- uid: Global.ProcessManager.ProcessID
+  commentId: T:Global.ProcessManager.ProcessID
+  isExternal: true
+  href: ProcessManager.html
+  name: ProcessManager.ProcessID
+  nameWithType: ProcessManager.ProcessID
+  fullName: ProcessManager.ProcessID
+  spec.csharp:
+  - uid: Global.ProcessManager
+    name: ProcessManager
+    isExternal: true
+    href: ProcessManager.html
+  - name: .
+  - uid: Global.ProcessManager.ProcessID
+    name: ProcessID
+    isExternal: true
+    href: ProcessManager.ProcessID.html
+  spec.vb:
+  - uid: Global.ProcessManager
+    name: ProcessManager
+    isExternal: true
+    href: ProcessManager.html
+  - name: .
+  - uid: Global.ProcessManager.ProcessID
+    name: ProcessID
+    isExternal: true
+    href: ProcessManager.ProcessID.html
+- uid: Menu.Menu.Update
+  commentId: M:Menu.Menu.Update
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Update
+  name: Update()
+  nameWithType: Menu.Update()
+  fullName: Menu.Menu.Update()
+  spec.csharp:
+  - uid: Menu.Menu.Update
+    name: Update
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.Update
+    name: Update
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Update
+  - name: (
+  - name: )
+- uid: Menu.FastTravelScreen.Update*
+  commentId: Overload:Menu.FastTravelScreen.Update
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_Update
+  name: Update
+  nameWithType: FastTravelScreen.Update
+  fullName: Menu.FastTravelScreen.Update
+- uid: Menu.Menu.GrafUpdate(System.Single)
+  commentId: M:Menu.Menu.GrafUpdate(System.Single)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_GrafUpdate_System_Single_
+  name: GrafUpdate(float)
+  nameWithType: Menu.GrafUpdate(float)
+  fullName: Menu.Menu.GrafUpdate(float)
+  nameWithType.vb: Menu.GrafUpdate(Single)
+  fullName.vb: Menu.Menu.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+  spec.csharp:
+  - uid: Menu.Menu.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.FastTravelScreen.GrafUpdate*
+  commentId: Overload:Menu.FastTravelScreen.GrafUpdate
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_GrafUpdate_System_Single_
+  name: GrafUpdate
+  nameWithType: FastTravelScreen.GrafUpdate
+  fullName: Menu.FastTravelScreen.GrafUpdate
+- uid: Menu.FastTravelScreen.RefreshInfoLabel*
+  commentId: Overload:Menu.FastTravelScreen.RefreshInfoLabel
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_RefreshInfoLabel
+  name: RefreshInfoLabel
+  nameWithType: FastTravelScreen.RefreshInfoLabel
+  fullName: Menu.FastTravelScreen.RefreshInfoLabel
+- uid: Menu.Menu.UpdateInfoText
+  commentId: M:Menu.Menu.UpdateInfoText
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_UpdateInfoText
+  name: UpdateInfoText()
+  nameWithType: Menu.UpdateInfoText()
+  fullName: Menu.Menu.UpdateInfoText()
+  spec.csharp:
+  - uid: Menu.Menu.UpdateInfoText
+    name: UpdateInfoText
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_UpdateInfoText
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.UpdateInfoText
+    name: UpdateInfoText
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_UpdateInfoText
+  - name: (
+  - name: )
+- uid: Menu.FastTravelScreen.UpdateInfoText*
+  commentId: Overload:Menu.FastTravelScreen.UpdateInfoText
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_UpdateInfoText
+  name: UpdateInfoText
+  nameWithType: FastTravelScreen.UpdateInfoText
+  fullName: Menu.FastTravelScreen.UpdateInfoText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Menu.FastTravelScreen.UpdateButtonInstructions*
+  commentId: Overload:Menu.FastTravelScreen.UpdateButtonInstructions
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_UpdateButtonInstructions
+  name: UpdateButtonInstructions
+  nameWithType: FastTravelScreen.UpdateButtonInstructions
+  fullName: Menu.FastTravelScreen.UpdateButtonInstructions
+- uid: Menu.Menu.Singal(Menu.MenuObject,System.String)
+  commentId: M:Menu.Menu.Singal(Menu.MenuObject,System.String)
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_Singal_Menu_MenuObject_System_String_
+  name: Singal(MenuObject, string)
+  nameWithType: Menu.Singal(MenuObject, string)
+  fullName: Menu.Menu.Singal(Menu.MenuObject, string)
+  nameWithType.vb: Menu.Singal(MenuObject, String)
+  fullName.vb: Menu.Menu.Singal(Menu.MenuObject, String)
+  name.vb: Singal(MenuObject, String)
+  spec.csharp:
+  - uid: Menu.Menu.Singal(Menu.MenuObject,System.String)
+    name: Singal
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Singal_Menu_MenuObject_System_String_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.Singal(Menu.MenuObject,System.String)
+    name: Singal
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_Singal_Menu_MenuObject_System_String_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Menu.FastTravelScreen.Singal*
+  commentId: Overload:Menu.FastTravelScreen.Singal
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_Singal_Menu_MenuObject_System_String_
+  name: Singal
+  nameWithType: FastTravelScreen.Singal
+  fullName: Menu.FastTravelScreen.Singal
+- uid: Menu.MenuObject
+  commentId: T:Menu.MenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.MenuObject.html
+  name: MenuObject
+  nameWithType: MenuObject
+  fullName: Menu.MenuObject
+- uid: Menu.Menu.ShutDownProcess
+  commentId: M:Menu.Menu.ShutDownProcess
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_ShutDownProcess
+  name: ShutDownProcess()
+  nameWithType: Menu.ShutDownProcess()
+  fullName: Menu.Menu.ShutDownProcess()
+  spec.csharp:
+  - uid: Menu.Menu.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ShutDownProcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.Menu.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Menu.Menu.html#Menu_Menu_ShutDownProcess
+  - name: (
+  - name: )
+- uid: Menu.FastTravelScreen.ShutDownProcess*
+  commentId: Overload:Menu.FastTravelScreen.ShutDownProcess
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_ShutDownProcess
+  name: ShutDownProcess
+  nameWithType: FastTravelScreen.ShutDownProcess
+  fullName: Menu.FastTravelScreen.ShutDownProcess
+- uid: Menu.FastTravelScreen.FinalizeRegionSwitch*
+  commentId: Overload:Menu.FastTravelScreen.FinalizeRegionSwitch
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_FinalizeRegionSwitch_System_Int32_
+  name: FinalizeRegionSwitch
+  nameWithType: FastTravelScreen.FinalizeRegionSwitch
+  fullName: Menu.FastTravelScreen.FinalizeRegionSwitch
+- uid: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds*
+  commentId: Overload:Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_AddWorldLoaderResultToLoadedWorlds_System_Int32_
+  name: AddWorldLoaderResultToLoadedWorlds
+  nameWithType: FastTravelScreen.AddWorldLoaderResultToLoadedWorlds
+  fullName: Menu.FastTravelScreen.AddWorldLoaderResultToLoadedWorlds
+- uid: Menu.FastTravelScreen.SelectNewShelter*
+  commentId: Overload:Menu.FastTravelScreen.SelectNewShelter
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_SelectNewShelter_System_Int32_
+  name: SelectNewShelter
+  nameWithType: FastTravelScreen.SelectNewShelter
+  fullName: Menu.FastTravelScreen.SelectNewShelter
+- uid: Menu.FastTravelScreen.GetOwnerType*
+  commentId: Overload:Menu.FastTravelScreen.GetOwnerType
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_GetOwnerType
+  name: GetOwnerType
+  nameWithType: FastTravelScreen.GetOwnerType
+  fullName: Menu.FastTravelScreen.GetOwnerType
+- uid: HUD.IOwnAHUD.GetOwnerType
+  commentId: M:HUD.IOwnAHUD.GetOwnerType
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_GetOwnerType
+  name: GetOwnerType()
+  nameWithType: IOwnAHUD.GetOwnerType()
+  fullName: HUD.IOwnAHUD.GetOwnerType()
+  spec.csharp:
+  - uid: HUD.IOwnAHUD.GetOwnerType
+    name: GetOwnerType
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_GetOwnerType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.IOwnAHUD.GetOwnerType
+    name: GetOwnerType
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_GetOwnerType
+  - name: (
+  - name: )
+- uid: HUD.HUD.OwnerType
+  commentId: T:HUD.HUD.OwnerType
+  parent: HUD
+  isExternal: true
+  href: HUD.HUD.html
+  name: HUD.OwnerType
+  nameWithType: HUD.OwnerType
+  fullName: HUD.HUD.OwnerType
+  spec.csharp:
+  - uid: HUD.HUD
+    name: HUD
+    isExternal: true
+    href: HUD.HUD.html
+  - name: .
+  - uid: HUD.HUD.OwnerType
+    name: OwnerType
+    isExternal: true
+    href: HUD.HUD.OwnerType.html
+  spec.vb:
+  - uid: HUD.HUD
+    name: HUD
+    isExternal: true
+    href: HUD.HUD.html
+  - name: .
+  - uid: HUD.HUD.OwnerType
+    name: OwnerType
+    isExternal: true
+    href: HUD.HUD.OwnerType.html
+- uid: Menu.FastTravelScreen.PlayHUDSound*
+  commentId: Overload:Menu.FastTravelScreen.PlayHUDSound
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_PlayHUDSound_SoundID_
+  name: PlayHUDSound
+  nameWithType: FastTravelScreen.PlayHUDSound
+  fullName: Menu.FastTravelScreen.PlayHUDSound
+- uid: HUD.IOwnAHUD.PlayHUDSound(SoundID)
+  commentId: M:HUD.IOwnAHUD.PlayHUDSound(SoundID)
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_PlayHUDSound_SoundID_
+  name: PlayHUDSound(SoundID)
+  nameWithType: IOwnAHUD.PlayHUDSound(SoundID)
+  fullName: HUD.IOwnAHUD.PlayHUDSound(SoundID)
+  spec.csharp:
+  - uid: HUD.IOwnAHUD.PlayHUDSound(SoundID)
+    name: PlayHUDSound
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_PlayHUDSound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+  spec.vb:
+  - uid: HUD.IOwnAHUD.PlayHUDSound(SoundID)
+    name: PlayHUDSound
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_PlayHUDSound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+- uid: Global.SoundID
+  commentId: T:Global.SoundID
+  isExternal: true
+  href: SoundID.html
+  name: SoundID
+  nameWithType: SoundID
+  fullName: SoundID
+- uid: Menu.FastTravelScreen.FoodCountDownDone*
+  commentId: Overload:Menu.FastTravelScreen.FoodCountDownDone
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_FoodCountDownDone
+  name: FoodCountDownDone
+  nameWithType: FastTravelScreen.FoodCountDownDone
+  fullName: Menu.FastTravelScreen.FoodCountDownDone
+- uid: HUD.IOwnAHUD.FoodCountDownDone
+  commentId: M:HUD.IOwnAHUD.FoodCountDownDone
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_FoodCountDownDone
+  name: FoodCountDownDone()
+  nameWithType: IOwnAHUD.FoodCountDownDone()
+  fullName: HUD.IOwnAHUD.FoodCountDownDone()
+  spec.csharp:
+  - uid: HUD.IOwnAHUD.FoodCountDownDone
+    name: FoodCountDownDone
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_FoodCountDownDone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.IOwnAHUD.FoodCountDownDone
+    name: FoodCountDownDone
+    isExternal: true
+    href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_FoodCountDownDone
+  - name: (
+  - name: )
+- uid: Menu.FastTravelScreen.SpawnChoiceMenu*
+  commentId: Overload:Menu.FastTravelScreen.SpawnChoiceMenu
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_SpawnChoiceMenu
+  name: SpawnChoiceMenu
+  nameWithType: FastTravelScreen.SpawnChoiceMenu
+  fullName: Menu.FastTravelScreen.SpawnChoiceMenu
+- uid: Menu.FastTravelScreen.DestroyChoiceMenu*
+  commentId: Overload:Menu.FastTravelScreen.DestroyChoiceMenu
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_DestroyChoiceMenu
+  name: DestroyChoiceMenu
+  nameWithType: FastTravelScreen.DestroyChoiceMenu
+  fullName: Menu.FastTravelScreen.DestroyChoiceMenu
+- uid: Menu.FastTravelScreen.GetRegionsVisited*
+  commentId: Overload:Menu.FastTravelScreen.GetRegionsVisited
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_GetRegionsVisited_SlugcatStats_Name_
+  name: GetRegionsVisited
+  nameWithType: FastTravelScreen.GetRegionsVisited
+  fullName: Menu.FastTravelScreen.GetRegionsVisited
+- uid: Menu.FastTravelScreen.SpawnSlugcatButtons*
+  commentId: Overload:Menu.FastTravelScreen.SpawnSlugcatButtons
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_SpawnSlugcatButtons
+  name: SpawnSlugcatButtons
+  nameWithType: FastTravelScreen.SpawnSlugcatButtons
+  fullName: Menu.FastTravelScreen.SpawnSlugcatButtons
+- uid: Menu.FastTravelScreen.DestroySlugcatButtons*
+  commentId: Overload:Menu.FastTravelScreen.DestroySlugcatButtons
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_DestroySlugcatButtons
+  name: DestroySlugcatButtons
+  nameWithType: FastTravelScreen.DestroySlugcatButtons
+  fullName: Menu.FastTravelScreen.DestroySlugcatButtons
+- uid: Menu.FastTravelScreen.ActiveWorld*
+  commentId: Overload:Menu.FastTravelScreen.ActiveWorld
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_ActiveWorld
+  name: ActiveWorld
+  nameWithType: FastTravelScreen.ActiveWorld
+  fullName: Menu.FastTravelScreen.ActiveWorld
+- uid: Menu.Menu.FreezeMenuFunctions
+  commentId: P:Menu.Menu.FreezeMenuFunctions
+  parent: Menu.Menu
+  isExternal: true
+  href: Menu.Menu.html#Menu_Menu_FreezeMenuFunctions
+  name: FreezeMenuFunctions
+  nameWithType: Menu.FreezeMenuFunctions
+  fullName: Menu.Menu.FreezeMenuFunctions
+- uid: Menu.FastTravelScreen.FreezeMenuFunctions*
+  commentId: Overload:Menu.FastTravelScreen.FreezeMenuFunctions
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_FreezeMenuFunctions
+  name: FreezeMenuFunctions
+  nameWithType: FastTravelScreen.FreezeMenuFunctions
+  fullName: Menu.FastTravelScreen.FreezeMenuFunctions
+- uid: Menu.FastTravelScreen.IsFastTravelScreen*
+  commentId: Overload:Menu.FastTravelScreen.IsFastTravelScreen
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_IsFastTravelScreen
+  name: IsFastTravelScreen
+  nameWithType: FastTravelScreen.IsFastTravelScreen
+  fullName: Menu.FastTravelScreen.IsFastTravelScreen
+- uid: Menu.FastTravelScreen.IsRegionsScreen*
+  commentId: Overload:Menu.FastTravelScreen.IsRegionsScreen
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_IsRegionsScreen
+  name: IsRegionsScreen
+  nameWithType: FastTravelScreen.IsRegionsScreen
+  fullName: Menu.FastTravelScreen.IsRegionsScreen
+- uid: Menu.FastTravelScreen.WarpPointModeActive*
+  commentId: Overload:Menu.FastTravelScreen.WarpPointModeActive
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_WarpPointModeActive
+  name: WarpPointModeActive
+  nameWithType: FastTravelScreen.WarpPointModeActive
+  fullName: Menu.FastTravelScreen.WarpPointModeActive
+- uid: Menu.FastTravelScreen.CurrentFood*
+  commentId: Overload:Menu.FastTravelScreen.CurrentFood
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_CurrentFood
+  name: CurrentFood
+  nameWithType: FastTravelScreen.CurrentFood
+  fullName: Menu.FastTravelScreen.CurrentFood
+- uid: HUD.IOwnAHUD.CurrentFood
+  commentId: P:HUD.IOwnAHUD.CurrentFood
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_CurrentFood
+  name: CurrentFood
+  nameWithType: IOwnAHUD.CurrentFood
+  fullName: HUD.IOwnAHUD.CurrentFood
+- uid: Menu.FastTravelScreen.MapInput*
+  commentId: Overload:Menu.FastTravelScreen.MapInput
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_MapInput
+  name: MapInput
+  nameWithType: FastTravelScreen.MapInput
+  fullName: Menu.FastTravelScreen.MapInput
+- uid: HUD.IOwnAHUD.MapInput
+  commentId: P:HUD.IOwnAHUD.MapInput
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_MapInput
+  name: MapInput
+  nameWithType: IOwnAHUD.MapInput
+  fullName: HUD.IOwnAHUD.MapInput
+- uid: Global.Player.InputPackage
+  commentId: T:Global.Player.InputPackage
+  isExternal: true
+  href: Player.html
+  name: Player.InputPackage
+  nameWithType: Player.InputPackage
+  fullName: Player.InputPackage
+  spec.csharp:
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: .
+  - uid: Global.Player.InputPackage
+    name: InputPackage
+    isExternal: true
+    href: Player.InputPackage.html
+  spec.vb:
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: .
+  - uid: Global.Player.InputPackage
+    name: InputPackage
+    isExternal: true
+    href: Player.InputPackage.html
+- uid: Menu.FastTravelScreen.RevealMap*
+  commentId: Overload:Menu.FastTravelScreen.RevealMap
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_RevealMap
+  name: RevealMap
+  nameWithType: FastTravelScreen.RevealMap
+  fullName: Menu.FastTravelScreen.RevealMap
+- uid: HUD.IOwnAHUD.RevealMap
+  commentId: P:HUD.IOwnAHUD.RevealMap
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_RevealMap
+  name: RevealMap
+  nameWithType: IOwnAHUD.RevealMap
+  fullName: HUD.IOwnAHUD.RevealMap
+- uid: Menu.FastTravelScreen.MapOwnerInRoomPosition*
+  commentId: Overload:Menu.FastTravelScreen.MapOwnerInRoomPosition
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_MapOwnerInRoomPosition
+  name: MapOwnerInRoomPosition
+  nameWithType: FastTravelScreen.MapOwnerInRoomPosition
+  fullName: Menu.FastTravelScreen.MapOwnerInRoomPosition
+- uid: HUD.IOwnAHUD.MapOwnerInRoomPosition
+  commentId: P:HUD.IOwnAHUD.MapOwnerInRoomPosition
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_MapOwnerInRoomPosition
+  name: MapOwnerInRoomPosition
+  nameWithType: IOwnAHUD.MapOwnerInRoomPosition
+  fullName: HUD.IOwnAHUD.MapOwnerInRoomPosition
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Menu.FastTravelScreen.MapOwnerRoom*
+  commentId: Overload:Menu.FastTravelScreen.MapOwnerRoom
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_MapOwnerRoom
+  name: MapOwnerRoom
+  nameWithType: FastTravelScreen.MapOwnerRoom
+  fullName: Menu.FastTravelScreen.MapOwnerRoom
+- uid: HUD.IOwnAHUD.MapOwnerRoom
+  commentId: P:HUD.IOwnAHUD.MapOwnerRoom
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_MapOwnerRoom
+  name: MapOwnerRoom
+  nameWithType: IOwnAHUD.MapOwnerRoom
+  fullName: HUD.IOwnAHUD.MapOwnerRoom
+- uid: Menu.FastTravelScreen.MapDiscoveryActive*
+  commentId: Overload:Menu.FastTravelScreen.MapDiscoveryActive
+  isExternal: true
+  href: Menu.FastTravelScreen.html#Menu_FastTravelScreen_MapDiscoveryActive
+  name: MapDiscoveryActive
+  nameWithType: FastTravelScreen.MapDiscoveryActive
+  fullName: Menu.FastTravelScreen.MapDiscoveryActive
+- uid: HUD.IOwnAHUD.MapDiscoveryActive
+  commentId: P:HUD.IOwnAHUD.MapDiscoveryActive
+  parent: HUD.IOwnAHUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html#HUD_IOwnAHUD_MapDiscoveryActive
+  name: MapDiscoveryActive
+  nameWithType: IOwnAHUD.MapDiscoveryActive
+  fullName: HUD.IOwnAHUD.MapDiscoveryActive

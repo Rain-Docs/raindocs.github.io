@@ -1,0 +1,2639 @@
+### YamlMime:ManagedReference
+items:
+- uid: Watcher.BigMothPather
+  commentId: T:Watcher.BigMothPather
+  id: BigMothPather
+  parent: Watcher
+  children:
+  - Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)
+  - Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  - Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)
+  - Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  - Watcher.BigMothPather.bug
+  langs:
+  - csharp
+  - vb
+  name: BigMothPather
+  nameWithType: BigMothPather
+  fullName: Watcher.BigMothPather
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Watcher.BigMothPather</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class BigMothPather : BorderExitPather'
+    content.vb: Public Class BigMothPather Inherits BorderExitPather
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  - Global.PathFinder
+  - Global.BorderExitPather
+  inheritedMembers:
+  - Global.BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+  - Global.PathFinder.destination
+  - Global.PathFinder.nextDestination
+  - Global.PathFinder.currentlyFollowingDestination
+  - Global.PathFinder.pathGeneration
+  - Global.PathFinder.creatureFollowingGeneration
+  - Global.PathFinder.goalFoundGeneration
+  - Global.PathFinder.checkNextList
+  - Global.PathFinder.coveredArea
+  - Global.PathFinder.acceptablePathAge
+  - Global.PathFinder.minimumPossiblePathCost
+  - Global.PathFinder.fallbackPathingCell
+  - Global.PathFinder.timeUntilPathCertain
+  - Global.PathFinder.timeInGeneration
+  - Global.PathFinder.lastFollowingGeneration
+  - Global.PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone
+  - Global.PathFinder.forbiddenNode
+  - Global.PathFinder.WorldCells
+  - Global.PathFinder.WorldAITiles
+  - Global.PathFinder.CurrentRoomCells
+  - Global.PathFinder.realizedRoom
+  - Global.PathFinder.room
+  - Global.PathFinder.world
+  - Global.PathFinder.creature
+  - Global.PathFinder.accessibilityCenter
+  - Global.PathFinder.accessibilityMapper
+  - Global.PathFinder.debugDrawer
+  - Global.PathFinder.visualize
+  - Global.PathFinder.visualizePath
+  - Global.PathFinder.stepsPerFrame
+  - Global.PathFinder.accessibilityStepsPerFrame
+  - Global.PathFinder.nonShortcutRoomEntrancePos
+  - Global.PathFinder.walkPastPointOfNoReturn
+  - Global.PathFinder.forbiddenEntrance
+  - Global.PathFinder.forbiddenEntranceCounter
+  - Global.PathFinder.Update
+  - Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)
+  - Global.PathFinder.LeavingRoom
+  - Global.PathFinder.NewRoom(Room)
+  - Global.PathFinder.Reset(Room)
+  - Global.PathFinder.ForceNextDestination
+  - Global.PathFinder.InitiatePath(System.Int32)
+  - Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])
+  - Global.PathFinder.AccessibilityMappingDone
+  - Global.PathFinder.RestartPathFinding
+  - Global.PathFinder.DestinationExit(System.Int32,System.Int32)
+  - Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)
+  - Global.PathFinder.SetDestination(WorldCoordinate)
+  - Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+  - Global.PathFinder.AssignNewDestination(WorldCoordinate)
+  - Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+  - Global.PathFinder.AbortCurrentGenerationPathFinding
+  - Global.PathFinder.InThisRealizedRoom(WorldCoordinate)
+  - Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+  - Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+  - Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)
+  - Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)
+  - Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)
+  - Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)
+  - Global.PathFinder.OutOfElement(WorldCoordinate)
+  - Global.PathFinder.OutOfElement
+  - Global.PathFinder.CoordinateReachable(WorldCoordinate)
+  - Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  - Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+  - Global.PathFinder.CoordinateViable(WorldCoordinate)
+  - Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  - Global.PathFinder.ConnectAITile(System.Int32,System.Int32)
+  - Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+  - Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+  - Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+  - Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)
+  - Global.PathFinder.BestRegionTransportationGoal
+  - Global.PathFinder.DebugInfo(WorldCoordinate)
+  - Global.PathFinder.LogWorldCellState
+  - Global.PathFinder.CoordinateCost(WorldCoordinate)
+  - Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)
+  - Global.PathFinder.lookingForImpossiblePath
+  - Global.PathFinder.DoneMappingAccessibility
+  - Global.PathFinder.creaturePos
+  - Global.PathFinder.creatureType
+  - Global.PathFinder.GetDestination
+  - Global.PathFinder.GetEffectualDestination
+  - Global.PathFinder.DestInRoom
+  - Global.AIModule.AI
+  - Global.AIModule.Utility
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)
+  commentId: M:Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)
+  id: '#ctor(ArtificialIntelligence,World,AbstractCreature)'
+  parent: Watcher.BigMothPather
+  langs:
+  - csharp
+  - vb
+  name: BigMothPather(ArtificialIntelligence, World, AbstractCreature)
+  nameWithType: BigMothPather.BigMothPather(ArtificialIntelligence, World, AbstractCreature)
+  fullName: Watcher.BigMothPather.BigMothPather(ArtificialIntelligence, World, AbstractCreature)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Watcher.BigMothPather</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BigMothPather(ArtificialIntelligence AI, World world, AbstractCreature creature)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:Watcher.BigMothPather.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, world As World, creature As AbstractCreature)
+  overload: Watcher.BigMothPather.#ctor*
+  nameWithType.vb: BigMothPather.New(ArtificialIntelligence, World, AbstractCreature)
+  fullName.vb: Watcher.BigMothPather.New(ArtificialIntelligence, World, AbstractCreature)
+  name.vb: New(ArtificialIntelligence, World, AbstractCreature)
+- uid: Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  commentId: M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  id: CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  parent: Watcher.BigMothPather
+  langs:
+  - csharp
+  - vb
+  name: CheckConnectionCost(PathingCell, PathingCell, MovementConnection, bool)
+  nameWithType: BigMothPather.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, bool)
+  fullName: Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override PathCost CheckConnectionCost(PathFinder.PathingCell start, PathFinder.PathingCell goal, MovementConnection connection, bool followingPath)
+    parameters:
+    - id: start
+      type: Global.PathFinder.PathingCell
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>start</parameter>
+            <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: goal
+      type: Global.PathFinder.PathingCell
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>goal</parameter>
+            <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: connection
+      type: Global.MovementConnection
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>connection</parameter>
+            <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: followingPath
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>followingPath</parameter>
+            <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Function CheckConnectionCost(start As PathFinder.PathingCell, goal As PathFinder.PathingCell, connection As MovementConnection, followingPath As Boolean) As PathCost
+  overridden: Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  overload: Watcher.BigMothPather.CheckConnectionCost*
+  nameWithType.vb: BigMothPather.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, Boolean)
+  fullName.vb: Watcher.BigMothPather.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, Boolean)
+  name.vb: CheckConnectionCost(PathingCell, PathingCell, MovementConnection, Boolean)
+- uid: Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  commentId: M:Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  id: HeuristicForCell(PathFinder.PathingCell,PathCost)
+  parent: Watcher.BigMothPather
+  langs:
+  - csharp
+  - vb
+  name: HeuristicForCell(PathingCell, PathCost)
+  nameWithType: BigMothPather.HeuristicForCell(PathFinder.PathingCell, PathCost)
+  fullName: Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell, PathCost)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override PathCost HeuristicForCell(PathFinder.PathingCell cell, PathCost costToGoal)
+    parameters:
+    - id: cell
+      type: Global.PathFinder.PathingCell
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cell</parameter>
+            <parameter>M:Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+          </include>
+        </markup>
+    - id: costToGoal
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>costToGoal</parameter>
+            <parameter>M:Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BigMothPather.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Function HeuristicForCell(cell As PathFinder.PathingCell, costToGoal As PathCost) As PathCost
+  overridden: Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  overload: Watcher.BigMothPather.HeuristicForCell*
+- uid: Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)
+  commentId: M:Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)
+  id: FollowPath(WorldCoordinate,System.Boolean)
+  parent: Watcher.BigMothPather
+  langs:
+  - csharp
+  - vb
+  name: FollowPath(WorldCoordinate, bool)
+  nameWithType: BigMothPather.FollowPath(WorldCoordinate, bool)
+  fullName: Watcher.BigMothPather.FollowPath(WorldCoordinate, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MovementConnection FollowPath(WorldCoordinate originPos, bool actuallyFollowingThisPath)
+    parameters:
+    - id: originPos
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>originPos</parameter>
+            <parameter>M:Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: actuallyFollowingThisPath
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>actuallyFollowingThisPath</parameter>
+            <parameter>M:Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.MovementConnection
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BigMothPather.FollowPath(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FollowPath(originPos As WorldCoordinate, actuallyFollowingThisPath As Boolean) As MovementConnection
+  overload: Watcher.BigMothPather.FollowPath*
+  nameWithType.vb: BigMothPather.FollowPath(WorldCoordinate, Boolean)
+  fullName.vb: Watcher.BigMothPather.FollowPath(WorldCoordinate, Boolean)
+  name.vb: FollowPath(WorldCoordinate, Boolean)
+- uid: Watcher.BigMothPather.bug
+  commentId: P:Watcher.BigMothPather.bug
+  id: bug
+  parent: Watcher.BigMothPather
+  langs:
+  - csharp
+  - vb
+  name: bug
+  nameWithType: BigMothPather.bug
+  fullName: Watcher.BigMothPather.bug
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.BigMothPather.bug</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BigMoth bug { get; }
+    parameters: []
+    return:
+      type: Watcher.BigMoth
+    content.vb: Public ReadOnly Property bug As BigMoth
+  overload: Watcher.BigMothPather.bug*
+references:
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.PathFinder
+  commentId: T:Global.PathFinder
+  isExternal: true
+  href: PathFinder.html
+  name: PathFinder
+  nameWithType: PathFinder
+  fullName: PathFinder
+- uid: Global.BorderExitPather
+  commentId: T:Global.BorderExitPather
+  isExternal: true
+  href: BorderExitPather.html
+  name: BorderExitPather
+  nameWithType: BorderExitPather
+  fullName: BorderExitPather
+- uid: Global.BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+  commentId: M:Global.BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+  parent: Global.BorderExitPather
+  isExternal: true
+  href: Global.BorderExitPather.html#BorderExitPather_RestrictedOriginPos_WorldCoordinate_
+  name: RestrictedOriginPos(WorldCoordinate)
+  nameWithType: BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+  fullName: BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+    name: RestrictedOriginPos
+    isExternal: true
+    href: Global.BorderExitPather.html#BorderExitPather_RestrictedOriginPos_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.BorderExitPather.RestrictedOriginPos(WorldCoordinate)
+    name: RestrictedOriginPos
+    isExternal: true
+    href: Global.BorderExitPather.html#BorderExitPather_RestrictedOriginPos_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.destination
+  commentId: F:Global.PathFinder.destination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_destination
+  name: destination
+  nameWithType: PathFinder.destination
+  fullName: PathFinder.destination
+- uid: Global.PathFinder.nextDestination
+  commentId: F:Global.PathFinder.nextDestination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_nextDestination
+  name: nextDestination
+  nameWithType: PathFinder.nextDestination
+  fullName: PathFinder.nextDestination
+- uid: Global.PathFinder.currentlyFollowingDestination
+  commentId: F:Global.PathFinder.currentlyFollowingDestination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_currentlyFollowingDestination
+  name: currentlyFollowingDestination
+  nameWithType: PathFinder.currentlyFollowingDestination
+  fullName: PathFinder.currentlyFollowingDestination
+- uid: Global.PathFinder.pathGeneration
+  commentId: F:Global.PathFinder.pathGeneration
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_pathGeneration
+  name: pathGeneration
+  nameWithType: PathFinder.pathGeneration
+  fullName: PathFinder.pathGeneration
+- uid: Global.PathFinder.creatureFollowingGeneration
+  commentId: F:Global.PathFinder.creatureFollowingGeneration
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_creatureFollowingGeneration
+  name: creatureFollowingGeneration
+  nameWithType: PathFinder.creatureFollowingGeneration
+  fullName: PathFinder.creatureFollowingGeneration
+- uid: Global.PathFinder.goalFoundGeneration
+  commentId: F:Global.PathFinder.goalFoundGeneration
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_goalFoundGeneration
+  name: goalFoundGeneration
+  nameWithType: PathFinder.goalFoundGeneration
+  fullName: PathFinder.goalFoundGeneration
+- uid: Global.PathFinder.checkNextList
+  commentId: F:Global.PathFinder.checkNextList
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_checkNextList
+  name: checkNextList
+  nameWithType: PathFinder.checkNextList
+  fullName: PathFinder.checkNextList
+- uid: Global.PathFinder.coveredArea
+  commentId: F:Global.PathFinder.coveredArea
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_coveredArea
+  name: coveredArea
+  nameWithType: PathFinder.coveredArea
+  fullName: PathFinder.coveredArea
+- uid: Global.PathFinder.acceptablePathAge
+  commentId: F:Global.PathFinder.acceptablePathAge
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_acceptablePathAge
+  name: acceptablePathAge
+  nameWithType: PathFinder.acceptablePathAge
+  fullName: PathFinder.acceptablePathAge
+- uid: Global.PathFinder.minimumPossiblePathCost
+  commentId: F:Global.PathFinder.minimumPossiblePathCost
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_minimumPossiblePathCost
+  name: minimumPossiblePathCost
+  nameWithType: PathFinder.minimumPossiblePathCost
+  fullName: PathFinder.minimumPossiblePathCost
+- uid: Global.PathFinder.fallbackPathingCell
+  commentId: F:Global.PathFinder.fallbackPathingCell
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_fallbackPathingCell
+  name: fallbackPathingCell
+  nameWithType: PathFinder.fallbackPathingCell
+  fullName: PathFinder.fallbackPathingCell
+- uid: Global.PathFinder.timeUntilPathCertain
+  commentId: F:Global.PathFinder.timeUntilPathCertain
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_timeUntilPathCertain
+  name: timeUntilPathCertain
+  nameWithType: PathFinder.timeUntilPathCertain
+  fullName: PathFinder.timeUntilPathCertain
+- uid: Global.PathFinder.timeInGeneration
+  commentId: F:Global.PathFinder.timeInGeneration
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_timeInGeneration
+  name: timeInGeneration
+  nameWithType: PathFinder.timeInGeneration
+  fullName: PathFinder.timeInGeneration
+- uid: Global.PathFinder.lastFollowingGeneration
+  commentId: F:Global.PathFinder.lastFollowingGeneration
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_lastFollowingGeneration
+  name: lastFollowingGeneration
+  nameWithType: PathFinder.lastFollowingGeneration
+  fullName: PathFinder.lastFollowingGeneration
+- uid: Global.PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone
+  commentId: F:Global.PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_reAssignDestinationOnceAccessibilityMappingIsDone
+  name: reAssignDestinationOnceAccessibilityMappingIsDone
+  nameWithType: PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone
+  fullName: PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone
+- uid: Global.PathFinder.forbiddenNode
+  commentId: F:Global.PathFinder.forbiddenNode
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_forbiddenNode
+  name: forbiddenNode
+  nameWithType: PathFinder.forbiddenNode
+  fullName: PathFinder.forbiddenNode
+- uid: Global.PathFinder.WorldCells
+  commentId: F:Global.PathFinder.WorldCells
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_WorldCells
+  name: WorldCells
+  nameWithType: PathFinder.WorldCells
+  fullName: PathFinder.WorldCells
+- uid: Global.PathFinder.WorldAITiles
+  commentId: F:Global.PathFinder.WorldAITiles
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_WorldAITiles
+  name: WorldAITiles
+  nameWithType: PathFinder.WorldAITiles
+  fullName: PathFinder.WorldAITiles
+- uid: Global.PathFinder.CurrentRoomCells
+  commentId: F:Global.PathFinder.CurrentRoomCells
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CurrentRoomCells
+  name: CurrentRoomCells
+  nameWithType: PathFinder.CurrentRoomCells
+  fullName: PathFinder.CurrentRoomCells
+- uid: Global.PathFinder.realizedRoom
+  commentId: F:Global.PathFinder.realizedRoom
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_realizedRoom
+  name: realizedRoom
+  nameWithType: PathFinder.realizedRoom
+  fullName: PathFinder.realizedRoom
+- uid: Global.PathFinder.room
+  commentId: F:Global.PathFinder.room
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_room
+  name: room
+  nameWithType: PathFinder.room
+  fullName: PathFinder.room
+- uid: Global.PathFinder.world
+  commentId: F:Global.PathFinder.world
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_world
+  name: world
+  nameWithType: PathFinder.world
+  fullName: PathFinder.world
+- uid: Global.PathFinder.creature
+  commentId: F:Global.PathFinder.creature
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_creature
+  name: creature
+  nameWithType: PathFinder.creature
+  fullName: PathFinder.creature
+- uid: Global.PathFinder.accessibilityCenter
+  commentId: F:Global.PathFinder.accessibilityCenter
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_accessibilityCenter
+  name: accessibilityCenter
+  nameWithType: PathFinder.accessibilityCenter
+  fullName: PathFinder.accessibilityCenter
+- uid: Global.PathFinder.accessibilityMapper
+  commentId: F:Global.PathFinder.accessibilityMapper
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_accessibilityMapper
+  name: accessibilityMapper
+  nameWithType: PathFinder.accessibilityMapper
+  fullName: PathFinder.accessibilityMapper
+- uid: Global.PathFinder.debugDrawer
+  commentId: F:Global.PathFinder.debugDrawer
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_debugDrawer
+  name: debugDrawer
+  nameWithType: PathFinder.debugDrawer
+  fullName: PathFinder.debugDrawer
+- uid: Global.PathFinder.visualize
+  commentId: F:Global.PathFinder.visualize
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_visualize
+  name: visualize
+  nameWithType: PathFinder.visualize
+  fullName: PathFinder.visualize
+- uid: Global.PathFinder.visualizePath
+  commentId: F:Global.PathFinder.visualizePath
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_visualizePath
+  name: visualizePath
+  nameWithType: PathFinder.visualizePath
+  fullName: PathFinder.visualizePath
+- uid: Global.PathFinder.stepsPerFrame
+  commentId: F:Global.PathFinder.stepsPerFrame
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_stepsPerFrame
+  name: stepsPerFrame
+  nameWithType: PathFinder.stepsPerFrame
+  fullName: PathFinder.stepsPerFrame
+- uid: Global.PathFinder.accessibilityStepsPerFrame
+  commentId: F:Global.PathFinder.accessibilityStepsPerFrame
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_accessibilityStepsPerFrame
+  name: accessibilityStepsPerFrame
+  nameWithType: PathFinder.accessibilityStepsPerFrame
+  fullName: PathFinder.accessibilityStepsPerFrame
+- uid: Global.PathFinder.nonShortcutRoomEntrancePos
+  commentId: F:Global.PathFinder.nonShortcutRoomEntrancePos
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_nonShortcutRoomEntrancePos
+  name: nonShortcutRoomEntrancePos
+  nameWithType: PathFinder.nonShortcutRoomEntrancePos
+  fullName: PathFinder.nonShortcutRoomEntrancePos
+- uid: Global.PathFinder.walkPastPointOfNoReturn
+  commentId: F:Global.PathFinder.walkPastPointOfNoReturn
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_walkPastPointOfNoReturn
+  name: walkPastPointOfNoReturn
+  nameWithType: PathFinder.walkPastPointOfNoReturn
+  fullName: PathFinder.walkPastPointOfNoReturn
+- uid: Global.PathFinder.forbiddenEntrance
+  commentId: F:Global.PathFinder.forbiddenEntrance
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_forbiddenEntrance
+  name: forbiddenEntrance
+  nameWithType: PathFinder.forbiddenEntrance
+  fullName: PathFinder.forbiddenEntrance
+- uid: Global.PathFinder.forbiddenEntranceCounter
+  commentId: F:Global.PathFinder.forbiddenEntranceCounter
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_forbiddenEntranceCounter
+  name: forbiddenEntranceCounter
+  nameWithType: PathFinder.forbiddenEntranceCounter
+  fullName: PathFinder.forbiddenEntranceCounter
+- uid: Global.PathFinder.Update
+  commentId: M:Global.PathFinder.Update
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_Update
+  name: Update()
+  nameWithType: PathFinder.Update()
+  fullName: PathFinder.Update()
+  spec.csharp:
+  - uid: Global.PathFinder.Update
+    name: Update
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.Update
+    name: Update
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_Update
+  - name: (
+  - name: )
+- uid: Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)
+  commentId: M:Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CheckNeighbours_PathFinder_PathingCell_
+  name: CheckNeighbours(PathingCell)
+  nameWithType: PathFinder.CheckNeighbours(PathFinder.PathingCell)
+  fullName: PathFinder.CheckNeighbours(PathFinder.PathingCell)
+  spec.csharp:
+  - uid: Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)
+    name: CheckNeighbours
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CheckNeighbours_PathFinder_PathingCell_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)
+    name: CheckNeighbours
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CheckNeighbours_PathFinder_PathingCell_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: )
+- uid: Global.PathFinder.LeavingRoom
+  commentId: M:Global.PathFinder.LeavingRoom
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_LeavingRoom
+  name: LeavingRoom()
+  nameWithType: PathFinder.LeavingRoom()
+  fullName: PathFinder.LeavingRoom()
+  spec.csharp:
+  - uid: Global.PathFinder.LeavingRoom
+    name: LeavingRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_LeavingRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.LeavingRoom
+    name: LeavingRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_LeavingRoom
+  - name: (
+  - name: )
+- uid: Global.PathFinder.NewRoom(Room)
+  commentId: M:Global.PathFinder.NewRoom(Room)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: PathFinder.NewRoom(Room)
+  fullName: PathFinder.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.PathFinder.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.PathFinder.Reset(Room)
+  commentId: M:Global.PathFinder.Reset(Room)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_Reset_Room_
+  name: Reset(Room)
+  nameWithType: PathFinder.Reset(Room)
+  fullName: PathFinder.Reset(Room)
+  spec.csharp:
+  - uid: Global.PathFinder.Reset(Room)
+    name: Reset
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_Reset_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.Reset(Room)
+    name: Reset
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_Reset_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.PathFinder.ForceNextDestination
+  commentId: M:Global.PathFinder.ForceNextDestination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_ForceNextDestination
+  name: ForceNextDestination()
+  nameWithType: PathFinder.ForceNextDestination()
+  fullName: PathFinder.ForceNextDestination()
+  spec.csharp:
+  - uid: Global.PathFinder.ForceNextDestination
+    name: ForceNextDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ForceNextDestination
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.ForceNextDestination
+    name: ForceNextDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ForceNextDestination
+  - name: (
+  - name: )
+- uid: Global.PathFinder.InitiatePath(System.Int32)
+  commentId: M:Global.PathFinder.InitiatePath(System.Int32)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_InitiatePath_System_Int32_
+  name: InitiatePath(int)
+  nameWithType: PathFinder.InitiatePath(int)
+  fullName: PathFinder.InitiatePath(int)
+  nameWithType.vb: PathFinder.InitiatePath(Integer)
+  fullName.vb: PathFinder.InitiatePath(Integer)
+  name.vb: InitiatePath(Integer)
+  spec.csharp:
+  - uid: Global.PathFinder.InitiatePath(System.Int32)
+    name: InitiatePath
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InitiatePath_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.InitiatePath(System.Int32)
+    name: InitiatePath
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InitiatePath_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])
+  commentId: M:Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_InitiAccessibilityMapping_WorldCoordinate_RWCustom_IntVector2___
+  name: InitiAccessibilityMapping(WorldCoordinate, IntVector2[])
+  nameWithType: PathFinder.InitiAccessibilityMapping(WorldCoordinate, IntVector2[])
+  fullName: PathFinder.InitiAccessibilityMapping(WorldCoordinate, RWCustom.IntVector2[])
+  nameWithType.vb: PathFinder.InitiAccessibilityMapping(WorldCoordinate, IntVector2())
+  fullName.vb: PathFinder.InitiAccessibilityMapping(WorldCoordinate, RWCustom.IntVector2())
+  name.vb: InitiAccessibilityMapping(WorldCoordinate, IntVector2())
+  spec.csharp:
+  - uid: Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])
+    name: InitiAccessibilityMapping
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InitiAccessibilityMapping_WorldCoordinate_RWCustom_IntVector2___
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])
+    name: InitiAccessibilityMapping
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InitiAccessibilityMapping_WorldCoordinate_RWCustom_IntVector2___
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: (
+  - name: )
+  - name: )
+- uid: Global.PathFinder.AccessibilityMappingDone
+  commentId: M:Global.PathFinder.AccessibilityMappingDone
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AccessibilityMappingDone
+  name: AccessibilityMappingDone()
+  nameWithType: PathFinder.AccessibilityMappingDone()
+  fullName: PathFinder.AccessibilityMappingDone()
+  spec.csharp:
+  - uid: Global.PathFinder.AccessibilityMappingDone
+    name: AccessibilityMappingDone
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AccessibilityMappingDone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AccessibilityMappingDone
+    name: AccessibilityMappingDone
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AccessibilityMappingDone
+  - name: (
+  - name: )
+- uid: Global.PathFinder.RestartPathFinding
+  commentId: M:Global.PathFinder.RestartPathFinding
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_RestartPathFinding
+  name: RestartPathFinding()
+  nameWithType: PathFinder.RestartPathFinding()
+  fullName: PathFinder.RestartPathFinding()
+  spec.csharp:
+  - uid: Global.PathFinder.RestartPathFinding
+    name: RestartPathFinding
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_RestartPathFinding
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.RestartPathFinding
+    name: RestartPathFinding
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_RestartPathFinding
+  - name: (
+  - name: )
+- uid: Global.PathFinder.DestinationExit(System.Int32,System.Int32)
+  commentId: M:Global.PathFinder.DestinationExit(System.Int32,System.Int32)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_DestinationExit_System_Int32_System_Int32_
+  name: DestinationExit(int, int)
+  nameWithType: PathFinder.DestinationExit(int, int)
+  fullName: PathFinder.DestinationExit(int, int)
+  nameWithType.vb: PathFinder.DestinationExit(Integer, Integer)
+  fullName.vb: PathFinder.DestinationExit(Integer, Integer)
+  name.vb: DestinationExit(Integer, Integer)
+  spec.csharp:
+  - uid: Global.PathFinder.DestinationExit(System.Int32,System.Int32)
+    name: DestinationExit
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DestinationExit_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.DestinationExit(System.Int32,System.Int32)
+    name: DestinationExit
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DestinationExit_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)
+  commentId: M:Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_DestinationHasChanged_WorldCoordinate_WorldCoordinate_
+  name: DestinationHasChanged(WorldCoordinate, WorldCoordinate)
+  nameWithType: PathFinder.DestinationHasChanged(WorldCoordinate, WorldCoordinate)
+  fullName: PathFinder.DestinationHasChanged(WorldCoordinate, WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)
+    name: DestinationHasChanged
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DestinationHasChanged_WorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)
+    name: DestinationHasChanged
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DestinationHasChanged_WorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.SetDestination(WorldCoordinate)
+  commentId: M:Global.PathFinder.SetDestination(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_SetDestination_WorldCoordinate_
+  name: SetDestination(WorldCoordinate)
+  nameWithType: PathFinder.SetDestination(WorldCoordinate)
+  fullName: PathFinder.SetDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+  commentId: M:Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_FindReachableNeighbourIfPossible_WorldCoordinate_
+  name: FindReachableNeighbourIfPossible(WorldCoordinate)
+  nameWithType: PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+  fullName: PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+    name: FindReachableNeighbourIfPossible
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FindReachableNeighbourIfPossible_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)
+    name: FindReachableNeighbourIfPossible
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FindReachableNeighbourIfPossible_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.AssignNewDestination(WorldCoordinate)
+  commentId: M:Global.PathFinder.AssignNewDestination(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AssignNewDestination_WorldCoordinate_
+  name: AssignNewDestination(WorldCoordinate)
+  nameWithType: PathFinder.AssignNewDestination(WorldCoordinate)
+  fullName: PathFinder.AssignNewDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.AssignNewDestination(WorldCoordinate)
+    name: AssignNewDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AssignNewDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AssignNewDestination(WorldCoordinate)
+    name: AssignNewDestination
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AssignNewDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+  commentId: M:Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AddToCheckNextList_PathFinder_PathingCell_
+  name: AddToCheckNextList(PathingCell)
+  nameWithType: PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+  fullName: PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+  spec.csharp:
+  - uid: Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+    name: AddToCheckNextList
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AddToCheckNextList_PathFinder_PathingCell_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)
+    name: AddToCheckNextList
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AddToCheckNextList_PathFinder_PathingCell_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: )
+- uid: Global.PathFinder.AbortCurrentGenerationPathFinding
+  commentId: M:Global.PathFinder.AbortCurrentGenerationPathFinding
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AbortCurrentGenerationPathFinding
+  name: AbortCurrentGenerationPathFinding()
+  nameWithType: PathFinder.AbortCurrentGenerationPathFinding()
+  fullName: PathFinder.AbortCurrentGenerationPathFinding()
+  spec.csharp:
+  - uid: Global.PathFinder.AbortCurrentGenerationPathFinding
+    name: AbortCurrentGenerationPathFinding
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AbortCurrentGenerationPathFinding
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AbortCurrentGenerationPathFinding
+    name: AbortCurrentGenerationPathFinding
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AbortCurrentGenerationPathFinding
+  - name: (
+  - name: )
+- uid: Global.PathFinder.InThisRealizedRoom(WorldCoordinate)
+  commentId: M:Global.PathFinder.InThisRealizedRoom(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_InThisRealizedRoom_WorldCoordinate_
+  name: InThisRealizedRoom(WorldCoordinate)
+  nameWithType: PathFinder.InThisRealizedRoom(WorldCoordinate)
+  fullName: PathFinder.InThisRealizedRoom(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.InThisRealizedRoom(WorldCoordinate)
+    name: InThisRealizedRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InThisRealizedRoom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.InThisRealizedRoom(WorldCoordinate)
+    name: InThisRealizedRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_InThisRealizedRoom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+  commentId: M:Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_PathingCellAtWorldCoordinate_WorldCoordinate_
+  name: PathingCellAtWorldCoordinate(WorldCoordinate)
+  nameWithType: PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+  fullName: PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+    name: PathingCellAtWorldCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_PathingCellAtWorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)
+    name: PathingCellAtWorldCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_PathingCellAtWorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+  commentId: M:Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AITileAtWorldCoordinate_WorldCoordinate_
+  name: AITileAtWorldCoordinate(WorldCoordinate)
+  nameWithType: PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+  fullName: PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+    name: AITileAtWorldCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AITileAtWorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)
+    name: AITileAtWorldCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AITileAtWorldCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)
+  commentId: M:Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_ConnectionAtCoordinate_System_Boolean_WorldCoordinate_System_Int32_
+  name: ConnectionAtCoordinate(bool, WorldCoordinate, int)
+  nameWithType: PathFinder.ConnectionAtCoordinate(bool, WorldCoordinate, int)
+  fullName: PathFinder.ConnectionAtCoordinate(bool, WorldCoordinate, int)
+  nameWithType.vb: PathFinder.ConnectionAtCoordinate(Boolean, WorldCoordinate, Integer)
+  fullName.vb: PathFinder.ConnectionAtCoordinate(Boolean, WorldCoordinate, Integer)
+  name.vb: ConnectionAtCoordinate(Boolean, WorldCoordinate, Integer)
+  spec.csharp:
+  - uid: Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)
+    name: ConnectionAtCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectionAtCoordinate_System_Boolean_WorldCoordinate_System_Int32_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)
+    name: ConnectionAtCoordinate
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectionAtCoordinate_System_Boolean_WorldCoordinate_System_Int32_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)
+  commentId: M:Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_ConnectionsOfAbstractNodeInRealizedRoom_System_Boolean_WorldCoordinate_System_Int32_
+  name: ConnectionsOfAbstractNodeInRealizedRoom(bool, WorldCoordinate, int)
+  nameWithType: PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(bool, WorldCoordinate, int)
+  fullName: PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(bool, WorldCoordinate, int)
+  nameWithType.vb: PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(Boolean, WorldCoordinate, Integer)
+  fullName.vb: PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(Boolean, WorldCoordinate, Integer)
+  name.vb: ConnectionsOfAbstractNodeInRealizedRoom(Boolean, WorldCoordinate, Integer)
+  spec.csharp:
+  - uid: Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)
+    name: ConnectionsOfAbstractNodeInRealizedRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectionsOfAbstractNodeInRealizedRoom_System_Boolean_WorldCoordinate_System_Int32_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)
+    name: ConnectionsOfAbstractNodeInRealizedRoom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectionsOfAbstractNodeInRealizedRoom_System_Boolean_WorldCoordinate_System_Int32_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)
+  commentId: M:Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_FromRealizedToWorldConnection_System_Boolean_WorldCoordinate_
+  name: FromRealizedToWorldConnection(bool, WorldCoordinate)
+  nameWithType: PathFinder.FromRealizedToWorldConnection(bool, WorldCoordinate)
+  fullName: PathFinder.FromRealizedToWorldConnection(bool, WorldCoordinate)
+  nameWithType.vb: PathFinder.FromRealizedToWorldConnection(Boolean, WorldCoordinate)
+  fullName.vb: PathFinder.FromRealizedToWorldConnection(Boolean, WorldCoordinate)
+  name.vb: FromRealizedToWorldConnection(Boolean, WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)
+    name: FromRealizedToWorldConnection
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FromRealizedToWorldConnection_System_Boolean_WorldCoordinate_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)
+    name: FromRealizedToWorldConnection
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FromRealizedToWorldConnection_System_Boolean_WorldCoordinate_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)
+  commentId: M:Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_FromWorldToRealizedRoomShortCutConnection_System_Boolean_WorldCoordinate_
+  name: FromWorldToRealizedRoomShortCutConnection(bool, WorldCoordinate)
+  nameWithType: PathFinder.FromWorldToRealizedRoomShortCutConnection(bool, WorldCoordinate)
+  fullName: PathFinder.FromWorldToRealizedRoomShortCutConnection(bool, WorldCoordinate)
+  nameWithType.vb: PathFinder.FromWorldToRealizedRoomShortCutConnection(Boolean, WorldCoordinate)
+  fullName.vb: PathFinder.FromWorldToRealizedRoomShortCutConnection(Boolean, WorldCoordinate)
+  name.vb: FromWorldToRealizedRoomShortCutConnection(Boolean, WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)
+    name: FromWorldToRealizedRoomShortCutConnection
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FromWorldToRealizedRoomShortCutConnection_System_Boolean_WorldCoordinate_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)
+    name: FromWorldToRealizedRoomShortCutConnection
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_FromWorldToRealizedRoomShortCutConnection_System_Boolean_WorldCoordinate_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.OutOfElement(WorldCoordinate)
+  commentId: M:Global.PathFinder.OutOfElement(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_OutOfElement_WorldCoordinate_
+  name: OutOfElement(WorldCoordinate)
+  nameWithType: PathFinder.OutOfElement(WorldCoordinate)
+  fullName: PathFinder.OutOfElement(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.OutOfElement(WorldCoordinate)
+    name: OutOfElement
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_OutOfElement_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.OutOfElement(WorldCoordinate)
+    name: OutOfElement
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_OutOfElement_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.OutOfElement
+  commentId: M:Global.PathFinder.OutOfElement
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_OutOfElement
+  name: OutOfElement()
+  nameWithType: PathFinder.OutOfElement()
+  fullName: PathFinder.OutOfElement()
+  spec.csharp:
+  - uid: Global.PathFinder.OutOfElement
+    name: OutOfElement
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_OutOfElement
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.OutOfElement
+    name: OutOfElement
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_OutOfElement
+  - name: (
+  - name: )
+- uid: Global.PathFinder.CoordinateReachable(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinateReachable(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinateReachable_WorldCoordinate_
+  name: CoordinateReachable(WorldCoordinate)
+  nameWithType: PathFinder.CoordinateReachable(WorldCoordinate)
+  fullName: PathFinder.CoordinateReachable(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinateReachable(WorldCoordinate)
+    name: CoordinateReachable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateReachable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinateReachable(WorldCoordinate)
+    name: CoordinateReachable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateReachable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinatePossibleToGetBackFrom_WorldCoordinate_
+  name: CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  nameWithType: PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  fullName: PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+    name: CoordinatePossibleToGetBackFrom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinatePossibleToGetBackFrom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)
+    name: CoordinatePossibleToGetBackFrom
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinatePossibleToGetBackFrom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinateReachableAndGetbackable_WorldCoordinate_
+  name: CoordinateReachableAndGetbackable(WorldCoordinate)
+  nameWithType: PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+  fullName: PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+    name: CoordinateReachableAndGetbackable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateReachableAndGetbackable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)
+    name: CoordinateReachableAndGetbackable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateReachableAndGetbackable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.CoordinateViable(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinateViable(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinateViable_WorldCoordinate_
+  name: CoordinateViable(WorldCoordinate)
+  nameWithType: PathFinder.CoordinateViable(WorldCoordinate)
+  fullName: PathFinder.CoordinateViable(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinateViable(WorldCoordinate)
+    name: CoordinateViable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateViable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinateViable(WorldCoordinate)
+    name: CoordinateViable
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateViable_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinateAtCurrentPathingGeneration_WorldCoordinate_
+  name: CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  nameWithType: PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  fullName: PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+    name: CoordinateAtCurrentPathingGeneration
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateAtCurrentPathingGeneration_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+    name: CoordinateAtCurrentPathingGeneration
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateAtCurrentPathingGeneration_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.ConnectAITile(System.Int32,System.Int32)
+  commentId: M:Global.PathFinder.ConnectAITile(System.Int32,System.Int32)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_ConnectAITile_System_Int32_System_Int32_
+  name: ConnectAITile(int, int)
+  nameWithType: PathFinder.ConnectAITile(int, int)
+  fullName: PathFinder.ConnectAITile(int, int)
+  nameWithType.vb: PathFinder.ConnectAITile(Integer, Integer)
+  fullName.vb: PathFinder.ConnectAITile(Integer, Integer)
+  name.vb: ConnectAITile(Integer, Integer)
+  spec.csharp:
+  - uid: Global.PathFinder.ConnectAITile(System.Int32,System.Int32)
+    name: ConnectAITile
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectAITile_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.ConnectAITile(System.Int32,System.Int32)
+    name: ConnectAITile
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ConnectAITile_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+  commentId: M:Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CreatePathForAbstractreature_WorldCoordinate_
+  name: CreatePathForAbstractreature(WorldCoordinate)
+  nameWithType: PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+  fullName: PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+    name: CreatePathForAbstractreature
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CreatePathForAbstractreature_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)
+    name: CreatePathForAbstractreature
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CreatePathForAbstractreature_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+  commentId: M:Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_AwayFromForbiddenEntrance_WorldCoordinate_
+  name: AwayFromForbiddenEntrance(WorldCoordinate)
+  nameWithType: PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+  fullName: PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+    name: AwayFromForbiddenEntrance
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AwayFromForbiddenEntrance_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)
+    name: AwayFromForbiddenEntrance
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_AwayFromForbiddenEntrance_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+  commentId: M:Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_ForbiddenEntranceDist_WorldCoordinate_
+  name: ForbiddenEntranceDist(WorldCoordinate)
+  nameWithType: PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+  fullName: PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+    name: ForbiddenEntranceDist
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ForbiddenEntranceDist_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)
+    name: ForbiddenEntranceDist
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_ForbiddenEntranceDist_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)
+  commentId: M:Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_PathWithExits_WorldCoordinate_System_Boolean_
+  name: PathWithExits(WorldCoordinate, bool)
+  nameWithType: PathFinder.PathWithExits(WorldCoordinate, bool)
+  fullName: PathFinder.PathWithExits(WorldCoordinate, bool)
+  nameWithType.vb: PathFinder.PathWithExits(WorldCoordinate, Boolean)
+  fullName.vb: PathFinder.PathWithExits(WorldCoordinate, Boolean)
+  name.vb: PathWithExits(WorldCoordinate, Boolean)
+  spec.csharp:
+  - uid: Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)
+    name: PathWithExits
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_PathWithExits_WorldCoordinate_System_Boolean_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)
+    name: PathWithExits
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_PathWithExits_WorldCoordinate_System_Boolean_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.PathFinder.BestRegionTransportationGoal
+  commentId: M:Global.PathFinder.BestRegionTransportationGoal
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_BestRegionTransportationGoal
+  name: BestRegionTransportationGoal()
+  nameWithType: PathFinder.BestRegionTransportationGoal()
+  fullName: PathFinder.BestRegionTransportationGoal()
+  spec.csharp:
+  - uid: Global.PathFinder.BestRegionTransportationGoal
+    name: BestRegionTransportationGoal
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_BestRegionTransportationGoal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.BestRegionTransportationGoal
+    name: BestRegionTransportationGoal
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_BestRegionTransportationGoal
+  - name: (
+  - name: )
+- uid: Global.PathFinder.DebugInfo(WorldCoordinate)
+  commentId: M:Global.PathFinder.DebugInfo(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_DebugInfo_WorldCoordinate_
+  name: DebugInfo(WorldCoordinate)
+  nameWithType: PathFinder.DebugInfo(WorldCoordinate)
+  fullName: PathFinder.DebugInfo(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.DebugInfo(WorldCoordinate)
+    name: DebugInfo
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DebugInfo_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.DebugInfo(WorldCoordinate)
+    name: DebugInfo
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_DebugInfo_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.LogWorldCellState
+  commentId: M:Global.PathFinder.LogWorldCellState
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_LogWorldCellState
+  name: LogWorldCellState()
+  nameWithType: PathFinder.LogWorldCellState()
+  fullName: PathFinder.LogWorldCellState()
+  spec.csharp:
+  - uid: Global.PathFinder.LogWorldCellState
+    name: LogWorldCellState
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_LogWorldCellState
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.LogWorldCellState
+    name: LogWorldCellState
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_LogWorldCellState
+  - name: (
+  - name: )
+- uid: Global.PathFinder.CoordinateCost(WorldCoordinate)
+  commentId: M:Global.PathFinder.CoordinateCost(WorldCoordinate)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CoordinateCost_WorldCoordinate_
+  name: CoordinateCost(WorldCoordinate)
+  nameWithType: PathFinder.CoordinateCost(WorldCoordinate)
+  fullName: PathFinder.CoordinateCost(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.PathFinder.CoordinateCost(WorldCoordinate)
+    name: CoordinateCost
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateCost_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CoordinateCost(WorldCoordinate)
+    name: CoordinateCost
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CoordinateCost_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)
+  commentId: M:Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_RayTraceInAccessibleTiles_RWCustom_IntVector2_RWCustom_IntVector2_
+  name: RayTraceInAccessibleTiles(IntVector2, IntVector2)
+  nameWithType: PathFinder.RayTraceInAccessibleTiles(IntVector2, IntVector2)
+  fullName: PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2, RWCustom.IntVector2)
+  spec.csharp:
+  - uid: Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)
+    name: RayTraceInAccessibleTiles
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_RayTraceInAccessibleTiles_RWCustom_IntVector2_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)
+    name: RayTraceInAccessibleTiles
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_RayTraceInAccessibleTiles_RWCustom_IntVector2_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: Global.PathFinder.lookingForImpossiblePath
+  commentId: P:Global.PathFinder.lookingForImpossiblePath
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_lookingForImpossiblePath
+  name: lookingForImpossiblePath
+  nameWithType: PathFinder.lookingForImpossiblePath
+  fullName: PathFinder.lookingForImpossiblePath
+- uid: Global.PathFinder.DoneMappingAccessibility
+  commentId: P:Global.PathFinder.DoneMappingAccessibility
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_DoneMappingAccessibility
+  name: DoneMappingAccessibility
+  nameWithType: PathFinder.DoneMappingAccessibility
+  fullName: PathFinder.DoneMappingAccessibility
+- uid: Global.PathFinder.creaturePos
+  commentId: P:Global.PathFinder.creaturePos
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_creaturePos
+  name: creaturePos
+  nameWithType: PathFinder.creaturePos
+  fullName: PathFinder.creaturePos
+- uid: Global.PathFinder.creatureType
+  commentId: P:Global.PathFinder.creatureType
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_creatureType
+  name: creatureType
+  nameWithType: PathFinder.creatureType
+  fullName: PathFinder.creatureType
+- uid: Global.PathFinder.GetDestination
+  commentId: P:Global.PathFinder.GetDestination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_GetDestination
+  name: GetDestination
+  nameWithType: PathFinder.GetDestination
+  fullName: PathFinder.GetDestination
+- uid: Global.PathFinder.GetEffectualDestination
+  commentId: P:Global.PathFinder.GetEffectualDestination
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_GetEffectualDestination
+  name: GetEffectualDestination
+  nameWithType: PathFinder.GetEffectualDestination
+  fullName: PathFinder.GetEffectualDestination
+- uid: Global.PathFinder.DestInRoom
+  commentId: P:Global.PathFinder.DestInRoom
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_DestInRoom
+  name: DestInRoom
+  nameWithType: PathFinder.DestInRoom
+  fullName: PathFinder.DestInRoom
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Watcher.BigMothPather.#ctor*
+  commentId: Overload:Watcher.BigMothPather.#ctor
+  isExternal: true
+  href: Watcher.BigMothPather.html#Watcher_BigMothPather__ctor_ArtificialIntelligence_World_AbstractCreature_
+  name: BigMothPather
+  nameWithType: BigMothPather.BigMothPather
+  fullName: Watcher.BigMothPather.BigMothPather
+  nameWithType.vb: BigMothPather.New
+  fullName.vb: Watcher.BigMothPather.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  commentId: M:Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_CheckConnectionCost_PathFinder_PathingCell_PathFinder_PathingCell_MovementConnection_System_Boolean_
+  name: CheckConnectionCost(PathingCell, PathingCell, MovementConnection, bool)
+  nameWithType: PathFinder.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, bool)
+  fullName: PathFinder.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, bool)
+  nameWithType.vb: PathFinder.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, Boolean)
+  fullName.vb: PathFinder.CheckConnectionCost(PathFinder.PathingCell, PathFinder.PathingCell, MovementConnection, Boolean)
+  name.vb: CheckConnectionCost(PathingCell, PathingCell, MovementConnection, Boolean)
+  spec.csharp:
+  - uid: Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+    name: CheckConnectionCost
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CheckConnectionCost_PathFinder_PathingCell_PathFinder_PathingCell_MovementConnection_System_Boolean_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)
+    name: CheckConnectionCost
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_CheckConnectionCost_PathFinder_PathingCell_PathFinder_PathingCell_MovementConnection_System_Boolean_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Watcher.BigMothPather.CheckConnectionCost*
+  commentId: Overload:Watcher.BigMothPather.CheckConnectionCost
+  isExternal: true
+  href: Watcher.BigMothPather.html#Watcher_BigMothPather_CheckConnectionCost_PathFinder_PathingCell_PathFinder_PathingCell_MovementConnection_System_Boolean_
+  name: CheckConnectionCost
+  nameWithType: BigMothPather.CheckConnectionCost
+  fullName: Watcher.BigMothPather.CheckConnectionCost
+- uid: Global.PathFinder.PathingCell
+  commentId: T:Global.PathFinder.PathingCell
+  isExternal: true
+  href: PathFinder.html
+  name: PathFinder.PathingCell
+  nameWithType: PathFinder.PathingCell
+  fullName: PathFinder.PathingCell
+  spec.csharp:
+  - uid: Global.PathFinder
+    name: PathFinder
+    isExternal: true
+    href: PathFinder.html
+  - name: .
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  spec.vb:
+  - uid: Global.PathFinder
+    name: PathFinder
+    isExternal: true
+    href: PathFinder.html
+  - name: .
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+- uid: Global.MovementConnection
+  commentId: T:Global.MovementConnection
+  isExternal: true
+  href: MovementConnection.html
+  name: MovementConnection
+  nameWithType: MovementConnection
+  fullName: MovementConnection
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.PathCost
+  commentId: T:Global.PathCost
+  isExternal: true
+  href: PathCost.html
+  name: PathCost
+  nameWithType: PathCost
+  fullName: PathCost
+- uid: Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  commentId: M:Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)
+  parent: Global.PathFinder
+  isExternal: true
+  href: Global.PathFinder.html#PathFinder_HeuristicForCell_PathFinder_PathingCell_PathCost_
+  name: HeuristicForCell(PathingCell, PathCost)
+  nameWithType: PathFinder.HeuristicForCell(PathFinder.PathingCell, PathCost)
+  fullName: PathFinder.HeuristicForCell(PathFinder.PathingCell, PathCost)
+  spec.csharp:
+  - uid: Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)
+    name: HeuristicForCell
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_HeuristicForCell_PathFinder_PathingCell_PathCost_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+  spec.vb:
+  - uid: Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)
+    name: HeuristicForCell
+    isExternal: true
+    href: Global.PathFinder.html#PathFinder_HeuristicForCell_PathFinder_PathingCell_PathCost_
+  - name: (
+  - uid: Global.PathFinder.PathingCell
+    name: PathingCell
+    isExternal: true
+    href: PathFinder.PathingCell.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+- uid: Watcher.BigMothPather.HeuristicForCell*
+  commentId: Overload:Watcher.BigMothPather.HeuristicForCell
+  isExternal: true
+  href: Watcher.BigMothPather.html#Watcher_BigMothPather_HeuristicForCell_PathFinder_PathingCell_PathCost_
+  name: HeuristicForCell
+  nameWithType: BigMothPather.HeuristicForCell
+  fullName: Watcher.BigMothPather.HeuristicForCell
+- uid: Watcher.BigMothPather.FollowPath*
+  commentId: Overload:Watcher.BigMothPather.FollowPath
+  isExternal: true
+  href: Watcher.BigMothPather.html#Watcher_BigMothPather_FollowPath_WorldCoordinate_System_Boolean_
+  name: FollowPath
+  nameWithType: BigMothPather.FollowPath
+  fullName: Watcher.BigMothPather.FollowPath
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Watcher.BigMothPather.bug*
+  commentId: Overload:Watcher.BigMothPather.bug
+  isExternal: true
+  href: Watcher.BigMothPather.html#Watcher_BigMothPather_bug
+  name: bug
+  nameWithType: BigMothPather.bug
+  fullName: Watcher.BigMothPather.bug
+- uid: Watcher.BigMoth
+  commentId: T:Watcher.BigMoth
+  parent: Watcher
+  isExternal: true
+  href: Watcher.BigMoth.html
+  name: BigMoth
+  nameWithType: BigMoth
+  fullName: Watcher.BigMoth

@@ -1,0 +1,1282 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BlinkSpeck
+  commentId: T:Global.BlinkSpeck
+  id: BlinkSpeck
+  parent: Global
+  children:
+  - Global.BlinkSpeck.#ctor
+  - Global.BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.BlinkSpeck.ResetMe
+  - Global.BlinkSpeck.Update(System.Boolean)
+  - Global.BlinkSpeck.blink
+  - Global.BlinkSpeck.col
+  - Global.BlinkSpeck.lastBlink
+  - Global.BlinkSpeck.lastCol
+  - Global.BlinkSpeck.roomDarkness
+  langs:
+  - csharp
+  - vb
+  name: BlinkSpeck
+  nameWithType: BlinkSpeck
+  fullName: BlinkSpeck
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:BlinkSpeck</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class BlinkSpeck : GenericZeroGSpeck, IDrawable, IRunDuringDialog'
+    content.vb: Public Class BlinkSpeck Inherits GenericZeroGSpeck Implements IDrawable, IRunDuringDialog
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.CosmeticSprite
+  - Global.GenericZeroGSpeck
+  implements:
+  - Global.IDrawable
+  - MoreSlugcats.IRunDuringDialog
+  inheritedMembers:
+  - Global.GenericZeroGSpeck.myFloatSpeed
+  - Global.GenericZeroGSpeck.savedCamPos
+  - Global.GenericZeroGSpeck.reset
+  - Global.CosmeticSprite.pos
+  - Global.CosmeticSprite.lastPos
+  - Global.CosmeticSprite.vel
+  - Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.BlinkSpeck.roomDarkness
+  commentId: F:Global.BlinkSpeck.roomDarkness
+  id: roomDarkness
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: roomDarkness
+  nameWithType: BlinkSpeck.roomDarkness
+  fullName: BlinkSpeck.roomDarkness
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:BlinkSpeck.roomDarkness</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float roomDarkness
+    return:
+      type: System.Single
+    content.vb: Public roomDarkness As Single
+- uid: Global.BlinkSpeck.blink
+  commentId: F:Global.BlinkSpeck.blink
+  id: blink
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: blink
+  nameWithType: BlinkSpeck.blink
+  fullName: BlinkSpeck.blink
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:BlinkSpeck.blink</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float blink
+    return:
+      type: System.Single
+    content.vb: Public blink As Single
+- uid: Global.BlinkSpeck.lastBlink
+  commentId: F:Global.BlinkSpeck.lastBlink
+  id: lastBlink
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: lastBlink
+  nameWithType: BlinkSpeck.lastBlink
+  fullName: BlinkSpeck.lastBlink
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:BlinkSpeck.lastBlink</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastBlink
+    return:
+      type: System.Single
+    content.vb: Public lastBlink As Single
+- uid: Global.BlinkSpeck.col
+  commentId: F:Global.BlinkSpeck.col
+  id: col
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: col
+  nameWithType: BlinkSpeck.col
+  fullName: BlinkSpeck.col
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:BlinkSpeck.col</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color col
+    return:
+      type: UnityEngine.Color
+    content.vb: Public col As Color
+- uid: Global.BlinkSpeck.lastCol
+  commentId: F:Global.BlinkSpeck.lastCol
+  id: lastCol
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: lastCol
+  nameWithType: BlinkSpeck.lastCol
+  fullName: BlinkSpeck.lastCol
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:BlinkSpeck.lastCol</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color lastCol
+    return:
+      type: UnityEngine.Color
+    content.vb: Public lastCol As Color
+- uid: Global.BlinkSpeck.#ctor
+  commentId: M:Global.BlinkSpeck.#ctor
+  id: '#ctor'
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: BlinkSpeck()
+  nameWithType: BlinkSpeck.BlinkSpeck()
+  fullName: BlinkSpeck.BlinkSpeck()
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>BlinkSpeck</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BlinkSpeck()
+    content.vb: Public Sub New()
+  overload: Global.BlinkSpeck.#ctor*
+  nameWithType.vb: BlinkSpeck.New()
+  fullName.vb: BlinkSpeck.New()
+  name.vb: New()
+- uid: Global.BlinkSpeck.Update(System.Boolean)
+  commentId: M:Global.BlinkSpeck.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: BlinkSpeck.Update(bool)
+  fullName: BlinkSpeck.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:BlinkSpeck.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:BlinkSpeck.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.GenericZeroGSpeck.Update(System.Boolean)
+  overload: Global.BlinkSpeck.Update*
+  nameWithType.vb: BlinkSpeck.Update(Boolean)
+  fullName.vb: BlinkSpeck.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.BlinkSpeck.ResetMe
+  commentId: M:Global.BlinkSpeck.ResetMe
+  id: ResetMe
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: ResetMe()
+  nameWithType: BlinkSpeck.ResetMe()
+  fullName: BlinkSpeck.ResetMe()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:BlinkSpeck.ResetMe</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ResetMe()
+    content.vb: Public Overrides Sub ResetMe()
+  overridden: Global.GenericZeroGSpeck.ResetMe
+  overload: Global.BlinkSpeck.ResetMe*
+- uid: Global.BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:BlinkSpeck.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Global.BlinkSpeck.InitiateSprites*
+- uid: Global.BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.BlinkSpeck
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Global.BlinkSpeck.DrawSprites*
+  nameWithType.vb: BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: BlinkSpeck.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.CosmeticSprite
+  commentId: T:Global.CosmeticSprite
+  isExternal: true
+  href: CosmeticSprite.html
+  name: CosmeticSprite
+  nameWithType: CosmeticSprite
+  fullName: CosmeticSprite
+- uid: Global.GenericZeroGSpeck
+  commentId: T:Global.GenericZeroGSpeck
+  isExternal: true
+  href: GenericZeroGSpeck.html
+  name: GenericZeroGSpeck
+  nameWithType: GenericZeroGSpeck
+  fullName: GenericZeroGSpeck
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: MoreSlugcats.IRunDuringDialog
+  commentId: T:MoreSlugcats.IRunDuringDialog
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.IRunDuringDialog.html
+  name: IRunDuringDialog
+  nameWithType: IRunDuringDialog
+  fullName: MoreSlugcats.IRunDuringDialog
+- uid: Global.GenericZeroGSpeck.myFloatSpeed
+  commentId: F:Global.GenericZeroGSpeck.myFloatSpeed
+  parent: Global.GenericZeroGSpeck
+  isExternal: true
+  href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_myFloatSpeed
+  name: myFloatSpeed
+  nameWithType: GenericZeroGSpeck.myFloatSpeed
+  fullName: GenericZeroGSpeck.myFloatSpeed
+- uid: Global.GenericZeroGSpeck.savedCamPos
+  commentId: F:Global.GenericZeroGSpeck.savedCamPos
+  parent: Global.GenericZeroGSpeck
+  isExternal: true
+  href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_savedCamPos
+  name: savedCamPos
+  nameWithType: GenericZeroGSpeck.savedCamPos
+  fullName: GenericZeroGSpeck.savedCamPos
+- uid: Global.GenericZeroGSpeck.reset
+  commentId: F:Global.GenericZeroGSpeck.reset
+  parent: Global.GenericZeroGSpeck
+  isExternal: true
+  href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_reset
+  name: reset
+  nameWithType: GenericZeroGSpeck.reset
+  fullName: GenericZeroGSpeck.reset
+- uid: Global.CosmeticSprite.pos
+  commentId: F:Global.CosmeticSprite.pos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_pos
+  name: pos
+  nameWithType: CosmeticSprite.pos
+  fullName: CosmeticSprite.pos
+- uid: Global.CosmeticSprite.lastPos
+  commentId: F:Global.CosmeticSprite.lastPos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_lastPos
+  name: lastPos
+  nameWithType: CosmeticSprite.lastPos
+  fullName: CosmeticSprite.lastPos
+- uid: Global.CosmeticSprite.vel
+  commentId: F:Global.CosmeticSprite.vel
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_vel
+  name: vel
+  nameWithType: CosmeticSprite.vel
+  fullName: CosmeticSprite.vel
+- uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: PausedDrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: PausedDrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Global.BlinkSpeck.#ctor*
+  commentId: Overload:Global.BlinkSpeck.#ctor
+  isExternal: true
+  href: Global.BlinkSpeck.html#BlinkSpeck__ctor
+  name: BlinkSpeck
+  nameWithType: BlinkSpeck.BlinkSpeck
+  fullName: BlinkSpeck.BlinkSpeck
+  nameWithType.vb: BlinkSpeck.New
+  fullName.vb: BlinkSpeck.New
+  name.vb: New
+- uid: Global.GenericZeroGSpeck.Update(System.Boolean)
+  commentId: M:Global.GenericZeroGSpeck.Update(System.Boolean)
+  parent: Global.GenericZeroGSpeck
+  isExternal: true
+  href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: GenericZeroGSpeck.Update(bool)
+  fullName: GenericZeroGSpeck.Update(bool)
+  nameWithType.vb: GenericZeroGSpeck.Update(Boolean)
+  fullName.vb: GenericZeroGSpeck.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.GenericZeroGSpeck.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.GenericZeroGSpeck.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.BlinkSpeck.Update*
+  commentId: Overload:Global.BlinkSpeck.Update
+  isExternal: true
+  href: Global.BlinkSpeck.html#BlinkSpeck_Update_System_Boolean_
+  name: Update
+  nameWithType: BlinkSpeck.Update
+  fullName: BlinkSpeck.Update
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.GenericZeroGSpeck.ResetMe
+  commentId: M:Global.GenericZeroGSpeck.ResetMe
+  parent: Global.GenericZeroGSpeck
+  isExternal: true
+  href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_ResetMe
+  name: ResetMe()
+  nameWithType: GenericZeroGSpeck.ResetMe()
+  fullName: GenericZeroGSpeck.ResetMe()
+  spec.csharp:
+  - uid: Global.GenericZeroGSpeck.ResetMe
+    name: ResetMe
+    isExternal: true
+    href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_ResetMe
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GenericZeroGSpeck.ResetMe
+    name: ResetMe
+    isExternal: true
+    href: Global.GenericZeroGSpeck.html#GenericZeroGSpeck_ResetMe
+  - name: (
+  - name: )
+- uid: Global.BlinkSpeck.ResetMe*
+  commentId: Overload:Global.BlinkSpeck.ResetMe
+  isExternal: true
+  href: Global.BlinkSpeck.html#BlinkSpeck_ResetMe
+  name: ResetMe
+  nameWithType: BlinkSpeck.ResetMe
+  fullName: BlinkSpeck.ResetMe
+- uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.BlinkSpeck.InitiateSprites*
+  commentId: Overload:Global.BlinkSpeck.InitiateSprites
+  isExternal: true
+  href: Global.BlinkSpeck.html#BlinkSpeck_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: BlinkSpeck.InitiateSprites
+  fullName: BlinkSpeck.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.BlinkSpeck.DrawSprites*
+  commentId: Overload:Global.BlinkSpeck.DrawSprites
+  isExternal: true
+  href: Global.BlinkSpeck.html#BlinkSpeck_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: BlinkSpeck.DrawSprites
+  fullName: BlinkSpeck.DrawSprites
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2

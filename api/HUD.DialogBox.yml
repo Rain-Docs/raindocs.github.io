@@ -1,0 +1,1517 @@
+### YamlMime:ManagedReference
+items:
+- uid: HUD.DialogBox
+  commentId: T:HUD.DialogBox
+  id: DialogBox
+  parent: HUD
+  children:
+  - HUD.DialogBox.#ctor(HUD.HUD)
+  - HUD.DialogBox.ClearSprites
+  - HUD.DialogBox.CurrentMessage
+  - HUD.DialogBox.Draw(System.Single)
+  - HUD.DialogBox.DrawPos(System.Single)
+  - HUD.DialogBox.GetDelay
+  - HUD.DialogBox.InitiateSprites
+  - HUD.DialogBox.Interrupt(System.String,System.Int32)
+  - HUD.DialogBox.NewMessage(System.String,System.Int32)
+  - HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)
+  - HUD.DialogBox.ShowingAMessage
+  - HUD.DialogBox.Update
+  - HUD.DialogBox.actualWidth
+  - HUD.DialogBox.currentColor
+  - HUD.DialogBox.defaultXOrientation
+  - HUD.DialogBox.defaultYPos
+  - HUD.DialogBox.heightMargin
+  - HUD.DialogBox.label
+  - HUD.DialogBox.lineHeight
+  - HUD.DialogBox.meanCharWidth
+  - HUD.DialogBox.messages
+  - HUD.DialogBox.permanentDisplay
+  - HUD.DialogBox.sprites
+  - HUD.DialogBox.widthMargin
+  langs:
+  - csharp
+  - vb
+  name: DialogBox
+  nameWithType: DialogBox
+  fullName: HUD.DialogBox
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:HUD.DialogBox</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class DialogBox : HudPart'
+    content.vb: Public Class DialogBox Inherits HudPart
+  inheritance:
+  - System.Object
+  - HUD.HudPart
+  inheritedMembers:
+  - HUD.HudPart.hud
+  - HUD.HudPart.slatedForDeletion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: HUD.DialogBox.defaultXOrientation
+  commentId: F:HUD.DialogBox.defaultXOrientation
+  id: defaultXOrientation
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: defaultXOrientation
+  nameWithType: DialogBox.defaultXOrientation
+  fullName: HUD.DialogBox.defaultXOrientation
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.defaultXOrientation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float defaultXOrientation
+    return:
+      type: System.Single
+    content.vb: Public defaultXOrientation As Single
+- uid: HUD.DialogBox.defaultYPos
+  commentId: F:HUD.DialogBox.defaultYPos
+  id: defaultYPos
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: defaultYPos
+  nameWithType: DialogBox.defaultYPos
+  fullName: HUD.DialogBox.defaultYPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.defaultYPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float defaultYPos
+    return:
+      type: System.Single
+    content.vb: Public defaultYPos As Single
+- uid: HUD.DialogBox.label
+  commentId: F:HUD.DialogBox.label
+  id: label
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: label
+  nameWithType: DialogBox.label
+  fullName: HUD.DialogBox.label
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.label</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FLabel label
+    return:
+      type: Global.FLabel
+    content.vb: Public label As FLabel
+- uid: HUD.DialogBox.sprites
+  commentId: F:HUD.DialogBox.sprites
+  id: sprites
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: sprites
+  nameWithType: DialogBox.sprites
+  fullName: HUD.DialogBox.sprites
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.sprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FSprite[] sprites
+    return:
+      type: Global.FSprite[]
+    content.vb: Public sprites As FSprite()
+- uid: HUD.DialogBox.messages
+  commentId: F:HUD.DialogBox.messages
+  id: messages
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: messages
+  nameWithType: DialogBox.messages
+  fullName: HUD.DialogBox.messages
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.messages</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<DialogBox.Message> messages
+    return:
+      type: System.Collections.Generic.List{HUD.DialogBox.Message}
+    content.vb: Public messages As List(Of DialogBox.Message)
+- uid: HUD.DialogBox.permanentDisplay
+  commentId: F:HUD.DialogBox.permanentDisplay
+  id: permanentDisplay
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: permanentDisplay
+  nameWithType: DialogBox.permanentDisplay
+  fullName: HUD.DialogBox.permanentDisplay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.permanentDisplay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool permanentDisplay
+    return:
+      type: System.Boolean
+    content.vb: Public permanentDisplay As Boolean
+- uid: HUD.DialogBox.actualWidth
+  commentId: F:HUD.DialogBox.actualWidth
+  id: actualWidth
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: actualWidth
+  nameWithType: DialogBox.actualWidth
+  fullName: HUD.DialogBox.actualWidth
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.actualWidth</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float actualWidth
+    return:
+      type: System.Single
+    content.vb: Public actualWidth As Single
+- uid: HUD.DialogBox.currentColor
+  commentId: F:HUD.DialogBox.currentColor
+  id: currentColor
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: currentColor
+  nameWithType: DialogBox.currentColor
+  fullName: HUD.DialogBox.currentColor
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.currentColor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color currentColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public currentColor As Color
+- uid: HUD.DialogBox.meanCharWidth
+  commentId: F:HUD.DialogBox.meanCharWidth
+  id: meanCharWidth
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: meanCharWidth
+  nameWithType: DialogBox.meanCharWidth
+  fullName: HUD.DialogBox.meanCharWidth
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.meanCharWidth</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static float meanCharWidth
+    return:
+      type: System.Single
+    content.vb: Public Shared meanCharWidth As Single
+- uid: HUD.DialogBox.lineHeight
+  commentId: F:HUD.DialogBox.lineHeight
+  id: lineHeight
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: lineHeight
+  nameWithType: DialogBox.lineHeight
+  fullName: HUD.DialogBox.lineHeight
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.lineHeight</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static float lineHeight
+    return:
+      type: System.Single
+    content.vb: Public Shared lineHeight As Single
+- uid: HUD.DialogBox.heightMargin
+  commentId: F:HUD.DialogBox.heightMargin
+  id: heightMargin
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: heightMargin
+  nameWithType: DialogBox.heightMargin
+  fullName: HUD.DialogBox.heightMargin
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.heightMargin</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static float heightMargin
+    return:
+      type: System.Single
+    content.vb: Public Shared heightMargin As Single
+- uid: HUD.DialogBox.widthMargin
+  commentId: F:HUD.DialogBox.widthMargin
+  id: widthMargin
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: widthMargin
+  nameWithType: DialogBox.widthMargin
+  fullName: HUD.DialogBox.widthMargin
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.DialogBox.widthMargin</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static float widthMargin
+    return:
+      type: System.Single
+    content.vb: Public Shared widthMargin As Single
+- uid: HUD.DialogBox.DrawPos(System.Single)
+  commentId: M:HUD.DialogBox.DrawPos(System.Single)
+  id: DrawPos(System.Single)
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: DrawPos(float)
+  nameWithType: DialogBox.DrawPos(float)
+  fullName: HUD.DialogBox.DrawPos(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.DrawPos(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 DrawPos(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.DialogBox.DrawPos(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.DialogBox.DrawPos(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DrawPos(timeStacker As Single) As Vector2
+  overload: HUD.DialogBox.DrawPos*
+  nameWithType.vb: DialogBox.DrawPos(Single)
+  fullName.vb: HUD.DialogBox.DrawPos(Single)
+  name.vb: DrawPos(Single)
+- uid: HUD.DialogBox.GetDelay
+  commentId: M:HUD.DialogBox.GetDelay
+  id: GetDelay
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: GetDelay()
+  nameWithType: DialogBox.GetDelay()
+  fullName: HUD.DialogBox.GetDelay()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.GetDelay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static int GetDelay()
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.DialogBox.GetDelay</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetDelay() As Integer
+  overload: HUD.DialogBox.GetDelay*
+- uid: HUD.DialogBox.#ctor(HUD.HUD)
+  commentId: M:HUD.DialogBox.#ctor(HUD.HUD)
+  id: '#ctor(HUD.HUD)'
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: DialogBox(HUD)
+  nameWithType: DialogBox.DialogBox(HUD)
+  fullName: HUD.DialogBox.DialogBox(HUD.HUD)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>HUD.DialogBox</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DialogBox(HUD hud)
+    parameters:
+    - id: hud
+      type: HUD.HUD
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>hud</parameter>
+            <parameter>M:HUD.DialogBox.#ctor(HUD.HUD)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(hud As HUD)
+  overload: HUD.DialogBox.#ctor*
+  nameWithType.vb: DialogBox.New(HUD)
+  fullName.vb: HUD.DialogBox.New(HUD.HUD)
+  name.vb: New(HUD)
+- uid: HUD.DialogBox.Update
+  commentId: M:HUD.DialogBox.Update
+  id: Update
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DialogBox.Update()
+  fullName: HUD.DialogBox.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: HUD.HudPart.Update
+  overload: HUD.DialogBox.Update*
+- uid: HUD.DialogBox.Interrupt(System.String,System.Int32)
+  commentId: M:HUD.DialogBox.Interrupt(System.String,System.Int32)
+  id: Interrupt(System.String,System.Int32)
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: Interrupt(string, int)
+  nameWithType: DialogBox.Interrupt(string, int)
+  fullName: HUD.DialogBox.Interrupt(string, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.Interrupt(System.String,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Interrupt(string text, int extraLinger)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:HUD.DialogBox.Interrupt(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: extraLinger
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>extraLinger</parameter>
+            <parameter>M:HUD.DialogBox.Interrupt(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Interrupt(text As String, extraLinger As Integer)
+  overload: HUD.DialogBox.Interrupt*
+  nameWithType.vb: DialogBox.Interrupt(String, Integer)
+  fullName.vb: HUD.DialogBox.Interrupt(String, Integer)
+  name.vb: Interrupt(String, Integer)
+- uid: HUD.DialogBox.NewMessage(System.String,System.Int32)
+  commentId: M:HUD.DialogBox.NewMessage(System.String,System.Int32)
+  id: NewMessage(System.String,System.Int32)
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: NewMessage(string, int)
+  nameWithType: DialogBox.NewMessage(string, int)
+  fullName: HUD.DialogBox.NewMessage(string, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewMessage(string text, int extraLinger)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: extraLinger
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>extraLinger</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewMessage(text As String, extraLinger As Integer)
+  overload: HUD.DialogBox.NewMessage*
+  nameWithType.vb: DialogBox.NewMessage(String, Integer)
+  fullName.vb: HUD.DialogBox.NewMessage(String, Integer)
+  name.vb: NewMessage(String, Integer)
+- uid: HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)
+  commentId: M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)
+  id: NewMessage(System.String,System.Single,System.Single,System.Int32)
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: NewMessage(string, float, float, int)
+  nameWithType: DialogBox.NewMessage(string, float, float, int)
+  fullName: HUD.DialogBox.NewMessage(string, float, float, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewMessage(string text, float xOrientation, float yPos, int extraLinger)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: xOrientation
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>xOrientation</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: yPos
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>yPos</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: extraLinger
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>extraLinger</parameter>
+            <parameter>M:HUD.DialogBox.NewMessage(System.String,System.Single,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewMessage(text As String, xOrientation As Single, yPos As Single, extraLinger As Integer)
+  overload: HUD.DialogBox.NewMessage*
+  nameWithType.vb: DialogBox.NewMessage(String, Single, Single, Integer)
+  fullName.vb: HUD.DialogBox.NewMessage(String, Single, Single, Integer)
+  name.vb: NewMessage(String, Single, Single, Integer)
+- uid: HUD.DialogBox.InitiateSprites
+  commentId: M:HUD.DialogBox.InitiateSprites
+  id: InitiateSprites
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites()
+  nameWithType: DialogBox.InitiateSprites()
+  fullName: HUD.DialogBox.InitiateSprites()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.InitiateSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitiateSprites()
+    content.vb: Public Sub InitiateSprites()
+  overload: HUD.DialogBox.InitiateSprites*
+- uid: HUD.DialogBox.Draw(System.Single)
+  commentId: M:HUD.DialogBox.Draw(System.Single)
+  id: Draw(System.Single)
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: Draw(float)
+  nameWithType: DialogBox.Draw(float)
+  fullName: HUD.DialogBox.Draw(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.Draw(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Draw(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.DialogBox.Draw(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Draw(timeStacker As Single)
+  overridden: HUD.HudPart.Draw(System.Single)
+  overload: HUD.DialogBox.Draw*
+  nameWithType.vb: DialogBox.Draw(Single)
+  fullName.vb: HUD.DialogBox.Draw(Single)
+  name.vb: Draw(Single)
+- uid: HUD.DialogBox.ClearSprites
+  commentId: M:HUD.DialogBox.ClearSprites
+  id: ClearSprites
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: ClearSprites()
+  nameWithType: DialogBox.ClearSprites()
+  fullName: HUD.DialogBox.ClearSprites()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.DialogBox.ClearSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ClearSprites()
+    content.vb: Public Overrides Sub ClearSprites()
+  overridden: HUD.HudPart.ClearSprites
+  overload: HUD.DialogBox.ClearSprites*
+- uid: HUD.DialogBox.CurrentMessage
+  commentId: P:HUD.DialogBox.CurrentMessage
+  id: CurrentMessage
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: CurrentMessage
+  nameWithType: DialogBox.CurrentMessage
+  fullName: HUD.DialogBox.CurrentMessage
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.DialogBox.CurrentMessage</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DialogBox.Message CurrentMessage { get; }
+    parameters: []
+    return:
+      type: HUD.DialogBox.Message
+    content.vb: Public ReadOnly Property CurrentMessage As DialogBox.Message
+  overload: HUD.DialogBox.CurrentMessage*
+- uid: HUD.DialogBox.ShowingAMessage
+  commentId: P:HUD.DialogBox.ShowingAMessage
+  id: ShowingAMessage
+  parent: HUD.DialogBox
+  langs:
+  - csharp
+  - vb
+  name: ShowingAMessage
+  nameWithType: DialogBox.ShowingAMessage
+  fullName: HUD.DialogBox.ShowingAMessage
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.DialogBox.ShowingAMessage</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool ShowingAMessage { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ShowingAMessage As Boolean
+  overload: HUD.DialogBox.ShowingAMessage*
+references:
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HUD.HudPart
+  commentId: T:HUD.HudPart
+  parent: HUD
+  isExternal: true
+  href: HUD.HudPart.html
+  name: HudPart
+  nameWithType: HudPart
+  fullName: HUD.HudPart
+- uid: HUD.HudPart.hud
+  commentId: F:HUD.HudPart.hud
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_hud
+  name: hud
+  nameWithType: HudPart.hud
+  fullName: HUD.HudPart.hud
+- uid: HUD.HudPart.slatedForDeletion
+  commentId: F:HUD.HudPart.slatedForDeletion
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_slatedForDeletion
+  name: slatedForDeletion
+  nameWithType: HudPart.slatedForDeletion
+  fullName: HUD.HudPart.slatedForDeletion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.FLabel
+  commentId: T:Global.FLabel
+  isExternal: true
+  href: FLabel.html
+  name: FLabel
+  nameWithType: FLabel
+  fullName: FLabel
+- uid: Global.FSprite[]
+  isExternal: true
+  href: FSprite.html
+  name: FSprite[]
+  nameWithType: FSprite[]
+  fullName: FSprite[]
+  nameWithType.vb: FSprite()
+  fullName.vb: FSprite()
+  name.vb: FSprite()
+  spec.csharp:
+  - uid: Global.FSprite
+    name: FSprite
+    isExternal: true
+    href: FSprite.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.FSprite
+    name: FSprite
+    isExternal: true
+    href: FSprite.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{HUD.DialogBox.Message}
+  commentId: T:System.Collections.Generic.List{HUD.DialogBox.Message}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DialogBox.Message>
+  nameWithType: List<DialogBox.Message>
+  fullName: System.Collections.Generic.List<HUD.DialogBox.Message>
+  nameWithType.vb: List(Of DialogBox.Message)
+  fullName.vb: System.Collections.Generic.List(Of HUD.DialogBox.Message)
+  name.vb: List(Of DialogBox.Message)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.DialogBox
+    name: DialogBox
+    isExternal: true
+    href: HUD.DialogBox.html
+  - name: .
+  - uid: HUD.DialogBox.Message
+    name: Message
+    isExternal: true
+    href: HUD.DialogBox.Message.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.DialogBox
+    name: DialogBox
+    isExternal: true
+    href: HUD.DialogBox.html
+  - name: .
+  - uid: HUD.DialogBox.Message
+    name: Message
+    isExternal: true
+    href: HUD.DialogBox.Message.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: HUD.DialogBox.DrawPos*
+  commentId: Overload:HUD.DialogBox.DrawPos
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_DrawPos_System_Single_
+  name: DrawPos
+  nameWithType: DialogBox.DrawPos
+  fullName: HUD.DialogBox.DrawPos
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: HUD.DialogBox.GetDelay*
+  commentId: Overload:HUD.DialogBox.GetDelay
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_GetDelay
+  name: GetDelay
+  nameWithType: DialogBox.GetDelay
+  fullName: HUD.DialogBox.GetDelay
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HUD.DialogBox.#ctor*
+  commentId: Overload:HUD.DialogBox.#ctor
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox__ctor_HUD_HUD_
+  name: DialogBox
+  nameWithType: DialogBox.DialogBox
+  fullName: HUD.DialogBox.DialogBox
+  nameWithType.vb: DialogBox.New
+  fullName.vb: HUD.DialogBox.New
+  name.vb: New
+- uid: HUD.HUD
+  commentId: T:HUD.HUD
+  parent: HUD
+  isExternal: true
+  href: HUD.HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD.HUD
+- uid: HUD.HudPart.Update
+  commentId: M:HUD.HudPart.Update
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_Update
+  name: Update()
+  nameWithType: HudPart.Update()
+  fullName: HUD.HudPart.Update()
+  spec.csharp:
+  - uid: HUD.HudPart.Update
+    name: Update
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.Update
+    name: Update
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Update
+  - name: (
+  - name: )
+- uid: HUD.DialogBox.Update*
+  commentId: Overload:HUD.DialogBox.Update
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_Update
+  name: Update
+  nameWithType: DialogBox.Update
+  fullName: HUD.DialogBox.Update
+- uid: HUD.DialogBox.Interrupt*
+  commentId: Overload:HUD.DialogBox.Interrupt
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_Interrupt_System_String_System_Int32_
+  name: Interrupt
+  nameWithType: DialogBox.Interrupt
+  fullName: HUD.DialogBox.Interrupt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HUD.DialogBox.NewMessage*
+  commentId: Overload:HUD.DialogBox.NewMessage
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_NewMessage_System_String_System_Int32_
+  name: NewMessage
+  nameWithType: DialogBox.NewMessage
+  fullName: HUD.DialogBox.NewMessage
+- uid: HUD.DialogBox.InitiateSprites*
+  commentId: Overload:HUD.DialogBox.InitiateSprites
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_InitiateSprites
+  name: InitiateSprites
+  nameWithType: DialogBox.InitiateSprites
+  fullName: HUD.DialogBox.InitiateSprites
+- uid: HUD.HudPart.Draw(System.Single)
+  commentId: M:HUD.HudPart.Draw(System.Single)
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  name: Draw(float)
+  nameWithType: HudPart.Draw(float)
+  fullName: HUD.HudPart.Draw(float)
+  nameWithType.vb: HudPart.Draw(Single)
+  fullName.vb: HUD.HudPart.Draw(Single)
+  name.vb: Draw(Single)
+  spec.csharp:
+  - uid: HUD.HudPart.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: HUD.DialogBox.Draw*
+  commentId: Overload:HUD.DialogBox.Draw
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_Draw_System_Single_
+  name: Draw
+  nameWithType: DialogBox.Draw
+  fullName: HUD.DialogBox.Draw
+- uid: HUD.HudPart.ClearSprites
+  commentId: M:HUD.HudPart.ClearSprites
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  name: ClearSprites()
+  nameWithType: HudPart.ClearSprites()
+  fullName: HUD.HudPart.ClearSprites()
+  spec.csharp:
+  - uid: HUD.HudPart.ClearSprites
+    name: ClearSprites
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.ClearSprites
+    name: ClearSprites
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  - name: (
+  - name: )
+- uid: HUD.DialogBox.ClearSprites*
+  commentId: Overload:HUD.DialogBox.ClearSprites
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_ClearSprites
+  name: ClearSprites
+  nameWithType: DialogBox.ClearSprites
+  fullName: HUD.DialogBox.ClearSprites
+- uid: HUD.DialogBox.CurrentMessage*
+  commentId: Overload:HUD.DialogBox.CurrentMessage
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_CurrentMessage
+  name: CurrentMessage
+  nameWithType: DialogBox.CurrentMessage
+  fullName: HUD.DialogBox.CurrentMessage
+- uid: HUD.DialogBox.Message
+  commentId: T:HUD.DialogBox.Message
+  parent: HUD
+  isExternal: true
+  href: HUD.DialogBox.html
+  name: DialogBox.Message
+  nameWithType: DialogBox.Message
+  fullName: HUD.DialogBox.Message
+  spec.csharp:
+  - uid: HUD.DialogBox
+    name: DialogBox
+    isExternal: true
+    href: HUD.DialogBox.html
+  - name: .
+  - uid: HUD.DialogBox.Message
+    name: Message
+    isExternal: true
+    href: HUD.DialogBox.Message.html
+  spec.vb:
+  - uid: HUD.DialogBox
+    name: DialogBox
+    isExternal: true
+    href: HUD.DialogBox.html
+  - name: .
+  - uid: HUD.DialogBox.Message
+    name: Message
+    isExternal: true
+    href: HUD.DialogBox.Message.html
+- uid: HUD.DialogBox.ShowingAMessage*
+  commentId: Overload:HUD.DialogBox.ShowingAMessage
+  isExternal: true
+  href: HUD.DialogBox.html#HUD_DialogBox_ShowingAMessage
+  name: ShowingAMessage
+  nameWithType: DialogBox.ShowingAMessage
+  fullName: HUD.DialogBox.ShowingAMessage

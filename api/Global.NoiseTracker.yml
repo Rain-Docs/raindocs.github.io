@@ -1,0 +1,1188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.NoiseTracker
+  commentId: T:Global.NoiseTracker
+  id: NoiseTracker
+  parent: Global
+  children:
+  - Global.NoiseTracker.#ctor(ArtificialIntelligence,Tracker)
+  - Global.NoiseTracker.ClearAllUnkown
+  - Global.NoiseTracker.ExaminePos
+  - Global.NoiseTracker.HeardNoise(Noise.InGameNoise)
+  - Global.NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)
+  - Global.NoiseTracker.NewRoom(Room)
+  - Global.NoiseTracker.Update
+  - Global.NoiseTracker.Utility
+  - Global.NoiseTracker.forgetTime
+  - Global.NoiseTracker.hearingSkill
+  - Global.NoiseTracker.ignoreSeenNoises
+  - Global.NoiseTracker.mysteriousNoiseCounter
+  - Global.NoiseTracker.mysteriousNoises
+  - Global.NoiseTracker.room
+  - Global.NoiseTracker.soundToExamine
+  - Global.NoiseTracker.sources
+  - Global.NoiseTracker.tracker
+  langs:
+  - csharp
+  - vb
+  name: NoiseTracker
+  nameWithType: NoiseTracker
+  fullName: NoiseTracker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:NoiseTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class NoiseTracker : AIModule'
+    content.vb: Public Class NoiseTracker Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.NoiseTracker.tracker
+  commentId: F:Global.NoiseTracker.tracker
+  id: tracker
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: tracker
+  nameWithType: NoiseTracker.tracker
+  fullName: NoiseTracker.tracker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.tracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker tracker
+    return:
+      type: Global.Tracker
+    content.vb: Public tracker As Tracker
+- uid: Global.NoiseTracker.room
+  commentId: F:Global.NoiseTracker.room
+  id: room
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: room
+  nameWithType: NoiseTracker.room
+  fullName: NoiseTracker.room
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.room</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Room room
+    return:
+      type: Global.Room
+    content.vb: Public room As Room
+- uid: Global.NoiseTracker.sources
+  commentId: F:Global.NoiseTracker.sources
+  id: sources
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: sources
+  nameWithType: NoiseTracker.sources
+  fullName: NoiseTracker.sources
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.sources</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<NoiseTracker.TheorizedSource> sources
+    return:
+      type: System.Collections.Generic.List{NoiseTracker.TheorizedSource}
+    content.vb: Public sources As List(Of NoiseTracker.TheorizedSource)
+- uid: Global.NoiseTracker.ignoreSeenNoises
+  commentId: F:Global.NoiseTracker.ignoreSeenNoises
+  id: ignoreSeenNoises
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: ignoreSeenNoises
+  nameWithType: NoiseTracker.ignoreSeenNoises
+  fullName: NoiseTracker.ignoreSeenNoises
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.ignoreSeenNoises</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool ignoreSeenNoises
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreSeenNoises As Boolean
+- uid: Global.NoiseTracker.forgetTime
+  commentId: F:Global.NoiseTracker.forgetTime
+  id: forgetTime
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: forgetTime
+  nameWithType: NoiseTracker.forgetTime
+  fullName: NoiseTracker.forgetTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.forgetTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int forgetTime
+    return:
+      type: System.Int32
+    content.vb: Public forgetTime As Integer
+- uid: Global.NoiseTracker.hearingSkill
+  commentId: F:Global.NoiseTracker.hearingSkill
+  id: hearingSkill
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: hearingSkill
+  nameWithType: NoiseTracker.hearingSkill
+  fullName: NoiseTracker.hearingSkill
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.hearingSkill</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float hearingSkill
+    return:
+      type: System.Single
+    content.vb: Public hearingSkill As Single
+- uid: Global.NoiseTracker.mysteriousNoises
+  commentId: F:Global.NoiseTracker.mysteriousNoises
+  id: mysteriousNoises
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: mysteriousNoises
+  nameWithType: NoiseTracker.mysteriousNoises
+  fullName: NoiseTracker.mysteriousNoises
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.mysteriousNoises</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float mysteriousNoises
+    return:
+      type: System.Single
+    content.vb: Public mysteriousNoises As Single
+- uid: Global.NoiseTracker.mysteriousNoiseCounter
+  commentId: F:Global.NoiseTracker.mysteriousNoiseCounter
+  id: mysteriousNoiseCounter
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: mysteriousNoiseCounter
+  nameWithType: NoiseTracker.mysteriousNoiseCounter
+  fullName: NoiseTracker.mysteriousNoiseCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.mysteriousNoiseCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int mysteriousNoiseCounter
+    return:
+      type: System.Int32
+    content.vb: Public mysteriousNoiseCounter As Integer
+- uid: Global.NoiseTracker.soundToExamine
+  commentId: F:Global.NoiseTracker.soundToExamine
+  id: soundToExamine
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: soundToExamine
+  nameWithType: NoiseTracker.soundToExamine
+  fullName: NoiseTracker.soundToExamine
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:NoiseTracker.soundToExamine</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public NoiseTracker.TheorizedSource soundToExamine
+    return:
+      type: Global.NoiseTracker.TheorizedSource
+    content.vb: Public soundToExamine As NoiseTracker.TheorizedSource
+- uid: Global.NoiseTracker.#ctor(ArtificialIntelligence,Tracker)
+  commentId: M:Global.NoiseTracker.#ctor(ArtificialIntelligence,Tracker)
+  id: '#ctor(ArtificialIntelligence,Tracker)'
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: NoiseTracker(ArtificialIntelligence, Tracker)
+  nameWithType: NoiseTracker.NoiseTracker(ArtificialIntelligence, Tracker)
+  fullName: NoiseTracker.NoiseTracker(ArtificialIntelligence, Tracker)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>NoiseTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public NoiseTracker(ArtificialIntelligence AI, Tracker tracker)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:NoiseTracker.#ctor(ArtificialIntelligence,Tracker)</parameter>
+          </include>
+        </markup>
+    - id: tracker
+      type: Global.Tracker
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tracker</parameter>
+            <parameter>M:NoiseTracker.#ctor(ArtificialIntelligence,Tracker)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, tracker As Tracker)
+  overload: Global.NoiseTracker.#ctor*
+  nameWithType.vb: NoiseTracker.New(ArtificialIntelligence, Tracker)
+  fullName.vb: NoiseTracker.New(ArtificialIntelligence, Tracker)
+  name.vb: New(ArtificialIntelligence, Tracker)
+- uid: Global.NoiseTracker.Utility
+  commentId: M:Global.NoiseTracker.Utility
+  id: Utility
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: Utility()
+  nameWithType: NoiseTracker.Utility()
+  fullName: NoiseTracker.Utility()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.Utility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float Utility()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:NoiseTracker.Utility</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function Utility() As Single
+  overridden: Global.AIModule.Utility
+  overload: Global.NoiseTracker.Utility*
+- uid: Global.NoiseTracker.NewRoom(Room)
+  commentId: M:Global.NoiseTracker.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: NoiseTracker.NewRoom(Room)
+  fullName: NoiseTracker.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:NoiseTracker.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.AIModule.NewRoom(Room)
+  overload: Global.NoiseTracker.NewRoom*
+- uid: Global.NoiseTracker.Update
+  commentId: M:Global.NoiseTracker.Update
+  id: Update
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: NoiseTracker.Update()
+  fullName: NoiseTracker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.NoiseTracker.Update*
+- uid: Global.NoiseTracker.ClearAllUnkown
+  commentId: M:Global.NoiseTracker.ClearAllUnkown
+  id: ClearAllUnkown
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: ClearAllUnkown()
+  nameWithType: NoiseTracker.ClearAllUnkown()
+  fullName: NoiseTracker.ClearAllUnkown()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.ClearAllUnkown</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ClearAllUnkown()
+    content.vb: Public Sub ClearAllUnkown()
+  overload: Global.NoiseTracker.ClearAllUnkown*
+- uid: Global.NoiseTracker.HeardNoise(Noise.InGameNoise)
+  commentId: M:Global.NoiseTracker.HeardNoise(Noise.InGameNoise)
+  id: HeardNoise(Noise.InGameNoise)
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: HeardNoise(InGameNoise)
+  nameWithType: NoiseTracker.HeardNoise(InGameNoise)
+  fullName: NoiseTracker.HeardNoise(Noise.InGameNoise)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.HeardNoise(Noise.InGameNoise)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void HeardNoise(InGameNoise noise)
+    parameters:
+    - id: noise
+      type: Noise.InGameNoise
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>noise</parameter>
+            <parameter>M:NoiseTracker.HeardNoise(Noise.InGameNoise)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub HeardNoise(noise As InGameNoise)
+  overload: Global.NoiseTracker.HeardNoise*
+- uid: Global.NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)
+  commentId: M:Global.NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)
+  id: HowInterestingIsThisNoiseToMe(Noise.InGameNoise)
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: HowInterestingIsThisNoiseToMe(InGameNoise)
+  nameWithType: NoiseTracker.HowInterestingIsThisNoiseToMe(InGameNoise)
+  fullName: NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float HowInterestingIsThisNoiseToMe(InGameNoise noise)
+    parameters:
+    - id: noise
+      type: Noise.InGameNoise
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>noise</parameter>
+            <parameter>M:NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:NoiseTracker.HowInterestingIsThisNoiseToMe(Noise.InGameNoise)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function HowInterestingIsThisNoiseToMe(noise As InGameNoise) As Single
+  overload: Global.NoiseTracker.HowInterestingIsThisNoiseToMe*
+- uid: Global.NoiseTracker.ExaminePos
+  commentId: P:Global.NoiseTracker.ExaminePos
+  id: ExaminePos
+  parent: Global.NoiseTracker
+  langs:
+  - csharp
+  - vb
+  name: ExaminePos
+  nameWithType: NoiseTracker.ExaminePos
+  fullName: NoiseTracker.ExaminePos
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:NoiseTracker.ExaminePos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate ExaminePos { get; }
+    parameters: []
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public ReadOnly Property ExaminePos As WorldCoordinate
+  overload: Global.NoiseTracker.ExaminePos*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Tracker
+  commentId: T:Global.Tracker
+  isExternal: true
+  href: Tracker.html
+  name: Tracker
+  nameWithType: Tracker
+  fullName: Tracker
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: System.Collections.Generic.List{NoiseTracker.TheorizedSource}
+  commentId: T:System.Collections.Generic.List{NoiseTracker.TheorizedSource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<NoiseTracker.TheorizedSource>
+  nameWithType: List<NoiseTracker.TheorizedSource>
+  fullName: System.Collections.Generic.List<NoiseTracker.TheorizedSource>
+  nameWithType.vb: List(Of NoiseTracker.TheorizedSource)
+  fullName.vb: System.Collections.Generic.List(Of NoiseTracker.TheorizedSource)
+  name.vb: List(Of NoiseTracker.TheorizedSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.NoiseTracker.TheorizedSource
+  commentId: T:Global.NoiseTracker.TheorizedSource
+  isExternal: true
+  href: NoiseTracker.html
+  name: NoiseTracker.TheorizedSource
+  nameWithType: NoiseTracker.TheorizedSource
+  fullName: NoiseTracker.TheorizedSource
+  spec.csharp:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  spec.vb:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+- uid: Global.NoiseTracker.#ctor*
+  commentId: Overload:Global.NoiseTracker.#ctor
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker__ctor_ArtificialIntelligence_Tracker_
+  name: NoiseTracker
+  nameWithType: NoiseTracker.NoiseTracker
+  fullName: NoiseTracker.NoiseTracker
+  nameWithType.vb: NoiseTracker.New
+  fullName.vb: NoiseTracker.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: Global.NoiseTracker.Utility*
+  commentId: Overload:Global.NoiseTracker.Utility
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_Utility
+  name: Utility
+  nameWithType: NoiseTracker.Utility
+  fullName: NoiseTracker.Utility
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.NoiseTracker.NewRoom*
+  commentId: Overload:Global.NoiseTracker.NewRoom
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_NewRoom_Room_
+  name: NewRoom
+  nameWithType: NoiseTracker.NewRoom
+  fullName: NoiseTracker.NewRoom
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.NoiseTracker.Update*
+  commentId: Overload:Global.NoiseTracker.Update
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_Update
+  name: Update
+  nameWithType: NoiseTracker.Update
+  fullName: NoiseTracker.Update
+- uid: Global.NoiseTracker.ClearAllUnkown*
+  commentId: Overload:Global.NoiseTracker.ClearAllUnkown
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_ClearAllUnkown
+  name: ClearAllUnkown
+  nameWithType: NoiseTracker.ClearAllUnkown
+  fullName: NoiseTracker.ClearAllUnkown
+- uid: Global.NoiseTracker.HeardNoise*
+  commentId: Overload:Global.NoiseTracker.HeardNoise
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_HeardNoise_Noise_InGameNoise_
+  name: HeardNoise
+  nameWithType: NoiseTracker.HeardNoise
+  fullName: NoiseTracker.HeardNoise
+- uid: Noise.InGameNoise
+  commentId: T:Noise.InGameNoise
+  parent: Noise
+  isExternal: true
+  href: Noise.InGameNoise.html
+  name: InGameNoise
+  nameWithType: InGameNoise
+  fullName: Noise.InGameNoise
+- uid: Noise
+  commentId: N:Noise
+  isExternal: true
+  href: Noise.html
+  name: Noise
+  nameWithType: Noise
+  fullName: Noise
+- uid: Global.NoiseTracker.HowInterestingIsThisNoiseToMe*
+  commentId: Overload:Global.NoiseTracker.HowInterestingIsThisNoiseToMe
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_HowInterestingIsThisNoiseToMe_Noise_InGameNoise_
+  name: HowInterestingIsThisNoiseToMe
+  nameWithType: NoiseTracker.HowInterestingIsThisNoiseToMe
+  fullName: NoiseTracker.HowInterestingIsThisNoiseToMe
+- uid: Global.NoiseTracker.ExaminePos*
+  commentId: Overload:Global.NoiseTracker.ExaminePos
+  isExternal: true
+  href: Global.NoiseTracker.html#NoiseTracker_ExaminePos
+  name: ExaminePos
+  nameWithType: NoiseTracker.ExaminePos
+  fullName: NoiseTracker.ExaminePos
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate

@@ -1,0 +1,2201 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Water
+  commentId: T:Global.Water
+  id: Water
+  parent: Global
+  children:
+  - Global.Water.#ctor(Room,System.Int32)
+  - Global.Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.Water.Destroy
+  - Global.Water.DetailedWaterLevel(UnityEngine.Vector2)
+  - Global.Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)
+  - Global.Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.Water.Explosion(Explosion)
+  - Global.Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)
+  - Global.Water.GeneralUpsetSurface(System.Single)
+  - Global.Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  - Global.Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)
+  - Global.Water.SurfaceLeftAndRightBoundries
+  - Global.Water.ThroughSurfaceSound(BodyChunk)
+  - Global.Water.Update
+  - Global.Water.WaterIsBrine
+  - Global.Water.WaterIsLethal
+  - Global.Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)
+  - Global.Water.camerasOutOfBreathFac
+  - Global.Water.cosmeticLowerBorder
+  - Global.Water.cosmeticSurfaceDisplace
+  - Global.Water.fWaterLevel
+  - Global.Water.firstWaterSprite
+  - Global.Water.leftMargin
+  - Global.Water.originalWaterLevel
+  - Global.Water.rightMargin
+  - Global.Water.room
+  - Global.Water.shiftWithInversion(UnityEngine.Vector2)
+  - Global.Water.triangleWidth
+  - Global.Water.upsetWaterSounds
+  - Global.Water.viscosity
+  - Global.Water.waterSoundObject
+  - Global.Water.waterSounds
+  langs:
+  - csharp
+  - vb
+  name: Water
+  nameWithType: Water
+  fullName: Water
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Water</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class Water : IDrawable, IAccessibilityModifier'
+    content.vb: Public Class Water Implements IDrawable, IAccessibilityModifier
+  inheritance:
+  - System.Object
+  implements:
+  - Global.IDrawable
+  - Global.IAccessibilityModifier
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.Water.room
+  commentId: F:Global.Water.room
+  id: room
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: room
+  nameWithType: Water.room
+  fullName: Water.room
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.room</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Room room
+    return:
+      type: Global.Room
+    content.vb: Public room As Room
+- uid: Global.Water.triangleWidth
+  commentId: F:Global.Water.triangleWidth
+  id: triangleWidth
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: triangleWidth
+  nameWithType: Water.triangleWidth
+  fullName: Water.triangleWidth
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.triangleWidth</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float triangleWidth
+    return:
+      type: System.Single
+    content.vb: Public triangleWidth As Single
+- uid: Global.Water.leftMargin
+  commentId: F:Global.Water.leftMargin
+  id: leftMargin
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: leftMargin
+  nameWithType: Water.leftMargin
+  fullName: Water.leftMargin
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.leftMargin</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float leftMargin
+    return:
+      type: System.Single
+    content.vb: Public leftMargin As Single
+- uid: Global.Water.rightMargin
+  commentId: F:Global.Water.rightMargin
+  id: rightMargin
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: rightMargin
+  nameWithType: Water.rightMargin
+  fullName: Water.rightMargin
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.rightMargin</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float rightMargin
+    return:
+      type: System.Single
+    content.vb: Public rightMargin As Single
+- uid: Global.Water.originalWaterLevel
+  commentId: F:Global.Water.originalWaterLevel
+  id: originalWaterLevel
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: originalWaterLevel
+  nameWithType: Water.originalWaterLevel
+  fullName: Water.originalWaterLevel
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.originalWaterLevel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float originalWaterLevel
+    return:
+      type: System.Single
+    content.vb: Public originalWaterLevel As Single
+- uid: Global.Water.fWaterLevel
+  commentId: F:Global.Water.fWaterLevel
+  id: fWaterLevel
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: fWaterLevel
+  nameWithType: Water.fWaterLevel
+  fullName: Water.fWaterLevel
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.fWaterLevel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float fWaterLevel
+    return:
+      type: System.Single
+    content.vb: Public fWaterLevel As Single
+- uid: Global.Water.cosmeticSurfaceDisplace
+  commentId: F:Global.Water.cosmeticSurfaceDisplace
+  id: cosmeticSurfaceDisplace
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: cosmeticSurfaceDisplace
+  nameWithType: Water.cosmeticSurfaceDisplace
+  fullName: Water.cosmeticSurfaceDisplace
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.cosmeticSurfaceDisplace</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float cosmeticSurfaceDisplace
+    return:
+      type: System.Single
+    content.vb: Public cosmeticSurfaceDisplace As Single
+- uid: Global.Water.cosmeticLowerBorder
+  commentId: F:Global.Water.cosmeticLowerBorder
+  id: cosmeticLowerBorder
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: cosmeticLowerBorder
+  nameWithType: Water.cosmeticLowerBorder
+  fullName: Water.cosmeticLowerBorder
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.cosmeticLowerBorder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float cosmeticLowerBorder
+    return:
+      type: System.Single
+    content.vb: Public cosmeticLowerBorder As Single
+- uid: Global.Water.waterSounds
+  commentId: F:Global.Water.waterSounds
+  id: waterSounds
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: waterSounds
+  nameWithType: Water.waterSounds
+  fullName: Water.waterSounds
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.waterSounds</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RectangularDynamicSoundLoop waterSounds
+    return:
+      type: Global.RectangularDynamicSoundLoop
+    content.vb: Public waterSounds As RectangularDynamicSoundLoop
+- uid: Global.Water.upsetWaterSounds
+  commentId: F:Global.Water.upsetWaterSounds
+  id: upsetWaterSounds
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: upsetWaterSounds
+  nameWithType: Water.upsetWaterSounds
+  fullName: Water.upsetWaterSounds
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.upsetWaterSounds</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RectangularDynamicSoundLoop upsetWaterSounds
+    return:
+      type: Global.RectangularDynamicSoundLoop
+    content.vb: Public upsetWaterSounds As RectangularDynamicSoundLoop
+- uid: Global.Water.waterSoundObject
+  commentId: F:Global.Water.waterSoundObject
+  id: waterSoundObject
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: waterSoundObject
+  nameWithType: Water.waterSoundObject
+  fullName: Water.waterSoundObject
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.waterSoundObject</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Water.WaterSoundObject waterSoundObject
+    return:
+      type: Global.Water.WaterSoundObject
+    content.vb: Public waterSoundObject As Water.WaterSoundObject
+- uid: Global.Water.camerasOutOfBreathFac
+  commentId: F:Global.Water.camerasOutOfBreathFac
+  id: camerasOutOfBreathFac
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: camerasOutOfBreathFac
+  nameWithType: Water.camerasOutOfBreathFac
+  fullName: Water.camerasOutOfBreathFac
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.camerasOutOfBreathFac</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float[,] camerasOutOfBreathFac
+    return:
+      type: System.Single[,]
+    content.vb: Public camerasOutOfBreathFac As Single(,)
+- uid: Global.Water.viscosity
+  commentId: F:Global.Water.viscosity
+  id: viscosity
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: viscosity
+  nameWithType: Water.viscosity
+  fullName: Water.viscosity
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.viscosity</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float viscosity
+    return:
+      type: System.Single
+    content.vb: Public viscosity As Single
+- uid: Global.Water.firstWaterSprite
+  commentId: F:Global.Water.firstWaterSprite
+  id: firstWaterSprite
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: firstWaterSprite
+  nameWithType: Water.firstWaterSprite
+  fullName: Water.firstWaterSprite
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.firstWaterSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FSprite firstWaterSprite
+    return:
+      type: Global.FSprite
+    content.vb: Public firstWaterSprite As FSprite
+- uid: Global.Water.WaterIsLethal
+  commentId: F:Global.Water.WaterIsLethal
+  id: WaterIsLethal
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: WaterIsLethal
+  nameWithType: Water.WaterIsLethal
+  fullName: Water.WaterIsLethal
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.WaterIsLethal</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool WaterIsLethal
+    return:
+      type: System.Boolean
+    content.vb: Public WaterIsLethal As Boolean
+- uid: Global.Water.WaterIsBrine
+  commentId: F:Global.Water.WaterIsBrine
+  id: WaterIsBrine
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: WaterIsBrine
+  nameWithType: Water.WaterIsBrine
+  fullName: Water.WaterIsBrine
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Water.WaterIsBrine</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool WaterIsBrine
+    return:
+      type: System.Boolean
+    content.vb: Public WaterIsBrine As Boolean
+- uid: Global.Water.#ctor(Room,System.Int32)
+  commentId: M:Global.Water.#ctor(Room,System.Int32)
+  id: '#ctor(Room,System.Int32)'
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: Water(Room, int)
+  nameWithType: Water.Water(Room, int)
+  fullName: Water.Water(Room, int)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Water</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Water(Room room, int waterLevel)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Water.#ctor(Room,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: waterLevel
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>waterLevel</parameter>
+            <parameter>M:Water.#ctor(Room,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room, waterLevel As Integer)
+  overload: Global.Water.#ctor*
+  nameWithType.vb: Water.New(Room, Integer)
+  fullName.vb: Water.New(Room, Integer)
+  name.vb: New(Room, Integer)
+- uid: Global.Water.Update
+  commentId: M:Global.Water.Update
+  id: Update
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: Water.Update()
+  fullName: Water.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: Global.Water.Update*
+- uid: Global.Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)
+  commentId: M:Global.Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)
+  id: MultiSurfaceFWaterLevel(UnityEngine.Vector2)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: MultiSurfaceFWaterLevel(Vector2)
+  nameWithType: Water.MultiSurfaceFWaterLevel(Vector2)
+  fullName: Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float MultiSurfaceFWaterLevel(Vector2 pos)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Water.MultiSurfaceFWaterLevel(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function MultiSurfaceFWaterLevel(pos As Vector2) As Single
+  overload: Global.Water.MultiSurfaceFWaterLevel*
+- uid: Global.Water.ThroughSurfaceSound(BodyChunk)
+  commentId: M:Global.Water.ThroughSurfaceSound(BodyChunk)
+  id: ThroughSurfaceSound(BodyChunk)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: ThroughSurfaceSound(BodyChunk)
+  nameWithType: Water.ThroughSurfaceSound(BodyChunk)
+  fullName: Water.ThroughSurfaceSound(BodyChunk)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.ThroughSurfaceSound(BodyChunk)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ThroughSurfaceSound(BodyChunk chunk)
+    parameters:
+    - id: chunk
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chunk</parameter>
+            <parameter>M:Water.ThroughSurfaceSound(BodyChunk)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ThroughSurfaceSound(chunk As BodyChunk)
+  overload: Global.Water.ThroughSurfaceSound*
+- uid: Global.Water.SurfaceLeftAndRightBoundries
+  commentId: M:Global.Water.SurfaceLeftAndRightBoundries
+  id: SurfaceLeftAndRightBoundries
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: SurfaceLeftAndRightBoundries()
+  nameWithType: Water.SurfaceLeftAndRightBoundries()
+  fullName: Water.SurfaceLeftAndRightBoundries()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.SurfaceLeftAndRightBoundries</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 SurfaceLeftAndRightBoundries()
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Water.SurfaceLeftAndRightBoundries</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function SurfaceLeftAndRightBoundries() As Vector2
+  overload: Global.Water.SurfaceLeftAndRightBoundries*
+- uid: Global.Water.DetailedWaterLevel(UnityEngine.Vector2)
+  commentId: M:Global.Water.DetailedWaterLevel(UnityEngine.Vector2)
+  id: DetailedWaterLevel(UnityEngine.Vector2)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: DetailedWaterLevel(Vector2)
+  nameWithType: Water.DetailedWaterLevel(Vector2)
+  fullName: Water.DetailedWaterLevel(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.DetailedWaterLevel(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float DetailedWaterLevel(Vector2 pos)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Water.DetailedWaterLevel(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Water.DetailedWaterLevel(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DetailedWaterLevel(pos As Vector2) As Single
+  overload: Global.Water.DetailedWaterLevel*
+- uid: Global.Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  commentId: M:Global.Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  id: IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: IsTileAccessible(IntVector2, CreatureTemplate)
+  nameWithType: Water.IsTileAccessible(IntVector2, CreatureTemplate)
+  fullName: Water.IsTileAccessible(RWCustom.IntVector2, CreatureTemplate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsTileAccessible(IntVector2 tile, CreatureTemplate crit)
+    parameters:
+    - id: tile
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tile</parameter>
+            <parameter>M:Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    - id: crit
+      type: Global.CreatureTemplate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Water.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function IsTileAccessible(tile As IntVector2, crit As CreatureTemplate) As Boolean
+  overload: Global.Water.IsTileAccessible*
+  implements:
+  - Global.IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+- uid: Global.Water.shiftWithInversion(UnityEngine.Vector2)
+  commentId: M:Global.Water.shiftWithInversion(UnityEngine.Vector2)
+  id: shiftWithInversion(UnityEngine.Vector2)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: shiftWithInversion(Vector2)
+  nameWithType: Water.shiftWithInversion(Vector2)
+  fullName: Water.shiftWithInversion(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.shiftWithInversion(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 shiftWithInversion(Vector2 shift)
+    parameters:
+    - id: shift
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shift</parameter>
+            <parameter>M:Water.shiftWithInversion(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Water.shiftWithInversion(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function shiftWithInversion(shift As Vector2) As Vector2
+  overload: Global.Water.shiftWithInversion*
+- uid: Global.Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Global.Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)
+  id: WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: WaterfallHitSurface(Vector2, float, float)
+  nameWithType: Water.WaterfallHitSurface(Vector2, float, float)
+  fullName: Water.WaterfallHitSurface(UnityEngine.Vector2, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void WaterfallHitSurface(Vector2 sourcePos, float width, float flow)
+    parameters:
+    - id: sourcePos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sourcePos</parameter>
+            <parameter>M:Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: width
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>width</parameter>
+            <parameter>M:Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: flow
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>flow</parameter>
+            <parameter>M:Water.WaterfallHitSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub WaterfallHitSurface(sourcePos As Vector2, width As Single, flow As Single)
+  overload: Global.Water.WaterfallHitSurface*
+  nameWithType.vb: Water.WaterfallHitSurface(Vector2, Single, Single)
+  fullName.vb: Water.WaterfallHitSurface(UnityEngine.Vector2, Single, Single)
+  name.vb: WaterfallHitSurface(Vector2, Single, Single)
+- uid: Global.Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Global.Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)
+  id: DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: DrainAffectSurface(Vector2, float, float)
+  nameWithType: Water.DrainAffectSurface(Vector2, float, float)
+  fullName: Water.DrainAffectSurface(UnityEngine.Vector2, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DrainAffectSurface(Vector2 sourcePos, float width, float flow)
+    parameters:
+    - id: sourcePos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sourcePos</parameter>
+            <parameter>M:Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: width
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>width</parameter>
+            <parameter>M:Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: flow
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>flow</parameter>
+            <parameter>M:Water.DrainAffectSurface(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub DrainAffectSurface(sourcePos As Vector2, width As Single, flow As Single)
+  overload: Global.Water.DrainAffectSurface*
+  nameWithType.vb: Water.DrainAffectSurface(Vector2, Single, Single)
+  fullName.vb: Water.DrainAffectSurface(UnityEngine.Vector2, Single, Single)
+  name.vb: DrainAffectSurface(Vector2, Single, Single)
+- uid: Global.Water.GeneralUpsetSurface(System.Single)
+  commentId: M:Global.Water.GeneralUpsetSurface(System.Single)
+  id: GeneralUpsetSurface(System.Single)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: GeneralUpsetSurface(float)
+  nameWithType: Water.GeneralUpsetSurface(float)
+  fullName: Water.GeneralUpsetSurface(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.GeneralUpsetSurface(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void GeneralUpsetSurface(float intensity)
+    parameters:
+    - id: intensity
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>intensity</parameter>
+            <parameter>M:Water.GeneralUpsetSurface(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub GeneralUpsetSurface(intensity As Single)
+  overload: Global.Water.GeneralUpsetSurface*
+  nameWithType.vb: Water.GeneralUpsetSurface(Single)
+  fullName.vb: Water.GeneralUpsetSurface(Single)
+  name.vb: GeneralUpsetSurface(Single)
+- uid: Global.Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Global.Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)
+  id: Explosion(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: Explosion(Vector2, float, float)
+  nameWithType: Water.Explosion(Vector2, float, float)
+  fullName: Water.Explosion(UnityEngine.Vector2, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Explosion(Vector2 pos, float rad, float frc)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: rad
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rad</parameter>
+            <parameter>M:Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: frc
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>frc</parameter>
+            <parameter>M:Water.Explosion(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Explosion(pos As Vector2, rad As Single, frc As Single)
+  overload: Global.Water.Explosion*
+  nameWithType.vb: Water.Explosion(Vector2, Single, Single)
+  fullName.vb: Water.Explosion(UnityEngine.Vector2, Single, Single)
+  name.vb: Explosion(Vector2, Single, Single)
+- uid: Global.Water.Explosion(Explosion)
+  commentId: M:Global.Water.Explosion(Explosion)
+  id: Explosion(Explosion)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: Explosion(Explosion)
+  nameWithType: Water.Explosion(Explosion)
+  fullName: Water.Explosion(Explosion)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.Explosion(Explosion)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Explosion(Explosion explosion)
+    parameters:
+    - id: explosion
+      type: Global.Explosion
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>explosion</parameter>
+            <parameter>M:Water.Explosion(Explosion)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Explosion(explosion As Explosion)
+  overload: Global.Water.Explosion*
+- uid: Global.Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: Water.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: Water.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Water.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overload: Global.Water.InitiateSprites*
+  implements:
+  - Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+- uid: Global.Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: Water.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: Water.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:Water.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overload: Global.Water.DrawSprites*
+  implements:
+  - Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  nameWithType.vb: Water.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: Water.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: Water.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: Water.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:Water.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overload: Global.Water.ApplyPalette*
+  implements:
+  - Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+- uid: Global.Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: Water.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: Water.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:Water.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overload: Global.Water.AddToContainer*
+  implements:
+  - Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+- uid: Global.Water.Destroy
+  commentId: M:Global.Water.Destroy
+  id: Destroy
+  parent: Global.Water
+  langs:
+  - csharp
+  - vb
+  name: Destroy()
+  nameWithType: Water.Destroy()
+  fullName: Water.Destroy()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Water.Destroy</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Destroy()
+    content.vb: Public Sub Destroy()
+  overload: Global.Water.Destroy*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: Global.IAccessibilityModifier
+  commentId: T:Global.IAccessibilityModifier
+  isExternal: true
+  href: IAccessibilityModifier.html
+  name: IAccessibilityModifier
+  nameWithType: IAccessibilityModifier
+  fullName: IAccessibilityModifier
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.RectangularDynamicSoundLoop
+  commentId: T:Global.RectangularDynamicSoundLoop
+  isExternal: true
+  href: RectangularDynamicSoundLoop.html
+  name: RectangularDynamicSoundLoop
+  nameWithType: RectangularDynamicSoundLoop
+  fullName: RectangularDynamicSoundLoop
+- uid: Global.Water.WaterSoundObject
+  commentId: T:Global.Water.WaterSoundObject
+  isExternal: true
+  href: Water.html
+  name: Water.WaterSoundObject
+  nameWithType: Water.WaterSoundObject
+  fullName: Water.WaterSoundObject
+  spec.csharp:
+  - uid: Global.Water
+    name: Water
+    isExternal: true
+    href: Water.html
+  - name: .
+  - uid: Global.Water.WaterSoundObject
+    name: WaterSoundObject
+    isExternal: true
+    href: Water.WaterSoundObject.html
+  spec.vb:
+  - uid: Global.Water
+    name: Water
+    isExternal: true
+    href: Water.html
+  - name: .
+  - uid: Global.Water.WaterSoundObject
+    name: WaterSoundObject
+    isExternal: true
+    href: Water.WaterSoundObject.html
+- uid: System.Single[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: ','
+  - name: )
+- uid: Global.FSprite
+  commentId: T:Global.FSprite
+  isExternal: true
+  href: FSprite.html
+  name: FSprite
+  nameWithType: FSprite
+  fullName: FSprite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Water.#ctor*
+  commentId: Overload:Global.Water.#ctor
+  isExternal: true
+  href: Global.Water.html#Water__ctor_Room_System_Int32_
+  name: Water
+  nameWithType: Water.Water
+  fullName: Water.Water
+  nameWithType.vb: Water.New
+  fullName.vb: Water.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Water.Update*
+  commentId: Overload:Global.Water.Update
+  isExternal: true
+  href: Global.Water.html#Water_Update
+  name: Update
+  nameWithType: Water.Update
+  fullName: Water.Update
+- uid: Global.Water.MultiSurfaceFWaterLevel*
+  commentId: Overload:Global.Water.MultiSurfaceFWaterLevel
+  isExternal: true
+  href: Global.Water.html#Water_MultiSurfaceFWaterLevel_UnityEngine_Vector2_
+  name: MultiSurfaceFWaterLevel
+  nameWithType: Water.MultiSurfaceFWaterLevel
+  fullName: Water.MultiSurfaceFWaterLevel
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.Water.ThroughSurfaceSound*
+  commentId: Overload:Global.Water.ThroughSurfaceSound
+  isExternal: true
+  href: Global.Water.html#Water_ThroughSurfaceSound_BodyChunk_
+  name: ThroughSurfaceSound
+  nameWithType: Water.ThroughSurfaceSound
+  fullName: Water.ThroughSurfaceSound
+- uid: Global.BodyChunk
+  commentId: T:Global.BodyChunk
+  isExternal: true
+  href: BodyChunk.html
+  name: BodyChunk
+  nameWithType: BodyChunk
+  fullName: BodyChunk
+- uid: Global.Water.SurfaceLeftAndRightBoundries*
+  commentId: Overload:Global.Water.SurfaceLeftAndRightBoundries
+  isExternal: true
+  href: Global.Water.html#Water_SurfaceLeftAndRightBoundries
+  name: SurfaceLeftAndRightBoundries
+  nameWithType: Water.SurfaceLeftAndRightBoundries
+  fullName: Water.SurfaceLeftAndRightBoundries
+- uid: Global.Water.DetailedWaterLevel*
+  commentId: Overload:Global.Water.DetailedWaterLevel
+  isExternal: true
+  href: Global.Water.html#Water_DetailedWaterLevel_UnityEngine_Vector2_
+  name: DetailedWaterLevel
+  nameWithType: Water.DetailedWaterLevel
+  fullName: Water.DetailedWaterLevel
+- uid: Global.Water.IsTileAccessible*
+  commentId: Overload:Global.Water.IsTileAccessible
+  isExternal: true
+  href: Global.Water.html#Water_IsTileAccessible_RWCustom_IntVector2_CreatureTemplate_
+  name: IsTileAccessible
+  nameWithType: Water.IsTileAccessible
+  fullName: Water.IsTileAccessible
+- uid: Global.IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  commentId: M:Global.IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+  parent: Global.IAccessibilityModifier
+  isExternal: true
+  href: Global.IAccessibilityModifier.html#IAccessibilityModifier_IsTileAccessible_RWCustom_IntVector2_CreatureTemplate_
+  name: IsTileAccessible(IntVector2, CreatureTemplate)
+  nameWithType: IAccessibilityModifier.IsTileAccessible(IntVector2, CreatureTemplate)
+  fullName: IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2, CreatureTemplate)
+  spec.csharp:
+  - uid: Global.IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+    name: IsTileAccessible
+    isExternal: true
+    href: Global.IAccessibilityModifier.html#IAccessibilityModifier_IsTileAccessible_RWCustom_IntVector2_CreatureTemplate_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: )
+  spec.vb:
+  - uid: Global.IAccessibilityModifier.IsTileAccessible(RWCustom.IntVector2,CreatureTemplate)
+    name: IsTileAccessible
+    isExternal: true
+    href: Global.IAccessibilityModifier.html#IAccessibilityModifier_IsTileAccessible_RWCustom_IntVector2_CreatureTemplate_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: )
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: Global.CreatureTemplate
+  commentId: T:Global.CreatureTemplate
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate
+  nameWithType: CreatureTemplate
+  fullName: CreatureTemplate
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.Water.shiftWithInversion*
+  commentId: Overload:Global.Water.shiftWithInversion
+  isExternal: true
+  href: Global.Water.html#Water_shiftWithInversion_UnityEngine_Vector2_
+  name: shiftWithInversion
+  nameWithType: Water.shiftWithInversion
+  fullName: Water.shiftWithInversion
+- uid: Global.Water.WaterfallHitSurface*
+  commentId: Overload:Global.Water.WaterfallHitSurface
+  isExternal: true
+  href: Global.Water.html#Water_WaterfallHitSurface_UnityEngine_Vector2_System_Single_System_Single_
+  name: WaterfallHitSurface
+  nameWithType: Water.WaterfallHitSurface
+  fullName: Water.WaterfallHitSurface
+- uid: Global.Water.DrainAffectSurface*
+  commentId: Overload:Global.Water.DrainAffectSurface
+  isExternal: true
+  href: Global.Water.html#Water_DrainAffectSurface_UnityEngine_Vector2_System_Single_System_Single_
+  name: DrainAffectSurface
+  nameWithType: Water.DrainAffectSurface
+  fullName: Water.DrainAffectSurface
+- uid: Global.Water.GeneralUpsetSurface*
+  commentId: Overload:Global.Water.GeneralUpsetSurface
+  isExternal: true
+  href: Global.Water.html#Water_GeneralUpsetSurface_System_Single_
+  name: GeneralUpsetSurface
+  nameWithType: Water.GeneralUpsetSurface
+  fullName: Water.GeneralUpsetSurface
+- uid: Global.Water.Explosion*
+  commentId: Overload:Global.Water.Explosion
+  isExternal: true
+  href: Global.Water.html#Water_Explosion_UnityEngine_Vector2_System_Single_System_Single_
+  name: Explosion
+  nameWithType: Water.Explosion
+  fullName: Water.Explosion
+- uid: Global.Explosion
+  commentId: T:Global.Explosion
+  isExternal: true
+  href: Explosion.html
+  name: Explosion
+  nameWithType: Explosion
+  fullName: Explosion
+- uid: Global.Water.InitiateSprites*
+  commentId: Overload:Global.Water.InitiateSprites
+  isExternal: true
+  href: Global.Water.html#Water_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: Water.InitiateSprites
+  fullName: Water.InitiateSprites
+- uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.Water.DrawSprites*
+  commentId: Overload:Global.Water.DrawSprites
+  isExternal: true
+  href: Global.Water.html#Water_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: Water.DrawSprites
+  fullName: Water.DrawSprites
+- uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.Water.ApplyPalette*
+  commentId: Overload:Global.Water.ApplyPalette
+  isExternal: true
+  href: Global.Water.html#Water_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: Water.ApplyPalette
+  fullName: Water.ApplyPalette
+- uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.Water.AddToContainer*
+  commentId: Overload:Global.Water.AddToContainer
+  isExternal: true
+  href: Global.Water.html#Water_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: Water.AddToContainer
+  fullName: Water.AddToContainer
+- uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.Water.Destroy*
+  commentId: Overload:Global.Water.Destroy
+  isExternal: true
+  href: Global.Water.html#Water_Destroy
+  name: Destroy
+  nameWithType: Water.Destroy
+  fullName: Water.Destroy

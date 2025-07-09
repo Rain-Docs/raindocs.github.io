@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DiscomfortTracker
+  commentId: T:Global.DiscomfortTracker
+  id: DiscomfortTracker
+  parent: Global
+  children:
+  - Global.DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)
+  - Global.DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)
+  - Global.DiscomfortTracker.MostUncomfortableCreature
+  - Global.DiscomfortTracker.TileUncomfortable(WorldCoordinate)
+  - Global.DiscomfortTracker.Update
+  - Global.DiscomfortTracker.uncomfortableItem
+  - Global.DiscomfortTracker.uncomfortableItemDiscomfort
+  langs:
+  - csharp
+  - vb
+  name: DiscomfortTracker
+  nameWithType: DiscomfortTracker
+  fullName: DiscomfortTracker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:DiscomfortTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class DiscomfortTracker : AIModule'
+    content.vb: Public Class DiscomfortTracker Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - Global.AIModule.NewRoom(Room)
+  - Global.AIModule.Utility
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.DiscomfortTracker.uncomfortableItem
+  commentId: F:Global.DiscomfortTracker.uncomfortableItem
+  id: uncomfortableItem
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: uncomfortableItem
+  nameWithType: DiscomfortTracker.uncomfortableItem
+  fullName: DiscomfortTracker.uncomfortableItem
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DiscomfortTracker.uncomfortableItem</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ItemTracker.ItemRepresentation uncomfortableItem
+    return:
+      type: Global.ItemTracker.ItemRepresentation
+    content.vb: Public uncomfortableItem As ItemTracker.ItemRepresentation
+- uid: Global.DiscomfortTracker.uncomfortableItemDiscomfort
+  commentId: F:Global.DiscomfortTracker.uncomfortableItemDiscomfort
+  id: uncomfortableItemDiscomfort
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: uncomfortableItemDiscomfort
+  nameWithType: DiscomfortTracker.uncomfortableItemDiscomfort
+  fullName: DiscomfortTracker.uncomfortableItemDiscomfort
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DiscomfortTracker.uncomfortableItemDiscomfort</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float uncomfortableItemDiscomfort
+    return:
+      type: System.Single
+    content.vb: Public uncomfortableItemDiscomfort As Single
+- uid: Global.DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)
+  commentId: M:Global.DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)
+  id: '#ctor(ArtificialIntelligence,Tracker,System.Single)'
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: DiscomfortTracker(ArtificialIntelligence, Tracker, float)
+  nameWithType: DiscomfortTracker.DiscomfortTracker(ArtificialIntelligence, Tracker, float)
+  fullName: DiscomfortTracker.DiscomfortTracker(ArtificialIntelligence, Tracker, float)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>DiscomfortTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DiscomfortTracker(ArtificialIntelligence AI, Tracker tracker, float uncomfortableWithUnknownNoises)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: tracker
+      type: Global.Tracker
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tracker</parameter>
+            <parameter>M:DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: uncomfortableWithUnknownNoises
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>uncomfortableWithUnknownNoises</parameter>
+            <parameter>M:DiscomfortTracker.#ctor(ArtificialIntelligence,Tracker,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, tracker As Tracker, uncomfortableWithUnknownNoises As Single)
+  overload: Global.DiscomfortTracker.#ctor*
+  nameWithType.vb: DiscomfortTracker.New(ArtificialIntelligence, Tracker, Single)
+  fullName.vb: DiscomfortTracker.New(ArtificialIntelligence, Tracker, Single)
+  name.vb: New(ArtificialIntelligence, Tracker, Single)
+- uid: Global.DiscomfortTracker.Update
+  commentId: M:Global.DiscomfortTracker.Update
+  id: Update
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DiscomfortTracker.Update()
+  fullName: DiscomfortTracker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DiscomfortTracker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.DiscomfortTracker.Update*
+- uid: Global.DiscomfortTracker.MostUncomfortableCreature
+  commentId: M:Global.DiscomfortTracker.MostUncomfortableCreature
+  id: MostUncomfortableCreature
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: MostUncomfortableCreature()
+  nameWithType: DiscomfortTracker.MostUncomfortableCreature()
+  fullName: DiscomfortTracker.MostUncomfortableCreature()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DiscomfortTracker.MostUncomfortableCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation MostUncomfortableCreature()
+    return:
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:DiscomfortTracker.MostUncomfortableCreature</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function MostUncomfortableCreature() As Tracker.CreatureRepresentation
+  overload: Global.DiscomfortTracker.MostUncomfortableCreature*
+- uid: Global.DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)
+  commentId: M:Global.DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)
+  id: DiscomfortOfTile(WorldCoordinate)
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: DiscomfortOfTile(WorldCoordinate)
+  nameWithType: DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)
+  fullName: DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float DiscomfortOfTile(WorldCoordinate test)
+    parameters:
+    - id: test
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>test</parameter>
+            <parameter>M:DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:DiscomfortTracker.DiscomfortOfTile(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DiscomfortOfTile(test As WorldCoordinate) As Single
+  overload: Global.DiscomfortTracker.DiscomfortOfTile*
+- uid: Global.DiscomfortTracker.TileUncomfortable(WorldCoordinate)
+  commentId: M:Global.DiscomfortTracker.TileUncomfortable(WorldCoordinate)
+  id: TileUncomfortable(WorldCoordinate)
+  parent: Global.DiscomfortTracker
+  langs:
+  - csharp
+  - vb
+  name: TileUncomfortable(WorldCoordinate)
+  nameWithType: DiscomfortTracker.TileUncomfortable(WorldCoordinate)
+  fullName: DiscomfortTracker.TileUncomfortable(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DiscomfortTracker.TileUncomfortable(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool TileUncomfortable(WorldCoordinate test)
+    parameters:
+    - id: test
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>test</parameter>
+            <parameter>M:DiscomfortTracker.TileUncomfortable(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:DiscomfortTracker.TileUncomfortable(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function TileUncomfortable(test As WorldCoordinate) As Boolean
+  overload: Global.DiscomfortTracker.TileUncomfortable*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ItemTracker.ItemRepresentation
+  commentId: T:Global.ItemTracker.ItemRepresentation
+  isExternal: true
+  href: ItemTracker.html
+  name: ItemTracker.ItemRepresentation
+  nameWithType: ItemTracker.ItemRepresentation
+  fullName: ItemTracker.ItemRepresentation
+  spec.csharp:
+  - uid: Global.ItemTracker
+    name: ItemTracker
+    isExternal: true
+    href: ItemTracker.html
+  - name: .
+  - uid: Global.ItemTracker.ItemRepresentation
+    name: ItemRepresentation
+    isExternal: true
+    href: ItemTracker.ItemRepresentation.html
+  spec.vb:
+  - uid: Global.ItemTracker
+    name: ItemTracker
+    isExternal: true
+    href: ItemTracker.html
+  - name: .
+  - uid: Global.ItemTracker.ItemRepresentation
+    name: ItemRepresentation
+    isExternal: true
+    href: ItemTracker.ItemRepresentation.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.DiscomfortTracker.#ctor*
+  commentId: Overload:Global.DiscomfortTracker.#ctor
+  isExternal: true
+  href: Global.DiscomfortTracker.html#DiscomfortTracker__ctor_ArtificialIntelligence_Tracker_System_Single_
+  name: DiscomfortTracker
+  nameWithType: DiscomfortTracker.DiscomfortTracker
+  fullName: DiscomfortTracker.DiscomfortTracker
+  nameWithType.vb: DiscomfortTracker.New
+  fullName.vb: DiscomfortTracker.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.Tracker
+  commentId: T:Global.Tracker
+  isExternal: true
+  href: Tracker.html
+  name: Tracker
+  nameWithType: Tracker
+  fullName: Tracker
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.DiscomfortTracker.Update*
+  commentId: Overload:Global.DiscomfortTracker.Update
+  isExternal: true
+  href: Global.DiscomfortTracker.html#DiscomfortTracker_Update
+  name: Update
+  nameWithType: DiscomfortTracker.Update
+  fullName: DiscomfortTracker.Update
+- uid: Global.DiscomfortTracker.MostUncomfortableCreature*
+  commentId: Overload:Global.DiscomfortTracker.MostUncomfortableCreature
+  isExternal: true
+  href: Global.DiscomfortTracker.html#DiscomfortTracker_MostUncomfortableCreature
+  name: MostUncomfortableCreature
+  nameWithType: DiscomfortTracker.MostUncomfortableCreature
+  fullName: DiscomfortTracker.MostUncomfortableCreature
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.DiscomfortTracker.DiscomfortOfTile*
+  commentId: Overload:Global.DiscomfortTracker.DiscomfortOfTile
+  isExternal: true
+  href: Global.DiscomfortTracker.html#DiscomfortTracker_DiscomfortOfTile_WorldCoordinate_
+  name: DiscomfortOfTile
+  nameWithType: DiscomfortTracker.DiscomfortOfTile
+  fullName: DiscomfortTracker.DiscomfortOfTile
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Global.DiscomfortTracker.TileUncomfortable*
+  commentId: Overload:Global.DiscomfortTracker.TileUncomfortable
+  isExternal: true
+  href: Global.DiscomfortTracker.html#DiscomfortTracker_TileUncomfortable_WorldCoordinate_
+  name: TileUncomfortable
+  nameWithType: DiscomfortTracker.TileUncomfortable
+  fullName: DiscomfortTracker.TileUncomfortable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

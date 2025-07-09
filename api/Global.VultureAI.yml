@@ -1,0 +1,2506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.VultureAI
+  commentId: T:Global.VultureAI
+  id: VultureAI
+  parent: Global
+  children:
+  - Global.VultureAI.#ctor(AbstractCreature,World)
+  - Global.VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  - Global.VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  - Global.VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  - Global.VultureAI.DoIWantToBiteCreature(AbstractCreature)
+  - Global.VultureAI.ForcedLookCreature
+  - Global.VultureAI.KingTuskShootPosScore(WorldCoordinate)
+  - Global.VultureAI.LookAtNothing
+  - Global.VultureAI.NewRoom(Room)
+  - Global.VultureAI.OnlyHurtDontGrab(PhysicalObject)
+  - Global.VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)
+  - Global.VultureAI.TravelPreference(MovementConnection,PathCost)
+  - Global.VultureAI.Update
+  - Global.VultureAI.VisualScore(UnityEngine.Vector2,System.Single)
+  - Global.VultureAI.behavior
+  - Global.VultureAI.creatureLooker
+  - Global.VultureAI.debugDestinationVisualizer
+  - Global.VultureAI.disencouraged
+  - Global.VultureAI.focusCreature
+  - Global.VultureAI.kingTuskShootPos
+  - Global.VultureAI.preyInTuskChargeRange
+  - Global.VultureAI.timeInRoom
+  - Global.VultureAI.vulture
+  langs:
+  - csharp
+  - vb
+  name: VultureAI
+  nameWithType: VultureAI
+  fullName: VultureAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:VultureAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class VultureAI : ArtificialIntelligence, ILookingAtCreatures, IUseARelationshipTracker'
+    content.vb: Public Class VultureAI Inherits ArtificialIntelligence Implements ILookingAtCreatures, IUseARelationshipTracker
+  inheritance:
+  - System.Object
+  - Global.ArtificialIntelligence
+  implements:
+  - Global.ILookingAtCreatures
+  - Global.IUseARelationshipTracker
+  inheritedMembers:
+  - Global.ArtificialIntelligence.creature
+  - Global.ArtificialIntelligence.modules
+  - Global.ArtificialIntelligence.stranded
+  - Global.ArtificialIntelligence.seeThroughWalls
+  - Global.ArtificialIntelligence.lastRoom
+  - Global.ArtificialIntelligence.ripplePathingTarget
+  - Global.ArtificialIntelligence.ripplePathingTime
+  - Global.ArtificialIntelligence.AddModule(AIModule)
+  - Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  - Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  - Global.ArtificialIntelligence.NewArea(System.Boolean)
+  - Global.ArtificialIntelligence.DenPosition
+  - Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  - Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  - Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  - Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  - Global.ArtificialIntelligence.pathFinder
+  - Global.ArtificialIntelligence.tracker
+  - Global.ArtificialIntelligence.noiseTracker
+  - Global.ArtificialIntelligence.obstacleTracker
+  - Global.ArtificialIntelligence.threatTracker
+  - Global.ArtificialIntelligence.preyTracker
+  - Global.ArtificialIntelligence.rainTracker
+  - Global.ArtificialIntelligence.denFinder
+  - Global.ArtificialIntelligence.agressionTracker
+  - Global.ArtificialIntelligence.utilityComparer
+  - Global.ArtificialIntelligence.missionTracker
+  - Global.ArtificialIntelligence.secondaryNodeFinder
+  - Global.ArtificialIntelligence.relationshipTracker
+  - Global.ArtificialIntelligence.itemTracker
+  - Global.ArtificialIntelligence.discomfortTracker
+  - Global.ArtificialIntelligence.stuckTracker
+  - Global.ArtificialIntelligence.injuryTracker
+  - Global.ArtificialIntelligence.friendTracker
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.VultureAI.debugDestinationVisualizer
+  commentId: F:Global.VultureAI.debugDestinationVisualizer
+  id: debugDestinationVisualizer
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: debugDestinationVisualizer
+  nameWithType: VultureAI.debugDestinationVisualizer
+  fullName: VultureAI.debugDestinationVisualizer
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.debugDestinationVisualizer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DebugDestinationVisualizer debugDestinationVisualizer
+    return:
+      type: Global.DebugDestinationVisualizer
+    content.vb: Public debugDestinationVisualizer As DebugDestinationVisualizer
+- uid: Global.VultureAI.creatureLooker
+  commentId: F:Global.VultureAI.creatureLooker
+  id: creatureLooker
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: creatureLooker
+  nameWithType: VultureAI.creatureLooker
+  fullName: VultureAI.creatureLooker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.creatureLooker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CreatureLooker creatureLooker
+    return:
+      type: Global.CreatureLooker
+    content.vb: Public creatureLooker As CreatureLooker
+- uid: Global.VultureAI.focusCreature
+  commentId: F:Global.VultureAI.focusCreature
+  id: focusCreature
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: focusCreature
+  nameWithType: VultureAI.focusCreature
+  fullName: VultureAI.focusCreature
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.focusCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation focusCreature
+    return:
+      type: Global.Tracker.CreatureRepresentation
+    content.vb: Public focusCreature As Tracker.CreatureRepresentation
+- uid: Global.VultureAI.behavior
+  commentId: F:Global.VultureAI.behavior
+  id: behavior
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: behavior
+  nameWithType: VultureAI.behavior
+  fullName: VultureAI.behavior
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.behavior</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public VultureAI.Behavior behavior
+    return:
+      type: Global.VultureAI.Behavior
+    content.vb: Public behavior As VultureAI.Behavior
+- uid: Global.VultureAI.timeInRoom
+  commentId: F:Global.VultureAI.timeInRoom
+  id: timeInRoom
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: timeInRoom
+  nameWithType: VultureAI.timeInRoom
+  fullName: VultureAI.timeInRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.timeInRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int timeInRoom
+    return:
+      type: System.Int32
+    content.vb: Public timeInRoom As Integer
+- uid: Global.VultureAI.kingTuskShootPos
+  commentId: F:Global.VultureAI.kingTuskShootPos
+  id: kingTuskShootPos
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: kingTuskShootPos
+  nameWithType: VultureAI.kingTuskShootPos
+  fullName: VultureAI.kingTuskShootPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.kingTuskShootPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate kingTuskShootPos
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public kingTuskShootPos As WorldCoordinate
+- uid: Global.VultureAI.preyInTuskChargeRange
+  commentId: F:Global.VultureAI.preyInTuskChargeRange
+  id: preyInTuskChargeRange
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: preyInTuskChargeRange
+  nameWithType: VultureAI.preyInTuskChargeRange
+  fullName: VultureAI.preyInTuskChargeRange
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:VultureAI.preyInTuskChargeRange</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool preyInTuskChargeRange
+    return:
+      type: System.Boolean
+    content.vb: Public preyInTuskChargeRange As Boolean
+- uid: Global.VultureAI.#ctor(AbstractCreature,World)
+  commentId: M:Global.VultureAI.#ctor(AbstractCreature,World)
+  id: '#ctor(AbstractCreature,World)'
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: VultureAI(AbstractCreature, World)
+  nameWithType: VultureAI.VultureAI(AbstractCreature, World)
+  fullName: VultureAI.VultureAI(AbstractCreature, World)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>VultureAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public VultureAI(AbstractCreature creature, World world)
+    parameters:
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:VultureAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:VultureAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(creature As AbstractCreature, world As World)
+  overload: Global.VultureAI.#ctor*
+  nameWithType.vb: VultureAI.New(AbstractCreature, World)
+  fullName.vb: VultureAI.New(AbstractCreature, World)
+  name.vb: New(AbstractCreature, World)
+- uid: Global.VultureAI.NewRoom(Room)
+  commentId: M:Global.VultureAI.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: VultureAI.NewRoom(Room)
+  fullName: VultureAI.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:VultureAI.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.ArtificialIntelligence.NewRoom(Room)
+  overload: Global.VultureAI.NewRoom*
+- uid: Global.VultureAI.Update
+  commentId: M:Global.VultureAI.Update
+  id: Update
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: VultureAI.Update()
+  fullName: VultureAI.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ArtificialIntelligence.Update
+  overload: Global.VultureAI.Update*
+- uid: Global.VultureAI.KingTuskShootPosScore(WorldCoordinate)
+  commentId: M:Global.VultureAI.KingTuskShootPosScore(WorldCoordinate)
+  id: KingTuskShootPosScore(WorldCoordinate)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: KingTuskShootPosScore(WorldCoordinate)
+  nameWithType: VultureAI.KingTuskShootPosScore(WorldCoordinate)
+  fullName: VultureAI.KingTuskShootPosScore(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.KingTuskShootPosScore(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float KingTuskShootPosScore(WorldCoordinate test)
+    parameters:
+    - id: test
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>test</parameter>
+            <parameter>M:VultureAI.KingTuskShootPosScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.KingTuskShootPosScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function KingTuskShootPosScore(test As WorldCoordinate) As Single
+  overload: Global.VultureAI.KingTuskShootPosScore*
+- uid: Global.VultureAI.VisualScore(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.VultureAI.VisualScore(UnityEngine.Vector2,System.Single)
+  id: VisualScore(UnityEngine.Vector2,System.Single)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: VisualScore(Vector2, float)
+  nameWithType: VultureAI.VisualScore(Vector2, float)
+  fullName: VultureAI.VisualScore(UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float VisualScore(Vector2 lookAtPoint, float targetSpeed)
+    parameters:
+    - id: lookAtPoint
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>lookAtPoint</parameter>
+            <parameter>M:VultureAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: targetSpeed
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>targetSpeed</parameter>
+            <parameter>M:VultureAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function VisualScore(lookAtPoint As Vector2, targetSpeed As Single) As Single
+  overridden: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  overload: Global.VultureAI.VisualScore*
+  nameWithType.vb: VultureAI.VisualScore(Vector2, Single)
+  fullName.vb: VultureAI.VisualScore(UnityEngine.Vector2, Single)
+  name.vb: VisualScore(Vector2, Single)
+- uid: Global.VultureAI.OnlyHurtDontGrab(PhysicalObject)
+  commentId: M:Global.VultureAI.OnlyHurtDontGrab(PhysicalObject)
+  id: OnlyHurtDontGrab(PhysicalObject)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: OnlyHurtDontGrab(PhysicalObject)
+  nameWithType: VultureAI.OnlyHurtDontGrab(PhysicalObject)
+  fullName: VultureAI.OnlyHurtDontGrab(PhysicalObject)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.OnlyHurtDontGrab(PhysicalObject)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool OnlyHurtDontGrab(PhysicalObject testObj)
+    parameters:
+    - id: testObj
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>testObj</parameter>
+            <parameter>M:VultureAI.OnlyHurtDontGrab(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.OnlyHurtDontGrab(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function OnlyHurtDontGrab(testObj As PhysicalObject) As Boolean
+  overload: Global.VultureAI.OnlyHurtDontGrab*
+- uid: Global.VultureAI.DoIWantToBiteCreature(AbstractCreature)
+  commentId: M:Global.VultureAI.DoIWantToBiteCreature(AbstractCreature)
+  id: DoIWantToBiteCreature(AbstractCreature)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: DoIWantToBiteCreature(AbstractCreature)
+  nameWithType: VultureAI.DoIWantToBiteCreature(AbstractCreature)
+  fullName: VultureAI.DoIWantToBiteCreature(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.DoIWantToBiteCreature(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool DoIWantToBiteCreature(AbstractCreature creature)
+    parameters:
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:VultureAI.DoIWantToBiteCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.DoIWantToBiteCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DoIWantToBiteCreature(creature As AbstractCreature) As Boolean
+  overload: Global.VultureAI.DoIWantToBiteCreature*
+- uid: Global.VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)
+  commentId: M:Global.VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)
+  id: TrackerToDiscardDeadCreature(AbstractCreature)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: TrackerToDiscardDeadCreature(AbstractCreature)
+  nameWithType: VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)
+  fullName: VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override bool TrackerToDiscardDeadCreature(AbstractCreature crit)
+    parameters:
+    - id: crit
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.TrackerToDiscardDeadCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function TrackerToDiscardDeadCreature(crit As AbstractCreature) As Boolean
+  overridden: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  overload: Global.VultureAI.TrackerToDiscardDeadCreature*
+- uid: Global.VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  commentId: M:Global.VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  id: CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: CreatureSpotted(bool, CreatureRepresentation)
+  nameWithType: VultureAI.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  fullName: VultureAI.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void CreatureSpotted(bool firstSpot, Tracker.CreatureRepresentation creatureRep)
+    parameters:
+    - id: firstSpot
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>firstSpot</parameter>
+            <parameter>M:VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)</parameter>
+          </include>
+        </markup>
+    - id: creatureRep
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creatureRep</parameter>
+            <parameter>M:VultureAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub CreatureSpotted(firstSpot As Boolean, creatureRep As Tracker.CreatureRepresentation)
+  overridden: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  overload: Global.VultureAI.CreatureSpotted*
+  nameWithType.vb: VultureAI.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  fullName.vb: VultureAI.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  name.vb: CreatureSpotted(Boolean, CreatureRepresentation)
+- uid: Global.VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  commentId: M:Global.VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  id: CreateTrackerRepresentationForCreature(AbstractCreature)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: CreateTrackerRepresentationForCreature(AbstractCreature)
+  nameWithType: VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  fullName: VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override Tracker.CreatureRepresentation CreateTrackerRepresentationForCreature(AbstractCreature otherCreature)
+    parameters:
+    - id: otherCreature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>otherCreature</parameter>
+            <parameter>M:VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.CreateTrackerRepresentationForCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function CreateTrackerRepresentationForCreature(otherCreature As AbstractCreature) As Tracker.CreatureRepresentation
+  overridden: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  overload: Global.VultureAI.CreateTrackerRepresentationForCreature*
+- uid: Global.VultureAI.TravelPreference(MovementConnection,PathCost)
+  commentId: M:Global.VultureAI.TravelPreference(MovementConnection,PathCost)
+  id: TravelPreference(MovementConnection,PathCost)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: TravelPreference(MovementConnection, PathCost)
+  nameWithType: VultureAI.TravelPreference(MovementConnection, PathCost)
+  fullName: VultureAI.TravelPreference(MovementConnection, PathCost)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.TravelPreference(MovementConnection,PathCost)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override PathCost TravelPreference(MovementConnection connection, PathCost cost)
+    parameters:
+    - id: connection
+      type: Global.MovementConnection
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>connection</parameter>
+            <parameter>M:VultureAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    - id: cost
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cost</parameter>
+            <parameter>M:VultureAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function TravelPreference(connection As MovementConnection, cost As PathCost) As PathCost
+  overridden: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  overload: Global.VultureAI.TravelPreference*
+- uid: Global.VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  commentId: M:Global.VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  id: CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: CreatureInterestBonus(CreatureRepresentation, float)
+  nameWithType: VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  fullName: VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float CreatureInterestBonus(Tracker.CreatureRepresentation crit, float score)
+    parameters:
+    - id: crit
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: score
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>score</parameter>
+            <parameter>M:VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CreatureInterestBonus(crit As Tracker.CreatureRepresentation, score As Single) As Single
+  overload: Global.VultureAI.CreatureInterestBonus*
+  implements:
+  - Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  nameWithType.vb: VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  fullName.vb: VultureAI.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  name.vb: CreatureInterestBonus(CreatureRepresentation, Single)
+- uid: Global.VultureAI.ForcedLookCreature
+  commentId: M:Global.VultureAI.ForcedLookCreature
+  id: ForcedLookCreature
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: ForcedLookCreature()
+  nameWithType: VultureAI.ForcedLookCreature()
+  fullName: VultureAI.ForcedLookCreature()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.ForcedLookCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation ForcedLookCreature()
+    return:
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:VultureAI.ForcedLookCreature</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ForcedLookCreature() As Tracker.CreatureRepresentation
+  overload: Global.VultureAI.ForcedLookCreature*
+  implements:
+  - Global.ILookingAtCreatures.ForcedLookCreature
+- uid: Global.VultureAI.LookAtNothing
+  commentId: M:Global.VultureAI.LookAtNothing
+  id: LookAtNothing
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: LookAtNothing()
+  nameWithType: VultureAI.LookAtNothing()
+  fullName: VultureAI.LookAtNothing()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:VultureAI.LookAtNothing</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LookAtNothing()
+    content.vb: Public Sub LookAtNothing()
+  overload: Global.VultureAI.LookAtNothing*
+  implements:
+  - Global.ILookingAtCreatures.LookAtNothing
+- uid: Global.VultureAI.vulture
+  commentId: P:Global.VultureAI.vulture
+  id: vulture
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: vulture
+  nameWithType: VultureAI.vulture
+  fullName: VultureAI.vulture
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:VultureAI.vulture</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vulture vulture { get; }
+    parameters: []
+    return:
+      type: Global.Vulture
+    content.vb: Public ReadOnly Property vulture As Vulture
+  overload: Global.VultureAI.vulture*
+- uid: Global.VultureAI.disencouraged
+  commentId: P:Global.VultureAI.disencouraged
+  id: disencouraged
+  parent: Global.VultureAI
+  langs:
+  - csharp
+  - vb
+  name: disencouraged
+  nameWithType: VultureAI.disencouraged
+  fullName: VultureAI.disencouraged
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:VultureAI.disencouraged</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float disencouraged { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property disencouraged As Single
+  overload: Global.VultureAI.disencouraged*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.ILookingAtCreatures
+  commentId: T:Global.ILookingAtCreatures
+  isExternal: true
+  href: ILookingAtCreatures.html
+  name: ILookingAtCreatures
+  nameWithType: ILookingAtCreatures
+  fullName: ILookingAtCreatures
+- uid: Global.IUseARelationshipTracker
+  commentId: T:Global.IUseARelationshipTracker
+  isExternal: true
+  href: IUseARelationshipTracker.html
+  name: IUseARelationshipTracker
+  nameWithType: IUseARelationshipTracker
+  fullName: IUseARelationshipTracker
+- uid: Global.ArtificialIntelligence.creature
+  commentId: F:Global.ArtificialIntelligence.creature
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_creature
+  name: creature
+  nameWithType: ArtificialIntelligence.creature
+  fullName: ArtificialIntelligence.creature
+- uid: Global.ArtificialIntelligence.modules
+  commentId: F:Global.ArtificialIntelligence.modules
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_modules
+  name: modules
+  nameWithType: ArtificialIntelligence.modules
+  fullName: ArtificialIntelligence.modules
+- uid: Global.ArtificialIntelligence.stranded
+  commentId: F:Global.ArtificialIntelligence.stranded
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stranded
+  name: stranded
+  nameWithType: ArtificialIntelligence.stranded
+  fullName: ArtificialIntelligence.stranded
+- uid: Global.ArtificialIntelligence.seeThroughWalls
+  commentId: F:Global.ArtificialIntelligence.seeThroughWalls
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_seeThroughWalls
+  name: seeThroughWalls
+  nameWithType: ArtificialIntelligence.seeThroughWalls
+  fullName: ArtificialIntelligence.seeThroughWalls
+- uid: Global.ArtificialIntelligence.lastRoom
+  commentId: F:Global.ArtificialIntelligence.lastRoom
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_lastRoom
+  name: lastRoom
+  nameWithType: ArtificialIntelligence.lastRoom
+  fullName: ArtificialIntelligence.lastRoom
+- uid: Global.ArtificialIntelligence.ripplePathingTarget
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTarget
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTarget
+  name: ripplePathingTarget
+  nameWithType: ArtificialIntelligence.ripplePathingTarget
+  fullName: ArtificialIntelligence.ripplePathingTarget
+- uid: Global.ArtificialIntelligence.ripplePathingTime
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTime
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTime
+  name: ripplePathingTime
+  nameWithType: ArtificialIntelligence.ripplePathingTime
+  fullName: ArtificialIntelligence.ripplePathingTime
+- uid: Global.ArtificialIntelligence.AddModule(AIModule)
+  commentId: M:Global.ArtificialIntelligence.AddModule(AIModule)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  name: AddModule(AIModule)
+  nameWithType: ArtificialIntelligence.AddModule(AIModule)
+  fullName: ArtificialIntelligence.AddModule(AIModule)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  name: VisualContact(WorldCoordinate, float)
+  nameWithType: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  fullName: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  name.vb: VisualContact(WorldCoordinate, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  name: VisualContact(Vector2, float)
+  nameWithType: ArtificialIntelligence.VisualContact(Vector2, float)
+  fullName: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(Vector2, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, Single)
+  name.vb: VisualContact(Vector2, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  name: VisualContact(BodyChunk)
+  nameWithType: ArtificialIntelligence.VisualContact(BodyChunk)
+  fullName: ArtificialIntelligence.VisualContact(BodyChunk)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+- uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  commentId: M:Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  name: SetDestination(WorldCoordinate)
+  nameWithType: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  fullName: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+  commentId: M:Global.ArtificialIntelligence.NewArea(System.Boolean)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  name: NewArea(bool)
+  nameWithType: ArtificialIntelligence.NewArea(bool)
+  fullName: ArtificialIntelligence.NewArea(bool)
+  nameWithType.vb: ArtificialIntelligence.NewArea(Boolean)
+  fullName.vb: ArtificialIntelligence.NewArea(Boolean)
+  name.vb: NewArea(Boolean)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ArtificialIntelligence.DenPosition
+  commentId: M:Global.ArtificialIntelligence.DenPosition
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  name: DenPosition()
+  nameWithType: ArtificialIntelligence.DenPosition()
+  fullName: ArtificialIntelligence.DenPosition()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+- uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  commentId: M:Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  name: WantToStayInDenUntilEndOfCycle()
+  nameWithType: ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()
+  fullName: ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  name: DynamicRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  name: DynamicRelationship(CreatureRepresentation)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  name: DynamicRelationship(CreatureRepresentation, AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  name: StaticRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  commentId: M:Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  name: HeardNoise(InGameNoise)
+  nameWithType: ArtificialIntelligence.HeardNoise(InGameNoise)
+  fullName: ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+- uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  name: CurrentPlayerAggression(AbstractCreature)
+  nameWithType: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  fullName: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.pathFinder
+  commentId: P:Global.ArtificialIntelligence.pathFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_pathFinder
+  name: pathFinder
+  nameWithType: ArtificialIntelligence.pathFinder
+  fullName: ArtificialIntelligence.pathFinder
+- uid: Global.ArtificialIntelligence.tracker
+  commentId: P:Global.ArtificialIntelligence.tracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_tracker
+  name: tracker
+  nameWithType: ArtificialIntelligence.tracker
+  fullName: ArtificialIntelligence.tracker
+- uid: Global.ArtificialIntelligence.noiseTracker
+  commentId: P:Global.ArtificialIntelligence.noiseTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_noiseTracker
+  name: noiseTracker
+  nameWithType: ArtificialIntelligence.noiseTracker
+  fullName: ArtificialIntelligence.noiseTracker
+- uid: Global.ArtificialIntelligence.obstacleTracker
+  commentId: P:Global.ArtificialIntelligence.obstacleTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_obstacleTracker
+  name: obstacleTracker
+  nameWithType: ArtificialIntelligence.obstacleTracker
+  fullName: ArtificialIntelligence.obstacleTracker
+- uid: Global.ArtificialIntelligence.threatTracker
+  commentId: P:Global.ArtificialIntelligence.threatTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_threatTracker
+  name: threatTracker
+  nameWithType: ArtificialIntelligence.threatTracker
+  fullName: ArtificialIntelligence.threatTracker
+- uid: Global.ArtificialIntelligence.preyTracker
+  commentId: P:Global.ArtificialIntelligence.preyTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_preyTracker
+  name: preyTracker
+  nameWithType: ArtificialIntelligence.preyTracker
+  fullName: ArtificialIntelligence.preyTracker
+- uid: Global.ArtificialIntelligence.rainTracker
+  commentId: P:Global.ArtificialIntelligence.rainTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_rainTracker
+  name: rainTracker
+  nameWithType: ArtificialIntelligence.rainTracker
+  fullName: ArtificialIntelligence.rainTracker
+- uid: Global.ArtificialIntelligence.denFinder
+  commentId: P:Global.ArtificialIntelligence.denFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_denFinder
+  name: denFinder
+  nameWithType: ArtificialIntelligence.denFinder
+  fullName: ArtificialIntelligence.denFinder
+- uid: Global.ArtificialIntelligence.agressionTracker
+  commentId: P:Global.ArtificialIntelligence.agressionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_agressionTracker
+  name: agressionTracker
+  nameWithType: ArtificialIntelligence.agressionTracker
+  fullName: ArtificialIntelligence.agressionTracker
+- uid: Global.ArtificialIntelligence.utilityComparer
+  commentId: P:Global.ArtificialIntelligence.utilityComparer
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_utilityComparer
+  name: utilityComparer
+  nameWithType: ArtificialIntelligence.utilityComparer
+  fullName: ArtificialIntelligence.utilityComparer
+- uid: Global.ArtificialIntelligence.missionTracker
+  commentId: P:Global.ArtificialIntelligence.missionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_missionTracker
+  name: missionTracker
+  nameWithType: ArtificialIntelligence.missionTracker
+  fullName: ArtificialIntelligence.missionTracker
+- uid: Global.ArtificialIntelligence.secondaryNodeFinder
+  commentId: P:Global.ArtificialIntelligence.secondaryNodeFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_secondaryNodeFinder
+  name: secondaryNodeFinder
+  nameWithType: ArtificialIntelligence.secondaryNodeFinder
+  fullName: ArtificialIntelligence.secondaryNodeFinder
+- uid: Global.ArtificialIntelligence.relationshipTracker
+  commentId: P:Global.ArtificialIntelligence.relationshipTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_relationshipTracker
+  name: relationshipTracker
+  nameWithType: ArtificialIntelligence.relationshipTracker
+  fullName: ArtificialIntelligence.relationshipTracker
+- uid: Global.ArtificialIntelligence.itemTracker
+  commentId: P:Global.ArtificialIntelligence.itemTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_itemTracker
+  name: itemTracker
+  nameWithType: ArtificialIntelligence.itemTracker
+  fullName: ArtificialIntelligence.itemTracker
+- uid: Global.ArtificialIntelligence.discomfortTracker
+  commentId: P:Global.ArtificialIntelligence.discomfortTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_discomfortTracker
+  name: discomfortTracker
+  nameWithType: ArtificialIntelligence.discomfortTracker
+  fullName: ArtificialIntelligence.discomfortTracker
+- uid: Global.ArtificialIntelligence.stuckTracker
+  commentId: P:Global.ArtificialIntelligence.stuckTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stuckTracker
+  name: stuckTracker
+  nameWithType: ArtificialIntelligence.stuckTracker
+  fullName: ArtificialIntelligence.stuckTracker
+- uid: Global.ArtificialIntelligence.injuryTracker
+  commentId: P:Global.ArtificialIntelligence.injuryTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_injuryTracker
+  name: injuryTracker
+  nameWithType: ArtificialIntelligence.injuryTracker
+  fullName: ArtificialIntelligence.injuryTracker
+- uid: Global.ArtificialIntelligence.friendTracker
+  commentId: P:Global.ArtificialIntelligence.friendTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_friendTracker
+  name: friendTracker
+  nameWithType: ArtificialIntelligence.friendTracker
+  fullName: ArtificialIntelligence.friendTracker
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.DebugDestinationVisualizer
+  commentId: T:Global.DebugDestinationVisualizer
+  isExternal: true
+  href: DebugDestinationVisualizer.html
+  name: DebugDestinationVisualizer
+  nameWithType: DebugDestinationVisualizer
+  fullName: DebugDestinationVisualizer
+- uid: Global.CreatureLooker
+  commentId: T:Global.CreatureLooker
+  isExternal: true
+  href: CreatureLooker.html
+  name: CreatureLooker
+  nameWithType: CreatureLooker
+  fullName: CreatureLooker
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.VultureAI.Behavior
+  commentId: T:Global.VultureAI.Behavior
+  isExternal: true
+  href: VultureAI.html
+  name: VultureAI.Behavior
+  nameWithType: VultureAI.Behavior
+  fullName: VultureAI.Behavior
+  spec.csharp:
+  - uid: Global.VultureAI
+    name: VultureAI
+    isExternal: true
+    href: VultureAI.html
+  - name: .
+  - uid: Global.VultureAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: VultureAI.Behavior.html
+  spec.vb:
+  - uid: Global.VultureAI
+    name: VultureAI
+    isExternal: true
+    href: VultureAI.html
+  - name: .
+  - uid: Global.VultureAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: VultureAI.Behavior.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.VultureAI.#ctor*
+  commentId: Overload:Global.VultureAI.#ctor
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI__ctor_AbstractCreature_World_
+  name: VultureAI
+  nameWithType: VultureAI.VultureAI
+  fullName: VultureAI.VultureAI
+  nameWithType.vb: VultureAI.New
+  fullName.vb: VultureAI.New
+  name.vb: New
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.ArtificialIntelligence.NewRoom(Room)
+  commentId: M:Global.ArtificialIntelligence.NewRoom(Room)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: ArtificialIntelligence.NewRoom(Room)
+  fullName: ArtificialIntelligence.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.VultureAI.NewRoom*
+  commentId: Overload:Global.VultureAI.NewRoom
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_NewRoom_Room_
+  name: NewRoom
+  nameWithType: VultureAI.NewRoom
+  fullName: VultureAI.NewRoom
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.ArtificialIntelligence.Update
+  commentId: M:Global.ArtificialIntelligence.Update
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  name: Update()
+  nameWithType: ArtificialIntelligence.Update()
+  fullName: ArtificialIntelligence.Update()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.Update
+    name: Update
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.Update
+    name: Update
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  - name: (
+  - name: )
+- uid: Global.VultureAI.Update*
+  commentId: Overload:Global.VultureAI.Update
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_Update
+  name: Update
+  nameWithType: VultureAI.Update
+  fullName: VultureAI.Update
+- uid: Global.VultureAI.KingTuskShootPosScore*
+  commentId: Overload:Global.VultureAI.KingTuskShootPosScore
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_KingTuskShootPosScore_WorldCoordinate_
+  name: KingTuskShootPosScore
+  nameWithType: VultureAI.KingTuskShootPosScore
+  fullName: VultureAI.KingTuskShootPosScore
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  name: VisualScore(Vector2, float)
+  nameWithType: ArtificialIntelligence.VisualScore(Vector2, float)
+  fullName: ArtificialIntelligence.VisualScore(UnityEngine.Vector2, float)
+  nameWithType.vb: ArtificialIntelligence.VisualScore(Vector2, Single)
+  fullName.vb: ArtificialIntelligence.VisualScore(UnityEngine.Vector2, Single)
+  name.vb: VisualScore(Vector2, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.VultureAI.VisualScore*
+  commentId: Overload:Global.VultureAI.VisualScore
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_VisualScore_UnityEngine_Vector2_System_Single_
+  name: VisualScore
+  nameWithType: VultureAI.VisualScore
+  fullName: VultureAI.VisualScore
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.VultureAI.OnlyHurtDontGrab*
+  commentId: Overload:Global.VultureAI.OnlyHurtDontGrab
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_OnlyHurtDontGrab_PhysicalObject_
+  name: OnlyHurtDontGrab
+  nameWithType: VultureAI.OnlyHurtDontGrab
+  fullName: VultureAI.OnlyHurtDontGrab
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Global.VultureAI.DoIWantToBiteCreature*
+  commentId: Overload:Global.VultureAI.DoIWantToBiteCreature
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_DoIWantToBiteCreature_AbstractCreature_
+  name: DoIWantToBiteCreature
+  nameWithType: VultureAI.DoIWantToBiteCreature
+  fullName: VultureAI.DoIWantToBiteCreature
+- uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  name: TrackerToDiscardDeadCreature(AbstractCreature)
+  nameWithType: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  fullName: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.VultureAI.TrackerToDiscardDeadCreature*
+  commentId: Overload:Global.VultureAI.TrackerToDiscardDeadCreature
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_TrackerToDiscardDeadCreature_AbstractCreature_
+  name: TrackerToDiscardDeadCreature
+  nameWithType: VultureAI.TrackerToDiscardDeadCreature
+  fullName: VultureAI.TrackerToDiscardDeadCreature
+- uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  commentId: M:Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  name: CreatureSpotted(bool, CreatureRepresentation)
+  nameWithType: ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  fullName: ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  nameWithType.vb: ArtificialIntelligence.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  fullName.vb: ArtificialIntelligence.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  name.vb: CreatureSpotted(Boolean, CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.VultureAI.CreatureSpotted*
+  commentId: Overload:Global.VultureAI.CreatureSpotted
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  name: CreatureSpotted
+  nameWithType: VultureAI.CreatureSpotted
+  fullName: VultureAI.CreatureSpotted
+- uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  name: CreateTrackerRepresentationForCreature(AbstractCreature)
+  nameWithType: ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  fullName: ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.VultureAI.CreateTrackerRepresentationForCreature*
+  commentId: Overload:Global.VultureAI.CreateTrackerRepresentationForCreature
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_CreateTrackerRepresentationForCreature_AbstractCreature_
+  name: CreateTrackerRepresentationForCreature
+  nameWithType: VultureAI.CreateTrackerRepresentationForCreature
+  fullName: VultureAI.CreateTrackerRepresentationForCreature
+- uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  commentId: M:Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  name: TravelPreference(MovementConnection, PathCost)
+  nameWithType: ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)
+  fullName: ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+- uid: Global.VultureAI.TravelPreference*
+  commentId: Overload:Global.VultureAI.TravelPreference
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_TravelPreference_MovementConnection_PathCost_
+  name: TravelPreference
+  nameWithType: VultureAI.TravelPreference
+  fullName: VultureAI.TravelPreference
+- uid: Global.MovementConnection
+  commentId: T:Global.MovementConnection
+  isExternal: true
+  href: MovementConnection.html
+  name: MovementConnection
+  nameWithType: MovementConnection
+  fullName: MovementConnection
+- uid: Global.PathCost
+  commentId: T:Global.PathCost
+  isExternal: true
+  href: PathCost.html
+  name: PathCost
+  nameWithType: PathCost
+  fullName: PathCost
+- uid: Global.VultureAI.CreatureInterestBonus*
+  commentId: Overload:Global.VultureAI.CreatureInterestBonus
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  name: CreatureInterestBonus
+  nameWithType: VultureAI.CreatureInterestBonus
+  fullName: VultureAI.CreatureInterestBonus
+- uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  commentId: M:Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  name: CreatureInterestBonus(CreatureRepresentation, float)
+  nameWithType: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  fullName: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, float)
+  nameWithType.vb: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  fullName.vb: ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation, Single)
+  name.vb: CreatureInterestBonus(CreatureRepresentation, Single)
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+    name: CreatureInterestBonus
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.CreatureInterestBonus(Tracker.CreatureRepresentation,System.Single)
+    name: CreatureInterestBonus
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_CreatureInterestBonus_Tracker_CreatureRepresentation_System_Single_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.VultureAI.ForcedLookCreature*
+  commentId: Overload:Global.VultureAI.ForcedLookCreature
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_ForcedLookCreature
+  name: ForcedLookCreature
+  nameWithType: VultureAI.ForcedLookCreature
+  fullName: VultureAI.ForcedLookCreature
+- uid: Global.ILookingAtCreatures.ForcedLookCreature
+  commentId: M:Global.ILookingAtCreatures.ForcedLookCreature
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  name: ForcedLookCreature()
+  nameWithType: ILookingAtCreatures.ForcedLookCreature()
+  fullName: ILookingAtCreatures.ForcedLookCreature()
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.ForcedLookCreature
+    name: ForcedLookCreature
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.ForcedLookCreature
+    name: ForcedLookCreature
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_ForcedLookCreature
+  - name: (
+  - name: )
+- uid: Global.VultureAI.LookAtNothing*
+  commentId: Overload:Global.VultureAI.LookAtNothing
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_LookAtNothing
+  name: LookAtNothing
+  nameWithType: VultureAI.LookAtNothing
+  fullName: VultureAI.LookAtNothing
+- uid: Global.ILookingAtCreatures.LookAtNothing
+  commentId: M:Global.ILookingAtCreatures.LookAtNothing
+  parent: Global.ILookingAtCreatures
+  isExternal: true
+  href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  name: LookAtNothing()
+  nameWithType: ILookingAtCreatures.LookAtNothing()
+  fullName: ILookingAtCreatures.LookAtNothing()
+  spec.csharp:
+  - uid: Global.ILookingAtCreatures.LookAtNothing
+    name: LookAtNothing
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ILookingAtCreatures.LookAtNothing
+    name: LookAtNothing
+    isExternal: true
+    href: Global.ILookingAtCreatures.html#ILookingAtCreatures_LookAtNothing
+  - name: (
+  - name: )
+- uid: Global.VultureAI.vulture*
+  commentId: Overload:Global.VultureAI.vulture
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_vulture
+  name: vulture
+  nameWithType: VultureAI.vulture
+  fullName: VultureAI.vulture
+- uid: Global.Vulture
+  commentId: T:Global.Vulture
+  isExternal: true
+  href: Vulture.html
+  name: Vulture
+  nameWithType: Vulture
+  fullName: Vulture
+- uid: Global.VultureAI.disencouraged*
+  commentId: Overload:Global.VultureAI.disencouraged
+  isExternal: true
+  href: Global.VultureAI.html#VultureAI_disencouraged
+  name: disencouraged
+  nameWithType: VultureAI.disencouraged
+  fullName: VultureAI.disencouraged

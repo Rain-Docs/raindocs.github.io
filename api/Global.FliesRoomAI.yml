@@ -1,0 +1,945 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FliesRoomAI
+  commentId: T:Global.FliesRoomAI
+  id: FliesRoomAI
+  parent: Global
+  children:
+  - Global.FliesRoomAI.#ctor(Room)
+  - Global.FliesRoomAI.Abstractize
+  - Global.FliesRoomAI.AddFly(Fly)
+  - Global.FliesRoomAI.CreateFlyInHive
+  - Global.FliesRoomAI.GetRandomFly
+  - Global.FliesRoomAI.MoveFlyToHive(Fly)
+  - Global.FliesRoomAI.RandomHiveNode
+  - Global.FliesRoomAI.Update(System.Boolean)
+  - Global.FliesRoomAI.flies
+  - Global.FliesRoomAI.inHive
+  langs:
+  - csharp
+  - vb
+  name: FliesRoomAI
+  nameWithType: FliesRoomAI
+  fullName: FliesRoomAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FliesRoomAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FliesRoomAI : UpdatableAndDeletable'
+    content.vb: Public Class FliesRoomAI Inherits UpdatableAndDeletable
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  inheritedMembers:
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FliesRoomAI.flies
+  commentId: F:Global.FliesRoomAI.flies
+  id: flies
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: flies
+  nameWithType: FliesRoomAI.flies
+  fullName: FliesRoomAI.flies
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FliesRoomAI.flies</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Fly> flies
+    return:
+      type: System.Collections.Generic.List{Fly}
+    content.vb: Public flies As List(Of Fly)
+- uid: Global.FliesRoomAI.inHive
+  commentId: F:Global.FliesRoomAI.inHive
+  id: inHive
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: inHive
+  nameWithType: FliesRoomAI.inHive
+  fullName: FliesRoomAI.inHive
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FliesRoomAI.inHive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Fly> inHive
+    return:
+      type: System.Collections.Generic.List{Fly}
+    content.vb: Public inHive As List(Of Fly)
+- uid: Global.FliesRoomAI.#ctor(Room)
+  commentId: M:Global.FliesRoomAI.#ctor(Room)
+  id: '#ctor(Room)'
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: FliesRoomAI(Room)
+  nameWithType: FliesRoomAI.FliesRoomAI(Room)
+  fullName: FliesRoomAI.FliesRoomAI(Room)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FliesRoomAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FliesRoomAI(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:FliesRoomAI.#ctor(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room)
+  overload: Global.FliesRoomAI.#ctor*
+  nameWithType.vb: FliesRoomAI.New(Room)
+  fullName.vb: FliesRoomAI.New(Room)
+  name.vb: New(Room)
+- uid: Global.FliesRoomAI.Update(System.Boolean)
+  commentId: M:Global.FliesRoomAI.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: FliesRoomAI.Update(bool)
+  fullName: FliesRoomAI.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:FliesRoomAI.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.UpdatableAndDeletable.Update(System.Boolean)
+  overload: Global.FliesRoomAI.Update*
+  nameWithType.vb: FliesRoomAI.Update(Boolean)
+  fullName.vb: FliesRoomAI.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.FliesRoomAI.Abstractize
+  commentId: M:Global.FliesRoomAI.Abstractize
+  id: Abstractize
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: Abstractize()
+  nameWithType: FliesRoomAI.Abstractize()
+  fullName: FliesRoomAI.Abstractize()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.Abstractize</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Abstractize()
+    content.vb: Public Sub Abstractize()
+  overload: Global.FliesRoomAI.Abstractize*
+- uid: Global.FliesRoomAI.CreateFlyInHive
+  commentId: M:Global.FliesRoomAI.CreateFlyInHive
+  id: CreateFlyInHive
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: CreateFlyInHive()
+  nameWithType: FliesRoomAI.CreateFlyInHive()
+  fullName: FliesRoomAI.CreateFlyInHive()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.CreateFlyInHive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CreateFlyInHive()
+    content.vb: Public Sub CreateFlyInHive()
+  overload: Global.FliesRoomAI.CreateFlyInHive*
+- uid: Global.FliesRoomAI.RandomHiveNode
+  commentId: M:Global.FliesRoomAI.RandomHiveNode
+  id: RandomHiveNode
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: RandomHiveNode()
+  nameWithType: FliesRoomAI.RandomHiveNode()
+  fullName: FliesRoomAI.RandomHiveNode()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.RandomHiveNode</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate RandomHiveNode()
+    return:
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesRoomAI.RandomHiveNode</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function RandomHiveNode() As WorldCoordinate
+  overload: Global.FliesRoomAI.RandomHiveNode*
+- uid: Global.FliesRoomAI.MoveFlyToHive(Fly)
+  commentId: M:Global.FliesRoomAI.MoveFlyToHive(Fly)
+  id: MoveFlyToHive(Fly)
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: MoveFlyToHive(Fly)
+  nameWithType: FliesRoomAI.MoveFlyToHive(Fly)
+  fullName: FliesRoomAI.MoveFlyToHive(Fly)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.MoveFlyToHive(Fly)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void MoveFlyToHive(Fly fly)
+    parameters:
+    - id: fly
+      type: Global.Fly
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fly</parameter>
+            <parameter>M:FliesRoomAI.MoveFlyToHive(Fly)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub MoveFlyToHive(fly As Fly)
+  overload: Global.FliesRoomAI.MoveFlyToHive*
+- uid: Global.FliesRoomAI.GetRandomFly
+  commentId: M:Global.FliesRoomAI.GetRandomFly
+  id: GetRandomFly
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: GetRandomFly()
+  nameWithType: FliesRoomAI.GetRandomFly()
+  fullName: FliesRoomAI.GetRandomFly()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.GetRandomFly</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Fly GetRandomFly()
+    return:
+      type: Global.Fly
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesRoomAI.GetRandomFly</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetRandomFly() As Fly
+  overload: Global.FliesRoomAI.GetRandomFly*
+- uid: Global.FliesRoomAI.AddFly(Fly)
+  commentId: M:Global.FliesRoomAI.AddFly(Fly)
+  id: AddFly(Fly)
+  parent: Global.FliesRoomAI
+  langs:
+  - csharp
+  - vb
+  name: AddFly(Fly)
+  nameWithType: FliesRoomAI.AddFly(Fly)
+  fullName: FliesRoomAI.AddFly(Fly)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesRoomAI.AddFly(Fly)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddFly(Fly fly)
+    parameters:
+    - id: fly
+      type: Global.Fly
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fly</parameter>
+            <parameter>M:FliesRoomAI.AddFly(Fly)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddFly(fly As Fly)
+  overload: Global.FliesRoomAI.AddFly*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{Fly}
+  commentId: T:System.Collections.Generic.List{Fly}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Fly>
+  nameWithType: List<Fly>
+  fullName: System.Collections.Generic.List<Fly>
+  nameWithType.vb: List(Of Fly)
+  fullName.vb: System.Collections.Generic.List(Of Fly)
+  name.vb: List(Of Fly)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.Fly
+    name: Fly
+    isExternal: true
+    href: Fly.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Fly
+    name: Fly
+    isExternal: true
+    href: Fly.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.FliesRoomAI.#ctor*
+  commentId: Overload:Global.FliesRoomAI.#ctor
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI__ctor_Room_
+  name: FliesRoomAI
+  nameWithType: FliesRoomAI.FliesRoomAI
+  fullName: FliesRoomAI.FliesRoomAI
+  nameWithType.vb: FliesRoomAI.New
+  fullName.vb: FliesRoomAI.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+  commentId: M:Global.UpdatableAndDeletable.Update(System.Boolean)
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: UpdatableAndDeletable.Update(bool)
+  fullName: UpdatableAndDeletable.Update(bool)
+  nameWithType.vb: UpdatableAndDeletable.Update(Boolean)
+  fullName.vb: UpdatableAndDeletable.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.FliesRoomAI.Update*
+  commentId: Overload:Global.FliesRoomAI.Update
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_Update_System_Boolean_
+  name: Update
+  nameWithType: FliesRoomAI.Update
+  fullName: FliesRoomAI.Update
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.FliesRoomAI.Abstractize*
+  commentId: Overload:Global.FliesRoomAI.Abstractize
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_Abstractize
+  name: Abstractize
+  nameWithType: FliesRoomAI.Abstractize
+  fullName: FliesRoomAI.Abstractize
+- uid: Global.FliesRoomAI.CreateFlyInHive*
+  commentId: Overload:Global.FliesRoomAI.CreateFlyInHive
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_CreateFlyInHive
+  name: CreateFlyInHive
+  nameWithType: FliesRoomAI.CreateFlyInHive
+  fullName: FliesRoomAI.CreateFlyInHive
+- uid: Global.FliesRoomAI.RandomHiveNode*
+  commentId: Overload:Global.FliesRoomAI.RandomHiveNode
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_RandomHiveNode
+  name: RandomHiveNode
+  nameWithType: FliesRoomAI.RandomHiveNode
+  fullName: FliesRoomAI.RandomHiveNode
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Global.FliesRoomAI.MoveFlyToHive*
+  commentId: Overload:Global.FliesRoomAI.MoveFlyToHive
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_MoveFlyToHive_Fly_
+  name: MoveFlyToHive
+  nameWithType: FliesRoomAI.MoveFlyToHive
+  fullName: FliesRoomAI.MoveFlyToHive
+- uid: Global.Fly
+  commentId: T:Global.Fly
+  isExternal: true
+  href: Fly.html
+  name: Fly
+  nameWithType: Fly
+  fullName: Fly
+- uid: Global.FliesRoomAI.GetRandomFly*
+  commentId: Overload:Global.FliesRoomAI.GetRandomFly
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_GetRandomFly
+  name: GetRandomFly
+  nameWithType: FliesRoomAI.GetRandomFly
+  fullName: FliesRoomAI.GetRandomFly
+- uid: Global.FliesRoomAI.AddFly*
+  commentId: Overload:Global.FliesRoomAI.AddFly
+  isExternal: true
+  href: Global.FliesRoomAI.html#FliesRoomAI_AddFly_Fly_
+  name: AddFly
+  nameWithType: FliesRoomAI.AddFly
+  fullName: FliesRoomAI.AddFly

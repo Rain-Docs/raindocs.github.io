@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PhysicalObject | RainDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PhysicalObject | RainDocs ">
+      
+      <meta name="description" content="A room entity that has collision.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RainDocs">
+            RainDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.PhysicalObject">
+
+
+
+  <h1 id="Global_PhysicalObject" data-uid="Global.PhysicalObject" class="text-break">
+Class PhysicalObject  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A room entity that has collision.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PhysicalObject : UpdatableAndDeletable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><span class="xref">PhysicalObject</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="CoralBrain.StemSegment.html">StemSegment</a></div>
+      <div><a class="xref" href="Global.Creature.html">Creature</a></div>
+      <div><a class="xref" href="Global.DartMaggot.html">DartMaggot</a></div>
+      <div><a class="xref" href="Global.JokeRifle.html">JokeRifle</a></div>
+      <div><a class="xref" href="Global.LobeTree.html">LobeTree</a></div>
+      <div><a class="xref" href="Global.NSHSwarmer.html">NSHSwarmer</a></div>
+      <div><a class="xref" href="Global.Oracle.html">Oracle</a></div>
+      <div><a class="xref" href="Global.OracleSwarmer.html">OracleSwarmer</a></div>
+      <div><a class="xref" href="Global.PlayerCarryableItem.html">PlayerCarryableItem</a></div>
+      <div><a class="xref" href="Global.SeedCob.html">SeedCob</a></div>
+      <div><a class="xref" href="Global.SporePlant.AttachedBee.html">SporePlant.AttachedBee</a></div>
+      <div><a class="xref" href="Global.VoidSpawn.html">VoidSpawn</a></div>
+      <div><a class="xref" href="MoreSlugcats.BlinkingFlower.html">BlinkingFlower</a></div>
+      <div><a class="xref" href="MoreSlugcats.CollisionField.html">CollisionField</a></div>
+      <div><a class="xref" href="MoreSlugcats.EnergyCell.html">EnergyCell</a></div>
+      <div><a class="xref" href="MoreSlugcats.HRGuardManager.html">HRGuardManager</a></div>
+      <div><a class="xref" href="Watcher.Prince.html">Prince</a></div>
+      <div><a class="xref" href="Watcher.PrinceBulb.html">PrinceBulb</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_PhysicalObject__ctor_" data-uid="Global.PhysicalObject.#ctor*"></a>
+
+  <h3 id="Global_PhysicalObject__ctor_AbstractPhysicalObject_" data-uid="Global.PhysicalObject.#ctor(AbstractPhysicalObject)">
+  PhysicalObject(AbstractPhysicalObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCAutoDocConstructor">
+    <parameter>PhysicalObject</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicalObject(AbstractPhysicalObject abstractPhysicalObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractPhysicalObject</code> <a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>abstractPhysicalObject</parameter>
+    <parameter>M:PhysicalObject.#ctor(AbstractPhysicalObject)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_PhysicalObject_abstractPhysicalObject" data-uid="Global.PhysicalObject.abstractPhysicalObject">
+  abstractPhysicalObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.abstractPhysicalObject</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractPhysicalObject abstractPhysicalObject</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_appendages" data-uid="Global.PhysicalObject.appendages">
+  appendages
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.appendages</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PhysicalObject.Appendage&gt; appendages</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_bodyChunkConnections" data-uid="Global.PhysicalObject.bodyChunkConnections">
+  bodyChunkConnections
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.bodyChunkConnections</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicalObject.BodyChunkConnection[] bodyChunkConnections</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PhysicalObject.BodyChunkConnection.html">BodyChunkConnection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_bounce" data-uid="Global.PhysicalObject.bounce">
+  bounce
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.bounce</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float bounce</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_burrowFriction" data-uid="Global.PhysicalObject.burrowFriction">
+  burrowFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.burrowFriction</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float burrowFriction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_canBeHitByWeapons" data-uid="Global.PhysicalObject.canBeHitByWeapons">
+  canBeHitByWeapons
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.canBeHitByWeapons</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canBeHitByWeapons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_collisionLayer" data-uid="Global.PhysicalObject.collisionLayer">
+  collisionLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.collisionLayer</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int collisionLayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_collisionRange" data-uid="Global.PhysicalObject.collisionRange">
+  collisionRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.collisionRange</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float collisionRange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_grabbedBy" data-uid="Global.PhysicalObject.grabbedBy">
+  grabbedBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.grabbedBy</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Creature.Grasp&gt; grabbedBy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.Grasp.html">Grasp</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_impactTreshhold" data-uid="Global.PhysicalObject.impactTreshhold">
+  impactTreshhold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.impactTreshhold</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float impactTreshhold</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_jollyBeingPointedCounter" data-uid="Global.PhysicalObject.jollyBeingPointedCounter">
+  jollyBeingPointedCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.jollyBeingPointedCounter</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int jollyBeingPointedCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_sticksRespawned" data-uid="Global.PhysicalObject.sticksRespawned">
+  sticksRespawned
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.sticksRespawned</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sticksRespawned</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_surfaceFriction" data-uid="Global.PhysicalObject.surfaceFriction">
+  surfaceFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.surfaceFriction</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float surfaceFriction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PhysicalObject_waterRetardationImmunity" data-uid="Global.PhysicalObject.waterRetardationImmunity">
+  waterRetardationImmunity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PhysicalObject.waterRetardationImmunity</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float waterRetardationImmunity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_PhysicalObject_Buried_" data-uid="Global.PhysicalObject.Buried*"></a>
+
+  <h3 id="Global_PhysicalObject_Buried" data-uid="Global.PhysicalObject.Buried">
+  Buried
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.Buried</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Buried { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_CollideWithObjects_" data-uid="Global.PhysicalObject.CollideWithObjects*"></a>
+
+  <h3 id="Global_PhysicalObject_CollideWithObjects" data-uid="Global.PhysicalObject.CollideWithObjects">
+  CollideWithObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.CollideWithObjects</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollideWithObjects { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_CollideWithSlopes_" data-uid="Global.PhysicalObject.CollideWithSlopes*"></a>
+
+  <h3 id="Global_PhysicalObject_CollideWithSlopes" data-uid="Global.PhysicalObject.CollideWithSlopes">
+  CollideWithSlopes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.CollideWithSlopes</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollideWithSlopes { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_CollideWithTerrain_" data-uid="Global.PhysicalObject.CollideWithTerrain*"></a>
+
+  <h3 id="Global_PhysicalObject_CollideWithTerrain" data-uid="Global.PhysicalObject.CollideWithTerrain">
+  CollideWithTerrain
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.CollideWithTerrain</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollideWithTerrain { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_EffectiveRoomGravity_" data-uid="Global.PhysicalObject.EffectiveRoomGravity*"></a>
+
+  <h3 id="Global_PhysicalObject_EffectiveRoomGravity" data-uid="Global.PhysicalObject.EffectiveRoomGravity">
+  EffectiveRoomGravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.EffectiveRoomGravity</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float EffectiveRoomGravity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_GoThroughFloors_" data-uid="Global.PhysicalObject.GoThroughFloors*"></a>
+
+  <h3 id="Global_PhysicalObject_GoThroughFloors" data-uid="Global.PhysicalObject.GoThroughFloors">
+  GoThroughFloors
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.GoThroughFloors</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GoThroughFloors { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_LickedByPlayer_" data-uid="Global.PhysicalObject.LickedByPlayer*"></a>
+
+  <h3 id="Global_PhysicalObject_LickedByPlayer" data-uid="Global.PhysicalObject.LickedByPlayer">
+  LickedByPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.LickedByPlayer</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player LickedByPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_RandomChunk_" data-uid="Global.PhysicalObject.RandomChunk*"></a>
+
+  <h3 id="Global_PhysicalObject_RandomChunk" data-uid="Global.PhysicalObject.RandomChunk">
+  RandomChunk
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.RandomChunk</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk RandomChunk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_SandstormImmune_" data-uid="Global.PhysicalObject.SandstormImmune*"></a>
+
+  <h3 id="Global_PhysicalObject_SandstormImmune" data-uid="Global.PhysicalObject.SandstormImmune">
+  SandstormImmune
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.SandstormImmune</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SandstormImmune { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_Submersion_" data-uid="Global.PhysicalObject.Submersion*"></a>
+
+  <h3 id="Global_PhysicalObject_Submersion" data-uid="Global.PhysicalObject.Submersion">
+  Submersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.Submersion</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Submersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_TotalMass_" data-uid="Global.PhysicalObject.TotalMass*"></a>
+
+  <h3 id="Global_PhysicalObject_TotalMass" data-uid="Global.PhysicalObject.TotalMass">
+  TotalMass
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.TotalMass</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TotalMass { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_VisibilityBonus_" data-uid="Global.PhysicalObject.VisibilityBonus*"></a>
+
+  <h3 id="Global_PhysicalObject_VisibilityBonus" data-uid="Global.PhysicalObject.VisibilityBonus">
+  VisibilityBonus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.VisibilityBonus</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float VisibilityBonus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_WantsToBurrow_" data-uid="Global.PhysicalObject.WantsToBurrow*"></a>
+
+  <h3 id="Global_PhysicalObject_WantsToBurrow" data-uid="Global.PhysicalObject.WantsToBurrow">
+  WantsToBurrow
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.WantsToBurrow</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WantsToBurrow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_airFriction_" data-uid="Global.PhysicalObject.airFriction*"></a>
+
+  <h3 id="Global_PhysicalObject_airFriction" data-uid="Global.PhysicalObject.airFriction">
+  airFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.airFriction</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float airFriction { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_bodyChunks_" data-uid="Global.PhysicalObject.bodyChunks*"></a>
+
+  <h3 id="Global_PhysicalObject_bodyChunks" data-uid="Global.PhysicalObject.bodyChunks">
+  bodyChunks
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.bodyChunks</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk[] bodyChunks { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BodyChunk.html">BodyChunk</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_buoyancy_" data-uid="Global.PhysicalObject.buoyancy*"></a>
+
+  <h3 id="Global_PhysicalObject_buoyancy" data-uid="Global.PhysicalObject.buoyancy">
+  buoyancy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.buoyancy</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float buoyancy { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_firstChunk_" data-uid="Global.PhysicalObject.firstChunk*"></a>
+
+  <h3 id="Global_PhysicalObject_firstChunk" data-uid="Global.PhysicalObject.firstChunk">
+  firstChunk
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.firstChunk</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk firstChunk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_graphicsModule_" data-uid="Global.PhysicalObject.graphicsModule*"></a>
+
+  <h3 id="Global_PhysicalObject_graphicsModule" data-uid="Global.PhysicalObject.graphicsModule">
+  graphicsModule
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.graphicsModule</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsModule graphicsModule { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.GraphicsModule.html">GraphicsModule</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_gravity_" data-uid="Global.PhysicalObject.gravity*"></a>
+
+  <h3 id="Global_PhysicalObject_gravity" data-uid="Global.PhysicalObject.gravity">
+  gravity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.gravity</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float gravity { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_waterFriction_" data-uid="Global.PhysicalObject.waterFriction*"></a>
+
+  <h3 id="Global_PhysicalObject_waterFriction" data-uid="Global.PhysicalObject.waterFriction">
+  waterFriction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.waterFriction</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float waterFriction { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_windAffectiveness_" data-uid="Global.PhysicalObject.windAffectiveness*"></a>
+
+  <h3 id="Global_PhysicalObject_windAffectiveness" data-uid="Global.PhysicalObject.windAffectiveness">
+  windAffectiveness
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PhysicalObject.windAffectiveness</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float windAffectiveness { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_PhysicalObject_AllGraspsLetGoOfThisObject_" data-uid="Global.PhysicalObject.AllGraspsLetGoOfThisObject*"></a>
+
+  <h3 id="Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_" data-uid="Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)">
+  AllGraspsLetGoOfThisObject(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllGraspsLetGoOfThisObject(bool evenNonExlusive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evenNonExlusive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>evenNonExlusive</parameter>
+    <parameter>M:PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_ChangeCollisionLayer_" data-uid="Global.PhysicalObject.ChangeCollisionLayer*"></a>
+
+  <h3 id="Global_PhysicalObject_ChangeCollisionLayer_System_Int32_" data-uid="Global.PhysicalObject.ChangeCollisionLayer(System.Int32)">
+  ChangeCollisionLayer(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.ChangeCollisionLayer(System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeCollisionLayer(int newCollisionLayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newCollisionLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newCollisionLayer</parameter>
+    <parameter>M:PhysicalObject.ChangeCollisionLayer(System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_ChangeRippleLayer_" data-uid="Global.PhysicalObject.ChangeRippleLayer*"></a>
+
+  <h3 id="Global_PhysicalObject_ChangeRippleLayer_System_Int32_" data-uid="Global.PhysicalObject.ChangeRippleLayer(System.Int32)">
+  ChangeRippleLayer(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.ChangeRippleLayer(System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ChangeRippleLayer(int newRippleLayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRippleLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newRippleLayer</parameter>
+    <parameter>M:PhysicalObject.ChangeRippleLayer(System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_Collide_" data-uid="Global.PhysicalObject.Collide*"></a>
+
+  <h3 id="Global_PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_" data-uid="Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)">
+  Collide(PhysicalObject, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Collide(PhysicalObject otherObject, int myChunk, int otherChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherObject</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>otherObject</parameter>
+    <parameter>M:PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>myChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>myChunk</parameter>
+    <parameter>M:PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>otherChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>otherChunk</parameter>
+    <parameter>M:PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_DisposeGraphicsModule_" data-uid="Global.PhysicalObject.DisposeGraphicsModule*"></a>
+
+  <h3 id="Global_PhysicalObject_DisposeGraphicsModule" data-uid="Global.PhysicalObject.DisposeGraphicsModule">
+  DisposeGraphicsModule()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.DisposeGraphicsModule</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DisposeGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_FirstChunk_" data-uid="Global.PhysicalObject.FirstChunk*"></a>
+
+  <h3 id="Global_PhysicalObject_FirstChunk" data-uid="Global.PhysicalObject.FirstChunk">
+  FirstChunk()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.FirstChunk</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk FirstChunk()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PhysicalObject.FirstChunk</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_GetLocalGravity_" data-uid="Global.PhysicalObject.GetLocalGravity*"></a>
+
+  <h3 id="Global_PhysicalObject_GetLocalGravity" data-uid="Global.PhysicalObject.GetLocalGravity">
+  GetLocalGravity()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.GetLocalGravity</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLocalGravity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PhysicalObject.GetLocalGravity</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_Grabbed_" data-uid="Global.PhysicalObject.Grabbed*"></a>
+
+  <h3 id="Global_PhysicalObject_Grabbed_Creature_Grasp_" data-uid="Global.PhysicalObject.Grabbed(Creature.Grasp)">
+  Grabbed(Grasp)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.Grabbed(Creature.Grasp)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Grabbed(Creature.Grasp grasp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grasp</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.Grasp.html">Grasp</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>grasp</parameter>
+    <parameter>M:PhysicalObject.Grabbed(Creature.Grasp)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_GraphicsModuleUpdated_" data-uid="Global.PhysicalObject.GraphicsModuleUpdated*"></a>
+
+  <h3 id="Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_" data-uid="Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)">
+  GraphicsModuleUpdated(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicsModuleUpdated(bool actuallyViewed, bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>actuallyViewed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>actuallyViewed</parameter>
+    <parameter>M:PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_HitByExplosion_" data-uid="Global.PhysicalObject.HitByExplosion*"></a>
+
+  <h3 id="Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_" data-uid="Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)">
+  HitByExplosion(float, Explosion, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HitByExplosion(float hitFac, Explosion explosion, int hitChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hitFac</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>hitFac</parameter>
+    <parameter>M:PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>explosion</code> <a class="xref" href="Global.Explosion.html">Explosion</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>explosion</parameter>
+    <parameter>M:PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>hitChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>hitChunk</parameter>
+    <parameter>M:PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_HitByWeapon_" data-uid="Global.PhysicalObject.HitByWeapon*"></a>
+
+  <h3 id="Global_PhysicalObject_HitByWeapon_Weapon_" data-uid="Global.PhysicalObject.HitByWeapon(Weapon)">
+  HitByWeapon(Weapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.HitByWeapon(Weapon)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HitByWeapon(Weapon weapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>weapon</code> <a class="xref" href="Global.Weapon.html">Weapon</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>weapon</parameter>
+    <parameter>M:PhysicalObject.HitByWeapon(Weapon)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_InitiateGraphicsModule_" data-uid="Global.PhysicalObject.InitiateGraphicsModule*"></a>
+
+  <h3 id="Global_PhysicalObject_InitiateGraphicsModule" data-uid="Global.PhysicalObject.InitiateGraphicsModule">
+  InitiateGraphicsModule()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.InitiateGraphicsModule</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitiateGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_IsTileSolid_" data-uid="Global.PhysicalObject.IsTileSolid*"></a>
+
+  <h3 id="Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_" data-uid="Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)">
+  IsTileSolid(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTileSolid(int bChunk, int relativeX, int relativeY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>bChunk</parameter>
+    <parameter>M:PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>relativeX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>relativeX</parameter>
+    <parameter>M:PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>relativeY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>relativeY</parameter>
+    <parameter>M:PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_NewRoom_" data-uid="Global.PhysicalObject.NewRoom*"></a>
+
+  <h3 id="Global_PhysicalObject_NewRoom_Room_" data-uid="Global.PhysicalObject.NewRoom(Room)">
+  NewRoom(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newRoom</parameter>
+    <parameter>M:PhysicalObject.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_PlaceInRoom_" data-uid="Global.PhysicalObject.PlaceInRoom*"></a>
+
+  <h3 id="Global_PhysicalObject_PlaceInRoom_Room_" data-uid="Global.PhysicalObject.PlaceInRoom(Room)">
+  PlaceInRoom(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.PlaceInRoom(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlaceInRoom(Room placeRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>placeRoom</parameter>
+    <parameter>M:PhysicalObject.PlaceInRoom(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_PushOutOf_" data-uid="Global.PhysicalObject.PushOutOf*"></a>
+
+  <h3 id="Global_PhysicalObject_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_" data-uid="Global.PhysicalObject.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)">
+  PushOutOf(Vector2, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PushOutOf(Vector2 pos, float rad, int exceptedChunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>pos</parameter>
+    <parameter>M:PhysicalObject.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>rad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>rad</parameter>
+    <parameter>M:PhysicalObject.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>exceptedChunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>exceptedChunk</parameter>
+    <parameter>M:PhysicalObject.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_RecreateSticksFromAbstract_" data-uid="Global.PhysicalObject.RecreateSticksFromAbstract*"></a>
+
+  <h3 id="Global_PhysicalObject_RecreateSticksFromAbstract" data-uid="Global.PhysicalObject.RecreateSticksFromAbstract">
+  RecreateSticksFromAbstract()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.RecreateSticksFromAbstract</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RecreateSticksFromAbstract()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_RemoveGraphicsModule_" data-uid="Global.PhysicalObject.RemoveGraphicsModule*"></a>
+
+  <h3 id="Global_PhysicalObject_RemoveGraphicsModule" data-uid="Global.PhysicalObject.RemoveGraphicsModule">
+  RemoveGraphicsModule()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.RemoveGraphicsModule</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveGraphicsModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_SetLocalAirFriction_" data-uid="Global.PhysicalObject.SetLocalAirFriction*"></a>
+
+  <h3 id="Global_PhysicalObject_SetLocalAirFriction_System_Single_" data-uid="Global.PhysicalObject.SetLocalAirFriction(System.Single)">
+  SetLocalAirFriction(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.SetLocalAirFriction(System.Single)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalAirFriction(float frict)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frict</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>frict</parameter>
+    <parameter>M:PhysicalObject.SetLocalAirFriction(System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_SetLocalGravity_" data-uid="Global.PhysicalObject.SetLocalGravity*"></a>
+
+  <h3 id="Global_PhysicalObject_SetLocalGravity_System_Single_" data-uid="Global.PhysicalObject.SetLocalGravity(System.Single)">
+  SetLocalGravity(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.SetLocalGravity(System.Single)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLocalGravity(float g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>g</parameter>
+    <parameter>M:PhysicalObject.SetLocalGravity(System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_TerrainImpact_" data-uid="Global.PhysicalObject.TerrainImpact*"></a>
+
+  <h3 id="Global_PhysicalObject_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)">
+  TerrainImpact(int, IntVector2, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TerrainImpact(int chunk, IntVector2 direction, float speed, bool firstContact)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>chunk</parameter>
+    <parameter>M:PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>direction</parameter>
+    <parameter>M:PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>speed</parameter>
+    <parameter>M:PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>firstContact</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>firstContact</parameter>
+    <parameter>M:PhysicalObject.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_Update_" data-uid="Global.PhysicalObject.Update*"></a>
+
+  <h3 id="Global_PhysicalObject_Update_System_Boolean_" data-uid="Global.PhysicalObject.Update(System.Boolean)">
+  Update(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.Update(System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:PhysicalObject.Update(System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_WeatherInertia_" data-uid="Global.PhysicalObject.WeatherInertia*"></a>
+
+  <h3 id="Global_PhysicalObject_WeatherInertia" data-uid="Global.PhysicalObject.WeatherInertia">
+  WeatherInertia()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.WeatherInertia</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WeatherInertia()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PhysicalObject_WeightedPush_" data-uid="Global.PhysicalObject.WeightedPush*"></a>
+
+  <h3 id="Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_" data-uid="Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)">
+  WeightedPush(int, int, Vector2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WeightedPush(int A, int B, Vector2 dir, float frc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>A</parameter>
+    <parameter>M:PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>B</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>B</parameter>
+    <parameter>M:PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>dir</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>dir</parameter>
+    <parameter>M:PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>frc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>frc</parameter>
+    <parameter>M:PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

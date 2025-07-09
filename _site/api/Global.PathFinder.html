@@ -1,0 +1,3964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PathFinder | RainDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PathFinder | RainDocs ">
+      
+      <meta name="description" content="summary     T:PathFinder">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RainDocs">
+            RainDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.PathFinder">
+
+
+
+  <h1 id="Global_PathFinder" data-uid="Global.PathFinder" class="text-break">
+Class PathFinder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>T:PathFinder</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PathFinder : AIModule</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.AIModule.html">AIModule</a></div>
+      <div><span class="xref">PathFinder</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Global.BigEelPather.html">BigEelPather</a></div>
+      <div><a class="xref" href="Global.BorderExitPather.html">BorderExitPather</a></div>
+      <div><a class="xref" href="Global.CicadaPather.html">CicadaPather</a></div>
+      <div><a class="xref" href="Global.FishPather.html">FishPather</a></div>
+      <div><a class="xref" href="Global.LizardPather.html">LizardPather</a></div>
+      <div><a class="xref" href="Global.MirosBirdPather.html">MirosBirdPather</a></div>
+      <div><a class="xref" href="Global.SnailPather.html">SnailPather</a></div>
+      <div><a class="xref" href="Global.StandardPather.html">StandardPather</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.AIModule.html#Global_AIModule_AI">AIModule.AI</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.AIModule.html#Global_AIModule_Utility">AIModule.Utility()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_PathFinder__ctor_" data-uid="Global.PathFinder.#ctor*"></a>
+
+  <h3 id="Global_PathFinder__ctor_ArtificialIntelligence_World_AbstractCreature_" data-uid="Global.PathFinder.#ctor(ArtificialIntelligence,World,AbstractCreature)">
+  PathFinder(ArtificialIntelligence, World, AbstractCreature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCAutoDocConstructor">
+    <parameter>PathFinder</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathFinder(ArtificialIntelligence AI, World world, AbstractCreature creature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>AI</code> <a class="xref" href="Global.ArtificialIntelligence.html">ArtificialIntelligence</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>AI</parameter>
+    <parameter>M:PathFinder.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>world</parameter>
+    <parameter>M:PathFinder.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>creature</code> <a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>creature</parameter>
+    <parameter>M:PathFinder.#ctor(ArtificialIntelligence,World,AbstractCreature)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_PathFinder_CurrentRoomCells" data-uid="Global.PathFinder.CurrentRoomCells">
+  CurrentRoomCells
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.CurrentRoomCells</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PathFinder.PathingCell[,] CurrentRoomCells</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.PathingCell.html">PathingCell</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_WorldAITiles" data-uid="Global.PathFinder.WorldAITiles">
+  WorldAITiles
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.WorldAITiles</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AItile[][] WorldAITiles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AItile.html">AItile</a>[][]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_WorldCells" data-uid="Global.PathFinder.WorldCells">
+  WorldCells
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.WorldCells</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PathFinder.PathingCell[][] WorldCells</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.PathingCell.html">PathingCell</a>[][]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_acceptablePathAge" data-uid="Global.PathFinder.acceptablePathAge">
+  acceptablePathAge
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.acceptablePathAge</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int acceptablePathAge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_accessibilityCenter" data-uid="Global.PathFinder.accessibilityCenter">
+  accessibilityCenter
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.accessibilityCenter</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WorldCoordinate accessibilityCenter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_accessibilityMapper" data-uid="Global.PathFinder.accessibilityMapper">
+  accessibilityMapper
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.accessibilityMapper</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PathFinder.AccessibilityMapper accessibilityMapper</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.AccessibilityMapper.html">AccessibilityMapper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_accessibilityStepsPerFrame" data-uid="Global.PathFinder.accessibilityStepsPerFrame">
+  accessibilityStepsPerFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.accessibilityStepsPerFrame</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int accessibilityStepsPerFrame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_checkNextList" data-uid="Global.PathFinder.checkNextList">
+  checkNextList
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.checkNextList</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;PathFinder.PathingCell&gt; checkNextList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_coveredArea" data-uid="Global.PathFinder.coveredArea">
+  coveredArea
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.coveredArea</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntRect coveredArea</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntRect.html">IntRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_creature" data-uid="Global.PathFinder.creature">
+  creature
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.creature</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly AbstractCreature creature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AbstractCreature.html">AbstractCreature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_creatureFollowingGeneration" data-uid="Global.PathFinder.creatureFollowingGeneration">
+  creatureFollowingGeneration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.creatureFollowingGeneration</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int creatureFollowingGeneration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_currentlyFollowingDestination" data-uid="Global.PathFinder.currentlyFollowingDestination">
+  currentlyFollowingDestination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.currentlyFollowingDestination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WorldCoordinate currentlyFollowingDestination</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_debugDrawer" data-uid="Global.PathFinder.debugDrawer">
+  debugDrawer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.debugDrawer</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathfindingVisualizer debugDrawer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathfindingVisualizer.html">PathfindingVisualizer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_destination" data-uid="Global.PathFinder.destination">
+  destination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.destination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WorldCoordinate destination</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_fallbackPathingCell" data-uid="Global.PathFinder.fallbackPathingCell">
+  fallbackPathingCell
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.fallbackPathingCell</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathFinder.PathingCell fallbackPathingCell</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_forbiddenEntrance" data-uid="Global.PathFinder.forbiddenEntrance">
+  forbiddenEntrance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.forbiddenEntrance</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate forbiddenEntrance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_forbiddenEntranceCounter" data-uid="Global.PathFinder.forbiddenEntranceCounter">
+  forbiddenEntranceCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.forbiddenEntranceCounter</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int forbiddenEntranceCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_forbiddenNode" data-uid="Global.PathFinder.forbiddenNode">
+  forbiddenNode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.forbiddenNode</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? forbiddenNode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_goalFoundGeneration" data-uid="Global.PathFinder.goalFoundGeneration">
+  goalFoundGeneration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.goalFoundGeneration</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int goalFoundGeneration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_lastFollowingGeneration" data-uid="Global.PathFinder.lastFollowingGeneration">
+  lastFollowingGeneration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.lastFollowingGeneration</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int lastFollowingGeneration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_minimumPossiblePathCost" data-uid="Global.PathFinder.minimumPossiblePathCost">
+  minimumPossiblePathCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.minimumPossiblePathCost</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PathCost minimumPossiblePathCost</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_nextDestination" data-uid="Global.PathFinder.nextDestination">
+  nextDestination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.nextDestination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WorldCoordinate? nextDestination</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_nonShortcutRoomEntrancePos" data-uid="Global.PathFinder.nonShortcutRoomEntrancePos">
+  nonShortcutRoomEntrancePos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.nonShortcutRoomEntrancePos</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate? nonShortcutRoomEntrancePos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_pathGeneration" data-uid="Global.PathFinder.pathGeneration">
+  pathGeneration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.pathGeneration</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int pathGeneration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_reAssignDestinationOnceAccessibilityMappingIsDone" data-uid="Global.PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone">
+  reAssignDestinationOnceAccessibilityMappingIsDone
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.reAssignDestinationOnceAccessibilityMappingIsDone</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool reAssignDestinationOnceAccessibilityMappingIsDone</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_realizedRoom" data-uid="Global.PathFinder.realizedRoom">
+  realizedRoom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.realizedRoom</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Room realizedRoom</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_room" data-uid="Global.PathFinder.room">
+  room
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.room</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int room</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_stepsPerFrame" data-uid="Global.PathFinder.stepsPerFrame">
+  stepsPerFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.stepsPerFrame</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int stepsPerFrame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_timeInGeneration" data-uid="Global.PathFinder.timeInGeneration">
+  timeInGeneration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.timeInGeneration</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int timeInGeneration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_timeUntilPathCertain" data-uid="Global.PathFinder.timeUntilPathCertain">
+  timeUntilPathCertain
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.timeUntilPathCertain</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeUntilPathCertain</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_visualize" data-uid="Global.PathFinder.visualize">
+  visualize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.visualize</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visualize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_visualizePath" data-uid="Global.PathFinder.visualizePath">
+  visualizePath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.visualizePath</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visualizePath</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_walkPastPointOfNoReturn" data-uid="Global.PathFinder.walkPastPointOfNoReturn">
+  walkPastPointOfNoReturn
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.walkPastPointOfNoReturn</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool walkPastPointOfNoReturn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_PathFinder_world" data-uid="Global.PathFinder.world">
+  world
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:PathFinder.world</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected World world</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.World.html">World</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_PathFinder_DestInRoom_" data-uid="Global.PathFinder.DestInRoom*"></a>
+
+  <h3 id="Global_PathFinder_DestInRoom" data-uid="Global.PathFinder.DestInRoom">
+  DestInRoom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.DestInRoom</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DestInRoom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_DoneMappingAccessibility_" data-uid="Global.PathFinder.DoneMappingAccessibility*"></a>
+
+  <h3 id="Global_PathFinder_DoneMappingAccessibility" data-uid="Global.PathFinder.DoneMappingAccessibility">
+  DoneMappingAccessibility
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.DoneMappingAccessibility</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoneMappingAccessibility { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_GetDestination_" data-uid="Global.PathFinder.GetDestination*"></a>
+
+  <h3 id="Global_PathFinder_GetDestination" data-uid="Global.PathFinder.GetDestination">
+  GetDestination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.GetDestination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate GetDestination { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_GetEffectualDestination_" data-uid="Global.PathFinder.GetEffectualDestination*"></a>
+
+  <h3 id="Global_PathFinder_GetEffectualDestination" data-uid="Global.PathFinder.GetEffectualDestination">
+  GetEffectualDestination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.GetEffectualDestination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate GetEffectualDestination { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_creaturePos_" data-uid="Global.PathFinder.creaturePos*"></a>
+
+  <h3 id="Global_PathFinder_creaturePos" data-uid="Global.PathFinder.creaturePos">
+  creaturePos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.creaturePos</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate creaturePos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_creatureType_" data-uid="Global.PathFinder.creatureType*"></a>
+
+  <h3 id="Global_PathFinder_creatureType" data-uid="Global.PathFinder.creatureType">
+  creatureType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.creatureType</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CreatureTemplate creatureType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CreatureTemplate.html">CreatureTemplate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_lookingForImpossiblePath_" data-uid="Global.PathFinder.lookingForImpossiblePath*"></a>
+
+  <h3 id="Global_PathFinder_lookingForImpossiblePath" data-uid="Global.PathFinder.lookingForImpossiblePath">
+  lookingForImpossiblePath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:PathFinder.lookingForImpossiblePath</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool lookingForImpossiblePath { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_PathFinder_AITileAtWorldCoordinate_" data-uid="Global.PathFinder.AITileAtWorldCoordinate*"></a>
+
+  <h3 id="Global_PathFinder_AITileAtWorldCoordinate_WorldCoordinate_" data-uid="Global.PathFinder.AITileAtWorldCoordinate(WorldCoordinate)">
+  AITileAtWorldCoordinate(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AITileAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AItile AITileAtWorldCoordinate(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.AITileAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.AItile.html">AItile</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.AITileAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_AbortCurrentGenerationPathFinding_" data-uid="Global.PathFinder.AbortCurrentGenerationPathFinding*"></a>
+
+  <h3 id="Global_PathFinder_AbortCurrentGenerationPathFinding" data-uid="Global.PathFinder.AbortCurrentGenerationPathFinding">
+  AbortCurrentGenerationPathFinding()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AbortCurrentGenerationPathFinding</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AbortCurrentGenerationPathFinding()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_AccessibilityMappingDone_" data-uid="Global.PathFinder.AccessibilityMappingDone*"></a>
+
+  <h3 id="Global_PathFinder_AccessibilityMappingDone" data-uid="Global.PathFinder.AccessibilityMappingDone">
+  AccessibilityMappingDone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AccessibilityMappingDone</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AccessibilityMappingDone()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_AddToCheckNextList_" data-uid="Global.PathFinder.AddToCheckNextList*"></a>
+
+  <h3 id="Global_PathFinder_AddToCheckNextList_PathFinder_PathingCell_" data-uid="Global.PathFinder.AddToCheckNextList(PathFinder.PathingCell)">
+  AddToCheckNextList(PathingCell)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AddToCheckNextList(PathFinder.PathingCell)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddToCheckNextList(PathFinder.PathingCell cell)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cell</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>cell</parameter>
+    <parameter>M:PathFinder.AddToCheckNextList(PathFinder.PathingCell)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_AssignNewDestination_" data-uid="Global.PathFinder.AssignNewDestination*"></a>
+
+  <h3 id="Global_PathFinder_AssignNewDestination_WorldCoordinate_" data-uid="Global.PathFinder.AssignNewDestination(WorldCoordinate)">
+  AssignNewDestination(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AssignNewDestination(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssignNewDestination(WorldCoordinate dest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dest</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>dest</parameter>
+    <parameter>M:PathFinder.AssignNewDestination(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_AwayFromForbiddenEntrance_" data-uid="Global.PathFinder.AwayFromForbiddenEntrance*"></a>
+
+  <h3 id="Global_PathFinder_AwayFromForbiddenEntrance_WorldCoordinate_" data-uid="Global.PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)">
+  AwayFromForbiddenEntrance(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection AwayFromForbiddenEntrance(WorldCoordinate origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>origin</parameter>
+    <parameter>M:PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.AwayFromForbiddenEntrance(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_BestRegionTransportationGoal_" data-uid="Global.PathFinder.BestRegionTransportationGoal*"></a>
+
+  <h3 id="Global_PathFinder_BestRegionTransportationGoal" data-uid="Global.PathFinder.BestRegionTransportationGoal">
+  BestRegionTransportationGoal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.BestRegionTransportationGoal</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCoordinate BestRegionTransportationGoal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.BestRegionTransportationGoal</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CheckConnectionCost_" data-uid="Global.PathFinder.CheckConnectionCost*"></a>
+
+  <h3 id="Global_PathFinder_CheckConnectionCost_PathFinder_PathingCell_PathFinder_PathingCell_MovementConnection_System_Boolean_" data-uid="Global.PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)">
+  CheckConnectionCost(PathingCell, PathingCell, MovementConnection, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual PathCost CheckConnectionCost(PathFinder.PathingCell start, PathFinder.PathingCell goal, MovementConnection connection, bool followingPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>start</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>goal</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>goal</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>connection</code> <a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>connection</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>followingPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>followingPath</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CheckConnectionCost(PathFinder.PathingCell,PathFinder.PathingCell,MovementConnection,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CheckNeighbours_" data-uid="Global.PathFinder.CheckNeighbours*"></a>
+
+  <h3 id="Global_PathFinder_CheckNeighbours_PathFinder_PathingCell_" data-uid="Global.PathFinder.CheckNeighbours(PathFinder.PathingCell)">
+  CheckNeighbours(PathingCell)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CheckNeighbours(PathFinder.PathingCell)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CheckNeighbours(PathFinder.PathingCell checkNow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>checkNow</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>checkNow</parameter>
+    <parameter>M:PathFinder.CheckNeighbours(PathFinder.PathingCell)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_ConnectAITile_" data-uid="Global.PathFinder.ConnectAITile*"></a>
+
+  <h3 id="Global_PathFinder_ConnectAITile_System_Int32_System_Int32_" data-uid="Global.PathFinder.ConnectAITile(System.Int32,System.Int32)">
+  ConnectAITile(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.ConnectAITile(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ConnectAITile(int room, int node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>room</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>room</parameter>
+    <parameter>M:PathFinder.ConnectAITile(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>node</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>node</parameter>
+    <parameter>M:PathFinder.ConnectAITile(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_ConnectionAtCoordinate_" data-uid="Global.PathFinder.ConnectionAtCoordinate*"></a>
+
+  <h3 id="Global_PathFinder_ConnectionAtCoordinate_System_Boolean_WorldCoordinate_System_Int32_" data-uid="Global.PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)">
+  ConnectionAtCoordinate(bool, WorldCoordinate, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection ConnectionAtCoordinate(bool outGoing, WorldCoordinate coord, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outGoing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>outGoing</parameter>
+    <parameter>M:PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>index</parameter>
+    <parameter>M:PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.ConnectionAtCoordinate(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_ConnectionsOfAbstractNodeInRealizedRoom_" data-uid="Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom*"></a>
+
+  <h3 id="Global_PathFinder_ConnectionsOfAbstractNodeInRealizedRoom_System_Boolean_WorldCoordinate_System_Int32_" data-uid="Global.PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)">
+  ConnectionsOfAbstractNodeInRealizedRoom(bool, WorldCoordinate, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovementConnection ConnectionsOfAbstractNodeInRealizedRoom(bool outGoing, WorldCoordinate coord, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outGoing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>outGoing</parameter>
+    <parameter>M:PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>index</parameter>
+    <parameter>M:PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.ConnectionsOfAbstractNodeInRealizedRoom(System.Boolean,WorldCoordinate,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinateAtCurrentPathingGeneration_" data-uid="Global.PathFinder.CoordinateAtCurrentPathingGeneration*"></a>
+
+  <h3 id="Global_PathFinder_CoordinateAtCurrentPathingGeneration_WorldCoordinate_" data-uid="Global.PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)">
+  CoordinateAtCurrentPathingGeneration(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CoordinateAtCurrentPathingGeneration(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinateAtCurrentPathingGeneration(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinateCost_" data-uid="Global.PathFinder.CoordinateCost*"></a>
+
+  <h3 id="Global_PathFinder_CoordinateCost_WorldCoordinate_" data-uid="Global.PathFinder.CoordinateCost(WorldCoordinate)">
+  CoordinateCost(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinateCost(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathCost CoordinateCost(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinateCost(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinateCost(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinatePossibleToGetBackFrom_" data-uid="Global.PathFinder.CoordinatePossibleToGetBackFrom*"></a>
+
+  <h3 id="Global_PathFinder_CoordinatePossibleToGetBackFrom_WorldCoordinate_" data-uid="Global.PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)">
+  CoordinatePossibleToGetBackFrom(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CoordinatePossibleToGetBackFrom(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinatePossibleToGetBackFrom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinateReachable_" data-uid="Global.PathFinder.CoordinateReachable*"></a>
+
+  <h3 id="Global_PathFinder_CoordinateReachable_WorldCoordinate_" data-uid="Global.PathFinder.CoordinateReachable(WorldCoordinate)">
+  CoordinateReachable(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinateReachable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CoordinateReachable(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinateReachable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinateReachable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinateReachableAndGetbackable_" data-uid="Global.PathFinder.CoordinateReachableAndGetbackable*"></a>
+
+  <h3 id="Global_PathFinder_CoordinateReachableAndGetbackable_WorldCoordinate_" data-uid="Global.PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)">
+  CoordinateReachableAndGetbackable(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CoordinateReachableAndGetbackable(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinateReachableAndGetbackable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CoordinateViable_" data-uid="Global.PathFinder.CoordinateViable*"></a>
+
+  <h3 id="Global_PathFinder_CoordinateViable_WorldCoordinate_" data-uid="Global.PathFinder.CoordinateViable(WorldCoordinate)">
+  CoordinateViable(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CoordinateViable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CoordinateViable(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.CoordinateViable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CoordinateViable(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_CreatePathForAbstractreature_" data-uid="Global.PathFinder.CreatePathForAbstractreature*"></a>
+
+  <h3 id="Global_PathFinder_CreatePathForAbstractreature_WorldCoordinate_" data-uid="Global.PathFinder.CreatePathForAbstractreature(WorldCoordinate)">
+  CreatePathForAbstractreature(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.CreatePathForAbstractreature(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WorldCoordinate&gt; CreatePathForAbstractreature(WorldCoordinate searchDestination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>searchDestination</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>searchDestination</parameter>
+    <parameter>M:PathFinder.CreatePathForAbstractreature(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="WorldCoordinate.html">WorldCoordinate</a>&gt;</dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.CreatePathForAbstractreature(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_DebugInfo_" data-uid="Global.PathFinder.DebugInfo*"></a>
+
+  <h3 id="Global_PathFinder_DebugInfo_WorldCoordinate_" data-uid="Global.PathFinder.DebugInfo(WorldCoordinate)">
+  DebugInfo(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.DebugInfo(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DebugInfo(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.DebugInfo(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.DebugInfo(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_DestinationExit_" data-uid="Global.PathFinder.DestinationExit*"></a>
+
+  <h3 id="Global_PathFinder_DestinationExit_System_Int32_System_Int32_" data-uid="Global.PathFinder.DestinationExit(System.Int32,System.Int32)">
+  DestinationExit(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.DestinationExit(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DestinationExit(int evaluateRoom, int theDoorICameInThrough)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evaluateRoom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>evaluateRoom</parameter>
+    <parameter>M:PathFinder.DestinationExit(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>theDoorICameInThrough</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>theDoorICameInThrough</parameter>
+    <parameter>M:PathFinder.DestinationExit(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.DestinationExit(System.Int32,System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_DestinationHasChanged_" data-uid="Global.PathFinder.DestinationHasChanged*"></a>
+
+  <h3 id="Global_PathFinder_DestinationHasChanged_WorldCoordinate_WorldCoordinate_" data-uid="Global.PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)">
+  DestinationHasChanged(WorldCoordinate, WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DestinationHasChanged(WorldCoordinate oldDestination, WorldCoordinate newDestination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldDestination</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>oldDestination</parameter>
+    <parameter>M:PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>newDestination</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newDestination</parameter>
+    <parameter>M:PathFinder.DestinationHasChanged(WorldCoordinate,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_FindReachableNeighbourIfPossible_" data-uid="Global.PathFinder.FindReachableNeighbourIfPossible*"></a>
+
+  <h3 id="Global_PathFinder_FindReachableNeighbourIfPossible_WorldCoordinate_" data-uid="Global.PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)">
+  FindReachableNeighbourIfPossible(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WorldCoordinate FindReachableNeighbourIfPossible(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.FindReachableNeighbourIfPossible(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_ForbiddenEntranceDist_" data-uid="Global.PathFinder.ForbiddenEntranceDist*"></a>
+
+  <h3 id="Global_PathFinder_ForbiddenEntranceDist_WorldCoordinate_" data-uid="Global.PathFinder.ForbiddenEntranceDist(WorldCoordinate)">
+  ForbiddenEntranceDist(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.ForbiddenEntranceDist(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ForbiddenEntranceDist(WorldCoordinate origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>origin</parameter>
+    <parameter>M:PathFinder.ForbiddenEntranceDist(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.ForbiddenEntranceDist(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_ForceNextDestination_" data-uid="Global.PathFinder.ForceNextDestination*"></a>
+
+  <h3 id="Global_PathFinder_ForceNextDestination" data-uid="Global.PathFinder.ForceNextDestination">
+  ForceNextDestination()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.ForceNextDestination</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceNextDestination()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_FromRealizedToWorldConnection_" data-uid="Global.PathFinder.FromRealizedToWorldConnection*"></a>
+
+  <h3 id="Global_PathFinder_FromRealizedToWorldConnection_System_Boolean_WorldCoordinate_" data-uid="Global.PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)">
+  FromRealizedToWorldConnection(bool, WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovementConnection FromRealizedToWorldConnection(bool outGoing, WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outGoing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>outGoing</parameter>
+    <parameter>M:PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.FromRealizedToWorldConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_FromWorldToRealizedRoomShortCutConnection_" data-uid="Global.PathFinder.FromWorldToRealizedRoomShortCutConnection*"></a>
+
+  <h3 id="Global_PathFinder_FromWorldToRealizedRoomShortCutConnection_System_Boolean_WorldCoordinate_" data-uid="Global.PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)">
+  FromWorldToRealizedRoomShortCutConnection(bool, WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MovementConnection FromWorldToRealizedRoomShortCutConnection(bool outGoing, WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outGoing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>outGoing</parameter>
+    <parameter>M:PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.FromWorldToRealizedRoomShortCutConnection(System.Boolean,WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_HeuristicForCell_" data-uid="Global.PathFinder.HeuristicForCell*"></a>
+
+  <h3 id="Global_PathFinder_HeuristicForCell_PathFinder_PathingCell_PathCost_" data-uid="Global.PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)">
+  HeuristicForCell(PathingCell, PathCost)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual PathCost HeuristicForCell(PathFinder.PathingCell cell, PathCost costToGoal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cell</code> <a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>cell</parameter>
+    <parameter>M:PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>costToGoal</code> <a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>costToGoal</parameter>
+    <parameter>M:PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PathCost.html">PathCost</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.HeuristicForCell(PathFinder.PathingCell,PathCost)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_InThisRealizedRoom_" data-uid="Global.PathFinder.InThisRealizedRoom*"></a>
+
+  <h3 id="Global_PathFinder_InThisRealizedRoom_WorldCoordinate_" data-uid="Global.PathFinder.InThisRealizedRoom(WorldCoordinate)">
+  InThisRealizedRoom(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.InThisRealizedRoom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool InThisRealizedRoom(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.InThisRealizedRoom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.InThisRealizedRoom(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_InitiAccessibilityMapping_" data-uid="Global.PathFinder.InitiAccessibilityMapping*"></a>
+
+  <h3 id="Global_PathFinder_InitiAccessibilityMapping_WorldCoordinate_RWCustom_IntVector2___" data-uid="Global.PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])">
+  InitiAccessibilityMapping(WorldCoordinate, IntVector2[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitiAccessibilityMapping(WorldCoordinate entranceCoordinate, IntVector2[] alreadyAccessible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entranceCoordinate</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>entranceCoordinate</parameter>
+    <parameter>M:PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>alreadyAccessible</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a>[]</dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>alreadyAccessible</parameter>
+    <parameter>M:PathFinder.InitiAccessibilityMapping(WorldCoordinate,RWCustom.IntVector2[])</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_InitiatePath_" data-uid="Global.PathFinder.InitiatePath*"></a>
+
+  <h3 id="Global_PathFinder_InitiatePath_System_Int32_" data-uid="Global.PathFinder.InitiatePath(System.Int32)">
+  InitiatePath(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.InitiatePath(System.Int32)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool InitiatePath(int theDoorICameInThrough)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDoorICameInThrough</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>theDoorICameInThrough</parameter>
+    <parameter>M:PathFinder.InitiatePath(System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.InitiatePath(System.Int32)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_LeavingRoom_" data-uid="Global.PathFinder.LeavingRoom*"></a>
+
+  <h3 id="Global_PathFinder_LeavingRoom" data-uid="Global.PathFinder.LeavingRoom">
+  LeavingRoom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.LeavingRoom</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LeavingRoom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_LogWorldCellState_" data-uid="Global.PathFinder.LogWorldCellState*"></a>
+
+  <h3 id="Global_PathFinder_LogWorldCellState" data-uid="Global.PathFinder.LogWorldCellState">
+  LogWorldCellState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.LogWorldCellState</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogWorldCellState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_NewRoom_" data-uid="Global.PathFinder.NewRoom*"></a>
+
+  <h3 id="Global_PathFinder_NewRoom_Room_" data-uid="Global.PathFinder.NewRoom(Room)">
+  NewRoom(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRealizedRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRealizedRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newRealizedRoom</parameter>
+    <parameter>M:PathFinder.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_OutOfElement_" data-uid="Global.PathFinder.OutOfElement*"></a>
+
+  <h3 id="Global_PathFinder_OutOfElement" data-uid="Global.PathFinder.OutOfElement">
+  OutOfElement()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.OutOfElement</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OutOfElement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_OutOfElement_" data-uid="Global.PathFinder.OutOfElement*"></a>
+
+  <h3 id="Global_PathFinder_OutOfElement_WorldCoordinate_" data-uid="Global.PathFinder.OutOfElement(WorldCoordinate)">
+  OutOfElement(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.OutOfElement(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OutOfElement(WorldCoordinate ps)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ps</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>ps</parameter>
+    <parameter>M:PathFinder.OutOfElement(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_PathWithExits_" data-uid="Global.PathFinder.PathWithExits*"></a>
+
+  <h3 id="Global_PathFinder_PathWithExits_WorldCoordinate_System_Boolean_" data-uid="Global.PathFinder.PathWithExits(WorldCoordinate,System.Boolean)">
+  PathWithExits(WorldCoordinate, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.PathWithExits(WorldCoordinate,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovementConnection PathWithExits(WorldCoordinate origin, bool avoidForbiddenEntrance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>origin</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>origin</parameter>
+    <parameter>M:PathFinder.PathWithExits(WorldCoordinate,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>avoidForbiddenEntrance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>avoidForbiddenEntrance</parameter>
+    <parameter>M:PathFinder.PathWithExits(WorldCoordinate,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.MovementConnection.html">MovementConnection</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.PathWithExits(WorldCoordinate,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_PathingCellAtWorldCoordinate_" data-uid="Global.PathFinder.PathingCellAtWorldCoordinate*"></a>
+
+  <h3 id="Global_PathFinder_PathingCellAtWorldCoordinate_WorldCoordinate_" data-uid="Global.PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)">
+  PathingCellAtWorldCoordinate(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathFinder.PathingCell PathingCellAtWorldCoordinate(WorldCoordinate coord)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coord</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>coord</parameter>
+    <parameter>M:PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PathFinder.html">PathFinder</a>.<a class="xref" href="PathFinder.PathingCell.html">PathingCell</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.PathingCellAtWorldCoordinate(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_RayTraceInAccessibleTiles_" data-uid="Global.PathFinder.RayTraceInAccessibleTiles*"></a>
+
+  <h3 id="Global_PathFinder_RayTraceInAccessibleTiles_RWCustom_IntVector2_RWCustom_IntVector2_" data-uid="Global.PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)">
+  RayTraceInAccessibleTiles(IntVector2, IntVector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RayTraceInAccessibleTiles(IntVector2 A, IntVector2 B)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>A</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>A</parameter>
+    <parameter>M:PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>B</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>B</parameter>
+    <parameter>M:PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:PathFinder.RayTraceInAccessibleTiles(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_Reset_" data-uid="Global.PathFinder.Reset*"></a>
+
+  <h3 id="Global_PathFinder_Reset_Room_" data-uid="Global.PathFinder.Reset(Room)">
+  Reset(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.Reset(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(Room newRealizedRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRealizedRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newRealizedRoom</parameter>
+    <parameter>M:PathFinder.Reset(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_RestartPathFinding_" data-uid="Global.PathFinder.RestartPathFinding*"></a>
+
+  <h3 id="Global_PathFinder_RestartPathFinding" data-uid="Global.PathFinder.RestartPathFinding">
+  RestartPathFinding()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.RestartPathFinding</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestartPathFinding()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_SetDestination_" data-uid="Global.PathFinder.SetDestination*"></a>
+
+  <h3 id="Global_PathFinder_SetDestination_WorldCoordinate_" data-uid="Global.PathFinder.SetDestination(WorldCoordinate)">
+  SetDestination(WorldCoordinate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.SetDestination(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDestination(WorldCoordinate newDestination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newDestination</code> <a class="xref" href="Global.WorldCoordinate.html">WorldCoordinate</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newDestination</parameter>
+    <parameter>M:PathFinder.SetDestination(WorldCoordinate)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_PathFinder_Update_" data-uid="Global.PathFinder.Update*"></a>
+
+  <h3 id="Global_PathFinder_Update" data-uid="Global.PathFinder.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:PathFinder.Update</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1793 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ShelterDoor
+  commentId: T:Global.ShelterDoor
+  id: ShelterDoor
+  parent: Global
+  children:
+  - Global.ShelterDoor.#ctor(Room)
+  - Global.ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.ShelterDoor.Broken
+  - Global.ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)
+  - Global.ShelterDoor.Close
+  - Global.ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)
+  - Global.ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.ShelterDoor.IsClosing
+  - Global.ShelterDoor.IsOpening
+  - Global.ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)
+  - Global.ShelterDoor.ShelterEntranceOverrides
+  - Global.ShelterDoor.Update(System.Boolean)
+  - Global.ShelterDoor.aiMapper
+  - Global.ShelterDoor.doorGraphs
+  - Global.ShelterDoor.gasketMoverLoop
+  - Global.ShelterDoor.isAncient
+  - Global.ShelterDoor.openTime
+  - Global.ShelterDoor.playerSpawnPos
+  - Global.ShelterDoor.workingLoop
+  langs:
+  - csharp
+  - vb
+  name: ShelterDoor
+  nameWithType: ShelterDoor
+  fullName: ShelterDoor
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ShelterDoor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class ShelterDoor : UpdatableAndDeletable, IDrawable'
+    content.vb: Public Class ShelterDoor Inherits UpdatableAndDeletable Implements IDrawable
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  implements:
+  - Global.IDrawable
+  inheritedMembers:
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ShelterDoor.playerSpawnPos
+  commentId: F:Global.ShelterDoor.playerSpawnPos
+  id: playerSpawnPos
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: playerSpawnPos
+  nameWithType: ShelterDoor.playerSpawnPos
+  fullName: ShelterDoor.playerSpawnPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.playerSpawnPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IntVector2 playerSpawnPos
+    return:
+      type: RWCustom.IntVector2
+    content.vb: Public playerSpawnPos As IntVector2
+- uid: Global.ShelterDoor.workingLoop
+  commentId: F:Global.ShelterDoor.workingLoop
+  id: workingLoop
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: workingLoop
+  nameWithType: ShelterDoor.workingLoop
+  fullName: ShelterDoor.workingLoop
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.workingLoop</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StaticSoundLoop workingLoop
+    return:
+      type: Global.StaticSoundLoop
+    content.vb: Public workingLoop As StaticSoundLoop
+- uid: Global.ShelterDoor.gasketMoverLoop
+  commentId: F:Global.ShelterDoor.gasketMoverLoop
+  id: gasketMoverLoop
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: gasketMoverLoop
+  nameWithType: ShelterDoor.gasketMoverLoop
+  fullName: ShelterDoor.gasketMoverLoop
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.gasketMoverLoop</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StaticSoundLoop gasketMoverLoop
+    return:
+      type: Global.StaticSoundLoop
+    content.vb: Public gasketMoverLoop As StaticSoundLoop
+- uid: Global.ShelterDoor.aiMapper
+  commentId: F:Global.ShelterDoor.aiMapper
+  id: aiMapper
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: aiMapper
+  nameWithType: ShelterDoor.aiMapper
+  fullName: ShelterDoor.aiMapper
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.aiMapper</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AImapper aiMapper
+    return:
+      type: Global.AImapper
+    content.vb: Public aiMapper As AImapper
+- uid: Global.ShelterDoor.openTime
+  commentId: F:Global.ShelterDoor.openTime
+  id: openTime
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: openTime
+  nameWithType: ShelterDoor.openTime
+  fullName: ShelterDoor.openTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.openTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int openTime
+    return:
+      type: System.Int32
+    content.vb: Public openTime As Integer
+- uid: Global.ShelterDoor.isAncient
+  commentId: F:Global.ShelterDoor.isAncient
+  id: isAncient
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: isAncient
+  nameWithType: ShelterDoor.isAncient
+  fullName: ShelterDoor.isAncient
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.isAncient</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool isAncient
+    return:
+      type: System.Boolean
+    content.vb: Public isAncient As Boolean
+- uid: Global.ShelterDoor.doorGraphs
+  commentId: F:Global.ShelterDoor.doorGraphs
+  id: doorGraphs
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: doorGraphs
+  nameWithType: ShelterDoor.doorGraphs
+  fullName: ShelterDoor.doorGraphs
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShelterDoor.doorGraphs</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ShelterDoor.DoorGraphic[] doorGraphs
+    return:
+      type: Global.ShelterDoor.DoorGraphic[]
+    content.vb: Public doorGraphs As ShelterDoor.DoorGraphic()
+- uid: Global.ShelterDoor.#ctor(Room)
+  commentId: M:Global.ShelterDoor.#ctor(Room)
+  id: '#ctor(Room)'
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: ShelterDoor(Room)
+  nameWithType: ShelterDoor.ShelterDoor(Room)
+  fullName: ShelterDoor.ShelterDoor(Room)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ShelterDoor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ShelterDoor(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ShelterDoor.#ctor(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room)
+  overload: Global.ShelterDoor.#ctor*
+  nameWithType.vb: ShelterDoor.New(Room)
+  fullName.vb: ShelterDoor.New(Room)
+  name.vb: New(Room)
+- uid: Global.ShelterDoor.ShelterEntranceOverrides
+  commentId: M:Global.ShelterDoor.ShelterEntranceOverrides
+  id: ShelterEntranceOverrides
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: ShelterEntranceOverrides()
+  nameWithType: ShelterDoor.ShelterEntranceOverrides()
+  fullName: ShelterDoor.ShelterEntranceOverrides()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.ShelterEntranceOverrides</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IntVector2? ShelterEntranceOverrides()
+    return:
+      type: System.Nullable{RWCustom.IntVector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ShelterDoor.ShelterEntranceOverrides</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ShelterEntranceOverrides() As IntVector2?
+  overload: Global.ShelterDoor.ShelterEntranceOverrides*
+- uid: Global.ShelterDoor.Close
+  commentId: M:Global.ShelterDoor.Close
+  id: Close
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ShelterDoor.Close()
+  fullName: ShelterDoor.Close()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.Close</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: Global.ShelterDoor.Close*
+- uid: Global.ShelterDoor.Update(System.Boolean)
+  commentId: M:Global.ShelterDoor.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: ShelterDoor.Update(bool)
+  fullName: ShelterDoor.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:ShelterDoor.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.UpdatableAndDeletable.Update(System.Boolean)
+  overload: Global.ShelterDoor.Update*
+  nameWithType.vb: ShelterDoor.Update(Boolean)
+  fullName.vb: ShelterDoor.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:ShelterDoor.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overload: Global.ShelterDoor.InitiateSprites*
+  implements:
+  - Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+- uid: Global.ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overload: Global.ShelterDoor.DrawSprites*
+  implements:
+  - Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  nameWithType.vb: ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: ShelterDoor.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:ShelterDoor.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overload: Global.ShelterDoor.ApplyPalette*
+  implements:
+  - Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+- uid: Global.ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:ShelterDoor.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overload: Global.ShelterDoor.AddToContainer*
+  implements:
+  - Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+- uid: Global.ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)
+  commentId: M:Global.ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)
+  id: IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: IsTileInsideShelterRange(AbstractRoom, IntVector2)
+  nameWithType: ShelterDoor.IsTileInsideShelterRange(AbstractRoom, IntVector2)
+  fullName: ShelterDoor.IsTileInsideShelterRange(AbstractRoom, RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool IsTileInsideShelterRange(AbstractRoom room, IntVector2 tile)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    - id: tile
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tile</parameter>
+            <parameter>M:ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ShelterDoor.IsTileInsideShelterRange(AbstractRoom,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function IsTileInsideShelterRange(room As AbstractRoom, tile As IntVector2) As Boolean
+  overload: Global.ShelterDoor.IsTileInsideShelterRange*
+- uid: Global.ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)
+  commentId: M:Global.ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)
+  id: CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: CoordInsideShelterRange(IntVector2, bool)
+  nameWithType: ShelterDoor.CoordInsideShelterRange(IntVector2, bool)
+  fullName: ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public static bool CoordInsideShelterRange(IntVector2 tile, bool ancient)
+    parameters:
+    - id: tile
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tile</parameter>
+            <parameter>M:ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: ancient
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ancient</parameter>
+            <parameter>M:ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: >-
+      <Obsolete>
+
+      Public Shared Function CoordInsideShelterRange(tile As IntVector2, ancient As Boolean) As Boolean
+  overload: Global.ShelterDoor.CoordInsideShelterRange*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ShelterDoor.CoordInsideShelterRange(IntVector2, Boolean)
+  fullName.vb: ShelterDoor.CoordInsideShelterRange(RWCustom.IntVector2, Boolean)
+  name.vb: CoordInsideShelterRange(IntVector2, Boolean)
+- uid: Global.ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)
+  commentId: M:Global.ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)
+  id: ChangeAncientDoorsStatus(System.Int32,System.Boolean)
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: ChangeAncientDoorsStatus(int, bool)
+  nameWithType: ShelterDoor.ChangeAncientDoorsStatus(int, bool)
+  fullName: ShelterDoor.ChangeAncientDoorsStatus(int, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ChangeAncientDoorsStatus(int door, bool open)
+    parameters:
+    - id: door
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>door</parameter>
+            <parameter>M:ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: open
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>open</parameter>
+            <parameter>M:ShelterDoor.ChangeAncientDoorsStatus(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ChangeAncientDoorsStatus(door As Integer, open As Boolean)
+  overload: Global.ShelterDoor.ChangeAncientDoorsStatus*
+  nameWithType.vb: ShelterDoor.ChangeAncientDoorsStatus(Integer, Boolean)
+  fullName.vb: ShelterDoor.ChangeAncientDoorsStatus(Integer, Boolean)
+  name.vb: ChangeAncientDoorsStatus(Integer, Boolean)
+- uid: Global.ShelterDoor.IsClosing
+  commentId: P:Global.ShelterDoor.IsClosing
+  id: IsClosing
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: IsClosing
+  nameWithType: ShelterDoor.IsClosing
+  fullName: ShelterDoor.IsClosing
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ShelterDoor.IsClosing</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsClosing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsClosing As Boolean
+  overload: Global.ShelterDoor.IsClosing*
+- uid: Global.ShelterDoor.Broken
+  commentId: P:Global.ShelterDoor.Broken
+  id: Broken
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: Broken
+  nameWithType: ShelterDoor.Broken
+  fullName: ShelterDoor.Broken
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ShelterDoor.Broken</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool Broken { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Broken As Boolean
+  overload: Global.ShelterDoor.Broken*
+- uid: Global.ShelterDoor.IsOpening
+  commentId: P:Global.ShelterDoor.IsOpening
+  id: IsOpening
+  parent: Global.ShelterDoor
+  langs:
+  - csharp
+  - vb
+  name: IsOpening
+  nameWithType: ShelterDoor.IsOpening
+  fullName: ShelterDoor.IsOpening
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ShelterDoor.IsOpening</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsOpening { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsOpening As Boolean
+  overload: Global.ShelterDoor.IsOpening*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.StaticSoundLoop
+  commentId: T:Global.StaticSoundLoop
+  isExternal: true
+  href: StaticSoundLoop.html
+  name: StaticSoundLoop
+  nameWithType: StaticSoundLoop
+  fullName: StaticSoundLoop
+- uid: Global.AImapper
+  commentId: T:Global.AImapper
+  isExternal: true
+  href: AImapper.html
+  name: AImapper
+  nameWithType: AImapper
+  fullName: AImapper
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ShelterDoor.DoorGraphic[]
+  isExternal: true
+  href: ShelterDoor.DoorGraphic.html
+  name: DoorGraphic[]
+  nameWithType: ShelterDoor.DoorGraphic[]
+  fullName: ShelterDoor.DoorGraphic[]
+  nameWithType.vb: ShelterDoor.DoorGraphic()
+  fullName.vb: ShelterDoor.DoorGraphic()
+  name.vb: DoorGraphic()
+  spec.csharp:
+  - uid: Global.ShelterDoor.DoorGraphic
+    name: DoorGraphic
+    isExternal: true
+    href: ShelterDoor.DoorGraphic.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.ShelterDoor.DoorGraphic
+    name: DoorGraphic
+    isExternal: true
+    href: ShelterDoor.DoorGraphic.html
+  - name: (
+  - name: )
+- uid: Global.ShelterDoor.#ctor*
+  commentId: Overload:Global.ShelterDoor.#ctor
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor__ctor_Room_
+  name: ShelterDoor
+  nameWithType: ShelterDoor.ShelterDoor
+  fullName: ShelterDoor.ShelterDoor
+  nameWithType.vb: ShelterDoor.New
+  fullName.vb: ShelterDoor.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.ShelterDoor.ShelterEntranceOverrides*
+  commentId: Overload:Global.ShelterDoor.ShelterEntranceOverrides
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_ShelterEntranceOverrides
+  name: ShelterEntranceOverrides
+  nameWithType: ShelterDoor.ShelterEntranceOverrides
+  fullName: ShelterDoor.ShelterEntranceOverrides
+- uid: System.Nullable{RWCustom.IntVector2}
+  commentId: T:System.Nullable{RWCustom.IntVector2}
+  parent: System
+  definition: System.Nullable`1
+  href: RWCustom.IntVector2.html
+  name: IntVector2?
+  nameWithType: IntVector2?
+  fullName: RWCustom.IntVector2?
+  spec.csharp:
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '?'
+  spec.vb:
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ShelterDoor.Close*
+  commentId: Overload:Global.ShelterDoor.Close
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_Close
+  name: Close
+  nameWithType: ShelterDoor.Close
+  fullName: ShelterDoor.Close
+- uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+  commentId: M:Global.UpdatableAndDeletable.Update(System.Boolean)
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: UpdatableAndDeletable.Update(bool)
+  fullName: UpdatableAndDeletable.Update(bool)
+  nameWithType.vb: UpdatableAndDeletable.Update(Boolean)
+  fullName.vb: UpdatableAndDeletable.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ShelterDoor.Update*
+  commentId: Overload:Global.ShelterDoor.Update
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_Update_System_Boolean_
+  name: Update
+  nameWithType: ShelterDoor.Update
+  fullName: ShelterDoor.Update
+- uid: Global.ShelterDoor.InitiateSprites*
+  commentId: Overload:Global.ShelterDoor.InitiateSprites
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: ShelterDoor.InitiateSprites
+  fullName: ShelterDoor.InitiateSprites
+- uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.ShelterDoor.DrawSprites*
+  commentId: Overload:Global.ShelterDoor.DrawSprites
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: ShelterDoor.DrawSprites
+  fullName: ShelterDoor.DrawSprites
+- uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.ShelterDoor.ApplyPalette*
+  commentId: Overload:Global.ShelterDoor.ApplyPalette
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: ShelterDoor.ApplyPalette
+  fullName: ShelterDoor.ApplyPalette
+- uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.ShelterDoor.AddToContainer*
+  commentId: Overload:Global.ShelterDoor.AddToContainer
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: ShelterDoor.AddToContainer
+  fullName: ShelterDoor.AddToContainer
+- uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.ShelterDoor.IsTileInsideShelterRange*
+  commentId: Overload:Global.ShelterDoor.IsTileInsideShelterRange
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_IsTileInsideShelterRange_AbstractRoom_RWCustom_IntVector2_
+  name: IsTileInsideShelterRange
+  nameWithType: ShelterDoor.IsTileInsideShelterRange
+  fullName: ShelterDoor.IsTileInsideShelterRange
+- uid: Global.AbstractRoom
+  commentId: T:Global.AbstractRoom
+  isExternal: true
+  href: AbstractRoom.html
+  name: AbstractRoom
+  nameWithType: AbstractRoom
+  fullName: AbstractRoom
+- uid: Global.ShelterDoor.CoordInsideShelterRange*
+  commentId: Overload:Global.ShelterDoor.CoordInsideShelterRange
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_CoordInsideShelterRange_RWCustom_IntVector2_System_Boolean_
+  name: CoordInsideShelterRange
+  nameWithType: ShelterDoor.CoordInsideShelterRange
+  fullName: ShelterDoor.CoordInsideShelterRange
+- uid: Global.ShelterDoor.ChangeAncientDoorsStatus*
+  commentId: Overload:Global.ShelterDoor.ChangeAncientDoorsStatus
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_ChangeAncientDoorsStatus_System_Int32_System_Boolean_
+  name: ChangeAncientDoorsStatus
+  nameWithType: ShelterDoor.ChangeAncientDoorsStatus
+  fullName: ShelterDoor.ChangeAncientDoorsStatus
+- uid: Global.ShelterDoor.IsClosing*
+  commentId: Overload:Global.ShelterDoor.IsClosing
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_IsClosing
+  name: IsClosing
+  nameWithType: ShelterDoor.IsClosing
+  fullName: ShelterDoor.IsClosing
+- uid: Global.ShelterDoor.Broken*
+  commentId: Overload:Global.ShelterDoor.Broken
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_Broken
+  name: Broken
+  nameWithType: ShelterDoor.Broken
+  fullName: ShelterDoor.Broken
+- uid: Global.ShelterDoor.IsOpening*
+  commentId: Overload:Global.ShelterDoor.IsOpening
+  isExternal: true
+  href: Global.ShelterDoor.html#ShelterDoor_IsOpening
+  name: IsOpening
+  nameWithType: ShelterDoor.IsOpening
+  fullName: ShelterDoor.IsOpening

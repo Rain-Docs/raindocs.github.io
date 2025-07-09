@@ -1,0 +1,1050 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SwarmRoomFinder
+  commentId: T:Global.SwarmRoomFinder
+  id: SwarmRoomFinder
+  parent: Global
+  children:
+  - Global.SwarmRoomFinder.#ctor(ArtificialIntelligence,AbstractCreature)
+  - Global.SwarmRoomFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  - Global.SwarmRoomFinder.Initiate
+  - Global.SwarmRoomFinder.NewWorld
+  - Global.SwarmRoomFinder.ResetMapping(System.Boolean)
+  - Global.SwarmRoomFinder.ResetMappingIfNecessary(System.Boolean)
+  - Global.SwarmRoomFinder.SwarmPosition
+  langs:
+  - csharp
+  - vb
+  name: SwarmRoomFinder
+  nameWithType: SwarmRoomFinder
+  fullName: SwarmRoomFinder
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:SwarmRoomFinder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SwarmRoomFinder : NodeFinder'
+    content.vb: Public Class SwarmRoomFinder Inherits NodeFinder
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  - Global.NodeFinder
+  inheritedMembers:
+  - Global.NodeFinder.creature
+  - Global.NodeFinder.abstractSpaceNodeFinder
+  - Global.NodeFinder.status
+  - Global.NodeFinder.Update
+  - Global.AIModule.AI
+  - Global.AIModule.NewRoom(Room)
+  - Global.AIModule.Utility
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.SwarmRoomFinder.#ctor(ArtificialIntelligence,AbstractCreature)
+  commentId: M:Global.SwarmRoomFinder.#ctor(ArtificialIntelligence,AbstractCreature)
+  id: '#ctor(ArtificialIntelligence,AbstractCreature)'
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: SwarmRoomFinder(ArtificialIntelligence, AbstractCreature)
+  nameWithType: SwarmRoomFinder.SwarmRoomFinder(ArtificialIntelligence, AbstractCreature)
+  fullName: SwarmRoomFinder.SwarmRoomFinder(ArtificialIntelligence, AbstractCreature)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>SwarmRoomFinder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SwarmRoomFinder(ArtificialIntelligence AI, AbstractCreature creature)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:SwarmRoomFinder.#ctor(ArtificialIntelligence,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:SwarmRoomFinder.#ctor(ArtificialIntelligence,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, creature As AbstractCreature)
+  overload: Global.SwarmRoomFinder.#ctor*
+  nameWithType.vb: SwarmRoomFinder.New(ArtificialIntelligence, AbstractCreature)
+  fullName.vb: SwarmRoomFinder.New(ArtificialIntelligence, AbstractCreature)
+  name.vb: New(ArtificialIntelligence, AbstractCreature)
+- uid: Global.SwarmRoomFinder.ResetMappingIfNecessary(System.Boolean)
+  commentId: M:Global.SwarmRoomFinder.ResetMappingIfNecessary(System.Boolean)
+  id: ResetMappingIfNecessary(System.Boolean)
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: ResetMappingIfNecessary(bool)
+  nameWithType: SwarmRoomFinder.ResetMappingIfNecessary(bool)
+  fullName: SwarmRoomFinder.ResetMappingIfNecessary(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SwarmRoomFinder.ResetMappingIfNecessary(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ResetMappingIfNecessary(bool strandedAllFromExits)
+    parameters:
+    - id: strandedAllFromExits
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>strandedAllFromExits</parameter>
+            <parameter>M:SwarmRoomFinder.ResetMappingIfNecessary(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ResetMappingIfNecessary(strandedAllFromExits As Boolean)
+  overridden: Global.NodeFinder.ResetMappingIfNecessary(System.Boolean)
+  overload: Global.SwarmRoomFinder.ResetMappingIfNecessary*
+  nameWithType.vb: SwarmRoomFinder.ResetMappingIfNecessary(Boolean)
+  fullName.vb: SwarmRoomFinder.ResetMappingIfNecessary(Boolean)
+  name.vb: ResetMappingIfNecessary(Boolean)
+- uid: Global.SwarmRoomFinder.ResetMapping(System.Boolean)
+  commentId: M:Global.SwarmRoomFinder.ResetMapping(System.Boolean)
+  id: ResetMapping(System.Boolean)
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: ResetMapping(bool)
+  nameWithType: SwarmRoomFinder.ResetMapping(bool)
+  fullName: SwarmRoomFinder.ResetMapping(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SwarmRoomFinder.ResetMapping(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ResetMapping(bool strandedAllFromExits)
+    parameters:
+    - id: strandedAllFromExits
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>strandedAllFromExits</parameter>
+            <parameter>M:SwarmRoomFinder.ResetMapping(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ResetMapping(strandedAllFromExits As Boolean)
+  overridden: Global.NodeFinder.ResetMapping(System.Boolean)
+  overload: Global.SwarmRoomFinder.ResetMapping*
+  nameWithType.vb: SwarmRoomFinder.ResetMapping(Boolean)
+  fullName.vb: SwarmRoomFinder.ResetMapping(Boolean)
+  name.vb: ResetMapping(Boolean)
+- uid: Global.SwarmRoomFinder.Initiate
+  commentId: M:Global.SwarmRoomFinder.Initiate
+  id: Initiate
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: Initiate()
+  nameWithType: SwarmRoomFinder.Initiate()
+  fullName: SwarmRoomFinder.Initiate()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SwarmRoomFinder.Initiate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Initiate()
+    content.vb: Public Overrides Sub Initiate()
+  overridden: Global.NodeFinder.Initiate
+  overload: Global.SwarmRoomFinder.Initiate*
+- uid: Global.SwarmRoomFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  commentId: M:Global.SwarmRoomFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  id: Finished(System.Collections.Generic.List{WorldCoordinate})
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: Finished(List<WorldCoordinate>)
+  nameWithType: SwarmRoomFinder.Finished(List<WorldCoordinate>)
+  fullName: SwarmRoomFinder.Finished(System.Collections.Generic.List<WorldCoordinate>)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SwarmRoomFinder.Finished(System.Collections.Generic.List{WorldCoordinate})</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Finished(List<WorldCoordinate> path)
+    parameters:
+    - id: path
+      type: System.Collections.Generic.List{WorldCoordinate}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>path</parameter>
+            <parameter>M:SwarmRoomFinder.Finished(System.Collections.Generic.List{WorldCoordinate})</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Finished(path As List(Of WorldCoordinate))
+  overridden: Global.NodeFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  overload: Global.SwarmRoomFinder.Finished*
+  nameWithType.vb: SwarmRoomFinder.Finished(List(Of WorldCoordinate))
+  fullName.vb: SwarmRoomFinder.Finished(System.Collections.Generic.List(Of WorldCoordinate))
+  name.vb: Finished(List(Of WorldCoordinate))
+- uid: Global.SwarmRoomFinder.NewWorld
+  commentId: M:Global.SwarmRoomFinder.NewWorld
+  id: NewWorld
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: NewWorld()
+  nameWithType: SwarmRoomFinder.NewWorld()
+  fullName: SwarmRoomFinder.NewWorld()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SwarmRoomFinder.NewWorld</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewWorld()
+    content.vb: Public Overrides Sub NewWorld()
+  overridden: Global.NodeFinder.NewWorld
+  overload: Global.SwarmRoomFinder.NewWorld*
+- uid: Global.SwarmRoomFinder.SwarmPosition
+  commentId: P:Global.SwarmRoomFinder.SwarmPosition
+  id: SwarmPosition
+  parent: Global.SwarmRoomFinder
+  langs:
+  - csharp
+  - vb
+  name: SwarmPosition
+  nameWithType: SwarmRoomFinder.SwarmPosition
+  fullName: SwarmRoomFinder.SwarmPosition
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:SwarmRoomFinder.SwarmPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate? SwarmPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{WorldCoordinate}
+    content.vb: Public Property SwarmPosition As WorldCoordinate?
+  overload: Global.SwarmRoomFinder.SwarmPosition*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.NodeFinder
+  commentId: T:Global.NodeFinder
+  isExternal: true
+  href: NodeFinder.html
+  name: NodeFinder
+  nameWithType: NodeFinder
+  fullName: NodeFinder
+- uid: Global.NodeFinder.creature
+  commentId: F:Global.NodeFinder.creature
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_creature
+  name: creature
+  nameWithType: NodeFinder.creature
+  fullName: NodeFinder.creature
+- uid: Global.NodeFinder.abstractSpaceNodeFinder
+  commentId: F:Global.NodeFinder.abstractSpaceNodeFinder
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_abstractSpaceNodeFinder
+  name: abstractSpaceNodeFinder
+  nameWithType: NodeFinder.abstractSpaceNodeFinder
+  fullName: NodeFinder.abstractSpaceNodeFinder
+- uid: Global.NodeFinder.status
+  commentId: F:Global.NodeFinder.status
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_status
+  name: status
+  nameWithType: NodeFinder.status
+  fullName: NodeFinder.status
+- uid: Global.NodeFinder.Update
+  commentId: M:Global.NodeFinder.Update
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_Update
+  name: Update()
+  nameWithType: NodeFinder.Update()
+  fullName: NodeFinder.Update()
+  spec.csharp:
+  - uid: Global.NodeFinder.Update
+    name: Update
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.Update
+    name: Update
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Update
+  - name: (
+  - name: )
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SwarmRoomFinder.#ctor*
+  commentId: Overload:Global.SwarmRoomFinder.#ctor
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder__ctor_ArtificialIntelligence_AbstractCreature_
+  name: SwarmRoomFinder
+  nameWithType: SwarmRoomFinder.SwarmRoomFinder
+  fullName: SwarmRoomFinder.SwarmRoomFinder
+  nameWithType.vb: SwarmRoomFinder.New
+  fullName.vb: SwarmRoomFinder.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.NodeFinder.ResetMappingIfNecessary(System.Boolean)
+  commentId: M:Global.NodeFinder.ResetMappingIfNecessary(System.Boolean)
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_ResetMappingIfNecessary_System_Boolean_
+  name: ResetMappingIfNecessary(bool)
+  nameWithType: NodeFinder.ResetMappingIfNecessary(bool)
+  fullName: NodeFinder.ResetMappingIfNecessary(bool)
+  nameWithType.vb: NodeFinder.ResetMappingIfNecessary(Boolean)
+  fullName.vb: NodeFinder.ResetMappingIfNecessary(Boolean)
+  name.vb: ResetMappingIfNecessary(Boolean)
+  spec.csharp:
+  - uid: Global.NodeFinder.ResetMappingIfNecessary(System.Boolean)
+    name: ResetMappingIfNecessary
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_ResetMappingIfNecessary_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.ResetMappingIfNecessary(System.Boolean)
+    name: ResetMappingIfNecessary
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_ResetMappingIfNecessary_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.SwarmRoomFinder.ResetMappingIfNecessary*
+  commentId: Overload:Global.SwarmRoomFinder.ResetMappingIfNecessary
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_ResetMappingIfNecessary_System_Boolean_
+  name: ResetMappingIfNecessary
+  nameWithType: SwarmRoomFinder.ResetMappingIfNecessary
+  fullName: SwarmRoomFinder.ResetMappingIfNecessary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.NodeFinder.ResetMapping(System.Boolean)
+  commentId: M:Global.NodeFinder.ResetMapping(System.Boolean)
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_ResetMapping_System_Boolean_
+  name: ResetMapping(bool)
+  nameWithType: NodeFinder.ResetMapping(bool)
+  fullName: NodeFinder.ResetMapping(bool)
+  nameWithType.vb: NodeFinder.ResetMapping(Boolean)
+  fullName.vb: NodeFinder.ResetMapping(Boolean)
+  name.vb: ResetMapping(Boolean)
+  spec.csharp:
+  - uid: Global.NodeFinder.ResetMapping(System.Boolean)
+    name: ResetMapping
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_ResetMapping_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.ResetMapping(System.Boolean)
+    name: ResetMapping
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_ResetMapping_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.SwarmRoomFinder.ResetMapping*
+  commentId: Overload:Global.SwarmRoomFinder.ResetMapping
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_ResetMapping_System_Boolean_
+  name: ResetMapping
+  nameWithType: SwarmRoomFinder.ResetMapping
+  fullName: SwarmRoomFinder.ResetMapping
+- uid: Global.NodeFinder.Initiate
+  commentId: M:Global.NodeFinder.Initiate
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_Initiate
+  name: Initiate()
+  nameWithType: NodeFinder.Initiate()
+  fullName: NodeFinder.Initiate()
+  spec.csharp:
+  - uid: Global.NodeFinder.Initiate
+    name: Initiate
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Initiate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.Initiate
+    name: Initiate
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Initiate
+  - name: (
+  - name: )
+- uid: Global.SwarmRoomFinder.Initiate*
+  commentId: Overload:Global.SwarmRoomFinder.Initiate
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_Initiate
+  name: Initiate
+  nameWithType: SwarmRoomFinder.Initiate
+  fullName: SwarmRoomFinder.Initiate
+- uid: Global.NodeFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  commentId: M:Global.NodeFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_Finished_System_Collections_Generic_List_WorldCoordinate__
+  name: Finished(List<WorldCoordinate>)
+  nameWithType: NodeFinder.Finished(List<WorldCoordinate>)
+  fullName: NodeFinder.Finished(System.Collections.Generic.List<WorldCoordinate>)
+  nameWithType.vb: NodeFinder.Finished(List(Of WorldCoordinate))
+  fullName.vb: NodeFinder.Finished(System.Collections.Generic.List(Of WorldCoordinate))
+  name.vb: Finished(List(Of WorldCoordinate))
+  spec.csharp:
+  - uid: Global.NodeFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+    name: Finished
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Finished_System_Collections_Generic_List_WorldCoordinate__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.Finished(System.Collections.Generic.List{WorldCoordinate})
+    name: Finished
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_Finished_System_Collections_Generic_List_WorldCoordinate__
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  - name: )
+- uid: Global.SwarmRoomFinder.Finished*
+  commentId: Overload:Global.SwarmRoomFinder.Finished
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_Finished_System_Collections_Generic_List_WorldCoordinate__
+  name: Finished
+  nameWithType: SwarmRoomFinder.Finished
+  fullName: SwarmRoomFinder.Finished
+- uid: System.Collections.Generic.List{WorldCoordinate}
+  commentId: T:System.Collections.Generic.List{WorldCoordinate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WorldCoordinate>
+  nameWithType: List<WorldCoordinate>
+  fullName: System.Collections.Generic.List<WorldCoordinate>
+  nameWithType.vb: List(Of WorldCoordinate)
+  fullName.vb: System.Collections.Generic.List(Of WorldCoordinate)
+  name.vb: List(Of WorldCoordinate)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.NodeFinder.NewWorld
+  commentId: M:Global.NodeFinder.NewWorld
+  parent: Global.NodeFinder
+  isExternal: true
+  href: Global.NodeFinder.html#NodeFinder_NewWorld
+  name: NewWorld()
+  nameWithType: NodeFinder.NewWorld()
+  fullName: NodeFinder.NewWorld()
+  spec.csharp:
+  - uid: Global.NodeFinder.NewWorld
+    name: NewWorld
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_NewWorld
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NodeFinder.NewWorld
+    name: NewWorld
+    isExternal: true
+    href: Global.NodeFinder.html#NodeFinder_NewWorld
+  - name: (
+  - name: )
+- uid: Global.SwarmRoomFinder.NewWorld*
+  commentId: Overload:Global.SwarmRoomFinder.NewWorld
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_NewWorld
+  name: NewWorld
+  nameWithType: SwarmRoomFinder.NewWorld
+  fullName: SwarmRoomFinder.NewWorld
+- uid: Global.SwarmRoomFinder.SwarmPosition*
+  commentId: Overload:Global.SwarmRoomFinder.SwarmPosition
+  isExternal: true
+  href: Global.SwarmRoomFinder.html#SwarmRoomFinder_SwarmPosition
+  name: SwarmPosition
+  nameWithType: SwarmRoomFinder.SwarmPosition
+  fullName: SwarmRoomFinder.SwarmPosition
+- uid: System.Nullable{WorldCoordinate}
+  commentId: T:System.Nullable{WorldCoordinate}
+  parent: System
+  definition: System.Nullable`1
+  href: WorldCoordinate.html
+  name: WorldCoordinate?
+  nameWithType: WorldCoordinate?
+  fullName: WorldCoordinate?
+  spec.csharp:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+  spec.vb:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

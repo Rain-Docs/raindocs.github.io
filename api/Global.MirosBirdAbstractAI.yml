@@ -1,0 +1,1658 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MirosBirdAbstractAI
+  commentId: T:Global.MirosBirdAbstractAI
+  id: MirosBirdAbstractAI
+  parent: Global
+  children:
+  - Global.MirosBirdAbstractAI.#ctor(World,AbstractCreature)
+  - Global.MirosBirdAbstractAI.AbstractBehavior(System.Int32)
+  - Global.MirosBirdAbstractAI.NewWorld(World)
+  - Global.MirosBirdAbstractAI.PopulateAllowedNodes(World)
+  - Global.MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS
+  - Global.MirosBirdAbstractAI.allowedNodes
+  - Global.MirosBirdAbstractAI.timeInRoom
+  - Global.MirosBirdAbstractAI.wait
+  langs:
+  - csharp
+  - vb
+  name: MirosBirdAbstractAI
+  nameWithType: MirosBirdAbstractAI
+  fullName: MirosBirdAbstractAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:MirosBirdAbstractAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class MirosBirdAbstractAI : AbstractCreatureAI'
+    content.vb: Public Class MirosBirdAbstractAI Inherits AbstractCreatureAI
+  inheritance:
+  - System.Object
+  - Global.AbstractCreatureAI
+  inheritedMembers:
+  - Global.AbstractCreatureAI.parent
+  - Global.AbstractCreatureAI.lastRoom
+  - Global.AbstractCreatureAI.strandedInRoom
+  - Global.AbstractCreatureAI.path
+  - Global.AbstractCreatureAI.world
+  - Global.AbstractCreatureAI.RealAI
+  - Global.AbstractCreatureAI.followCreature
+  - Global.AbstractCreatureAI.timeBuffer
+  - Global.AbstractCreatureAI.freezeDestination
+  - Global.AbstractCreatureAI.GoToDen
+  - Global.AbstractCreatureAI.SetDestination(WorldCoordinate)
+  - Global.AbstractCreatureAI.MigrateTo(WorldCoordinate)
+  - Global.AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate,System.Boolean)
+  - Global.AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+  - Global.AbstractCreatureAI.FindPath(WorldCoordinate)
+  - Global.AbstractCreatureAI.PlaceInRealizedRoom
+  - Global.AbstractCreatureAI.DestinationExit(System.Int32,System.Int32)
+  - Global.AbstractCreatureAI.Update(System.Int32)
+  - Global.AbstractCreatureAI.MigrationBehavior(System.Int32)
+  - Global.AbstractCreatureAI.MoveWithCreature(AbstractCreature,System.Boolean)
+  - Global.AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+  - Global.AbstractCreatureAI.TimeInfluencedRandomRoll(System.Single,System.Int32)
+  - Global.AbstractCreatureAI.FollowPath(System.Int32)
+  - Global.AbstractCreatureAI.RandomMoveWithinRoom
+  - Global.AbstractCreatureAI.RandomMoveToOtherRoom(System.Int32)
+  - Global.AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom
+  - Global.AbstractCreatureAI.CanRoamThroughRoom(System.Int32)
+  - Global.AbstractCreatureAI.Moved
+  - Global.AbstractCreatureAI.WantToStayInDenUntilEndOfCycle
+  - Global.AbstractCreatureAI.Die
+  - Global.AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  - Global.AbstractCreatureAI.HavePrey
+  - Global.AbstractCreatureAI.denPosition
+  - Global.AbstractCreatureAI.destination
+  - Global.AbstractCreatureAI.MigrationDestination
+  - Global.AbstractCreatureAI.WantToMigrate
+  - Global.AbstractCreatureAI.offscreenSpeedFac
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.MirosBirdAbstractAI.timeInRoom
+  commentId: F:Global.MirosBirdAbstractAI.timeInRoom
+  id: timeInRoom
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: timeInRoom
+  nameWithType: MirosBirdAbstractAI.timeInRoom
+  fullName: MirosBirdAbstractAI.timeInRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MirosBirdAbstractAI.timeInRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int timeInRoom
+    return:
+      type: System.Int32
+    content.vb: Public timeInRoom As Integer
+- uid: Global.MirosBirdAbstractAI.allowedNodes
+  commentId: F:Global.MirosBirdAbstractAI.allowedNodes
+  id: allowedNodes
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: allowedNodes
+  nameWithType: MirosBirdAbstractAI.allowedNodes
+  fullName: MirosBirdAbstractAI.allowedNodes
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MirosBirdAbstractAI.allowedNodes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<WorldCoordinate> allowedNodes
+    return:
+      type: System.Collections.Generic.List{WorldCoordinate}
+    content.vb: Public allowedNodes As List(Of WorldCoordinate)
+- uid: Global.MirosBirdAbstractAI.wait
+  commentId: F:Global.MirosBirdAbstractAI.wait
+  id: wait
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: wait
+  nameWithType: MirosBirdAbstractAI.wait
+  fullName: MirosBirdAbstractAI.wait
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MirosBirdAbstractAI.wait</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int wait
+    return:
+      type: System.Int32
+    content.vb: Public wait As Integer
+- uid: Global.MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS
+  commentId: F:Global.MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS
+  id: UGLYHARDCODEDALLOWEDROOMS
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: UGLYHARDCODEDALLOWEDROOMS
+  nameWithType: MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS
+  fullName: MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MirosBirdAbstractAI.UGLYHARDCODEDALLOWEDROOMS</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string[] UGLYHARDCODEDALLOWEDROOMS
+    return:
+      type: System.String[]
+    content.vb: Public Shared UGLYHARDCODEDALLOWEDROOMS As String()
+- uid: Global.MirosBirdAbstractAI.#ctor(World,AbstractCreature)
+  commentId: M:Global.MirosBirdAbstractAI.#ctor(World,AbstractCreature)
+  id: '#ctor(World,AbstractCreature)'
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: MirosBirdAbstractAI(World, AbstractCreature)
+  nameWithType: MirosBirdAbstractAI.MirosBirdAbstractAI(World, AbstractCreature)
+  fullName: MirosBirdAbstractAI.MirosBirdAbstractAI(World, AbstractCreature)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>MirosBirdAbstractAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MirosBirdAbstractAI(World world, AbstractCreature parent)
+    parameters:
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:MirosBirdAbstractAI.#ctor(World,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    - id: parent
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>parent</parameter>
+            <parameter>M:MirosBirdAbstractAI.#ctor(World,AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(world As World, parent As AbstractCreature)
+  overload: Global.MirosBirdAbstractAI.#ctor*
+  nameWithType.vb: MirosBirdAbstractAI.New(World, AbstractCreature)
+  fullName.vb: MirosBirdAbstractAI.New(World, AbstractCreature)
+  name.vb: New(World, AbstractCreature)
+- uid: Global.MirosBirdAbstractAI.PopulateAllowedNodes(World)
+  commentId: M:Global.MirosBirdAbstractAI.PopulateAllowedNodes(World)
+  id: PopulateAllowedNodes(World)
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: PopulateAllowedNodes(World)
+  nameWithType: MirosBirdAbstractAI.PopulateAllowedNodes(World)
+  fullName: MirosBirdAbstractAI.PopulateAllowedNodes(World)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MirosBirdAbstractAI.PopulateAllowedNodes(World)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PopulateAllowedNodes(World world)
+    parameters:
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:MirosBirdAbstractAI.PopulateAllowedNodes(World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PopulateAllowedNodes(world As World)
+  overload: Global.MirosBirdAbstractAI.PopulateAllowedNodes*
+- uid: Global.MirosBirdAbstractAI.NewWorld(World)
+  commentId: M:Global.MirosBirdAbstractAI.NewWorld(World)
+  id: NewWorld(World)
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: NewWorld(World)
+  nameWithType: MirosBirdAbstractAI.NewWorld(World)
+  fullName: MirosBirdAbstractAI.NewWorld(World)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MirosBirdAbstractAI.NewWorld(World)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewWorld(World newWorld)
+    parameters:
+    - id: newWorld
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newWorld</parameter>
+            <parameter>M:MirosBirdAbstractAI.NewWorld(World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewWorld(newWorld As World)
+  overridden: Global.AbstractCreatureAI.NewWorld(World)
+  overload: Global.MirosBirdAbstractAI.NewWorld*
+- uid: Global.MirosBirdAbstractAI.AbstractBehavior(System.Int32)
+  commentId: M:Global.MirosBirdAbstractAI.AbstractBehavior(System.Int32)
+  id: AbstractBehavior(System.Int32)
+  parent: Global.MirosBirdAbstractAI
+  langs:
+  - csharp
+  - vb
+  name: AbstractBehavior(int)
+  nameWithType: MirosBirdAbstractAI.AbstractBehavior(int)
+  fullName: MirosBirdAbstractAI.AbstractBehavior(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MirosBirdAbstractAI.AbstractBehavior(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AbstractBehavior(int time)
+    parameters:
+    - id: time
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>time</parameter>
+            <parameter>M:MirosBirdAbstractAI.AbstractBehavior(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AbstractBehavior(time As Integer)
+  overridden: Global.AbstractCreatureAI.AbstractBehavior(System.Int32)
+  overload: Global.MirosBirdAbstractAI.AbstractBehavior*
+  nameWithType.vb: MirosBirdAbstractAI.AbstractBehavior(Integer)
+  fullName.vb: MirosBirdAbstractAI.AbstractBehavior(Integer)
+  name.vb: AbstractBehavior(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AbstractCreatureAI
+  commentId: T:Global.AbstractCreatureAI
+  isExternal: true
+  href: AbstractCreatureAI.html
+  name: AbstractCreatureAI
+  nameWithType: AbstractCreatureAI
+  fullName: AbstractCreatureAI
+- uid: Global.AbstractCreatureAI.parent
+  commentId: F:Global.AbstractCreatureAI.parent
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_parent
+  name: parent
+  nameWithType: AbstractCreatureAI.parent
+  fullName: AbstractCreatureAI.parent
+- uid: Global.AbstractCreatureAI.lastRoom
+  commentId: F:Global.AbstractCreatureAI.lastRoom
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_lastRoom
+  name: lastRoom
+  nameWithType: AbstractCreatureAI.lastRoom
+  fullName: AbstractCreatureAI.lastRoom
+- uid: Global.AbstractCreatureAI.strandedInRoom
+  commentId: F:Global.AbstractCreatureAI.strandedInRoom
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_strandedInRoom
+  name: strandedInRoom
+  nameWithType: AbstractCreatureAI.strandedInRoom
+  fullName: AbstractCreatureAI.strandedInRoom
+- uid: Global.AbstractCreatureAI.path
+  commentId: F:Global.AbstractCreatureAI.path
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_path
+  name: path
+  nameWithType: AbstractCreatureAI.path
+  fullName: AbstractCreatureAI.path
+- uid: Global.AbstractCreatureAI.world
+  commentId: F:Global.AbstractCreatureAI.world
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_world
+  name: world
+  nameWithType: AbstractCreatureAI.world
+  fullName: AbstractCreatureAI.world
+- uid: Global.AbstractCreatureAI.RealAI
+  commentId: F:Global.AbstractCreatureAI.RealAI
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RealAI
+  name: RealAI
+  nameWithType: AbstractCreatureAI.RealAI
+  fullName: AbstractCreatureAI.RealAI
+- uid: Global.AbstractCreatureAI.followCreature
+  commentId: F:Global.AbstractCreatureAI.followCreature
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_followCreature
+  name: followCreature
+  nameWithType: AbstractCreatureAI.followCreature
+  fullName: AbstractCreatureAI.followCreature
+- uid: Global.AbstractCreatureAI.timeBuffer
+  commentId: F:Global.AbstractCreatureAI.timeBuffer
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_timeBuffer
+  name: timeBuffer
+  nameWithType: AbstractCreatureAI.timeBuffer
+  fullName: AbstractCreatureAI.timeBuffer
+- uid: Global.AbstractCreatureAI.freezeDestination
+  commentId: F:Global.AbstractCreatureAI.freezeDestination
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_freezeDestination
+  name: freezeDestination
+  nameWithType: AbstractCreatureAI.freezeDestination
+  fullName: AbstractCreatureAI.freezeDestination
+- uid: Global.AbstractCreatureAI.GoToDen
+  commentId: M:Global.AbstractCreatureAI.GoToDen
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_GoToDen
+  name: GoToDen()
+  nameWithType: AbstractCreatureAI.GoToDen()
+  fullName: AbstractCreatureAI.GoToDen()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.GoToDen
+    name: GoToDen
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_GoToDen
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.GoToDen
+    name: GoToDen
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_GoToDen
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.SetDestination(WorldCoordinate)
+  commentId: M:Global.AbstractCreatureAI.SetDestination(WorldCoordinate)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestination_WorldCoordinate_
+  name: SetDestination(WorldCoordinate)
+  nameWithType: AbstractCreatureAI.SetDestination(WorldCoordinate)
+  fullName: AbstractCreatureAI.SetDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.AbstractCreatureAI.MigrateTo(WorldCoordinate)
+  commentId: M:Global.AbstractCreatureAI.MigrateTo(WorldCoordinate)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrateTo_WorldCoordinate_
+  name: MigrateTo(WorldCoordinate)
+  nameWithType: AbstractCreatureAI.MigrateTo(WorldCoordinate)
+  fullName: AbstractCreatureAI.MigrateTo(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.MigrateTo(WorldCoordinate)
+    name: MigrateTo
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrateTo_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.MigrateTo(WorldCoordinate)
+    name: MigrateTo
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrateTo_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate,System.Boolean)
+  commentId: M:Global.AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate,System.Boolean)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestinationNoPathing_WorldCoordinate_System_Boolean_
+  name: SetDestinationNoPathing(WorldCoordinate, bool)
+  nameWithType: AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate, bool)
+  fullName: AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate, bool)
+  nameWithType.vb: AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate, Boolean)
+  fullName.vb: AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate, Boolean)
+  name.vb: SetDestinationNoPathing(WorldCoordinate, Boolean)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate,System.Boolean)
+    name: SetDestinationNoPathing
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestinationNoPathing_WorldCoordinate_System_Boolean_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.SetDestinationNoPathing(WorldCoordinate,System.Boolean)
+    name: SetDestinationNoPathing
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_SetDestinationNoPathing_WorldCoordinate_System_Boolean_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+  commentId: M:Global.AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIHaveAPathToCoordinate_WorldCoordinate_
+  name: DoIHaveAPathToCoordinate(WorldCoordinate)
+  nameWithType: AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+  fullName: AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+    name: DoIHaveAPathToCoordinate
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIHaveAPathToCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.DoIHaveAPathToCoordinate(WorldCoordinate)
+    name: DoIHaveAPathToCoordinate
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIHaveAPathToCoordinate_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.AbstractCreatureAI.FindPath(WorldCoordinate)
+  commentId: M:Global.AbstractCreatureAI.FindPath(WorldCoordinate)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FindPath_WorldCoordinate_
+  name: FindPath(WorldCoordinate)
+  nameWithType: AbstractCreatureAI.FindPath(WorldCoordinate)
+  fullName: AbstractCreatureAI.FindPath(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.FindPath(WorldCoordinate)
+    name: FindPath
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FindPath_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.FindPath(WorldCoordinate)
+    name: FindPath
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FindPath_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.AbstractCreatureAI.PlaceInRealizedRoom
+  commentId: M:Global.AbstractCreatureAI.PlaceInRealizedRoom
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_PlaceInRealizedRoom
+  name: PlaceInRealizedRoom()
+  nameWithType: AbstractCreatureAI.PlaceInRealizedRoom()
+  fullName: AbstractCreatureAI.PlaceInRealizedRoom()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.PlaceInRealizedRoom
+    name: PlaceInRealizedRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_PlaceInRealizedRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.PlaceInRealizedRoom
+    name: PlaceInRealizedRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_PlaceInRealizedRoom
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.DestinationExit(System.Int32,System.Int32)
+  commentId: M:Global.AbstractCreatureAI.DestinationExit(System.Int32,System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DestinationExit_System_Int32_System_Int32_
+  name: DestinationExit(int, int)
+  nameWithType: AbstractCreatureAI.DestinationExit(int, int)
+  fullName: AbstractCreatureAI.DestinationExit(int, int)
+  nameWithType.vb: AbstractCreatureAI.DestinationExit(Integer, Integer)
+  fullName.vb: AbstractCreatureAI.DestinationExit(Integer, Integer)
+  name.vb: DestinationExit(Integer, Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.DestinationExit(System.Int32,System.Int32)
+    name: DestinationExit
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DestinationExit_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.DestinationExit(System.Int32,System.Int32)
+    name: DestinationExit
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DestinationExit_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.Update(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.Update(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Update_System_Int32_
+  name: Update(int)
+  nameWithType: AbstractCreatureAI.Update(int)
+  fullName: AbstractCreatureAI.Update(int)
+  nameWithType.vb: AbstractCreatureAI.Update(Integer)
+  fullName.vb: AbstractCreatureAI.Update(Integer)
+  name.vb: Update(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.Update(System.Int32)
+    name: Update
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Update_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.Update(System.Int32)
+    name: Update
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Update_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.MigrationBehavior(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.MigrationBehavior(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrationBehavior_System_Int32_
+  name: MigrationBehavior(int)
+  nameWithType: AbstractCreatureAI.MigrationBehavior(int)
+  fullName: AbstractCreatureAI.MigrationBehavior(int)
+  nameWithType.vb: AbstractCreatureAI.MigrationBehavior(Integer)
+  fullName.vb: AbstractCreatureAI.MigrationBehavior(Integer)
+  name.vb: MigrationBehavior(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.MigrationBehavior(System.Int32)
+    name: MigrationBehavior
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrationBehavior_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.MigrationBehavior(System.Int32)
+    name: MigrationBehavior
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrationBehavior_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.MoveWithCreature(AbstractCreature,System.Boolean)
+  commentId: M:Global.AbstractCreatureAI.MoveWithCreature(AbstractCreature,System.Boolean)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveWithCreature_AbstractCreature_System_Boolean_
+  name: MoveWithCreature(AbstractCreature, bool)
+  nameWithType: AbstractCreatureAI.MoveWithCreature(AbstractCreature, bool)
+  fullName: AbstractCreatureAI.MoveWithCreature(AbstractCreature, bool)
+  nameWithType.vb: AbstractCreatureAI.MoveWithCreature(AbstractCreature, Boolean)
+  fullName.vb: AbstractCreatureAI.MoveWithCreature(AbstractCreature, Boolean)
+  name.vb: MoveWithCreature(AbstractCreature, Boolean)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.MoveWithCreature(AbstractCreature,System.Boolean)
+    name: MoveWithCreature
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveWithCreature_AbstractCreature_System_Boolean_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.MoveWithCreature(AbstractCreature,System.Boolean)
+    name: MoveWithCreature
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveWithCreature_AbstractCreature_System_Boolean_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+  commentId: M:Global.AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TryToGoToRoom_WorldCoordinate_
+  name: TryToGoToRoom(WorldCoordinate)
+  nameWithType: AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+  fullName: AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+    name: TryToGoToRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TryToGoToRoom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.TryToGoToRoom(WorldCoordinate)
+    name: TryToGoToRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TryToGoToRoom_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.AbstractCreatureAI.TimeInfluencedRandomRoll(System.Single,System.Int32)
+  commentId: M:Global.AbstractCreatureAI.TimeInfluencedRandomRoll(System.Single,System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TimeInfluencedRandomRoll_System_Single_System_Int32_
+  name: TimeInfluencedRandomRoll(float, int)
+  nameWithType: AbstractCreatureAI.TimeInfluencedRandomRoll(float, int)
+  fullName: AbstractCreatureAI.TimeInfluencedRandomRoll(float, int)
+  nameWithType.vb: AbstractCreatureAI.TimeInfluencedRandomRoll(Single, Integer)
+  fullName.vb: AbstractCreatureAI.TimeInfluencedRandomRoll(Single, Integer)
+  name.vb: TimeInfluencedRandomRoll(Single, Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.TimeInfluencedRandomRoll(System.Single,System.Int32)
+    name: TimeInfluencedRandomRoll
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TimeInfluencedRandomRoll_System_Single_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.TimeInfluencedRandomRoll(System.Single,System.Int32)
+    name: TimeInfluencedRandomRoll
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_TimeInfluencedRandomRoll_System_Single_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.FollowPath(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.FollowPath(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FollowPath_System_Int32_
+  name: FollowPath(int)
+  nameWithType: AbstractCreatureAI.FollowPath(int)
+  fullName: AbstractCreatureAI.FollowPath(int)
+  nameWithType.vb: AbstractCreatureAI.FollowPath(Integer)
+  fullName.vb: AbstractCreatureAI.FollowPath(Integer)
+  name.vb: FollowPath(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.FollowPath(System.Int32)
+    name: FollowPath
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FollowPath_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.FollowPath(System.Int32)
+    name: FollowPath
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_FollowPath_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.RandomMoveWithinRoom
+  commentId: M:Global.AbstractCreatureAI.RandomMoveWithinRoom
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveWithinRoom
+  name: RandomMoveWithinRoom()
+  nameWithType: AbstractCreatureAI.RandomMoveWithinRoom()
+  fullName: AbstractCreatureAI.RandomMoveWithinRoom()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.RandomMoveWithinRoom
+    name: RandomMoveWithinRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveWithinRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.RandomMoveWithinRoom
+    name: RandomMoveWithinRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveWithinRoom
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.RandomMoveToOtherRoom(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.RandomMoveToOtherRoom(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveToOtherRoom_System_Int32_
+  name: RandomMoveToOtherRoom(int)
+  nameWithType: AbstractCreatureAI.RandomMoveToOtherRoom(int)
+  fullName: AbstractCreatureAI.RandomMoveToOtherRoom(int)
+  nameWithType.vb: AbstractCreatureAI.RandomMoveToOtherRoom(Integer)
+  fullName.vb: AbstractCreatureAI.RandomMoveToOtherRoom(Integer)
+  name.vb: RandomMoveToOtherRoom(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.RandomMoveToOtherRoom(System.Int32)
+    name: RandomMoveToOtherRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveToOtherRoom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.RandomMoveToOtherRoom(System.Int32)
+    name: RandomMoveToOtherRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_RandomMoveToOtherRoom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom
+  commentId: M:Global.AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveToMoreAttractiveNeighborRoom
+  name: MoveToMoreAttractiveNeighborRoom()
+  nameWithType: AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom()
+  fullName: AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom
+    name: MoveToMoreAttractiveNeighborRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveToMoreAttractiveNeighborRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.MoveToMoreAttractiveNeighborRoom
+    name: MoveToMoreAttractiveNeighborRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MoveToMoreAttractiveNeighborRoom
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.CanRoamThroughRoom(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.CanRoamThroughRoom(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_CanRoamThroughRoom_System_Int32_
+  name: CanRoamThroughRoom(int)
+  nameWithType: AbstractCreatureAI.CanRoamThroughRoom(int)
+  fullName: AbstractCreatureAI.CanRoamThroughRoom(int)
+  nameWithType.vb: AbstractCreatureAI.CanRoamThroughRoom(Integer)
+  fullName.vb: AbstractCreatureAI.CanRoamThroughRoom(Integer)
+  name.vb: CanRoamThroughRoom(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.CanRoamThroughRoom(System.Int32)
+    name: CanRoamThroughRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_CanRoamThroughRoom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.CanRoamThroughRoom(System.Int32)
+    name: CanRoamThroughRoom
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_CanRoamThroughRoom_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.AbstractCreatureAI.Moved
+  commentId: M:Global.AbstractCreatureAI.Moved
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Moved
+  name: Moved()
+  nameWithType: AbstractCreatureAI.Moved()
+  fullName: AbstractCreatureAI.Moved()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.Moved
+    name: Moved
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Moved
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.Moved
+    name: Moved
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Moved
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.WantToStayInDenUntilEndOfCycle
+  commentId: M:Global.AbstractCreatureAI.WantToStayInDenUntilEndOfCycle
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_WantToStayInDenUntilEndOfCycle
+  name: WantToStayInDenUntilEndOfCycle()
+  nameWithType: AbstractCreatureAI.WantToStayInDenUntilEndOfCycle()
+  fullName: AbstractCreatureAI.WantToStayInDenUntilEndOfCycle()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.Die
+  commentId: M:Global.AbstractCreatureAI.Die
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Die
+  name: Die()
+  nameWithType: AbstractCreatureAI.Die()
+  fullName: AbstractCreatureAI.Die()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.Die
+    name: Die
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Die
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.Die
+    name: Die
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_Die
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  commentId: M:Global.AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIwantToDropThisItemInDen_AbstractPhysicalObject_
+  name: DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  nameWithType: AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  fullName: AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+    name: DoIwantToDropThisItemInDen
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIwantToDropThisItemInDen_AbstractPhysicalObject_
+  - name: (
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.DoIwantToDropThisItemInDen(AbstractPhysicalObject)
+    name: DoIwantToDropThisItemInDen
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_DoIwantToDropThisItemInDen_AbstractPhysicalObject_
+  - name: (
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: )
+- uid: Global.AbstractCreatureAI.HavePrey
+  commentId: M:Global.AbstractCreatureAI.HavePrey
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_HavePrey
+  name: HavePrey()
+  nameWithType: AbstractCreatureAI.HavePrey()
+  fullName: AbstractCreatureAI.HavePrey()
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.HavePrey
+    name: HavePrey
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_HavePrey
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.HavePrey
+    name: HavePrey
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_HavePrey
+  - name: (
+  - name: )
+- uid: Global.AbstractCreatureAI.denPosition
+  commentId: P:Global.AbstractCreatureAI.denPosition
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_denPosition
+  name: denPosition
+  nameWithType: AbstractCreatureAI.denPosition
+  fullName: AbstractCreatureAI.denPosition
+- uid: Global.AbstractCreatureAI.destination
+  commentId: P:Global.AbstractCreatureAI.destination
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_destination
+  name: destination
+  nameWithType: AbstractCreatureAI.destination
+  fullName: AbstractCreatureAI.destination
+- uid: Global.AbstractCreatureAI.MigrationDestination
+  commentId: P:Global.AbstractCreatureAI.MigrationDestination
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_MigrationDestination
+  name: MigrationDestination
+  nameWithType: AbstractCreatureAI.MigrationDestination
+  fullName: AbstractCreatureAI.MigrationDestination
+- uid: Global.AbstractCreatureAI.WantToMigrate
+  commentId: P:Global.AbstractCreatureAI.WantToMigrate
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_WantToMigrate
+  name: WantToMigrate
+  nameWithType: AbstractCreatureAI.WantToMigrate
+  fullName: AbstractCreatureAI.WantToMigrate
+- uid: Global.AbstractCreatureAI.offscreenSpeedFac
+  commentId: P:Global.AbstractCreatureAI.offscreenSpeedFac
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_offscreenSpeedFac
+  name: offscreenSpeedFac
+  nameWithType: AbstractCreatureAI.offscreenSpeedFac
+  fullName: AbstractCreatureAI.offscreenSpeedFac
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{WorldCoordinate}
+  commentId: T:System.Collections.Generic.List{WorldCoordinate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WorldCoordinate>
+  nameWithType: List<WorldCoordinate>
+  fullName: System.Collections.Generic.List<WorldCoordinate>
+  nameWithType.vb: List(Of WorldCoordinate)
+  fullName.vb: System.Collections.Generic.List(Of WorldCoordinate)
+  name.vb: List(Of WorldCoordinate)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Global.MirosBirdAbstractAI.#ctor*
+  commentId: Overload:Global.MirosBirdAbstractAI.#ctor
+  isExternal: true
+  href: Global.MirosBirdAbstractAI.html#MirosBirdAbstractAI__ctor_World_AbstractCreature_
+  name: MirosBirdAbstractAI
+  nameWithType: MirosBirdAbstractAI.MirosBirdAbstractAI
+  fullName: MirosBirdAbstractAI.MirosBirdAbstractAI
+  nameWithType.vb: MirosBirdAbstractAI.New
+  fullName.vb: MirosBirdAbstractAI.New
+  name.vb: New
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.MirosBirdAbstractAI.PopulateAllowedNodes*
+  commentId: Overload:Global.MirosBirdAbstractAI.PopulateAllowedNodes
+  isExternal: true
+  href: Global.MirosBirdAbstractAI.html#MirosBirdAbstractAI_PopulateAllowedNodes_World_
+  name: PopulateAllowedNodes
+  nameWithType: MirosBirdAbstractAI.PopulateAllowedNodes
+  fullName: MirosBirdAbstractAI.PopulateAllowedNodes
+- uid: Global.AbstractCreatureAI.NewWorld(World)
+  commentId: M:Global.AbstractCreatureAI.NewWorld(World)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_NewWorld_World_
+  name: NewWorld(World)
+  nameWithType: AbstractCreatureAI.NewWorld(World)
+  fullName: AbstractCreatureAI.NewWorld(World)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.NewWorld(World)
+    name: NewWorld
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_NewWorld_World_
+  - name: (
+  - uid: Global.World
+    name: World
+    isExternal: true
+    href: World.html
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.NewWorld(World)
+    name: NewWorld
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_NewWorld_World_
+  - name: (
+  - uid: Global.World
+    name: World
+    isExternal: true
+    href: World.html
+  - name: )
+- uid: Global.MirosBirdAbstractAI.NewWorld*
+  commentId: Overload:Global.MirosBirdAbstractAI.NewWorld
+  isExternal: true
+  href: Global.MirosBirdAbstractAI.html#MirosBirdAbstractAI_NewWorld_World_
+  name: NewWorld
+  nameWithType: MirosBirdAbstractAI.NewWorld
+  fullName: MirosBirdAbstractAI.NewWorld
+- uid: Global.AbstractCreatureAI.AbstractBehavior(System.Int32)
+  commentId: M:Global.AbstractCreatureAI.AbstractBehavior(System.Int32)
+  parent: Global.AbstractCreatureAI
+  isExternal: true
+  href: Global.AbstractCreatureAI.html#AbstractCreatureAI_AbstractBehavior_System_Int32_
+  name: AbstractBehavior(int)
+  nameWithType: AbstractCreatureAI.AbstractBehavior(int)
+  fullName: AbstractCreatureAI.AbstractBehavior(int)
+  nameWithType.vb: AbstractCreatureAI.AbstractBehavior(Integer)
+  fullName.vb: AbstractCreatureAI.AbstractBehavior(Integer)
+  name.vb: AbstractBehavior(Integer)
+  spec.csharp:
+  - uid: Global.AbstractCreatureAI.AbstractBehavior(System.Int32)
+    name: AbstractBehavior
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_AbstractBehavior_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.AbstractCreatureAI.AbstractBehavior(System.Int32)
+    name: AbstractBehavior
+    isExternal: true
+    href: Global.AbstractCreatureAI.html#AbstractCreatureAI_AbstractBehavior_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.MirosBirdAbstractAI.AbstractBehavior*
+  commentId: Overload:Global.MirosBirdAbstractAI.AbstractBehavior
+  isExternal: true
+  href: Global.MirosBirdAbstractAI.html#MirosBirdAbstractAI_AbstractBehavior_System_Int32_
+  name: AbstractBehavior
+  nameWithType: MirosBirdAbstractAI.AbstractBehavior
+  fullName: MirosBirdAbstractAI.AbstractBehavior

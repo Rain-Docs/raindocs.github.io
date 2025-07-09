@@ -1,0 +1,1595 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ClimbableVinesSystem
+  commentId: T:Global.ClimbableVinesSystem
+  id: ClimbableVinesSystem
+  parent: Global
+  children:
+  - Global.ClimbableVinesSystem.#ctor
+  - Global.ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  - Global.ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)
+  - Global.ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)
+  - Global.ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)
+  - Global.ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)
+  - Global.ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)
+  - Global.ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  - Global.ClimbableVinesSystem.TotalLength(IClimbableVine)
+  - Global.ClimbableVinesSystem.Update(System.Boolean)
+  - Global.ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)
+  - Global.ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  - Global.ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)
+  - Global.ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)
+  - Global.ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)
+  - Global.ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)
+  - Global.ClimbableVinesSystem.vines
+  - Global.ClimbableVinesSystem.viz
+  langs:
+  - csharp
+  - vb
+  name: ClimbableVinesSystem
+  nameWithType: ClimbableVinesSystem
+  fullName: ClimbableVinesSystem
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ClimbableVinesSystem</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class ClimbableVinesSystem : UpdatableAndDeletable'
+    content.vb: Public Class ClimbableVinesSystem Inherits UpdatableAndDeletable
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  inheritedMembers:
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ClimbableVinesSystem.vines
+  commentId: F:Global.ClimbableVinesSystem.vines
+  id: vines
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: vines
+  nameWithType: ClimbableVinesSystem.vines
+  fullName: ClimbableVinesSystem.vines
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ClimbableVinesSystem.vines</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<IClimbableVine> vines
+    return:
+      type: System.Collections.Generic.List{IClimbableVine}
+    content.vb: Public vines As List(Of IClimbableVine)
+- uid: Global.ClimbableVinesSystem.viz
+  commentId: F:Global.ClimbableVinesSystem.viz
+  id: viz
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: viz
+  nameWithType: ClimbableVinesSystem.viz
+  fullName: ClimbableVinesSystem.viz
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ClimbableVinesSystem.viz</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public VineVisualizer viz
+    return:
+      type: Global.VineVisualizer
+    content.vb: Public viz As VineVisualizer
+- uid: Global.ClimbableVinesSystem.#ctor
+  commentId: M:Global.ClimbableVinesSystem.#ctor
+  id: '#ctor'
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: ClimbableVinesSystem()
+  nameWithType: ClimbableVinesSystem.ClimbableVinesSystem()
+  fullName: ClimbableVinesSystem.ClimbableVinesSystem()
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ClimbableVinesSystem</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ClimbableVinesSystem()
+    content.vb: Public Sub New()
+  overload: Global.ClimbableVinesSystem.#ctor*
+  nameWithType.vb: ClimbableVinesSystem.New()
+  fullName.vb: ClimbableVinesSystem.New()
+  name.vb: New()
+- uid: Global.ClimbableVinesSystem.Update(System.Boolean)
+  commentId: M:Global.ClimbableVinesSystem.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: ClimbableVinesSystem.Update(bool)
+  fullName: ClimbableVinesSystem.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:ClimbableVinesSystem.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.UpdatableAndDeletable.Update(System.Boolean)
+  overload: Global.ClimbableVinesSystem.Update*
+  nameWithType.vb: ClimbableVinesSystem.Update(Boolean)
+  fullName.vb: ClimbableVinesSystem.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)
+  id: VineOverlap(UnityEngine.Vector2,System.Single)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineOverlap(Vector2, float)
+  nameWithType: ClimbableVinesSystem.VineOverlap(Vector2, float)
+  fullName: ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ClimbableVinesSystem.VinePosition VineOverlap(Vector2 pos, float rad)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: rad
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rad</parameter>
+            <parameter>M:ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function VineOverlap(pos As Vector2, rad As Single) As ClimbableVinesSystem.VinePosition
+  overload: Global.ClimbableVinesSystem.VineOverlap*
+  nameWithType.vb: ClimbableVinesSystem.VineOverlap(Vector2, Single)
+  fullName.vb: ClimbableVinesSystem.VineOverlap(UnityEngine.Vector2, Single)
+  name.vb: VineOverlap(Vector2, Single)
+- uid: Global.ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)
+  commentId: M:Global.ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)
+  id: OnVinePos(ClimbableVinesSystem.VinePosition)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: OnVinePos(VinePosition)
+  nameWithType: ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)
+  fullName: ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 OnVinePos(ClimbableVinesSystem.VinePosition vPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.OnVinePos(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function OnVinePos(vPos As ClimbableVinesSystem.VinePosition) As Vector2
+  overload: Global.ClimbableVinesSystem.OnVinePos*
+- uid: Global.ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)
+  commentId: M:Global.ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)
+  id: VineRad(ClimbableVinesSystem.VinePosition)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineRad(VinePosition)
+  nameWithType: ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)
+  fullName: ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float VineRad(ClimbableVinesSystem.VinePosition vPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.VineRad(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function VineRad(vPos As ClimbableVinesSystem.VinePosition) As Single
+  overload: Global.ClimbableVinesSystem.VineRad*
+- uid: Global.ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)
+  commentId: M:Global.ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)
+  id: VineDir(ClimbableVinesSystem.VinePosition)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineDir(VinePosition)
+  nameWithType: ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)
+  fullName: ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 VineDir(ClimbableVinesSystem.VinePosition vPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.VineDir(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function VineDir(vPos As ClimbableVinesSystem.VinePosition) As Vector2
+  overload: Global.ClimbableVinesSystem.VineDir*
+- uid: Global.ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  commentId: M:Global.ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  id: ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: ClimbOnVineSpeed(VinePosition, Vector2)
+  nameWithType: ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition, Vector2)
+  fullName: ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition vPos, Vector2 goalPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: goalPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>goalPos</parameter>
+            <parameter>M:ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.ClimbOnVineSpeed(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ClimbOnVineSpeed(vPos As ClimbableVinesSystem.VinePosition, goalPos As Vector2) As Single
+  overload: Global.ClimbableVinesSystem.ClimbOnVineSpeed*
+- uid: Global.ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)
+  id: VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineSwitch(VinePosition, Vector2, float)
+  nameWithType: ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition, Vector2, float)
+  fullName: ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition, UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ClimbableVinesSystem.VinePosition VineSwitch(ClimbableVinesSystem.VinePosition vPos, Vector2 goalPos, float rad)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: goalPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>goalPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: rad
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rad</parameter>
+            <parameter>M:ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function VineSwitch(vPos As ClimbableVinesSystem.VinePosition, goalPos As Vector2, rad As Single) As ClimbableVinesSystem.VinePosition
+  overload: Global.ClimbableVinesSystem.VineSwitch*
+  nameWithType.vb: ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition, Vector2, Single)
+  fullName.vb: ClimbableVinesSystem.VineSwitch(ClimbableVinesSystem.VinePosition, UnityEngine.Vector2, Single)
+  name.vb: VineSwitch(VinePosition, Vector2, Single)
+- uid: Global.ClimbableVinesSystem.TotalLength(IClimbableVine)
+  commentId: M:Global.ClimbableVinesSystem.TotalLength(IClimbableVine)
+  id: TotalLength(IClimbableVine)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: TotalLength(IClimbableVine)
+  nameWithType: ClimbableVinesSystem.TotalLength(IClimbableVine)
+  fullName: ClimbableVinesSystem.TotalLength(IClimbableVine)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.TotalLength(IClimbableVine)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float TotalLength(IClimbableVine vine)
+    parameters:
+    - id: vine
+      type: Global.IClimbableVine
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vine</parameter>
+            <parameter>M:ClimbableVinesSystem.TotalLength(IClimbableVine)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.TotalLength(IClimbableVine)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function TotalLength(vine As IClimbableVine) As Single
+  overload: Global.ClimbableVinesSystem.TotalLength*
+- uid: Global.ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)
+  commentId: M:Global.ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)
+  id: FloatAtSegment(IClimbableVine,System.Int32)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: FloatAtSegment(IClimbableVine, int)
+  nameWithType: ClimbableVinesSystem.FloatAtSegment(IClimbableVine, int)
+  fullName: ClimbableVinesSystem.FloatAtSegment(IClimbableVine, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float FloatAtSegment(IClimbableVine vine, int segment)
+    parameters:
+    - id: vine
+      type: Global.IClimbableVine
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vine</parameter>
+            <parameter>M:ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: segment
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>segment</parameter>
+            <parameter>M:ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.FloatAtSegment(IClimbableVine,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FloatAtSegment(vine As IClimbableVine, segment As Integer) As Single
+  overload: Global.ClimbableVinesSystem.FloatAtSegment*
+  nameWithType.vb: ClimbableVinesSystem.FloatAtSegment(IClimbableVine, Integer)
+  fullName.vb: ClimbableVinesSystem.FloatAtSegment(IClimbableVine, Integer)
+  name.vb: FloatAtSegment(IClimbableVine, Integer)
+- uid: Global.ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)
+  commentId: M:Global.ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)
+  id: PrevSegAtFloat(IClimbableVine,System.Single)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: PrevSegAtFloat(IClimbableVine, float)
+  nameWithType: ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine, float)
+  fullName: ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int PrevSegAtFloat(IClimbableVine vine, float fPos)
+    parameters:
+    - id: vine
+      type: Global.IClimbableVine
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vine</parameter>
+            <parameter>M:ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: fPos
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fPos</parameter>
+            <parameter>M:ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function PrevSegAtFloat(vine As IClimbableVine, fPos As Single) As Integer
+  overload: Global.ClimbableVinesSystem.PrevSegAtFloat*
+  nameWithType.vb: ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine, Single)
+  fullName.vb: ClimbableVinesSystem.PrevSegAtFloat(IClimbableVine, Single)
+  name.vb: PrevSegAtFloat(IClimbableVine, Single)
+- uid: Global.ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)
+  commentId: M:Global.ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)
+  id: ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: ConnectChunkToVine(BodyChunk, VinePosition, float)
+  nameWithType: ClimbableVinesSystem.ConnectChunkToVine(BodyChunk, ClimbableVinesSystem.VinePosition, float)
+  fullName: ClimbableVinesSystem.ConnectChunkToVine(BodyChunk, ClimbableVinesSystem.VinePosition, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ConnectChunkToVine(BodyChunk chunk, ClimbableVinesSystem.VinePosition vPos, float conRad)
+    parameters:
+    - id: chunk
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chunk</parameter>
+            <parameter>M:ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: conRad
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>conRad</parameter>
+            <parameter>M:ClimbableVinesSystem.ConnectChunkToVine(BodyChunk,ClimbableVinesSystem.VinePosition,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ConnectChunkToVine(chunk As BodyChunk, vPos As ClimbableVinesSystem.VinePosition, conRad As Single)
+  overload: Global.ClimbableVinesSystem.ConnectChunkToVine*
+  nameWithType.vb: ClimbableVinesSystem.ConnectChunkToVine(BodyChunk, ClimbableVinesSystem.VinePosition, Single)
+  fullName.vb: ClimbableVinesSystem.ConnectChunkToVine(BodyChunk, ClimbableVinesSystem.VinePosition, Single)
+  name.vb: ConnectChunkToVine(BodyChunk, VinePosition, Single)
+- uid: Global.ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  commentId: M:Global.ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  id: PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: PushAtVine(VinePosition, Vector2)
+  nameWithType: ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition, Vector2)
+  fullName: ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PushAtVine(ClimbableVinesSystem.VinePosition vPos, Vector2 push)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: push
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>push</parameter>
+            <parameter>M:ClimbableVinesSystem.PushAtVine(ClimbableVinesSystem.VinePosition,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PushAtVine(vPos As ClimbableVinesSystem.VinePosition, push As Vector2)
+  overload: Global.ClimbableVinesSystem.PushAtVine*
+- uid: Global.ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)
+  commentId: M:Global.ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)
+  id: VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineBeingClimbedOn(VinePosition, Creature)
+  nameWithType: ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition, Creature)
+  fullName: ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition, Creature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void VineBeingClimbedOn(ClimbableVinesSystem.VinePosition vPos, Creature crit)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)</parameter>
+          </include>
+        </markup>
+    - id: crit
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:ClimbableVinesSystem.VineBeingClimbedOn(ClimbableVinesSystem.VinePosition,Creature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub VineBeingClimbedOn(vPos As ClimbableVinesSystem.VinePosition, crit As Creature)
+  overload: Global.ClimbableVinesSystem.VineBeingClimbedOn*
+- uid: Global.ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  commentId: M:Global.ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  id: VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: VineCurrentlyClimbable(VinePosition)
+  nameWithType: ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  fullName: ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition vPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.VineCurrentlyClimbable(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function VineCurrentlyClimbable(vPos As ClimbableVinesSystem.VinePosition) As Boolean
+  overload: Global.ClimbableVinesSystem.VineCurrentlyClimbable*
+- uid: Global.ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)
+  commentId: M:Global.ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)
+  id: GetVineObject(ClimbableVinesSystem.VinePosition)
+  parent: Global.ClimbableVinesSystem
+  langs:
+  - csharp
+  - vb
+  name: GetVineObject(VinePosition)
+  nameWithType: ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)
+  fullName: ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IClimbableVine GetVineObject(ClimbableVinesSystem.VinePosition vPos)
+    parameters:
+    - id: vPos
+      type: Global.ClimbableVinesSystem.VinePosition
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vPos</parameter>
+            <parameter>M:ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.IClimbableVine
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ClimbableVinesSystem.GetVineObject(ClimbableVinesSystem.VinePosition)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetVineObject(vPos As ClimbableVinesSystem.VinePosition) As IClimbableVine
+  overload: Global.ClimbableVinesSystem.GetVineObject*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{IClimbableVine}
+  commentId: T:System.Collections.Generic.List{IClimbableVine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IClimbableVine>
+  nameWithType: List<IClimbableVine>
+  fullName: System.Collections.Generic.List<IClimbableVine>
+  nameWithType.vb: List(Of IClimbableVine)
+  fullName.vb: System.Collections.Generic.List(Of IClimbableVine)
+  name.vb: List(Of IClimbableVine)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.IClimbableVine
+    name: IClimbableVine
+    isExternal: true
+    href: IClimbableVine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.IClimbableVine
+    name: IClimbableVine
+    isExternal: true
+    href: IClimbableVine.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.VineVisualizer
+  commentId: T:Global.VineVisualizer
+  isExternal: true
+  href: VineVisualizer.html
+  name: VineVisualizer
+  nameWithType: VineVisualizer
+  fullName: VineVisualizer
+- uid: Global.ClimbableVinesSystem.#ctor*
+  commentId: Overload:Global.ClimbableVinesSystem.#ctor
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem__ctor
+  name: ClimbableVinesSystem
+  nameWithType: ClimbableVinesSystem.ClimbableVinesSystem
+  fullName: ClimbableVinesSystem.ClimbableVinesSystem
+  nameWithType.vb: ClimbableVinesSystem.New
+  fullName.vb: ClimbableVinesSystem.New
+  name.vb: New
+- uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+  commentId: M:Global.UpdatableAndDeletable.Update(System.Boolean)
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: UpdatableAndDeletable.Update(bool)
+  fullName: UpdatableAndDeletable.Update(bool)
+  nameWithType.vb: UpdatableAndDeletable.Update(Boolean)
+  fullName.vb: UpdatableAndDeletable.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ClimbableVinesSystem.Update*
+  commentId: Overload:Global.ClimbableVinesSystem.Update
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_Update_System_Boolean_
+  name: Update
+  nameWithType: ClimbableVinesSystem.Update
+  fullName: ClimbableVinesSystem.Update
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ClimbableVinesSystem.VineOverlap*
+  commentId: Overload:Global.ClimbableVinesSystem.VineOverlap
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineOverlap_UnityEngine_Vector2_System_Single_
+  name: VineOverlap
+  nameWithType: ClimbableVinesSystem.VineOverlap
+  fullName: ClimbableVinesSystem.VineOverlap
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ClimbableVinesSystem.VinePosition
+  commentId: T:Global.ClimbableVinesSystem.VinePosition
+  isExternal: true
+  href: ClimbableVinesSystem.html
+  name: ClimbableVinesSystem.VinePosition
+  nameWithType: ClimbableVinesSystem.VinePosition
+  fullName: ClimbableVinesSystem.VinePosition
+  spec.csharp:
+  - uid: Global.ClimbableVinesSystem
+    name: ClimbableVinesSystem
+    isExternal: true
+    href: ClimbableVinesSystem.html
+  - name: .
+  - uid: Global.ClimbableVinesSystem.VinePosition
+    name: VinePosition
+    isExternal: true
+    href: ClimbableVinesSystem.VinePosition.html
+  spec.vb:
+  - uid: Global.ClimbableVinesSystem
+    name: ClimbableVinesSystem
+    isExternal: true
+    href: ClimbableVinesSystem.html
+  - name: .
+  - uid: Global.ClimbableVinesSystem.VinePosition
+    name: VinePosition
+    isExternal: true
+    href: ClimbableVinesSystem.VinePosition.html
+- uid: Global.ClimbableVinesSystem.OnVinePos*
+  commentId: Overload:Global.ClimbableVinesSystem.OnVinePos
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_OnVinePos_ClimbableVinesSystem_VinePosition_
+  name: OnVinePos
+  nameWithType: ClimbableVinesSystem.OnVinePos
+  fullName: ClimbableVinesSystem.OnVinePos
+- uid: Global.ClimbableVinesSystem.VineRad*
+  commentId: Overload:Global.ClimbableVinesSystem.VineRad
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineRad_ClimbableVinesSystem_VinePosition_
+  name: VineRad
+  nameWithType: ClimbableVinesSystem.VineRad
+  fullName: ClimbableVinesSystem.VineRad
+- uid: Global.ClimbableVinesSystem.VineDir*
+  commentId: Overload:Global.ClimbableVinesSystem.VineDir
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineDir_ClimbableVinesSystem_VinePosition_
+  name: VineDir
+  nameWithType: ClimbableVinesSystem.VineDir
+  fullName: ClimbableVinesSystem.VineDir
+- uid: Global.ClimbableVinesSystem.ClimbOnVineSpeed*
+  commentId: Overload:Global.ClimbableVinesSystem.ClimbOnVineSpeed
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_ClimbOnVineSpeed_ClimbableVinesSystem_VinePosition_UnityEngine_Vector2_
+  name: ClimbOnVineSpeed
+  nameWithType: ClimbableVinesSystem.ClimbOnVineSpeed
+  fullName: ClimbableVinesSystem.ClimbOnVineSpeed
+- uid: Global.ClimbableVinesSystem.VineSwitch*
+  commentId: Overload:Global.ClimbableVinesSystem.VineSwitch
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineSwitch_ClimbableVinesSystem_VinePosition_UnityEngine_Vector2_System_Single_
+  name: VineSwitch
+  nameWithType: ClimbableVinesSystem.VineSwitch
+  fullName: ClimbableVinesSystem.VineSwitch
+- uid: Global.ClimbableVinesSystem.TotalLength*
+  commentId: Overload:Global.ClimbableVinesSystem.TotalLength
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_TotalLength_IClimbableVine_
+  name: TotalLength
+  nameWithType: ClimbableVinesSystem.TotalLength
+  fullName: ClimbableVinesSystem.TotalLength
+- uid: Global.IClimbableVine
+  commentId: T:Global.IClimbableVine
+  isExternal: true
+  href: IClimbableVine.html
+  name: IClimbableVine
+  nameWithType: IClimbableVine
+  fullName: IClimbableVine
+- uid: Global.ClimbableVinesSystem.FloatAtSegment*
+  commentId: Overload:Global.ClimbableVinesSystem.FloatAtSegment
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_FloatAtSegment_IClimbableVine_System_Int32_
+  name: FloatAtSegment
+  nameWithType: ClimbableVinesSystem.FloatAtSegment
+  fullName: ClimbableVinesSystem.FloatAtSegment
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ClimbableVinesSystem.PrevSegAtFloat*
+  commentId: Overload:Global.ClimbableVinesSystem.PrevSegAtFloat
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_PrevSegAtFloat_IClimbableVine_System_Single_
+  name: PrevSegAtFloat
+  nameWithType: ClimbableVinesSystem.PrevSegAtFloat
+  fullName: ClimbableVinesSystem.PrevSegAtFloat
+- uid: Global.ClimbableVinesSystem.ConnectChunkToVine*
+  commentId: Overload:Global.ClimbableVinesSystem.ConnectChunkToVine
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_ConnectChunkToVine_BodyChunk_ClimbableVinesSystem_VinePosition_System_Single_
+  name: ConnectChunkToVine
+  nameWithType: ClimbableVinesSystem.ConnectChunkToVine
+  fullName: ClimbableVinesSystem.ConnectChunkToVine
+- uid: Global.BodyChunk
+  commentId: T:Global.BodyChunk
+  isExternal: true
+  href: BodyChunk.html
+  name: BodyChunk
+  nameWithType: BodyChunk
+  fullName: BodyChunk
+- uid: Global.ClimbableVinesSystem.PushAtVine*
+  commentId: Overload:Global.ClimbableVinesSystem.PushAtVine
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_PushAtVine_ClimbableVinesSystem_VinePosition_UnityEngine_Vector2_
+  name: PushAtVine
+  nameWithType: ClimbableVinesSystem.PushAtVine
+  fullName: ClimbableVinesSystem.PushAtVine
+- uid: Global.ClimbableVinesSystem.VineBeingClimbedOn*
+  commentId: Overload:Global.ClimbableVinesSystem.VineBeingClimbedOn
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineBeingClimbedOn_ClimbableVinesSystem_VinePosition_Creature_
+  name: VineBeingClimbedOn
+  nameWithType: ClimbableVinesSystem.VineBeingClimbedOn
+  fullName: ClimbableVinesSystem.VineBeingClimbedOn
+- uid: Global.Creature
+  commentId: T:Global.Creature
+  isExternal: true
+  href: Creature.html
+  name: Creature
+  nameWithType: Creature
+  fullName: Creature
+- uid: Global.ClimbableVinesSystem.VineCurrentlyClimbable*
+  commentId: Overload:Global.ClimbableVinesSystem.VineCurrentlyClimbable
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_VineCurrentlyClimbable_ClimbableVinesSystem_VinePosition_
+  name: VineCurrentlyClimbable
+  nameWithType: ClimbableVinesSystem.VineCurrentlyClimbable
+  fullName: ClimbableVinesSystem.VineCurrentlyClimbable
+- uid: Global.ClimbableVinesSystem.GetVineObject*
+  commentId: Overload:Global.ClimbableVinesSystem.GetVineObject
+  isExternal: true
+  href: Global.ClimbableVinesSystem.html#ClimbableVinesSystem_GetVineObject_ClimbableVinesSystem_VinePosition_
+  name: GetVineObject
+  nameWithType: ClimbableVinesSystem.GetVineObject
+  fullName: ClimbableVinesSystem.GetVineObject

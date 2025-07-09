@@ -1,0 +1,1810 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WinState
+  commentId: T:Global.WinState
+  id: WinState
+  parent: Global
+  children:
+  - Global.WinState.#ctor
+  - Global.WinState.ConsumeEndGame
+  - Global.WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})
+  - Global.WinState.CycleCompleted(RainWorldGame)
+  - Global.WinState.FromString(System.String)
+  - Global.WinState.GetNextEndGame
+  - Global.WinState.GetTracker(WinState.EndgameID,System.Boolean)
+  - Global.WinState.GourmandPassageCreaturesAtIndex(System.Int32)
+  - Global.WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)
+  - Global.WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)
+  - Global.WinState.GourmandPassageRequirementAtIndex(System.Int32)
+  - Global.WinState.GourmandPassageTracker
+  - Global.WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  - Global.WinState.PassageAchievementID(WinState.EndgameID)
+  - Global.WinState.PassageDisplayName(WinState.EndgameID)
+  - Global.WinState.PlayerDied
+  - Global.WinState.ResetLastShownValues
+  - Global.WinState.SaveToString(System.Boolean)
+  - Global.WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)
+  - Global.WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)
+  - Global.WinState.endgameTrackers
+  - Global.WinState.lizardsOrder
+  - Global.WinState.unrecognizedTrackers
+  langs:
+  - csharp
+  - vb
+  name: WinState
+  nameWithType: WinState
+  fullName: WinState
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:WinState</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class WinState
+    content.vb: Public Class WinState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.WinState.endgameTrackers
+  commentId: F:Global.WinState.endgameTrackers
+  id: endgameTrackers
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: endgameTrackers
+  nameWithType: WinState.endgameTrackers
+  fullName: WinState.endgameTrackers
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:WinState.endgameTrackers</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<WinState.EndgameTracker> endgameTrackers
+    return:
+      type: System.Collections.Generic.List{WinState.EndgameTracker}
+    content.vb: Public endgameTrackers As List(Of WinState.EndgameTracker)
+- uid: Global.WinState.unrecognizedTrackers
+  commentId: F:Global.WinState.unrecognizedTrackers
+  id: unrecognizedTrackers
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: unrecognizedTrackers
+  nameWithType: WinState.unrecognizedTrackers
+  fullName: WinState.unrecognizedTrackers
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:WinState.unrecognizedTrackers</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<string> unrecognizedTrackers
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public unrecognizedTrackers As List(Of String)
+- uid: Global.WinState.lizardsOrder
+  commentId: F:Global.WinState.lizardsOrder
+  id: lizardsOrder
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: lizardsOrder
+  nameWithType: WinState.lizardsOrder
+  fullName: WinState.lizardsOrder
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:WinState.lizardsOrder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static CreatureTemplate.Type[] lizardsOrder
+    return:
+      type: Global.CreatureTemplate.Type[]
+    content.vb: Public Shared lizardsOrder As CreatureTemplate.Type()
+- uid: Global.WinState.GourmandPassageTracker
+  commentId: F:Global.WinState.GourmandPassageTracker
+  id: GourmandPassageTracker
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GourmandPassageTracker
+  nameWithType: WinState.GourmandPassageTracker
+  fullName: WinState.GourmandPassageTracker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:WinState.GourmandPassageTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static WinState.GourmandTrackerData[] GourmandPassageTracker
+    return:
+      type: Global.WinState.GourmandTrackerData[]
+    content.vb: Public Shared GourmandPassageTracker As WinState.GourmandTrackerData()
+- uid: Global.WinState.PassageDisplayName(WinState.EndgameID)
+  commentId: M:Global.WinState.PassageDisplayName(WinState.EndgameID)
+  id: PassageDisplayName(WinState.EndgameID)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: PassageDisplayName(EndgameID)
+  nameWithType: WinState.PassageDisplayName(WinState.EndgameID)
+  fullName: WinState.PassageDisplayName(WinState.EndgameID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.PassageDisplayName(WinState.EndgameID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string PassageDisplayName(WinState.EndgameID ID)
+    parameters:
+    - id: ID
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:WinState.PassageDisplayName(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.PassageDisplayName(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function PassageDisplayName(ID As WinState.EndgameID) As String
+  overload: Global.WinState.PassageDisplayName*
+- uid: Global.WinState.PassageAchievementID(WinState.EndgameID)
+  commentId: M:Global.WinState.PassageAchievementID(WinState.EndgameID)
+  id: PassageAchievementID(WinState.EndgameID)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: PassageAchievementID(EndgameID)
+  nameWithType: WinState.PassageAchievementID(WinState.EndgameID)
+  fullName: WinState.PassageAchievementID(WinState.EndgameID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.PassageAchievementID(WinState.EndgameID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static RainWorld.AchievementID PassageAchievementID(WinState.EndgameID ID)
+    parameters:
+    - id: ID
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:WinState.PassageAchievementID(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.RainWorld.AchievementID
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.PassageAchievementID(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function PassageAchievementID(ID As WinState.EndgameID) As RainWorld.AchievementID
+  overload: Global.WinState.PassageAchievementID*
+- uid: Global.WinState.#ctor
+  commentId: M:Global.WinState.#ctor
+  id: '#ctor'
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: WinState()
+  nameWithType: WinState.WinState()
+  fullName: WinState.WinState()
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>WinState</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WinState()
+    content.vb: Public Sub New()
+  overload: Global.WinState.#ctor*
+  nameWithType.vb: WinState.New()
+  fullName.vb: WinState.New()
+  name.vb: New()
+- uid: Global.WinState.GetNextEndGame
+  commentId: M:Global.WinState.GetNextEndGame
+  id: GetNextEndGame
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GetNextEndGame()
+  nameWithType: WinState.GetNextEndGame()
+  fullName: WinState.GetNextEndGame()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GetNextEndGame</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WinState.EndgameID GetNextEndGame()
+    return:
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GetNextEndGame</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetNextEndGame() As WinState.EndgameID
+  overload: Global.WinState.GetNextEndGame*
+- uid: Global.WinState.ConsumeEndGame
+  commentId: M:Global.WinState.ConsumeEndGame
+  id: ConsumeEndGame
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: ConsumeEndGame()
+  nameWithType: WinState.ConsumeEndGame()
+  fullName: WinState.ConsumeEndGame()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.ConsumeEndGame</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ConsumeEndGame()
+    content.vb: Public Sub ConsumeEndGame()
+  overload: Global.WinState.ConsumeEndGame*
+- uid: Global.WinState.ResetLastShownValues
+  commentId: M:Global.WinState.ResetLastShownValues
+  id: ResetLastShownValues
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: ResetLastShownValues()
+  nameWithType: WinState.ResetLastShownValues()
+  fullName: WinState.ResetLastShownValues()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.ResetLastShownValues</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ResetLastShownValues()
+    content.vb: Public Sub ResetLastShownValues()
+  overload: Global.WinState.ResetLastShownValues*
+- uid: Global.WinState.SaveToString(System.Boolean)
+  commentId: M:Global.WinState.SaveToString(System.Boolean)
+  id: SaveToString(System.Boolean)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: SaveToString(bool)
+  nameWithType: WinState.SaveToString(bool)
+  fullName: WinState.SaveToString(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.SaveToString(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public string SaveToString(bool saveAsIfPlayerDied)
+    parameters:
+    - id: saveAsIfPlayerDied
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>saveAsIfPlayerDied</parameter>
+            <parameter>M:WinState.SaveToString(System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.SaveToString(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function SaveToString(saveAsIfPlayerDied As Boolean) As String
+  overload: Global.WinState.SaveToString*
+  nameWithType.vb: WinState.SaveToString(Boolean)
+  fullName.vb: WinState.SaveToString(Boolean)
+  name.vb: SaveToString(Boolean)
+- uid: Global.WinState.FromString(System.String)
+  commentId: M:Global.WinState.FromString(System.String)
+  id: FromString(System.String)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: FromString(string)
+  nameWithType: WinState.FromString(string)
+  fullName: WinState.FromString(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.FromString(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FromString(string s)
+    parameters:
+    - id: s
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:WinState.FromString(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FromString(s As String)
+  overload: Global.WinState.FromString*
+  nameWithType.vb: WinState.FromString(String)
+  fullName.vb: WinState.FromString(String)
+  name.vb: FromString(String)
+- uid: Global.WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})
+  commentId: M:Global.WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})
+  id: CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: CreateAndAddTracker(EndgameID, List<EndgameTracker>)
+  nameWithType: WinState.CreateAndAddTracker(WinState.EndgameID, List<WinState.EndgameTracker>)
+  fullName: WinState.CreateAndAddTracker(WinState.EndgameID, System.Collections.Generic.List<WinState.EndgameTracker>)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static WinState.EndgameTracker CreateAndAddTracker(WinState.EndgameID ID, List<WinState.EndgameTracker> endgameTrackers)
+    parameters:
+    - id: ID
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})</parameter>
+          </include>
+        </markup>
+    - id: endgameTrackers
+      type: System.Collections.Generic.List{WinState.EndgameTracker}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>endgameTrackers</parameter>
+            <parameter>M:WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.WinState.EndgameTracker
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.CreateAndAddTracker(WinState.EndgameID,System.Collections.Generic.List{WinState.EndgameTracker})</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function CreateAndAddTracker(ID As WinState.EndgameID, endgameTrackers As List(Of WinState.EndgameTracker)) As WinState.EndgameTracker
+  overload: Global.WinState.CreateAndAddTracker*
+  nameWithType.vb: WinState.CreateAndAddTracker(WinState.EndgameID, List(Of WinState.EndgameTracker))
+  fullName.vb: WinState.CreateAndAddTracker(WinState.EndgameID, System.Collections.Generic.List(Of WinState.EndgameTracker))
+  name.vb: CreateAndAddTracker(EndgameID, List(Of EndgameTracker))
+- uid: Global.WinState.GetTracker(WinState.EndgameID,System.Boolean)
+  commentId: M:Global.WinState.GetTracker(WinState.EndgameID,System.Boolean)
+  id: GetTracker(WinState.EndgameID,System.Boolean)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GetTracker(EndgameID, bool)
+  nameWithType: WinState.GetTracker(WinState.EndgameID, bool)
+  fullName: WinState.GetTracker(WinState.EndgameID, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GetTracker(WinState.EndgameID,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WinState.EndgameTracker GetTracker(WinState.EndgameID ID, bool addIfMissing)
+    parameters:
+    - id: ID
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:WinState.GetTracker(WinState.EndgameID,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: addIfMissing
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>addIfMissing</parameter>
+            <parameter>M:WinState.GetTracker(WinState.EndgameID,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.WinState.EndgameTracker
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GetTracker(WinState.EndgameID,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetTracker(ID As WinState.EndgameID, addIfMissing As Boolean) As WinState.EndgameTracker
+  overload: Global.WinState.GetTracker*
+  nameWithType.vb: WinState.GetTracker(WinState.EndgameID, Boolean)
+  fullName.vb: WinState.GetTracker(WinState.EndgameID, Boolean)
+  name.vb: GetTracker(EndgameID, Boolean)
+- uid: Global.WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)
+  commentId: M:Global.WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)
+  id: TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: TrackerAllowedOnSlugcat(EndgameID, Name)
+  nameWithType: WinState.TrackerAllowedOnSlugcat(WinState.EndgameID, SlugcatStats.Name)
+  fullName: WinState.TrackerAllowedOnSlugcat(WinState.EndgameID, SlugcatStats.Name)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool TrackerAllowedOnSlugcat(WinState.EndgameID trackerId, SlugcatStats.Name slugcat)
+    parameters:
+    - id: trackerId
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>trackerId</parameter>
+            <parameter>M:WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    - id: slugcat
+      type: Global.SlugcatStats.Name
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>slugcat</parameter>
+            <parameter>M:WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.TrackerAllowedOnSlugcat(WinState.EndgameID,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function TrackerAllowedOnSlugcat(trackerId As WinState.EndgameID, slugcat As SlugcatStats.Name) As Boolean
+  overload: Global.WinState.TrackerAllowedOnSlugcat*
+- uid: Global.WinState.CycleCompleted(RainWorldGame)
+  commentId: M:Global.WinState.CycleCompleted(RainWorldGame)
+  id: CycleCompleted(RainWorldGame)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: CycleCompleted(RainWorldGame)
+  nameWithType: WinState.CycleCompleted(RainWorldGame)
+  fullName: WinState.CycleCompleted(RainWorldGame)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.CycleCompleted(RainWorldGame)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CycleCompleted(RainWorldGame game)
+    parameters:
+    - id: game
+      type: Global.RainWorldGame
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>game</parameter>
+            <parameter>M:WinState.CycleCompleted(RainWorldGame)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub CycleCompleted(game As RainWorldGame)
+  overload: Global.WinState.CycleCompleted*
+- uid: Global.WinState.PlayerDied
+  commentId: M:Global.WinState.PlayerDied
+  id: PlayerDied
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: PlayerDied()
+  nameWithType: WinState.PlayerDied()
+  fullName: WinState.PlayerDied()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.PlayerDied</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerDied()
+    content.vb: Public Sub PlayerDied()
+  overload: Global.WinState.PlayerDied*
+- uid: Global.WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  commentId: M:Global.WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  id: MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: MultiplyWinConditionWithNumberOfPlayers(EndgameID)
+  nameWithType: WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  fullName: WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID ID)
+    parameters:
+    - id: ID
+      type: Global.WinState.EndgameID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.MultiplyWinConditionWithNumberOfPlayers(WinState.EndgameID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function MultiplyWinConditionWithNumberOfPlayers(ID As WinState.EndgameID) As Boolean
+  overload: Global.WinState.MultiplyWinConditionWithNumberOfPlayers*
+- uid: Global.WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)
+  commentId: M:Global.WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)
+  id: GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GourmandPassageIndex(AbstractObjectType, Type)
+  nameWithType: WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType, CreatureTemplate.Type)
+  fullName: WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType, CreatureTemplate.Type)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static int GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType inputObjectType, CreatureTemplate.Type inputCreatureType)
+    parameters:
+    - id: inputObjectType
+      type: Global.AbstractPhysicalObject.AbstractObjectType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>inputObjectType</parameter>
+            <parameter>M:WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)</parameter>
+          </include>
+        </markup>
+    - id: inputCreatureType
+      type: Global.CreatureTemplate.Type
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>inputCreatureType</parameter>
+            <parameter>M:WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GourmandPassageIndex(AbstractPhysicalObject.AbstractObjectType,CreatureTemplate.Type)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GourmandPassageIndex(inputObjectType As AbstractPhysicalObject.AbstractObjectType, inputCreatureType As CreatureTemplate.Type) As Integer
+  overload: Global.WinState.GourmandPassageIndex*
+- uid: Global.WinState.GourmandPassageRequirementAtIndex(System.Int32)
+  commentId: M:Global.WinState.GourmandPassageRequirementAtIndex(System.Int32)
+  id: GourmandPassageRequirementAtIndex(System.Int32)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GourmandPassageRequirementAtIndex(int)
+  nameWithType: WinState.GourmandPassageRequirementAtIndex(int)
+  fullName: WinState.GourmandPassageRequirementAtIndex(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GourmandPassageRequirementAtIndex(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static AbstractPhysicalObject.AbstractObjectType GourmandPassageRequirementAtIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:WinState.GourmandPassageRequirementAtIndex(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.AbstractPhysicalObject.AbstractObjectType
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GourmandPassageRequirementAtIndex(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GourmandPassageRequirementAtIndex(index As Integer) As AbstractPhysicalObject.AbstractObjectType
+  overload: Global.WinState.GourmandPassageRequirementAtIndex*
+  nameWithType.vb: WinState.GourmandPassageRequirementAtIndex(Integer)
+  fullName.vb: WinState.GourmandPassageRequirementAtIndex(Integer)
+  name.vb: GourmandPassageRequirementAtIndex(Integer)
+- uid: Global.WinState.GourmandPassageCreaturesAtIndex(System.Int32)
+  commentId: M:Global.WinState.GourmandPassageCreaturesAtIndex(System.Int32)
+  id: GourmandPassageCreaturesAtIndex(System.Int32)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GourmandPassageCreaturesAtIndex(int)
+  nameWithType: WinState.GourmandPassageCreaturesAtIndex(int)
+  fullName: WinState.GourmandPassageCreaturesAtIndex(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GourmandPassageCreaturesAtIndex(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static CreatureTemplate.Type[] GourmandPassageCreaturesAtIndex(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:WinState.GourmandPassageCreaturesAtIndex(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.CreatureTemplate.Type[]
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GourmandPassageCreaturesAtIndex(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GourmandPassageCreaturesAtIndex(index As Integer) As CreatureTemplate.Type()
+  overload: Global.WinState.GourmandPassageCreaturesAtIndex*
+  nameWithType.vb: WinState.GourmandPassageCreaturesAtIndex(Integer)
+  fullName.vb: WinState.GourmandPassageCreaturesAtIndex(Integer)
+  name.vb: GourmandPassageCreaturesAtIndex(Integer)
+- uid: Global.WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)
+  commentId: M:Global.WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)
+  id: GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: GourmandPassageCreaturesAtIndexContains(Type, int)
+  nameWithType: WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type, int)
+  fullName: WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static int GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type inputCreatureType, int index)
+    parameters:
+    - id: inputCreatureType
+      type: Global.CreatureTemplate.Type
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>inputCreatureType</parameter>
+            <parameter>M:WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GourmandPassageCreaturesAtIndexContains(inputCreatureType As CreatureTemplate.Type, index As Integer) As Integer
+  overload: Global.WinState.GourmandPassageCreaturesAtIndexContains*
+  nameWithType.vb: WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type, Integer)
+  fullName.vb: WinState.GourmandPassageCreaturesAtIndexContains(CreatureTemplate.Type, Integer)
+  name.vb: GourmandPassageCreaturesAtIndexContains(Type, Integer)
+- uid: Global.WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)
+  commentId: M:Global.WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)
+  id: UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)
+  parent: Global.WinState
+  langs:
+  - csharp
+  - vb
+  name: UpdateGhostTracker(SaveState, BoolArrayTracker)
+  nameWithType: WinState.UpdateGhostTracker(SaveState, WinState.BoolArrayTracker)
+  fullName: WinState.UpdateGhostTracker(SaveState, WinState.BoolArrayTracker)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateGhostTracker(SaveState saveState, WinState.BoolArrayTracker GhostTracker)
+    parameters:
+    - id: saveState
+      type: Global.SaveState
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>saveState</parameter>
+            <parameter>M:WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)</parameter>
+          </include>
+        </markup>
+    - id: GhostTracker
+      type: Global.WinState.BoolArrayTracker
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>GhostTracker</parameter>
+            <parameter>M:WinState.UpdateGhostTracker(SaveState,WinState.BoolArrayTracker)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub UpdateGhostTracker(saveState As SaveState, GhostTracker As WinState.BoolArrayTracker)
+  overload: Global.WinState.UpdateGhostTracker*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{WinState.EndgameTracker}
+  commentId: T:System.Collections.Generic.List{WinState.EndgameTracker}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<WinState.EndgameTracker>
+  nameWithType: List<WinState.EndgameTracker>
+  fullName: System.Collections.Generic.List<WinState.EndgameTracker>
+  nameWithType.vb: List(Of WinState.EndgameTracker)
+  fullName.vb: System.Collections.Generic.List(Of WinState.EndgameTracker)
+  name.vb: List(Of WinState.EndgameTracker)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameTracker
+    name: EndgameTracker
+    isExternal: true
+    href: WinState.EndgameTracker.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameTracker
+    name: EndgameTracker
+    isExternal: true
+    href: WinState.EndgameTracker.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Global.CreatureTemplate.Type[]
+  isExternal: true
+  href: CreatureTemplate.Type.html
+  name: Type[]
+  nameWithType: CreatureTemplate.Type[]
+  fullName: CreatureTemplate.Type[]
+  nameWithType.vb: CreatureTemplate.Type()
+  fullName.vb: CreatureTemplate.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  - name: (
+  - name: )
+- uid: Global.WinState.GourmandTrackerData[]
+  isExternal: true
+  href: WinState.GourmandTrackerData.html
+  name: GourmandTrackerData[]
+  nameWithType: WinState.GourmandTrackerData[]
+  fullName: WinState.GourmandTrackerData[]
+  nameWithType.vb: WinState.GourmandTrackerData()
+  fullName.vb: WinState.GourmandTrackerData()
+  name.vb: GourmandTrackerData()
+  spec.csharp:
+  - uid: Global.WinState.GourmandTrackerData
+    name: GourmandTrackerData
+    isExternal: true
+    href: WinState.GourmandTrackerData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.WinState.GourmandTrackerData
+    name: GourmandTrackerData
+    isExternal: true
+    href: WinState.GourmandTrackerData.html
+  - name: (
+  - name: )
+- uid: Global.WinState.PassageDisplayName*
+  commentId: Overload:Global.WinState.PassageDisplayName
+  isExternal: true
+  href: Global.WinState.html#WinState_PassageDisplayName_WinState_EndgameID_
+  name: PassageDisplayName
+  nameWithType: WinState.PassageDisplayName
+  fullName: WinState.PassageDisplayName
+- uid: Global.WinState.EndgameID
+  commentId: T:Global.WinState.EndgameID
+  isExternal: true
+  href: WinState.html
+  name: WinState.EndgameID
+  nameWithType: WinState.EndgameID
+  fullName: WinState.EndgameID
+  spec.csharp:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameID
+    name: EndgameID
+    isExternal: true
+    href: WinState.EndgameID.html
+  spec.vb:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameID
+    name: EndgameID
+    isExternal: true
+    href: WinState.EndgameID.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.WinState.PassageAchievementID*
+  commentId: Overload:Global.WinState.PassageAchievementID
+  isExternal: true
+  href: Global.WinState.html#WinState_PassageAchievementID_WinState_EndgameID_
+  name: PassageAchievementID
+  nameWithType: WinState.PassageAchievementID
+  fullName: WinState.PassageAchievementID
+- uid: Global.RainWorld.AchievementID
+  commentId: T:Global.RainWorld.AchievementID
+  isExternal: true
+  href: RainWorld.html
+  name: RainWorld.AchievementID
+  nameWithType: RainWorld.AchievementID
+  fullName: RainWorld.AchievementID
+  spec.csharp:
+  - uid: Global.RainWorld
+    name: RainWorld
+    isExternal: true
+    href: RainWorld.html
+  - name: .
+  - uid: Global.RainWorld.AchievementID
+    name: AchievementID
+    isExternal: true
+    href: RainWorld.AchievementID.html
+  spec.vb:
+  - uid: Global.RainWorld
+    name: RainWorld
+    isExternal: true
+    href: RainWorld.html
+  - name: .
+  - uid: Global.RainWorld.AchievementID
+    name: AchievementID
+    isExternal: true
+    href: RainWorld.AchievementID.html
+- uid: Global.WinState.#ctor*
+  commentId: Overload:Global.WinState.#ctor
+  isExternal: true
+  href: Global.WinState.html#WinState__ctor
+  name: WinState
+  nameWithType: WinState.WinState
+  fullName: WinState.WinState
+  nameWithType.vb: WinState.New
+  fullName.vb: WinState.New
+  name.vb: New
+- uid: Global.WinState.GetNextEndGame*
+  commentId: Overload:Global.WinState.GetNextEndGame
+  isExternal: true
+  href: Global.WinState.html#WinState_GetNextEndGame
+  name: GetNextEndGame
+  nameWithType: WinState.GetNextEndGame
+  fullName: WinState.GetNextEndGame
+- uid: Global.WinState.ConsumeEndGame*
+  commentId: Overload:Global.WinState.ConsumeEndGame
+  isExternal: true
+  href: Global.WinState.html#WinState_ConsumeEndGame
+  name: ConsumeEndGame
+  nameWithType: WinState.ConsumeEndGame
+  fullName: WinState.ConsumeEndGame
+- uid: Global.WinState.ResetLastShownValues*
+  commentId: Overload:Global.WinState.ResetLastShownValues
+  isExternal: true
+  href: Global.WinState.html#WinState_ResetLastShownValues
+  name: ResetLastShownValues
+  nameWithType: WinState.ResetLastShownValues
+  fullName: WinState.ResetLastShownValues
+- uid: Global.WinState.SaveToString*
+  commentId: Overload:Global.WinState.SaveToString
+  isExternal: true
+  href: Global.WinState.html#WinState_SaveToString_System_Boolean_
+  name: SaveToString
+  nameWithType: WinState.SaveToString
+  fullName: WinState.SaveToString
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.WinState.FromString*
+  commentId: Overload:Global.WinState.FromString
+  isExternal: true
+  href: Global.WinState.html#WinState_FromString_System_String_
+  name: FromString
+  nameWithType: WinState.FromString
+  fullName: WinState.FromString
+- uid: Global.WinState.CreateAndAddTracker*
+  commentId: Overload:Global.WinState.CreateAndAddTracker
+  isExternal: true
+  href: Global.WinState.html#WinState_CreateAndAddTracker_WinState_EndgameID_System_Collections_Generic_List_WinState_EndgameTracker__
+  name: CreateAndAddTracker
+  nameWithType: WinState.CreateAndAddTracker
+  fullName: WinState.CreateAndAddTracker
+- uid: Global.WinState.EndgameTracker
+  commentId: T:Global.WinState.EndgameTracker
+  isExternal: true
+  href: WinState.html
+  name: WinState.EndgameTracker
+  nameWithType: WinState.EndgameTracker
+  fullName: WinState.EndgameTracker
+  spec.csharp:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameTracker
+    name: EndgameTracker
+    isExternal: true
+    href: WinState.EndgameTracker.html
+  spec.vb:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.EndgameTracker
+    name: EndgameTracker
+    isExternal: true
+    href: WinState.EndgameTracker.html
+- uid: Global.WinState.GetTracker*
+  commentId: Overload:Global.WinState.GetTracker
+  isExternal: true
+  href: Global.WinState.html#WinState_GetTracker_WinState_EndgameID_System_Boolean_
+  name: GetTracker
+  nameWithType: WinState.GetTracker
+  fullName: WinState.GetTracker
+- uid: Global.WinState.TrackerAllowedOnSlugcat*
+  commentId: Overload:Global.WinState.TrackerAllowedOnSlugcat
+  isExternal: true
+  href: Global.WinState.html#WinState_TrackerAllowedOnSlugcat_WinState_EndgameID_SlugcatStats_Name_
+  name: TrackerAllowedOnSlugcat
+  nameWithType: WinState.TrackerAllowedOnSlugcat
+  fullName: WinState.TrackerAllowedOnSlugcat
+- uid: Global.SlugcatStats.Name
+  commentId: T:Global.SlugcatStats.Name
+  isExternal: true
+  href: SlugcatStats.html
+  name: SlugcatStats.Name
+  nameWithType: SlugcatStats.Name
+  fullName: SlugcatStats.Name
+  spec.csharp:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+  spec.vb:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+- uid: Global.WinState.CycleCompleted*
+  commentId: Overload:Global.WinState.CycleCompleted
+  isExternal: true
+  href: Global.WinState.html#WinState_CycleCompleted_RainWorldGame_
+  name: CycleCompleted
+  nameWithType: WinState.CycleCompleted
+  fullName: WinState.CycleCompleted
+- uid: Global.RainWorldGame
+  commentId: T:Global.RainWorldGame
+  isExternal: true
+  href: RainWorldGame.html
+  name: RainWorldGame
+  nameWithType: RainWorldGame
+  fullName: RainWorldGame
+- uid: Global.WinState.PlayerDied*
+  commentId: Overload:Global.WinState.PlayerDied
+  isExternal: true
+  href: Global.WinState.html#WinState_PlayerDied
+  name: PlayerDied
+  nameWithType: WinState.PlayerDied
+  fullName: WinState.PlayerDied
+- uid: Global.WinState.MultiplyWinConditionWithNumberOfPlayers*
+  commentId: Overload:Global.WinState.MultiplyWinConditionWithNumberOfPlayers
+  isExternal: true
+  href: Global.WinState.html#WinState_MultiplyWinConditionWithNumberOfPlayers_WinState_EndgameID_
+  name: MultiplyWinConditionWithNumberOfPlayers
+  nameWithType: WinState.MultiplyWinConditionWithNumberOfPlayers
+  fullName: WinState.MultiplyWinConditionWithNumberOfPlayers
+- uid: Global.WinState.GourmandPassageIndex*
+  commentId: Overload:Global.WinState.GourmandPassageIndex
+  isExternal: true
+  href: Global.WinState.html#WinState_GourmandPassageIndex_AbstractPhysicalObject_AbstractObjectType_CreatureTemplate_Type_
+  name: GourmandPassageIndex
+  nameWithType: WinState.GourmandPassageIndex
+  fullName: WinState.GourmandPassageIndex
+- uid: Global.AbstractPhysicalObject.AbstractObjectType
+  commentId: T:Global.AbstractPhysicalObject.AbstractObjectType
+  isExternal: true
+  href: AbstractPhysicalObject.html
+  name: AbstractPhysicalObject.AbstractObjectType
+  nameWithType: AbstractPhysicalObject.AbstractObjectType
+  fullName: AbstractPhysicalObject.AbstractObjectType
+  spec.csharp:
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: .
+  - uid: Global.AbstractPhysicalObject.AbstractObjectType
+    name: AbstractObjectType
+    isExternal: true
+    href: AbstractPhysicalObject.AbstractObjectType.html
+  spec.vb:
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: .
+  - uid: Global.AbstractPhysicalObject.AbstractObjectType
+    name: AbstractObjectType
+    isExternal: true
+    href: AbstractPhysicalObject.AbstractObjectType.html
+- uid: Global.CreatureTemplate.Type
+  commentId: T:Global.CreatureTemplate.Type
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate.Type
+  nameWithType: CreatureTemplate.Type
+  fullName: CreatureTemplate.Type
+  spec.csharp:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  spec.vb:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.WinState.GourmandPassageRequirementAtIndex*
+  commentId: Overload:Global.WinState.GourmandPassageRequirementAtIndex
+  isExternal: true
+  href: Global.WinState.html#WinState_GourmandPassageRequirementAtIndex_System_Int32_
+  name: GourmandPassageRequirementAtIndex
+  nameWithType: WinState.GourmandPassageRequirementAtIndex
+  fullName: WinState.GourmandPassageRequirementAtIndex
+- uid: Global.WinState.GourmandPassageCreaturesAtIndex*
+  commentId: Overload:Global.WinState.GourmandPassageCreaturesAtIndex
+  isExternal: true
+  href: Global.WinState.html#WinState_GourmandPassageCreaturesAtIndex_System_Int32_
+  name: GourmandPassageCreaturesAtIndex
+  nameWithType: WinState.GourmandPassageCreaturesAtIndex
+  fullName: WinState.GourmandPassageCreaturesAtIndex
+- uid: Global.WinState.GourmandPassageCreaturesAtIndexContains*
+  commentId: Overload:Global.WinState.GourmandPassageCreaturesAtIndexContains
+  isExternal: true
+  href: Global.WinState.html#WinState_GourmandPassageCreaturesAtIndexContains_CreatureTemplate_Type_System_Int32_
+  name: GourmandPassageCreaturesAtIndexContains
+  nameWithType: WinState.GourmandPassageCreaturesAtIndexContains
+  fullName: WinState.GourmandPassageCreaturesAtIndexContains
+- uid: Global.WinState.UpdateGhostTracker*
+  commentId: Overload:Global.WinState.UpdateGhostTracker
+  isExternal: true
+  href: Global.WinState.html#WinState_UpdateGhostTracker_SaveState_WinState_BoolArrayTracker_
+  name: UpdateGhostTracker
+  nameWithType: WinState.UpdateGhostTracker
+  fullName: WinState.UpdateGhostTracker
+- uid: Global.SaveState
+  commentId: T:Global.SaveState
+  isExternal: true
+  href: SaveState.html
+  name: SaveState
+  nameWithType: SaveState
+  fullName: SaveState
+- uid: Global.WinState.BoolArrayTracker
+  commentId: T:Global.WinState.BoolArrayTracker
+  isExternal: true
+  href: WinState.html
+  name: WinState.BoolArrayTracker
+  nameWithType: WinState.BoolArrayTracker
+  fullName: WinState.BoolArrayTracker
+  spec.csharp:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.BoolArrayTracker
+    name: BoolArrayTracker
+    isExternal: true
+    href: WinState.BoolArrayTracker.html
+  spec.vb:
+  - uid: Global.WinState
+    name: WinState
+    isExternal: true
+    href: WinState.html
+  - name: .
+  - uid: Global.WinState.BoolArrayTracker
+    name: BoolArrayTracker
+    isExternal: true
+    href: WinState.BoolArrayTracker.html

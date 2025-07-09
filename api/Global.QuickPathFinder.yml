@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.QuickPathFinder
+  commentId: T:Global.QuickPathFinder
+  id: QuickPathFinder
+  parent: Global
+  children:
+  - Global.QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)
+  - Global.QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)
+  - Global.QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)
+  - Global.QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)
+  - Global.QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)
+  - Global.QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)
+  - Global.QuickPathFinder.ReturnPath
+  - Global.QuickPathFinder.Update
+  - Global.QuickPathFinder.status
+  langs:
+  - csharp
+  - vb
+  name: QuickPathFinder
+  nameWithType: QuickPathFinder
+  fullName: QuickPathFinder
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:QuickPathFinder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class QuickPathFinder
+    content.vb: Public Class QuickPathFinder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.QuickPathFinder.status
+  commentId: F:Global.QuickPathFinder.status
+  id: status
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: status
+  nameWithType: QuickPathFinder.status
+  fullName: QuickPathFinder.status
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:QuickPathFinder.status</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int status
+    return:
+      type: System.Int32
+    content.vb: Public status As Integer
+- uid: Global.QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)
+  commentId: M:Global.QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)
+  id: '#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)'
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: QuickPathFinder(IntVector2, IntVector2, AImap, CreatureTemplate)
+  nameWithType: QuickPathFinder.QuickPathFinder(IntVector2, IntVector2, AImap, CreatureTemplate)
+  fullName: QuickPathFinder.QuickPathFinder(RWCustom.IntVector2, RWCustom.IntVector2, AImap, CreatureTemplate)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>QuickPathFinder</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public QuickPathFinder(IntVector2 start, IntVector2 goal, AImap map, CreatureTemplate creatureType)
+    parameters:
+    - id: start
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>start</parameter>
+            <parameter>M:QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    - id: goal
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>goal</parameter>
+            <parameter>M:QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    - id: map
+      type: Global.AImap
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>map</parameter>
+            <parameter>M:QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    - id: creatureType
+      type: Global.CreatureTemplate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creatureType</parameter>
+            <parameter>M:QuickPathFinder.#ctor(RWCustom.IntVector2,RWCustom.IntVector2,AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(start As IntVector2, goal As IntVector2, map As AImap, creatureType As CreatureTemplate)
+  overload: Global.QuickPathFinder.#ctor*
+  nameWithType.vb: QuickPathFinder.New(IntVector2, IntVector2, AImap, CreatureTemplate)
+  fullName.vb: QuickPathFinder.New(RWCustom.IntVector2, RWCustom.IntVector2, AImap, CreatureTemplate)
+  name.vb: New(IntVector2, IntVector2, AImap, CreatureTemplate)
+- uid: Global.QuickPathFinder.Update
+  commentId: M:Global.QuickPathFinder.Update
+  id: Update
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: QuickPathFinder.Update()
+  fullName: QuickPathFinder.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: Global.QuickPathFinder.Update*
+- uid: Global.QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)
+  commentId: M:Global.QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)
+  id: AddHeuresticForTile(RWCustom.IntVector2,PathCost)
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: AddHeuresticForTile(IntVector2, PathCost)
+  nameWithType: QuickPathFinder.AddHeuresticForTile(IntVector2, PathCost)
+  fullName: QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2, PathCost)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public PathCost AddHeuresticForTile(IntVector2 tl, PathCost distanceToGoal)
+    parameters:
+    - id: tl
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tl</parameter>
+            <parameter>M:QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)</parameter>
+          </include>
+        </markup>
+    - id: distanceToGoal
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>distanceToGoal</parameter>
+            <parameter>M:QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:QuickPathFinder.AddHeuresticForTile(RWCustom.IntVector2,PathCost)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function AddHeuresticForTile(tl As IntVector2, distanceToGoal As PathCost) As PathCost
+  overload: Global.QuickPathFinder.AddHeuresticForTile*
+- uid: Global.QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)
+  commentId: M:Global.QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)
+  id: IsNodePreviouslyChecked(RWCustom.IntVector2)
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: IsNodePreviouslyChecked(IntVector2)
+  nameWithType: QuickPathFinder.IsNodePreviouslyChecked(IntVector2)
+  fullName: QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsNodePreviouslyChecked(IntVector2 tl)
+    parameters:
+    - id: tl
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tl</parameter>
+            <parameter>M:QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:QuickPathFinder.IsNodePreviouslyChecked(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function IsNodePreviouslyChecked(tl As IntVector2) As Boolean
+  overload: Global.QuickPathFinder.IsNodePreviouslyChecked*
+- uid: Global.QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)
+  commentId: M:Global.QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)
+  id: IsNodeClosed(RWCustom.IntVector2)
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: IsNodeClosed(IntVector2)
+  nameWithType: QuickPathFinder.IsNodeClosed(IntVector2)
+  fullName: QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsNodeClosed(IntVector2 tl)
+    parameters:
+    - id: tl
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tl</parameter>
+            <parameter>M:QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:QuickPathFinder.IsNodeClosed(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function IsNodeClosed(tl As IntVector2) As Boolean
+  overload: Global.QuickPathFinder.IsNodeClosed*
+- uid: Global.QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)
+  commentId: M:Global.QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)
+  id: MarkNodeAsChecked(RWCustom.IntVector2)
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: MarkNodeAsChecked(IntVector2)
+  nameWithType: QuickPathFinder.MarkNodeAsChecked(IntVector2)
+  fullName: QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void MarkNodeAsChecked(IntVector2 tl)
+    parameters:
+    - id: tl
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tl</parameter>
+            <parameter>M:QuickPathFinder.MarkNodeAsChecked(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub MarkNodeAsChecked(tl As IntVector2)
+  overload: Global.QuickPathFinder.MarkNodeAsChecked*
+- uid: Global.QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)
+  commentId: M:Global.QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)
+  id: MarkNodeAsClosed(RWCustom.IntVector2)
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: MarkNodeAsClosed(IntVector2)
+  nameWithType: QuickPathFinder.MarkNodeAsClosed(IntVector2)
+  fullName: QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void MarkNodeAsClosed(IntVector2 tl)
+    parameters:
+    - id: tl
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tl</parameter>
+            <parameter>M:QuickPathFinder.MarkNodeAsClosed(RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub MarkNodeAsClosed(tl As IntVector2)
+  overload: Global.QuickPathFinder.MarkNodeAsClosed*
+- uid: Global.QuickPathFinder.ReturnPath
+  commentId: M:Global.QuickPathFinder.ReturnPath
+  id: ReturnPath
+  parent: Global.QuickPathFinder
+  langs:
+  - csharp
+  - vb
+  name: ReturnPath()
+  nameWithType: QuickPathFinder.ReturnPath()
+  fullName: QuickPathFinder.ReturnPath()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:QuickPathFinder.ReturnPath</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public QuickPath ReturnPath()
+    return:
+      type: Global.QuickPath
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:QuickPathFinder.ReturnPath</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReturnPath() As QuickPath
+  overload: Global.QuickPathFinder.ReturnPath*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.QuickPathFinder.#ctor*
+  commentId: Overload:Global.QuickPathFinder.#ctor
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder__ctor_RWCustom_IntVector2_RWCustom_IntVector2_AImap_CreatureTemplate_
+  name: QuickPathFinder
+  nameWithType: QuickPathFinder.QuickPathFinder
+  fullName: QuickPathFinder.QuickPathFinder
+  nameWithType.vb: QuickPathFinder.New
+  fullName.vb: QuickPathFinder.New
+  name.vb: New
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: Global.AImap
+  commentId: T:Global.AImap
+  isExternal: true
+  href: AImap.html
+  name: AImap
+  nameWithType: AImap
+  fullName: AImap
+- uid: Global.CreatureTemplate
+  commentId: T:Global.CreatureTemplate
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate
+  nameWithType: CreatureTemplate
+  fullName: CreatureTemplate
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.QuickPathFinder.Update*
+  commentId: Overload:Global.QuickPathFinder.Update
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_Update
+  name: Update
+  nameWithType: QuickPathFinder.Update
+  fullName: QuickPathFinder.Update
+- uid: Global.QuickPathFinder.AddHeuresticForTile*
+  commentId: Overload:Global.QuickPathFinder.AddHeuresticForTile
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_AddHeuresticForTile_RWCustom_IntVector2_PathCost_
+  name: AddHeuresticForTile
+  nameWithType: QuickPathFinder.AddHeuresticForTile
+  fullName: QuickPathFinder.AddHeuresticForTile
+- uid: Global.PathCost
+  commentId: T:Global.PathCost
+  isExternal: true
+  href: PathCost.html
+  name: PathCost
+  nameWithType: PathCost
+  fullName: PathCost
+- uid: Global.QuickPathFinder.IsNodePreviouslyChecked*
+  commentId: Overload:Global.QuickPathFinder.IsNodePreviouslyChecked
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_IsNodePreviouslyChecked_RWCustom_IntVector2_
+  name: IsNodePreviouslyChecked
+  nameWithType: QuickPathFinder.IsNodePreviouslyChecked
+  fullName: QuickPathFinder.IsNodePreviouslyChecked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.QuickPathFinder.IsNodeClosed*
+  commentId: Overload:Global.QuickPathFinder.IsNodeClosed
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_IsNodeClosed_RWCustom_IntVector2_
+  name: IsNodeClosed
+  nameWithType: QuickPathFinder.IsNodeClosed
+  fullName: QuickPathFinder.IsNodeClosed
+- uid: Global.QuickPathFinder.MarkNodeAsChecked*
+  commentId: Overload:Global.QuickPathFinder.MarkNodeAsChecked
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_MarkNodeAsChecked_RWCustom_IntVector2_
+  name: MarkNodeAsChecked
+  nameWithType: QuickPathFinder.MarkNodeAsChecked
+  fullName: QuickPathFinder.MarkNodeAsChecked
+- uid: Global.QuickPathFinder.MarkNodeAsClosed*
+  commentId: Overload:Global.QuickPathFinder.MarkNodeAsClosed
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_MarkNodeAsClosed_RWCustom_IntVector2_
+  name: MarkNodeAsClosed
+  nameWithType: QuickPathFinder.MarkNodeAsClosed
+  fullName: QuickPathFinder.MarkNodeAsClosed
+- uid: Global.QuickPathFinder.ReturnPath*
+  commentId: Overload:Global.QuickPathFinder.ReturnPath
+  isExternal: true
+  href: Global.QuickPathFinder.html#QuickPathFinder_ReturnPath
+  name: ReturnPath
+  nameWithType: QuickPathFinder.ReturnPath
+  fullName: QuickPathFinder.ReturnPath
+- uid: Global.QuickPath
+  commentId: T:Global.QuickPath
+  isExternal: true
+  href: QuickPath.html
+  name: QuickPath
+  nameWithType: QuickPath
+  fullName: QuickPath

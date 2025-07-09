@@ -1,0 +1,1005 @@
+### YamlMime:ManagedReference
+items:
+- uid: HUD.Map.ShelterMarker
+  commentId: T:HUD.Map.ShelterMarker
+  id: Map.ShelterMarker
+  parent: HUD
+  children:
+  - HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)
+  - HUD.Map.ShelterMarker.Destroy
+  - HUD.Map.ShelterMarker.Draw(System.Single)
+  - HUD.Map.ShelterMarker.HideSymbols
+  - HUD.Map.ShelterMarker.RevealSymbols
+  - HUD.Map.ShelterMarker.Update
+  - HUD.Map.ShelterMarker.items
+  langs:
+  - csharp
+  - vb
+  name: Map.ShelterMarker
+  nameWithType: Map.ShelterMarker
+  fullName: HUD.Map.ShelterMarker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:HUD.Map.ShelterMarker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class Map.ShelterMarker : Map.FadeInMarker'
+    content.vb: Public Class Map.ShelterMarker Inherits Map.FadeInMarker
+  inheritance:
+  - System.Object
+  - HUD.Map.MapObject
+  - HUD.Map.FadeInMarker
+  inheritedMembers:
+  - HUD.Map.FadeInMarker.room
+  - HUD.Map.FadeInMarker.inRoomPos
+  - HUD.Map.FadeInMarker.fade
+  - HUD.Map.FadeInMarker.lastFade
+  - HUD.Map.FadeInMarker.fadeInSpeed
+  - HUD.Map.FadeInMarker.fadeInRad
+  - HUD.Map.FadeInMarker.bkgFade
+  - HUD.Map.FadeInMarker.symbolSprite
+  - HUD.Map.FadeInMarker.FadeIn(System.Single)
+  - HUD.Map.FadeInMarker.SetInvisible
+  - HUD.Map.MapObject.map
+  - HUD.Map.MapObject.slatedForDeletion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: HUD.Map.ShelterMarker.items
+  commentId: F:HUD.Map.ShelterMarker.items
+  id: items
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: items
+  nameWithType: Map.ShelterMarker.items
+  fullName: HUD.Map.ShelterMarker.items
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.Map.ShelterMarker.items</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Map.ShelterMarker.ItemInShelterMarker> items
+    return:
+      type: System.Collections.Generic.List{HUD.Map.ShelterMarker.ItemInShelterMarker}
+    content.vb: Public items As List(Of Map.ShelterMarker.ItemInShelterMarker)
+- uid: HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)
+  commentId: M:HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)
+  id: '#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)'
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: ShelterMarker(Map, int, Vector2)
+  nameWithType: Map.ShelterMarker.ShelterMarker(Map, int, Vector2)
+  fullName: HUD.Map.ShelterMarker.ShelterMarker(HUD.Map, int, UnityEngine.Vector2)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>HUD.Map.ShelterMarker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ShelterMarker(Map map, int room, Vector2 inRoomPosition)
+    parameters:
+    - id: map
+      type: HUD.Map
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>map</parameter>
+            <parameter>M:HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: inRoomPosition
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>inRoomPosition</parameter>
+            <parameter>M:HUD.Map.ShelterMarker.#ctor(HUD.Map,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(map As Map, room As Integer, inRoomPosition As Vector2)
+  overload: HUD.Map.ShelterMarker.#ctor*
+  nameWithType.vb: Map.ShelterMarker.New(Map, Integer, Vector2)
+  fullName.vb: HUD.Map.ShelterMarker.New(HUD.Map, Integer, UnityEngine.Vector2)
+  name.vb: New(Map, Integer, Vector2)
+- uid: HUD.Map.ShelterMarker.Update
+  commentId: M:HUD.Map.ShelterMarker.Update
+  id: Update
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: Map.ShelterMarker.Update()
+  fullName: HUD.Map.ShelterMarker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.Map.ShelterMarker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: HUD.Map.FadeInMarker.Update
+  overload: HUD.Map.ShelterMarker.Update*
+- uid: HUD.Map.ShelterMarker.Draw(System.Single)
+  commentId: M:HUD.Map.ShelterMarker.Draw(System.Single)
+  id: Draw(System.Single)
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: Draw(float)
+  nameWithType: Map.ShelterMarker.Draw(float)
+  fullName: HUD.Map.ShelterMarker.Draw(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.Map.ShelterMarker.Draw(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Draw(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.Map.ShelterMarker.Draw(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Draw(timeStacker As Single)
+  overridden: HUD.Map.MapObject.Draw(System.Single)
+  overload: HUD.Map.ShelterMarker.Draw*
+  nameWithType.vb: Map.ShelterMarker.Draw(Single)
+  fullName.vb: HUD.Map.ShelterMarker.Draw(Single)
+  name.vb: Draw(Single)
+- uid: HUD.Map.ShelterMarker.RevealSymbols
+  commentId: M:HUD.Map.ShelterMarker.RevealSymbols
+  id: RevealSymbols
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: RevealSymbols()
+  nameWithType: Map.ShelterMarker.RevealSymbols()
+  fullName: HUD.Map.ShelterMarker.RevealSymbols()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.Map.ShelterMarker.RevealSymbols</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RevealSymbols()
+    content.vb: Public Sub RevealSymbols()
+  overload: HUD.Map.ShelterMarker.RevealSymbols*
+- uid: HUD.Map.ShelterMarker.HideSymbols
+  commentId: M:HUD.Map.ShelterMarker.HideSymbols
+  id: HideSymbols
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: HideSymbols()
+  nameWithType: Map.ShelterMarker.HideSymbols()
+  fullName: HUD.Map.ShelterMarker.HideSymbols()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.Map.ShelterMarker.HideSymbols</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void HideSymbols()
+    content.vb: Public Sub HideSymbols()
+  overload: HUD.Map.ShelterMarker.HideSymbols*
+- uid: HUD.Map.ShelterMarker.Destroy
+  commentId: M:HUD.Map.ShelterMarker.Destroy
+  id: Destroy
+  parent: HUD.Map.ShelterMarker
+  langs:
+  - csharp
+  - vb
+  name: Destroy()
+  nameWithType: Map.ShelterMarker.Destroy()
+  fullName: HUD.Map.ShelterMarker.Destroy()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.Map.ShelterMarker.Destroy</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Destroy()
+    content.vb: Public Overrides Sub Destroy()
+  overridden: HUD.Map.FadeInMarker.Destroy
+  overload: HUD.Map.ShelterMarker.Destroy*
+references:
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HUD.Map.MapObject
+  commentId: T:HUD.Map.MapObject
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map.MapObject
+  nameWithType: Map.MapObject
+  fullName: HUD.Map.MapObject
+  spec.csharp:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapObject
+    name: MapObject
+    isExternal: true
+    href: HUD.Map.MapObject.html
+  spec.vb:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapObject
+    name: MapObject
+    isExternal: true
+    href: HUD.Map.MapObject.html
+- uid: HUD.Map.FadeInMarker
+  commentId: T:HUD.Map.FadeInMarker
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map.FadeInMarker
+  nameWithType: Map.FadeInMarker
+  fullName: HUD.Map.FadeInMarker
+  spec.csharp:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.FadeInMarker
+    name: FadeInMarker
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html
+  spec.vb:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.FadeInMarker
+    name: FadeInMarker
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html
+- uid: HUD.Map.FadeInMarker.room
+  commentId: F:HUD.Map.FadeInMarker.room
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_room
+  name: room
+  nameWithType: Map.FadeInMarker.room
+  fullName: HUD.Map.FadeInMarker.room
+- uid: HUD.Map.FadeInMarker.inRoomPos
+  commentId: F:HUD.Map.FadeInMarker.inRoomPos
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_inRoomPos
+  name: inRoomPos
+  nameWithType: Map.FadeInMarker.inRoomPos
+  fullName: HUD.Map.FadeInMarker.inRoomPos
+- uid: HUD.Map.FadeInMarker.fade
+  commentId: F:HUD.Map.FadeInMarker.fade
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_fade
+  name: fade
+  nameWithType: Map.FadeInMarker.fade
+  fullName: HUD.Map.FadeInMarker.fade
+- uid: HUD.Map.FadeInMarker.lastFade
+  commentId: F:HUD.Map.FadeInMarker.lastFade
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_lastFade
+  name: lastFade
+  nameWithType: Map.FadeInMarker.lastFade
+  fullName: HUD.Map.FadeInMarker.lastFade
+- uid: HUD.Map.FadeInMarker.fadeInSpeed
+  commentId: F:HUD.Map.FadeInMarker.fadeInSpeed
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_fadeInSpeed
+  name: fadeInSpeed
+  nameWithType: Map.FadeInMarker.fadeInSpeed
+  fullName: HUD.Map.FadeInMarker.fadeInSpeed
+- uid: HUD.Map.FadeInMarker.fadeInRad
+  commentId: F:HUD.Map.FadeInMarker.fadeInRad
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_fadeInRad
+  name: fadeInRad
+  nameWithType: Map.FadeInMarker.fadeInRad
+  fullName: HUD.Map.FadeInMarker.fadeInRad
+- uid: HUD.Map.FadeInMarker.bkgFade
+  commentId: F:HUD.Map.FadeInMarker.bkgFade
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_bkgFade
+  name: bkgFade
+  nameWithType: Map.FadeInMarker.bkgFade
+  fullName: HUD.Map.FadeInMarker.bkgFade
+- uid: HUD.Map.FadeInMarker.symbolSprite
+  commentId: F:HUD.Map.FadeInMarker.symbolSprite
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_symbolSprite
+  name: symbolSprite
+  nameWithType: Map.FadeInMarker.symbolSprite
+  fullName: HUD.Map.FadeInMarker.symbolSprite
+- uid: HUD.Map.FadeInMarker.FadeIn(System.Single)
+  commentId: M:HUD.Map.FadeInMarker.FadeIn(System.Single)
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_FadeIn_System_Single_
+  name: FadeIn(float)
+  nameWithType: Map.FadeInMarker.FadeIn(float)
+  fullName: HUD.Map.FadeInMarker.FadeIn(float)
+  nameWithType.vb: Map.FadeInMarker.FadeIn(Single)
+  fullName.vb: HUD.Map.FadeInMarker.FadeIn(Single)
+  name.vb: FadeIn(Single)
+  spec.csharp:
+  - uid: HUD.Map.FadeInMarker.FadeIn(System.Single)
+    name: FadeIn
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_FadeIn_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: HUD.Map.FadeInMarker.FadeIn(System.Single)
+    name: FadeIn
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_FadeIn_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: HUD.Map.FadeInMarker.SetInvisible
+  commentId: M:HUD.Map.FadeInMarker.SetInvisible
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_SetInvisible
+  name: SetInvisible()
+  nameWithType: Map.FadeInMarker.SetInvisible()
+  fullName: HUD.Map.FadeInMarker.SetInvisible()
+  spec.csharp:
+  - uid: HUD.Map.FadeInMarker.SetInvisible
+    name: SetInvisible
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_SetInvisible
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.Map.FadeInMarker.SetInvisible
+    name: SetInvisible
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_SetInvisible
+  - name: (
+  - name: )
+- uid: HUD.Map.MapObject.map
+  commentId: F:HUD.Map.MapObject.map
+  parent: HUD.Map.MapObject
+  isExternal: true
+  href: HUD.Map.MapObject.html#HUD_Map_MapObject_map
+  name: map
+  nameWithType: Map.MapObject.map
+  fullName: HUD.Map.MapObject.map
+- uid: HUD.Map.MapObject.slatedForDeletion
+  commentId: F:HUD.Map.MapObject.slatedForDeletion
+  parent: HUD.Map.MapObject
+  isExternal: true
+  href: HUD.Map.MapObject.html#HUD_Map_MapObject_slatedForDeletion
+  name: slatedForDeletion
+  nameWithType: Map.MapObject.slatedForDeletion
+  fullName: HUD.Map.MapObject.slatedForDeletion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{HUD.Map.ShelterMarker.ItemInShelterMarker}
+  commentId: T:System.Collections.Generic.List{HUD.Map.ShelterMarker.ItemInShelterMarker}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Map.ShelterMarker.ItemInShelterMarker>
+  nameWithType: List<Map.ShelterMarker.ItemInShelterMarker>
+  fullName: System.Collections.Generic.List<HUD.Map.ShelterMarker.ItemInShelterMarker>
+  nameWithType.vb: List(Of Map.ShelterMarker.ItemInShelterMarker)
+  fullName.vb: System.Collections.Generic.List(Of HUD.Map.ShelterMarker.ItemInShelterMarker)
+  name.vb: List(Of Map.ShelterMarker.ItemInShelterMarker)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.ShelterMarker
+    name: ShelterMarker
+    isExternal: true
+    href: HUD.Map.ShelterMarker.html
+  - name: .
+  - uid: HUD.Map.ShelterMarker.ItemInShelterMarker
+    name: ItemInShelterMarker
+    isExternal: true
+    href: HUD.Map.ShelterMarker.ItemInShelterMarker.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.ShelterMarker
+    name: ShelterMarker
+    isExternal: true
+    href: HUD.Map.ShelterMarker.html
+  - name: .
+  - uid: HUD.Map.ShelterMarker.ItemInShelterMarker
+    name: ItemInShelterMarker
+    isExternal: true
+    href: HUD.Map.ShelterMarker.ItemInShelterMarker.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: HUD.Map.ShelterMarker.#ctor*
+  commentId: Overload:HUD.Map.ShelterMarker.#ctor
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker__ctor_HUD_Map_System_Int32_UnityEngine_Vector2_
+  name: ShelterMarker
+  nameWithType: Map.ShelterMarker.ShelterMarker
+  fullName: HUD.Map.ShelterMarker.ShelterMarker
+  nameWithType.vb: Map.ShelterMarker.New
+  fullName.vb: HUD.Map.ShelterMarker.New
+  name.vb: New
+- uid: HUD.Map
+  commentId: T:HUD.Map
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map
+  nameWithType: Map
+  fullName: HUD.Map
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: HUD.Map.FadeInMarker.Update
+  commentId: M:HUD.Map.FadeInMarker.Update
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Update
+  name: Update()
+  nameWithType: Map.FadeInMarker.Update()
+  fullName: HUD.Map.FadeInMarker.Update()
+  spec.csharp:
+  - uid: HUD.Map.FadeInMarker.Update
+    name: Update
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.Map.FadeInMarker.Update
+    name: Update
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Update
+  - name: (
+  - name: )
+- uid: HUD.Map.ShelterMarker.Update*
+  commentId: Overload:HUD.Map.ShelterMarker.Update
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker_Update
+  name: Update
+  nameWithType: Map.ShelterMarker.Update
+  fullName: HUD.Map.ShelterMarker.Update
+- uid: HUD.Map.MapObject.Draw(System.Single)
+  commentId: M:HUD.Map.MapObject.Draw(System.Single)
+  parent: HUD.Map.MapObject
+  isExternal: true
+  href: HUD.Map.MapObject.html#HUD_Map_MapObject_Draw_System_Single_
+  name: Draw(float)
+  nameWithType: Map.MapObject.Draw(float)
+  fullName: HUD.Map.MapObject.Draw(float)
+  nameWithType.vb: Map.MapObject.Draw(Single)
+  fullName.vb: HUD.Map.MapObject.Draw(Single)
+  name.vb: Draw(Single)
+  spec.csharp:
+  - uid: HUD.Map.MapObject.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.Map.MapObject.html#HUD_Map_MapObject_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: HUD.Map.MapObject.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.Map.MapObject.html#HUD_Map_MapObject_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: HUD.Map.ShelterMarker.Draw*
+  commentId: Overload:HUD.Map.ShelterMarker.Draw
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker_Draw_System_Single_
+  name: Draw
+  nameWithType: Map.ShelterMarker.Draw
+  fullName: HUD.Map.ShelterMarker.Draw
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: HUD.Map.ShelterMarker.RevealSymbols*
+  commentId: Overload:HUD.Map.ShelterMarker.RevealSymbols
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker_RevealSymbols
+  name: RevealSymbols
+  nameWithType: Map.ShelterMarker.RevealSymbols
+  fullName: HUD.Map.ShelterMarker.RevealSymbols
+- uid: HUD.Map.ShelterMarker.HideSymbols*
+  commentId: Overload:HUD.Map.ShelterMarker.HideSymbols
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker_HideSymbols
+  name: HideSymbols
+  nameWithType: Map.ShelterMarker.HideSymbols
+  fullName: HUD.Map.ShelterMarker.HideSymbols
+- uid: HUD.Map.FadeInMarker.Destroy
+  commentId: M:HUD.Map.FadeInMarker.Destroy
+  parent: HUD.Map.FadeInMarker
+  isExternal: true
+  href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Destroy
+  name: Destroy()
+  nameWithType: Map.FadeInMarker.Destroy()
+  fullName: HUD.Map.FadeInMarker.Destroy()
+  spec.csharp:
+  - uid: HUD.Map.FadeInMarker.Destroy
+    name: Destroy
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.Map.FadeInMarker.Destroy
+    name: Destroy
+    isExternal: true
+    href: HUD.Map.FadeInMarker.html#HUD_Map_FadeInMarker_Destroy
+  - name: (
+  - name: )
+- uid: HUD.Map.ShelterMarker.Destroy*
+  commentId: Overload:HUD.Map.ShelterMarker.Destroy
+  isExternal: true
+  href: HUD.Map.ShelterMarker.html#HUD_Map_ShelterMarker_Destroy
+  name: Destroy
+  nameWithType: Map.ShelterMarker.Destroy
+  fullName: HUD.Map.ShelterMarker.Destroy

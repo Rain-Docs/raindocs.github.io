@@ -1,0 +1,2137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SandboxGameSession
+  commentId: T:Global.SandboxGameSession
+  id: SandboxGameSession
+  parent: Global
+  children:
+  - Global.SandboxGameSession.#ctor(RainWorldGame)
+  - Global.SandboxGameSession.ChallengeKillList
+  - Global.SandboxGameSession.CustomGameOver
+  - Global.SandboxGameSession.Initiate
+  - Global.SandboxGameSession.PlayMode
+  - Global.SandboxGameSession.ProcessShutDown
+  - Global.SandboxGameSession.ShouldSessionEnd
+  - Global.SandboxGameSession.SpawnCreatures
+  - Global.SandboxGameSession.SpawnDefaultRoomItems
+  - Global.SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)
+  - Global.SandboxGameSession.Update
+  - Global.SandboxGameSession.editor
+  - Global.SandboxGameSession.overlay
+  - Global.SandboxGameSession.overlaySpawned
+  - Global.SandboxGameSession.playerSpawnDens
+  langs:
+  - csharp
+  - vb
+  name: SandboxGameSession
+  nameWithType: SandboxGameSession
+  fullName: SandboxGameSession
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:SandboxGameSession</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SandboxGameSession : ArenaGameSession, IOwnAHUD'
+    content.vb: Public Class SandboxGameSession Inherits ArenaGameSession Implements IOwnAHUD
+  inheritance:
+  - System.Object
+  - Global.GameSession
+  - Global.ArenaGameSession
+  implements:
+  - HUD.IOwnAHUD
+  inheritedMembers:
+  - Global.ArenaGameSession.arenaSitting
+  - Global.ArenaGameSession.rainCycleTimeInMinutes
+  - Global.ArenaGameSession.endSessionCounter
+  - Global.ArenaGameSession.sessionEnded
+  - Global.ArenaGameSession.initiated
+  - Global.ArenaGameSession.playersSpawned
+  - Global.ArenaGameSession.thisFrameActivePlayers
+  - Global.ArenaGameSession.playersGlowing
+  - Global.ArenaGameSession.behaviors
+  - Global.ArenaGameSession.earlyRain
+  - Global.ArenaGameSession.respawnFlies
+  - Global.ArenaGameSession.exitManager
+  - Global.ArenaGameSession.noRain
+  - Global.ArenaGameSession.counter
+  - Global.ArenaGameSession.outsidePlayersCountAsDead
+  - Global.ArenaGameSession.characterStats_Mplayer
+  - Global.ArenaGameSession.chMeta
+  - Global.ArenaGameSession.challengeCompleted
+  - Global.ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+  - Global.ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+  - Global.ArenaGameSession.AddHUD
+  - Global.ArenaGameSession.EndSession
+  - Global.ArenaGameSession.EndOfSessionLogPlayerAsAlive(System.Int32)
+  - Global.ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  - Global.ArenaGameSession.DarkenExitSymbol(System.Int32)
+  - Global.ArenaGameSession.Killing(Player,Creature)
+  - Global.ArenaGameSession.PlayerLandSpear(Player,Creature)
+  - Global.ArenaGameSession.ScoreOfPlayer(Player,System.Boolean)
+  - Global.ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+  - Global.ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+  - Global.ArenaGameSession.PlayersStillActive(System.Boolean,System.Boolean)
+  - Global.ArenaGameSession.SpawnPlayers(Room,System.Collections.Generic.List{System.Int32})
+  - Global.ArenaGameSession.SpawnItem(Room,PlacedObject)
+  - Global.ArenaGameSession.GetOwnerType
+  - Global.ArenaGameSession.PlayHUDSound(SoundID)
+  - Global.ArenaGameSession.FoodCountDownDone
+  - Global.ArenaGameSession.GameTypeSetup
+  - Global.ArenaGameSession.SessionStillGoing
+  - Global.ArenaGameSession.room
+  - Global.ArenaGameSession.CurrentFood
+  - Global.ArenaGameSession.MapInput
+  - Global.ArenaGameSession.RevealMap
+  - Global.ArenaGameSession.MapOwnerInRoomPosition
+  - Global.ArenaGameSession.MapDiscoveryActive
+  - Global.ArenaGameSession.MapOwnerRoom
+  - Global.GameSession.game
+  - Global.GameSession.Players
+  - Global.GameSession.creatureCommunities
+  - Global.GameSession.difficulty
+  - Global.GameSession.characterStats
+  - Global.GameSession.AddPlayer(AbstractCreature)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.SandboxGameSession.editor
+  commentId: F:Global.SandboxGameSession.editor
+  id: editor
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: editor
+  nameWithType: SandboxGameSession.editor
+  fullName: SandboxGameSession.editor
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.editor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxEditor editor
+    return:
+      type: ArenaBehaviors.SandboxEditor
+    content.vb: Public editor As SandboxEditor
+- uid: Global.SandboxGameSession.PlayMode
+  commentId: F:Global.SandboxGameSession.PlayMode
+  id: PlayMode
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: PlayMode
+  nameWithType: SandboxGameSession.PlayMode
+  fullName: SandboxGameSession.PlayMode
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.PlayMode</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool PlayMode
+    return:
+      type: System.Boolean
+    content.vb: Public PlayMode As Boolean
+- uid: Global.SandboxGameSession.overlay
+  commentId: F:Global.SandboxGameSession.overlay
+  id: overlay
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: overlay
+  nameWithType: SandboxGameSession.overlay
+  fullName: SandboxGameSession.overlay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.overlay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxOverlay overlay
+    return:
+      type: Menu.SandboxOverlay
+    content.vb: Public overlay As SandboxOverlay
+- uid: Global.SandboxGameSession.overlaySpawned
+  commentId: F:Global.SandboxGameSession.overlaySpawned
+  id: overlaySpawned
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: overlaySpawned
+  nameWithType: SandboxGameSession.overlaySpawned
+  fullName: SandboxGameSession.overlaySpawned
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.overlaySpawned</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool overlaySpawned
+    return:
+      type: System.Boolean
+    content.vb: Public overlaySpawned As Boolean
+- uid: Global.SandboxGameSession.playerSpawnDens
+  commentId: F:Global.SandboxGameSession.playerSpawnDens
+  id: playerSpawnDens
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: playerSpawnDens
+  nameWithType: SandboxGameSession.playerSpawnDens
+  fullName: SandboxGameSession.playerSpawnDens
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.playerSpawnDens</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<int> playerSpawnDens
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public playerSpawnDens As List(Of Integer)
+- uid: Global.SandboxGameSession.ChallengeKillList
+  commentId: F:Global.SandboxGameSession.ChallengeKillList
+  id: ChallengeKillList
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: ChallengeKillList
+  nameWithType: SandboxGameSession.ChallengeKillList
+  fullName: SandboxGameSession.ChallengeKillList
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SandboxGameSession.ChallengeKillList</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<AbstractCreature> ChallengeKillList
+    return:
+      type: System.Collections.Generic.List{AbstractCreature}
+    content.vb: Public ChallengeKillList As List(Of AbstractCreature)
+- uid: Global.SandboxGameSession.#ctor(RainWorldGame)
+  commentId: M:Global.SandboxGameSession.#ctor(RainWorldGame)
+  id: '#ctor(RainWorldGame)'
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: SandboxGameSession(RainWorldGame)
+  nameWithType: SandboxGameSession.SandboxGameSession(RainWorldGame)
+  fullName: SandboxGameSession.SandboxGameSession(RainWorldGame)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>SandboxGameSession</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxGameSession(RainWorldGame game)
+    parameters:
+    - id: game
+      type: Global.RainWorldGame
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>game</parameter>
+            <parameter>M:SandboxGameSession.#ctor(RainWorldGame)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(game As RainWorldGame)
+  overload: Global.SandboxGameSession.#ctor*
+  nameWithType.vb: SandboxGameSession.New(RainWorldGame)
+  fullName.vb: SandboxGameSession.New(RainWorldGame)
+  name.vb: New(RainWorldGame)
+- uid: Global.SandboxGameSession.ProcessShutDown
+  commentId: M:Global.SandboxGameSession.ProcessShutDown
+  id: ProcessShutDown
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: ProcessShutDown()
+  nameWithType: SandboxGameSession.ProcessShutDown()
+  fullName: SandboxGameSession.ProcessShutDown()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.ProcessShutDown</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ProcessShutDown()
+    content.vb: Public Overrides Sub ProcessShutDown()
+  overridden: Global.ArenaGameSession.ProcessShutDown
+  overload: Global.SandboxGameSession.ProcessShutDown*
+- uid: Global.SandboxGameSession.SpawnCreatures
+  commentId: M:Global.SandboxGameSession.SpawnCreatures
+  id: SpawnCreatures
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: SpawnCreatures()
+  nameWithType: SandboxGameSession.SpawnCreatures()
+  fullName: SandboxGameSession.SpawnCreatures()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.SpawnCreatures</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void SpawnCreatures()
+    content.vb: Public Overrides Sub SpawnCreatures()
+  overridden: Global.ArenaGameSession.SpawnCreatures
+  overload: Global.SandboxGameSession.SpawnCreatures*
+- uid: Global.SandboxGameSession.Initiate
+  commentId: M:Global.SandboxGameSession.Initiate
+  id: Initiate
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: Initiate()
+  nameWithType: SandboxGameSession.Initiate()
+  fullName: SandboxGameSession.Initiate()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.Initiate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Initiate()
+    content.vb: Public Overrides Sub Initiate()
+  overridden: Global.ArenaGameSession.Initiate
+  overload: Global.SandboxGameSession.Initiate*
+- uid: Global.SandboxGameSession.Update
+  commentId: M:Global.SandboxGameSession.Update
+  id: Update
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SandboxGameSession.Update()
+  fullName: SandboxGameSession.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ArenaGameSession.Update
+  overload: Global.SandboxGameSession.Update*
+- uid: Global.SandboxGameSession.CustomGameOver
+  commentId: M:Global.SandboxGameSession.CustomGameOver
+  id: CustomGameOver
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: CustomGameOver()
+  nameWithType: SandboxGameSession.CustomGameOver()
+  fullName: SandboxGameSession.CustomGameOver()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.CustomGameOver</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CustomGameOver()
+    content.vb: Public Sub CustomGameOver()
+  overload: Global.SandboxGameSession.CustomGameOver*
+- uid: Global.SandboxGameSession.ShouldSessionEnd
+  commentId: M:Global.SandboxGameSession.ShouldSessionEnd
+  id: ShouldSessionEnd
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: ShouldSessionEnd()
+  nameWithType: SandboxGameSession.ShouldSessionEnd()
+  fullName: SandboxGameSession.ShouldSessionEnd()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.ShouldSessionEnd</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override bool ShouldSessionEnd()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:SandboxGameSession.ShouldSessionEnd</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function ShouldSessionEnd() As Boolean
+  overridden: Global.ArenaGameSession.ShouldSessionEnd
+  overload: Global.SandboxGameSession.ShouldSessionEnd*
+- uid: Global.SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)
+  commentId: M:Global.SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)
+  id: SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: SpawnItems(IconSymbolData, WorldCoordinate, EntityID)
+  nameWithType: SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData, WorldCoordinate, EntityID)
+  fullName: SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData, WorldCoordinate, EntityID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpawnItems(IconSymbol.IconSymbolData data, WorldCoordinate pos, EntityID entityID)
+    parameters:
+    - id: data
+      type: Global.IconSymbol.IconSymbolData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)</parameter>
+          </include>
+        </markup>
+    - id: pos
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)</parameter>
+          </include>
+        </markup>
+    - id: entityID
+      type: Global.EntityID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>entityID</parameter>
+            <parameter>M:SandboxGameSession.SpawnItems(IconSymbol.IconSymbolData,WorldCoordinate,EntityID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SpawnItems(data As IconSymbol.IconSymbolData, pos As WorldCoordinate, entityID As EntityID)
+  overload: Global.SandboxGameSession.SpawnItems*
+- uid: Global.SandboxGameSession.SpawnDefaultRoomItems
+  commentId: P:Global.SandboxGameSession.SpawnDefaultRoomItems
+  id: SpawnDefaultRoomItems
+  parent: Global.SandboxGameSession
+  langs:
+  - csharp
+  - vb
+  name: SpawnDefaultRoomItems
+  nameWithType: SandboxGameSession.SpawnDefaultRoomItems
+  fullName: SandboxGameSession.SpawnDefaultRoomItems
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:SandboxGameSession.SpawnDefaultRoomItems</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override bool SpawnDefaultRoomItems { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property SpawnDefaultRoomItems As Boolean
+  overridden: Global.ArenaGameSession.SpawnDefaultRoomItems
+  overload: Global.SandboxGameSession.SpawnDefaultRoomItems*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.GameSession
+  commentId: T:Global.GameSession
+  isExternal: true
+  href: GameSession.html
+  name: GameSession
+  nameWithType: GameSession
+  fullName: GameSession
+- uid: Global.ArenaGameSession
+  commentId: T:Global.ArenaGameSession
+  isExternal: true
+  href: ArenaGameSession.html
+  name: ArenaGameSession
+  nameWithType: ArenaGameSession
+  fullName: ArenaGameSession
+- uid: HUD.IOwnAHUD
+  commentId: T:HUD.IOwnAHUD
+  parent: HUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html
+  name: IOwnAHUD
+  nameWithType: IOwnAHUD
+  fullName: HUD.IOwnAHUD
+- uid: Global.ArenaGameSession.arenaSitting
+  commentId: F:Global.ArenaGameSession.arenaSitting
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_arenaSitting
+  name: arenaSitting
+  nameWithType: ArenaGameSession.arenaSitting
+  fullName: ArenaGameSession.arenaSitting
+- uid: Global.ArenaGameSession.rainCycleTimeInMinutes
+  commentId: F:Global.ArenaGameSession.rainCycleTimeInMinutes
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_rainCycleTimeInMinutes
+  name: rainCycleTimeInMinutes
+  nameWithType: ArenaGameSession.rainCycleTimeInMinutes
+  fullName: ArenaGameSession.rainCycleTimeInMinutes
+- uid: Global.ArenaGameSession.endSessionCounter
+  commentId: F:Global.ArenaGameSession.endSessionCounter
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_endSessionCounter
+  name: endSessionCounter
+  nameWithType: ArenaGameSession.endSessionCounter
+  fullName: ArenaGameSession.endSessionCounter
+- uid: Global.ArenaGameSession.sessionEnded
+  commentId: F:Global.ArenaGameSession.sessionEnded
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_sessionEnded
+  name: sessionEnded
+  nameWithType: ArenaGameSession.sessionEnded
+  fullName: ArenaGameSession.sessionEnded
+- uid: Global.ArenaGameSession.initiated
+  commentId: F:Global.ArenaGameSession.initiated
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_initiated
+  name: initiated
+  nameWithType: ArenaGameSession.initiated
+  fullName: ArenaGameSession.initiated
+- uid: Global.ArenaGameSession.playersSpawned
+  commentId: F:Global.ArenaGameSession.playersSpawned
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_playersSpawned
+  name: playersSpawned
+  nameWithType: ArenaGameSession.playersSpawned
+  fullName: ArenaGameSession.playersSpawned
+- uid: Global.ArenaGameSession.thisFrameActivePlayers
+  commentId: F:Global.ArenaGameSession.thisFrameActivePlayers
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_thisFrameActivePlayers
+  name: thisFrameActivePlayers
+  nameWithType: ArenaGameSession.thisFrameActivePlayers
+  fullName: ArenaGameSession.thisFrameActivePlayers
+- uid: Global.ArenaGameSession.playersGlowing
+  commentId: F:Global.ArenaGameSession.playersGlowing
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_playersGlowing
+  name: playersGlowing
+  nameWithType: ArenaGameSession.playersGlowing
+  fullName: ArenaGameSession.playersGlowing
+- uid: Global.ArenaGameSession.behaviors
+  commentId: F:Global.ArenaGameSession.behaviors
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_behaviors
+  name: behaviors
+  nameWithType: ArenaGameSession.behaviors
+  fullName: ArenaGameSession.behaviors
+- uid: Global.ArenaGameSession.earlyRain
+  commentId: F:Global.ArenaGameSession.earlyRain
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_earlyRain
+  name: earlyRain
+  nameWithType: ArenaGameSession.earlyRain
+  fullName: ArenaGameSession.earlyRain
+- uid: Global.ArenaGameSession.respawnFlies
+  commentId: F:Global.ArenaGameSession.respawnFlies
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_respawnFlies
+  name: respawnFlies
+  nameWithType: ArenaGameSession.respawnFlies
+  fullName: ArenaGameSession.respawnFlies
+- uid: Global.ArenaGameSession.exitManager
+  commentId: F:Global.ArenaGameSession.exitManager
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_exitManager
+  name: exitManager
+  nameWithType: ArenaGameSession.exitManager
+  fullName: ArenaGameSession.exitManager
+- uid: Global.ArenaGameSession.noRain
+  commentId: F:Global.ArenaGameSession.noRain
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_noRain
+  name: noRain
+  nameWithType: ArenaGameSession.noRain
+  fullName: ArenaGameSession.noRain
+- uid: Global.ArenaGameSession.counter
+  commentId: F:Global.ArenaGameSession.counter
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_counter
+  name: counter
+  nameWithType: ArenaGameSession.counter
+  fullName: ArenaGameSession.counter
+- uid: Global.ArenaGameSession.outsidePlayersCountAsDead
+  commentId: F:Global.ArenaGameSession.outsidePlayersCountAsDead
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_outsidePlayersCountAsDead
+  name: outsidePlayersCountAsDead
+  nameWithType: ArenaGameSession.outsidePlayersCountAsDead
+  fullName: ArenaGameSession.outsidePlayersCountAsDead
+- uid: Global.ArenaGameSession.characterStats_Mplayer
+  commentId: F:Global.ArenaGameSession.characterStats_Mplayer
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_characterStats_Mplayer
+  name: characterStats_Mplayer
+  nameWithType: ArenaGameSession.characterStats_Mplayer
+  fullName: ArenaGameSession.characterStats_Mplayer
+- uid: Global.ArenaGameSession.chMeta
+  commentId: F:Global.ArenaGameSession.chMeta
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_chMeta
+  name: chMeta
+  nameWithType: ArenaGameSession.chMeta
+  fullName: ArenaGameSession.chMeta
+- uid: Global.ArenaGameSession.challengeCompleted
+  commentId: F:Global.ArenaGameSession.challengeCompleted
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_challengeCompleted
+  name: challengeCompleted
+  nameWithType: ArenaGameSession.challengeCompleted
+  fullName: ArenaGameSession.challengeCompleted
+- uid: Global.ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+  commentId: M:Global.ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_AddBehavior_ArenaBehaviors_ArenaGameBehavior_
+  name: AddBehavior(ArenaGameBehavior)
+  nameWithType: ArenaGameSession.AddBehavior(ArenaGameBehavior)
+  fullName: ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+    name: AddBehavior
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_AddBehavior_ArenaBehaviors_ArenaGameBehavior_
+  - name: (
+  - uid: ArenaBehaviors.ArenaGameBehavior
+    name: ArenaGameBehavior
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.AddBehavior(ArenaBehaviors.ArenaGameBehavior)
+    name: AddBehavior
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_AddBehavior_ArenaBehaviors_ArenaGameBehavior_
+  - name: (
+  - uid: ArenaBehaviors.ArenaGameBehavior
+    name: ArenaGameBehavior
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html
+  - name: )
+- uid: Global.ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+  commentId: M:Global.ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_RemoveBehavior_ArenaBehaviors_ArenaGameBehavior_
+  name: RemoveBehavior(ArenaGameBehavior)
+  nameWithType: ArenaGameSession.RemoveBehavior(ArenaGameBehavior)
+  fullName: ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+    name: RemoveBehavior
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_RemoveBehavior_ArenaBehaviors_ArenaGameBehavior_
+  - name: (
+  - uid: ArenaBehaviors.ArenaGameBehavior
+    name: ArenaGameBehavior
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.RemoveBehavior(ArenaBehaviors.ArenaGameBehavior)
+    name: RemoveBehavior
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_RemoveBehavior_ArenaBehaviors_ArenaGameBehavior_
+  - name: (
+  - uid: ArenaBehaviors.ArenaGameBehavior
+    name: ArenaGameBehavior
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html
+  - name: )
+- uid: Global.ArenaGameSession.AddHUD
+  commentId: M:Global.ArenaGameSession.AddHUD
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_AddHUD
+  name: AddHUD()
+  nameWithType: ArenaGameSession.AddHUD()
+  fullName: ArenaGameSession.AddHUD()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.AddHUD
+    name: AddHUD
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_AddHUD
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.AddHUD
+    name: AddHUD
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_AddHUD
+  - name: (
+  - name: )
+- uid: Global.ArenaGameSession.EndSession
+  commentId: M:Global.ArenaGameSession.EndSession
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_EndSession
+  name: EndSession()
+  nameWithType: ArenaGameSession.EndSession()
+  fullName: ArenaGameSession.EndSession()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.EndSession
+    name: EndSession
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_EndSession
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.EndSession
+    name: EndSession
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_EndSession
+  - name: (
+  - name: )
+- uid: Global.ArenaGameSession.EndOfSessionLogPlayerAsAlive(System.Int32)
+  commentId: M:Global.ArenaGameSession.EndOfSessionLogPlayerAsAlive(System.Int32)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_EndOfSessionLogPlayerAsAlive_System_Int32_
+  name: EndOfSessionLogPlayerAsAlive(int)
+  nameWithType: ArenaGameSession.EndOfSessionLogPlayerAsAlive(int)
+  fullName: ArenaGameSession.EndOfSessionLogPlayerAsAlive(int)
+  nameWithType.vb: ArenaGameSession.EndOfSessionLogPlayerAsAlive(Integer)
+  fullName.vb: ArenaGameSession.EndOfSessionLogPlayerAsAlive(Integer)
+  name.vb: EndOfSessionLogPlayerAsAlive(Integer)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.EndOfSessionLogPlayerAsAlive(System.Int32)
+    name: EndOfSessionLogPlayerAsAlive
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_EndOfSessionLogPlayerAsAlive_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.EndOfSessionLogPlayerAsAlive(System.Int32)
+    name: EndOfSessionLogPlayerAsAlive
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_EndOfSessionLogPlayerAsAlive_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  commentId: M:Global.ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_IsCreatureAllowedToEmergeFromDen_AbstractCreature_
+  name: IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  nameWithType: ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  fullName: ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+    name: IsCreatureAllowedToEmergeFromDen
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_IsCreatureAllowedToEmergeFromDen_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.IsCreatureAllowedToEmergeFromDen(AbstractCreature)
+    name: IsCreatureAllowedToEmergeFromDen
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_IsCreatureAllowedToEmergeFromDen_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArenaGameSession.DarkenExitSymbol(System.Int32)
+  commentId: M:Global.ArenaGameSession.DarkenExitSymbol(System.Int32)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_DarkenExitSymbol_System_Int32_
+  name: DarkenExitSymbol(int)
+  nameWithType: ArenaGameSession.DarkenExitSymbol(int)
+  fullName: ArenaGameSession.DarkenExitSymbol(int)
+  nameWithType.vb: ArenaGameSession.DarkenExitSymbol(Integer)
+  fullName.vb: ArenaGameSession.DarkenExitSymbol(Integer)
+  name.vb: DarkenExitSymbol(Integer)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.DarkenExitSymbol(System.Int32)
+    name: DarkenExitSymbol
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_DarkenExitSymbol_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.DarkenExitSymbol(System.Int32)
+    name: DarkenExitSymbol
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_DarkenExitSymbol_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.ArenaGameSession.Killing(Player,Creature)
+  commentId: M:Global.ArenaGameSession.Killing(Player,Creature)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_Killing_Player_Creature_
+  name: Killing(Player, Creature)
+  nameWithType: ArenaGameSession.Killing(Player, Creature)
+  fullName: ArenaGameSession.Killing(Player, Creature)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.Killing(Player,Creature)
+    name: Killing
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Killing_Player_Creature_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.Killing(Player,Creature)
+    name: Killing
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Killing_Player_Creature_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+- uid: Global.ArenaGameSession.PlayerLandSpear(Player,Creature)
+  commentId: M:Global.ArenaGameSession.PlayerLandSpear(Player,Creature)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_PlayerLandSpear_Player_Creature_
+  name: PlayerLandSpear(Player, Creature)
+  nameWithType: ArenaGameSession.PlayerLandSpear(Player, Creature)
+  fullName: ArenaGameSession.PlayerLandSpear(Player, Creature)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.PlayerLandSpear(Player,Creature)
+    name: PlayerLandSpear
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerLandSpear_Player_Creature_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.PlayerLandSpear(Player,Creature)
+    name: PlayerLandSpear
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerLandSpear_Player_Creature_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+- uid: Global.ArenaGameSession.ScoreOfPlayer(Player,System.Boolean)
+  commentId: M:Global.ArenaGameSession.ScoreOfPlayer(Player,System.Boolean)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_ScoreOfPlayer_Player_System_Boolean_
+  name: ScoreOfPlayer(Player, bool)
+  nameWithType: ArenaGameSession.ScoreOfPlayer(Player, bool)
+  fullName: ArenaGameSession.ScoreOfPlayer(Player, bool)
+  nameWithType.vb: ArenaGameSession.ScoreOfPlayer(Player, Boolean)
+  fullName.vb: ArenaGameSession.ScoreOfPlayer(Player, Boolean)
+  name.vb: ScoreOfPlayer(Player, Boolean)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.ScoreOfPlayer(Player,System.Boolean)
+    name: ScoreOfPlayer
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ScoreOfPlayer_Player_System_Boolean_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.ScoreOfPlayer(Player,System.Boolean)
+    name: ScoreOfPlayer
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ScoreOfPlayer_Player_System_Boolean_
+  - name: (
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+  commentId: M:Global.ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_PlayerTryingToEnterDen_ShortcutHandler_ShortCutVessel_
+  name: PlayerTryingToEnterDen(ShortCutVessel)
+  nameWithType: ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+  fullName: ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+    name: PlayerTryingToEnterDen
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerTryingToEnterDen_ShortcutHandler_ShortCutVessel_
+  - name: (
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.PlayerTryingToEnterDen(ShortcutHandler.ShortCutVessel)
+    name: PlayerTryingToEnterDen
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerTryingToEnterDen_ShortcutHandler_ShortCutVessel_
+  - name: (
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html
+  - name: )
+- uid: Global.ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+  commentId: M:Global.ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_PlayerSpitOutOfShortCut_AbstractCreature_
+  name: PlayerSpitOutOfShortCut(AbstractCreature)
+  nameWithType: ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+  fullName: ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+    name: PlayerSpitOutOfShortCut
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerSpitOutOfShortCut_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.PlayerSpitOutOfShortCut(AbstractCreature)
+    name: PlayerSpitOutOfShortCut
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayerSpitOutOfShortCut_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArenaGameSession.PlayersStillActive(System.Boolean,System.Boolean)
+  commentId: M:Global.ArenaGameSession.PlayersStillActive(System.Boolean,System.Boolean)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_PlayersStillActive_System_Boolean_System_Boolean_
+  name: PlayersStillActive(bool, bool)
+  nameWithType: ArenaGameSession.PlayersStillActive(bool, bool)
+  fullName: ArenaGameSession.PlayersStillActive(bool, bool)
+  nameWithType.vb: ArenaGameSession.PlayersStillActive(Boolean, Boolean)
+  fullName.vb: ArenaGameSession.PlayersStillActive(Boolean, Boolean)
+  name.vb: PlayersStillActive(Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.PlayersStillActive(System.Boolean,System.Boolean)
+    name: PlayersStillActive
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayersStillActive_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.PlayersStillActive(System.Boolean,System.Boolean)
+    name: PlayersStillActive
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayersStillActive_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ArenaGameSession.SpawnPlayers(Room,System.Collections.Generic.List{System.Int32})
+  commentId: M:Global.ArenaGameSession.SpawnPlayers(Room,System.Collections.Generic.List{System.Int32})
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_SpawnPlayers_Room_System_Collections_Generic_List_System_Int32__
+  name: SpawnPlayers(Room, List<int>)
+  nameWithType: ArenaGameSession.SpawnPlayers(Room, List<int>)
+  fullName: ArenaGameSession.SpawnPlayers(Room, System.Collections.Generic.List<int>)
+  nameWithType.vb: ArenaGameSession.SpawnPlayers(Room, List(Of Integer))
+  fullName.vb: ArenaGameSession.SpawnPlayers(Room, System.Collections.Generic.List(Of Integer))
+  name.vb: SpawnPlayers(Room, List(Of Integer))
+  spec.csharp:
+  - uid: Global.ArenaGameSession.SpawnPlayers(Room,System.Collections.Generic.List{System.Int32})
+    name: SpawnPlayers
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnPlayers_Room_System_Collections_Generic_List_System_Int32__
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.SpawnPlayers(Room,System.Collections.Generic.List{System.Int32})
+    name: SpawnPlayers
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnPlayers_Room_System_Collections_Generic_List_System_Int32__
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: Global.ArenaGameSession.SpawnItem(Room,PlacedObject)
+  commentId: M:Global.ArenaGameSession.SpawnItem(Room,PlacedObject)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_SpawnItem_Room_PlacedObject_
+  name: SpawnItem(Room, PlacedObject)
+  nameWithType: ArenaGameSession.SpawnItem(Room, PlacedObject)
+  fullName: ArenaGameSession.SpawnItem(Room, PlacedObject)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.SpawnItem(Room,PlacedObject)
+    name: SpawnItem
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnItem_Room_PlacedObject_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: Global.PlacedObject
+    name: PlacedObject
+    isExternal: true
+    href: PlacedObject.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.SpawnItem(Room,PlacedObject)
+    name: SpawnItem
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnItem_Room_PlacedObject_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: Global.PlacedObject
+    name: PlacedObject
+    isExternal: true
+    href: PlacedObject.html
+  - name: )
+- uid: Global.ArenaGameSession.GetOwnerType
+  commentId: M:Global.ArenaGameSession.GetOwnerType
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_GetOwnerType
+  name: GetOwnerType()
+  nameWithType: ArenaGameSession.GetOwnerType()
+  fullName: ArenaGameSession.GetOwnerType()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.GetOwnerType
+    name: GetOwnerType
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_GetOwnerType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.GetOwnerType
+    name: GetOwnerType
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_GetOwnerType
+  - name: (
+  - name: )
+- uid: Global.ArenaGameSession.PlayHUDSound(SoundID)
+  commentId: M:Global.ArenaGameSession.PlayHUDSound(SoundID)
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_PlayHUDSound_SoundID_
+  name: PlayHUDSound(SoundID)
+  nameWithType: ArenaGameSession.PlayHUDSound(SoundID)
+  fullName: ArenaGameSession.PlayHUDSound(SoundID)
+  spec.csharp:
+  - uid: Global.ArenaGameSession.PlayHUDSound(SoundID)
+    name: PlayHUDSound
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayHUDSound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.PlayHUDSound(SoundID)
+    name: PlayHUDSound
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_PlayHUDSound_SoundID_
+  - name: (
+  - uid: Global.SoundID
+    name: SoundID
+    isExternal: true
+    href: SoundID.html
+  - name: )
+- uid: Global.ArenaGameSession.FoodCountDownDone
+  commentId: M:Global.ArenaGameSession.FoodCountDownDone
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_FoodCountDownDone
+  name: FoodCountDownDone()
+  nameWithType: ArenaGameSession.FoodCountDownDone()
+  fullName: ArenaGameSession.FoodCountDownDone()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.FoodCountDownDone
+    name: FoodCountDownDone
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_FoodCountDownDone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.FoodCountDownDone
+    name: FoodCountDownDone
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_FoodCountDownDone
+  - name: (
+  - name: )
+- uid: Global.ArenaGameSession.GameTypeSetup
+  commentId: P:Global.ArenaGameSession.GameTypeSetup
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_GameTypeSetup
+  name: GameTypeSetup
+  nameWithType: ArenaGameSession.GameTypeSetup
+  fullName: ArenaGameSession.GameTypeSetup
+- uid: Global.ArenaGameSession.SessionStillGoing
+  commentId: P:Global.ArenaGameSession.SessionStillGoing
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_SessionStillGoing
+  name: SessionStillGoing
+  nameWithType: ArenaGameSession.SessionStillGoing
+  fullName: ArenaGameSession.SessionStillGoing
+- uid: Global.ArenaGameSession.room
+  commentId: P:Global.ArenaGameSession.room
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_room
+  name: room
+  nameWithType: ArenaGameSession.room
+  fullName: ArenaGameSession.room
+- uid: Global.ArenaGameSession.CurrentFood
+  commentId: P:Global.ArenaGameSession.CurrentFood
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_CurrentFood
+  name: CurrentFood
+  nameWithType: ArenaGameSession.CurrentFood
+  fullName: ArenaGameSession.CurrentFood
+- uid: Global.ArenaGameSession.MapInput
+  commentId: P:Global.ArenaGameSession.MapInput
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_MapInput
+  name: MapInput
+  nameWithType: ArenaGameSession.MapInput
+  fullName: ArenaGameSession.MapInput
+- uid: Global.ArenaGameSession.RevealMap
+  commentId: P:Global.ArenaGameSession.RevealMap
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_RevealMap
+  name: RevealMap
+  nameWithType: ArenaGameSession.RevealMap
+  fullName: ArenaGameSession.RevealMap
+- uid: Global.ArenaGameSession.MapOwnerInRoomPosition
+  commentId: P:Global.ArenaGameSession.MapOwnerInRoomPosition
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_MapOwnerInRoomPosition
+  name: MapOwnerInRoomPosition
+  nameWithType: ArenaGameSession.MapOwnerInRoomPosition
+  fullName: ArenaGameSession.MapOwnerInRoomPosition
+- uid: Global.ArenaGameSession.MapDiscoveryActive
+  commentId: P:Global.ArenaGameSession.MapDiscoveryActive
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_MapDiscoveryActive
+  name: MapDiscoveryActive
+  nameWithType: ArenaGameSession.MapDiscoveryActive
+  fullName: ArenaGameSession.MapDiscoveryActive
+- uid: Global.ArenaGameSession.MapOwnerRoom
+  commentId: P:Global.ArenaGameSession.MapOwnerRoom
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_MapOwnerRoom
+  name: MapOwnerRoom
+  nameWithType: ArenaGameSession.MapOwnerRoom
+  fullName: ArenaGameSession.MapOwnerRoom
+- uid: Global.GameSession.game
+  commentId: F:Global.GameSession.game
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_game
+  name: game
+  nameWithType: GameSession.game
+  fullName: GameSession.game
+- uid: Global.GameSession.Players
+  commentId: F:Global.GameSession.Players
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_Players
+  name: Players
+  nameWithType: GameSession.Players
+  fullName: GameSession.Players
+- uid: Global.GameSession.creatureCommunities
+  commentId: F:Global.GameSession.creatureCommunities
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_creatureCommunities
+  name: creatureCommunities
+  nameWithType: GameSession.creatureCommunities
+  fullName: GameSession.creatureCommunities
+- uid: Global.GameSession.difficulty
+  commentId: F:Global.GameSession.difficulty
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_difficulty
+  name: difficulty
+  nameWithType: GameSession.difficulty
+  fullName: GameSession.difficulty
+- uid: Global.GameSession.characterStats
+  commentId: F:Global.GameSession.characterStats
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_characterStats
+  name: characterStats
+  nameWithType: GameSession.characterStats
+  fullName: GameSession.characterStats
+- uid: Global.GameSession.AddPlayer(AbstractCreature)
+  commentId: M:Global.GameSession.AddPlayer(AbstractCreature)
+  parent: Global.GameSession
+  isExternal: true
+  href: Global.GameSession.html#GameSession_AddPlayer_AbstractCreature_
+  name: AddPlayer(AbstractCreature)
+  nameWithType: GameSession.AddPlayer(AbstractCreature)
+  fullName: GameSession.AddPlayer(AbstractCreature)
+  spec.csharp:
+  - uid: Global.GameSession.AddPlayer(AbstractCreature)
+    name: AddPlayer
+    isExternal: true
+    href: Global.GameSession.html#GameSession_AddPlayer_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.GameSession.AddPlayer(AbstractCreature)
+    name: AddPlayer
+    isExternal: true
+    href: Global.GameSession.html#GameSession_AddPlayer_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: ArenaBehaviors.SandboxEditor
+  commentId: T:ArenaBehaviors.SandboxEditor
+  parent: ArenaBehaviors
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html
+  name: SandboxEditor
+  nameWithType: SandboxEditor
+  fullName: ArenaBehaviors.SandboxEditor
+- uid: ArenaBehaviors
+  commentId: N:ArenaBehaviors
+  isExternal: true
+  href: ArenaBehaviors.html
+  name: ArenaBehaviors
+  nameWithType: ArenaBehaviors
+  fullName: ArenaBehaviors
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Menu.SandboxOverlay
+  commentId: T:Menu.SandboxOverlay
+  parent: Menu
+  isExternal: true
+  href: Menu.SandboxOverlay.html
+  name: SandboxOverlay
+  nameWithType: SandboxOverlay
+  fullName: Menu.SandboxOverlay
+- uid: Menu
+  commentId: N:Menu
+  isExternal: true
+  href: Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{AbstractCreature}
+  commentId: T:System.Collections.Generic.List{AbstractCreature}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AbstractCreature>
+  nameWithType: List<AbstractCreature>
+  fullName: System.Collections.Generic.List<AbstractCreature>
+  nameWithType.vb: List(Of AbstractCreature)
+  fullName.vb: System.Collections.Generic.List(Of AbstractCreature)
+  name.vb: List(Of AbstractCreature)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.SandboxGameSession.#ctor*
+  commentId: Overload:Global.SandboxGameSession.#ctor
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession__ctor_RainWorldGame_
+  name: SandboxGameSession
+  nameWithType: SandboxGameSession.SandboxGameSession
+  fullName: SandboxGameSession.SandboxGameSession
+  nameWithType.vb: SandboxGameSession.New
+  fullName.vb: SandboxGameSession.New
+  name.vb: New
+- uid: Global.RainWorldGame
+  commentId: T:Global.RainWorldGame
+  isExternal: true
+  href: RainWorldGame.html
+  name: RainWorldGame
+  nameWithType: RainWorldGame
+  fullName: RainWorldGame
+- uid: Global.ArenaGameSession.ProcessShutDown
+  commentId: M:Global.ArenaGameSession.ProcessShutDown
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_ProcessShutDown
+  name: ProcessShutDown()
+  nameWithType: ArenaGameSession.ProcessShutDown()
+  fullName: ArenaGameSession.ProcessShutDown()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.ProcessShutDown
+    name: ProcessShutDown
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ProcessShutDown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.ProcessShutDown
+    name: ProcessShutDown
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ProcessShutDown
+  - name: (
+  - name: )
+- uid: Global.SandboxGameSession.ProcessShutDown*
+  commentId: Overload:Global.SandboxGameSession.ProcessShutDown
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_ProcessShutDown
+  name: ProcessShutDown
+  nameWithType: SandboxGameSession.ProcessShutDown
+  fullName: SandboxGameSession.ProcessShutDown
+- uid: Global.ArenaGameSession.SpawnCreatures
+  commentId: M:Global.ArenaGameSession.SpawnCreatures
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_SpawnCreatures
+  name: SpawnCreatures()
+  nameWithType: ArenaGameSession.SpawnCreatures()
+  fullName: ArenaGameSession.SpawnCreatures()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.SpawnCreatures
+    name: SpawnCreatures
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnCreatures
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.SpawnCreatures
+    name: SpawnCreatures
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_SpawnCreatures
+  - name: (
+  - name: )
+- uid: Global.SandboxGameSession.SpawnCreatures*
+  commentId: Overload:Global.SandboxGameSession.SpawnCreatures
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_SpawnCreatures
+  name: SpawnCreatures
+  nameWithType: SandboxGameSession.SpawnCreatures
+  fullName: SandboxGameSession.SpawnCreatures
+- uid: Global.ArenaGameSession.Initiate
+  commentId: M:Global.ArenaGameSession.Initiate
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_Initiate
+  name: Initiate()
+  nameWithType: ArenaGameSession.Initiate()
+  fullName: ArenaGameSession.Initiate()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.Initiate
+    name: Initiate
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Initiate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.Initiate
+    name: Initiate
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Initiate
+  - name: (
+  - name: )
+- uid: Global.SandboxGameSession.Initiate*
+  commentId: Overload:Global.SandboxGameSession.Initiate
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_Initiate
+  name: Initiate
+  nameWithType: SandboxGameSession.Initiate
+  fullName: SandboxGameSession.Initiate
+- uid: Global.ArenaGameSession.Update
+  commentId: M:Global.ArenaGameSession.Update
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_Update
+  name: Update()
+  nameWithType: ArenaGameSession.Update()
+  fullName: ArenaGameSession.Update()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.Update
+    name: Update
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.Update
+    name: Update
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_Update
+  - name: (
+  - name: )
+- uid: Global.SandboxGameSession.Update*
+  commentId: Overload:Global.SandboxGameSession.Update
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_Update
+  name: Update
+  nameWithType: SandboxGameSession.Update
+  fullName: SandboxGameSession.Update
+- uid: Global.SandboxGameSession.CustomGameOver*
+  commentId: Overload:Global.SandboxGameSession.CustomGameOver
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_CustomGameOver
+  name: CustomGameOver
+  nameWithType: SandboxGameSession.CustomGameOver
+  fullName: SandboxGameSession.CustomGameOver
+- uid: Global.ArenaGameSession.ShouldSessionEnd
+  commentId: M:Global.ArenaGameSession.ShouldSessionEnd
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_ShouldSessionEnd
+  name: ShouldSessionEnd()
+  nameWithType: ArenaGameSession.ShouldSessionEnd()
+  fullName: ArenaGameSession.ShouldSessionEnd()
+  spec.csharp:
+  - uid: Global.ArenaGameSession.ShouldSessionEnd
+    name: ShouldSessionEnd
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ShouldSessionEnd
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArenaGameSession.ShouldSessionEnd
+    name: ShouldSessionEnd
+    isExternal: true
+    href: Global.ArenaGameSession.html#ArenaGameSession_ShouldSessionEnd
+  - name: (
+  - name: )
+- uid: Global.SandboxGameSession.ShouldSessionEnd*
+  commentId: Overload:Global.SandboxGameSession.ShouldSessionEnd
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_ShouldSessionEnd
+  name: ShouldSessionEnd
+  nameWithType: SandboxGameSession.ShouldSessionEnd
+  fullName: SandboxGameSession.ShouldSessionEnd
+- uid: Global.SandboxGameSession.SpawnItems*
+  commentId: Overload:Global.SandboxGameSession.SpawnItems
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_SpawnItems_IconSymbol_IconSymbolData_WorldCoordinate_EntityID_
+  name: SpawnItems
+  nameWithType: SandboxGameSession.SpawnItems
+  fullName: SandboxGameSession.SpawnItems
+- uid: Global.IconSymbol.IconSymbolData
+  commentId: T:Global.IconSymbol.IconSymbolData
+  isExternal: true
+  href: IconSymbol.html
+  name: IconSymbol.IconSymbolData
+  nameWithType: IconSymbol.IconSymbolData
+  fullName: IconSymbol.IconSymbolData
+  spec.csharp:
+  - uid: Global.IconSymbol
+    name: IconSymbol
+    isExternal: true
+    href: IconSymbol.html
+  - name: .
+  - uid: Global.IconSymbol.IconSymbolData
+    name: IconSymbolData
+    isExternal: true
+    href: IconSymbol.IconSymbolData.html
+  spec.vb:
+  - uid: Global.IconSymbol
+    name: IconSymbol
+    isExternal: true
+    href: IconSymbol.html
+  - name: .
+  - uid: Global.IconSymbol.IconSymbolData
+    name: IconSymbolData
+    isExternal: true
+    href: IconSymbol.IconSymbolData.html
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Global.EntityID
+  commentId: T:Global.EntityID
+  isExternal: true
+  href: EntityID.html
+  name: EntityID
+  nameWithType: EntityID
+  fullName: EntityID
+- uid: Global.ArenaGameSession.SpawnDefaultRoomItems
+  commentId: P:Global.ArenaGameSession.SpawnDefaultRoomItems
+  parent: Global.ArenaGameSession
+  isExternal: true
+  href: Global.ArenaGameSession.html#ArenaGameSession_SpawnDefaultRoomItems
+  name: SpawnDefaultRoomItems
+  nameWithType: ArenaGameSession.SpawnDefaultRoomItems
+  fullName: ArenaGameSession.SpawnDefaultRoomItems
+- uid: Global.SandboxGameSession.SpawnDefaultRoomItems*
+  commentId: Overload:Global.SandboxGameSession.SpawnDefaultRoomItems
+  isExternal: true
+  href: Global.SandboxGameSession.html#SandboxGameSession_SpawnDefaultRoomItems
+  name: SpawnDefaultRoomItems
+  nameWithType: SandboxGameSession.SpawnDefaultRoomItems
+  fullName: SandboxGameSession.SpawnDefaultRoomItems

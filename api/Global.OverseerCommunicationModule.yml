@@ -1,0 +1,2104 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.OverseerCommunicationModule
+  commentId: T:Global.OverseerCommunicationModule
+  id: OverseerCommunicationModule
+  parent: Global
+  children:
+  - Global.OverseerCommunicationModule.#ctor(OverseerAI)
+  - Global.OverseerCommunicationModule.AnyProgressionDirection(Player)
+  - Global.OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)
+  - Global.OverseerCommunicationModule.GuideState
+  - Global.OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)
+  - Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  - Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)
+  - Global.OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)
+  - Global.OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)
+  - Global.OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)
+  - Global.OverseerCommunicationModule.PlayerOpenForCommunication
+  - Global.OverseerCommunicationModule.ReevaluateConcern(Player)
+  - Global.OverseerCommunicationModule.Update
+  - Global.OverseerCommunicationModule.WantToShowImage(System.String)
+  - Global.OverseerCommunicationModule.currentConcern
+  - Global.OverseerCommunicationModule.currentConcernWeight
+  - Global.OverseerCommunicationModule.firstFewCycles
+  - Global.OverseerCommunicationModule.followGivenDirectionStreak
+  - Global.OverseerCommunicationModule.forcedDirectionToGive
+  - Global.OverseerCommunicationModule.freeMovementStreak
+  - Global.OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter
+  - Global.OverseerCommunicationModule.holoLight
+  - Global.OverseerCommunicationModule.imageToShow
+  - Global.OverseerCommunicationModule.inputInstruction
+  - Global.OverseerCommunicationModule.lastPlayerRoom
+  - Global.OverseerCommunicationModule.mostDangerousCreatureDanger
+  - Global.OverseerCommunicationModule.mostDangerousCreatureInRoom
+  - Global.OverseerCommunicationModule.mostDeliciousFoodInRoom
+  - Global.OverseerCommunicationModule.mostDelicousFoodDelicious
+  - Global.OverseerCommunicationModule.noBatDirectionFromRoom
+  - Global.OverseerCommunicationModule.noProgressionDirectionFromRoom
+  - Global.OverseerCommunicationModule.noShelterDirectionFromRoom
+  - Global.OverseerCommunicationModule.objectsAlreadyTalkedAbout
+  - Global.OverseerCommunicationModule.overseerAI
+  - Global.OverseerCommunicationModule.player
+  - Global.OverseerCommunicationModule.playerRoom
+  - Global.OverseerCommunicationModule.room
+  - Global.OverseerCommunicationModule.showImageRoom
+  - Global.OverseerCommunicationModule.showedImageTime
+  - Global.OverseerCommunicationModule.unWantedShelter
+  - Global.OverseerCommunicationModule.unWantedSwarmRoom
+  langs:
+  - csharp
+  - vb
+  name: OverseerCommunicationModule
+  nameWithType: OverseerCommunicationModule
+  fullName: OverseerCommunicationModule
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:OverseerCommunicationModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class OverseerCommunicationModule : AIModule'
+    content.vb: Public Class OverseerCommunicationModule Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - Global.AIModule.NewRoom(Room)
+  - Global.AIModule.Utility
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.OverseerCommunicationModule.holoLight
+  commentId: F:Global.OverseerCommunicationModule.holoLight
+  id: holoLight
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: holoLight
+  nameWithType: OverseerCommunicationModule.holoLight
+  fullName: OverseerCommunicationModule.holoLight
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.holoLight</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HologramLight holoLight
+    return:
+      type: Global.HologramLight
+    content.vb: Public holoLight As HologramLight
+- uid: Global.OverseerCommunicationModule.currentConcern
+  commentId: F:Global.OverseerCommunicationModule.currentConcern
+  id: currentConcern
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: currentConcern
+  nameWithType: OverseerCommunicationModule.currentConcern
+  fullName: OverseerCommunicationModule.currentConcern
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.currentConcern</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public OverseerCommunicationModule.PlayerConcern currentConcern
+    return:
+      type: Global.OverseerCommunicationModule.PlayerConcern
+    content.vb: Public currentConcern As OverseerCommunicationModule.PlayerConcern
+- uid: Global.OverseerCommunicationModule.currentConcernWeight
+  commentId: F:Global.OverseerCommunicationModule.currentConcernWeight
+  id: currentConcernWeight
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: currentConcernWeight
+  nameWithType: OverseerCommunicationModule.currentConcernWeight
+  fullName: OverseerCommunicationModule.currentConcernWeight
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.currentConcernWeight</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float currentConcernWeight
+    return:
+      type: System.Single
+    content.vb: Public currentConcernWeight As Single
+- uid: Global.OverseerCommunicationModule.objectsAlreadyTalkedAbout
+  commentId: F:Global.OverseerCommunicationModule.objectsAlreadyTalkedAbout
+  id: objectsAlreadyTalkedAbout
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: objectsAlreadyTalkedAbout
+  nameWithType: OverseerCommunicationModule.objectsAlreadyTalkedAbout
+  fullName: OverseerCommunicationModule.objectsAlreadyTalkedAbout
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.objectsAlreadyTalkedAbout</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<EntityID> objectsAlreadyTalkedAbout
+    return:
+      type: System.Collections.Generic.List{EntityID}
+    content.vb: Public objectsAlreadyTalkedAbout As List(Of EntityID)
+- uid: Global.OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter
+  commentId: F:Global.OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter
+  id: hasAlreadyShowedPlayerToAShelter
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: hasAlreadyShowedPlayerToAShelter
+  nameWithType: OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter
+  fullName: OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.hasAlreadyShowedPlayerToAShelter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool hasAlreadyShowedPlayerToAShelter
+    return:
+      type: System.Boolean
+    content.vb: Public hasAlreadyShowedPlayerToAShelter As Boolean
+- uid: Global.OverseerCommunicationModule.mostDangerousCreatureInRoom
+  commentId: F:Global.OverseerCommunicationModule.mostDangerousCreatureInRoom
+  id: mostDangerousCreatureInRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: mostDangerousCreatureInRoom
+  nameWithType: OverseerCommunicationModule.mostDangerousCreatureInRoom
+  fullName: OverseerCommunicationModule.mostDangerousCreatureInRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.mostDangerousCreatureInRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AbstractCreature mostDangerousCreatureInRoom
+    return:
+      type: Global.AbstractCreature
+    content.vb: Public mostDangerousCreatureInRoom As AbstractCreature
+- uid: Global.OverseerCommunicationModule.mostDangerousCreatureDanger
+  commentId: F:Global.OverseerCommunicationModule.mostDangerousCreatureDanger
+  id: mostDangerousCreatureDanger
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: mostDangerousCreatureDanger
+  nameWithType: OverseerCommunicationModule.mostDangerousCreatureDanger
+  fullName: OverseerCommunicationModule.mostDangerousCreatureDanger
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.mostDangerousCreatureDanger</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float mostDangerousCreatureDanger
+    return:
+      type: System.Single
+    content.vb: Public mostDangerousCreatureDanger As Single
+- uid: Global.OverseerCommunicationModule.mostDeliciousFoodInRoom
+  commentId: F:Global.OverseerCommunicationModule.mostDeliciousFoodInRoom
+  id: mostDeliciousFoodInRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: mostDeliciousFoodInRoom
+  nameWithType: OverseerCommunicationModule.mostDeliciousFoodInRoom
+  fullName: OverseerCommunicationModule.mostDeliciousFoodInRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.mostDeliciousFoodInRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AbstractPhysicalObject mostDeliciousFoodInRoom
+    return:
+      type: Global.AbstractPhysicalObject
+    content.vb: Public mostDeliciousFoodInRoom As AbstractPhysicalObject
+- uid: Global.OverseerCommunicationModule.mostDelicousFoodDelicious
+  commentId: F:Global.OverseerCommunicationModule.mostDelicousFoodDelicious
+  id: mostDelicousFoodDelicious
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: mostDelicousFoodDelicious
+  nameWithType: OverseerCommunicationModule.mostDelicousFoodDelicious
+  fullName: OverseerCommunicationModule.mostDelicousFoodDelicious
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.mostDelicousFoodDelicious</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float mostDelicousFoodDelicious
+    return:
+      type: System.Single
+    content.vb: Public mostDelicousFoodDelicious As Single
+- uid: Global.OverseerCommunicationModule.imageToShow
+  commentId: F:Global.OverseerCommunicationModule.imageToShow
+  id: imageToShow
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: imageToShow
+  nameWithType: OverseerCommunicationModule.imageToShow
+  fullName: OverseerCommunicationModule.imageToShow
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.imageToShow</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ShowProjectedImageEvent imageToShow
+    return:
+      type: Global.ShowProjectedImageEvent
+    content.vb: Public imageToShow As ShowProjectedImageEvent
+- uid: Global.OverseerCommunicationModule.showImageRoom
+  commentId: F:Global.OverseerCommunicationModule.showImageRoom
+  id: showImageRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: showImageRoom
+  nameWithType: OverseerCommunicationModule.showImageRoom
+  fullName: OverseerCommunicationModule.showImageRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.showImageRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int showImageRoom
+    return:
+      type: System.Int32
+    content.vb: Public showImageRoom As Integer
+- uid: Global.OverseerCommunicationModule.forcedDirectionToGive
+  commentId: F:Global.OverseerCommunicationModule.forcedDirectionToGive
+  id: forcedDirectionToGive
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: forcedDirectionToGive
+  nameWithType: OverseerCommunicationModule.forcedDirectionToGive
+  fullName: OverseerCommunicationModule.forcedDirectionToGive
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.forcedDirectionToGive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ReliableIggyDirection forcedDirectionToGive
+    return:
+      type: Global.ReliableIggyDirection
+    content.vb: Public forcedDirectionToGive As ReliableIggyDirection
+- uid: Global.OverseerCommunicationModule.noBatDirectionFromRoom
+  commentId: F:Global.OverseerCommunicationModule.noBatDirectionFromRoom
+  id: noBatDirectionFromRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: noBatDirectionFromRoom
+  nameWithType: OverseerCommunicationModule.noBatDirectionFromRoom
+  fullName: OverseerCommunicationModule.noBatDirectionFromRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.noBatDirectionFromRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int noBatDirectionFromRoom
+    return:
+      type: System.Int32
+    content.vb: Public noBatDirectionFromRoom As Integer
+- uid: Global.OverseerCommunicationModule.noShelterDirectionFromRoom
+  commentId: F:Global.OverseerCommunicationModule.noShelterDirectionFromRoom
+  id: noShelterDirectionFromRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: noShelterDirectionFromRoom
+  nameWithType: OverseerCommunicationModule.noShelterDirectionFromRoom
+  fullName: OverseerCommunicationModule.noShelterDirectionFromRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.noShelterDirectionFromRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int noShelterDirectionFromRoom
+    return:
+      type: System.Int32
+    content.vb: Public noShelterDirectionFromRoom As Integer
+- uid: Global.OverseerCommunicationModule.noProgressionDirectionFromRoom
+  commentId: F:Global.OverseerCommunicationModule.noProgressionDirectionFromRoom
+  id: noProgressionDirectionFromRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: noProgressionDirectionFromRoom
+  nameWithType: OverseerCommunicationModule.noProgressionDirectionFromRoom
+  fullName: OverseerCommunicationModule.noProgressionDirectionFromRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.noProgressionDirectionFromRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int noProgressionDirectionFromRoom
+    return:
+      type: System.Int32
+    content.vb: Public noProgressionDirectionFromRoom As Integer
+- uid: Global.OverseerCommunicationModule.playerRoom
+  commentId: F:Global.OverseerCommunicationModule.playerRoom
+  id: playerRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: playerRoom
+  nameWithType: OverseerCommunicationModule.playerRoom
+  fullName: OverseerCommunicationModule.playerRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.playerRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int playerRoom
+    return:
+      type: System.Int32
+    content.vb: Public playerRoom As Integer
+- uid: Global.OverseerCommunicationModule.lastPlayerRoom
+  commentId: F:Global.OverseerCommunicationModule.lastPlayerRoom
+  id: lastPlayerRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: lastPlayerRoom
+  nameWithType: OverseerCommunicationModule.lastPlayerRoom
+  fullName: OverseerCommunicationModule.lastPlayerRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.lastPlayerRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int lastPlayerRoom
+    return:
+      type: System.Int32
+    content.vb: Public lastPlayerRoom As Integer
+- uid: Global.OverseerCommunicationModule.followGivenDirectionStreak
+  commentId: F:Global.OverseerCommunicationModule.followGivenDirectionStreak
+  id: followGivenDirectionStreak
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: followGivenDirectionStreak
+  nameWithType: OverseerCommunicationModule.followGivenDirectionStreak
+  fullName: OverseerCommunicationModule.followGivenDirectionStreak
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.followGivenDirectionStreak</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int followGivenDirectionStreak
+    return:
+      type: System.Int32
+    content.vb: Public followGivenDirectionStreak As Integer
+- uid: Global.OverseerCommunicationModule.freeMovementStreak
+  commentId: F:Global.OverseerCommunicationModule.freeMovementStreak
+  id: freeMovementStreak
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: freeMovementStreak
+  nameWithType: OverseerCommunicationModule.freeMovementStreak
+  fullName: OverseerCommunicationModule.freeMovementStreak
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.freeMovementStreak</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int freeMovementStreak
+    return:
+      type: System.Int32
+    content.vb: Public freeMovementStreak As Integer
+- uid: Global.OverseerCommunicationModule.unWantedSwarmRoom
+  commentId: F:Global.OverseerCommunicationModule.unWantedSwarmRoom
+  id: unWantedSwarmRoom
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: unWantedSwarmRoom
+  nameWithType: OverseerCommunicationModule.unWantedSwarmRoom
+  fullName: OverseerCommunicationModule.unWantedSwarmRoom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.unWantedSwarmRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int unWantedSwarmRoom
+    return:
+      type: System.Int32
+    content.vb: Public unWantedSwarmRoom As Integer
+- uid: Global.OverseerCommunicationModule.unWantedShelter
+  commentId: F:Global.OverseerCommunicationModule.unWantedShelter
+  id: unWantedShelter
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: unWantedShelter
+  nameWithType: OverseerCommunicationModule.unWantedShelter
+  fullName: OverseerCommunicationModule.unWantedShelter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.unWantedShelter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int unWantedShelter
+    return:
+      type: System.Int32
+    content.vb: Public unWantedShelter As Integer
+- uid: Global.OverseerCommunicationModule.inputInstruction
+  commentId: F:Global.OverseerCommunicationModule.inputInstruction
+  id: inputInstruction
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: inputInstruction
+  nameWithType: OverseerCommunicationModule.inputInstruction
+  fullName: OverseerCommunicationModule.inputInstruction
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.inputInstruction</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public InputInstructionTrigger inputInstruction
+    return:
+      type: Global.InputInstructionTrigger
+    content.vb: Public inputInstruction As InputInstructionTrigger
+- uid: Global.OverseerCommunicationModule.firstFewCycles
+  commentId: F:Global.OverseerCommunicationModule.firstFewCycles
+  id: firstFewCycles
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: firstFewCycles
+  nameWithType: OverseerCommunicationModule.firstFewCycles
+  fullName: OverseerCommunicationModule.firstFewCycles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.firstFewCycles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool firstFewCycles
+    return:
+      type: System.Boolean
+    content.vb: Public firstFewCycles As Boolean
+- uid: Global.OverseerCommunicationModule.showedImageTime
+  commentId: F:Global.OverseerCommunicationModule.showedImageTime
+  id: showedImageTime
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: showedImageTime
+  nameWithType: OverseerCommunicationModule.showedImageTime
+  fullName: OverseerCommunicationModule.showedImageTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:OverseerCommunicationModule.showedImageTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int showedImageTime
+    return:
+      type: System.Int32
+    content.vb: Public showedImageTime As Integer
+- uid: Global.OverseerCommunicationModule.WantToShowImage(System.String)
+  commentId: M:Global.OverseerCommunicationModule.WantToShowImage(System.String)
+  id: WantToShowImage(System.String)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: WantToShowImage(string)
+  nameWithType: OverseerCommunicationModule.WantToShowImage(string)
+  fullName: OverseerCommunicationModule.WantToShowImage(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.WantToShowImage(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool WantToShowImage(string roomName)
+    parameters:
+    - id: roomName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>roomName</parameter>
+            <parameter>M:OverseerCommunicationModule.WantToShowImage(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:OverseerCommunicationModule.WantToShowImage(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function WantToShowImage(roomName As String) As Boolean
+  overload: Global.OverseerCommunicationModule.WantToShowImage*
+  nameWithType.vb: OverseerCommunicationModule.WantToShowImage(String)
+  fullName.vb: OverseerCommunicationModule.WantToShowImage(String)
+  name.vb: WantToShowImage(String)
+- uid: Global.OverseerCommunicationModule.#ctor(OverseerAI)
+  commentId: M:Global.OverseerCommunicationModule.#ctor(OverseerAI)
+  id: '#ctor(OverseerAI)'
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: OverseerCommunicationModule(OverseerAI)
+  nameWithType: OverseerCommunicationModule.OverseerCommunicationModule(OverseerAI)
+  fullName: OverseerCommunicationModule.OverseerCommunicationModule(OverseerAI)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>OverseerCommunicationModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public OverseerCommunicationModule(OverseerAI AI)
+    parameters:
+    - id: AI
+      type: Global.OverseerAI
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:OverseerCommunicationModule.#ctor(OverseerAI)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As OverseerAI)
+  overload: Global.OverseerCommunicationModule.#ctor*
+  nameWithType.vb: OverseerCommunicationModule.New(OverseerAI)
+  fullName.vb: OverseerCommunicationModule.New(OverseerAI)
+  name.vb: New(OverseerAI)
+- uid: Global.OverseerCommunicationModule.Update
+  commentId: M:Global.OverseerCommunicationModule.Update
+  id: Update
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: OverseerCommunicationModule.Update()
+  fullName: OverseerCommunicationModule.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.OverseerCommunicationModule.Update*
+- uid: Global.OverseerCommunicationModule.ReevaluateConcern(Player)
+  commentId: M:Global.OverseerCommunicationModule.ReevaluateConcern(Player)
+  id: ReevaluateConcern(Player)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: ReevaluateConcern(Player)
+  nameWithType: OverseerCommunicationModule.ReevaluateConcern(Player)
+  fullName: OverseerCommunicationModule.ReevaluateConcern(Player)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.ReevaluateConcern(Player)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ReevaluateConcern(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>player</parameter>
+            <parameter>M:OverseerCommunicationModule.ReevaluateConcern(Player)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ReevaluateConcern(player As Player)
+  overload: Global.OverseerCommunicationModule.ReevaluateConcern*
+- uid: Global.OverseerCommunicationModule.AnyProgressionDirection(Player)
+  commentId: M:Global.OverseerCommunicationModule.AnyProgressionDirection(Player)
+  id: AnyProgressionDirection(Player)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: AnyProgressionDirection(Player)
+  nameWithType: OverseerCommunicationModule.AnyProgressionDirection(Player)
+  fullName: OverseerCommunicationModule.AnyProgressionDirection(Player)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.AnyProgressionDirection(Player)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool AnyProgressionDirection(Player player)
+    parameters:
+    - id: player
+      type: Global.Player
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>player</parameter>
+            <parameter>M:OverseerCommunicationModule.AnyProgressionDirection(Player)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:OverseerCommunicationModule.AnyProgressionDirection(Player)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function AnyProgressionDirection(player As Player) As Boolean
+  overload: Global.OverseerCommunicationModule.AnyProgressionDirection*
+- uid: Global.OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)
+  commentId: M:Global.OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)
+  id: FoodDelicousScore(AbstractPhysicalObject,Player)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: FoodDelicousScore(AbstractPhysicalObject, Player)
+  nameWithType: OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject, Player)
+  fullName: OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject, Player)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float FoodDelicousScore(AbstractPhysicalObject foodObject, Player player)
+    parameters:
+    - id: foodObject
+      type: Global.AbstractPhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>foodObject</parameter>
+            <parameter>M:OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)</parameter>
+          </include>
+        </markup>
+    - id: player
+      type: Global.Player
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>player</parameter>
+            <parameter>M:OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:OverseerCommunicationModule.FoodDelicousScore(AbstractPhysicalObject,Player)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FoodDelicousScore(foodObject As AbstractPhysicalObject, player As Player) As Single
+  overload: Global.OverseerCommunicationModule.FoodDelicousScore*
+- uid: Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)
+  commentId: M:Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)
+  id: PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerHasNowBeenWarnedOfCreature(AbstractCreature, bool)
+  nameWithType: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature, bool)
+  fullName: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerHasNowBeenWarnedOfCreature(AbstractCreature creature, bool creatureTypeNowHandled)
+    parameters:
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: creatureTypeNowHandled
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creatureTypeNowHandled</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayerHasNowBeenWarnedOfCreature(creature As AbstractCreature, creatureTypeNowHandled As Boolean)
+  overload: Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature*
+  nameWithType.vb: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature, Boolean)
+  fullName.vb: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature(AbstractCreature, Boolean)
+  name.vb: PlayerHasNowBeenWarnedOfCreature(AbstractCreature, Boolean)
+- uid: Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  commentId: M:Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  id: PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  nameWithType: OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  fullName: OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerHasBeenToldAboutFood(AbstractPhysicalObject foodItem)
+    parameters:
+    - id: foodItem
+      type: Global.AbstractPhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>foodItem</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerHasBeenToldAboutFood(AbstractPhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayerHasBeenToldAboutFood(foodItem As AbstractPhysicalObject)
+  overload: Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood*
+- uid: Global.OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)
+  commentId: M:Global.OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)
+  id: PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerIsFollowingADirection(Message)
+  nameWithType: OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHologram.Message)
+  fullName: OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerIsFollowingADirection(OverseerHologram.Message message)
+    parameters:
+    - id: message
+      type: OverseerHolograms.OverseerHologram.Message
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerIsFollowingADirection(OverseerHolograms.OverseerHologram.Message)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayerIsFollowingADirection(message As OverseerHologram.Message)
+  overload: Global.OverseerCommunicationModule.PlayerIsFollowingADirection*
+- uid: Global.OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)
+  commentId: M:Global.OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)
+  id: PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerNOTfollowingADirection(Message, bool)
+  nameWithType: OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHologram.Message, bool)
+  fullName: OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerNOTfollowingADirection(OverseerHologram.Message message, bool explicitlyVisibleInstruction)
+    parameters:
+    - id: message
+      type: OverseerHolograms.OverseerHologram.Message
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>message</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: explicitlyVisibleInstruction
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>explicitlyVisibleInstruction</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayerNOTfollowingADirection(message As OverseerHologram.Message, explicitlyVisibleInstruction As Boolean)
+  overload: Global.OverseerCommunicationModule.PlayerNOTfollowingADirection*
+  nameWithType.vb: OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHologram.Message, Boolean)
+  fullName.vb: OverseerCommunicationModule.PlayerNOTfollowingADirection(OverseerHolograms.OverseerHologram.Message, Boolean)
+  name.vb: PlayerNOTfollowingADirection(Message, Boolean)
+- uid: Global.OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)
+  commentId: M:Global.OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)
+  id: InWorldInputInstructionCompleted(InputInstructionTrigger)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: InWorldInputInstructionCompleted(InputInstructionTrigger)
+  nameWithType: OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)
+  fullName: OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InWorldInputInstructionCompleted(InputInstructionTrigger instruction)
+    parameters:
+    - id: instruction
+      type: Global.InputInstructionTrigger
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>instruction</parameter>
+            <parameter>M:OverseerCommunicationModule.InWorldInputInstructionCompleted(InputInstructionTrigger)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InWorldInputInstructionCompleted(instruction As InputInstructionTrigger)
+  overload: Global.OverseerCommunicationModule.InWorldInputInstructionCompleted*
+- uid: Global.OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)
+  commentId: M:Global.OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)
+  id: PlayerNeedsInputInstruction(InputInstructionTrigger)
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerNeedsInputInstruction(InputInstructionTrigger)
+  nameWithType: OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)
+  fullName: OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayerNeedsInputInstruction(InputInstructionTrigger instruction)
+    parameters:
+    - id: instruction
+      type: Global.InputInstructionTrigger
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>instruction</parameter>
+            <parameter>M:OverseerCommunicationModule.PlayerNeedsInputInstruction(InputInstructionTrigger)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayerNeedsInputInstruction(instruction As InputInstructionTrigger)
+  overload: Global.OverseerCommunicationModule.PlayerNeedsInputInstruction*
+- uid: Global.OverseerCommunicationModule.overseerAI
+  commentId: P:Global.OverseerCommunicationModule.overseerAI
+  id: overseerAI
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: overseerAI
+  nameWithType: OverseerCommunicationModule.overseerAI
+  fullName: OverseerCommunicationModule.overseerAI
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:OverseerCommunicationModule.overseerAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public OverseerAI overseerAI { get; }
+    parameters: []
+    return:
+      type: Global.OverseerAI
+    content.vb: Public ReadOnly Property overseerAI As OverseerAI
+  overload: Global.OverseerCommunicationModule.overseerAI*
+- uid: Global.OverseerCommunicationModule.GuideState
+  commentId: P:Global.OverseerCommunicationModule.GuideState
+  id: GuideState
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: GuideState
+  nameWithType: OverseerCommunicationModule.GuideState
+  fullName: OverseerCommunicationModule.GuideState
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:OverseerCommunicationModule.GuideState</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public PlayerGuideState GuideState { get; }
+    parameters: []
+    return:
+      type: Global.PlayerGuideState
+    content.vb: Public ReadOnly Property GuideState As PlayerGuideState
+  overload: Global.OverseerCommunicationModule.GuideState*
+- uid: Global.OverseerCommunicationModule.room
+  commentId: P:Global.OverseerCommunicationModule.room
+  id: room
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: room
+  nameWithType: OverseerCommunicationModule.room
+  fullName: OverseerCommunicationModule.room
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:OverseerCommunicationModule.room</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Room room { get; }
+    parameters: []
+    return:
+      type: Global.Room
+    content.vb: Public ReadOnly Property room As Room
+  overload: Global.OverseerCommunicationModule.room*
+- uid: Global.OverseerCommunicationModule.player
+  commentId: P:Global.OverseerCommunicationModule.player
+  id: player
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: OverseerCommunicationModule.player
+  fullName: OverseerCommunicationModule.player
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:OverseerCommunicationModule.player</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Player player { get; }
+    parameters: []
+    return:
+      type: Global.Player
+    content.vb: Public ReadOnly Property player As Player
+  overload: Global.OverseerCommunicationModule.player*
+- uid: Global.OverseerCommunicationModule.PlayerOpenForCommunication
+  commentId: P:Global.OverseerCommunicationModule.PlayerOpenForCommunication
+  id: PlayerOpenForCommunication
+  parent: Global.OverseerCommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: PlayerOpenForCommunication
+  nameWithType: OverseerCommunicationModule.PlayerOpenForCommunication
+  fullName: OverseerCommunicationModule.PlayerOpenForCommunication
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:OverseerCommunicationModule.PlayerOpenForCommunication</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool PlayerOpenForCommunication { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PlayerOpenForCommunication As Boolean
+  overload: Global.OverseerCommunicationModule.PlayerOpenForCommunication*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.HologramLight
+  commentId: T:Global.HologramLight
+  isExternal: true
+  href: HologramLight.html
+  name: HologramLight
+  nameWithType: HologramLight
+  fullName: HologramLight
+- uid: Global.OverseerCommunicationModule.PlayerConcern
+  commentId: T:Global.OverseerCommunicationModule.PlayerConcern
+  isExternal: true
+  href: OverseerCommunicationModule.html
+  name: OverseerCommunicationModule.PlayerConcern
+  nameWithType: OverseerCommunicationModule.PlayerConcern
+  fullName: OverseerCommunicationModule.PlayerConcern
+  spec.csharp:
+  - uid: Global.OverseerCommunicationModule
+    name: OverseerCommunicationModule
+    isExternal: true
+    href: OverseerCommunicationModule.html
+  - name: .
+  - uid: Global.OverseerCommunicationModule.PlayerConcern
+    name: PlayerConcern
+    isExternal: true
+    href: OverseerCommunicationModule.PlayerConcern.html
+  spec.vb:
+  - uid: Global.OverseerCommunicationModule
+    name: OverseerCommunicationModule
+    isExternal: true
+    href: OverseerCommunicationModule.html
+  - name: .
+  - uid: Global.OverseerCommunicationModule.PlayerConcern
+    name: PlayerConcern
+    isExternal: true
+    href: OverseerCommunicationModule.PlayerConcern.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List{EntityID}
+  commentId: T:System.Collections.Generic.List{EntityID}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntityID>
+  nameWithType: List<EntityID>
+  fullName: System.Collections.Generic.List<EntityID>
+  nameWithType.vb: List(Of EntityID)
+  fullName.vb: System.Collections.Generic.List(Of EntityID)
+  name.vb: List(Of EntityID)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.EntityID
+    name: EntityID
+    isExternal: true
+    href: EntityID.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.EntityID
+    name: EntityID
+    isExternal: true
+    href: EntityID.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.AbstractPhysicalObject
+  commentId: T:Global.AbstractPhysicalObject
+  isExternal: true
+  href: AbstractPhysicalObject.html
+  name: AbstractPhysicalObject
+  nameWithType: AbstractPhysicalObject
+  fullName: AbstractPhysicalObject
+- uid: Global.ShowProjectedImageEvent
+  commentId: T:Global.ShowProjectedImageEvent
+  isExternal: true
+  href: ShowProjectedImageEvent.html
+  name: ShowProjectedImageEvent
+  nameWithType: ShowProjectedImageEvent
+  fullName: ShowProjectedImageEvent
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ReliableIggyDirection
+  commentId: T:Global.ReliableIggyDirection
+  isExternal: true
+  href: ReliableIggyDirection.html
+  name: ReliableIggyDirection
+  nameWithType: ReliableIggyDirection
+  fullName: ReliableIggyDirection
+- uid: Global.InputInstructionTrigger
+  commentId: T:Global.InputInstructionTrigger
+  isExternal: true
+  href: InputInstructionTrigger.html
+  name: InputInstructionTrigger
+  nameWithType: InputInstructionTrigger
+  fullName: InputInstructionTrigger
+- uid: Global.OverseerCommunicationModule.WantToShowImage*
+  commentId: Overload:Global.OverseerCommunicationModule.WantToShowImage
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_WantToShowImage_System_String_
+  name: WantToShowImage
+  nameWithType: OverseerCommunicationModule.WantToShowImage
+  fullName: OverseerCommunicationModule.WantToShowImage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.OverseerCommunicationModule.#ctor*
+  commentId: Overload:Global.OverseerCommunicationModule.#ctor
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule__ctor_OverseerAI_
+  name: OverseerCommunicationModule
+  nameWithType: OverseerCommunicationModule.OverseerCommunicationModule
+  fullName: OverseerCommunicationModule.OverseerCommunicationModule
+  nameWithType.vb: OverseerCommunicationModule.New
+  fullName.vb: OverseerCommunicationModule.New
+  name.vb: New
+- uid: Global.OverseerAI
+  commentId: T:Global.OverseerAI
+  isExternal: true
+  href: OverseerAI.html
+  name: OverseerAI
+  nameWithType: OverseerAI
+  fullName: OverseerAI
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.OverseerCommunicationModule.Update*
+  commentId: Overload:Global.OverseerCommunicationModule.Update
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_Update
+  name: Update
+  nameWithType: OverseerCommunicationModule.Update
+  fullName: OverseerCommunicationModule.Update
+- uid: Global.OverseerCommunicationModule.ReevaluateConcern*
+  commentId: Overload:Global.OverseerCommunicationModule.ReevaluateConcern
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_ReevaluateConcern_Player_
+  name: ReevaluateConcern
+  nameWithType: OverseerCommunicationModule.ReevaluateConcern
+  fullName: OverseerCommunicationModule.ReevaluateConcern
+- uid: Global.Player
+  commentId: T:Global.Player
+  isExternal: true
+  href: Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: Global.OverseerCommunicationModule.AnyProgressionDirection*
+  commentId: Overload:Global.OverseerCommunicationModule.AnyProgressionDirection
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_AnyProgressionDirection_Player_
+  name: AnyProgressionDirection
+  nameWithType: OverseerCommunicationModule.AnyProgressionDirection
+  fullName: OverseerCommunicationModule.AnyProgressionDirection
+- uid: Global.OverseerCommunicationModule.FoodDelicousScore*
+  commentId: Overload:Global.OverseerCommunicationModule.FoodDelicousScore
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_FoodDelicousScore_AbstractPhysicalObject_Player_
+  name: FoodDelicousScore
+  nameWithType: OverseerCommunicationModule.FoodDelicousScore
+  fullName: OverseerCommunicationModule.FoodDelicousScore
+- uid: Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerHasNowBeenWarnedOfCreature_AbstractCreature_System_Boolean_
+  name: PlayerHasNowBeenWarnedOfCreature
+  nameWithType: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature
+  fullName: OverseerCommunicationModule.PlayerHasNowBeenWarnedOfCreature
+- uid: Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerHasBeenToldAboutFood
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerHasBeenToldAboutFood_AbstractPhysicalObject_
+  name: PlayerHasBeenToldAboutFood
+  nameWithType: OverseerCommunicationModule.PlayerHasBeenToldAboutFood
+  fullName: OverseerCommunicationModule.PlayerHasBeenToldAboutFood
+- uid: Global.OverseerCommunicationModule.PlayerIsFollowingADirection*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerIsFollowingADirection
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerIsFollowingADirection_OverseerHolograms_OverseerHologram_Message_
+  name: PlayerIsFollowingADirection
+  nameWithType: OverseerCommunicationModule.PlayerIsFollowingADirection
+  fullName: OverseerCommunicationModule.PlayerIsFollowingADirection
+- uid: OverseerHolograms.OverseerHologram.Message
+  commentId: T:OverseerHolograms.OverseerHologram.Message
+  parent: OverseerHolograms
+  isExternal: true
+  href: OverseerHolograms.OverseerHologram.html
+  name: OverseerHologram.Message
+  nameWithType: OverseerHologram.Message
+  fullName: OverseerHolograms.OverseerHologram.Message
+  spec.csharp:
+  - uid: OverseerHolograms.OverseerHologram
+    name: OverseerHologram
+    isExternal: true
+    href: OverseerHolograms.OverseerHologram.html
+  - name: .
+  - uid: OverseerHolograms.OverseerHologram.Message
+    name: Message
+    isExternal: true
+    href: OverseerHolograms.OverseerHologram.Message.html
+  spec.vb:
+  - uid: OverseerHolograms.OverseerHologram
+    name: OverseerHologram
+    isExternal: true
+    href: OverseerHolograms.OverseerHologram.html
+  - name: .
+  - uid: OverseerHolograms.OverseerHologram.Message
+    name: Message
+    isExternal: true
+    href: OverseerHolograms.OverseerHologram.Message.html
+- uid: OverseerHolograms
+  commentId: N:OverseerHolograms
+  isExternal: true
+  href: OverseerHolograms.html
+  name: OverseerHolograms
+  nameWithType: OverseerHolograms
+  fullName: OverseerHolograms
+- uid: Global.OverseerCommunicationModule.PlayerNOTfollowingADirection*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerNOTfollowingADirection
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerNOTfollowingADirection_OverseerHolograms_OverseerHologram_Message_System_Boolean_
+  name: PlayerNOTfollowingADirection
+  nameWithType: OverseerCommunicationModule.PlayerNOTfollowingADirection
+  fullName: OverseerCommunicationModule.PlayerNOTfollowingADirection
+- uid: Global.OverseerCommunicationModule.InWorldInputInstructionCompleted*
+  commentId: Overload:Global.OverseerCommunicationModule.InWorldInputInstructionCompleted
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_InWorldInputInstructionCompleted_InputInstructionTrigger_
+  name: InWorldInputInstructionCompleted
+  nameWithType: OverseerCommunicationModule.InWorldInputInstructionCompleted
+  fullName: OverseerCommunicationModule.InWorldInputInstructionCompleted
+- uid: Global.OverseerCommunicationModule.PlayerNeedsInputInstruction*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerNeedsInputInstruction
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerNeedsInputInstruction_InputInstructionTrigger_
+  name: PlayerNeedsInputInstruction
+  nameWithType: OverseerCommunicationModule.PlayerNeedsInputInstruction
+  fullName: OverseerCommunicationModule.PlayerNeedsInputInstruction
+- uid: Global.OverseerCommunicationModule.overseerAI*
+  commentId: Overload:Global.OverseerCommunicationModule.overseerAI
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_overseerAI
+  name: overseerAI
+  nameWithType: OverseerCommunicationModule.overseerAI
+  fullName: OverseerCommunicationModule.overseerAI
+- uid: Global.OverseerCommunicationModule.GuideState*
+  commentId: Overload:Global.OverseerCommunicationModule.GuideState
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_GuideState
+  name: GuideState
+  nameWithType: OverseerCommunicationModule.GuideState
+  fullName: OverseerCommunicationModule.GuideState
+- uid: Global.PlayerGuideState
+  commentId: T:Global.PlayerGuideState
+  isExternal: true
+  href: PlayerGuideState.html
+  name: PlayerGuideState
+  nameWithType: PlayerGuideState
+  fullName: PlayerGuideState
+- uid: Global.OverseerCommunicationModule.room*
+  commentId: Overload:Global.OverseerCommunicationModule.room
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_room
+  name: room
+  nameWithType: OverseerCommunicationModule.room
+  fullName: OverseerCommunicationModule.room
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.OverseerCommunicationModule.player*
+  commentId: Overload:Global.OverseerCommunicationModule.player
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_player
+  name: player
+  nameWithType: OverseerCommunicationModule.player
+  fullName: OverseerCommunicationModule.player
+- uid: Global.OverseerCommunicationModule.PlayerOpenForCommunication*
+  commentId: Overload:Global.OverseerCommunicationModule.PlayerOpenForCommunication
+  isExternal: true
+  href: Global.OverseerCommunicationModule.html#OverseerCommunicationModule_PlayerOpenForCommunication
+  name: PlayerOpenForCommunication
+  nameWithType: OverseerCommunicationModule.PlayerOpenForCommunication
+  fullName: OverseerCommunicationModule.PlayerOpenForCommunication

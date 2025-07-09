@@ -1,0 +1,1558 @@
+### YamlMime:ManagedReference
+items:
+- uid: CoralBrain.CircuitConnector
+  commentId: T:CoralBrain.CircuitConnector
+  id: CircuitConnector
+  parent: CoralBrain
+  children:
+  - CoralBrain.CircuitConnector.#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)
+  - CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)
+  - CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)
+  - CoralBrain.CircuitConnector.OwnerRoom
+  - CoralBrain.CircuitConnector.ResetDir(System.Int32)
+  - CoralBrain.CircuitConnector.Update(System.Boolean)
+  - CoralBrain.CircuitConnector.connections
+  - CoralBrain.CircuitConnector.legBits
+  langs:
+  - csharp
+  - vb
+  name: CircuitConnector
+  nameWithType: CircuitConnector
+  fullName: CoralBrain.CircuitConnector
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:CoralBrain.CircuitConnector</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class CircuitConnector : CosmeticSprite, IDrawable, IRunDuringDialog, IOwnMycelia'
+    content.vb: Public Class CircuitConnector Inherits CosmeticSprite Implements IDrawable, IRunDuringDialog, IOwnMycelia
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.CosmeticSprite
+  implements:
+  - Global.IDrawable
+  - MoreSlugcats.IRunDuringDialog
+  - Global.IOwnMycelia
+  inheritedMembers:
+  - Global.CosmeticSprite.pos
+  - Global.CosmeticSprite.lastPos
+  - Global.CosmeticSprite.vel
+  - Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: CoralBrain.CircuitConnector.connections
+  commentId: F:CoralBrain.CircuitConnector.connections
+  id: connections
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: connections
+  nameWithType: CircuitConnector.connections
+  fullName: CoralBrain.CircuitConnector.connections
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:CoralBrain.CircuitConnector.connections</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Mycelium[] connections
+    return:
+      type: CoralBrain.Mycelium[]
+    content.vb: Public connections As Mycelium()
+- uid: CoralBrain.CircuitConnector.legBits
+  commentId: F:CoralBrain.CircuitConnector.legBits
+  id: legBits
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: legBits
+  nameWithType: CircuitConnector.legBits
+  fullName: CoralBrain.CircuitConnector.legBits
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:CoralBrain.CircuitConnector.legBits</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CoralCircuit.CircuitBit[] legBits
+    return:
+      type: CoralBrain.CoralCircuit.CircuitBit[]
+    content.vb: Public legBits As CoralCircuit.CircuitBit()
+- uid: CoralBrain.CircuitConnector.#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)
+  commentId: M:CoralBrain.CircuitConnector.#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)
+  id: '#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)'
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: CircuitConnector(CircuitBit, Room)
+  nameWithType: CircuitConnector.CircuitConnector(CoralCircuit.CircuitBit, Room)
+  fullName: CoralBrain.CircuitConnector.CircuitConnector(CoralBrain.CoralCircuit.CircuitBit, Room)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>CoralBrain.CircuitConnector</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CircuitConnector(CoralCircuit.CircuitBit bit, Room room)
+    parameters:
+    - id: bit
+      type: CoralBrain.CoralCircuit.CircuitBit
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>bit</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.#ctor(CoralBrain.CoralCircuit.CircuitBit,Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(bit As CoralCircuit.CircuitBit, room As Room)
+  overload: CoralBrain.CircuitConnector.#ctor*
+  nameWithType.vb: CircuitConnector.New(CoralCircuit.CircuitBit, Room)
+  fullName.vb: CoralBrain.CircuitConnector.New(CoralBrain.CoralCircuit.CircuitBit, Room)
+  name.vb: New(CircuitBit, Room)
+- uid: CoralBrain.CircuitConnector.Update(System.Boolean)
+  commentId: M:CoralBrain.CircuitConnector.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: CircuitConnector.Update(bool)
+  fullName: CoralBrain.CircuitConnector.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.CosmeticSprite.Update(System.Boolean)
+  overload: CoralBrain.CircuitConnector.Update*
+  nameWithType.vb: CircuitConnector.Update(Boolean)
+  fullName.vb: CoralBrain.CircuitConnector.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)
+  commentId: M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)
+  id: OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: OnCircuitPos(Vector2, CircuitBit, float)
+  nameWithType: CircuitConnector.OnCircuitPos(Vector2, CoralCircuit.CircuitBit, float)
+  fullName: CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2, CoralBrain.CoralCircuit.CircuitBit, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 OnCircuitPos(Vector2 relPos, CoralCircuit.CircuitBit bitInQuestion, float timeStacker)
+    parameters:
+    - id: relPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>relPos</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: bitInQuestion
+      type: CoralBrain.CoralCircuit.CircuitBit
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>bitInQuestion</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2,CoralBrain.CoralCircuit.CircuitBit,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function OnCircuitPos(relPos As Vector2, bitInQuestion As CoralCircuit.CircuitBit, timeStacker As Single) As Vector2
+  overload: CoralBrain.CircuitConnector.OnCircuitPos*
+  nameWithType.vb: CircuitConnector.OnCircuitPos(Vector2, CoralCircuit.CircuitBit, Single)
+  fullName.vb: CoralBrain.CircuitConnector.OnCircuitPos(UnityEngine.Vector2, CoralBrain.CoralCircuit.CircuitBit, Single)
+  name.vb: OnCircuitPos(Vector2, CircuitBit, Single)
+- uid: CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: CoralBrain.CircuitConnector.InitiateSprites*
+- uid: CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: CoralBrain.CircuitConnector.DrawSprites*
+  nameWithType.vb: CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CoralBrain.CircuitConnector.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)
+  commentId: M:CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)
+  id: ConnectionPos(System.Int32,System.Single)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: ConnectionPos(int, float)
+  nameWithType: CircuitConnector.ConnectionPos(int, float)
+  fullName: CoralBrain.CircuitConnector.ConnectionPos(int, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 ConnectionPos(int index, float timeStacker)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.ConnectionPos(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ConnectionPos(index As Integer, timeStacker As Single) As Vector2
+  overload: CoralBrain.CircuitConnector.ConnectionPos*
+  implements:
+  - Global.IOwnMycelia.ConnectionPos(System.Int32,System.Single)
+  nameWithType.vb: CircuitConnector.ConnectionPos(Integer, Single)
+  fullName.vb: CoralBrain.CircuitConnector.ConnectionPos(Integer, Single)
+  name.vb: ConnectionPos(Integer, Single)
+- uid: CoralBrain.CircuitConnector.ResetDir(System.Int32)
+  commentId: M:CoralBrain.CircuitConnector.ResetDir(System.Int32)
+  id: ResetDir(System.Int32)
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: ResetDir(int)
+  nameWithType: CircuitConnector.ResetDir(int)
+  fullName: CoralBrain.CircuitConnector.ResetDir(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CoralBrain.CircuitConnector.ResetDir(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 ResetDir(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.ResetDir(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CoralBrain.CircuitConnector.ResetDir(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ResetDir(index As Integer) As Vector2
+  overload: CoralBrain.CircuitConnector.ResetDir*
+  implements:
+  - Global.IOwnMycelia.ResetDir(System.Int32)
+  nameWithType.vb: CircuitConnector.ResetDir(Integer)
+  fullName.vb: CoralBrain.CircuitConnector.ResetDir(Integer)
+  name.vb: ResetDir(Integer)
+- uid: CoralBrain.CircuitConnector.OwnerRoom
+  commentId: P:CoralBrain.CircuitConnector.OwnerRoom
+  id: OwnerRoom
+  parent: CoralBrain.CircuitConnector
+  langs:
+  - csharp
+  - vb
+  name: OwnerRoom
+  nameWithType: CircuitConnector.OwnerRoom
+  fullName: CoralBrain.CircuitConnector.OwnerRoom
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: CoralBrain
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:CoralBrain.CircuitConnector.OwnerRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Room OwnerRoom { get; }
+    parameters: []
+    return:
+      type: Global.Room
+    content.vb: Public ReadOnly Property OwnerRoom As Room
+  overload: CoralBrain.CircuitConnector.OwnerRoom*
+  implements:
+  - Global.IOwnMycelia.OwnerRoom
+references:
+- uid: CoralBrain
+  commentId: N:CoralBrain
+  isExternal: true
+  href: CoralBrain.html
+  name: CoralBrain
+  nameWithType: CoralBrain
+  fullName: CoralBrain
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.CosmeticSprite
+  commentId: T:Global.CosmeticSprite
+  isExternal: true
+  href: CosmeticSprite.html
+  name: CosmeticSprite
+  nameWithType: CosmeticSprite
+  fullName: CosmeticSprite
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: MoreSlugcats.IRunDuringDialog
+  commentId: T:MoreSlugcats.IRunDuringDialog
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.IRunDuringDialog.html
+  name: IRunDuringDialog
+  nameWithType: IRunDuringDialog
+  fullName: MoreSlugcats.IRunDuringDialog
+- uid: Global.IOwnMycelia
+  commentId: T:Global.IOwnMycelia
+  isExternal: true
+  href: IOwnMycelia.html
+  name: IOwnMycelia
+  nameWithType: IOwnMycelia
+  fullName: IOwnMycelia
+- uid: Global.CosmeticSprite.pos
+  commentId: F:Global.CosmeticSprite.pos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_pos
+  name: pos
+  nameWithType: CosmeticSprite.pos
+  fullName: CosmeticSprite.pos
+- uid: Global.CosmeticSprite.lastPos
+  commentId: F:Global.CosmeticSprite.lastPos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_lastPos
+  name: lastPos
+  nameWithType: CosmeticSprite.lastPos
+  fullName: CosmeticSprite.lastPos
+- uid: Global.CosmeticSprite.vel
+  commentId: F:Global.CosmeticSprite.vel
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_vel
+  name: vel
+  nameWithType: CosmeticSprite.vel
+  fullName: CosmeticSprite.vel
+- uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: PausedDrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: PausedDrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: CoralBrain.Mycelium[]
+  isExternal: true
+  href: CoralBrain.Mycelium.html
+  name: Mycelium[]
+  nameWithType: Mycelium[]
+  fullName: CoralBrain.Mycelium[]
+  nameWithType.vb: Mycelium()
+  fullName.vb: CoralBrain.Mycelium()
+  name.vb: Mycelium()
+  spec.csharp:
+  - uid: CoralBrain.Mycelium
+    name: Mycelium
+    isExternal: true
+    href: CoralBrain.Mycelium.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: CoralBrain.Mycelium
+    name: Mycelium
+    isExternal: true
+    href: CoralBrain.Mycelium.html
+  - name: (
+  - name: )
+- uid: CoralBrain.CoralCircuit.CircuitBit[]
+  isExternal: true
+  href: CoralBrain.CoralCircuit.CircuitBit.html
+  name: CircuitBit[]
+  nameWithType: CoralCircuit.CircuitBit[]
+  fullName: CoralBrain.CoralCircuit.CircuitBit[]
+  nameWithType.vb: CoralCircuit.CircuitBit()
+  fullName.vb: CoralBrain.CoralCircuit.CircuitBit()
+  name.vb: CircuitBit()
+  spec.csharp:
+  - uid: CoralBrain.CoralCircuit.CircuitBit
+    name: CircuitBit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.CircuitBit.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: CoralBrain.CoralCircuit.CircuitBit
+    name: CircuitBit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.CircuitBit.html
+  - name: (
+  - name: )
+- uid: CoralBrain.CircuitConnector.#ctor*
+  commentId: Overload:CoralBrain.CircuitConnector.#ctor
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector__ctor_CoralBrain_CoralCircuit_CircuitBit_Room_
+  name: CircuitConnector
+  nameWithType: CircuitConnector.CircuitConnector
+  fullName: CoralBrain.CircuitConnector.CircuitConnector
+  nameWithType.vb: CircuitConnector.New
+  fullName.vb: CoralBrain.CircuitConnector.New
+  name.vb: New
+- uid: CoralBrain.CoralCircuit.CircuitBit
+  commentId: T:CoralBrain.CoralCircuit.CircuitBit
+  parent: CoralBrain
+  isExternal: true
+  href: CoralBrain.CoralCircuit.html
+  name: CoralCircuit.CircuitBit
+  nameWithType: CoralCircuit.CircuitBit
+  fullName: CoralBrain.CoralCircuit.CircuitBit
+  spec.csharp:
+  - uid: CoralBrain.CoralCircuit
+    name: CoralCircuit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.html
+  - name: .
+  - uid: CoralBrain.CoralCircuit.CircuitBit
+    name: CircuitBit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.CircuitBit.html
+  spec.vb:
+  - uid: CoralBrain.CoralCircuit
+    name: CoralCircuit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.html
+  - name: .
+  - uid: CoralBrain.CoralCircuit.CircuitBit
+    name: CircuitBit
+    isExternal: true
+    href: CoralBrain.CoralCircuit.CircuitBit.html
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.CosmeticSprite.Update(System.Boolean)
+  commentId: M:Global.CosmeticSprite.Update(System.Boolean)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: CosmeticSprite.Update(bool)
+  fullName: CosmeticSprite.Update(bool)
+  nameWithType.vb: CosmeticSprite.Update(Boolean)
+  fullName.vb: CosmeticSprite.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: CoralBrain.CircuitConnector.Update*
+  commentId: Overload:CoralBrain.CircuitConnector.Update
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_Update_System_Boolean_
+  name: Update
+  nameWithType: CircuitConnector.Update
+  fullName: CoralBrain.CircuitConnector.Update
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CoralBrain.CircuitConnector.OnCircuitPos*
+  commentId: Overload:CoralBrain.CircuitConnector.OnCircuitPos
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_OnCircuitPos_UnityEngine_Vector2_CoralBrain_CoralCircuit_CircuitBit_System_Single_
+  name: OnCircuitPos
+  nameWithType: CircuitConnector.OnCircuitPos
+  fullName: CoralBrain.CircuitConnector.OnCircuitPos
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: CoralBrain.CircuitConnector.InitiateSprites*
+  commentId: Overload:CoralBrain.CircuitConnector.InitiateSprites
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: CircuitConnector.InitiateSprites
+  fullName: CoralBrain.CircuitConnector.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: CoralBrain.CircuitConnector.DrawSprites*
+  commentId: Overload:CoralBrain.CircuitConnector.DrawSprites
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: CircuitConnector.DrawSprites
+  fullName: CoralBrain.CircuitConnector.DrawSprites
+- uid: CoralBrain.CircuitConnector.ConnectionPos*
+  commentId: Overload:CoralBrain.CircuitConnector.ConnectionPos
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_ConnectionPos_System_Int32_System_Single_
+  name: ConnectionPos
+  nameWithType: CircuitConnector.ConnectionPos
+  fullName: CoralBrain.CircuitConnector.ConnectionPos
+- uid: Global.IOwnMycelia.ConnectionPos(System.Int32,System.Single)
+  commentId: M:Global.IOwnMycelia.ConnectionPos(System.Int32,System.Single)
+  parent: Global.IOwnMycelia
+  isExternal: true
+  href: Global.IOwnMycelia.html#IOwnMycelia_ConnectionPos_System_Int32_System_Single_
+  name: ConnectionPos(int, float)
+  nameWithType: IOwnMycelia.ConnectionPos(int, float)
+  fullName: IOwnMycelia.ConnectionPos(int, float)
+  nameWithType.vb: IOwnMycelia.ConnectionPos(Integer, Single)
+  fullName.vb: IOwnMycelia.ConnectionPos(Integer, Single)
+  name.vb: ConnectionPos(Integer, Single)
+  spec.csharp:
+  - uid: Global.IOwnMycelia.ConnectionPos(System.Int32,System.Single)
+    name: ConnectionPos
+    isExternal: true
+    href: Global.IOwnMycelia.html#IOwnMycelia_ConnectionPos_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.IOwnMycelia.ConnectionPos(System.Int32,System.Single)
+    name: ConnectionPos
+    isExternal: true
+    href: Global.IOwnMycelia.html#IOwnMycelia_ConnectionPos_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CoralBrain.CircuitConnector.ResetDir*
+  commentId: Overload:CoralBrain.CircuitConnector.ResetDir
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_ResetDir_System_Int32_
+  name: ResetDir
+  nameWithType: CircuitConnector.ResetDir
+  fullName: CoralBrain.CircuitConnector.ResetDir
+- uid: Global.IOwnMycelia.ResetDir(System.Int32)
+  commentId: M:Global.IOwnMycelia.ResetDir(System.Int32)
+  parent: Global.IOwnMycelia
+  isExternal: true
+  href: Global.IOwnMycelia.html#IOwnMycelia_ResetDir_System_Int32_
+  name: ResetDir(int)
+  nameWithType: IOwnMycelia.ResetDir(int)
+  fullName: IOwnMycelia.ResetDir(int)
+  nameWithType.vb: IOwnMycelia.ResetDir(Integer)
+  fullName.vb: IOwnMycelia.ResetDir(Integer)
+  name.vb: ResetDir(Integer)
+  spec.csharp:
+  - uid: Global.IOwnMycelia.ResetDir(System.Int32)
+    name: ResetDir
+    isExternal: true
+    href: Global.IOwnMycelia.html#IOwnMycelia_ResetDir_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.IOwnMycelia.ResetDir(System.Int32)
+    name: ResetDir
+    isExternal: true
+    href: Global.IOwnMycelia.html#IOwnMycelia_ResetDir_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: CoralBrain.CircuitConnector.OwnerRoom*
+  commentId: Overload:CoralBrain.CircuitConnector.OwnerRoom
+  isExternal: true
+  href: CoralBrain.CircuitConnector.html#CoralBrain_CircuitConnector_OwnerRoom
+  name: OwnerRoom
+  nameWithType: CircuitConnector.OwnerRoom
+  fullName: CoralBrain.CircuitConnector.OwnerRoom
+- uid: Global.IOwnMycelia.OwnerRoom
+  commentId: P:Global.IOwnMycelia.OwnerRoom
+  parent: Global.IOwnMycelia
+  isExternal: true
+  href: Global.IOwnMycelia.html#IOwnMycelia_OwnerRoom
+  name: OwnerRoom
+  nameWithType: IOwnMycelia.OwnerRoom
+  fullName: IOwnMycelia.OwnerRoom

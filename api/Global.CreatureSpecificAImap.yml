@@ -1,0 +1,1049 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CreatureSpecificAImap
+  commentId: T:Global.CreatureSpecificAImap
+  id: CreatureSpecificAImap
+  parent: Global
+  children:
+  - Global.CreatureSpecificAImap.#ctor(AImap,CreatureTemplate)
+  - Global.CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)
+  - Global.CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)
+  - Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid(System.Single[])
+  - Global.CreatureSpecificAImap.LoadFromCompressedIntGrid(System.Int32[])
+  - Global.CreatureSpecificAImap.ReturnCompressedFloatGrid
+  - Global.CreatureSpecificAImap.ReturnCompressedIntGrid
+  - Global.CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)
+  - Global.CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Global.CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)
+  - Global.CreatureSpecificAImap.accessableTiles
+  - Global.CreatureSpecificAImap.numberOfNodes
+  langs:
+  - csharp
+  - vb
+  name: CreatureSpecificAImap
+  nameWithType: CreatureSpecificAImap
+  fullName: CreatureSpecificAImap
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:CreatureSpecificAImap</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class CreatureSpecificAImap
+    content.vb: Public Class CreatureSpecificAImap
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.CreatureSpecificAImap.accessableTiles
+  commentId: F:Global.CreatureSpecificAImap.accessableTiles
+  id: accessableTiles
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: accessableTiles
+  nameWithType: CreatureSpecificAImap.accessableTiles
+  fullName: CreatureSpecificAImap.accessableTiles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:CreatureSpecificAImap.accessableTiles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IntVector2[] accessableTiles
+    return:
+      type: RWCustom.IntVector2[]
+    content.vb: Public accessableTiles As IntVector2()
+- uid: Global.CreatureSpecificAImap.numberOfNodes
+  commentId: F:Global.CreatureSpecificAImap.numberOfNodes
+  id: numberOfNodes
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: numberOfNodes
+  nameWithType: CreatureSpecificAImap.numberOfNodes
+  fullName: CreatureSpecificAImap.numberOfNodes
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:CreatureSpecificAImap.numberOfNodes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int numberOfNodes
+    return:
+      type: System.Int32
+    content.vb: Public numberOfNodes As Integer
+- uid: Global.CreatureSpecificAImap.#ctor(AImap,CreatureTemplate)
+  commentId: M:Global.CreatureSpecificAImap.#ctor(AImap,CreatureTemplate)
+  id: '#ctor(AImap,CreatureTemplate)'
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: CreatureSpecificAImap(AImap, CreatureTemplate)
+  nameWithType: CreatureSpecificAImap.CreatureSpecificAImap(AImap, CreatureTemplate)
+  fullName: CreatureSpecificAImap.CreatureSpecificAImap(AImap, CreatureTemplate)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>CreatureSpecificAImap</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CreatureSpecificAImap(AImap aiMap, CreatureTemplate crit)
+    parameters:
+    - id: aiMap
+      type: Global.AImap
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>aiMap</parameter>
+            <parameter>M:CreatureSpecificAImap.#ctor(AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    - id: crit
+      type: Global.CreatureTemplate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:CreatureSpecificAImap.#ctor(AImap,CreatureTemplate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(aiMap As AImap, crit As CreatureTemplate)
+  overload: Global.CreatureSpecificAImap.#ctor*
+  nameWithType.vb: CreatureSpecificAImap.New(AImap, CreatureTemplate)
+  fullName.vb: CreatureSpecificAImap.New(AImap, CreatureTemplate)
+  name.vb: New(AImap, CreatureTemplate)
+- uid: Global.CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)
+  commentId: M:Global.CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)
+  id: TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: TriangulateDistance(IntVector2, IntVector2)
+  nameWithType: CreatureSpecificAImap.TriangulateDistance(IntVector2, IntVector2)
+  fullName: CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2, RWCustom.IntVector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int TriangulateDistance(IntVector2 A, IntVector2 B)
+    parameters:
+    - id: A
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>A</parameter>
+            <parameter>M:CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    - id: B
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>B</parameter>
+            <parameter>M:CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CreatureSpecificAImap.TriangulateDistance(RWCustom.IntVector2,RWCustom.IntVector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function TriangulateDistance(A As IntVector2, B As IntVector2) As Integer
+  overload: Global.CreatureSpecificAImap.TriangulateDistance*
+- uid: Global.CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)
+  commentId: M:Global.CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)
+  id: GetDistanceToExit(System.Int32,System.Int32,System.Int32)
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: GetDistanceToExit(int, int, int)
+  nameWithType: CreatureSpecificAImap.GetDistanceToExit(int, int, int)
+  fullName: CreatureSpecificAImap.GetDistanceToExit(int, int, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int GetDistanceToExit(int x, int y, int creatureSpecificExitIndex)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>x</parameter>
+            <parameter>M:CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: y
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>y</parameter>
+            <parameter>M:CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: creatureSpecificExitIndex
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creatureSpecificExitIndex</parameter>
+            <parameter>M:CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CreatureSpecificAImap.GetDistanceToExit(System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetDistanceToExit(x As Integer, y As Integer, creatureSpecificExitIndex As Integer) As Integer
+  overload: Global.CreatureSpecificAImap.GetDistanceToExit*
+  nameWithType.vb: CreatureSpecificAImap.GetDistanceToExit(Integer, Integer, Integer)
+  fullName.vb: CreatureSpecificAImap.GetDistanceToExit(Integer, Integer, Integer)
+  name.vb: GetDistanceToExit(Integer, Integer, Integer)
+- uid: Global.CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)
+  commentId: M:Global.CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)
+  id: GetAccessibility(System.Int32,System.Int32)
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: GetAccessibility(int, int)
+  nameWithType: CreatureSpecificAImap.GetAccessibility(int, int)
+  fullName: CreatureSpecificAImap.GetAccessibility(int, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float GetAccessibility(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>x</parameter>
+            <parameter>M:CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: y
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>y</parameter>
+            <parameter>M:CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CreatureSpecificAImap.GetAccessibility(System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetAccessibility(x As Integer, y As Integer) As Single
+  overload: Global.CreatureSpecificAImap.GetAccessibility*
+  nameWithType.vb: CreatureSpecificAImap.GetAccessibility(Integer, Integer)
+  fullName.vb: CreatureSpecificAImap.GetAccessibility(Integer, Integer)
+  name.vb: GetAccessibility(Integer, Integer)
+- uid: Global.CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Global.CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: SetDistanceToExit(int, int, int, int)
+  nameWithType: CreatureSpecificAImap.SetDistanceToExit(int, int, int, int)
+  fullName: CreatureSpecificAImap.SetDistanceToExit(int, int, int, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SetDistanceToExit(int x, int y, int exitNumber, int i)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>x</parameter>
+            <parameter>M:CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: y
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>y</parameter>
+            <parameter>M:CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: exitNumber
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>exitNumber</parameter>
+            <parameter>M:CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: i
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>i</parameter>
+            <parameter>M:CreatureSpecificAImap.SetDistanceToExit(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SetDistanceToExit(x As Integer, y As Integer, exitNumber As Integer, i As Integer)
+  overload: Global.CreatureSpecificAImap.SetDistanceToExit*
+  nameWithType.vb: CreatureSpecificAImap.SetDistanceToExit(Integer, Integer, Integer, Integer)
+  fullName.vb: CreatureSpecificAImap.SetDistanceToExit(Integer, Integer, Integer, Integer)
+  name.vb: SetDistanceToExit(Integer, Integer, Integer, Integer)
+- uid: Global.CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)
+  commentId: M:Global.CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)
+  id: SetAccessibility(System.Int32,System.Int32,System.Single)
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: SetAccessibility(int, int, float)
+  nameWithType: CreatureSpecificAImap.SetAccessibility(int, int, float)
+  fullName: CreatureSpecificAImap.SetAccessibility(int, int, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SetAccessibility(int x, int y, float f)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>x</parameter>
+            <parameter>M:CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: y
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>y</parameter>
+            <parameter>M:CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: f
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>f</parameter>
+            <parameter>M:CreatureSpecificAImap.SetAccessibility(System.Int32,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SetAccessibility(x As Integer, y As Integer, f As Single)
+  overload: Global.CreatureSpecificAImap.SetAccessibility*
+  nameWithType.vb: CreatureSpecificAImap.SetAccessibility(Integer, Integer, Single)
+  fullName.vb: CreatureSpecificAImap.SetAccessibility(Integer, Integer, Single)
+  name.vb: SetAccessibility(Integer, Integer, Single)
+- uid: Global.CreatureSpecificAImap.ReturnCompressedIntGrid
+  commentId: M:Global.CreatureSpecificAImap.ReturnCompressedIntGrid
+  id: ReturnCompressedIntGrid
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: ReturnCompressedIntGrid()
+  nameWithType: CreatureSpecificAImap.ReturnCompressedIntGrid()
+  fullName: CreatureSpecificAImap.ReturnCompressedIntGrid()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.ReturnCompressedIntGrid</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int[] ReturnCompressedIntGrid()
+    return:
+      type: System.Int32[]
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CreatureSpecificAImap.ReturnCompressedIntGrid</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReturnCompressedIntGrid() As Integer()
+  overload: Global.CreatureSpecificAImap.ReturnCompressedIntGrid*
+- uid: Global.CreatureSpecificAImap.ReturnCompressedFloatGrid
+  commentId: M:Global.CreatureSpecificAImap.ReturnCompressedFloatGrid
+  id: ReturnCompressedFloatGrid
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: ReturnCompressedFloatGrid()
+  nameWithType: CreatureSpecificAImap.ReturnCompressedFloatGrid()
+  fullName: CreatureSpecificAImap.ReturnCompressedFloatGrid()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.ReturnCompressedFloatGrid</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float[] ReturnCompressedFloatGrid()
+    return:
+      type: System.Single[]
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:CreatureSpecificAImap.ReturnCompressedFloatGrid</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReturnCompressedFloatGrid() As Single()
+  overload: Global.CreatureSpecificAImap.ReturnCompressedFloatGrid*
+- uid: Global.CreatureSpecificAImap.LoadFromCompressedIntGrid(System.Int32[])
+  commentId: M:Global.CreatureSpecificAImap.LoadFromCompressedIntGrid(System.Int32[])
+  id: LoadFromCompressedIntGrid(System.Int32[])
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: LoadFromCompressedIntGrid(int[])
+  nameWithType: CreatureSpecificAImap.LoadFromCompressedIntGrid(int[])
+  fullName: CreatureSpecificAImap.LoadFromCompressedIntGrid(int[])
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.LoadFromCompressedIntGrid(System.Int32[])</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LoadFromCompressedIntGrid(int[] intArray)
+    parameters:
+    - id: intArray
+      type: System.Int32[]
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>intArray</parameter>
+            <parameter>M:CreatureSpecificAImap.LoadFromCompressedIntGrid(System.Int32[])</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub LoadFromCompressedIntGrid(intArray As Integer())
+  overload: Global.CreatureSpecificAImap.LoadFromCompressedIntGrid*
+  nameWithType.vb: CreatureSpecificAImap.LoadFromCompressedIntGrid(Integer())
+  fullName.vb: CreatureSpecificAImap.LoadFromCompressedIntGrid(Integer())
+  name.vb: LoadFromCompressedIntGrid(Integer())
+- uid: Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid(System.Single[])
+  commentId: M:Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid(System.Single[])
+  id: LoadFromCompressedFloatGrid(System.Single[])
+  parent: Global.CreatureSpecificAImap
+  langs:
+  - csharp
+  - vb
+  name: LoadFromCompressedFloatGrid(float[])
+  nameWithType: CreatureSpecificAImap.LoadFromCompressedFloatGrid(float[])
+  fullName: CreatureSpecificAImap.LoadFromCompressedFloatGrid(float[])
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:CreatureSpecificAImap.LoadFromCompressedFloatGrid(System.Single[])</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LoadFromCompressedFloatGrid(float[] floatArray)
+    parameters:
+    - id: floatArray
+      type: System.Single[]
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>floatArray</parameter>
+            <parameter>M:CreatureSpecificAImap.LoadFromCompressedFloatGrid(System.Single[])</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub LoadFromCompressedFloatGrid(floatArray As Single())
+  overload: Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid*
+  nameWithType.vb: CreatureSpecificAImap.LoadFromCompressedFloatGrid(Single())
+  fullName.vb: CreatureSpecificAImap.LoadFromCompressedFloatGrid(Single())
+  name.vb: LoadFromCompressedFloatGrid(Single())
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RWCustom.IntVector2[]
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2[]
+  nameWithType: IntVector2[]
+  fullName: RWCustom.IntVector2[]
+  nameWithType.vb: IntVector2()
+  fullName.vb: RWCustom.IntVector2()
+  name.vb: IntVector2()
+  spec.csharp:
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.CreatureSpecificAImap.#ctor*
+  commentId: Overload:Global.CreatureSpecificAImap.#ctor
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap__ctor_AImap_CreatureTemplate_
+  name: CreatureSpecificAImap
+  nameWithType: CreatureSpecificAImap.CreatureSpecificAImap
+  fullName: CreatureSpecificAImap.CreatureSpecificAImap
+  nameWithType.vb: CreatureSpecificAImap.New
+  fullName.vb: CreatureSpecificAImap.New
+  name.vb: New
+- uid: Global.AImap
+  commentId: T:Global.AImap
+  isExternal: true
+  href: AImap.html
+  name: AImap
+  nameWithType: AImap
+  fullName: AImap
+- uid: Global.CreatureTemplate
+  commentId: T:Global.CreatureTemplate
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate
+  nameWithType: CreatureTemplate
+  fullName: CreatureTemplate
+- uid: Global.CreatureSpecificAImap.TriangulateDistance*
+  commentId: Overload:Global.CreatureSpecificAImap.TriangulateDistance
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_TriangulateDistance_RWCustom_IntVector2_RWCustom_IntVector2_
+  name: TriangulateDistance
+  nameWithType: CreatureSpecificAImap.TriangulateDistance
+  fullName: CreatureSpecificAImap.TriangulateDistance
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.CreatureSpecificAImap.GetDistanceToExit*
+  commentId: Overload:Global.CreatureSpecificAImap.GetDistanceToExit
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_GetDistanceToExit_System_Int32_System_Int32_System_Int32_
+  name: GetDistanceToExit
+  nameWithType: CreatureSpecificAImap.GetDistanceToExit
+  fullName: CreatureSpecificAImap.GetDistanceToExit
+- uid: Global.CreatureSpecificAImap.GetAccessibility*
+  commentId: Overload:Global.CreatureSpecificAImap.GetAccessibility
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_GetAccessibility_System_Int32_System_Int32_
+  name: GetAccessibility
+  nameWithType: CreatureSpecificAImap.GetAccessibility
+  fullName: CreatureSpecificAImap.GetAccessibility
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CreatureSpecificAImap.SetDistanceToExit*
+  commentId: Overload:Global.CreatureSpecificAImap.SetDistanceToExit
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_SetDistanceToExit_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: SetDistanceToExit
+  nameWithType: CreatureSpecificAImap.SetDistanceToExit
+  fullName: CreatureSpecificAImap.SetDistanceToExit
+- uid: Global.CreatureSpecificAImap.SetAccessibility*
+  commentId: Overload:Global.CreatureSpecificAImap.SetAccessibility
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_SetAccessibility_System_Int32_System_Int32_System_Single_
+  name: SetAccessibility
+  nameWithType: CreatureSpecificAImap.SetAccessibility
+  fullName: CreatureSpecificAImap.SetAccessibility
+- uid: Global.CreatureSpecificAImap.ReturnCompressedIntGrid*
+  commentId: Overload:Global.CreatureSpecificAImap.ReturnCompressedIntGrid
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_ReturnCompressedIntGrid
+  name: ReturnCompressedIntGrid
+  nameWithType: CreatureSpecificAImap.ReturnCompressedIntGrid
+  fullName: CreatureSpecificAImap.ReturnCompressedIntGrid
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Global.CreatureSpecificAImap.ReturnCompressedFloatGrid*
+  commentId: Overload:Global.CreatureSpecificAImap.ReturnCompressedFloatGrid
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_ReturnCompressedFloatGrid
+  name: ReturnCompressedFloatGrid
+  nameWithType: CreatureSpecificAImap.ReturnCompressedFloatGrid
+  fullName: CreatureSpecificAImap.ReturnCompressedFloatGrid
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: Global.CreatureSpecificAImap.LoadFromCompressedIntGrid*
+  commentId: Overload:Global.CreatureSpecificAImap.LoadFromCompressedIntGrid
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_LoadFromCompressedIntGrid_System_Int32___
+  name: LoadFromCompressedIntGrid
+  nameWithType: CreatureSpecificAImap.LoadFromCompressedIntGrid
+  fullName: CreatureSpecificAImap.LoadFromCompressedIntGrid
+- uid: Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid*
+  commentId: Overload:Global.CreatureSpecificAImap.LoadFromCompressedFloatGrid
+  isExternal: true
+  href: Global.CreatureSpecificAImap.html#CreatureSpecificAImap_LoadFromCompressedFloatGrid_System_Single___
+  name: LoadFromCompressedFloatGrid
+  nameWithType: CreatureSpecificAImap.LoadFromCompressedFloatGrid
+  fullName: CreatureSpecificAImap.LoadFromCompressedFloatGrid

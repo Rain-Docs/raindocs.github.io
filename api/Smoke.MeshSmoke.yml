@@ -1,0 +1,1179 @@
+### YamlMime:ManagedReference
+items:
+- uid: Smoke.MeshSmoke
+  commentId: T:Smoke.MeshSmoke
+  id: MeshSmoke
+  parent: Smoke
+  children:
+  - Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  - Smoke.MeshSmoke.ParticleLifeTime
+  - Smoke.MeshSmoke.PushApartSegments
+  langs:
+  - csharp
+  - vb
+  name: MeshSmoke
+  nameWithType: MeshSmoke
+  fullName: Smoke.MeshSmoke
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Smoke.MeshSmoke</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public abstract class MeshSmoke : SmokeSystem, Explosion.IReactToExplosions'
+    content.vb: Public MustInherit Class MeshSmoke Inherits SmokeSystem Implements Explosion.IReactToExplosions
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Smoke.SmokeSystem
+  derivedClasses:
+  - Smoke.ExhaustSmoke
+  - Smoke.PositionedSmokeEmitter
+  implements:
+  - Global.Explosion.IReactToExplosions
+  inheritedMembers:
+  - Smoke.SmokeSystem.smokeType
+  - Smoke.SmokeSystem.particlePool
+  - Smoke.SmokeSystem.particles
+  - Smoke.SmokeSystem.counter
+  - Smoke.SmokeSystem.minParticleDistance
+  - Smoke.SmokeSystem.connectParticlesTime
+  - Smoke.SmokeSystem.checkPhysObj
+  - Smoke.SmokeSystem.objectWind
+  - Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  - Smoke.SmokeSystem.DisconnectSmoke
+  - Smoke.SmokeSystem.Update(System.Boolean)
+  - Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  - Smoke.SmokeSystem.CreateParticle
+  - Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  - Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  - Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  - Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  - Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  - Smoke.SmokeSystem.Explosion(Explosion)
+  - Smoke.SmokeSystem.Dead
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  commentId: M:Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  id: '#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)'
+  parent: Smoke.MeshSmoke
+  langs:
+  - csharp
+  - vb
+  name: MeshSmoke(SmokeType, Room, int, float)
+  nameWithType: MeshSmoke.MeshSmoke(SmokeSystem.SmokeType, Room, int, float)
+  fullName: Smoke.MeshSmoke.MeshSmoke(Smoke.SmokeSystem.SmokeType, Room, int, float)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Smoke.MeshSmoke</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MeshSmoke(SmokeSystem.SmokeType smokeType, Room room, int connectParticlesTime, float minParticleDistance)
+    parameters:
+    - id: smokeType
+      type: Smoke.SmokeSystem.SmokeType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>smokeType</parameter>
+            <parameter>M:Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: connectParticlesTime
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>connectParticlesTime</parameter>
+            <parameter>M:Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: minParticleDistance
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>minParticleDistance</parameter>
+            <parameter>M:Smoke.MeshSmoke.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(smokeType As SmokeSystem.SmokeType, room As Room, connectParticlesTime As Integer, minParticleDistance As Single)
+  overload: Smoke.MeshSmoke.#ctor*
+  nameWithType.vb: MeshSmoke.New(SmokeSystem.SmokeType, Room, Integer, Single)
+  fullName.vb: Smoke.MeshSmoke.New(Smoke.SmokeSystem.SmokeType, Room, Integer, Single)
+  name.vb: New(SmokeType, Room, Integer, Single)
+- uid: Smoke.MeshSmoke.ParticleLifeTime
+  commentId: P:Smoke.MeshSmoke.ParticleLifeTime
+  id: ParticleLifeTime
+  parent: Smoke.MeshSmoke
+  langs:
+  - csharp
+  - vb
+  name: ParticleLifeTime
+  nameWithType: MeshSmoke.ParticleLifeTime
+  fullName: Smoke.MeshSmoke.ParticleLifeTime
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Smoke.MeshSmoke.ParticleLifeTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual float ParticleLifeTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Overridable ReadOnly Property ParticleLifeTime As Single
+  overload: Smoke.MeshSmoke.ParticleLifeTime*
+- uid: Smoke.MeshSmoke.PushApartSegments
+  commentId: P:Smoke.MeshSmoke.PushApartSegments
+  id: PushApartSegments
+  parent: Smoke.MeshSmoke
+  langs:
+  - csharp
+  - vb
+  name: PushApartSegments
+  nameWithType: MeshSmoke.PushApartSegments
+  fullName: Smoke.MeshSmoke.PushApartSegments
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Smoke.MeshSmoke.PushApartSegments</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual int PushApartSegments { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property PushApartSegments As Integer
+  overload: Smoke.MeshSmoke.PushApartSegments*
+references:
+- uid: Smoke
+  commentId: N:Smoke
+  isExternal: true
+  href: Smoke.html
+  name: Smoke
+  nameWithType: Smoke
+  fullName: Smoke
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Smoke.SmokeSystem
+  commentId: T:Smoke.SmokeSystem
+  parent: Smoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html
+  name: SmokeSystem
+  nameWithType: SmokeSystem
+  fullName: Smoke.SmokeSystem
+- uid: Global.Explosion.IReactToExplosions
+  commentId: T:Global.Explosion.IReactToExplosions
+  isExternal: true
+  href: Explosion.html
+  name: Explosion.IReactToExplosions
+  nameWithType: Explosion.IReactToExplosions
+  fullName: Explosion.IReactToExplosions
+  spec.csharp:
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: .
+  - uid: Global.Explosion.IReactToExplosions
+    name: IReactToExplosions
+    isExternal: true
+    href: Explosion.IReactToExplosions.html
+  spec.vb:
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: .
+  - uid: Global.Explosion.IReactToExplosions
+    name: IReactToExplosions
+    isExternal: true
+    href: Explosion.IReactToExplosions.html
+- uid: Smoke.SmokeSystem.smokeType
+  commentId: F:Smoke.SmokeSystem.smokeType
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_smokeType
+  name: smokeType
+  nameWithType: SmokeSystem.smokeType
+  fullName: Smoke.SmokeSystem.smokeType
+- uid: Smoke.SmokeSystem.particlePool
+  commentId: F:Smoke.SmokeSystem.particlePool
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_particlePool
+  name: particlePool
+  nameWithType: SmokeSystem.particlePool
+  fullName: Smoke.SmokeSystem.particlePool
+- uid: Smoke.SmokeSystem.particles
+  commentId: F:Smoke.SmokeSystem.particles
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_particles
+  name: particles
+  nameWithType: SmokeSystem.particles
+  fullName: Smoke.SmokeSystem.particles
+- uid: Smoke.SmokeSystem.counter
+  commentId: F:Smoke.SmokeSystem.counter
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_counter
+  name: counter
+  nameWithType: SmokeSystem.counter
+  fullName: Smoke.SmokeSystem.counter
+- uid: Smoke.SmokeSystem.minParticleDistance
+  commentId: F:Smoke.SmokeSystem.minParticleDistance
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_minParticleDistance
+  name: minParticleDistance
+  nameWithType: SmokeSystem.minParticleDistance
+  fullName: Smoke.SmokeSystem.minParticleDistance
+- uid: Smoke.SmokeSystem.connectParticlesTime
+  commentId: F:Smoke.SmokeSystem.connectParticlesTime
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_connectParticlesTime
+  name: connectParticlesTime
+  nameWithType: SmokeSystem.connectParticlesTime
+  fullName: Smoke.SmokeSystem.connectParticlesTime
+- uid: Smoke.SmokeSystem.checkPhysObj
+  commentId: F:Smoke.SmokeSystem.checkPhysObj
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_checkPhysObj
+  name: checkPhysObj
+  nameWithType: SmokeSystem.checkPhysObj
+  fullName: Smoke.SmokeSystem.checkPhysObj
+- uid: Smoke.SmokeSystem.objectWind
+  commentId: F:Smoke.SmokeSystem.objectWind
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_objectWind
+  name: objectWind
+  nameWithType: SmokeSystem.objectWind
+  fullName: Smoke.SmokeSystem.objectWind
+- uid: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  commentId: M:Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_ObjectAffectWind_PhysicalObject_
+  name: ObjectAffectWind(PhysicalObject)
+  nameWithType: SmokeSystem.ObjectAffectWind(PhysicalObject)
+  fullName: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+    name: ObjectAffectWind
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_ObjectAffectWind_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+    name: ObjectAffectWind
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_ObjectAffectWind_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+- uid: Smoke.SmokeSystem.DisconnectSmoke
+  commentId: M:Smoke.SmokeSystem.DisconnectSmoke
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_DisconnectSmoke
+  name: DisconnectSmoke()
+  nameWithType: SmokeSystem.DisconnectSmoke()
+  fullName: Smoke.SmokeSystem.DisconnectSmoke()
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.DisconnectSmoke
+    name: DisconnectSmoke
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_DisconnectSmoke
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.DisconnectSmoke
+    name: DisconnectSmoke
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_DisconnectSmoke
+  - name: (
+  - name: )
+- uid: Smoke.SmokeSystem.Update(System.Boolean)
+  commentId: M:Smoke.SmokeSystem.Update(System.Boolean)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: SmokeSystem.Update(bool)
+  fullName: Smoke.SmokeSystem.Update(bool)
+  nameWithType.vb: SmokeSystem.Update(Boolean)
+  fullName.vb: Smoke.SmokeSystem.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  commentId: M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_AddParticle_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  name: AddParticle(Vector2, Vector2, float)
+  nameWithType: SmokeSystem.AddParticle(Vector2, Vector2, float)
+  fullName: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2, UnityEngine.Vector2, float)
+  nameWithType.vb: SmokeSystem.AddParticle(Vector2, Vector2, Single)
+  fullName.vb: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  name.vb: AddParticle(Vector2, Vector2, Single)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+    name: AddParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_AddParticle_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+    name: AddParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_AddParticle_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Smoke.SmokeSystem.CreateParticle
+  commentId: M:Smoke.SmokeSystem.CreateParticle
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_CreateParticle
+  name: CreateParticle()
+  nameWithType: SmokeSystem.CreateParticle()
+  fullName: Smoke.SmokeSystem.CreateParticle()
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.CreateParticle
+    name: CreateParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_CreateParticle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.CreateParticle
+    name: CreateParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_CreateParticle
+  - name: (
+  - name: )
+- uid: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  commentId: M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PerlinWind_UnityEngine_Vector2_Room_
+  name: PerlinWind(Vector2, Room)
+  nameWithType: SmokeSystem.PerlinWind(Vector2, Room)
+  fullName: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2, Room)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+    name: PerlinWind
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PerlinWind_UnityEngine_Vector2_Room_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+    name: PerlinWind
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PerlinWind_UnityEngine_Vector2_Room_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  commentId: M:Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PhysicalObjectAffectSmoke_PhysicalObject_System_Single_
+  name: PhysicalObjectAffectSmoke(PhysicalObject, float)
+  nameWithType: SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, float)
+  fullName: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, float)
+  nameWithType.vb: SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, Single)
+  fullName.vb: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, Single)
+  name.vb: PhysicalObjectAffectSmoke(PhysicalObject, Single)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+    name: PhysicalObjectAffectSmoke
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PhysicalObjectAffectSmoke_PhysicalObject_System_Single_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+    name: PhysicalObjectAffectSmoke
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PhysicalObjectAffectSmoke_PhysicalObject_System_Single_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  commentId: M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  name: WindDrag(Vector2, Vector2, float)
+  nameWithType: SmokeSystem.WindDrag(Vector2, Vector2, float)
+  fullName: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, float)
+  nameWithType.vb: SmokeSystem.WindDrag(Vector2, Vector2, Single)
+  fullName.vb: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  name.vb: WindDrag(Vector2, Vector2, Single)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+    name: WindDrag
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+    name: WindDrag
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  commentId: M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_Smoke_SmokeSystem_SmokeSystemParticle_
+  name: WindDrag(Vector2, Vector2, float, SmokeSystemParticle)
+  nameWithType: SmokeSystem.WindDrag(Vector2, Vector2, float, SmokeSystem.SmokeSystemParticle)
+  fullName: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, float, Smoke.SmokeSystem.SmokeSystemParticle)
+  nameWithType.vb: SmokeSystem.WindDrag(Vector2, Vector2, Single, SmokeSystem.SmokeSystemParticle)
+  fullName.vb: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, Single, Smoke.SmokeSystem.SmokeSystemParticle)
+  name.vb: WindDrag(Vector2, Vector2, Single, SmokeSystemParticle)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+    name: WindDrag
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_Smoke_SmokeSystem_SmokeSystemParticle_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+    name: WindDrag
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_Smoke_SmokeSystem_SmokeSystemParticle_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+  - name: )
+- uid: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindPuff_UnityEngine_Vector2_System_Single_System_Single_
+  name: WindPuff(Vector2, float, float)
+  nameWithType: SmokeSystem.WindPuff(Vector2, float, float)
+  fullName: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2, float, float)
+  nameWithType.vb: SmokeSystem.WindPuff(Vector2, Single, Single)
+  fullName.vb: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2, Single, Single)
+  name.vb: WindPuff(Vector2, Single, Single)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+    name: WindPuff
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindPuff_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+    name: WindPuff
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindPuff_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Smoke.SmokeSystem.Explosion(Explosion)
+  commentId: M:Smoke.SmokeSystem.Explosion(Explosion)
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Explosion_Explosion_
+  name: Explosion(Explosion)
+  nameWithType: SmokeSystem.Explosion(Explosion)
+  fullName: Smoke.SmokeSystem.Explosion(Explosion)
+  spec.csharp:
+  - uid: Smoke.SmokeSystem.Explosion(Explosion)
+    name: Explosion
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Explosion_Explosion_
+  - name: (
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: )
+  spec.vb:
+  - uid: Smoke.SmokeSystem.Explosion(Explosion)
+    name: Explosion
+    isExternal: true
+    href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Explosion_Explosion_
+  - name: (
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: )
+- uid: Smoke.SmokeSystem.Dead
+  commentId: P:Smoke.SmokeSystem.Dead
+  parent: Smoke.SmokeSystem
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Dead
+  name: Dead
+  nameWithType: SmokeSystem.Dead
+  fullName: Smoke.SmokeSystem.Dead
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Smoke.MeshSmoke.#ctor*
+  commentId: Overload:Smoke.MeshSmoke.#ctor
+  isExternal: true
+  href: Smoke.MeshSmoke.html#Smoke_MeshSmoke__ctor_Smoke_SmokeSystem_SmokeType_Room_System_Int32_System_Single_
+  name: MeshSmoke
+  nameWithType: MeshSmoke.MeshSmoke
+  fullName: Smoke.MeshSmoke.MeshSmoke
+  nameWithType.vb: MeshSmoke.New
+  fullName.vb: Smoke.MeshSmoke.New
+  name.vb: New
+- uid: Smoke.SmokeSystem.SmokeType
+  commentId: T:Smoke.SmokeSystem.SmokeType
+  parent: Smoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html
+  name: SmokeSystem.SmokeType
+  nameWithType: SmokeSystem.SmokeType
+  fullName: Smoke.SmokeSystem.SmokeType
+  spec.csharp:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeType
+    name: SmokeType
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeType.html
+  spec.vb:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeType
+    name: SmokeType
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeType.html
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Smoke.MeshSmoke.ParticleLifeTime*
+  commentId: Overload:Smoke.MeshSmoke.ParticleLifeTime
+  isExternal: true
+  href: Smoke.MeshSmoke.html#Smoke_MeshSmoke_ParticleLifeTime
+  name: ParticleLifeTime
+  nameWithType: MeshSmoke.ParticleLifeTime
+  fullName: Smoke.MeshSmoke.ParticleLifeTime
+- uid: Smoke.MeshSmoke.PushApartSegments*
+  commentId: Overload:Smoke.MeshSmoke.PushApartSegments
+  isExternal: true
+  href: Smoke.MeshSmoke.html#Smoke_MeshSmoke_PushApartSegments
+  name: PushApartSegments
+  nameWithType: MeshSmoke.PushApartSegments
+  fullName: Smoke.MeshSmoke.PushApartSegments

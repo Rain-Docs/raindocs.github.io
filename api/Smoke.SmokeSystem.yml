@@ -1,0 +1,1695 @@
+### YamlMime:ManagedReference
+items:
+- uid: Smoke.SmokeSystem
+  commentId: T:Smoke.SmokeSystem
+  id: SmokeSystem
+  parent: Smoke
+  children:
+  - Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  - Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  - Smoke.SmokeSystem.CreateParticle
+  - Smoke.SmokeSystem.Dead
+  - Smoke.SmokeSystem.DisconnectSmoke
+  - Smoke.SmokeSystem.Explosion(Explosion)
+  - Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  - Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  - Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  - Smoke.SmokeSystem.Update(System.Boolean)
+  - Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  - Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  - Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  - Smoke.SmokeSystem.checkPhysObj
+  - Smoke.SmokeSystem.connectParticlesTime
+  - Smoke.SmokeSystem.counter
+  - Smoke.SmokeSystem.minParticleDistance
+  - Smoke.SmokeSystem.objectWind
+  - Smoke.SmokeSystem.particlePool
+  - Smoke.SmokeSystem.particles
+  - Smoke.SmokeSystem.smokeType
+  langs:
+  - csharp
+  - vb
+  name: SmokeSystem
+  nameWithType: SmokeSystem
+  fullName: Smoke.SmokeSystem
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Smoke.SmokeSystem</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SmokeSystem : UpdatableAndDeletable, Explosion.IReactToExplosions'
+    content.vb: Public Class SmokeSystem Inherits UpdatableAndDeletable Implements Explosion.IReactToExplosions
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  derivedClasses:
+  - Smoke.CyanLizardSmoke
+  - Smoke.FireSmoke
+  - Smoke.MeshSmoke
+  - Smoke.SporesSmoke
+  - Smoke.SteamSmoke
+  - Smoke.VultureSmoke
+  - Watcher.BlizzardBeamSmoke
+  - Watcher.BlizzardShieldSmoke
+  implements:
+  - Global.Explosion.IReactToExplosions
+  inheritedMembers:
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Smoke.SmokeSystem.smokeType
+  commentId: F:Smoke.SmokeSystem.smokeType
+  id: smokeType
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: smokeType
+  nameWithType: SmokeSystem.smokeType
+  fullName: Smoke.SmokeSystem.smokeType
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.smokeType</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SmokeSystem.SmokeType smokeType
+    return:
+      type: Smoke.SmokeSystem.SmokeType
+    content.vb: Public smokeType As SmokeSystem.SmokeType
+- uid: Smoke.SmokeSystem.particlePool
+  commentId: F:Smoke.SmokeSystem.particlePool
+  id: particlePool
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: particlePool
+  nameWithType: SmokeSystem.particlePool
+  fullName: Smoke.SmokeSystem.particlePool
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.particlePool</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SmokePool particlePool
+    return:
+      type: Smoke.SmokePool
+    content.vb: Public particlePool As SmokePool
+- uid: Smoke.SmokeSystem.particles
+  commentId: F:Smoke.SmokeSystem.particles
+  id: particles
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: particles
+  nameWithType: SmokeSystem.particles
+  fullName: Smoke.SmokeSystem.particles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.particles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<SmokeSystem.SmokeSystemParticle> particles
+    return:
+      type: System.Collections.Generic.List{Smoke.SmokeSystem.SmokeSystemParticle}
+    content.vb: Public particles As List(Of SmokeSystem.SmokeSystemParticle)
+- uid: Smoke.SmokeSystem.counter
+  commentId: F:Smoke.SmokeSystem.counter
+  id: counter
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: counter
+  nameWithType: SmokeSystem.counter
+  fullName: Smoke.SmokeSystem.counter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.counter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int counter
+    return:
+      type: System.Int32
+    content.vb: Public counter As Integer
+- uid: Smoke.SmokeSystem.minParticleDistance
+  commentId: F:Smoke.SmokeSystem.minParticleDistance
+  id: minParticleDistance
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: minParticleDistance
+  nameWithType: SmokeSystem.minParticleDistance
+  fullName: Smoke.SmokeSystem.minParticleDistance
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.minParticleDistance</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float minParticleDistance
+    return:
+      type: System.Single
+    content.vb: Public minParticleDistance As Single
+- uid: Smoke.SmokeSystem.connectParticlesTime
+  commentId: F:Smoke.SmokeSystem.connectParticlesTime
+  id: connectParticlesTime
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: connectParticlesTime
+  nameWithType: SmokeSystem.connectParticlesTime
+  fullName: Smoke.SmokeSystem.connectParticlesTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.connectParticlesTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int connectParticlesTime
+    return:
+      type: System.Int32
+    content.vb: Public connectParticlesTime As Integer
+- uid: Smoke.SmokeSystem.checkPhysObj
+  commentId: F:Smoke.SmokeSystem.checkPhysObj
+  id: checkPhysObj
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: checkPhysObj
+  nameWithType: SmokeSystem.checkPhysObj
+  fullName: Smoke.SmokeSystem.checkPhysObj
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.checkPhysObj</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int checkPhysObj
+    return:
+      type: System.Int32
+    content.vb: Public checkPhysObj As Integer
+- uid: Smoke.SmokeSystem.objectWind
+  commentId: F:Smoke.SmokeSystem.objectWind
+  id: objectWind
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: objectWind
+  nameWithType: SmokeSystem.objectWind
+  fullName: Smoke.SmokeSystem.objectWind
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Smoke.SmokeSystem.objectWind</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float objectWind
+    return:
+      type: System.Single
+    content.vb: Public objectWind As Single
+- uid: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  commentId: M:Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  id: ObjectAffectWind(PhysicalObject)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: ObjectAffectWind(PhysicalObject)
+  nameWithType: SmokeSystem.ObjectAffectWind(PhysicalObject)
+  fullName: Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual bool ObjectAffectWind(PhysicalObject obj)
+    parameters:
+    - id: obj
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Smoke.SmokeSystem.ObjectAffectWind(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overridable Function ObjectAffectWind(obj As PhysicalObject) As Boolean
+  overload: Smoke.SmokeSystem.ObjectAffectWind*
+- uid: Smoke.SmokeSystem.DisconnectSmoke
+  commentId: M:Smoke.SmokeSystem.DisconnectSmoke
+  id: DisconnectSmoke
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: DisconnectSmoke()
+  nameWithType: SmokeSystem.DisconnectSmoke()
+  fullName: Smoke.SmokeSystem.DisconnectSmoke()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.DisconnectSmoke</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DisconnectSmoke()
+    content.vb: Public Sub DisconnectSmoke()
+  overload: Smoke.SmokeSystem.DisconnectSmoke*
+- uid: Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  commentId: M:Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)
+  id: '#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)'
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: SmokeSystem(SmokeType, Room, int, float)
+  nameWithType: SmokeSystem.SmokeSystem(SmokeSystem.SmokeType, Room, int, float)
+  fullName: Smoke.SmokeSystem.SmokeSystem(Smoke.SmokeSystem.SmokeType, Room, int, float)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Smoke.SmokeSystem</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SmokeSystem(SmokeSystem.SmokeType smokeType, Room room, int connectParticlesTime, float minParticleDistance)
+    parameters:
+    - id: smokeType
+      type: Smoke.SmokeSystem.SmokeType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>smokeType</parameter>
+            <parameter>M:Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: connectParticlesTime
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>connectParticlesTime</parameter>
+            <parameter>M:Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: minParticleDistance
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>minParticleDistance</parameter>
+            <parameter>M:Smoke.SmokeSystem.#ctor(Smoke.SmokeSystem.SmokeType,Room,System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(smokeType As SmokeSystem.SmokeType, room As Room, connectParticlesTime As Integer, minParticleDistance As Single)
+  overload: Smoke.SmokeSystem.#ctor*
+  nameWithType.vb: SmokeSystem.New(SmokeSystem.SmokeType, Room, Integer, Single)
+  fullName.vb: Smoke.SmokeSystem.New(Smoke.SmokeSystem.SmokeType, Room, Integer, Single)
+  name.vb: New(SmokeType, Room, Integer, Single)
+- uid: Smoke.SmokeSystem.Update(System.Boolean)
+  commentId: M:Smoke.SmokeSystem.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: SmokeSystem.Update(bool)
+  fullName: Smoke.SmokeSystem.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:Smoke.SmokeSystem.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.UpdatableAndDeletable.Update(System.Boolean)
+  overload: Smoke.SmokeSystem.Update*
+  nameWithType.vb: SmokeSystem.Update(Boolean)
+  fullName.vb: Smoke.SmokeSystem.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  commentId: M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  id: AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: AddParticle(Vector2, Vector2, float)
+  nameWithType: SmokeSystem.AddParticle(Vector2, Vector2, float)
+  fullName: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2, UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual SmokeSystem.SmokeSystemParticle AddParticle(Vector2 emissionPoint, Vector2 emissionForce, float lifeTime)
+    parameters:
+    - id: emissionPoint
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>emissionPoint</parameter>
+            <parameter>M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: emissionForce
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>emissionForce</parameter>
+            <parameter>M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: lifeTime
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>lifeTime</parameter>
+            <parameter>M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Smoke.SmokeSystem.SmokeSystemParticle
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overridable Function AddParticle(emissionPoint As Vector2, emissionForce As Vector2, lifeTime As Single) As SmokeSystem.SmokeSystemParticle
+  overload: Smoke.SmokeSystem.AddParticle*
+  nameWithType.vb: SmokeSystem.AddParticle(Vector2, Vector2, Single)
+  fullName.vb: Smoke.SmokeSystem.AddParticle(UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  name.vb: AddParticle(Vector2, Vector2, Single)
+- uid: Smoke.SmokeSystem.CreateParticle
+  commentId: M:Smoke.SmokeSystem.CreateParticle
+  id: CreateParticle
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: CreateParticle()
+  nameWithType: SmokeSystem.CreateParticle()
+  fullName: Smoke.SmokeSystem.CreateParticle()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.CreateParticle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual SmokeSystem.SmokeSystemParticle CreateParticle()
+    return:
+      type: Smoke.SmokeSystem.SmokeSystemParticle
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Smoke.SmokeSystem.CreateParticle</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overridable Function CreateParticle() As SmokeSystem.SmokeSystemParticle
+  overload: Smoke.SmokeSystem.CreateParticle*
+- uid: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  commentId: M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)
+  id: PerlinWind(UnityEngine.Vector2,Room)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: PerlinWind(Vector2, Room)
+  nameWithType: SmokeSystem.PerlinWind(Vector2, Room)
+  fullName: Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2, Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static Vector2 PerlinWind(Vector2 pos, Room room)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Smoke.SmokeSystem.PerlinWind(UnityEngine.Vector2,Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function PerlinWind(pos As Vector2, room As Room) As Vector2
+  overload: Smoke.SmokeSystem.PerlinWind*
+- uid: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  commentId: M:Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  id: PhysicalObjectAffectSmoke(PhysicalObject,System.Single)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: PhysicalObjectAffectSmoke(PhysicalObject, float)
+  nameWithType: SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, float)
+  fullName: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PhysicalObjectAffectSmoke(PhysicalObject obj, float fac)
+    parameters:
+    - id: obj
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>obj</parameter>
+            <parameter>M:Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: fac
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fac</parameter>
+            <parameter>M:Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PhysicalObjectAffectSmoke(obj As PhysicalObject, fac As Single)
+  overload: Smoke.SmokeSystem.PhysicalObjectAffectSmoke*
+  nameWithType.vb: SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, Single)
+  fullName.vb: Smoke.SmokeSystem.PhysicalObjectAffectSmoke(PhysicalObject, Single)
+  name.vb: PhysicalObjectAffectSmoke(PhysicalObject, Single)
+- uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  commentId: M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  id: WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: WindDrag(Vector2, Vector2, float)
+  nameWithType: SmokeSystem.WindDrag(Vector2, Vector2, float)
+  fullName: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void WindDrag(Vector2 pos, Vector2 vel, float size)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: vel
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vel</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: size
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>size</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub WindDrag(pos As Vector2, vel As Vector2, size As Single)
+  overload: Smoke.SmokeSystem.WindDrag*
+  nameWithType.vb: SmokeSystem.WindDrag(Vector2, Vector2, Single)
+  fullName.vb: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  name.vb: WindDrag(Vector2, Vector2, Single)
+- uid: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  commentId: M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  id: WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: WindDrag(Vector2, Vector2, float, SmokeSystemParticle)
+  nameWithType: SmokeSystem.WindDrag(Vector2, Vector2, float, SmokeSystem.SmokeSystemParticle)
+  fullName: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, float, Smoke.SmokeSystem.SmokeSystemParticle)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void WindDrag(Vector2 pos, Vector2 vel, float size, SmokeSystem.SmokeSystemParticle B)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)</parameter>
+          </include>
+        </markup>
+    - id: vel
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vel</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)</parameter>
+          </include>
+        </markup>
+    - id: size
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>size</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)</parameter>
+          </include>
+        </markup>
+    - id: B
+      type: Smoke.SmokeSystem.SmokeSystemParticle
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>B</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2,UnityEngine.Vector2,System.Single,Smoke.SmokeSystem.SmokeSystemParticle)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub WindDrag(pos As Vector2, vel As Vector2, size As Single, B As SmokeSystem.SmokeSystemParticle)
+  overload: Smoke.SmokeSystem.WindDrag*
+  nameWithType.vb: SmokeSystem.WindDrag(Vector2, Vector2, Single, SmokeSystem.SmokeSystemParticle)
+  fullName.vb: Smoke.SmokeSystem.WindDrag(UnityEngine.Vector2, UnityEngine.Vector2, Single, Smoke.SmokeSystem.SmokeSystemParticle)
+  name.vb: WindDrag(Vector2, Vector2, Single, SmokeSystemParticle)
+- uid: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  id: WindPuff(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: WindPuff(Vector2, float, float)
+  nameWithType: SmokeSystem.WindPuff(Vector2, float, float)
+  fullName: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void WindPuff(Vector2 pos, float frc, float rad)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: frc
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>frc</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: rad
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rad</parameter>
+            <parameter>M:Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub WindPuff(pos As Vector2, frc As Single, rad As Single)
+  overload: Smoke.SmokeSystem.WindPuff*
+  nameWithType.vb: SmokeSystem.WindPuff(Vector2, Single, Single)
+  fullName.vb: Smoke.SmokeSystem.WindPuff(UnityEngine.Vector2, Single, Single)
+  name.vb: WindPuff(Vector2, Single, Single)
+- uid: Smoke.SmokeSystem.Explosion(Explosion)
+  commentId: M:Smoke.SmokeSystem.Explosion(Explosion)
+  id: Explosion(Explosion)
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: Explosion(Explosion)
+  nameWithType: SmokeSystem.Explosion(Explosion)
+  fullName: Smoke.SmokeSystem.Explosion(Explosion)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Smoke.SmokeSystem.Explosion(Explosion)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Explosion(Explosion explosion)
+    parameters:
+    - id: explosion
+      type: Global.Explosion
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>explosion</parameter>
+            <parameter>M:Smoke.SmokeSystem.Explosion(Explosion)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Explosion(explosion As Explosion)
+  overload: Smoke.SmokeSystem.Explosion*
+  implements:
+  - Global.Explosion.IReactToExplosions.Explosion(Explosion)
+- uid: Smoke.SmokeSystem.Dead
+  commentId: P:Smoke.SmokeSystem.Dead
+  id: Dead
+  parent: Smoke.SmokeSystem
+  langs:
+  - csharp
+  - vb
+  name: Dead
+  nameWithType: SmokeSystem.Dead
+  fullName: Smoke.SmokeSystem.Dead
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Smoke
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Smoke.SmokeSystem.Dead</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool Dead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Dead As Boolean
+  overload: Smoke.SmokeSystem.Dead*
+references:
+- uid: Smoke
+  commentId: N:Smoke
+  isExternal: true
+  href: Smoke.html
+  name: Smoke
+  nameWithType: Smoke
+  fullName: Smoke
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.Explosion.IReactToExplosions
+  commentId: T:Global.Explosion.IReactToExplosions
+  isExternal: true
+  href: Explosion.html
+  name: Explosion.IReactToExplosions
+  nameWithType: Explosion.IReactToExplosions
+  fullName: Explosion.IReactToExplosions
+  spec.csharp:
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: .
+  - uid: Global.Explosion.IReactToExplosions
+    name: IReactToExplosions
+    isExternal: true
+    href: Explosion.IReactToExplosions.html
+  spec.vb:
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: .
+  - uid: Global.Explosion.IReactToExplosions
+    name: IReactToExplosions
+    isExternal: true
+    href: Explosion.IReactToExplosions.html
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Smoke.SmokeSystem.SmokeType
+  commentId: T:Smoke.SmokeSystem.SmokeType
+  parent: Smoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html
+  name: SmokeSystem.SmokeType
+  nameWithType: SmokeSystem.SmokeType
+  fullName: Smoke.SmokeSystem.SmokeType
+  spec.csharp:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeType
+    name: SmokeType
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeType.html
+  spec.vb:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeType
+    name: SmokeType
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeType.html
+- uid: Smoke.SmokePool
+  commentId: T:Smoke.SmokePool
+  parent: Smoke
+  isExternal: true
+  href: Smoke.SmokePool.html
+  name: SmokePool
+  nameWithType: SmokePool
+  fullName: Smoke.SmokePool
+- uid: System.Collections.Generic.List{Smoke.SmokeSystem.SmokeSystemParticle}
+  commentId: T:System.Collections.Generic.List{Smoke.SmokeSystem.SmokeSystemParticle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SmokeSystem.SmokeSystemParticle>
+  nameWithType: List<SmokeSystem.SmokeSystemParticle>
+  fullName: System.Collections.Generic.List<Smoke.SmokeSystem.SmokeSystemParticle>
+  nameWithType.vb: List(Of SmokeSystem.SmokeSystemParticle)
+  fullName.vb: System.Collections.Generic.List(Of Smoke.SmokeSystem.SmokeSystemParticle)
+  name.vb: List(Of SmokeSystem.SmokeSystemParticle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Smoke.SmokeSystem.ObjectAffectWind*
+  commentId: Overload:Smoke.SmokeSystem.ObjectAffectWind
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_ObjectAffectWind_PhysicalObject_
+  name: ObjectAffectWind
+  nameWithType: SmokeSystem.ObjectAffectWind
+  fullName: Smoke.SmokeSystem.ObjectAffectWind
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Smoke.SmokeSystem.DisconnectSmoke*
+  commentId: Overload:Smoke.SmokeSystem.DisconnectSmoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_DisconnectSmoke
+  name: DisconnectSmoke
+  nameWithType: SmokeSystem.DisconnectSmoke
+  fullName: Smoke.SmokeSystem.DisconnectSmoke
+- uid: Smoke.SmokeSystem.#ctor*
+  commentId: Overload:Smoke.SmokeSystem.#ctor
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem__ctor_Smoke_SmokeSystem_SmokeType_Room_System_Int32_System_Single_
+  name: SmokeSystem
+  nameWithType: SmokeSystem.SmokeSystem
+  fullName: Smoke.SmokeSystem.SmokeSystem
+  nameWithType.vb: SmokeSystem.New
+  fullName.vb: Smoke.SmokeSystem.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+  commentId: M:Global.UpdatableAndDeletable.Update(System.Boolean)
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: UpdatableAndDeletable.Update(bool)
+  fullName: UpdatableAndDeletable.Update(bool)
+  nameWithType.vb: UpdatableAndDeletable.Update(Boolean)
+  fullName.vb: UpdatableAndDeletable.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Smoke.SmokeSystem.Update*
+  commentId: Overload:Smoke.SmokeSystem.Update
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Update_System_Boolean_
+  name: Update
+  nameWithType: SmokeSystem.Update
+  fullName: Smoke.SmokeSystem.Update
+- uid: Smoke.SmokeSystem.AddParticle*
+  commentId: Overload:Smoke.SmokeSystem.AddParticle
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_AddParticle_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  name: AddParticle
+  nameWithType: SmokeSystem.AddParticle
+  fullName: Smoke.SmokeSystem.AddParticle
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Smoke.SmokeSystem.SmokeSystemParticle
+  commentId: T:Smoke.SmokeSystem.SmokeSystemParticle
+  parent: Smoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html
+  name: SmokeSystem.SmokeSystemParticle
+  nameWithType: SmokeSystem.SmokeSystemParticle
+  fullName: Smoke.SmokeSystem.SmokeSystemParticle
+  spec.csharp:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+  spec.vb:
+  - uid: Smoke.SmokeSystem
+    name: SmokeSystem
+    isExternal: true
+    href: Smoke.SmokeSystem.html
+  - name: .
+  - uid: Smoke.SmokeSystem.SmokeSystemParticle
+    name: SmokeSystemParticle
+    isExternal: true
+    href: Smoke.SmokeSystem.SmokeSystemParticle.html
+- uid: Smoke.SmokeSystem.CreateParticle*
+  commentId: Overload:Smoke.SmokeSystem.CreateParticle
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_CreateParticle
+  name: CreateParticle
+  nameWithType: SmokeSystem.CreateParticle
+  fullName: Smoke.SmokeSystem.CreateParticle
+- uid: Smoke.SmokeSystem.PerlinWind*
+  commentId: Overload:Smoke.SmokeSystem.PerlinWind
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PerlinWind_UnityEngine_Vector2_Room_
+  name: PerlinWind
+  nameWithType: SmokeSystem.PerlinWind
+  fullName: Smoke.SmokeSystem.PerlinWind
+- uid: Smoke.SmokeSystem.PhysicalObjectAffectSmoke*
+  commentId: Overload:Smoke.SmokeSystem.PhysicalObjectAffectSmoke
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_PhysicalObjectAffectSmoke_PhysicalObject_System_Single_
+  name: PhysicalObjectAffectSmoke
+  nameWithType: SmokeSystem.PhysicalObjectAffectSmoke
+  fullName: Smoke.SmokeSystem.PhysicalObjectAffectSmoke
+- uid: Smoke.SmokeSystem.WindDrag*
+  commentId: Overload:Smoke.SmokeSystem.WindDrag
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindDrag_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  name: WindDrag
+  nameWithType: SmokeSystem.WindDrag
+  fullName: Smoke.SmokeSystem.WindDrag
+- uid: Smoke.SmokeSystem.WindPuff*
+  commentId: Overload:Smoke.SmokeSystem.WindPuff
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_WindPuff_UnityEngine_Vector2_System_Single_System_Single_
+  name: WindPuff
+  nameWithType: SmokeSystem.WindPuff
+  fullName: Smoke.SmokeSystem.WindPuff
+- uid: Smoke.SmokeSystem.Explosion*
+  commentId: Overload:Smoke.SmokeSystem.Explosion
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Explosion_Explosion_
+  name: Explosion
+  nameWithType: SmokeSystem.Explosion
+  fullName: Smoke.SmokeSystem.Explosion
+- uid: Global.Explosion.IReactToExplosions.Explosion(Explosion)
+  commentId: M:Global.Explosion.IReactToExplosions.Explosion(Explosion)
+  parent: Global.Explosion.IReactToExplosions
+  isExternal: true
+  href: Global.Explosion.IReactToExplosions.html#Explosion_IReactToExplosions_Explosion_Explosion_
+  name: Explosion(Explosion)
+  nameWithType: Explosion.IReactToExplosions.Explosion(Explosion)
+  fullName: Explosion.IReactToExplosions.Explosion(Explosion)
+  spec.csharp:
+  - uid: Global.Explosion.IReactToExplosions.Explosion(Explosion)
+    name: Explosion
+    isExternal: true
+    href: Global.Explosion.IReactToExplosions.html#Explosion_IReactToExplosions_Explosion_Explosion_
+  - name: (
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: )
+  spec.vb:
+  - uid: Global.Explosion.IReactToExplosions.Explosion(Explosion)
+    name: Explosion
+    isExternal: true
+    href: Global.Explosion.IReactToExplosions.html#Explosion_IReactToExplosions_Explosion_Explosion_
+  - name: (
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: )
+- uid: Global.Explosion
+  commentId: T:Global.Explosion
+  isExternal: true
+  href: Explosion.html
+  name: Explosion
+  nameWithType: Explosion
+  fullName: Explosion
+- uid: Smoke.SmokeSystem.Dead*
+  commentId: Overload:Smoke.SmokeSystem.Dead
+  isExternal: true
+  href: Smoke.SmokeSystem.html#Smoke_SmokeSystem_Dead
+  name: Dead
+  nameWithType: SmokeSystem.Dead
+  fullName: Smoke.SmokeSystem.Dead

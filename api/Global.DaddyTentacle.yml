@@ -1,0 +1,2174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DaddyTentacle
+  commentId: T:Global.DaddyTentacle
+  id: DaddyTentacle
+  parent: Global
+  children:
+  - Global.DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)
+  - Global.DaddyTentacle.GravityDirection
+  - Global.DaddyTentacle.NewRoom(Room)
+  - Global.DaddyTentacle.ReleaseScore
+  - Global.DaddyTentacle.SwitchTask(DaddyTentacle.Task)
+  - Global.DaddyTentacle.Update
+  - Global.DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)
+  - Global.DaddyTentacle.atGrabDest
+  - Global.DaddyTentacle.awayFromBodyRotation
+  - Global.DaddyTentacle.checkSound
+  - Global.DaddyTentacle.chunksGripping
+  - Global.DaddyTentacle.chunksStickSounds
+  - Global.DaddyTentacle.daddy
+  - Global.DaddyTentacle.examineSoundPos
+  - Global.DaddyTentacle.grabChunk
+  - Global.DaddyTentacle.huntCreature
+  - Global.DaddyTentacle.huntDirection
+  - Global.DaddyTentacle.idealGrabPos
+  - Global.DaddyTentacle.neededForLocomotion
+  - Global.DaddyTentacle.preliminaryGrabDest
+  - Global.DaddyTentacle.rotOwner
+  - Global.DaddyTentacle.secondaryGrabPos
+  - Global.DaddyTentacle.soundCheckCounter
+  - Global.DaddyTentacle.soundCheckTimer
+  - Global.DaddyTentacle.sticky
+  - Global.DaddyTentacle.stun
+  - Global.DaddyTentacle.task
+  - Global.DaddyTentacle.tentacleDir
+  - Global.DaddyTentacle.tentacleNumber
+  langs:
+  - csharp
+  - vb
+  name: DaddyTentacle
+  nameWithType: DaddyTentacle
+  fullName: DaddyTentacle
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:DaddyTentacle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class DaddyTentacle : Tentacle'
+    content.vb: Public Class DaddyTentacle Inherits Tentacle
+  inheritance:
+  - System.Object
+  - Global.Tentacle
+  inheritedMembers:
+  - Global.Tentacle.debugViz
+  - Global.Tentacle.sprites
+  - Global.Tentacle.grabPathSprites
+  - Global.Tentacle.pullCounter
+  - Global.Tentacle.floatGrabDest
+  - Global.Tentacle.grabPath
+  - Global.Tentacle.segments
+  - Global.Tentacle.room
+  - Global.Tentacle.idealLength
+  - Global.Tentacle.tChunks
+  - Global.Tentacle.owner
+  - Global.Tentacle.pullsThisTick
+  - Global.Tentacle.connectedChunk
+  - Global.Tentacle.stretchAndSqueeze
+  - Global.Tentacle.goForGoalPower
+  - Global.Tentacle.backtrackFrom
+  - Global.Tentacle.limp
+  - Global.Tentacle.tProps
+  - Global.Tentacle.MoveGrabDest(UnityEngine.Vector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  - Global.Tentacle.Visual(RWCustom.IntVector2,RWCustom.IntVector2)
+  - Global.Tentacle.MoveBase(RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  - Global.Tentacle.CurrentLength
+  - Global.Tentacle.Reset(UnityEngine.Vector2)
+  - Global.Tentacle.PushChunksApart(System.Int32,System.Int32)
+  - Global.Tentacle.grabDest
+  - Global.Tentacle.Tip
+  - Global.Tentacle.BasePos
+  - Global.Tentacle.TotalRope
+  - Global.Tentacle.FloatBase
+  - Global.Tentacle.retractFac
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.DaddyTentacle.rotOwner
+  commentId: F:Global.DaddyTentacle.rotOwner
+  id: rotOwner
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: rotOwner
+  nameWithType: DaddyTentacle.rotOwner
+  fullName: DaddyTentacle.rotOwner
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.rotOwner</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyLongLegs.IHaveRotParts rotOwner
+    return:
+      type: Global.DaddyLongLegs.IHaveRotParts
+    content.vb: Public rotOwner As DaddyLongLegs.IHaveRotParts
+- uid: Global.DaddyTentacle.tentacleNumber
+  commentId: F:Global.DaddyTentacle.tentacleNumber
+  id: tentacleNumber
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: tentacleNumber
+  nameWithType: DaddyTentacle.tentacleNumber
+  fullName: DaddyTentacle.tentacleNumber
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.tentacleNumber</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int tentacleNumber
+    return:
+      type: System.Int32
+    content.vb: Public tentacleNumber As Integer
+- uid: Global.DaddyTentacle.tentacleDir
+  commentId: F:Global.DaddyTentacle.tentacleDir
+  id: tentacleDir
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: tentacleDir
+  nameWithType: DaddyTentacle.tentacleDir
+  fullName: DaddyTentacle.tentacleDir
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.tentacleDir</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 tentacleDir
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public tentacleDir As Vector2
+- uid: Global.DaddyTentacle.awayFromBodyRotation
+  commentId: F:Global.DaddyTentacle.awayFromBodyRotation
+  id: awayFromBodyRotation
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: awayFromBodyRotation
+  nameWithType: DaddyTentacle.awayFromBodyRotation
+  fullName: DaddyTentacle.awayFromBodyRotation
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.awayFromBodyRotation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float awayFromBodyRotation
+    return:
+      type: System.Single
+    content.vb: Public awayFromBodyRotation As Single
+- uid: Global.DaddyTentacle.atGrabDest
+  commentId: F:Global.DaddyTentacle.atGrabDest
+  id: atGrabDest
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: atGrabDest
+  nameWithType: DaddyTentacle.atGrabDest
+  fullName: DaddyTentacle.atGrabDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.atGrabDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool atGrabDest
+    return:
+      type: System.Boolean
+    content.vb: Public atGrabDest As Boolean
+- uid: Global.DaddyTentacle.chunksGripping
+  commentId: F:Global.DaddyTentacle.chunksGripping
+  id: chunksGripping
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: chunksGripping
+  nameWithType: DaddyTentacle.chunksGripping
+  fullName: DaddyTentacle.chunksGripping
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.chunksGripping</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float chunksGripping
+    return:
+      type: System.Single
+    content.vb: Public chunksGripping As Single
+- uid: Global.DaddyTentacle.stun
+  commentId: F:Global.DaddyTentacle.stun
+  id: stun
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: stun
+  nameWithType: DaddyTentacle.stun
+  fullName: DaddyTentacle.stun
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.stun</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int stun
+    return:
+      type: System.Int32
+    content.vb: Public stun As Integer
+- uid: Global.DaddyTentacle.secondaryGrabPos
+  commentId: F:Global.DaddyTentacle.secondaryGrabPos
+  id: secondaryGrabPos
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: secondaryGrabPos
+  nameWithType: DaddyTentacle.secondaryGrabPos
+  fullName: DaddyTentacle.secondaryGrabPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.secondaryGrabPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IntVector2 secondaryGrabPos
+    return:
+      type: RWCustom.IntVector2
+    content.vb: Public secondaryGrabPos As IntVector2
+- uid: Global.DaddyTentacle.preliminaryGrabDest
+  commentId: F:Global.DaddyTentacle.preliminaryGrabDest
+  id: preliminaryGrabDest
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: preliminaryGrabDest
+  nameWithType: DaddyTentacle.preliminaryGrabDest
+  fullName: DaddyTentacle.preliminaryGrabDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.preliminaryGrabDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 preliminaryGrabDest
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public preliminaryGrabDest As Vector2
+- uid: Global.DaddyTentacle.idealGrabPos
+  commentId: F:Global.DaddyTentacle.idealGrabPos
+  id: idealGrabPos
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: idealGrabPos
+  nameWithType: DaddyTentacle.idealGrabPos
+  fullName: DaddyTentacle.idealGrabPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.idealGrabPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 idealGrabPos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public idealGrabPos As Vector2
+- uid: Global.DaddyTentacle.neededForLocomotion
+  commentId: F:Global.DaddyTentacle.neededForLocomotion
+  id: neededForLocomotion
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: neededForLocomotion
+  nameWithType: DaddyTentacle.neededForLocomotion
+  fullName: DaddyTentacle.neededForLocomotion
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.neededForLocomotion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool neededForLocomotion
+    return:
+      type: System.Boolean
+    content.vb: Public neededForLocomotion As Boolean
+- uid: Global.DaddyTentacle.huntCreature
+  commentId: F:Global.DaddyTentacle.huntCreature
+  id: huntCreature
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: huntCreature
+  nameWithType: DaddyTentacle.huntCreature
+  fullName: DaddyTentacle.huntCreature
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.huntCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation huntCreature
+    return:
+      type: Global.Tracker.CreatureRepresentation
+    content.vb: Public huntCreature As Tracker.CreatureRepresentation
+- uid: Global.DaddyTentacle.checkSound
+  commentId: F:Global.DaddyTentacle.checkSound
+  id: checkSound
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: checkSound
+  nameWithType: DaddyTentacle.checkSound
+  fullName: DaddyTentacle.checkSound
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.checkSound</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public NoiseTracker.TheorizedSource checkSound
+    return:
+      type: Global.NoiseTracker.TheorizedSource
+    content.vb: Public checkSound As NoiseTracker.TheorizedSource
+- uid: Global.DaddyTentacle.soundCheckCounter
+  commentId: F:Global.DaddyTentacle.soundCheckCounter
+  id: soundCheckCounter
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: soundCheckCounter
+  nameWithType: DaddyTentacle.soundCheckCounter
+  fullName: DaddyTentacle.soundCheckCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.soundCheckCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int soundCheckCounter
+    return:
+      type: System.Int32
+    content.vb: Public soundCheckCounter As Integer
+- uid: Global.DaddyTentacle.soundCheckTimer
+  commentId: F:Global.DaddyTentacle.soundCheckTimer
+  id: soundCheckTimer
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: soundCheckTimer
+  nameWithType: DaddyTentacle.soundCheckTimer
+  fullName: DaddyTentacle.soundCheckTimer
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.soundCheckTimer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int soundCheckTimer
+    return:
+      type: System.Int32
+    content.vb: Public soundCheckTimer As Integer
+- uid: Global.DaddyTentacle.examineSoundPos
+  commentId: F:Global.DaddyTentacle.examineSoundPos
+  id: examineSoundPos
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: examineSoundPos
+  nameWithType: DaddyTentacle.examineSoundPos
+  fullName: DaddyTentacle.examineSoundPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.examineSoundPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? examineSoundPos
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public examineSoundPos As Vector2?
+- uid: Global.DaddyTentacle.grabChunk
+  commentId: F:Global.DaddyTentacle.grabChunk
+  id: grabChunk
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: grabChunk
+  nameWithType: DaddyTentacle.grabChunk
+  fullName: DaddyTentacle.grabChunk
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.grabChunk</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BodyChunk grabChunk
+    return:
+      type: Global.BodyChunk
+    content.vb: Public grabChunk As BodyChunk
+- uid: Global.DaddyTentacle.sticky
+  commentId: F:Global.DaddyTentacle.sticky
+  id: sticky
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: sticky
+  nameWithType: DaddyTentacle.sticky
+  fullName: DaddyTentacle.sticky
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.sticky</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float sticky
+    return:
+      type: System.Single
+    content.vb: Public sticky As Single
+- uid: Global.DaddyTentacle.chunksStickSounds
+  commentId: F:Global.DaddyTentacle.chunksStickSounds
+  id: chunksStickSounds
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: chunksStickSounds
+  nameWithType: DaddyTentacle.chunksStickSounds
+  fullName: DaddyTentacle.chunksStickSounds
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.chunksStickSounds</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int[] chunksStickSounds
+    return:
+      type: System.Int32[]
+    content.vb: Public chunksStickSounds As Integer()
+- uid: Global.DaddyTentacle.task
+  commentId: F:Global.DaddyTentacle.task
+  id: task
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: task
+  nameWithType: DaddyTentacle.task
+  fullName: DaddyTentacle.task
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.task</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyTentacle.Task task
+    return:
+      type: Global.DaddyTentacle.Task
+    content.vb: Public task As DaddyTentacle.Task
+- uid: Global.DaddyTentacle.huntDirection
+  commentId: F:Global.DaddyTentacle.huntDirection
+  id: huntDirection
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: huntDirection
+  nameWithType: DaddyTentacle.huntDirection
+  fullName: DaddyTentacle.huntDirection
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:DaddyTentacle.huntDirection</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 huntDirection
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public huntDirection As Vector2
+- uid: Global.DaddyTentacle.SwitchTask(DaddyTentacle.Task)
+  commentId: M:Global.DaddyTentacle.SwitchTask(DaddyTentacle.Task)
+  id: SwitchTask(DaddyTentacle.Task)
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: SwitchTask(Task)
+  nameWithType: DaddyTentacle.SwitchTask(DaddyTentacle.Task)
+  fullName: DaddyTentacle.SwitchTask(DaddyTentacle.Task)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.SwitchTask(DaddyTentacle.Task)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SwitchTask(DaddyTentacle.Task newTask)
+    parameters:
+    - id: newTask
+      type: Global.DaddyTentacle.Task
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newTask</parameter>
+            <parameter>M:DaddyTentacle.SwitchTask(DaddyTentacle.Task)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SwitchTask(newTask As DaddyTentacle.Task)
+  overload: Global.DaddyTentacle.SwitchTask*
+- uid: Global.DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)
+  commentId: M:Global.DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)
+  id: '#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)'
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: DaddyTentacle(Creature, IHaveRotParts, BodyChunk, float, int, Vector2)
+  nameWithType: DaddyTentacle.DaddyTentacle(Creature, DaddyLongLegs.IHaveRotParts, BodyChunk, float, int, Vector2)
+  fullName: DaddyTentacle.DaddyTentacle(Creature, DaddyLongLegs.IHaveRotParts, BodyChunk, float, int, UnityEngine.Vector2)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>DaddyTentacle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DaddyTentacle(Creature daddy, DaddyLongLegs.IHaveRotParts rotOwner, BodyChunk chunk, float length, int tentacleNumber, Vector2 tentacleDir)
+    parameters:
+    - id: daddy
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>daddy</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rotOwner
+      type: Global.DaddyLongLegs.IHaveRotParts
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rotOwner</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: chunk
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chunk</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: length
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>length</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: tentacleNumber
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tentacleNumber</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: tentacleDir
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tentacleDir</parameter>
+            <parameter>M:DaddyTentacle.#ctor(Creature,DaddyLongLegs.IHaveRotParts,BodyChunk,System.Single,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(daddy As Creature, rotOwner As DaddyLongLegs.IHaveRotParts, chunk As BodyChunk, length As Single, tentacleNumber As Integer, tentacleDir As Vector2)
+  overload: Global.DaddyTentacle.#ctor*
+  nameWithType.vb: DaddyTentacle.New(Creature, DaddyLongLegs.IHaveRotParts, BodyChunk, Single, Integer, Vector2)
+  fullName.vb: DaddyTentacle.New(Creature, DaddyLongLegs.IHaveRotParts, BodyChunk, Single, Integer, UnityEngine.Vector2)
+  name.vb: New(Creature, IHaveRotParts, BodyChunk, Single, Integer, Vector2)
+- uid: Global.DaddyTentacle.NewRoom(Room)
+  commentId: M:Global.DaddyTentacle.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: DaddyTentacle.NewRoom(Room)
+  fullName: DaddyTentacle.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:DaddyTentacle.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.Tentacle.NewRoom(Room)
+  overload: Global.DaddyTentacle.NewRoom*
+- uid: Global.DaddyTentacle.Update
+  commentId: M:Global.DaddyTentacle.Update
+  id: Update
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DaddyTentacle.Update()
+  fullName: DaddyTentacle.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.Tentacle.Update
+  overload: Global.DaddyTentacle.Update*
+- uid: Global.DaddyTentacle.ReleaseScore
+  commentId: M:Global.DaddyTentacle.ReleaseScore
+  id: ReleaseScore
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: ReleaseScore()
+  nameWithType: DaddyTentacle.ReleaseScore()
+  fullName: DaddyTentacle.ReleaseScore()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.ReleaseScore</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ReleaseScore()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:DaddyTentacle.ReleaseScore</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReleaseScore() As Single
+  overload: Global.DaddyTentacle.ReleaseScore*
+- uid: Global.DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)
+  commentId: M:Global.DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)
+  id: UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: UpdateClimbGrabPos(ref List<IntVector2>)
+  nameWithType: DaddyTentacle.UpdateClimbGrabPos(ref List<IntVector2>)
+  fullName: DaddyTentacle.UpdateClimbGrabPos(ref System.Collections.Generic.List<RWCustom.IntVector2>)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateClimbGrabPos(ref List<IntVector2> path)
+    parameters:
+    - id: path
+      type: System.Collections.Generic.List{RWCustom.IntVector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>path</parameter>
+            <parameter>M:DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List{RWCustom.IntVector2}@)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub UpdateClimbGrabPos(path As List(Of IntVector2))
+  overload: Global.DaddyTentacle.UpdateClimbGrabPos*
+  nameWithType.vb: DaddyTentacle.UpdateClimbGrabPos(List(Of IntVector2))
+  fullName.vb: DaddyTentacle.UpdateClimbGrabPos(System.Collections.Generic.List(Of RWCustom.IntVector2))
+  name.vb: UpdateClimbGrabPos(List(Of IntVector2))
+- uid: Global.DaddyTentacle.GravityDirection
+  commentId: M:Global.DaddyTentacle.GravityDirection
+  id: GravityDirection
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: GravityDirection()
+  nameWithType: DaddyTentacle.GravityDirection()
+  fullName: DaddyTentacle.GravityDirection()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:DaddyTentacle.GravityDirection</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override IntVector2 GravityDirection()
+    return:
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:DaddyTentacle.GravityDirection</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Function GravityDirection() As IntVector2
+  overridden: Global.Tentacle.GravityDirection
+  overload: Global.DaddyTentacle.GravityDirection*
+- uid: Global.DaddyTentacle.daddy
+  commentId: P:Global.DaddyTentacle.daddy
+  id: daddy
+  parent: Global.DaddyTentacle
+  langs:
+  - csharp
+  - vb
+  name: daddy
+  nameWithType: DaddyTentacle.daddy
+  fullName: DaddyTentacle.daddy
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:DaddyTentacle.daddy</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Creature daddy { get; }
+    parameters: []
+    return:
+      type: Global.Creature
+    content.vb: Public ReadOnly Property daddy As Creature
+  overload: Global.DaddyTentacle.daddy*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Tentacle
+  commentId: T:Global.Tentacle
+  isExternal: true
+  href: Tentacle.html
+  name: Tentacle
+  nameWithType: Tentacle
+  fullName: Tentacle
+- uid: Global.Tentacle.debugViz
+  commentId: F:Global.Tentacle.debugViz
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_debugViz
+  name: debugViz
+  nameWithType: Tentacle.debugViz
+  fullName: Tentacle.debugViz
+- uid: Global.Tentacle.sprites
+  commentId: F:Global.Tentacle.sprites
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_sprites
+  name: sprites
+  nameWithType: Tentacle.sprites
+  fullName: Tentacle.sprites
+- uid: Global.Tentacle.grabPathSprites
+  commentId: F:Global.Tentacle.grabPathSprites
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_grabPathSprites
+  name: grabPathSprites
+  nameWithType: Tentacle.grabPathSprites
+  fullName: Tentacle.grabPathSprites
+- uid: Global.Tentacle.pullCounter
+  commentId: F:Global.Tentacle.pullCounter
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_pullCounter
+  name: pullCounter
+  nameWithType: Tentacle.pullCounter
+  fullName: Tentacle.pullCounter
+- uid: Global.Tentacle.floatGrabDest
+  commentId: F:Global.Tentacle.floatGrabDest
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_floatGrabDest
+  name: floatGrabDest
+  nameWithType: Tentacle.floatGrabDest
+  fullName: Tentacle.floatGrabDest
+- uid: Global.Tentacle.grabPath
+  commentId: F:Global.Tentacle.grabPath
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_grabPath
+  name: grabPath
+  nameWithType: Tentacle.grabPath
+  fullName: Tentacle.grabPath
+- uid: Global.Tentacle.segments
+  commentId: F:Global.Tentacle.segments
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_segments
+  name: segments
+  nameWithType: Tentacle.segments
+  fullName: Tentacle.segments
+- uid: Global.Tentacle.room
+  commentId: F:Global.Tentacle.room
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_room
+  name: room
+  nameWithType: Tentacle.room
+  fullName: Tentacle.room
+- uid: Global.Tentacle.idealLength
+  commentId: F:Global.Tentacle.idealLength
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_idealLength
+  name: idealLength
+  nameWithType: Tentacle.idealLength
+  fullName: Tentacle.idealLength
+- uid: Global.Tentacle.tChunks
+  commentId: F:Global.Tentacle.tChunks
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_tChunks
+  name: tChunks
+  nameWithType: Tentacle.tChunks
+  fullName: Tentacle.tChunks
+- uid: Global.Tentacle.owner
+  commentId: F:Global.Tentacle.owner
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_owner
+  name: owner
+  nameWithType: Tentacle.owner
+  fullName: Tentacle.owner
+- uid: Global.Tentacle.pullsThisTick
+  commentId: F:Global.Tentacle.pullsThisTick
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_pullsThisTick
+  name: pullsThisTick
+  nameWithType: Tentacle.pullsThisTick
+  fullName: Tentacle.pullsThisTick
+- uid: Global.Tentacle.connectedChunk
+  commentId: F:Global.Tentacle.connectedChunk
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_connectedChunk
+  name: connectedChunk
+  nameWithType: Tentacle.connectedChunk
+  fullName: Tentacle.connectedChunk
+- uid: Global.Tentacle.stretchAndSqueeze
+  commentId: F:Global.Tentacle.stretchAndSqueeze
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_stretchAndSqueeze
+  name: stretchAndSqueeze
+  nameWithType: Tentacle.stretchAndSqueeze
+  fullName: Tentacle.stretchAndSqueeze
+- uid: Global.Tentacle.goForGoalPower
+  commentId: F:Global.Tentacle.goForGoalPower
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_goForGoalPower
+  name: goForGoalPower
+  nameWithType: Tentacle.goForGoalPower
+  fullName: Tentacle.goForGoalPower
+- uid: Global.Tentacle.backtrackFrom
+  commentId: F:Global.Tentacle.backtrackFrom
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_backtrackFrom
+  name: backtrackFrom
+  nameWithType: Tentacle.backtrackFrom
+  fullName: Tentacle.backtrackFrom
+- uid: Global.Tentacle.limp
+  commentId: F:Global.Tentacle.limp
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_limp
+  name: limp
+  nameWithType: Tentacle.limp
+  fullName: Tentacle.limp
+- uid: Global.Tentacle.tProps
+  commentId: F:Global.Tentacle.tProps
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_tProps
+  name: tProps
+  nameWithType: Tentacle.tProps
+  fullName: Tentacle.tProps
+- uid: Global.Tentacle.MoveGrabDest(UnityEngine.Vector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  commentId: M:Global.Tentacle.MoveGrabDest(UnityEngine.Vector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_MoveGrabDest_UnityEngine_Vector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  name: MoveGrabDest(Vector2, ref List<IntVector2>)
+  nameWithType: Tentacle.MoveGrabDest(Vector2, ref List<IntVector2>)
+  fullName: Tentacle.MoveGrabDest(UnityEngine.Vector2, ref System.Collections.Generic.List<RWCustom.IntVector2>)
+  nameWithType.vb: Tentacle.MoveGrabDest(Vector2, List(Of IntVector2))
+  fullName.vb: Tentacle.MoveGrabDest(UnityEngine.Vector2, System.Collections.Generic.List(Of RWCustom.IntVector2))
+  name.vb: MoveGrabDest(Vector2, List(Of IntVector2))
+  spec.csharp:
+  - uid: Global.Tentacle.MoveGrabDest(UnityEngine.Vector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+    name: MoveGrabDest
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_MoveGrabDest_UnityEngine_Vector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.MoveGrabDest(UnityEngine.Vector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+    name: MoveGrabDest
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_MoveGrabDest_UnityEngine_Vector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  - name: )
+- uid: Global.Tentacle.Visual(RWCustom.IntVector2,RWCustom.IntVector2)
+  commentId: M:Global.Tentacle.Visual(RWCustom.IntVector2,RWCustom.IntVector2)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_Visual_RWCustom_IntVector2_RWCustom_IntVector2_
+  name: Visual(IntVector2, IntVector2)
+  nameWithType: Tentacle.Visual(IntVector2, IntVector2)
+  fullName: Tentacle.Visual(RWCustom.IntVector2, RWCustom.IntVector2)
+  spec.csharp:
+  - uid: Global.Tentacle.Visual(RWCustom.IntVector2,RWCustom.IntVector2)
+    name: Visual
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Visual_RWCustom_IntVector2_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.Visual(RWCustom.IntVector2,RWCustom.IntVector2)
+    name: Visual
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Visual_RWCustom_IntVector2_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: Global.Tentacle.MoveBase(RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  commentId: M:Global.Tentacle.MoveBase(RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_MoveBase_RWCustom_IntVector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  name: MoveBase(IntVector2, ref List<IntVector2>)
+  nameWithType: Tentacle.MoveBase(IntVector2, ref List<IntVector2>)
+  fullName: Tentacle.MoveBase(RWCustom.IntVector2, ref System.Collections.Generic.List<RWCustom.IntVector2>)
+  nameWithType.vb: Tentacle.MoveBase(IntVector2, List(Of IntVector2))
+  fullName.vb: Tentacle.MoveBase(RWCustom.IntVector2, System.Collections.Generic.List(Of RWCustom.IntVector2))
+  name.vb: MoveBase(IntVector2, List(Of IntVector2))
+  spec.csharp:
+  - uid: Global.Tentacle.MoveBase(RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+    name: MoveBase
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_MoveBase_RWCustom_IntVector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.MoveBase(RWCustom.IntVector2,System.Collections.Generic.List{RWCustom.IntVector2}@)
+    name: MoveBase
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_MoveBase_RWCustom_IntVector2_System_Collections_Generic_List_RWCustom_IntVector2___
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  - name: )
+- uid: Global.Tentacle.CurrentLength
+  commentId: M:Global.Tentacle.CurrentLength
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_CurrentLength
+  name: CurrentLength()
+  nameWithType: Tentacle.CurrentLength()
+  fullName: Tentacle.CurrentLength()
+  spec.csharp:
+  - uid: Global.Tentacle.CurrentLength
+    name: CurrentLength
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_CurrentLength
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.CurrentLength
+    name: CurrentLength
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_CurrentLength
+  - name: (
+  - name: )
+- uid: Global.Tentacle.Reset(UnityEngine.Vector2)
+  commentId: M:Global.Tentacle.Reset(UnityEngine.Vector2)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_Reset_UnityEngine_Vector2_
+  name: Reset(Vector2)
+  nameWithType: Tentacle.Reset(Vector2)
+  fullName: Tentacle.Reset(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.Tentacle.Reset(UnityEngine.Vector2)
+    name: Reset
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Reset_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.Reset(UnityEngine.Vector2)
+    name: Reset
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Reset_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.Tentacle.PushChunksApart(System.Int32,System.Int32)
+  commentId: M:Global.Tentacle.PushChunksApart(System.Int32,System.Int32)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_PushChunksApart_System_Int32_System_Int32_
+  name: PushChunksApart(int, int)
+  nameWithType: Tentacle.PushChunksApart(int, int)
+  fullName: Tentacle.PushChunksApart(int, int)
+  nameWithType.vb: Tentacle.PushChunksApart(Integer, Integer)
+  fullName.vb: Tentacle.PushChunksApart(Integer, Integer)
+  name.vb: PushChunksApart(Integer, Integer)
+  spec.csharp:
+  - uid: Global.Tentacle.PushChunksApart(System.Int32,System.Int32)
+    name: PushChunksApart
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_PushChunksApart_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.PushChunksApart(System.Int32,System.Int32)
+    name: PushChunksApart
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_PushChunksApart_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Tentacle.grabDest
+  commentId: P:Global.Tentacle.grabDest
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_grabDest
+  name: grabDest
+  nameWithType: Tentacle.grabDest
+  fullName: Tentacle.grabDest
+- uid: Global.Tentacle.Tip
+  commentId: P:Global.Tentacle.Tip
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_Tip
+  name: Tip
+  nameWithType: Tentacle.Tip
+  fullName: Tentacle.Tip
+- uid: Global.Tentacle.BasePos
+  commentId: P:Global.Tentacle.BasePos
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_BasePos
+  name: BasePos
+  nameWithType: Tentacle.BasePos
+  fullName: Tentacle.BasePos
+- uid: Global.Tentacle.TotalRope
+  commentId: P:Global.Tentacle.TotalRope
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_TotalRope
+  name: TotalRope
+  nameWithType: Tentacle.TotalRope
+  fullName: Tentacle.TotalRope
+- uid: Global.Tentacle.FloatBase
+  commentId: P:Global.Tentacle.FloatBase
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_FloatBase
+  name: FloatBase
+  nameWithType: Tentacle.FloatBase
+  fullName: Tentacle.FloatBase
+- uid: Global.Tentacle.retractFac
+  commentId: P:Global.Tentacle.retractFac
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_retractFac
+  name: retractFac
+  nameWithType: Tentacle.retractFac
+  fullName: Tentacle.retractFac
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.DaddyLongLegs.IHaveRotParts
+  commentId: T:Global.DaddyLongLegs.IHaveRotParts
+  isExternal: true
+  href: DaddyLongLegs.html
+  name: DaddyLongLegs.IHaveRotParts
+  nameWithType: DaddyLongLegs.IHaveRotParts
+  fullName: DaddyLongLegs.IHaveRotParts
+  spec.csharp:
+  - uid: Global.DaddyLongLegs
+    name: DaddyLongLegs
+    isExternal: true
+    href: DaddyLongLegs.html
+  - name: .
+  - uid: Global.DaddyLongLegs.IHaveRotParts
+    name: IHaveRotParts
+    isExternal: true
+    href: DaddyLongLegs.IHaveRotParts.html
+  spec.vb:
+  - uid: Global.DaddyLongLegs
+    name: DaddyLongLegs
+    isExternal: true
+    href: DaddyLongLegs.html
+  - name: .
+  - uid: Global.DaddyLongLegs.IHaveRotParts
+    name: IHaveRotParts
+    isExternal: true
+    href: DaddyLongLegs.IHaveRotParts.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.NoiseTracker.TheorizedSource
+  commentId: T:Global.NoiseTracker.TheorizedSource
+  isExternal: true
+  href: NoiseTracker.html
+  name: NoiseTracker.TheorizedSource
+  nameWithType: NoiseTracker.TheorizedSource
+  fullName: NoiseTracker.TheorizedSource
+  spec.csharp:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  spec.vb:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+- uid: System.Nullable{UnityEngine.Vector2}
+  commentId: T:System.Nullable{UnityEngine.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: UnityEngine.Vector2?
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.BodyChunk
+  commentId: T:Global.BodyChunk
+  isExternal: true
+  href: BodyChunk.html
+  name: BodyChunk
+  nameWithType: BodyChunk
+  fullName: BodyChunk
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Global.DaddyTentacle.Task
+  commentId: T:Global.DaddyTentacle.Task
+  isExternal: true
+  href: DaddyTentacle.html
+  name: DaddyTentacle.Task
+  nameWithType: DaddyTentacle.Task
+  fullName: DaddyTentacle.Task
+  spec.csharp:
+  - uid: Global.DaddyTentacle
+    name: DaddyTentacle
+    isExternal: true
+    href: DaddyTentacle.html
+  - name: .
+  - uid: Global.DaddyTentacle.Task
+    name: Task
+    isExternal: true
+    href: DaddyTentacle.Task.html
+  spec.vb:
+  - uid: Global.DaddyTentacle
+    name: DaddyTentacle
+    isExternal: true
+    href: DaddyTentacle.html
+  - name: .
+  - uid: Global.DaddyTentacle.Task
+    name: Task
+    isExternal: true
+    href: DaddyTentacle.Task.html
+- uid: Global.DaddyTentacle.SwitchTask*
+  commentId: Overload:Global.DaddyTentacle.SwitchTask
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_SwitchTask_DaddyTentacle_Task_
+  name: SwitchTask
+  nameWithType: DaddyTentacle.SwitchTask
+  fullName: DaddyTentacle.SwitchTask
+- uid: Global.DaddyTentacle.#ctor*
+  commentId: Overload:Global.DaddyTentacle.#ctor
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle__ctor_Creature_DaddyLongLegs_IHaveRotParts_BodyChunk_System_Single_System_Int32_UnityEngine_Vector2_
+  name: DaddyTentacle
+  nameWithType: DaddyTentacle.DaddyTentacle
+  fullName: DaddyTentacle.DaddyTentacle
+  nameWithType.vb: DaddyTentacle.New
+  fullName.vb: DaddyTentacle.New
+  name.vb: New
+- uid: Global.Creature
+  commentId: T:Global.Creature
+  isExternal: true
+  href: Creature.html
+  name: Creature
+  nameWithType: Creature
+  fullName: Creature
+- uid: Global.Tentacle.NewRoom(Room)
+  commentId: M:Global.Tentacle.NewRoom(Room)
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: Tentacle.NewRoom(Room)
+  fullName: Tentacle.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.Tentacle.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.DaddyTentacle.NewRoom*
+  commentId: Overload:Global.DaddyTentacle.NewRoom
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_NewRoom_Room_
+  name: NewRoom
+  nameWithType: DaddyTentacle.NewRoom
+  fullName: DaddyTentacle.NewRoom
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.Tentacle.Update
+  commentId: M:Global.Tentacle.Update
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_Update
+  name: Update()
+  nameWithType: Tentacle.Update()
+  fullName: Tentacle.Update()
+  spec.csharp:
+  - uid: Global.Tentacle.Update
+    name: Update
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.Update
+    name: Update
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_Update
+  - name: (
+  - name: )
+- uid: Global.DaddyTentacle.Update*
+  commentId: Overload:Global.DaddyTentacle.Update
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_Update
+  name: Update
+  nameWithType: DaddyTentacle.Update
+  fullName: DaddyTentacle.Update
+- uid: Global.DaddyTentacle.ReleaseScore*
+  commentId: Overload:Global.DaddyTentacle.ReleaseScore
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_ReleaseScore
+  name: ReleaseScore
+  nameWithType: DaddyTentacle.ReleaseScore
+  fullName: DaddyTentacle.ReleaseScore
+- uid: Global.DaddyTentacle.UpdateClimbGrabPos*
+  commentId: Overload:Global.DaddyTentacle.UpdateClimbGrabPos
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_UpdateClimbGrabPos_System_Collections_Generic_List_RWCustom_IntVector2___
+  name: UpdateClimbGrabPos
+  nameWithType: DaddyTentacle.UpdateClimbGrabPos
+  fullName: DaddyTentacle.UpdateClimbGrabPos
+- uid: System.Collections.Generic.List{RWCustom.IntVector2}
+  commentId: T:System.Collections.Generic.List{RWCustom.IntVector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IntVector2>
+  nameWithType: List<IntVector2>
+  fullName: System.Collections.Generic.List<RWCustom.IntVector2>
+  nameWithType.vb: List(Of IntVector2)
+  fullName.vb: System.Collections.Generic.List(Of RWCustom.IntVector2)
+  name.vb: List(Of IntVector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.Tentacle.GravityDirection
+  commentId: M:Global.Tentacle.GravityDirection
+  parent: Global.Tentacle
+  isExternal: true
+  href: Global.Tentacle.html#Tentacle_GravityDirection
+  name: GravityDirection()
+  nameWithType: Tentacle.GravityDirection()
+  fullName: Tentacle.GravityDirection()
+  spec.csharp:
+  - uid: Global.Tentacle.GravityDirection
+    name: GravityDirection
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_GravityDirection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tentacle.GravityDirection
+    name: GravityDirection
+    isExternal: true
+    href: Global.Tentacle.html#Tentacle_GravityDirection
+  - name: (
+  - name: )
+- uid: Global.DaddyTentacle.GravityDirection*
+  commentId: Overload:Global.DaddyTentacle.GravityDirection
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_GravityDirection
+  name: GravityDirection
+  nameWithType: DaddyTentacle.GravityDirection
+  fullName: DaddyTentacle.GravityDirection
+- uid: Global.DaddyTentacle.daddy*
+  commentId: Overload:Global.DaddyTentacle.daddy
+  isExternal: true
+  href: Global.DaddyTentacle.html#DaddyTentacle_daddy
+  name: daddy
+  nameWithType: DaddyTentacle.daddy
+  fullName: DaddyTentacle.daddy

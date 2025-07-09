@@ -1,0 +1,3423 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Ghost
+  commentId: T:Global.Ghost
+  id: Ghost
+  parent: Global
+  children:
+  - Global.Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)
+  - Global.Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.Ghost.BodyMeshSprite
+  - Global.Ghost.ButtockSprite(System.Int32)
+  - Global.Ghost.DistortionSprite
+  - Global.Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.Ghost.FadeOutFinished
+  - Global.Ghost.FadeSprite
+  - Global.Ghost.HeadMeshSprite
+  - Global.Ghost.InitializeSprites
+  - Global.Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.Ghost.LightSprite
+  - Global.Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)
+  - Global.Ghost.LowerLegSprite(System.Int32)
+  - Global.Ghost.NeckConnectorSprite
+  - Global.Ghost.OnScreen
+  - Global.Ghost.ReplaceParts(System.String)
+  - Global.Ghost.Reset
+  - Global.Ghost.SnoutContour(System.Single,System.Boolean,System.Single)
+  - Global.Ghost.SpecialEvent(System.String)
+  - Global.Ghost.SpinningTop
+  - Global.Ghost.SpinningTopHead
+  - Global.Ghost.StartConversation
+  - Global.Ghost.ThighContour(System.Single,System.Boolean)
+  - Global.Ghost.ThightSprite(System.Int32)
+  - Global.Ghost.Update(System.Boolean)
+  - Global.Ghost.airResistance
+  - Global.Ghost.behindBodySprites
+  - Global.Ghost.blackColor
+  - Global.Ghost.chains
+  - Global.Ghost.conversationActive
+  - Global.Ghost.conversationFinished
+  - Global.Ghost.conversationStartedButPlayerLeftCounter
+  - Global.Ghost.currentConversation
+  - Global.Ghost.defaultFlip
+  - Global.Ghost.fadeOut
+  - Global.Ghost.flip
+  - Global.Ghost.flipFrom
+  - Global.Ghost.flipProg
+  - Global.Ghost.flipSpeed
+  - Global.Ghost.flipTo
+  - Global.Ghost.goldColor
+  - Global.Ghost.hasRequestedShutDown
+  - Global.Ghost.justMarkedEncountered
+  - Global.Ghost.lastFadeOut
+  - Global.Ghost.legs
+  - Global.Ghost.lightSpriteScale
+  - Global.Ghost.lowerLegSegments
+  - Global.Ghost.onScreenCounter
+  - Global.Ghost.placedObject
+  - Global.Ghost.rags
+  - Global.Ghost.scale
+  - Global.Ghost.sinBob
+  - Global.Ghost.snoutSegments
+  - Global.Ghost.spine
+  - Global.Ghost.spineBendPoint
+  - Global.Ghost.spineSegments
+  - Global.Ghost.theMarkMode
+  - Global.Ghost.thighSegments
+  - Global.Ghost.totalSprites
+  - Global.Ghost.totalStaticSprites
+  langs:
+  - csharp
+  - vb
+  name: Ghost
+  nameWithType: Ghost
+  fullName: Ghost
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: An instance of an Echo.
+  example: []
+  syntax:
+    content: 'public class Ghost : CosmeticSprite, IDrawable, IRunDuringDialog, Conversation.IOwnAConversation'
+    content.vb: Public Class Ghost Inherits CosmeticSprite Implements IDrawable, IRunDuringDialog, Conversation.IOwnAConversation
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.CosmeticSprite
+  derivedClasses:
+  - Watcher.SpinningTop
+  implements:
+  - Global.IDrawable
+  - MoreSlugcats.IRunDuringDialog
+  - Global.Conversation.IOwnAConversation
+  inheritedMembers:
+  - Global.CosmeticSprite.pos
+  - Global.CosmeticSprite.lastPos
+  - Global.CosmeticSprite.vel
+  - Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.Ghost.placedObject
+  commentId: F:Global.Ghost.placedObject
+  id: placedObject
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: placedObject
+  nameWithType: Ghost.placedObject
+  fullName: Ghost.placedObject
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.placedObject</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public PlacedObject placedObject
+    return:
+      type: Global.PlacedObject
+    content.vb: Public placedObject As PlacedObject
+- uid: Global.Ghost.currentConversation
+  commentId: F:Global.Ghost.currentConversation
+  id: currentConversation
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: currentConversation
+  nameWithType: Ghost.currentConversation
+  fullName: Ghost.currentConversation
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.currentConversation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public GhostConversation currentConversation
+    return:
+      type: Global.GhostConversation
+    content.vb: Public currentConversation As GhostConversation
+- uid: Global.Ghost.scale
+  commentId: F:Global.Ghost.scale
+  id: scale
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: scale
+  nameWithType: Ghost.scale
+  fullName: Ghost.scale
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.scale</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected float scale
+    return:
+      type: System.Single
+    content.vb: Protected scale As Single
+- uid: Global.Ghost.lightSpriteScale
+  commentId: F:Global.Ghost.lightSpriteScale
+  id: lightSpriteScale
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: lightSpriteScale
+  nameWithType: Ghost.lightSpriteScale
+  fullName: Ghost.lightSpriteScale
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.lightSpriteScale</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected float lightSpriteScale
+    return:
+      type: System.Single
+    content.vb: Protected lightSpriteScale As Single
+- uid: Global.Ghost.totalStaticSprites
+  commentId: F:Global.Ghost.totalStaticSprites
+  id: totalStaticSprites
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: totalStaticSprites
+  nameWithType: Ghost.totalStaticSprites
+  fullName: Ghost.totalStaticSprites
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.totalStaticSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int totalStaticSprites
+    return:
+      type: System.Int32
+    content.vb: Public totalStaticSprites As Integer
+- uid: Global.Ghost.totalSprites
+  commentId: F:Global.Ghost.totalSprites
+  id: totalSprites
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: totalSprites
+  nameWithType: Ghost.totalSprites
+  fullName: Ghost.totalSprites
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.totalSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int totalSprites
+    return:
+      type: System.Int32
+    content.vb: Public totalSprites As Integer
+- uid: Global.Ghost.behindBodySprites
+  commentId: F:Global.Ghost.behindBodySprites
+  id: behindBodySprites
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: behindBodySprites
+  nameWithType: Ghost.behindBodySprites
+  fullName: Ghost.behindBodySprites
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.behindBodySprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int behindBodySprites
+    return:
+      type: System.Int32
+    content.vb: Public behindBodySprites As Integer
+- uid: Global.Ghost.spine
+  commentId: F:Global.Ghost.spine
+  id: spine
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: spine
+  nameWithType: Ghost.spine
+  fullName: Ghost.spine
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.spine</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Ghost.Part[] spine
+    return:
+      type: Global.Ghost.Part[]
+    content.vb: Public spine As Ghost.Part()
+- uid: Global.Ghost.legs
+  commentId: F:Global.Ghost.legs
+  id: legs
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: legs
+  nameWithType: Ghost.legs
+  fullName: Ghost.legs
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.legs</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Ghost.Part[,] legs
+    return:
+      type: Global.Ghost.Part[,]
+    content.vb: Public legs As Ghost.Part(,)
+- uid: Global.Ghost.spineSegments
+  commentId: F:Global.Ghost.spineSegments
+  id: spineSegments
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: spineSegments
+  nameWithType: Ghost.spineSegments
+  fullName: Ghost.spineSegments
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.spineSegments</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int spineSegments
+    return:
+      type: System.Int32
+    content.vb: Public spineSegments As Integer
+- uid: Global.Ghost.snoutSegments
+  commentId: F:Global.Ghost.snoutSegments
+  id: snoutSegments
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: snoutSegments
+  nameWithType: Ghost.snoutSegments
+  fullName: Ghost.snoutSegments
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.snoutSegments</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int snoutSegments
+    return:
+      type: System.Int32
+    content.vb: Public snoutSegments As Integer
+- uid: Global.Ghost.spineBendPoint
+  commentId: F:Global.Ghost.spineBendPoint
+  id: spineBendPoint
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: spineBendPoint
+  nameWithType: Ghost.spineBendPoint
+  fullName: Ghost.spineBendPoint
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.spineBendPoint</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int spineBendPoint
+    return:
+      type: System.Int32
+    content.vb: Public spineBendPoint As Integer
+- uid: Global.Ghost.thighSegments
+  commentId: F:Global.Ghost.thighSegments
+  id: thighSegments
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: thighSegments
+  nameWithType: Ghost.thighSegments
+  fullName: Ghost.thighSegments
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.thighSegments</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int thighSegments
+    return:
+      type: System.Int32
+    content.vb: Public thighSegments As Integer
+- uid: Global.Ghost.lowerLegSegments
+  commentId: F:Global.Ghost.lowerLegSegments
+  id: lowerLegSegments
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: lowerLegSegments
+  nameWithType: Ghost.lowerLegSegments
+  fullName: Ghost.lowerLegSegments
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.lowerLegSegments</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int lowerLegSegments
+    return:
+      type: System.Int32
+    content.vb: Public lowerLegSegments As Integer
+- uid: Global.Ghost.flip
+  commentId: F:Global.Ghost.flip
+  id: flip
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: flip
+  nameWithType: Ghost.flip
+  fullName: Ghost.flip
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.flip</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float flip
+    return:
+      type: System.Single
+    content.vb: Public flip As Single
+- uid: Global.Ghost.defaultFlip
+  commentId: F:Global.Ghost.defaultFlip
+  id: defaultFlip
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: defaultFlip
+  nameWithType: Ghost.defaultFlip
+  fullName: Ghost.defaultFlip
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.defaultFlip</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float defaultFlip
+    return:
+      type: System.Single
+    content.vb: Public defaultFlip As Single
+- uid: Global.Ghost.flipFrom
+  commentId: F:Global.Ghost.flipFrom
+  id: flipFrom
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: flipFrom
+  nameWithType: Ghost.flipFrom
+  fullName: Ghost.flipFrom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.flipFrom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float flipFrom
+    return:
+      type: System.Single
+    content.vb: Public flipFrom As Single
+- uid: Global.Ghost.flipTo
+  commentId: F:Global.Ghost.flipTo
+  id: flipTo
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: flipTo
+  nameWithType: Ghost.flipTo
+  fullName: Ghost.flipTo
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.flipTo</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float flipTo
+    return:
+      type: System.Single
+    content.vb: Public flipTo As Single
+- uid: Global.Ghost.flipProg
+  commentId: F:Global.Ghost.flipProg
+  id: flipProg
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: flipProg
+  nameWithType: Ghost.flipProg
+  fullName: Ghost.flipProg
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.flipProg</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float flipProg
+    return:
+      type: System.Single
+    content.vb: Public flipProg As Single
+- uid: Global.Ghost.flipSpeed
+  commentId: F:Global.Ghost.flipSpeed
+  id: flipSpeed
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: flipSpeed
+  nameWithType: Ghost.flipSpeed
+  fullName: Ghost.flipSpeed
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.flipSpeed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float flipSpeed
+    return:
+      type: System.Single
+    content.vb: Public flipSpeed As Single
+- uid: Global.Ghost.airResistance
+  commentId: F:Global.Ghost.airResistance
+  id: airResistance
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: airResistance
+  nameWithType: Ghost.airResistance
+  fullName: Ghost.airResistance
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.airResistance</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float airResistance
+    return:
+      type: System.Single
+    content.vb: Public airResistance As Single
+- uid: Global.Ghost.rags
+  commentId: F:Global.Ghost.rags
+  id: rags
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: rags
+  nameWithType: Ghost.rags
+  fullName: Ghost.rags
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.rags</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Ghost.Rags rags
+    return:
+      type: Global.Ghost.Rags
+    content.vb: Public rags As Ghost.Rags
+- uid: Global.Ghost.chains
+  commentId: F:Global.Ghost.chains
+  id: chains
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: chains
+  nameWithType: Ghost.chains
+  fullName: Ghost.chains
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.chains</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Ghost.Chains chains
+    return:
+      type: Global.Ghost.Chains
+    content.vb: Public chains As Ghost.Chains
+- uid: Global.Ghost.blackColor
+  commentId: F:Global.Ghost.blackColor
+  id: blackColor
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: blackColor
+  nameWithType: Ghost.blackColor
+  fullName: Ghost.blackColor
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.blackColor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color blackColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public blackColor As Color
+- uid: Global.Ghost.goldColor
+  commentId: F:Global.Ghost.goldColor
+  id: goldColor
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: goldColor
+  nameWithType: Ghost.goldColor
+  fullName: Ghost.goldColor
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.goldColor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color goldColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public goldColor As Color
+- uid: Global.Ghost.sinBob
+  commentId: F:Global.Ghost.sinBob
+  id: sinBob
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: sinBob
+  nameWithType: Ghost.sinBob
+  fullName: Ghost.sinBob
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.sinBob</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float sinBob
+    return:
+      type: System.Single
+    content.vb: Public sinBob As Single
+- uid: Global.Ghost.onScreenCounter
+  commentId: F:Global.Ghost.onScreenCounter
+  id: onScreenCounter
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: onScreenCounter
+  nameWithType: Ghost.onScreenCounter
+  fullName: Ghost.onScreenCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.onScreenCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int onScreenCounter
+    return:
+      type: System.Int32
+    content.vb: Public onScreenCounter As Integer
+- uid: Global.Ghost.fadeOut
+  commentId: F:Global.Ghost.fadeOut
+  id: fadeOut
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: fadeOut
+  nameWithType: Ghost.fadeOut
+  fullName: Ghost.fadeOut
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.fadeOut</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float fadeOut
+    return:
+      type: System.Single
+    content.vb: Public fadeOut As Single
+- uid: Global.Ghost.lastFadeOut
+  commentId: F:Global.Ghost.lastFadeOut
+  id: lastFadeOut
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: lastFadeOut
+  nameWithType: Ghost.lastFadeOut
+  fullName: Ghost.lastFadeOut
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.lastFadeOut</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastFadeOut
+    return:
+      type: System.Single
+    content.vb: Public lastFadeOut As Single
+- uid: Global.Ghost.theMarkMode
+  commentId: F:Global.Ghost.theMarkMode
+  id: theMarkMode
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: theMarkMode
+  nameWithType: Ghost.theMarkMode
+  fullName: Ghost.theMarkMode
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.theMarkMode</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool theMarkMode
+    return:
+      type: System.Boolean
+    content.vb: Public theMarkMode As Boolean
+- uid: Global.Ghost.hasRequestedShutDown
+  commentId: F:Global.Ghost.hasRequestedShutDown
+  id: hasRequestedShutDown
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: hasRequestedShutDown
+  nameWithType: Ghost.hasRequestedShutDown
+  fullName: Ghost.hasRequestedShutDown
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.hasRequestedShutDown</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected bool hasRequestedShutDown
+    return:
+      type: System.Boolean
+    content.vb: Protected hasRequestedShutDown As Boolean
+- uid: Global.Ghost.conversationStartedButPlayerLeftCounter
+  commentId: F:Global.Ghost.conversationStartedButPlayerLeftCounter
+  id: conversationStartedButPlayerLeftCounter
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: conversationStartedButPlayerLeftCounter
+  nameWithType: Ghost.conversationStartedButPlayerLeftCounter
+  fullName: Ghost.conversationStartedButPlayerLeftCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.conversationStartedButPlayerLeftCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int conversationStartedButPlayerLeftCounter
+    return:
+      type: System.Int32
+    content.vb: Public conversationStartedButPlayerLeftCounter As Integer
+- uid: Global.Ghost.conversationActive
+  commentId: F:Global.Ghost.conversationActive
+  id: conversationActive
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: conversationActive
+  nameWithType: Ghost.conversationActive
+  fullName: Ghost.conversationActive
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.conversationActive</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool conversationActive
+    return:
+      type: System.Boolean
+    content.vb: Public conversationActive As Boolean
+- uid: Global.Ghost.conversationFinished
+  commentId: F:Global.Ghost.conversationFinished
+  id: conversationFinished
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: conversationFinished
+  nameWithType: Ghost.conversationFinished
+  fullName: Ghost.conversationFinished
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.conversationFinished</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool conversationFinished
+    return:
+      type: System.Boolean
+    content.vb: Public conversationFinished As Boolean
+- uid: Global.Ghost.justMarkedEncountered
+  commentId: F:Global.Ghost.justMarkedEncountered
+  id: justMarkedEncountered
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: justMarkedEncountered
+  nameWithType: Ghost.justMarkedEncountered
+  fullName: Ghost.justMarkedEncountered
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Ghost.justMarkedEncountered</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool justMarkedEncountered
+    return:
+      type: System.Boolean
+    content.vb: Public justMarkedEncountered As Boolean
+- uid: Global.Ghost.ButtockSprite(System.Int32)
+  commentId: M:Global.Ghost.ButtockSprite(System.Int32)
+  id: ButtockSprite(System.Int32)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ButtockSprite(int)
+  nameWithType: Ghost.ButtockSprite(int)
+  fullName: Ghost.ButtockSprite(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.ButtockSprite(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int ButtockSprite(int side)
+    parameters:
+    - id: side
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.ButtockSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.ButtockSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ButtockSprite(side As Integer) As Integer
+  overload: Global.Ghost.ButtockSprite*
+  nameWithType.vb: Ghost.ButtockSprite(Integer)
+  fullName.vb: Ghost.ButtockSprite(Integer)
+  name.vb: ButtockSprite(Integer)
+- uid: Global.Ghost.ThightSprite(System.Int32)
+  commentId: M:Global.Ghost.ThightSprite(System.Int32)
+  id: ThightSprite(System.Int32)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ThightSprite(int)
+  nameWithType: Ghost.ThightSprite(int)
+  fullName: Ghost.ThightSprite(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.ThightSprite(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int ThightSprite(int side)
+    parameters:
+    - id: side
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.ThightSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.ThightSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ThightSprite(side As Integer) As Integer
+  overload: Global.Ghost.ThightSprite*
+  nameWithType.vb: Ghost.ThightSprite(Integer)
+  fullName.vb: Ghost.ThightSprite(Integer)
+  name.vb: ThightSprite(Integer)
+- uid: Global.Ghost.LowerLegSprite(System.Int32)
+  commentId: M:Global.Ghost.LowerLegSprite(System.Int32)
+  id: LowerLegSprite(System.Int32)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: LowerLegSprite(int)
+  nameWithType: Ghost.LowerLegSprite(int)
+  fullName: Ghost.LowerLegSprite(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.LowerLegSprite(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int LowerLegSprite(int side)
+    parameters:
+    - id: side
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.LowerLegSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.LowerLegSprite(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function LowerLegSprite(side As Integer) As Integer
+  overload: Global.Ghost.LowerLegSprite*
+  nameWithType.vb: Ghost.LowerLegSprite(Integer)
+  fullName.vb: Ghost.LowerLegSprite(Integer)
+  name.vb: LowerLegSprite(Integer)
+- uid: Global.Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)
+  commentId: M:Global.Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)
+  id: '#ctor(Room,PlacedObject,GhostWorldPresence)'
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: Ghost(Room, PlacedObject, GhostWorldPresence)
+  nameWithType: Ghost.Ghost(Room, PlacedObject, GhostWorldPresence)
+  fullName: Ghost.Ghost(Room, PlacedObject, GhostWorldPresence)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Ghost</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Ghost(Room room, PlacedObject placedObject, GhostWorldPresence worldGhost)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)</parameter>
+          </include>
+        </markup>
+    - id: placedObject
+      type: Global.PlacedObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>placedObject</parameter>
+            <parameter>M:Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)</parameter>
+          </include>
+        </markup>
+    - id: worldGhost
+      type: Global.GhostWorldPresence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>worldGhost</parameter>
+            <parameter>M:Ghost.#ctor(Room,PlacedObject,GhostWorldPresence)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room, placedObject As PlacedObject, worldGhost As GhostWorldPresence)
+  overload: Global.Ghost.#ctor*
+  nameWithType.vb: Ghost.New(Room, PlacedObject, GhostWorldPresence)
+  fullName.vb: Ghost.New(Room, PlacedObject, GhostWorldPresence)
+  name.vb: New(Room, PlacedObject, GhostWorldPresence)
+- uid: Global.Ghost.InitializeSprites
+  commentId: M:Global.Ghost.InitializeSprites
+  id: InitializeSprites
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: InitializeSprites()
+  nameWithType: Ghost.InitializeSprites()
+  fullName: Ghost.InitializeSprites()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.InitializeSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual void InitializeSprites()
+    content.vb: Protected Overridable Sub InitializeSprites()
+  overload: Global.Ghost.InitializeSprites*
+- uid: Global.Ghost.Reset
+  commentId: M:Global.Ghost.Reset
+  id: Reset
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: Ghost.Reset()
+  fullName: Ghost.Reset()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.Reset</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.Ghost.Reset*
+- uid: Global.Ghost.OnScreen
+  commentId: M:Global.Ghost.OnScreen
+  id: OnScreen
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: OnScreen()
+  nameWithType: Ghost.OnScreen()
+  fullName: Ghost.OnScreen()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.OnScreen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual bool OnScreen()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.OnScreen</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overridable Function OnScreen() As Boolean
+  overload: Global.Ghost.OnScreen*
+- uid: Global.Ghost.FadeOutFinished
+  commentId: M:Global.Ghost.FadeOutFinished
+  id: FadeOutFinished
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: FadeOutFinished()
+  nameWithType: Ghost.FadeOutFinished()
+  fullName: Ghost.FadeOutFinished()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.FadeOutFinished</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual void FadeOutFinished()
+    content.vb: Protected Overridable Sub FadeOutFinished()
+  overload: Global.Ghost.FadeOutFinished*
+- uid: Global.Ghost.Update(System.Boolean)
+  commentId: M:Global.Ghost.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: Ghost.Update(bool)
+  fullName: Ghost.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:Ghost.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.CosmeticSprite.Update(System.Boolean)
+  overload: Global.Ghost.Update*
+  nameWithType.vb: Ghost.Update(Boolean)
+  fullName.vb: Ghost.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.Ghost.StartConversation
+  commentId: M:Global.Ghost.StartConversation
+  id: StartConversation
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: StartConversation()
+  nameWithType: Ghost.StartConversation()
+  fullName: Ghost.StartConversation()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.StartConversation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual void StartConversation()
+    content.vb: Protected Overridable Sub StartConversation()
+  overload: Global.Ghost.StartConversation*
+- uid: Global.Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: Ghost.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: Ghost.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Ghost.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Global.Ghost.InitiateSprites*
+- uid: Global.Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: Ghost.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: Ghost.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:Ghost.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overridden: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  overload: Global.Ghost.AddToContainer*
+- uid: Global.Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: Ghost.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: Ghost.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:Ghost.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Global.Ghost.DrawSprites*
+  nameWithType.vb: Ghost.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: Ghost.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.Ghost.SnoutContour(System.Single,System.Boolean,System.Single)
+  commentId: M:Global.Ghost.SnoutContour(System.Single,System.Boolean,System.Single)
+  id: SnoutContour(System.Single,System.Boolean,System.Single)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: SnoutContour(float, bool, float)
+  nameWithType: Ghost.SnoutContour(float, bool, float)
+  fullName: Ghost.SnoutContour(float, bool, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.SnoutContour(System.Single,System.Boolean,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float SnoutContour(float f, bool side, float sideView)
+    parameters:
+    - id: f
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>f</parameter>
+            <parameter>M:Ghost.SnoutContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: side
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.SnoutContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: sideView
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sideView</parameter>
+            <parameter>M:Ghost.SnoutContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.SnoutContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function SnoutContour(f As Single, side As Boolean, sideView As Single) As Single
+  overload: Global.Ghost.SnoutContour*
+  nameWithType.vb: Ghost.SnoutContour(Single, Boolean, Single)
+  fullName.vb: Ghost.SnoutContour(Single, Boolean, Single)
+  name.vb: SnoutContour(Single, Boolean, Single)
+- uid: Global.Ghost.ThighContour(System.Single,System.Boolean)
+  commentId: M:Global.Ghost.ThighContour(System.Single,System.Boolean)
+  id: ThighContour(System.Single,System.Boolean)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ThighContour(float, bool)
+  nameWithType: Ghost.ThighContour(float, bool)
+  fullName: Ghost.ThighContour(float, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.ThighContour(System.Single,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ThighContour(float f, bool side)
+    parameters:
+    - id: f
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>f</parameter>
+            <parameter>M:Ghost.ThighContour(System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: side
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.ThighContour(System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.ThighContour(System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ThighContour(f As Single, side As Boolean) As Single
+  overload: Global.Ghost.ThighContour*
+  nameWithType.vb: Ghost.ThighContour(Single, Boolean)
+  fullName.vb: Ghost.ThighContour(Single, Boolean)
+  name.vb: ThighContour(Single, Boolean)
+- uid: Global.Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)
+  commentId: M:Global.Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)
+  id: LowerLegContour(System.Single,System.Boolean,System.Single)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: LowerLegContour(float, bool, float)
+  nameWithType: Ghost.LowerLegContour(float, bool, float)
+  fullName: Ghost.LowerLegContour(float, bool, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float LowerLegContour(float f, bool side, float flip)
+    parameters:
+    - id: f
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>f</parameter>
+            <parameter>M:Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: side
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>side</parameter>
+            <parameter>M:Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: flip
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>flip</parameter>
+            <parameter>M:Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.LowerLegContour(System.Single,System.Boolean,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function LowerLegContour(f As Single, side As Boolean, flip As Single) As Single
+  overload: Global.Ghost.LowerLegContour*
+  nameWithType.vb: Ghost.LowerLegContour(Single, Boolean, Single)
+  fullName.vb: Ghost.LowerLegContour(Single, Boolean, Single)
+  name.vb: LowerLegContour(Single, Boolean, Single)
+- uid: Global.Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: Ghost.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: Ghost.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:Ghost.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overridden: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  overload: Global.Ghost.ApplyPalette*
+- uid: Global.Ghost.ReplaceParts(System.String)
+  commentId: M:Global.Ghost.ReplaceParts(System.String)
+  id: ReplaceParts(System.String)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: ReplaceParts(string)
+  nameWithType: Ghost.ReplaceParts(string)
+  fullName: Ghost.ReplaceParts(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.ReplaceParts(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public string ReplaceParts(string s)
+    parameters:
+    - id: s
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>s</parameter>
+            <parameter>M:Ghost.ReplaceParts(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Ghost.ReplaceParts(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReplaceParts(s As String) As String
+  overload: Global.Ghost.ReplaceParts*
+  implements:
+  - Global.Conversation.IOwnAConversation.ReplaceParts(System.String)
+  nameWithType.vb: Ghost.ReplaceParts(String)
+  fullName.vb: Ghost.ReplaceParts(String)
+  name.vb: ReplaceParts(String)
+- uid: Global.Ghost.SpecialEvent(System.String)
+  commentId: M:Global.Ghost.SpecialEvent(System.String)
+  id: SpecialEvent(System.String)
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: SpecialEvent(string)
+  nameWithType: Ghost.SpecialEvent(string)
+  fullName: Ghost.SpecialEvent(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Ghost.SpecialEvent(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpecialEvent(string eventName)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eventName</parameter>
+            <parameter>M:Ghost.SpecialEvent(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SpecialEvent(eventName As String)
+  overload: Global.Ghost.SpecialEvent*
+  implements:
+  - Global.Conversation.IOwnAConversation.SpecialEvent(System.String)
+  nameWithType.vb: Ghost.SpecialEvent(String)
+  fullName.vb: Ghost.SpecialEvent(String)
+  name.vb: SpecialEvent(String)
+- uid: Global.Ghost.LightSprite
+  commentId: P:Global.Ghost.LightSprite
+  id: LightSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: LightSprite
+  nameWithType: Ghost.LightSprite
+  fullName: Ghost.LightSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.LightSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int LightSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LightSprite As Integer
+  overload: Global.Ghost.LightSprite*
+- uid: Global.Ghost.BodyMeshSprite
+  commentId: P:Global.Ghost.BodyMeshSprite
+  id: BodyMeshSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: BodyMeshSprite
+  nameWithType: Ghost.BodyMeshSprite
+  fullName: Ghost.BodyMeshSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.BodyMeshSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int BodyMeshSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property BodyMeshSprite As Integer
+  overload: Global.Ghost.BodyMeshSprite*
+- uid: Global.Ghost.NeckConnectorSprite
+  commentId: P:Global.Ghost.NeckConnectorSprite
+  id: NeckConnectorSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: NeckConnectorSprite
+  nameWithType: Ghost.NeckConnectorSprite
+  fullName: Ghost.NeckConnectorSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.NeckConnectorSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int NeckConnectorSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NeckConnectorSprite As Integer
+  overload: Global.Ghost.NeckConnectorSprite*
+- uid: Global.Ghost.HeadMeshSprite
+  commentId: P:Global.Ghost.HeadMeshSprite
+  id: HeadMeshSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: HeadMeshSprite
+  nameWithType: Ghost.HeadMeshSprite
+  fullName: Ghost.HeadMeshSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.HeadMeshSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int HeadMeshSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property HeadMeshSprite As Integer
+  overload: Global.Ghost.HeadMeshSprite*
+- uid: Global.Ghost.DistortionSprite
+  commentId: P:Global.Ghost.DistortionSprite
+  id: DistortionSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: DistortionSprite
+  nameWithType: Ghost.DistortionSprite
+  fullName: Ghost.DistortionSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.DistortionSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int DistortionSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property DistortionSprite As Integer
+  overload: Global.Ghost.DistortionSprite*
+- uid: Global.Ghost.FadeSprite
+  commentId: P:Global.Ghost.FadeSprite
+  id: FadeSprite
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: FadeSprite
+  nameWithType: Ghost.FadeSprite
+  fullName: Ghost.FadeSprite
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.FadeSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int FadeSprite { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property FadeSprite As Integer
+  overload: Global.Ghost.FadeSprite*
+- uid: Global.Ghost.SpinningTopHead
+  commentId: P:Global.Ghost.SpinningTopHead
+  id: SpinningTopHead
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: SpinningTopHead
+  nameWithType: Ghost.SpinningTopHead
+  fullName: Ghost.SpinningTopHead
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.SpinningTopHead</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int SpinningTopHead { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property SpinningTopHead As Integer
+  overload: Global.Ghost.SpinningTopHead*
+- uid: Global.Ghost.SpinningTop
+  commentId: P:Global.Ghost.SpinningTop
+  id: SpinningTop
+  parent: Global.Ghost
+  langs:
+  - csharp
+  - vb
+  name: SpinningTop
+  nameWithType: Ghost.SpinningTop
+  fullName: Ghost.SpinningTop
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Ghost.SpinningTop</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool SpinningTop { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SpinningTop As Boolean
+  overload: Global.Ghost.SpinningTop*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.CosmeticSprite
+  commentId: T:Global.CosmeticSprite
+  isExternal: true
+  href: CosmeticSprite.html
+  name: CosmeticSprite
+  nameWithType: CosmeticSprite
+  fullName: CosmeticSprite
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: MoreSlugcats.IRunDuringDialog
+  commentId: T:MoreSlugcats.IRunDuringDialog
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.IRunDuringDialog.html
+  name: IRunDuringDialog
+  nameWithType: IRunDuringDialog
+  fullName: MoreSlugcats.IRunDuringDialog
+- uid: Global.Conversation.IOwnAConversation
+  commentId: T:Global.Conversation.IOwnAConversation
+  isExternal: true
+  href: Conversation.html
+  name: Conversation.IOwnAConversation
+  nameWithType: Conversation.IOwnAConversation
+  fullName: Conversation.IOwnAConversation
+  spec.csharp:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.IOwnAConversation
+    name: IOwnAConversation
+    isExternal: true
+    href: Conversation.IOwnAConversation.html
+  spec.vb:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.IOwnAConversation
+    name: IOwnAConversation
+    isExternal: true
+    href: Conversation.IOwnAConversation.html
+- uid: Global.CosmeticSprite.pos
+  commentId: F:Global.CosmeticSprite.pos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_pos
+  name: pos
+  nameWithType: CosmeticSprite.pos
+  fullName: CosmeticSprite.pos
+- uid: Global.CosmeticSprite.lastPos
+  commentId: F:Global.CosmeticSprite.lastPos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_lastPos
+  name: lastPos
+  nameWithType: CosmeticSprite.lastPos
+  fullName: CosmeticSprite.lastPos
+- uid: Global.CosmeticSprite.vel
+  commentId: F:Global.CosmeticSprite.vel
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_vel
+  name: vel
+  nameWithType: CosmeticSprite.vel
+  fullName: CosmeticSprite.vel
+- uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: PausedDrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: PausedDrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: Global.PlacedObject
+  commentId: T:Global.PlacedObject
+  isExternal: true
+  href: PlacedObject.html
+  name: PlacedObject
+  nameWithType: PlacedObject
+  fullName: PlacedObject
+- uid: Global.GhostConversation
+  commentId: T:Global.GhostConversation
+  isExternal: true
+  href: GhostConversation.html
+  name: GhostConversation
+  nameWithType: GhostConversation
+  fullName: GhostConversation
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Ghost.Part[]
+  isExternal: true
+  href: Ghost.Part.html
+  name: Part[]
+  nameWithType: Ghost.Part[]
+  fullName: Ghost.Part[]
+  nameWithType.vb: Ghost.Part()
+  fullName.vb: Ghost.Part()
+  name.vb: Part()
+  spec.csharp:
+  - uid: Global.Ghost.Part
+    name: Part
+    isExternal: true
+    href: Ghost.Part.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.Ghost.Part
+    name: Part
+    isExternal: true
+    href: Ghost.Part.html
+  - name: (
+  - name: )
+- uid: Global.Ghost.Part[,]
+  isExternal: true
+  href: Ghost.Part.html
+  name: Part[,]
+  nameWithType: Ghost.Part[,]
+  fullName: Ghost.Part[,]
+  nameWithType.vb: Ghost.Part(,)
+  fullName.vb: Ghost.Part(,)
+  name.vb: Part(,)
+  spec.csharp:
+  - uid: Global.Ghost.Part
+    name: Part
+    isExternal: true
+    href: Ghost.Part.html
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: Global.Ghost.Part
+    name: Part
+    isExternal: true
+    href: Ghost.Part.html
+  - name: (
+  - name: ','
+  - name: )
+- uid: Global.Ghost.Rags
+  commentId: T:Global.Ghost.Rags
+  isExternal: true
+  href: Ghost.html
+  name: Ghost.Rags
+  nameWithType: Ghost.Rags
+  fullName: Ghost.Rags
+  spec.csharp:
+  - uid: Global.Ghost
+    name: Ghost
+    isExternal: true
+    href: Ghost.html
+  - name: .
+  - uid: Global.Ghost.Rags
+    name: Rags
+    isExternal: true
+    href: Ghost.Rags.html
+  spec.vb:
+  - uid: Global.Ghost
+    name: Ghost
+    isExternal: true
+    href: Ghost.html
+  - name: .
+  - uid: Global.Ghost.Rags
+    name: Rags
+    isExternal: true
+    href: Ghost.Rags.html
+- uid: Global.Ghost.Chains
+  commentId: T:Global.Ghost.Chains
+  isExternal: true
+  href: Ghost.html
+  name: Ghost.Chains
+  nameWithType: Ghost.Chains
+  fullName: Ghost.Chains
+  spec.csharp:
+  - uid: Global.Ghost
+    name: Ghost
+    isExternal: true
+    href: Ghost.html
+  - name: .
+  - uid: Global.Ghost.Chains
+    name: Chains
+    isExternal: true
+    href: Ghost.Chains.html
+  spec.vb:
+  - uid: Global.Ghost
+    name: Ghost
+    isExternal: true
+    href: Ghost.html
+  - name: .
+  - uid: Global.Ghost.Chains
+    name: Chains
+    isExternal: true
+    href: Ghost.Chains.html
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Ghost.ButtockSprite*
+  commentId: Overload:Global.Ghost.ButtockSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_ButtockSprite_System_Int32_
+  name: ButtockSprite
+  nameWithType: Ghost.ButtockSprite
+  fullName: Ghost.ButtockSprite
+- uid: Global.Ghost.ThightSprite*
+  commentId: Overload:Global.Ghost.ThightSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_ThightSprite_System_Int32_
+  name: ThightSprite
+  nameWithType: Ghost.ThightSprite
+  fullName: Ghost.ThightSprite
+- uid: Global.Ghost.LowerLegSprite*
+  commentId: Overload:Global.Ghost.LowerLegSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_LowerLegSprite_System_Int32_
+  name: LowerLegSprite
+  nameWithType: Ghost.LowerLegSprite
+  fullName: Ghost.LowerLegSprite
+- uid: Global.Ghost.#ctor*
+  commentId: Overload:Global.Ghost.#ctor
+  isExternal: true
+  href: Global.Ghost.html#Ghost__ctor_Room_PlacedObject_GhostWorldPresence_
+  name: Ghost
+  nameWithType: Ghost.Ghost
+  fullName: Ghost.Ghost
+  nameWithType.vb: Ghost.New
+  fullName.vb: Ghost.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.GhostWorldPresence
+  commentId: T:Global.GhostWorldPresence
+  isExternal: true
+  href: GhostWorldPresence.html
+  name: GhostWorldPresence
+  nameWithType: GhostWorldPresence
+  fullName: GhostWorldPresence
+- uid: Global.Ghost.InitializeSprites*
+  commentId: Overload:Global.Ghost.InitializeSprites
+  isExternal: true
+  href: Global.Ghost.html#Ghost_InitializeSprites
+  name: InitializeSprites
+  nameWithType: Ghost.InitializeSprites
+  fullName: Ghost.InitializeSprites
+- uid: Global.Ghost.Reset*
+  commentId: Overload:Global.Ghost.Reset
+  isExternal: true
+  href: Global.Ghost.html#Ghost_Reset
+  name: Reset
+  nameWithType: Ghost.Reset
+  fullName: Ghost.Reset
+- uid: Global.Ghost.OnScreen*
+  commentId: Overload:Global.Ghost.OnScreen
+  isExternal: true
+  href: Global.Ghost.html#Ghost_OnScreen
+  name: OnScreen
+  nameWithType: Ghost.OnScreen
+  fullName: Ghost.OnScreen
+- uid: Global.Ghost.FadeOutFinished*
+  commentId: Overload:Global.Ghost.FadeOutFinished
+  isExternal: true
+  href: Global.Ghost.html#Ghost_FadeOutFinished
+  name: FadeOutFinished
+  nameWithType: Ghost.FadeOutFinished
+  fullName: Ghost.FadeOutFinished
+- uid: Global.CosmeticSprite.Update(System.Boolean)
+  commentId: M:Global.CosmeticSprite.Update(System.Boolean)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: CosmeticSprite.Update(bool)
+  fullName: CosmeticSprite.Update(bool)
+  nameWithType.vb: CosmeticSprite.Update(Boolean)
+  fullName.vb: CosmeticSprite.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Ghost.Update*
+  commentId: Overload:Global.Ghost.Update
+  isExternal: true
+  href: Global.Ghost.html#Ghost_Update_System_Boolean_
+  name: Update
+  nameWithType: Ghost.Update
+  fullName: Ghost.Update
+- uid: Global.Ghost.StartConversation*
+  commentId: Overload:Global.Ghost.StartConversation
+  isExternal: true
+  href: Global.Ghost.html#Ghost_StartConversation
+  name: StartConversation
+  nameWithType: Ghost.StartConversation
+  fullName: Ghost.StartConversation
+- uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.Ghost.InitiateSprites*
+  commentId: Overload:Global.Ghost.InitiateSprites
+  isExternal: true
+  href: Global.Ghost.html#Ghost_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: Ghost.InitiateSprites
+  fullName: Ghost.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.Ghost.AddToContainer*
+  commentId: Overload:Global.Ghost.AddToContainer
+  isExternal: true
+  href: Global.Ghost.html#Ghost_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: Ghost.AddToContainer
+  fullName: Ghost.AddToContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.Ghost.DrawSprites*
+  commentId: Overload:Global.Ghost.DrawSprites
+  isExternal: true
+  href: Global.Ghost.html#Ghost_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: Ghost.DrawSprites
+  fullName: Ghost.DrawSprites
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.Ghost.SnoutContour*
+  commentId: Overload:Global.Ghost.SnoutContour
+  isExternal: true
+  href: Global.Ghost.html#Ghost_SnoutContour_System_Single_System_Boolean_System_Single_
+  name: SnoutContour
+  nameWithType: Ghost.SnoutContour
+  fullName: Ghost.SnoutContour
+- uid: Global.Ghost.ThighContour*
+  commentId: Overload:Global.Ghost.ThighContour
+  isExternal: true
+  href: Global.Ghost.html#Ghost_ThighContour_System_Single_System_Boolean_
+  name: ThighContour
+  nameWithType: Ghost.ThighContour
+  fullName: Ghost.ThighContour
+- uid: Global.Ghost.LowerLegContour*
+  commentId: Overload:Global.Ghost.LowerLegContour
+  isExternal: true
+  href: Global.Ghost.html#Ghost_LowerLegContour_System_Single_System_Boolean_System_Single_
+  name: LowerLegContour
+  nameWithType: Ghost.LowerLegContour
+  fullName: Ghost.LowerLegContour
+- uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.Ghost.ApplyPalette*
+  commentId: Overload:Global.Ghost.ApplyPalette
+  isExternal: true
+  href: Global.Ghost.html#Ghost_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: Ghost.ApplyPalette
+  fullName: Ghost.ApplyPalette
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.Ghost.ReplaceParts*
+  commentId: Overload:Global.Ghost.ReplaceParts
+  isExternal: true
+  href: Global.Ghost.html#Ghost_ReplaceParts_System_String_
+  name: ReplaceParts
+  nameWithType: Ghost.ReplaceParts
+  fullName: Ghost.ReplaceParts
+- uid: Global.Conversation.IOwnAConversation.ReplaceParts(System.String)
+  commentId: M:Global.Conversation.IOwnAConversation.ReplaceParts(System.String)
+  parent: Global.Conversation.IOwnAConversation
+  isExternal: true
+  href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_ReplaceParts_System_String_
+  name: ReplaceParts(string)
+  nameWithType: Conversation.IOwnAConversation.ReplaceParts(string)
+  fullName: Conversation.IOwnAConversation.ReplaceParts(string)
+  nameWithType.vb: Conversation.IOwnAConversation.ReplaceParts(String)
+  fullName.vb: Conversation.IOwnAConversation.ReplaceParts(String)
+  name.vb: ReplaceParts(String)
+  spec.csharp:
+  - uid: Global.Conversation.IOwnAConversation.ReplaceParts(System.String)
+    name: ReplaceParts
+    isExternal: true
+    href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_ReplaceParts_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Global.Conversation.IOwnAConversation.ReplaceParts(System.String)
+    name: ReplaceParts
+    isExternal: true
+    href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_ReplaceParts_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.Ghost.SpecialEvent*
+  commentId: Overload:Global.Ghost.SpecialEvent
+  isExternal: true
+  href: Global.Ghost.html#Ghost_SpecialEvent_System_String_
+  name: SpecialEvent
+  nameWithType: Ghost.SpecialEvent
+  fullName: Ghost.SpecialEvent
+- uid: Global.Conversation.IOwnAConversation.SpecialEvent(System.String)
+  commentId: M:Global.Conversation.IOwnAConversation.SpecialEvent(System.String)
+  parent: Global.Conversation.IOwnAConversation
+  isExternal: true
+  href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_SpecialEvent_System_String_
+  name: SpecialEvent(string)
+  nameWithType: Conversation.IOwnAConversation.SpecialEvent(string)
+  fullName: Conversation.IOwnAConversation.SpecialEvent(string)
+  nameWithType.vb: Conversation.IOwnAConversation.SpecialEvent(String)
+  fullName.vb: Conversation.IOwnAConversation.SpecialEvent(String)
+  name.vb: SpecialEvent(String)
+  spec.csharp:
+  - uid: Global.Conversation.IOwnAConversation.SpecialEvent(System.String)
+    name: SpecialEvent
+    isExternal: true
+    href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_SpecialEvent_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Global.Conversation.IOwnAConversation.SpecialEvent(System.String)
+    name: SpecialEvent
+    isExternal: true
+    href: Global.Conversation.IOwnAConversation.html#Conversation_IOwnAConversation_SpecialEvent_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Global.Ghost.LightSprite*
+  commentId: Overload:Global.Ghost.LightSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_LightSprite
+  name: LightSprite
+  nameWithType: Ghost.LightSprite
+  fullName: Ghost.LightSprite
+- uid: Global.Ghost.BodyMeshSprite*
+  commentId: Overload:Global.Ghost.BodyMeshSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_BodyMeshSprite
+  name: BodyMeshSprite
+  nameWithType: Ghost.BodyMeshSprite
+  fullName: Ghost.BodyMeshSprite
+- uid: Global.Ghost.NeckConnectorSprite*
+  commentId: Overload:Global.Ghost.NeckConnectorSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_NeckConnectorSprite
+  name: NeckConnectorSprite
+  nameWithType: Ghost.NeckConnectorSprite
+  fullName: Ghost.NeckConnectorSprite
+- uid: Global.Ghost.HeadMeshSprite*
+  commentId: Overload:Global.Ghost.HeadMeshSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_HeadMeshSprite
+  name: HeadMeshSprite
+  nameWithType: Ghost.HeadMeshSprite
+  fullName: Ghost.HeadMeshSprite
+- uid: Global.Ghost.DistortionSprite*
+  commentId: Overload:Global.Ghost.DistortionSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_DistortionSprite
+  name: DistortionSprite
+  nameWithType: Ghost.DistortionSprite
+  fullName: Ghost.DistortionSprite
+- uid: Global.Ghost.FadeSprite*
+  commentId: Overload:Global.Ghost.FadeSprite
+  isExternal: true
+  href: Global.Ghost.html#Ghost_FadeSprite
+  name: FadeSprite
+  nameWithType: Ghost.FadeSprite
+  fullName: Ghost.FadeSprite
+- uid: Global.Ghost.SpinningTopHead*
+  commentId: Overload:Global.Ghost.SpinningTopHead
+  isExternal: true
+  href: Global.Ghost.html#Ghost_SpinningTopHead
+  name: SpinningTopHead
+  nameWithType: Ghost.SpinningTopHead
+  fullName: Ghost.SpinningTopHead
+- uid: Global.Ghost.SpinningTop*
+  commentId: Overload:Global.Ghost.SpinningTop
+  isExternal: true
+  href: Global.Ghost.html#Ghost_SpinningTop
+  name: SpinningTop
+  nameWithType: Ghost.SpinningTop
+  fullName: Ghost.SpinningTop

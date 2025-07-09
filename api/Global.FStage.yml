@@ -1,0 +1,3603 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FStage
+  commentId: T:Global.FStage
+  id: FStage
+  parent: Global
+  children:
+  - Global.FStage.#ctor(System.String)
+  - Global.FStage.CenterOn(UnityEngine.Vector2)
+  - Global.FStage.Follow(FNode,System.Boolean,System.Boolean)
+  - Global.FStage.HandleAddedToFutile
+  - Global.FStage.HandleFacetsChanged
+  - Global.FStage.HandleRemovedFromFutile
+  - Global.FStage.LateUpdate
+  - Global.FStage.Redraw(System.Boolean,System.Boolean)
+  - Global.FStage.ResetPosition
+  - Global.FStage.Unfollow(FNode,System.Boolean)
+  - Global.FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  - Global.FStage.concatenatedMatrix
+  - Global.FStage.index
+  - Global.FStage.inverseConcatenatedMatrix
+  - Global.FStage.layer
+  - Global.FStage.matrix
+  - Global.FStage.name
+  - Global.FStage.nextNodeDepth
+  - Global.FStage.renderer
+  - Global.FStage.scaleX
+  - Global.FStage.scaleY
+  - Global.FStage.screenConcatenatedMatrix
+  - Global.FStage.screenInverseConcatenatedMatrix
+  - Global.FStage.screenMatrix
+  - Global.FStage.transform
+  langs:
+  - csharp
+  - vb
+  name: FStage
+  nameWithType: FStage
+  fullName: FStage
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FStage</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FStage : FContainer'
+    content.vb: Public Class FStage Inherits FContainer
+  inheritance:
+  - System.Object
+  - Global.FNode
+  - Global.FContainer
+  inheritedMembers:
+  - Global.FContainer._childNodes
+  - Global.FContainer.HandleAddedToStage
+  - Global.FContainer.HandleRemovedFromStage
+  - Global.FContainer.AddChild(FNode)
+  - Global.FContainer.AddChildAtIndex(FNode,System.Int32)
+  - Global.FContainer.RemoveChild(FNode)
+  - Global.FContainer.RemoveAllChildren
+  - Global.FContainer.GetChildCount
+  - Global.FContainer.GetChildAt(System.Int32)
+  - Global.FContainer.GetChildIndex(FNode)
+  - Global.FContainer.shouldSortByZ
+  - Global.FNode._x
+  - Global.FNode._y
+  - Global.FNode._scaleX
+  - Global.FNode._scaleY
+  - Global.FNode._rotation
+  - Global.FNode._meshZ
+  - Global.FNode._sortZ
+  - Global.FNode._isMatrixDirty
+  - Global.FNode._container
+  - Global.FNode._matrix
+  - Global.FNode._concatenatedMatrix
+  - Global.FNode._inverseConcatenatedMatrix
+  - Global.FNode._screenConcatenatedMatrix
+  - Global.FNode._screenInverseConcatenatedMatrix
+  - Global.FNode._needsSpecialMatrices
+  - Global.FNode._alpha
+  - Global.FNode._concatenatedAlpha
+  - Global.FNode._isAlphaDirty
+  - Global.FNode._visibleScale
+  - Global.FNode._isOnStage
+  - Global.FNode._depth
+  - Global.FNode._stage
+  - Global.FNode._isVisible
+  - Global.FNode.data
+  - Global.FNode.AddEnabler(FNodeEnabler)
+  - Global.FNode.RemoveEnabler(FNodeEnabler)
+  - Global.FNode.RemoveEnablerOfType(System.Type)
+  - Global.FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+  - Global.FNode.RemoveListenForResize
+  - Global.FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+  - Global.FNode.RemoveListenForOrientationChange
+  - Global.FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+  - Global.FNode.RemoveListenForUpdate
+  - Global.FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+  - Global.FNode.RemoveListenForAfterUpdate
+  - Global.FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+  - Global.FNode.RemoveListenForLateUpdate
+  - Global.FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+  - Global.FNode.RemoveListenForFixedUpdate
+  - Global.FNode.EnableSingleTouch
+  - Global.FNode.DisableSingleTouch
+  - Global.FNode.EnableMultiTouch
+  - Global.FNode.DisableMultiTouch
+  - Global.FNode.EnableSmartTouch
+  - Global.FNode.DisableSmartTouch
+  - Global.FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+  - Global.FNode.RemoveListenForAddedOrRemoved
+  - Global.FNode.LocalToScreen(UnityEngine.Vector2)
+  - Global.FNode.ScreenToLocal(UnityEngine.Vector2)
+  - Global.FNode.LocalToStage(UnityEngine.Vector2)
+  - Global.FNode.StageToLocal(UnityEngine.Vector2)
+  - Global.FNode.LocalToGlobal(UnityEngine.Vector2)
+  - Global.FNode.GlobalToLocal(UnityEngine.Vector2)
+  - Global.FNode.OtherToLocal(FNode,UnityEngine.Vector2)
+  - Global.FNode.LocalToOther(UnityEngine.Vector2,FNode)
+  - Global.FNode.GetLocalMousePosition
+  - Global.FNode.GetLocalTouchPosition(FTouch)
+  - Global.FNode.UpdateMatrix
+  - Global.FNode.HandleAddedToContainer(FContainer)
+  - Global.FNode.HandleRemovedFromContainer
+  - Global.FNode.RemoveFromContainer
+  - Global.FNode.MoveToFront
+  - Global.FNode.MoveToBack
+  - Global.FNode.MoveInFrontOfOtherNode(FNode)
+  - Global.FNode.MoveBehindOtherNode(FNode)
+  - Global.FNode.IsAncestryVisible
+  - Global.FNode.CreateSpecialMatrices
+  - Global.FNode.RotateAroundPointRelative(UnityEngine.Vector2,System.Single)
+  - Global.FNode.RotateAroundPointAbsolute(UnityEngine.Vector2,System.Single)
+  - Global.FNode.ScaleAroundPointRelative(UnityEngine.Vector2,System.Single,System.Single)
+  - Global.FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2,System.Single,System.Single)
+  - Global.FNode.SetPosition(System.Single,System.Single)
+  - Global.FNode.SetPosition(UnityEngine.Vector2)
+  - Global.FNode.GetPosition
+  - Global.FNode.isVisible
+  - Global.FNode.x
+  - Global.FNode.y
+  - Global.FNode.meshZ
+  - Global.FNode.sortZ
+  - Global.FNode.scale
+  - Global.FNode.rotation
+  - Global.FNode.isMatrixDirty
+  - Global.FNode.container
+  - Global.FNode.depth
+  - Global.FNode.touchPriority
+  - Global.FNode.alpha
+  - Global.FNode.concatenatedAlpha
+  - Global.FNode.stage
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FStage.nextNodeDepth
+  commentId: F:Global.FStage.nextNodeDepth
+  id: nextNodeDepth
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: nextNodeDepth
+  nameWithType: FStage.nextNodeDepth
+  fullName: FStage.nextNodeDepth
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FStage.nextNodeDepth</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int nextNodeDepth
+    return:
+      type: System.Int32
+    content.vb: Public nextNodeDepth As Integer
+- uid: Global.FStage.index
+  commentId: F:Global.FStage.index
+  id: index
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: FStage.index
+  fullName: FStage.index
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FStage.index</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int index
+    return:
+      type: System.Int32
+    content.vb: Public index As Integer
+- uid: Global.FStage.#ctor(System.String)
+  commentId: M:Global.FStage.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: FStage(string)
+  nameWithType: FStage.FStage(string)
+  fullName: FStage.FStage(string)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FStage</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FStage(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:FStage.#ctor(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(name As String)
+  overload: Global.FStage.#ctor*
+  nameWithType.vb: FStage.New(String)
+  fullName.vb: FStage.New(String)
+  name.vb: New(String)
+- uid: Global.FStage.HandleAddedToFutile
+  commentId: M:Global.FStage.HandleAddedToFutile
+  id: HandleAddedToFutile
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: HandleAddedToFutile()
+  nameWithType: FStage.HandleAddedToFutile()
+  fullName: FStage.HandleAddedToFutile()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.HandleAddedToFutile</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void HandleAddedToFutile()
+    content.vb: Public Sub HandleAddedToFutile()
+  overload: Global.FStage.HandleAddedToFutile*
+- uid: Global.FStage.HandleRemovedFromFutile
+  commentId: M:Global.FStage.HandleRemovedFromFutile
+  id: HandleRemovedFromFutile
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: HandleRemovedFromFutile()
+  nameWithType: FStage.HandleRemovedFromFutile()
+  fullName: FStage.HandleRemovedFromFutile()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.HandleRemovedFromFutile</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void HandleRemovedFromFutile()
+    content.vb: Public Sub HandleRemovedFromFutile()
+  overload: Global.FStage.HandleRemovedFromFutile*
+- uid: Global.FStage.HandleFacetsChanged
+  commentId: M:Global.FStage.HandleFacetsChanged
+  id: HandleFacetsChanged
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: HandleFacetsChanged()
+  nameWithType: FStage.HandleFacetsChanged()
+  fullName: FStage.HandleFacetsChanged()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.HandleFacetsChanged</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void HandleFacetsChanged()
+    content.vb: Public Sub HandleFacetsChanged()
+  overload: Global.FStage.HandleFacetsChanged*
+- uid: Global.FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  commentId: M:Global.FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  id: UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: UpdateDepthMatrixAlpha(bool, bool)
+  nameWithType: FStage.UpdateDepthMatrixAlpha(bool, bool)
+  fullName: FStage.UpdateDepthMatrixAlpha(bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override void UpdateDepthMatrixAlpha(bool shouldForceDirty, bool shouldUpdateDepth)
+    parameters:
+    - id: shouldForceDirty
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldForceDirty</parameter>
+            <parameter>M:FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: shouldUpdateDepth
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldUpdateDepth</parameter>
+            <parameter>M:FStage.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Sub UpdateDepthMatrixAlpha(shouldForceDirty As Boolean, shouldUpdateDepth As Boolean)
+  overridden: Global.FNode.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  overload: Global.FStage.UpdateDepthMatrixAlpha*
+  nameWithType.vb: FStage.UpdateDepthMatrixAlpha(Boolean, Boolean)
+  fullName.vb: FStage.UpdateDepthMatrixAlpha(Boolean, Boolean)
+  name.vb: UpdateDepthMatrixAlpha(Boolean, Boolean)
+- uid: Global.FStage.Redraw(System.Boolean,System.Boolean)
+  commentId: M:Global.FStage.Redraw(System.Boolean,System.Boolean)
+  id: Redraw(System.Boolean,System.Boolean)
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: Redraw(bool, bool)
+  nameWithType: FStage.Redraw(bool, bool)
+  fullName: FStage.Redraw(bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.Redraw(System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Redraw(bool shouldForceDirty, bool shouldUpdateDepth)
+    parameters:
+    - id: shouldForceDirty
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldForceDirty</parameter>
+            <parameter>M:FStage.Redraw(System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: shouldUpdateDepth
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldUpdateDepth</parameter>
+            <parameter>M:FStage.Redraw(System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Redraw(shouldForceDirty As Boolean, shouldUpdateDepth As Boolean)
+  overridden: Global.FContainer.Redraw(System.Boolean,System.Boolean)
+  overload: Global.FStage.Redraw*
+  nameWithType.vb: FStage.Redraw(Boolean, Boolean)
+  fullName.vb: FStage.Redraw(Boolean, Boolean)
+  name.vb: Redraw(Boolean, Boolean)
+- uid: Global.FStage.CenterOn(UnityEngine.Vector2)
+  commentId: M:Global.FStage.CenterOn(UnityEngine.Vector2)
+  id: CenterOn(UnityEngine.Vector2)
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: CenterOn(Vector2)
+  nameWithType: FStage.CenterOn(Vector2)
+  fullName: FStage.CenterOn(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.CenterOn(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CenterOn(Vector2 globalPosition)
+    parameters:
+    - id: globalPosition
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>globalPosition</parameter>
+            <parameter>M:FStage.CenterOn(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub CenterOn(globalPosition As Vector2)
+  overload: Global.FStage.CenterOn*
+- uid: Global.FStage.Follow(FNode,System.Boolean,System.Boolean)
+  commentId: M:Global.FStage.Follow(FNode,System.Boolean,System.Boolean)
+  id: Follow(FNode,System.Boolean,System.Boolean)
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: Follow(FNode, bool, bool)
+  nameWithType: FStage.Follow(FNode, bool, bool)
+  fullName: FStage.Follow(FNode, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.Follow(FNode,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Follow(FNode followTarget, bool shouldFollowScale, bool shouldFollowRotation)
+    parameters:
+    - id: followTarget
+      type: Global.FNode
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>followTarget</parameter>
+            <parameter>M:FStage.Follow(FNode,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: shouldFollowScale
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldFollowScale</parameter>
+            <parameter>M:FStage.Follow(FNode,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: shouldFollowRotation
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldFollowRotation</parameter>
+            <parameter>M:FStage.Follow(FNode,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Follow(followTarget As FNode, shouldFollowScale As Boolean, shouldFollowRotation As Boolean)
+  overload: Global.FStage.Follow*
+  nameWithType.vb: FStage.Follow(FNode, Boolean, Boolean)
+  fullName.vb: FStage.Follow(FNode, Boolean, Boolean)
+  name.vb: Follow(FNode, Boolean, Boolean)
+- uid: Global.FStage.Unfollow(FNode,System.Boolean)
+  commentId: M:Global.FStage.Unfollow(FNode,System.Boolean)
+  id: Unfollow(FNode,System.Boolean)
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: Unfollow(FNode, bool)
+  nameWithType: FStage.Unfollow(FNode, bool)
+  fullName: FStage.Unfollow(FNode, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.Unfollow(FNode,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Unfollow(FNode targetToUnfollow, bool shouldResetPosition)
+    parameters:
+    - id: targetToUnfollow
+      type: Global.FNode
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>targetToUnfollow</parameter>
+            <parameter>M:FStage.Unfollow(FNode,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: shouldResetPosition
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shouldResetPosition</parameter>
+            <parameter>M:FStage.Unfollow(FNode,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Unfollow(targetToUnfollow As FNode, shouldResetPosition As Boolean)
+  overload: Global.FStage.Unfollow*
+  nameWithType.vb: FStage.Unfollow(FNode, Boolean)
+  fullName.vb: FStage.Unfollow(FNode, Boolean)
+  name.vb: Unfollow(FNode, Boolean)
+- uid: Global.FStage.ResetPosition
+  commentId: M:Global.FStage.ResetPosition
+  id: ResetPosition
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: ResetPosition()
+  nameWithType: FStage.ResetPosition()
+  fullName: FStage.ResetPosition()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.ResetPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ResetPosition()
+    content.vb: Public Sub ResetPosition()
+  overload: Global.FStage.ResetPosition*
+- uid: Global.FStage.LateUpdate
+  commentId: M:Global.FStage.LateUpdate
+  id: LateUpdate
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: LateUpdate()
+  nameWithType: FStage.LateUpdate()
+  fullName: FStage.LateUpdate()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FStage.LateUpdate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LateUpdate()
+    content.vb: Public Sub LateUpdate()
+  overload: Global.FStage.LateUpdate*
+- uid: Global.FStage.layer
+  commentId: P:Global.FStage.layer
+  id: layer
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: layer
+  nameWithType: FStage.layer
+  fullName: FStage.layer
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.layer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int layer { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property layer As Integer
+  overload: Global.FStage.layer*
+- uid: Global.FStage.matrix
+  commentId: P:Global.FStage.matrix
+  id: matrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: matrix
+  nameWithType: FStage.matrix
+  fullName: FStage.matrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.matrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override FMatrix matrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public Overrides ReadOnly Property matrix As FMatrix
+  overridden: Global.FNode.matrix
+  overload: Global.FStage.matrix*
+- uid: Global.FStage.concatenatedMatrix
+  commentId: P:Global.FStage.concatenatedMatrix
+  id: concatenatedMatrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: concatenatedMatrix
+  nameWithType: FStage.concatenatedMatrix
+  fullName: FStage.concatenatedMatrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.concatenatedMatrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override FMatrix concatenatedMatrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public Overrides ReadOnly Property concatenatedMatrix As FMatrix
+  overridden: Global.FNode.concatenatedMatrix
+  overload: Global.FStage.concatenatedMatrix*
+- uid: Global.FStage.inverseConcatenatedMatrix
+  commentId: P:Global.FStage.inverseConcatenatedMatrix
+  id: inverseConcatenatedMatrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: inverseConcatenatedMatrix
+  nameWithType: FStage.inverseConcatenatedMatrix
+  fullName: FStage.inverseConcatenatedMatrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.inverseConcatenatedMatrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override FMatrix inverseConcatenatedMatrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public Overrides ReadOnly Property inverseConcatenatedMatrix As FMatrix
+  overridden: Global.FNode.inverseConcatenatedMatrix
+  overload: Global.FStage.inverseConcatenatedMatrix*
+- uid: Global.FStage.screenMatrix
+  commentId: P:Global.FStage.screenMatrix
+  id: screenMatrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: screenMatrix
+  nameWithType: FStage.screenMatrix
+  fullName: FStage.screenMatrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.screenMatrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FMatrix screenMatrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public ReadOnly Property screenMatrix As FMatrix
+  overload: Global.FStage.screenMatrix*
+- uid: Global.FStage.screenConcatenatedMatrix
+  commentId: P:Global.FStage.screenConcatenatedMatrix
+  id: screenConcatenatedMatrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: screenConcatenatedMatrix
+  nameWithType: FStage.screenConcatenatedMatrix
+  fullName: FStage.screenConcatenatedMatrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.screenConcatenatedMatrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override FMatrix screenConcatenatedMatrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public Overrides ReadOnly Property screenConcatenatedMatrix As FMatrix
+  overridden: Global.FNode.screenConcatenatedMatrix
+  overload: Global.FStage.screenConcatenatedMatrix*
+- uid: Global.FStage.screenInverseConcatenatedMatrix
+  commentId: P:Global.FStage.screenInverseConcatenatedMatrix
+  id: screenInverseConcatenatedMatrix
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: screenInverseConcatenatedMatrix
+  nameWithType: FStage.screenInverseConcatenatedMatrix
+  fullName: FStage.screenInverseConcatenatedMatrix
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.screenInverseConcatenatedMatrix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override FMatrix screenInverseConcatenatedMatrix { get; }
+    parameters: []
+    return:
+      type: Global.FMatrix
+    content.vb: Public Overrides ReadOnly Property screenInverseConcatenatedMatrix As FMatrix
+  overridden: Global.FNode.screenInverseConcatenatedMatrix
+  overload: Global.FStage.screenInverseConcatenatedMatrix*
+- uid: Global.FStage.renderer
+  commentId: P:Global.FStage.renderer
+  id: renderer
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: FStage.renderer
+  fullName: FStage.renderer
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.renderer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FRenderer renderer { get; }
+    parameters: []
+    return:
+      type: Global.FRenderer
+    content.vb: Public ReadOnly Property renderer As FRenderer
+  overload: Global.FStage.renderer*
+- uid: Global.FStage.name
+  commentId: P:Global.FStage.name
+  id: name
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: FStage.name
+  fullName: FStage.name
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.name</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public string name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property name As String
+  overload: Global.FStage.name*
+- uid: Global.FStage.transform
+  commentId: P:Global.FStage.transform
+  id: transform
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: transform
+  nameWithType: FStage.transform
+  fullName: FStage.transform
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.transform</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FStageTransform transform { get; }
+    parameters: []
+    return:
+      type: Global.FStageTransform
+    content.vb: Public ReadOnly Property transform As FStageTransform
+  overload: Global.FStage.transform*
+- uid: Global.FStage.scaleX
+  commentId: P:Global.FStage.scaleX
+  id: scaleX
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: scaleX
+  nameWithType: FStage.scaleX
+  fullName: FStage.scaleX
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.scaleX</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float scaleX { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property scaleX As Single
+  overload: Global.FStage.scaleX*
+- uid: Global.FStage.scaleY
+  commentId: P:Global.FStage.scaleY
+  id: scaleY
+  parent: Global.FStage
+  langs:
+  - csharp
+  - vb
+  name: scaleY
+  nameWithType: FStage.scaleY
+  fullName: FStage.scaleY
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FStage.scaleY</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float scaleY { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property scaleY As Single
+  overload: Global.FStage.scaleY*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.FNode
+  commentId: T:Global.FNode
+  isExternal: true
+  href: FNode.html
+  name: FNode
+  nameWithType: FNode
+  fullName: FNode
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.FContainer._childNodes
+  commentId: F:Global.FContainer._childNodes
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer__childNodes
+  name: _childNodes
+  nameWithType: FContainer._childNodes
+  fullName: FContainer._childNodes
+- uid: Global.FContainer.HandleAddedToStage
+  commentId: M:Global.FContainer.HandleAddedToStage
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_HandleAddedToStage
+  name: HandleAddedToStage()
+  nameWithType: FContainer.HandleAddedToStage()
+  fullName: FContainer.HandleAddedToStage()
+  spec.csharp:
+  - uid: Global.FContainer.HandleAddedToStage
+    name: HandleAddedToStage
+    isExternal: true
+    href: Global.FContainer.html#FContainer_HandleAddedToStage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.HandleAddedToStage
+    name: HandleAddedToStage
+    isExternal: true
+    href: Global.FContainer.html#FContainer_HandleAddedToStage
+  - name: (
+  - name: )
+- uid: Global.FContainer.HandleRemovedFromStage
+  commentId: M:Global.FContainer.HandleRemovedFromStage
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_HandleRemovedFromStage
+  name: HandleRemovedFromStage()
+  nameWithType: FContainer.HandleRemovedFromStage()
+  fullName: FContainer.HandleRemovedFromStage()
+  spec.csharp:
+  - uid: Global.FContainer.HandleRemovedFromStage
+    name: HandleRemovedFromStage
+    isExternal: true
+    href: Global.FContainer.html#FContainer_HandleRemovedFromStage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.HandleRemovedFromStage
+    name: HandleRemovedFromStage
+    isExternal: true
+    href: Global.FContainer.html#FContainer_HandleRemovedFromStage
+  - name: (
+  - name: )
+- uid: Global.FContainer.AddChild(FNode)
+  commentId: M:Global.FContainer.AddChild(FNode)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_AddChild_FNode_
+  name: AddChild(FNode)
+  nameWithType: FContainer.AddChild(FNode)
+  fullName: FContainer.AddChild(FNode)
+  spec.csharp:
+  - uid: Global.FContainer.AddChild(FNode)
+    name: AddChild
+    isExternal: true
+    href: Global.FContainer.html#FContainer_AddChild_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.AddChild(FNode)
+    name: AddChild
+    isExternal: true
+    href: Global.FContainer.html#FContainer_AddChild_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FContainer.AddChildAtIndex(FNode,System.Int32)
+  commentId: M:Global.FContainer.AddChildAtIndex(FNode,System.Int32)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_AddChildAtIndex_FNode_System_Int32_
+  name: AddChildAtIndex(FNode, int)
+  nameWithType: FContainer.AddChildAtIndex(FNode, int)
+  fullName: FContainer.AddChildAtIndex(FNode, int)
+  nameWithType.vb: FContainer.AddChildAtIndex(FNode, Integer)
+  fullName.vb: FContainer.AddChildAtIndex(FNode, Integer)
+  name.vb: AddChildAtIndex(FNode, Integer)
+  spec.csharp:
+  - uid: Global.FContainer.AddChildAtIndex(FNode,System.Int32)
+    name: AddChildAtIndex
+    isExternal: true
+    href: Global.FContainer.html#FContainer_AddChildAtIndex_FNode_System_Int32_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.AddChildAtIndex(FNode,System.Int32)
+    name: AddChildAtIndex
+    isExternal: true
+    href: Global.FContainer.html#FContainer_AddChildAtIndex_FNode_System_Int32_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FContainer.RemoveChild(FNode)
+  commentId: M:Global.FContainer.RemoveChild(FNode)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_RemoveChild_FNode_
+  name: RemoveChild(FNode)
+  nameWithType: FContainer.RemoveChild(FNode)
+  fullName: FContainer.RemoveChild(FNode)
+  spec.csharp:
+  - uid: Global.FContainer.RemoveChild(FNode)
+    name: RemoveChild
+    isExternal: true
+    href: Global.FContainer.html#FContainer_RemoveChild_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.RemoveChild(FNode)
+    name: RemoveChild
+    isExternal: true
+    href: Global.FContainer.html#FContainer_RemoveChild_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FContainer.RemoveAllChildren
+  commentId: M:Global.FContainer.RemoveAllChildren
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_RemoveAllChildren
+  name: RemoveAllChildren()
+  nameWithType: FContainer.RemoveAllChildren()
+  fullName: FContainer.RemoveAllChildren()
+  spec.csharp:
+  - uid: Global.FContainer.RemoveAllChildren
+    name: RemoveAllChildren
+    isExternal: true
+    href: Global.FContainer.html#FContainer_RemoveAllChildren
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.RemoveAllChildren
+    name: RemoveAllChildren
+    isExternal: true
+    href: Global.FContainer.html#FContainer_RemoveAllChildren
+  - name: (
+  - name: )
+- uid: Global.FContainer.GetChildCount
+  commentId: M:Global.FContainer.GetChildCount
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_GetChildCount
+  name: GetChildCount()
+  nameWithType: FContainer.GetChildCount()
+  fullName: FContainer.GetChildCount()
+  spec.csharp:
+  - uid: Global.FContainer.GetChildCount
+    name: GetChildCount
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.GetChildCount
+    name: GetChildCount
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildCount
+  - name: (
+  - name: )
+- uid: Global.FContainer.GetChildAt(System.Int32)
+  commentId: M:Global.FContainer.GetChildAt(System.Int32)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_GetChildAt_System_Int32_
+  name: GetChildAt(int)
+  nameWithType: FContainer.GetChildAt(int)
+  fullName: FContainer.GetChildAt(int)
+  nameWithType.vb: FContainer.GetChildAt(Integer)
+  fullName.vb: FContainer.GetChildAt(Integer)
+  name.vb: GetChildAt(Integer)
+  spec.csharp:
+  - uid: Global.FContainer.GetChildAt(System.Int32)
+    name: GetChildAt
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.GetChildAt(System.Int32)
+    name: GetChildAt
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FContainer.GetChildIndex(FNode)
+  commentId: M:Global.FContainer.GetChildIndex(FNode)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_GetChildIndex_FNode_
+  name: GetChildIndex(FNode)
+  nameWithType: FContainer.GetChildIndex(FNode)
+  fullName: FContainer.GetChildIndex(FNode)
+  spec.csharp:
+  - uid: Global.FContainer.GetChildIndex(FNode)
+    name: GetChildIndex
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildIndex_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.GetChildIndex(FNode)
+    name: GetChildIndex
+    isExternal: true
+    href: Global.FContainer.html#FContainer_GetChildIndex_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FContainer.shouldSortByZ
+  commentId: P:Global.FContainer.shouldSortByZ
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_shouldSortByZ
+  name: shouldSortByZ
+  nameWithType: FContainer.shouldSortByZ
+  fullName: FContainer.shouldSortByZ
+- uid: Global.FNode._x
+  commentId: F:Global.FNode._x
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__x
+  name: _x
+  nameWithType: FNode._x
+  fullName: FNode._x
+- uid: Global.FNode._y
+  commentId: F:Global.FNode._y
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__y
+  name: _y
+  nameWithType: FNode._y
+  fullName: FNode._y
+- uid: Global.FNode._scaleX
+  commentId: F:Global.FNode._scaleX
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__scaleX
+  name: _scaleX
+  nameWithType: FNode._scaleX
+  fullName: FNode._scaleX
+- uid: Global.FNode._scaleY
+  commentId: F:Global.FNode._scaleY
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__scaleY
+  name: _scaleY
+  nameWithType: FNode._scaleY
+  fullName: FNode._scaleY
+- uid: Global.FNode._rotation
+  commentId: F:Global.FNode._rotation
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__rotation
+  name: _rotation
+  nameWithType: FNode._rotation
+  fullName: FNode._rotation
+- uid: Global.FNode._meshZ
+  commentId: F:Global.FNode._meshZ
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__meshZ
+  name: _meshZ
+  nameWithType: FNode._meshZ
+  fullName: FNode._meshZ
+- uid: Global.FNode._sortZ
+  commentId: F:Global.FNode._sortZ
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__sortZ
+  name: _sortZ
+  nameWithType: FNode._sortZ
+  fullName: FNode._sortZ
+- uid: Global.FNode._isMatrixDirty
+  commentId: F:Global.FNode._isMatrixDirty
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__isMatrixDirty
+  name: _isMatrixDirty
+  nameWithType: FNode._isMatrixDirty
+  fullName: FNode._isMatrixDirty
+- uid: Global.FNode._container
+  commentId: F:Global.FNode._container
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__container
+  name: _container
+  nameWithType: FNode._container
+  fullName: FNode._container
+- uid: Global.FNode._matrix
+  commentId: F:Global.FNode._matrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__matrix
+  name: _matrix
+  nameWithType: FNode._matrix
+  fullName: FNode._matrix
+- uid: Global.FNode._concatenatedMatrix
+  commentId: F:Global.FNode._concatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__concatenatedMatrix
+  name: _concatenatedMatrix
+  nameWithType: FNode._concatenatedMatrix
+  fullName: FNode._concatenatedMatrix
+- uid: Global.FNode._inverseConcatenatedMatrix
+  commentId: F:Global.FNode._inverseConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__inverseConcatenatedMatrix
+  name: _inverseConcatenatedMatrix
+  nameWithType: FNode._inverseConcatenatedMatrix
+  fullName: FNode._inverseConcatenatedMatrix
+- uid: Global.FNode._screenConcatenatedMatrix
+  commentId: F:Global.FNode._screenConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__screenConcatenatedMatrix
+  name: _screenConcatenatedMatrix
+  nameWithType: FNode._screenConcatenatedMatrix
+  fullName: FNode._screenConcatenatedMatrix
+- uid: Global.FNode._screenInverseConcatenatedMatrix
+  commentId: F:Global.FNode._screenInverseConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__screenInverseConcatenatedMatrix
+  name: _screenInverseConcatenatedMatrix
+  nameWithType: FNode._screenInverseConcatenatedMatrix
+  fullName: FNode._screenInverseConcatenatedMatrix
+- uid: Global.FNode._needsSpecialMatrices
+  commentId: F:Global.FNode._needsSpecialMatrices
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__needsSpecialMatrices
+  name: _needsSpecialMatrices
+  nameWithType: FNode._needsSpecialMatrices
+  fullName: FNode._needsSpecialMatrices
+- uid: Global.FNode._alpha
+  commentId: F:Global.FNode._alpha
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__alpha
+  name: _alpha
+  nameWithType: FNode._alpha
+  fullName: FNode._alpha
+- uid: Global.FNode._concatenatedAlpha
+  commentId: F:Global.FNode._concatenatedAlpha
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__concatenatedAlpha
+  name: _concatenatedAlpha
+  nameWithType: FNode._concatenatedAlpha
+  fullName: FNode._concatenatedAlpha
+- uid: Global.FNode._isAlphaDirty
+  commentId: F:Global.FNode._isAlphaDirty
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__isAlphaDirty
+  name: _isAlphaDirty
+  nameWithType: FNode._isAlphaDirty
+  fullName: FNode._isAlphaDirty
+- uid: Global.FNode._visibleScale
+  commentId: F:Global.FNode._visibleScale
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__visibleScale
+  name: _visibleScale
+  nameWithType: FNode._visibleScale
+  fullName: FNode._visibleScale
+- uid: Global.FNode._isOnStage
+  commentId: F:Global.FNode._isOnStage
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__isOnStage
+  name: _isOnStage
+  nameWithType: FNode._isOnStage
+  fullName: FNode._isOnStage
+- uid: Global.FNode._depth
+  commentId: F:Global.FNode._depth
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__depth
+  name: _depth
+  nameWithType: FNode._depth
+  fullName: FNode._depth
+- uid: Global.FNode._stage
+  commentId: F:Global.FNode._stage
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__stage
+  name: _stage
+  nameWithType: FNode._stage
+  fullName: FNode._stage
+- uid: Global.FNode._isVisible
+  commentId: F:Global.FNode._isVisible
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode__isVisible
+  name: _isVisible
+  nameWithType: FNode._isVisible
+  fullName: FNode._isVisible
+- uid: Global.FNode.data
+  commentId: F:Global.FNode.data
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_data
+  name: data
+  nameWithType: FNode.data
+  fullName: FNode.data
+- uid: Global.FNode.AddEnabler(FNodeEnabler)
+  commentId: M:Global.FNode.AddEnabler(FNodeEnabler)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_AddEnabler_FNodeEnabler_
+  name: AddEnabler(FNodeEnabler)
+  nameWithType: FNode.AddEnabler(FNodeEnabler)
+  fullName: FNode.AddEnabler(FNodeEnabler)
+  spec.csharp:
+  - uid: Global.FNode.AddEnabler(FNodeEnabler)
+    name: AddEnabler
+    isExternal: true
+    href: Global.FNode.html#FNode_AddEnabler_FNodeEnabler_
+  - name: (
+  - uid: Global.FNodeEnabler
+    name: FNodeEnabler
+    isExternal: true
+    href: FNodeEnabler.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.AddEnabler(FNodeEnabler)
+    name: AddEnabler
+    isExternal: true
+    href: Global.FNode.html#FNode_AddEnabler_FNodeEnabler_
+  - name: (
+  - uid: Global.FNodeEnabler
+    name: FNodeEnabler
+    isExternal: true
+    href: FNodeEnabler.html
+  - name: )
+- uid: Global.FNode.RemoveEnabler(FNodeEnabler)
+  commentId: M:Global.FNode.RemoveEnabler(FNodeEnabler)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveEnabler_FNodeEnabler_
+  name: RemoveEnabler(FNodeEnabler)
+  nameWithType: FNode.RemoveEnabler(FNodeEnabler)
+  fullName: FNode.RemoveEnabler(FNodeEnabler)
+  spec.csharp:
+  - uid: Global.FNode.RemoveEnabler(FNodeEnabler)
+    name: RemoveEnabler
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveEnabler_FNodeEnabler_
+  - name: (
+  - uid: Global.FNodeEnabler
+    name: FNodeEnabler
+    isExternal: true
+    href: FNodeEnabler.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveEnabler(FNodeEnabler)
+    name: RemoveEnabler
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveEnabler_FNodeEnabler_
+  - name: (
+  - uid: Global.FNodeEnabler
+    name: FNodeEnabler
+    isExternal: true
+    href: FNodeEnabler.html
+  - name: )
+- uid: Global.FNode.RemoveEnablerOfType(System.Type)
+  commentId: M:Global.FNode.RemoveEnablerOfType(System.Type)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveEnablerOfType_System_Type_
+  name: RemoveEnablerOfType(Type)
+  nameWithType: FNode.RemoveEnablerOfType(Type)
+  fullName: FNode.RemoveEnablerOfType(System.Type)
+  spec.csharp:
+  - uid: Global.FNode.RemoveEnablerOfType(System.Type)
+    name: RemoveEnablerOfType
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveEnablerOfType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveEnablerOfType(System.Type)
+    name: RemoveEnablerOfType
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveEnablerOfType_System_Type_
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Global.FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+  commentId: M:Global.FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForResize_FScreen_ScreenResizeDelegate_
+  name: ListenForResize(ScreenResizeDelegate)
+  nameWithType: FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+  fullName: FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+    name: ListenForResize
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForResize_FScreen_ScreenResizeDelegate_
+  - name: (
+  - uid: Global.FScreen.ScreenResizeDelegate
+    name: ScreenResizeDelegate
+    isExternal: true
+    href: FScreen.ScreenResizeDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForResize(FScreen.ScreenResizeDelegate)
+    name: ListenForResize
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForResize_FScreen_ScreenResizeDelegate_
+  - name: (
+  - uid: Global.FScreen.ScreenResizeDelegate
+    name: ScreenResizeDelegate
+    isExternal: true
+    href: FScreen.ScreenResizeDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForResize
+  commentId: M:Global.FNode.RemoveListenForResize
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForResize
+  name: RemoveListenForResize()
+  nameWithType: FNode.RemoveListenForResize()
+  fullName: FNode.RemoveListenForResize()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForResize
+    name: RemoveListenForResize
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForResize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForResize
+    name: RemoveListenForResize
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForResize
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+  commentId: M:Global.FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForOrientationChange_FScreen_ScreenOrientationChangeDelegate_
+  name: ListenForOrientationChange(ScreenOrientationChangeDelegate)
+  nameWithType: FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+  fullName: FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+    name: ListenForOrientationChange
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForOrientationChange_FScreen_ScreenOrientationChangeDelegate_
+  - name: (
+  - uid: Global.FScreen.ScreenOrientationChangeDelegate
+    name: ScreenOrientationChangeDelegate
+    isExternal: true
+    href: FScreen.ScreenOrientationChangeDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForOrientationChange(FScreen.ScreenOrientationChangeDelegate)
+    name: ListenForOrientationChange
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForOrientationChange_FScreen_ScreenOrientationChangeDelegate_
+  - name: (
+  - uid: Global.FScreen.ScreenOrientationChangeDelegate
+    name: ScreenOrientationChangeDelegate
+    isExternal: true
+    href: FScreen.ScreenOrientationChangeDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForOrientationChange
+  commentId: M:Global.FNode.RemoveListenForOrientationChange
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForOrientationChange
+  name: RemoveListenForOrientationChange()
+  nameWithType: FNode.RemoveListenForOrientationChange()
+  fullName: FNode.RemoveListenForOrientationChange()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForOrientationChange
+    name: RemoveListenForOrientationChange
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForOrientationChange
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForOrientationChange
+    name: RemoveListenForOrientationChange
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForOrientationChange
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+  commentId: M:Global.FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForUpdate_Futile_FutileUpdateDelegate_
+  name: ListenForUpdate(FutileUpdateDelegate)
+  nameWithType: FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+  fullName: FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForUpdate
+  commentId: M:Global.FNode.RemoveListenForUpdate
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForUpdate
+  name: RemoveListenForUpdate()
+  nameWithType: FNode.RemoveListenForUpdate()
+  fullName: FNode.RemoveListenForUpdate()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForUpdate
+    name: RemoveListenForUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForUpdate
+    name: RemoveListenForUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForUpdate
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+  commentId: M:Global.FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForAfterUpdate_Futile_FutileUpdateDelegate_
+  name: ListenForAfterUpdate(FutileUpdateDelegate)
+  nameWithType: FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+  fullName: FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForAfterUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForAfterUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForAfterUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForAfterUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForAfterUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForAfterUpdate
+  commentId: M:Global.FNode.RemoveListenForAfterUpdate
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForAfterUpdate
+  name: RemoveListenForAfterUpdate()
+  nameWithType: FNode.RemoveListenForAfterUpdate()
+  fullName: FNode.RemoveListenForAfterUpdate()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForAfterUpdate
+    name: RemoveListenForAfterUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForAfterUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForAfterUpdate
+    name: RemoveListenForAfterUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForAfterUpdate
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+  commentId: M:Global.FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForLateUpdate_Futile_FutileUpdateDelegate_
+  name: ListenForLateUpdate(FutileUpdateDelegate)
+  nameWithType: FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+  fullName: FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForLateUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForLateUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForLateUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForLateUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForLateUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForLateUpdate
+  commentId: M:Global.FNode.RemoveListenForLateUpdate
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForLateUpdate
+  name: RemoveListenForLateUpdate()
+  nameWithType: FNode.RemoveListenForLateUpdate()
+  fullName: FNode.RemoveListenForLateUpdate()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForLateUpdate
+    name: RemoveListenForLateUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForLateUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForLateUpdate
+    name: RemoveListenForLateUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForLateUpdate
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+  commentId: M:Global.FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForFixedUpdate_Futile_FutileUpdateDelegate_
+  name: ListenForFixedUpdate(FutileUpdateDelegate)
+  nameWithType: FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+  fullName: FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForFixedUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForFixedUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForFixedUpdate(Futile.FutileUpdateDelegate)
+    name: ListenForFixedUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForFixedUpdate_Futile_FutileUpdateDelegate_
+  - name: (
+  - uid: Global.Futile.FutileUpdateDelegate
+    name: FutileUpdateDelegate
+    isExternal: true
+    href: Futile.FutileUpdateDelegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForFixedUpdate
+  commentId: M:Global.FNode.RemoveListenForFixedUpdate
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForFixedUpdate
+  name: RemoveListenForFixedUpdate()
+  nameWithType: FNode.RemoveListenForFixedUpdate()
+  fullName: FNode.RemoveListenForFixedUpdate()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForFixedUpdate
+    name: RemoveListenForFixedUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForFixedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForFixedUpdate
+    name: RemoveListenForFixedUpdate
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForFixedUpdate
+  - name: (
+  - name: )
+- uid: Global.FNode.EnableSingleTouch
+  commentId: M:Global.FNode.EnableSingleTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_EnableSingleTouch
+  name: EnableSingleTouch()
+  nameWithType: FNode.EnableSingleTouch()
+  fullName: FNode.EnableSingleTouch()
+  spec.csharp:
+  - uid: Global.FNode.EnableSingleTouch
+    name: EnableSingleTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableSingleTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.EnableSingleTouch
+    name: EnableSingleTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableSingleTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.DisableSingleTouch
+  commentId: M:Global.FNode.DisableSingleTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_DisableSingleTouch
+  name: DisableSingleTouch()
+  nameWithType: FNode.DisableSingleTouch()
+  fullName: FNode.DisableSingleTouch()
+  spec.csharp:
+  - uid: Global.FNode.DisableSingleTouch
+    name: DisableSingleTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableSingleTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.DisableSingleTouch
+    name: DisableSingleTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableSingleTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.EnableMultiTouch
+  commentId: M:Global.FNode.EnableMultiTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_EnableMultiTouch
+  name: EnableMultiTouch()
+  nameWithType: FNode.EnableMultiTouch()
+  fullName: FNode.EnableMultiTouch()
+  spec.csharp:
+  - uid: Global.FNode.EnableMultiTouch
+    name: EnableMultiTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableMultiTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.EnableMultiTouch
+    name: EnableMultiTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableMultiTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.DisableMultiTouch
+  commentId: M:Global.FNode.DisableMultiTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_DisableMultiTouch
+  name: DisableMultiTouch()
+  nameWithType: FNode.DisableMultiTouch()
+  fullName: FNode.DisableMultiTouch()
+  spec.csharp:
+  - uid: Global.FNode.DisableMultiTouch
+    name: DisableMultiTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableMultiTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.DisableMultiTouch
+    name: DisableMultiTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableMultiTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.EnableSmartTouch
+  commentId: M:Global.FNode.EnableSmartTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_EnableSmartTouch
+  name: EnableSmartTouch()
+  nameWithType: FNode.EnableSmartTouch()
+  fullName: FNode.EnableSmartTouch()
+  spec.csharp:
+  - uid: Global.FNode.EnableSmartTouch
+    name: EnableSmartTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableSmartTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.EnableSmartTouch
+    name: EnableSmartTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_EnableSmartTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.DisableSmartTouch
+  commentId: M:Global.FNode.DisableSmartTouch
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_DisableSmartTouch
+  name: DisableSmartTouch()
+  nameWithType: FNode.DisableSmartTouch()
+  fullName: FNode.DisableSmartTouch()
+  spec.csharp:
+  - uid: Global.FNode.DisableSmartTouch
+    name: DisableSmartTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableSmartTouch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.DisableSmartTouch
+    name: DisableSmartTouch
+    isExternal: true
+    href: Global.FNode.html#FNode_DisableSmartTouch
+  - name: (
+  - name: )
+- uid: Global.FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+  commentId: M:Global.FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ListenForAddedOrRemoved_FNodeEnablerForAddedOrRemoved_Delegate_
+  name: ListenForAddedOrRemoved(Delegate)
+  nameWithType: FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+  fullName: FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+  spec.csharp:
+  - uid: Global.FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+    name: ListenForAddedOrRemoved
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForAddedOrRemoved_FNodeEnablerForAddedOrRemoved_Delegate_
+  - name: (
+  - uid: Global.FNodeEnablerForAddedOrRemoved.Delegate
+    name: Delegate
+    isExternal: true
+    href: FNodeEnablerForAddedOrRemoved.Delegate.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ListenForAddedOrRemoved(FNodeEnablerForAddedOrRemoved.Delegate)
+    name: ListenForAddedOrRemoved
+    isExternal: true
+    href: Global.FNode.html#FNode_ListenForAddedOrRemoved_FNodeEnablerForAddedOrRemoved_Delegate_
+  - name: (
+  - uid: Global.FNodeEnablerForAddedOrRemoved.Delegate
+    name: Delegate
+    isExternal: true
+    href: FNodeEnablerForAddedOrRemoved.Delegate.html
+  - name: )
+- uid: Global.FNode.RemoveListenForAddedOrRemoved
+  commentId: M:Global.FNode.RemoveListenForAddedOrRemoved
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveListenForAddedOrRemoved
+  name: RemoveListenForAddedOrRemoved()
+  nameWithType: FNode.RemoveListenForAddedOrRemoved()
+  fullName: FNode.RemoveListenForAddedOrRemoved()
+  spec.csharp:
+  - uid: Global.FNode.RemoveListenForAddedOrRemoved
+    name: RemoveListenForAddedOrRemoved
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForAddedOrRemoved
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveListenForAddedOrRemoved
+    name: RemoveListenForAddedOrRemoved
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveListenForAddedOrRemoved
+  - name: (
+  - name: )
+- uid: Global.FNode.LocalToScreen(UnityEngine.Vector2)
+  commentId: M:Global.FNode.LocalToScreen(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_LocalToScreen_UnityEngine_Vector2_
+  name: LocalToScreen(Vector2)
+  nameWithType: FNode.LocalToScreen(Vector2)
+  fullName: FNode.LocalToScreen(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.LocalToScreen(UnityEngine.Vector2)
+    name: LocalToScreen
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToScreen_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.LocalToScreen(UnityEngine.Vector2)
+    name: LocalToScreen
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToScreen_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.ScreenToLocal(UnityEngine.Vector2)
+  commentId: M:Global.FNode.ScreenToLocal(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ScreenToLocal_UnityEngine_Vector2_
+  name: ScreenToLocal(Vector2)
+  nameWithType: FNode.ScreenToLocal(Vector2)
+  fullName: FNode.ScreenToLocal(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.ScreenToLocal(UnityEngine.Vector2)
+    name: ScreenToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_ScreenToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ScreenToLocal(UnityEngine.Vector2)
+    name: ScreenToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_ScreenToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.LocalToStage(UnityEngine.Vector2)
+  commentId: M:Global.FNode.LocalToStage(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_LocalToStage_UnityEngine_Vector2_
+  name: LocalToStage(Vector2)
+  nameWithType: FNode.LocalToStage(Vector2)
+  fullName: FNode.LocalToStage(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.LocalToStage(UnityEngine.Vector2)
+    name: LocalToStage
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToStage_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.LocalToStage(UnityEngine.Vector2)
+    name: LocalToStage
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToStage_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.StageToLocal(UnityEngine.Vector2)
+  commentId: M:Global.FNode.StageToLocal(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_StageToLocal_UnityEngine_Vector2_
+  name: StageToLocal(Vector2)
+  nameWithType: FNode.StageToLocal(Vector2)
+  fullName: FNode.StageToLocal(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.StageToLocal(UnityEngine.Vector2)
+    name: StageToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_StageToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.StageToLocal(UnityEngine.Vector2)
+    name: StageToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_StageToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.LocalToGlobal(UnityEngine.Vector2)
+  commentId: M:Global.FNode.LocalToGlobal(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_LocalToGlobal_UnityEngine_Vector2_
+  name: LocalToGlobal(Vector2)
+  nameWithType: FNode.LocalToGlobal(Vector2)
+  fullName: FNode.LocalToGlobal(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.LocalToGlobal(UnityEngine.Vector2)
+    name: LocalToGlobal
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToGlobal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.LocalToGlobal(UnityEngine.Vector2)
+    name: LocalToGlobal
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToGlobal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.GlobalToLocal(UnityEngine.Vector2)
+  commentId: M:Global.FNode.GlobalToLocal(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_GlobalToLocal_UnityEngine_Vector2_
+  name: GlobalToLocal(Vector2)
+  nameWithType: FNode.GlobalToLocal(Vector2)
+  fullName: FNode.GlobalToLocal(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.GlobalToLocal(UnityEngine.Vector2)
+    name: GlobalToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_GlobalToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.GlobalToLocal(UnityEngine.Vector2)
+    name: GlobalToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_GlobalToLocal_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.OtherToLocal(FNode,UnityEngine.Vector2)
+  commentId: M:Global.FNode.OtherToLocal(FNode,UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_OtherToLocal_FNode_UnityEngine_Vector2_
+  name: OtherToLocal(FNode, Vector2)
+  nameWithType: FNode.OtherToLocal(FNode, Vector2)
+  fullName: FNode.OtherToLocal(FNode, UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.OtherToLocal(FNode,UnityEngine.Vector2)
+    name: OtherToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_OtherToLocal_FNode_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.OtherToLocal(FNode,UnityEngine.Vector2)
+    name: OtherToLocal
+    isExternal: true
+    href: Global.FNode.html#FNode_OtherToLocal_FNode_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.LocalToOther(UnityEngine.Vector2,FNode)
+  commentId: M:Global.FNode.LocalToOther(UnityEngine.Vector2,FNode)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_LocalToOther_UnityEngine_Vector2_FNode_
+  name: LocalToOther(Vector2, FNode)
+  nameWithType: FNode.LocalToOther(Vector2, FNode)
+  fullName: FNode.LocalToOther(UnityEngine.Vector2, FNode)
+  spec.csharp:
+  - uid: Global.FNode.LocalToOther(UnityEngine.Vector2,FNode)
+    name: LocalToOther
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToOther_UnityEngine_Vector2_FNode_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.LocalToOther(UnityEngine.Vector2,FNode)
+    name: LocalToOther
+    isExternal: true
+    href: Global.FNode.html#FNode_LocalToOther_UnityEngine_Vector2_FNode_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FNode.GetLocalMousePosition
+  commentId: M:Global.FNode.GetLocalMousePosition
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_GetLocalMousePosition
+  name: GetLocalMousePosition()
+  nameWithType: FNode.GetLocalMousePosition()
+  fullName: FNode.GetLocalMousePosition()
+  spec.csharp:
+  - uid: Global.FNode.GetLocalMousePosition
+    name: GetLocalMousePosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetLocalMousePosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.GetLocalMousePosition
+    name: GetLocalMousePosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetLocalMousePosition
+  - name: (
+  - name: )
+- uid: Global.FNode.GetLocalTouchPosition(FTouch)
+  commentId: M:Global.FNode.GetLocalTouchPosition(FTouch)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_GetLocalTouchPosition_FTouch_
+  name: GetLocalTouchPosition(FTouch)
+  nameWithType: FNode.GetLocalTouchPosition(FTouch)
+  fullName: FNode.GetLocalTouchPosition(FTouch)
+  spec.csharp:
+  - uid: Global.FNode.GetLocalTouchPosition(FTouch)
+    name: GetLocalTouchPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetLocalTouchPosition_FTouch_
+  - name: (
+  - uid: Global.FTouch
+    name: FTouch
+    isExternal: true
+    href: FTouch.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.GetLocalTouchPosition(FTouch)
+    name: GetLocalTouchPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetLocalTouchPosition_FTouch_
+  - name: (
+  - uid: Global.FTouch
+    name: FTouch
+    isExternal: true
+    href: FTouch.html
+  - name: )
+- uid: Global.FNode.UpdateMatrix
+  commentId: M:Global.FNode.UpdateMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_UpdateMatrix
+  name: UpdateMatrix()
+  nameWithType: FNode.UpdateMatrix()
+  fullName: FNode.UpdateMatrix()
+  spec.csharp:
+  - uid: Global.FNode.UpdateMatrix
+    name: UpdateMatrix
+    isExternal: true
+    href: Global.FNode.html#FNode_UpdateMatrix
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.UpdateMatrix
+    name: UpdateMatrix
+    isExternal: true
+    href: Global.FNode.html#FNode_UpdateMatrix
+  - name: (
+  - name: )
+- uid: Global.FNode.HandleAddedToContainer(FContainer)
+  commentId: M:Global.FNode.HandleAddedToContainer(FContainer)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_HandleAddedToContainer_FContainer_
+  name: HandleAddedToContainer(FContainer)
+  nameWithType: FNode.HandleAddedToContainer(FContainer)
+  fullName: FNode.HandleAddedToContainer(FContainer)
+  spec.csharp:
+  - uid: Global.FNode.HandleAddedToContainer(FContainer)
+    name: HandleAddedToContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_HandleAddedToContainer_FContainer_
+  - name: (
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.HandleAddedToContainer(FContainer)
+    name: HandleAddedToContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_HandleAddedToContainer_FContainer_
+  - name: (
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.FNode.HandleRemovedFromContainer
+  commentId: M:Global.FNode.HandleRemovedFromContainer
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_HandleRemovedFromContainer
+  name: HandleRemovedFromContainer()
+  nameWithType: FNode.HandleRemovedFromContainer()
+  fullName: FNode.HandleRemovedFromContainer()
+  spec.csharp:
+  - uid: Global.FNode.HandleRemovedFromContainer
+    name: HandleRemovedFromContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_HandleRemovedFromContainer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.HandleRemovedFromContainer
+    name: HandleRemovedFromContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_HandleRemovedFromContainer
+  - name: (
+  - name: )
+- uid: Global.FNode.RemoveFromContainer
+  commentId: M:Global.FNode.RemoveFromContainer
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RemoveFromContainer
+  name: RemoveFromContainer()
+  nameWithType: FNode.RemoveFromContainer()
+  fullName: FNode.RemoveFromContainer()
+  spec.csharp:
+  - uid: Global.FNode.RemoveFromContainer
+    name: RemoveFromContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveFromContainer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RemoveFromContainer
+    name: RemoveFromContainer
+    isExternal: true
+    href: Global.FNode.html#FNode_RemoveFromContainer
+  - name: (
+  - name: )
+- uid: Global.FNode.MoveToFront
+  commentId: M:Global.FNode.MoveToFront
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_MoveToFront
+  name: MoveToFront()
+  nameWithType: FNode.MoveToFront()
+  fullName: FNode.MoveToFront()
+  spec.csharp:
+  - uid: Global.FNode.MoveToFront
+    name: MoveToFront
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveToFront
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.MoveToFront
+    name: MoveToFront
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveToFront
+  - name: (
+  - name: )
+- uid: Global.FNode.MoveToBack
+  commentId: M:Global.FNode.MoveToBack
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_MoveToBack
+  name: MoveToBack()
+  nameWithType: FNode.MoveToBack()
+  fullName: FNode.MoveToBack()
+  spec.csharp:
+  - uid: Global.FNode.MoveToBack
+    name: MoveToBack
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveToBack
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.MoveToBack
+    name: MoveToBack
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveToBack
+  - name: (
+  - name: )
+- uid: Global.FNode.MoveInFrontOfOtherNode(FNode)
+  commentId: M:Global.FNode.MoveInFrontOfOtherNode(FNode)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_MoveInFrontOfOtherNode_FNode_
+  name: MoveInFrontOfOtherNode(FNode)
+  nameWithType: FNode.MoveInFrontOfOtherNode(FNode)
+  fullName: FNode.MoveInFrontOfOtherNode(FNode)
+  spec.csharp:
+  - uid: Global.FNode.MoveInFrontOfOtherNode(FNode)
+    name: MoveInFrontOfOtherNode
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveInFrontOfOtherNode_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.MoveInFrontOfOtherNode(FNode)
+    name: MoveInFrontOfOtherNode
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveInFrontOfOtherNode_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FNode.MoveBehindOtherNode(FNode)
+  commentId: M:Global.FNode.MoveBehindOtherNode(FNode)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_MoveBehindOtherNode_FNode_
+  name: MoveBehindOtherNode(FNode)
+  nameWithType: FNode.MoveBehindOtherNode(FNode)
+  fullName: FNode.MoveBehindOtherNode(FNode)
+  spec.csharp:
+  - uid: Global.FNode.MoveBehindOtherNode(FNode)
+    name: MoveBehindOtherNode
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveBehindOtherNode_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.MoveBehindOtherNode(FNode)
+    name: MoveBehindOtherNode
+    isExternal: true
+    href: Global.FNode.html#FNode_MoveBehindOtherNode_FNode_
+  - name: (
+  - uid: Global.FNode
+    name: FNode
+    isExternal: true
+    href: FNode.html
+  - name: )
+- uid: Global.FNode.IsAncestryVisible
+  commentId: M:Global.FNode.IsAncestryVisible
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_IsAncestryVisible
+  name: IsAncestryVisible()
+  nameWithType: FNode.IsAncestryVisible()
+  fullName: FNode.IsAncestryVisible()
+  spec.csharp:
+  - uid: Global.FNode.IsAncestryVisible
+    name: IsAncestryVisible
+    isExternal: true
+    href: Global.FNode.html#FNode_IsAncestryVisible
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.IsAncestryVisible
+    name: IsAncestryVisible
+    isExternal: true
+    href: Global.FNode.html#FNode_IsAncestryVisible
+  - name: (
+  - name: )
+- uid: Global.FNode.CreateSpecialMatrices
+  commentId: M:Global.FNode.CreateSpecialMatrices
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_CreateSpecialMatrices
+  name: CreateSpecialMatrices()
+  nameWithType: FNode.CreateSpecialMatrices()
+  fullName: FNode.CreateSpecialMatrices()
+  spec.csharp:
+  - uid: Global.FNode.CreateSpecialMatrices
+    name: CreateSpecialMatrices
+    isExternal: true
+    href: Global.FNode.html#FNode_CreateSpecialMatrices
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.CreateSpecialMatrices
+    name: CreateSpecialMatrices
+    isExternal: true
+    href: Global.FNode.html#FNode_CreateSpecialMatrices
+  - name: (
+  - name: )
+- uid: Global.FNode.RotateAroundPointRelative(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.FNode.RotateAroundPointRelative(UnityEngine.Vector2,System.Single)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RotateAroundPointRelative_UnityEngine_Vector2_System_Single_
+  name: RotateAroundPointRelative(Vector2, float)
+  nameWithType: FNode.RotateAroundPointRelative(Vector2, float)
+  fullName: FNode.RotateAroundPointRelative(UnityEngine.Vector2, float)
+  nameWithType.vb: FNode.RotateAroundPointRelative(Vector2, Single)
+  fullName.vb: FNode.RotateAroundPointRelative(UnityEngine.Vector2, Single)
+  name.vb: RotateAroundPointRelative(Vector2, Single)
+  spec.csharp:
+  - uid: Global.FNode.RotateAroundPointRelative(UnityEngine.Vector2,System.Single)
+    name: RotateAroundPointRelative
+    isExternal: true
+    href: Global.FNode.html#FNode_RotateAroundPointRelative_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RotateAroundPointRelative(UnityEngine.Vector2,System.Single)
+    name: RotateAroundPointRelative
+    isExternal: true
+    href: Global.FNode.html#FNode_RotateAroundPointRelative_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.FNode.RotateAroundPointAbsolute(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.FNode.RotateAroundPointAbsolute(UnityEngine.Vector2,System.Single)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_RotateAroundPointAbsolute_UnityEngine_Vector2_System_Single_
+  name: RotateAroundPointAbsolute(Vector2, float)
+  nameWithType: FNode.RotateAroundPointAbsolute(Vector2, float)
+  fullName: FNode.RotateAroundPointAbsolute(UnityEngine.Vector2, float)
+  nameWithType.vb: FNode.RotateAroundPointAbsolute(Vector2, Single)
+  fullName.vb: FNode.RotateAroundPointAbsolute(UnityEngine.Vector2, Single)
+  name.vb: RotateAroundPointAbsolute(Vector2, Single)
+  spec.csharp:
+  - uid: Global.FNode.RotateAroundPointAbsolute(UnityEngine.Vector2,System.Single)
+    name: RotateAroundPointAbsolute
+    isExternal: true
+    href: Global.FNode.html#FNode_RotateAroundPointAbsolute_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.RotateAroundPointAbsolute(UnityEngine.Vector2,System.Single)
+    name: RotateAroundPointAbsolute
+    isExternal: true
+    href: Global.FNode.html#FNode_RotateAroundPointAbsolute_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.FNode.ScaleAroundPointRelative(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Global.FNode.ScaleAroundPointRelative(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ScaleAroundPointRelative_UnityEngine_Vector2_System_Single_System_Single_
+  name: ScaleAroundPointRelative(Vector2, float, float)
+  nameWithType: FNode.ScaleAroundPointRelative(Vector2, float, float)
+  fullName: FNode.ScaleAroundPointRelative(UnityEngine.Vector2, float, float)
+  nameWithType.vb: FNode.ScaleAroundPointRelative(Vector2, Single, Single)
+  fullName.vb: FNode.ScaleAroundPointRelative(UnityEngine.Vector2, Single, Single)
+  name.vb: ScaleAroundPointRelative(Vector2, Single, Single)
+  spec.csharp:
+  - uid: Global.FNode.ScaleAroundPointRelative(UnityEngine.Vector2,System.Single,System.Single)
+    name: ScaleAroundPointRelative
+    isExternal: true
+    href: Global.FNode.html#FNode_ScaleAroundPointRelative_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ScaleAroundPointRelative(UnityEngine.Vector2,System.Single,System.Single)
+    name: ScaleAroundPointRelative
+    isExternal: true
+    href: Global.FNode.html#FNode_ScaleAroundPointRelative_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2,System.Single,System.Single)
+  commentId: M:Global.FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2,System.Single,System.Single)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_ScaleAroundPointAbsolute_UnityEngine_Vector2_System_Single_System_Single_
+  name: ScaleAroundPointAbsolute(Vector2, float, float)
+  nameWithType: FNode.ScaleAroundPointAbsolute(Vector2, float, float)
+  fullName: FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2, float, float)
+  nameWithType.vb: FNode.ScaleAroundPointAbsolute(Vector2, Single, Single)
+  fullName.vb: FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2, Single, Single)
+  name.vb: ScaleAroundPointAbsolute(Vector2, Single, Single)
+  spec.csharp:
+  - uid: Global.FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2,System.Single,System.Single)
+    name: ScaleAroundPointAbsolute
+    isExternal: true
+    href: Global.FNode.html#FNode_ScaleAroundPointAbsolute_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.ScaleAroundPointAbsolute(UnityEngine.Vector2,System.Single,System.Single)
+    name: ScaleAroundPointAbsolute
+    isExternal: true
+    href: Global.FNode.html#FNode_ScaleAroundPointAbsolute_UnityEngine_Vector2_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.FNode.SetPosition(System.Single,System.Single)
+  commentId: M:Global.FNode.SetPosition(System.Single,System.Single)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_SetPosition_System_Single_System_Single_
+  name: SetPosition(float, float)
+  nameWithType: FNode.SetPosition(float, float)
+  fullName: FNode.SetPosition(float, float)
+  nameWithType.vb: FNode.SetPosition(Single, Single)
+  fullName.vb: FNode.SetPosition(Single, Single)
+  name.vb: SetPosition(Single, Single)
+  spec.csharp:
+  - uid: Global.FNode.SetPosition(System.Single,System.Single)
+    name: SetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_SetPosition_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.SetPosition(System.Single,System.Single)
+    name: SetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_SetPosition_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.FNode.SetPosition(UnityEngine.Vector2)
+  commentId: M:Global.FNode.SetPosition(UnityEngine.Vector2)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_SetPosition_UnityEngine_Vector2_
+  name: SetPosition(Vector2)
+  nameWithType: FNode.SetPosition(Vector2)
+  fullName: FNode.SetPosition(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.FNode.SetPosition(UnityEngine.Vector2)
+    name: SetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_SetPosition_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.SetPosition(UnityEngine.Vector2)
+    name: SetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_SetPosition_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FNode.GetPosition
+  commentId: M:Global.FNode.GetPosition
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_GetPosition
+  name: GetPosition()
+  nameWithType: FNode.GetPosition()
+  fullName: FNode.GetPosition()
+  spec.csharp:
+  - uid: Global.FNode.GetPosition
+    name: GetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.GetPosition
+    name: GetPosition
+    isExternal: true
+    href: Global.FNode.html#FNode_GetPosition
+  - name: (
+  - name: )
+- uid: Global.FNode.isVisible
+  commentId: P:Global.FNode.isVisible
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_isVisible
+  name: isVisible
+  nameWithType: FNode.isVisible
+  fullName: FNode.isVisible
+- uid: Global.FNode.x
+  commentId: P:Global.FNode.x
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_x
+  name: x
+  nameWithType: FNode.x
+  fullName: FNode.x
+- uid: Global.FNode.y
+  commentId: P:Global.FNode.y
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_y
+  name: y
+  nameWithType: FNode.y
+  fullName: FNode.y
+- uid: Global.FNode.meshZ
+  commentId: P:Global.FNode.meshZ
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_meshZ
+  name: meshZ
+  nameWithType: FNode.meshZ
+  fullName: FNode.meshZ
+- uid: Global.FNode.sortZ
+  commentId: P:Global.FNode.sortZ
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_sortZ
+  name: sortZ
+  nameWithType: FNode.sortZ
+  fullName: FNode.sortZ
+- uid: Global.FNode.scale
+  commentId: P:Global.FNode.scale
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_scale
+  name: scale
+  nameWithType: FNode.scale
+  fullName: FNode.scale
+- uid: Global.FNode.rotation
+  commentId: P:Global.FNode.rotation
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_rotation
+  name: rotation
+  nameWithType: FNode.rotation
+  fullName: FNode.rotation
+- uid: Global.FNode.isMatrixDirty
+  commentId: P:Global.FNode.isMatrixDirty
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_isMatrixDirty
+  name: isMatrixDirty
+  nameWithType: FNode.isMatrixDirty
+  fullName: FNode.isMatrixDirty
+- uid: Global.FNode.container
+  commentId: P:Global.FNode.container
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_container
+  name: container
+  nameWithType: FNode.container
+  fullName: FNode.container
+- uid: Global.FNode.depth
+  commentId: P:Global.FNode.depth
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_depth
+  name: depth
+  nameWithType: FNode.depth
+  fullName: FNode.depth
+- uid: Global.FNode.touchPriority
+  commentId: P:Global.FNode.touchPriority
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_touchPriority
+  name: touchPriority
+  nameWithType: FNode.touchPriority
+  fullName: FNode.touchPriority
+- uid: Global.FNode.alpha
+  commentId: P:Global.FNode.alpha
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_alpha
+  name: alpha
+  nameWithType: FNode.alpha
+  fullName: FNode.alpha
+- uid: Global.FNode.concatenatedAlpha
+  commentId: P:Global.FNode.concatenatedAlpha
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_concatenatedAlpha
+  name: concatenatedAlpha
+  nameWithType: FNode.concatenatedAlpha
+  fullName: FNode.concatenatedAlpha
+- uid: Global.FNode.stage
+  commentId: P:Global.FNode.stage
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_stage
+  name: stage
+  nameWithType: FNode.stage
+  fullName: FNode.stage
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.FStage.#ctor*
+  commentId: Overload:Global.FStage.#ctor
+  isExternal: true
+  href: Global.FStage.html#FStage__ctor_System_String_
+  name: FStage
+  nameWithType: FStage.FStage
+  fullName: FStage.FStage
+  nameWithType.vb: FStage.New
+  fullName.vb: FStage.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.FStage.HandleAddedToFutile*
+  commentId: Overload:Global.FStage.HandleAddedToFutile
+  isExternal: true
+  href: Global.FStage.html#FStage_HandleAddedToFutile
+  name: HandleAddedToFutile
+  nameWithType: FStage.HandleAddedToFutile
+  fullName: FStage.HandleAddedToFutile
+- uid: Global.FStage.HandleRemovedFromFutile*
+  commentId: Overload:Global.FStage.HandleRemovedFromFutile
+  isExternal: true
+  href: Global.FStage.html#FStage_HandleRemovedFromFutile
+  name: HandleRemovedFromFutile
+  nameWithType: FStage.HandleRemovedFromFutile
+  fullName: FStage.HandleRemovedFromFutile
+- uid: Global.FStage.HandleFacetsChanged*
+  commentId: Overload:Global.FStage.HandleFacetsChanged
+  isExternal: true
+  href: Global.FStage.html#FStage_HandleFacetsChanged
+  name: HandleFacetsChanged
+  nameWithType: FStage.HandleFacetsChanged
+  fullName: FStage.HandleFacetsChanged
+- uid: Global.FNode.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  commentId: M:Global.FNode.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_UpdateDepthMatrixAlpha_System_Boolean_System_Boolean_
+  name: UpdateDepthMatrixAlpha(bool, bool)
+  nameWithType: FNode.UpdateDepthMatrixAlpha(bool, bool)
+  fullName: FNode.UpdateDepthMatrixAlpha(bool, bool)
+  nameWithType.vb: FNode.UpdateDepthMatrixAlpha(Boolean, Boolean)
+  fullName.vb: FNode.UpdateDepthMatrixAlpha(Boolean, Boolean)
+  name.vb: UpdateDepthMatrixAlpha(Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.FNode.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+    name: UpdateDepthMatrixAlpha
+    isExternal: true
+    href: Global.FNode.html#FNode_UpdateDepthMatrixAlpha_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.FNode.UpdateDepthMatrixAlpha(System.Boolean,System.Boolean)
+    name: UpdateDepthMatrixAlpha
+    isExternal: true
+    href: Global.FNode.html#FNode_UpdateDepthMatrixAlpha_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.FStage.UpdateDepthMatrixAlpha*
+  commentId: Overload:Global.FStage.UpdateDepthMatrixAlpha
+  isExternal: true
+  href: Global.FStage.html#FStage_UpdateDepthMatrixAlpha_System_Boolean_System_Boolean_
+  name: UpdateDepthMatrixAlpha
+  nameWithType: FStage.UpdateDepthMatrixAlpha
+  fullName: FStage.UpdateDepthMatrixAlpha
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.FContainer.Redraw(System.Boolean,System.Boolean)
+  commentId: M:Global.FContainer.Redraw(System.Boolean,System.Boolean)
+  parent: Global.FContainer
+  isExternal: true
+  href: Global.FContainer.html#FContainer_Redraw_System_Boolean_System_Boolean_
+  name: Redraw(bool, bool)
+  nameWithType: FContainer.Redraw(bool, bool)
+  fullName: FContainer.Redraw(bool, bool)
+  nameWithType.vb: FContainer.Redraw(Boolean, Boolean)
+  fullName.vb: FContainer.Redraw(Boolean, Boolean)
+  name.vb: Redraw(Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.FContainer.Redraw(System.Boolean,System.Boolean)
+    name: Redraw
+    isExternal: true
+    href: Global.FContainer.html#FContainer_Redraw_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.FContainer.Redraw(System.Boolean,System.Boolean)
+    name: Redraw
+    isExternal: true
+    href: Global.FContainer.html#FContainer_Redraw_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.FStage.Redraw*
+  commentId: Overload:Global.FStage.Redraw
+  isExternal: true
+  href: Global.FStage.html#FStage_Redraw_System_Boolean_System_Boolean_
+  name: Redraw
+  nameWithType: FStage.Redraw
+  fullName: FStage.Redraw
+- uid: Global.FStage.CenterOn*
+  commentId: Overload:Global.FStage.CenterOn
+  isExternal: true
+  href: Global.FStage.html#FStage_CenterOn_UnityEngine_Vector2_
+  name: CenterOn
+  nameWithType: FStage.CenterOn
+  fullName: FStage.CenterOn
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.FStage.Follow*
+  commentId: Overload:Global.FStage.Follow
+  isExternal: true
+  href: Global.FStage.html#FStage_Follow_FNode_System_Boolean_System_Boolean_
+  name: Follow
+  nameWithType: FStage.Follow
+  fullName: FStage.Follow
+- uid: Global.FStage.Unfollow*
+  commentId: Overload:Global.FStage.Unfollow
+  isExternal: true
+  href: Global.FStage.html#FStage_Unfollow_FNode_System_Boolean_
+  name: Unfollow
+  nameWithType: FStage.Unfollow
+  fullName: FStage.Unfollow
+- uid: Global.FStage.ResetPosition*
+  commentId: Overload:Global.FStage.ResetPosition
+  isExternal: true
+  href: Global.FStage.html#FStage_ResetPosition
+  name: ResetPosition
+  nameWithType: FStage.ResetPosition
+  fullName: FStage.ResetPosition
+- uid: Global.FStage.LateUpdate*
+  commentId: Overload:Global.FStage.LateUpdate
+  isExternal: true
+  href: Global.FStage.html#FStage_LateUpdate
+  name: LateUpdate
+  nameWithType: FStage.LateUpdate
+  fullName: FStage.LateUpdate
+- uid: Global.FStage.layer*
+  commentId: Overload:Global.FStage.layer
+  isExternal: true
+  href: Global.FStage.html#FStage_layer
+  name: layer
+  nameWithType: FStage.layer
+  fullName: FStage.layer
+- uid: Global.FNode.matrix
+  commentId: P:Global.FNode.matrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_matrix
+  name: matrix
+  nameWithType: FNode.matrix
+  fullName: FNode.matrix
+- uid: Global.FStage.matrix*
+  commentId: Overload:Global.FStage.matrix
+  isExternal: true
+  href: Global.FStage.html#FStage_matrix
+  name: matrix
+  nameWithType: FStage.matrix
+  fullName: FStage.matrix
+- uid: Global.FMatrix
+  commentId: T:Global.FMatrix
+  isExternal: true
+  href: FMatrix.html
+  name: FMatrix
+  nameWithType: FMatrix
+  fullName: FMatrix
+- uid: Global.FNode.concatenatedMatrix
+  commentId: P:Global.FNode.concatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_concatenatedMatrix
+  name: concatenatedMatrix
+  nameWithType: FNode.concatenatedMatrix
+  fullName: FNode.concatenatedMatrix
+- uid: Global.FStage.concatenatedMatrix*
+  commentId: Overload:Global.FStage.concatenatedMatrix
+  isExternal: true
+  href: Global.FStage.html#FStage_concatenatedMatrix
+  name: concatenatedMatrix
+  nameWithType: FStage.concatenatedMatrix
+  fullName: FStage.concatenatedMatrix
+- uid: Global.FNode.inverseConcatenatedMatrix
+  commentId: P:Global.FNode.inverseConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_inverseConcatenatedMatrix
+  name: inverseConcatenatedMatrix
+  nameWithType: FNode.inverseConcatenatedMatrix
+  fullName: FNode.inverseConcatenatedMatrix
+- uid: Global.FStage.inverseConcatenatedMatrix*
+  commentId: Overload:Global.FStage.inverseConcatenatedMatrix
+  isExternal: true
+  href: Global.FStage.html#FStage_inverseConcatenatedMatrix
+  name: inverseConcatenatedMatrix
+  nameWithType: FStage.inverseConcatenatedMatrix
+  fullName: FStage.inverseConcatenatedMatrix
+- uid: Global.FStage.screenMatrix*
+  commentId: Overload:Global.FStage.screenMatrix
+  isExternal: true
+  href: Global.FStage.html#FStage_screenMatrix
+  name: screenMatrix
+  nameWithType: FStage.screenMatrix
+  fullName: FStage.screenMatrix
+- uid: Global.FNode.screenConcatenatedMatrix
+  commentId: P:Global.FNode.screenConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_screenConcatenatedMatrix
+  name: screenConcatenatedMatrix
+  nameWithType: FNode.screenConcatenatedMatrix
+  fullName: FNode.screenConcatenatedMatrix
+- uid: Global.FStage.screenConcatenatedMatrix*
+  commentId: Overload:Global.FStage.screenConcatenatedMatrix
+  isExternal: true
+  href: Global.FStage.html#FStage_screenConcatenatedMatrix
+  name: screenConcatenatedMatrix
+  nameWithType: FStage.screenConcatenatedMatrix
+  fullName: FStage.screenConcatenatedMatrix
+- uid: Global.FNode.screenInverseConcatenatedMatrix
+  commentId: P:Global.FNode.screenInverseConcatenatedMatrix
+  parent: Global.FNode
+  isExternal: true
+  href: Global.FNode.html#FNode_screenInverseConcatenatedMatrix
+  name: screenInverseConcatenatedMatrix
+  nameWithType: FNode.screenInverseConcatenatedMatrix
+  fullName: FNode.screenInverseConcatenatedMatrix
+- uid: Global.FStage.screenInverseConcatenatedMatrix*
+  commentId: Overload:Global.FStage.screenInverseConcatenatedMatrix
+  isExternal: true
+  href: Global.FStage.html#FStage_screenInverseConcatenatedMatrix
+  name: screenInverseConcatenatedMatrix
+  nameWithType: FStage.screenInverseConcatenatedMatrix
+  fullName: FStage.screenInverseConcatenatedMatrix
+- uid: Global.FStage.renderer*
+  commentId: Overload:Global.FStage.renderer
+  isExternal: true
+  href: Global.FStage.html#FStage_renderer
+  name: renderer
+  nameWithType: FStage.renderer
+  fullName: FStage.renderer
+- uid: Global.FRenderer
+  commentId: T:Global.FRenderer
+  isExternal: true
+  href: FRenderer.html
+  name: FRenderer
+  nameWithType: FRenderer
+  fullName: FRenderer
+- uid: Global.FStage.name*
+  commentId: Overload:Global.FStage.name
+  isExternal: true
+  href: Global.FStage.html#FStage_name
+  name: name
+  nameWithType: FStage.name
+  fullName: FStage.name
+- uid: Global.FStage.transform*
+  commentId: Overload:Global.FStage.transform
+  isExternal: true
+  href: Global.FStage.html#FStage_transform
+  name: transform
+  nameWithType: FStage.transform
+  fullName: FStage.transform
+- uid: Global.FStageTransform
+  commentId: T:Global.FStageTransform
+  isExternal: true
+  href: FStageTransform.html
+  name: FStageTransform
+  nameWithType: FStageTransform
+  fullName: FStageTransform
+- uid: Global.FStage.scaleX*
+  commentId: Overload:Global.FStage.scaleX
+  isExternal: true
+  href: Global.FStage.html#FStage_scaleX
+  name: scaleX
+  nameWithType: FStage.scaleX
+  fullName: FStage.scaleX
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.FStage.scaleY*
+  commentId: Overload:Global.FStage.scaleY
+  isExternal: true
+  href: Global.FStage.html#FStage_scaleY
+  name: scaleY
+  nameWithType: FStage.scaleY
+  fullName: FStage.scaleY

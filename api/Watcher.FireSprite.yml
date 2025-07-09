@@ -1,0 +1,4703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Watcher.FireSprite
+  commentId: T:Watcher.FireSprite
+  id: FireSprite
+  parent: Watcher
+  children:
+  - Watcher.FireSprite.#ctor(AbstractCreature,World)
+  - Watcher.FireSprite.Die
+  - Watcher.FireSprite.DistanceToDestination
+  - Watcher.FireSprite.FlyingWeapon(Weapon)
+  - Watcher.FireSprite.FollowPath
+  - Watcher.FireSprite.InitiateGraphicsModule
+  - Watcher.FireSprite.IsFarFromCamera
+  - Watcher.FireSprite.OpenWings
+  - Watcher.FireSprite.RoomSwitched
+  - Watcher.FireSprite.ShortCutColor
+  - Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  - Watcher.FireSprite.Update(System.Boolean)
+  - Watcher.FireSprite.UpdateTimers
+  - Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  - Watcher.FireSprite.ai
+  - Watcher.FireSprite.boostSoundCooldown
+  - Watcher.FireSprite.divingToHelp
+  - Watcher.FireSprite.ejectVector
+  - Watcher.FireSprite.evasionVector
+  - Watcher.FireSprite.graphicsData
+  - Watcher.FireSprite.justSwitchedRooms
+  - Watcher.FireSprite.shortcutCooldown
+  - Watcher.FireSprite.soundLoop
+  - Watcher.FireSprite.soundLoopID
+  - Watcher.FireSprite.soundLoopTransition
+  - Watcher.FireSprite.speed
+  - Watcher.FireSprite.speedBoost
+  - Watcher.FireSprite.stuckFrustration
+  - Watcher.FireSprite.stuckTimer
+  - Watcher.FireSprite.wingOpenTimer
+  - Watcher.FireSprite.wingsOpen
+  langs:
+  - csharp
+  - vb
+  name: FireSprite
+  nameWithType: FireSprite
+  fullName: Watcher.FireSprite
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Watcher.FireSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FireSprite : Creature, Weapon.INotifyOfFlyingWeapons'
+    content.vb: Public Class FireSprite Inherits Creature Implements Weapon.INotifyOfFlyingWeapons
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.PhysicalObject
+  - Global.Creature
+  implements:
+  - Global.Weapon.INotifyOfFlyingWeapons
+  inheritedMembers:
+  - Global.Creature.blind
+  - Global.Creature.deaf
+  - Global.Creature.killTag
+  - Global.Creature.killTagCounter
+  - Global.Creature.leechedOut
+  - Global.Creature.newToRoomInvinsibility
+  - Global.Creature.rainDeath
+  - Global.Creature.shortcutDelay
+  - Global.Creature.enteringShortCut
+  - Global.Creature.NPCTransportationDestination
+  - Global.Creature.lastCoord
+  - Global.Creature.lavaContact
+  - Global.Creature.lavaContactCount
+  - Global.Creature.rippleTransferCooldown
+  - Global.Creature.repelLocusts
+  - Global.Creature.muddy
+  - Global.Creature.mudColor
+  - Global.Creature.injectedPoison
+  - Global.Creature.GrabbedByDaddyCorruption
+  - Global.Creature.stunDamageType
+  - Global.Creature.HypothermiaGain
+  - Global.Creature.HypothermiaExposure
+  - Global.Creature.inputWithoutDiagonals
+  - Global.Creature.lastInputWithoutDiagonals
+  - Global.Creature.inputWithDiagonals
+  - Global.Creature.lastInputWithDiagonals
+  - Global.Creature.freezeControls
+  - Global.Creature.protectDeathRecursionFlag
+  - Global.Creature.RecreateSticksFromAbstract
+  - Global.Creature.PlaceInRoom(Room)
+  - Global.Creature.NewRoom(Room)
+  - Global.Creature.InjectPoison(System.Single,UnityEngine.Color)
+  - Global.Creature.AddMud(System.Int32,System.Int32,UnityEngine.Color)
+  - Global.Creature.NewTile
+  - Global.Creature.RippleViolenceCheck(BodyChunk)
+  - Global.Creature.SetKillTag(AbstractCreature)
+  - Global.Creature.Stun(System.Int32)
+  - Global.Creature.Blind(System.Int32)
+  - Global.Creature.Deafen(System.Int32)
+  - Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)
+  - Global.Creature.FlyIntoRoom(WorldCoordinate,Room)
+  - Global.Creature.FlyAwayFromRoom(System.Boolean)
+  - Global.Creature.Abstractize
+  - Global.Creature.LoseAllGrasps
+  - Global.Creature.BodyPartByIndex(System.Int32)
+  - Global.Creature.ReleaseGrasp(System.Int32)
+  - Global.Creature.SwitchGrasps(System.Int32,System.Int32)
+  - Global.Creature.UpdateGraspIndexes
+  - Global.Creature.CanBeGrabbed(Creature)
+  - Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)
+  - Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)
+  - Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)
+  - Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)
+  - Global.Creature.HeardNoise(Noise.InGameNoise)
+  - Global.Creature.ToString
+  - Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)
+  - Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+  - Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)
+  - Global.Creature.SafariControlInputUpdate(System.Int32)
+  - Global.Creature.stun
+  - Global.Creature.Stunned
+  - Global.Creature.Blinded
+  - Global.Creature.Deaf
+  - Global.Creature.mainBodyChunkIndex
+  - Global.Creature.mainBodyChunk
+  - Global.Creature.dead
+  - Global.Creature.Consious
+  - Global.Creature.VisionPoint
+  - Global.Creature.inShortcut
+  - Global.Creature.grasps
+  - Global.Creature.DangerPos
+  - Global.Creature.abstractCreature
+  - Global.Creature.Template
+  - Global.Creature.State
+  - Global.Creature.coord
+  - Global.Creature.safariControlled
+  - Global.Creature.Hypothermia
+  - Global.Creature.WormGrassGooduckyImmune
+  - Global.PhysicalObject.bodyChunkConnections
+  - Global.PhysicalObject.grabbedBy
+  - Global.PhysicalObject.collisionRange
+  - Global.PhysicalObject.collisionLayer
+  - Global.PhysicalObject.abstractPhysicalObject
+  - Global.PhysicalObject.surfaceFriction
+  - Global.PhysicalObject.bounce
+  - Global.PhysicalObject.impactTreshhold
+  - Global.PhysicalObject.waterRetardationImmunity
+  - Global.PhysicalObject.burrowFriction
+  - Global.PhysicalObject.sticksRespawned
+  - Global.PhysicalObject.appendages
+  - Global.PhysicalObject.canBeHitByWeapons
+  - Global.PhysicalObject.jollyBeingPointedCounter
+  - Global.PhysicalObject.FirstChunk
+  - Global.PhysicalObject.ChangeCollisionLayer(System.Int32)
+  - Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)
+  - Global.PhysicalObject.ChangeRippleLayer(System.Int32)
+  - Global.PhysicalObject.HitByWeapon(Weapon)
+  - Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)
+  - Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)
+  - Global.PhysicalObject.Grabbed(Creature.Grasp)
+  - Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)
+  - Global.PhysicalObject.RemoveGraphicsModule
+  - Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)
+  - Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)
+  - Global.PhysicalObject.SetLocalGravity(System.Single)
+  - Global.PhysicalObject.GetLocalGravity
+  - Global.PhysicalObject.SetLocalAirFriction(System.Single)
+  - Global.PhysicalObject.WeatherInertia
+  - Global.PhysicalObject.DisposeGraphicsModule
+  - Global.PhysicalObject.bodyChunks
+  - Global.PhysicalObject.graphicsModule
+  - Global.PhysicalObject.firstChunk
+  - Global.PhysicalObject.TotalMass
+  - Global.PhysicalObject.RandomChunk
+  - Global.PhysicalObject.gravity
+  - Global.PhysicalObject.airFriction
+  - Global.PhysicalObject.waterFriction
+  - Global.PhysicalObject.buoyancy
+  - Global.PhysicalObject.windAffectiveness
+  - Global.PhysicalObject.VisibilityBonus
+  - Global.PhysicalObject.GoThroughFloors
+  - Global.PhysicalObject.CollideWithTerrain
+  - Global.PhysicalObject.CollideWithSlopes
+  - Global.PhysicalObject.CollideWithObjects
+  - Global.PhysicalObject.Buried
+  - Global.PhysicalObject.WantsToBurrow
+  - Global.PhysicalObject.Submersion
+  - Global.PhysicalObject.SandstormImmune
+  - Global.PhysicalObject.EffectiveRoomGravity
+  - Global.PhysicalObject.LickedByPlayer
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Watcher.FireSprite.ai
+  commentId: F:Watcher.FireSprite.ai
+  id: ai
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: ai
+  nameWithType: FireSprite.ai
+  fullName: Watcher.FireSprite.ai
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.ai</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FireSpriteAI ai
+    return:
+      type: Watcher.FireSpriteAI
+    content.vb: Public ai As FireSpriteAI
+- uid: Watcher.FireSprite.speedBoost
+  commentId: F:Watcher.FireSprite.speedBoost
+  id: speedBoost
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: speedBoost
+  nameWithType: FireSprite.speedBoost
+  fullName: Watcher.FireSprite.speedBoost
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.speedBoost</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float speedBoost
+    return:
+      type: System.Single
+    content.vb: Public speedBoost As Single
+- uid: Watcher.FireSprite.stuckTimer
+  commentId: F:Watcher.FireSprite.stuckTimer
+  id: stuckTimer
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: stuckTimer
+  nameWithType: FireSprite.stuckTimer
+  fullName: Watcher.FireSprite.stuckTimer
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.stuckTimer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter stuckTimer
+    return:
+      type: RWCustom.Counter
+    content.vb: Public stuckTimer As Counter
+- uid: Watcher.FireSprite.stuckFrustration
+  commentId: F:Watcher.FireSprite.stuckFrustration
+  id: stuckFrustration
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: stuckFrustration
+  nameWithType: FireSprite.stuckFrustration
+  fullName: Watcher.FireSprite.stuckFrustration
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.stuckFrustration</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter stuckFrustration
+    return:
+      type: RWCustom.Counter
+    content.vb: Public stuckFrustration As Counter
+- uid: Watcher.FireSprite.wingOpenTimer
+  commentId: F:Watcher.FireSprite.wingOpenTimer
+  id: wingOpenTimer
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: wingOpenTimer
+  nameWithType: FireSprite.wingOpenTimer
+  fullName: Watcher.FireSprite.wingOpenTimer
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.wingOpenTimer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter wingOpenTimer
+    return:
+      type: RWCustom.Counter
+    content.vb: Public wingOpenTimer As Counter
+- uid: Watcher.FireSprite.justSwitchedRooms
+  commentId: F:Watcher.FireSprite.justSwitchedRooms
+  id: justSwitchedRooms
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: justSwitchedRooms
+  nameWithType: FireSprite.justSwitchedRooms
+  fullName: Watcher.FireSprite.justSwitchedRooms
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.justSwitchedRooms</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter justSwitchedRooms
+    return:
+      type: RWCustom.Counter
+    content.vb: Public justSwitchedRooms As Counter
+- uid: Watcher.FireSprite.shortcutCooldown
+  commentId: F:Watcher.FireSprite.shortcutCooldown
+  id: shortcutCooldown
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: shortcutCooldown
+  nameWithType: FireSprite.shortcutCooldown
+  fullName: Watcher.FireSprite.shortcutCooldown
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.shortcutCooldown</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter shortcutCooldown
+    return:
+      type: RWCustom.Counter
+    content.vb: Public shortcutCooldown As Counter
+- uid: Watcher.FireSprite.wingsOpen
+  commentId: F:Watcher.FireSprite.wingsOpen
+  id: wingsOpen
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: wingsOpen
+  nameWithType: FireSprite.wingsOpen
+  fullName: Watcher.FireSprite.wingsOpen
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.wingsOpen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool wingsOpen
+    return:
+      type: System.Boolean
+    content.vb: Public wingsOpen As Boolean
+- uid: Watcher.FireSprite.divingToHelp
+  commentId: F:Watcher.FireSprite.divingToHelp
+  id: divingToHelp
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: divingToHelp
+  nameWithType: FireSprite.divingToHelp
+  fullName: Watcher.FireSprite.divingToHelp
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.divingToHelp</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool divingToHelp
+    return:
+      type: System.Boolean
+    content.vb: Public divingToHelp As Boolean
+- uid: Watcher.FireSprite.ejectVector
+  commentId: F:Watcher.FireSprite.ejectVector
+  id: ejectVector
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: ejectVector
+  nameWithType: FireSprite.ejectVector
+  fullName: Watcher.FireSprite.ejectVector
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.ejectVector</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 ejectVector
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public ejectVector As Vector2
+- uid: Watcher.FireSprite.evasionVector
+  commentId: F:Watcher.FireSprite.evasionVector
+  id: evasionVector
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: evasionVector
+  nameWithType: FireSprite.evasionVector
+  fullName: Watcher.FireSprite.evasionVector
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.evasionVector</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? evasionVector
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public evasionVector As Vector2?
+- uid: Watcher.FireSprite.soundLoop
+  commentId: F:Watcher.FireSprite.soundLoop
+  id: soundLoop
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: soundLoop
+  nameWithType: FireSprite.soundLoop
+  fullName: Watcher.FireSprite.soundLoop
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.soundLoop</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StaticSoundLoop soundLoop
+    return:
+      type: Global.StaticSoundLoop
+    content.vb: Public soundLoop As StaticSoundLoop
+- uid: Watcher.FireSprite.soundLoopID
+  commentId: F:Watcher.FireSprite.soundLoopID
+  id: soundLoopID
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: soundLoopID
+  nameWithType: FireSprite.soundLoopID
+  fullName: Watcher.FireSprite.soundLoopID
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.soundLoopID</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SoundID soundLoopID
+    return:
+      type: Global.SoundID
+    content.vb: Public soundLoopID As SoundID
+- uid: Watcher.FireSprite.boostSoundCooldown
+  commentId: F:Watcher.FireSprite.boostSoundCooldown
+  id: boostSoundCooldown
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: boostSoundCooldown
+  nameWithType: FireSprite.boostSoundCooldown
+  fullName: Watcher.FireSprite.boostSoundCooldown
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.boostSoundCooldown</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter boostSoundCooldown
+    return:
+      type: RWCustom.Counter
+    content.vb: Public boostSoundCooldown As Counter
+- uid: Watcher.FireSprite.soundLoopTransition
+  commentId: F:Watcher.FireSprite.soundLoopTransition
+  id: soundLoopTransition
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: soundLoopTransition
+  nameWithType: FireSprite.soundLoopTransition
+  fullName: Watcher.FireSprite.soundLoopTransition
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.soundLoopTransition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Counter soundLoopTransition
+    return:
+      type: RWCustom.Counter
+    content.vb: Public soundLoopTransition As Counter
+- uid: Watcher.FireSprite.graphicsData
+  commentId: F:Watcher.FireSprite.graphicsData
+  id: graphicsData
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: graphicsData
+  nameWithType: FireSprite.graphicsData
+  fullName: Watcher.FireSprite.graphicsData
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.FireSprite.graphicsData</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FireSpriteGraphics.Data graphicsData
+    return:
+      type: Watcher.FireSpriteGraphics.Data
+    content.vb: Public graphicsData As FireSpriteGraphics.Data
+- uid: Watcher.FireSprite.#ctor(AbstractCreature,World)
+  commentId: M:Watcher.FireSprite.#ctor(AbstractCreature,World)
+  id: '#ctor(AbstractCreature,World)'
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: FireSprite(AbstractCreature, World)
+  nameWithType: FireSprite.FireSprite(AbstractCreature, World)
+  fullName: Watcher.FireSprite.FireSprite(AbstractCreature, World)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Watcher.FireSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FireSprite(AbstractCreature abstractCreature, World world)
+    parameters:
+    - id: abstractCreature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>abstractCreature</parameter>
+            <parameter>M:Watcher.FireSprite.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:Watcher.FireSprite.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(abstractCreature As AbstractCreature, world As World)
+  overload: Watcher.FireSprite.#ctor*
+  nameWithType.vb: FireSprite.New(AbstractCreature, World)
+  fullName.vb: Watcher.FireSprite.New(AbstractCreature, World)
+  name.vb: New(AbstractCreature, World)
+- uid: Watcher.FireSprite.InitiateGraphicsModule
+  commentId: M:Watcher.FireSprite.InitiateGraphicsModule
+  id: InitiateGraphicsModule
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: InitiateGraphicsModule()
+  nameWithType: FireSprite.InitiateGraphicsModule()
+  fullName: Watcher.FireSprite.InitiateGraphicsModule()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.InitiateGraphicsModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateGraphicsModule()
+    content.vb: Public Overrides Sub InitiateGraphicsModule()
+  overridden: Global.PhysicalObject.InitiateGraphicsModule
+  overload: Watcher.FireSprite.InitiateGraphicsModule*
+- uid: Watcher.FireSprite.UpdateTimers
+  commentId: M:Watcher.FireSprite.UpdateTimers
+  id: UpdateTimers
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: UpdateTimers()
+  nameWithType: FireSprite.UpdateTimers()
+  fullName: Watcher.FireSprite.UpdateTimers()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.UpdateTimers</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateTimers()
+    content.vb: Public Sub UpdateTimers()
+  overload: Watcher.FireSprite.UpdateTimers*
+- uid: Watcher.FireSprite.ShortCutColor
+  commentId: M:Watcher.FireSprite.ShortCutColor
+  id: ShortCutColor
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: ShortCutColor()
+  nameWithType: FireSprite.ShortCutColor()
+  fullName: Watcher.FireSprite.ShortCutColor()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.ShortCutColor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override Color ShortCutColor()
+    return:
+      type: UnityEngine.Color
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.FireSprite.ShortCutColor</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function ShortCutColor() As Color
+  overridden: Global.Creature.ShortCutColor
+  overload: Watcher.FireSprite.ShortCutColor*
+- uid: Watcher.FireSprite.RoomSwitched
+  commentId: M:Watcher.FireSprite.RoomSwitched
+  id: RoomSwitched
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: RoomSwitched()
+  nameWithType: FireSprite.RoomSwitched()
+  fullName: Watcher.FireSprite.RoomSwitched()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.RoomSwitched</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RoomSwitched()
+    content.vb: Public Sub RoomSwitched()
+  overload: Watcher.FireSprite.RoomSwitched*
+- uid: Watcher.FireSprite.Update(System.Boolean)
+  commentId: M:Watcher.FireSprite.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: FireSprite.Update(bool)
+  fullName: Watcher.FireSprite.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:Watcher.FireSprite.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.Creature.Update(System.Boolean)
+  overload: Watcher.FireSprite.Update*
+  nameWithType.vb: FireSprite.Update(Boolean)
+  fullName.vb: Watcher.FireSprite.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Watcher.FireSprite.FollowPath
+  commentId: M:Watcher.FireSprite.FollowPath
+  id: FollowPath
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: FollowPath()
+  nameWithType: FireSprite.FollowPath()
+  fullName: Watcher.FireSprite.FollowPath()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.FollowPath</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FollowPath()
+    content.vb: Public Sub FollowPath()
+  overload: Watcher.FireSprite.FollowPath*
+- uid: Watcher.FireSprite.OpenWings
+  commentId: M:Watcher.FireSprite.OpenWings
+  id: OpenWings
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: OpenWings()
+  nameWithType: FireSprite.OpenWings()
+  fullName: Watcher.FireSprite.OpenWings()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.OpenWings</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void OpenWings()
+    content.vb: Public Sub OpenWings()
+  overload: Watcher.FireSprite.OpenWings*
+- uid: Watcher.FireSprite.Die
+  commentId: M:Watcher.FireSprite.Die
+  id: Die
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: Die()
+  nameWithType: FireSprite.Die()
+  fullName: Watcher.FireSprite.Die()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.Die</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Die()
+    content.vb: Public Overrides Sub Die()
+  overridden: Global.Creature.Die
+  overload: Watcher.FireSprite.Die*
+- uid: Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  commentId: M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  id: Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  nameWithType: FireSprite.Violence(BodyChunk, Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, float, float)
+  fullName: Watcher.FireSprite.Violence(BodyChunk, UnityEngine.Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Violence(BodyChunk source, Vector2? directionAndMomentum, BodyChunk hitChunk, PhysicalObject.Appendage.Pos onAppendagePos, Creature.DamageType type, float damage, float stunBonus)
+    parameters:
+    - id: source
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>source</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: directionAndMomentum
+      type: System.Nullable{UnityEngine.Vector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>directionAndMomentum</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: hitChunk
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>hitChunk</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: onAppendagePos
+      type: Global.PhysicalObject.Appendage.Pos
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>onAppendagePos</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: type
+      type: Global.Creature.DamageType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>type</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: damage
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>damage</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: stunBonus
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>stunBonus</parameter>
+            <parameter>M:Watcher.FireSprite.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Violence(source As BodyChunk, directionAndMomentum As Vector2?, hitChunk As BodyChunk, onAppendagePos As PhysicalObject.Appendage.Pos, type As Creature.DamageType, damage As Single, stunBonus As Single)
+  overridden: Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  overload: Watcher.FireSprite.Violence*
+  nameWithType.vb: FireSprite.Violence(BodyChunk, Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, Single, Single)
+  fullName.vb: Watcher.FireSprite.Violence(BodyChunk, UnityEngine.Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, Single, Single)
+  name.vb: Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, Single, Single)
+- uid: Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  commentId: M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  id: SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: SpearStick(Weapon, float, BodyChunk, Pos, Vector2)
+  nameWithType: FireSprite.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)
+  fullName: Watcher.FireSprite.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override bool SpearStick(Weapon source, float dmg, BodyChunk chunk, PhysicalObject.Appendage.Pos onAppendagePos, Vector2 direction)
+    parameters:
+    - id: source
+      type: Global.Weapon
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>source</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: dmg
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dmg</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: chunk
+      type: Global.BodyChunk
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chunk</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: onAppendagePos
+      type: Global.PhysicalObject.Appendage.Pos
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>onAppendagePos</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: direction
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>direction</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.FireSprite.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function SpearStick(source As Weapon, dmg As Single, chunk As BodyChunk, onAppendagePos As PhysicalObject.Appendage.Pos, direction As Vector2) As Boolean
+  overridden: Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  overload: Watcher.FireSprite.SpearStick*
+  nameWithType.vb: FireSprite.SpearStick(Weapon, Single, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)
+  fullName.vb: Watcher.FireSprite.SpearStick(Weapon, Single, BodyChunk, PhysicalObject.Appendage.Pos, UnityEngine.Vector2)
+  name.vb: SpearStick(Weapon, Single, BodyChunk, Pos, Vector2)
+- uid: Watcher.FireSprite.FlyingWeapon(Weapon)
+  commentId: M:Watcher.FireSprite.FlyingWeapon(Weapon)
+  id: FlyingWeapon(Weapon)
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: FlyingWeapon(Weapon)
+  nameWithType: FireSprite.FlyingWeapon(Weapon)
+  fullName: Watcher.FireSprite.FlyingWeapon(Weapon)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.FireSprite.FlyingWeapon(Weapon)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FlyingWeapon(Weapon weapon)
+    parameters:
+    - id: weapon
+      type: Global.Weapon
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>weapon</parameter>
+            <parameter>M:Watcher.FireSprite.FlyingWeapon(Weapon)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FlyingWeapon(weapon As Weapon)
+  overload: Watcher.FireSprite.FlyingWeapon*
+  implements:
+  - Global.Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+- uid: Watcher.FireSprite.speed
+  commentId: P:Watcher.FireSprite.speed
+  id: speed
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: FireSprite.speed
+  fullName: Watcher.FireSprite.speed
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.FireSprite.speed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float speed { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property speed As Single
+  overload: Watcher.FireSprite.speed*
+- uid: Watcher.FireSprite.IsFarFromCamera
+  commentId: P:Watcher.FireSprite.IsFarFromCamera
+  id: IsFarFromCamera
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: IsFarFromCamera
+  nameWithType: FireSprite.IsFarFromCamera
+  fullName: Watcher.FireSprite.IsFarFromCamera
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.FireSprite.IsFarFromCamera</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsFarFromCamera { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFarFromCamera As Boolean
+  overload: Watcher.FireSprite.IsFarFromCamera*
+- uid: Watcher.FireSprite.DistanceToDestination
+  commentId: P:Watcher.FireSprite.DistanceToDestination
+  id: DistanceToDestination
+  parent: Watcher.FireSprite
+  langs:
+  - csharp
+  - vb
+  name: DistanceToDestination
+  nameWithType: FireSprite.DistanceToDestination
+  fullName: Watcher.FireSprite.DistanceToDestination
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.FireSprite.DistanceToDestination</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float DistanceToDestination { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DistanceToDestination As Single
+  overload: Watcher.FireSprite.DistanceToDestination*
+references:
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Global.Creature
+  commentId: T:Global.Creature
+  isExternal: true
+  href: Creature.html
+  name: Creature
+  nameWithType: Creature
+  fullName: Creature
+- uid: Global.Weapon.INotifyOfFlyingWeapons
+  commentId: T:Global.Weapon.INotifyOfFlyingWeapons
+  isExternal: true
+  href: Weapon.html
+  name: Weapon.INotifyOfFlyingWeapons
+  nameWithType: Weapon.INotifyOfFlyingWeapons
+  fullName: Weapon.INotifyOfFlyingWeapons
+  spec.csharp:
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: .
+  - uid: Global.Weapon.INotifyOfFlyingWeapons
+    name: INotifyOfFlyingWeapons
+    isExternal: true
+    href: Weapon.INotifyOfFlyingWeapons.html
+  spec.vb:
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: .
+  - uid: Global.Weapon.INotifyOfFlyingWeapons
+    name: INotifyOfFlyingWeapons
+    isExternal: true
+    href: Weapon.INotifyOfFlyingWeapons.html
+- uid: Global.Creature.blind
+  commentId: F:Global.Creature.blind
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_blind
+  name: blind
+  nameWithType: Creature.blind
+  fullName: Creature.blind
+- uid: Global.Creature.deaf
+  commentId: F:Global.Creature.deaf
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_deaf
+  name: deaf
+  nameWithType: Creature.deaf
+  fullName: Creature.deaf
+- uid: Global.Creature.killTag
+  commentId: F:Global.Creature.killTag
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_killTag
+  name: killTag
+  nameWithType: Creature.killTag
+  fullName: Creature.killTag
+- uid: Global.Creature.killTagCounter
+  commentId: F:Global.Creature.killTagCounter
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_killTagCounter
+  name: killTagCounter
+  nameWithType: Creature.killTagCounter
+  fullName: Creature.killTagCounter
+- uid: Global.Creature.leechedOut
+  commentId: F:Global.Creature.leechedOut
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_leechedOut
+  name: leechedOut
+  nameWithType: Creature.leechedOut
+  fullName: Creature.leechedOut
+- uid: Global.Creature.newToRoomInvinsibility
+  commentId: F:Global.Creature.newToRoomInvinsibility
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_newToRoomInvinsibility
+  name: newToRoomInvinsibility
+  nameWithType: Creature.newToRoomInvinsibility
+  fullName: Creature.newToRoomInvinsibility
+- uid: Global.Creature.rainDeath
+  commentId: F:Global.Creature.rainDeath
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_rainDeath
+  name: rainDeath
+  nameWithType: Creature.rainDeath
+  fullName: Creature.rainDeath
+- uid: Global.Creature.shortcutDelay
+  commentId: F:Global.Creature.shortcutDelay
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_shortcutDelay
+  name: shortcutDelay
+  nameWithType: Creature.shortcutDelay
+  fullName: Creature.shortcutDelay
+- uid: Global.Creature.enteringShortCut
+  commentId: F:Global.Creature.enteringShortCut
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_enteringShortCut
+  name: enteringShortCut
+  nameWithType: Creature.enteringShortCut
+  fullName: Creature.enteringShortCut
+- uid: Global.Creature.NPCTransportationDestination
+  commentId: F:Global.Creature.NPCTransportationDestination
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_NPCTransportationDestination
+  name: NPCTransportationDestination
+  nameWithType: Creature.NPCTransportationDestination
+  fullName: Creature.NPCTransportationDestination
+- uid: Global.Creature.lastCoord
+  commentId: F:Global.Creature.lastCoord
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_lastCoord
+  name: lastCoord
+  nameWithType: Creature.lastCoord
+  fullName: Creature.lastCoord
+- uid: Global.Creature.lavaContact
+  commentId: F:Global.Creature.lavaContact
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_lavaContact
+  name: lavaContact
+  nameWithType: Creature.lavaContact
+  fullName: Creature.lavaContact
+- uid: Global.Creature.lavaContactCount
+  commentId: F:Global.Creature.lavaContactCount
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_lavaContactCount
+  name: lavaContactCount
+  nameWithType: Creature.lavaContactCount
+  fullName: Creature.lavaContactCount
+- uid: Global.Creature.rippleTransferCooldown
+  commentId: F:Global.Creature.rippleTransferCooldown
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_rippleTransferCooldown
+  name: rippleTransferCooldown
+  nameWithType: Creature.rippleTransferCooldown
+  fullName: Creature.rippleTransferCooldown
+- uid: Global.Creature.repelLocusts
+  commentId: F:Global.Creature.repelLocusts
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_repelLocusts
+  name: repelLocusts
+  nameWithType: Creature.repelLocusts
+  fullName: Creature.repelLocusts
+- uid: Global.Creature.muddy
+  commentId: F:Global.Creature.muddy
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_muddy
+  name: muddy
+  nameWithType: Creature.muddy
+  fullName: Creature.muddy
+- uid: Global.Creature.mudColor
+  commentId: F:Global.Creature.mudColor
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_mudColor
+  name: mudColor
+  nameWithType: Creature.mudColor
+  fullName: Creature.mudColor
+- uid: Global.Creature.injectedPoison
+  commentId: F:Global.Creature.injectedPoison
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_injectedPoison
+  name: injectedPoison
+  nameWithType: Creature.injectedPoison
+  fullName: Creature.injectedPoison
+- uid: Global.Creature.GrabbedByDaddyCorruption
+  commentId: F:Global.Creature.GrabbedByDaddyCorruption
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_GrabbedByDaddyCorruption
+  name: GrabbedByDaddyCorruption
+  nameWithType: Creature.GrabbedByDaddyCorruption
+  fullName: Creature.GrabbedByDaddyCorruption
+- uid: Global.Creature.stunDamageType
+  commentId: F:Global.Creature.stunDamageType
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_stunDamageType
+  name: stunDamageType
+  nameWithType: Creature.stunDamageType
+  fullName: Creature.stunDamageType
+- uid: Global.Creature.HypothermiaGain
+  commentId: F:Global.Creature.HypothermiaGain
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_HypothermiaGain
+  name: HypothermiaGain
+  nameWithType: Creature.HypothermiaGain
+  fullName: Creature.HypothermiaGain
+- uid: Global.Creature.HypothermiaExposure
+  commentId: F:Global.Creature.HypothermiaExposure
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_HypothermiaExposure
+  name: HypothermiaExposure
+  nameWithType: Creature.HypothermiaExposure
+  fullName: Creature.HypothermiaExposure
+- uid: Global.Creature.inputWithoutDiagonals
+  commentId: F:Global.Creature.inputWithoutDiagonals
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_inputWithoutDiagonals
+  name: inputWithoutDiagonals
+  nameWithType: Creature.inputWithoutDiagonals
+  fullName: Creature.inputWithoutDiagonals
+- uid: Global.Creature.lastInputWithoutDiagonals
+  commentId: F:Global.Creature.lastInputWithoutDiagonals
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_lastInputWithoutDiagonals
+  name: lastInputWithoutDiagonals
+  nameWithType: Creature.lastInputWithoutDiagonals
+  fullName: Creature.lastInputWithoutDiagonals
+- uid: Global.Creature.inputWithDiagonals
+  commentId: F:Global.Creature.inputWithDiagonals
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_inputWithDiagonals
+  name: inputWithDiagonals
+  nameWithType: Creature.inputWithDiagonals
+  fullName: Creature.inputWithDiagonals
+- uid: Global.Creature.lastInputWithDiagonals
+  commentId: F:Global.Creature.lastInputWithDiagonals
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_lastInputWithDiagonals
+  name: lastInputWithDiagonals
+  nameWithType: Creature.lastInputWithDiagonals
+  fullName: Creature.lastInputWithDiagonals
+- uid: Global.Creature.freezeControls
+  commentId: F:Global.Creature.freezeControls
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_freezeControls
+  name: freezeControls
+  nameWithType: Creature.freezeControls
+  fullName: Creature.freezeControls
+- uid: Global.Creature.protectDeathRecursionFlag
+  commentId: F:Global.Creature.protectDeathRecursionFlag
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_protectDeathRecursionFlag
+  name: protectDeathRecursionFlag
+  nameWithType: Creature.protectDeathRecursionFlag
+  fullName: Creature.protectDeathRecursionFlag
+- uid: Global.Creature.RecreateSticksFromAbstract
+  commentId: M:Global.Creature.RecreateSticksFromAbstract
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_RecreateSticksFromAbstract
+  name: RecreateSticksFromAbstract()
+  nameWithType: Creature.RecreateSticksFromAbstract()
+  fullName: Creature.RecreateSticksFromAbstract()
+  spec.csharp:
+  - uid: Global.Creature.RecreateSticksFromAbstract
+    name: RecreateSticksFromAbstract
+    isExternal: true
+    href: Global.Creature.html#Creature_RecreateSticksFromAbstract
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.RecreateSticksFromAbstract
+    name: RecreateSticksFromAbstract
+    isExternal: true
+    href: Global.Creature.html#Creature_RecreateSticksFromAbstract
+  - name: (
+  - name: )
+- uid: Global.Creature.PlaceInRoom(Room)
+  commentId: M:Global.Creature.PlaceInRoom(Room)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_PlaceInRoom_Room_
+  name: PlaceInRoom(Room)
+  nameWithType: Creature.PlaceInRoom(Room)
+  fullName: Creature.PlaceInRoom(Room)
+  spec.csharp:
+  - uid: Global.Creature.PlaceInRoom(Room)
+    name: PlaceInRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_PlaceInRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.PlaceInRoom(Room)
+    name: PlaceInRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_PlaceInRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.Creature.NewRoom(Room)
+  commentId: M:Global.Creature.NewRoom(Room)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: Creature.NewRoom(Room)
+  fullName: Creature.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.Creature.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.Creature.InjectPoison(System.Single,UnityEngine.Color)
+  commentId: M:Global.Creature.InjectPoison(System.Single,UnityEngine.Color)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_InjectPoison_System_Single_UnityEngine_Color_
+  name: InjectPoison(float, Color)
+  nameWithType: Creature.InjectPoison(float, Color)
+  fullName: Creature.InjectPoison(float, UnityEngine.Color)
+  nameWithType.vb: Creature.InjectPoison(Single, Color)
+  fullName.vb: Creature.InjectPoison(Single, UnityEngine.Color)
+  name.vb: InjectPoison(Single, Color)
+  spec.csharp:
+  - uid: Global.Creature.InjectPoison(System.Single,UnityEngine.Color)
+    name: InjectPoison
+    isExternal: true
+    href: Global.Creature.html#Creature_InjectPoison_System_Single_UnityEngine_Color_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.InjectPoison(System.Single,UnityEngine.Color)
+    name: InjectPoison
+    isExternal: true
+    href: Global.Creature.html#Creature_InjectPoison_System_Single_UnityEngine_Color_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.Creature.AddMud(System.Int32,System.Int32,UnityEngine.Color)
+  commentId: M:Global.Creature.AddMud(System.Int32,System.Int32,UnityEngine.Color)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_AddMud_System_Int32_System_Int32_UnityEngine_Color_
+  name: AddMud(int, int, Color)
+  nameWithType: Creature.AddMud(int, int, Color)
+  fullName: Creature.AddMud(int, int, UnityEngine.Color)
+  nameWithType.vb: Creature.AddMud(Integer, Integer, Color)
+  fullName.vb: Creature.AddMud(Integer, Integer, UnityEngine.Color)
+  name.vb: AddMud(Integer, Integer, Color)
+  spec.csharp:
+  - uid: Global.Creature.AddMud(System.Int32,System.Int32,UnityEngine.Color)
+    name: AddMud
+    isExternal: true
+    href: Global.Creature.html#Creature_AddMud_System_Int32_System_Int32_UnityEngine_Color_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.AddMud(System.Int32,System.Int32,UnityEngine.Color)
+    name: AddMud
+    isExternal: true
+    href: Global.Creature.html#Creature_AddMud_System_Int32_System_Int32_UnityEngine_Color_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.Creature.NewTile
+  commentId: M:Global.Creature.NewTile
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_NewTile
+  name: NewTile()
+  nameWithType: Creature.NewTile()
+  fullName: Creature.NewTile()
+  spec.csharp:
+  - uid: Global.Creature.NewTile
+    name: NewTile
+    isExternal: true
+    href: Global.Creature.html#Creature_NewTile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.NewTile
+    name: NewTile
+    isExternal: true
+    href: Global.Creature.html#Creature_NewTile
+  - name: (
+  - name: )
+- uid: Global.Creature.RippleViolenceCheck(BodyChunk)
+  commentId: M:Global.Creature.RippleViolenceCheck(BodyChunk)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_RippleViolenceCheck_BodyChunk_
+  name: RippleViolenceCheck(BodyChunk)
+  nameWithType: Creature.RippleViolenceCheck(BodyChunk)
+  fullName: Creature.RippleViolenceCheck(BodyChunk)
+  spec.csharp:
+  - uid: Global.Creature.RippleViolenceCheck(BodyChunk)
+    name: RippleViolenceCheck
+    isExternal: true
+    href: Global.Creature.html#Creature_RippleViolenceCheck_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.RippleViolenceCheck(BodyChunk)
+    name: RippleViolenceCheck
+    isExternal: true
+    href: Global.Creature.html#Creature_RippleViolenceCheck_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+- uid: Global.Creature.SetKillTag(AbstractCreature)
+  commentId: M:Global.Creature.SetKillTag(AbstractCreature)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_SetKillTag_AbstractCreature_
+  name: SetKillTag(AbstractCreature)
+  nameWithType: Creature.SetKillTag(AbstractCreature)
+  fullName: Creature.SetKillTag(AbstractCreature)
+  spec.csharp:
+  - uid: Global.Creature.SetKillTag(AbstractCreature)
+    name: SetKillTag
+    isExternal: true
+    href: Global.Creature.html#Creature_SetKillTag_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.SetKillTag(AbstractCreature)
+    name: SetKillTag
+    isExternal: true
+    href: Global.Creature.html#Creature_SetKillTag_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.Creature.Stun(System.Int32)
+  commentId: M:Global.Creature.Stun(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Stun_System_Int32_
+  name: Stun(int)
+  nameWithType: Creature.Stun(int)
+  fullName: Creature.Stun(int)
+  nameWithType.vb: Creature.Stun(Integer)
+  fullName.vb: Creature.Stun(Integer)
+  name.vb: Stun(Integer)
+  spec.csharp:
+  - uid: Global.Creature.Stun(System.Int32)
+    name: Stun
+    isExternal: true
+    href: Global.Creature.html#Creature_Stun_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Stun(System.Int32)
+    name: Stun
+    isExternal: true
+    href: Global.Creature.html#Creature_Stun_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.Blind(System.Int32)
+  commentId: M:Global.Creature.Blind(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Blind_System_Int32_
+  name: Blind(int)
+  nameWithType: Creature.Blind(int)
+  fullName: Creature.Blind(int)
+  nameWithType.vb: Creature.Blind(Integer)
+  fullName.vb: Creature.Blind(Integer)
+  name.vb: Blind(Integer)
+  spec.csharp:
+  - uid: Global.Creature.Blind(System.Int32)
+    name: Blind
+    isExternal: true
+    href: Global.Creature.html#Creature_Blind_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Blind(System.Int32)
+    name: Blind
+    isExternal: true
+    href: Global.Creature.html#Creature_Blind_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.Deafen(System.Int32)
+  commentId: M:Global.Creature.Deafen(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Deafen_System_Int32_
+  name: Deafen(int)
+  nameWithType: Creature.Deafen(int)
+  fullName: Creature.Deafen(int)
+  nameWithType.vb: Creature.Deafen(Integer)
+  fullName.vb: Creature.Deafen(Integer)
+  name.vb: Deafen(Integer)
+  spec.csharp:
+  - uid: Global.Creature.Deafen(System.Int32)
+    name: Deafen
+    isExternal: true
+    href: Global.Creature.html#Creature_Deafen_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Deafen(System.Int32)
+    name: Deafen
+    isExternal: true
+    href: Global.Creature.html#Creature_Deafen_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)
+  commentId: M:Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_
+  name: SpitOutOfShortCut(IntVector2, Room, bool)
+  nameWithType: Creature.SpitOutOfShortCut(IntVector2, Room, bool)
+  fullName: Creature.SpitOutOfShortCut(RWCustom.IntVector2, Room, bool)
+  nameWithType.vb: Creature.SpitOutOfShortCut(IntVector2, Room, Boolean)
+  fullName.vb: Creature.SpitOutOfShortCut(RWCustom.IntVector2, Room, Boolean)
+  name.vb: SpitOutOfShortCut(IntVector2, Room, Boolean)
+  spec.csharp:
+  - uid: Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)
+    name: SpitOutOfShortCut
+    isExternal: true
+    href: Global.Creature.html#Creature_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.SpitOutOfShortCut(RWCustom.IntVector2,Room,System.Boolean)
+    name: SpitOutOfShortCut
+    isExternal: true
+    href: Global.Creature.html#Creature_SpitOutOfShortCut_RWCustom_IntVector2_Room_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Creature.FlyIntoRoom(WorldCoordinate,Room)
+  commentId: M:Global.Creature.FlyIntoRoom(WorldCoordinate,Room)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_FlyIntoRoom_WorldCoordinate_Room_
+  name: FlyIntoRoom(WorldCoordinate, Room)
+  nameWithType: Creature.FlyIntoRoom(WorldCoordinate, Room)
+  fullName: Creature.FlyIntoRoom(WorldCoordinate, Room)
+  spec.csharp:
+  - uid: Global.Creature.FlyIntoRoom(WorldCoordinate,Room)
+    name: FlyIntoRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_FlyIntoRoom_WorldCoordinate_Room_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.FlyIntoRoom(WorldCoordinate,Room)
+    name: FlyIntoRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_FlyIntoRoom_WorldCoordinate_Room_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.Creature.FlyAwayFromRoom(System.Boolean)
+  commentId: M:Global.Creature.FlyAwayFromRoom(System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_FlyAwayFromRoom_System_Boolean_
+  name: FlyAwayFromRoom(bool)
+  nameWithType: Creature.FlyAwayFromRoom(bool)
+  fullName: Creature.FlyAwayFromRoom(bool)
+  nameWithType.vb: Creature.FlyAwayFromRoom(Boolean)
+  fullName.vb: Creature.FlyAwayFromRoom(Boolean)
+  name.vb: FlyAwayFromRoom(Boolean)
+  spec.csharp:
+  - uid: Global.Creature.FlyAwayFromRoom(System.Boolean)
+    name: FlyAwayFromRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_FlyAwayFromRoom_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.FlyAwayFromRoom(System.Boolean)
+    name: FlyAwayFromRoom
+    isExternal: true
+    href: Global.Creature.html#Creature_FlyAwayFromRoom_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Creature.Abstractize
+  commentId: M:Global.Creature.Abstractize
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Abstractize
+  name: Abstractize()
+  nameWithType: Creature.Abstractize()
+  fullName: Creature.Abstractize()
+  spec.csharp:
+  - uid: Global.Creature.Abstractize
+    name: Abstractize
+    isExternal: true
+    href: Global.Creature.html#Creature_Abstractize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Abstractize
+    name: Abstractize
+    isExternal: true
+    href: Global.Creature.html#Creature_Abstractize
+  - name: (
+  - name: )
+- uid: Global.Creature.LoseAllGrasps
+  commentId: M:Global.Creature.LoseAllGrasps
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_LoseAllGrasps
+  name: LoseAllGrasps()
+  nameWithType: Creature.LoseAllGrasps()
+  fullName: Creature.LoseAllGrasps()
+  spec.csharp:
+  - uid: Global.Creature.LoseAllGrasps
+    name: LoseAllGrasps
+    isExternal: true
+    href: Global.Creature.html#Creature_LoseAllGrasps
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.LoseAllGrasps
+    name: LoseAllGrasps
+    isExternal: true
+    href: Global.Creature.html#Creature_LoseAllGrasps
+  - name: (
+  - name: )
+- uid: Global.Creature.BodyPartByIndex(System.Int32)
+  commentId: M:Global.Creature.BodyPartByIndex(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_BodyPartByIndex_System_Int32_
+  name: BodyPartByIndex(int)
+  nameWithType: Creature.BodyPartByIndex(int)
+  fullName: Creature.BodyPartByIndex(int)
+  nameWithType.vb: Creature.BodyPartByIndex(Integer)
+  fullName.vb: Creature.BodyPartByIndex(Integer)
+  name.vb: BodyPartByIndex(Integer)
+  spec.csharp:
+  - uid: Global.Creature.BodyPartByIndex(System.Int32)
+    name: BodyPartByIndex
+    isExternal: true
+    href: Global.Creature.html#Creature_BodyPartByIndex_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.BodyPartByIndex(System.Int32)
+    name: BodyPartByIndex
+    isExternal: true
+    href: Global.Creature.html#Creature_BodyPartByIndex_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.ReleaseGrasp(System.Int32)
+  commentId: M:Global.Creature.ReleaseGrasp(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_ReleaseGrasp_System_Int32_
+  name: ReleaseGrasp(int)
+  nameWithType: Creature.ReleaseGrasp(int)
+  fullName: Creature.ReleaseGrasp(int)
+  nameWithType.vb: Creature.ReleaseGrasp(Integer)
+  fullName.vb: Creature.ReleaseGrasp(Integer)
+  name.vb: ReleaseGrasp(Integer)
+  spec.csharp:
+  - uid: Global.Creature.ReleaseGrasp(System.Int32)
+    name: ReleaseGrasp
+    isExternal: true
+    href: Global.Creature.html#Creature_ReleaseGrasp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.ReleaseGrasp(System.Int32)
+    name: ReleaseGrasp
+    isExternal: true
+    href: Global.Creature.html#Creature_ReleaseGrasp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.SwitchGrasps(System.Int32,System.Int32)
+  commentId: M:Global.Creature.SwitchGrasps(System.Int32,System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_SwitchGrasps_System_Int32_System_Int32_
+  name: SwitchGrasps(int, int)
+  nameWithType: Creature.SwitchGrasps(int, int)
+  fullName: Creature.SwitchGrasps(int, int)
+  nameWithType.vb: Creature.SwitchGrasps(Integer, Integer)
+  fullName.vb: Creature.SwitchGrasps(Integer, Integer)
+  name.vb: SwitchGrasps(Integer, Integer)
+  spec.csharp:
+  - uid: Global.Creature.SwitchGrasps(System.Int32,System.Int32)
+    name: SwitchGrasps
+    isExternal: true
+    href: Global.Creature.html#Creature_SwitchGrasps_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.SwitchGrasps(System.Int32,System.Int32)
+    name: SwitchGrasps
+    isExternal: true
+    href: Global.Creature.html#Creature_SwitchGrasps_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.UpdateGraspIndexes
+  commentId: M:Global.Creature.UpdateGraspIndexes
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_UpdateGraspIndexes
+  name: UpdateGraspIndexes()
+  nameWithType: Creature.UpdateGraspIndexes()
+  fullName: Creature.UpdateGraspIndexes()
+  spec.csharp:
+  - uid: Global.Creature.UpdateGraspIndexes
+    name: UpdateGraspIndexes
+    isExternal: true
+    href: Global.Creature.html#Creature_UpdateGraspIndexes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.UpdateGraspIndexes
+    name: UpdateGraspIndexes
+    isExternal: true
+    href: Global.Creature.html#Creature_UpdateGraspIndexes
+  - name: (
+  - name: )
+- uid: Global.Creature.CanBeGrabbed(Creature)
+  commentId: M:Global.Creature.CanBeGrabbed(Creature)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_CanBeGrabbed_Creature_
+  name: CanBeGrabbed(Creature)
+  nameWithType: Creature.CanBeGrabbed(Creature)
+  fullName: Creature.CanBeGrabbed(Creature)
+  spec.csharp:
+  - uid: Global.Creature.CanBeGrabbed(Creature)
+    name: CanBeGrabbed
+    isExternal: true
+    href: Global.Creature.html#Creature_CanBeGrabbed_Creature_
+  - name: (
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.CanBeGrabbed(Creature)
+    name: CanBeGrabbed
+    isExternal: true
+    href: Global.Creature.html#Creature_CanBeGrabbed_Creature_
+  - name: (
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+- uid: Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)
+  commentId: M:Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_
+  name: Grab(PhysicalObject, int, int, Shareability, float, bool, bool)
+  nameWithType: Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)
+  fullName: Creature.Grab(PhysicalObject, int, int, Creature.Grasp.Shareability, float, bool, bool)
+  nameWithType.vb: Creature.Grab(PhysicalObject, Integer, Integer, Creature.Grasp.Shareability, Single, Boolean, Boolean)
+  fullName.vb: Creature.Grab(PhysicalObject, Integer, Integer, Creature.Grasp.Shareability, Single, Boolean, Boolean)
+  name.vb: Grab(PhysicalObject, Integer, Integer, Shareability, Single, Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)
+    name: Grab
+    isExternal: true
+    href: Global.Creature.html#Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Global.Creature.Grasp.Shareability
+    name: Shareability
+    isExternal: true
+    href: Creature.Grasp.Shareability.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Grab(PhysicalObject,System.Int32,System.Int32,Creature.Grasp.Shareability,System.Single,System.Boolean,System.Boolean)
+    name: Grab
+    isExternal: true
+    href: Global.Creature.html#Creature_Grab_PhysicalObject_System_Int32_System_Int32_Creature_Grasp_Shareability_System_Single_System_Boolean_System_Boolean_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Global.Creature.Grasp.Shareability
+    name: Shareability
+    isExternal: true
+    href: Creature.Grasp.Shareability.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)
+  commentId: M:Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_GrabbedObjectSnatched_PhysicalObject_Creature_
+  name: GrabbedObjectSnatched(PhysicalObject, Creature)
+  nameWithType: Creature.GrabbedObjectSnatched(PhysicalObject, Creature)
+  fullName: Creature.GrabbedObjectSnatched(PhysicalObject, Creature)
+  spec.csharp:
+  - uid: Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)
+    name: GrabbedObjectSnatched
+    isExternal: true
+    href: Global.Creature.html#Creature_GrabbedObjectSnatched_PhysicalObject_Creature_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.GrabbedObjectSnatched(PhysicalObject,Creature)
+    name: GrabbedObjectSnatched
+    isExternal: true
+    href: Global.Creature.html#Creature_GrabbedObjectSnatched_PhysicalObject_Creature_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+- uid: Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)
+  commentId: M:Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_
+  name: TerrainImpact(int, IntVector2, float, bool)
+  nameWithType: Creature.TerrainImpact(int, IntVector2, float, bool)
+  fullName: Creature.TerrainImpact(int, RWCustom.IntVector2, float, bool)
+  nameWithType.vb: Creature.TerrainImpact(Integer, IntVector2, Single, Boolean)
+  fullName.vb: Creature.TerrainImpact(Integer, RWCustom.IntVector2, Single, Boolean)
+  name.vb: TerrainImpact(Integer, IntVector2, Single, Boolean)
+  spec.csharp:
+  - uid: Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)
+    name: TerrainImpact
+    isExternal: true
+    href: Global.Creature.html#Creature_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.TerrainImpact(System.Int32,RWCustom.IntVector2,System.Single,System.Boolean)
+    name: TerrainImpact
+    isExternal: true
+    href: Global.Creature.html#Creature_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)
+  commentId: M:Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_
+  name: PushOutOf(Vector2, float, int)
+  nameWithType: Creature.PushOutOf(Vector2, float, int)
+  fullName: Creature.PushOutOf(UnityEngine.Vector2, float, int)
+  nameWithType.vb: Creature.PushOutOf(Vector2, Single, Integer)
+  fullName.vb: Creature.PushOutOf(UnityEngine.Vector2, Single, Integer)
+  name.vb: PushOutOf(Vector2, Single, Integer)
+  spec.csharp:
+  - uid: Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)
+    name: PushOutOf
+    isExternal: true
+    href: Global.Creature.html#Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.PushOutOf(UnityEngine.Vector2,System.Single,System.Int32)
+    name: PushOutOf
+    isExternal: true
+    href: Global.Creature.html#Creature_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.HeardNoise(Noise.InGameNoise)
+  commentId: M:Global.Creature.HeardNoise(Noise.InGameNoise)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_HeardNoise_Noise_InGameNoise_
+  name: HeardNoise(InGameNoise)
+  nameWithType: Creature.HeardNoise(InGameNoise)
+  fullName: Creature.HeardNoise(Noise.InGameNoise)
+  spec.csharp:
+  - uid: Global.Creature.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.Creature.html#Creature_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.Creature.html#Creature_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+- uid: Global.Creature.ToString
+  commentId: M:Global.Creature.ToString
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_ToString
+  name: ToString()
+  nameWithType: Creature.ToString()
+  fullName: Creature.ToString()
+  spec.csharp:
+  - uid: Global.Creature.ToString
+    name: ToString
+    isExternal: true
+    href: Global.Creature.html#Creature_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.ToString
+    name: ToString
+    isExternal: true
+    href: Global.Creature.html#Creature_ToString
+  - name: (
+  - name: )
+- uid: Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)
+  commentId: M:Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_
+  name: ReleaseDoorForbiddenCreatures(bool, bool)
+  nameWithType: Creature.ReleaseDoorForbiddenCreatures(bool, bool)
+  fullName: Creature.ReleaseDoorForbiddenCreatures(bool, bool)
+  nameWithType.vb: Creature.ReleaseDoorForbiddenCreatures(Boolean, Boolean)
+  fullName.vb: Creature.ReleaseDoorForbiddenCreatures(Boolean, Boolean)
+  name.vb: ReleaseDoorForbiddenCreatures(Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)
+    name: ReleaseDoorForbiddenCreatures
+    isExternal: true
+    href: Global.Creature.html#Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.ReleaseDoorForbiddenCreatures(System.Boolean,System.Boolean)
+    name: ReleaseDoorForbiddenCreatures
+    isExternal: true
+    href: Global.Creature.html#Creature_ReleaseDoorForbiddenCreatures_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+  commentId: M:Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_AllowableControlledAIOverride_MovementConnection_MovementType_
+  name: AllowableControlledAIOverride(MovementType)
+  nameWithType: Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+  fullName: Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+  spec.csharp:
+  - uid: Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+    name: AllowableControlledAIOverride
+    isExternal: true
+    href: Global.Creature.html#Creature_AllowableControlledAIOverride_MovementConnection_MovementType_
+  - name: (
+  - uid: Global.MovementConnection.MovementType
+    name: MovementType
+    isExternal: true
+    href: MovementConnection.MovementType.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.AllowableControlledAIOverride(MovementConnection.MovementType)
+    name: AllowableControlledAIOverride
+    isExternal: true
+    href: Global.Creature.html#Creature_AllowableControlledAIOverride_MovementConnection_MovementType_
+  - name: (
+  - uid: Global.MovementConnection.MovementType
+    name: MovementType
+    isExternal: true
+    href: MovementConnection.MovementType.html
+  - name: )
+- uid: Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)
+  commentId: M:Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_HypothermiaBodyContactWarmup_Creature_Creature_
+  name: HypothermiaBodyContactWarmup(Creature, Creature)
+  nameWithType: Creature.HypothermiaBodyContactWarmup(Creature, Creature)
+  fullName: Creature.HypothermiaBodyContactWarmup(Creature, Creature)
+  spec.csharp:
+  - uid: Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)
+    name: HypothermiaBodyContactWarmup
+    isExternal: true
+    href: Global.Creature.html#Creature_HypothermiaBodyContactWarmup_Creature_Creature_
+  - name: (
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.HypothermiaBodyContactWarmup(Creature,Creature)
+    name: HypothermiaBodyContactWarmup
+    isExternal: true
+    href: Global.Creature.html#Creature_HypothermiaBodyContactWarmup_Creature_Creature_
+  - name: (
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: )
+- uid: Global.Creature.SafariControlInputUpdate(System.Int32)
+  commentId: M:Global.Creature.SafariControlInputUpdate(System.Int32)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_SafariControlInputUpdate_System_Int32_
+  name: SafariControlInputUpdate(int)
+  nameWithType: Creature.SafariControlInputUpdate(int)
+  fullName: Creature.SafariControlInputUpdate(int)
+  nameWithType.vb: Creature.SafariControlInputUpdate(Integer)
+  fullName.vb: Creature.SafariControlInputUpdate(Integer)
+  name.vb: SafariControlInputUpdate(Integer)
+  spec.csharp:
+  - uid: Global.Creature.SafariControlInputUpdate(System.Int32)
+    name: SafariControlInputUpdate
+    isExternal: true
+    href: Global.Creature.html#Creature_SafariControlInputUpdate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.SafariControlInputUpdate(System.Int32)
+    name: SafariControlInputUpdate
+    isExternal: true
+    href: Global.Creature.html#Creature_SafariControlInputUpdate_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.Creature.stun
+  commentId: P:Global.Creature.stun
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_stun
+  name: stun
+  nameWithType: Creature.stun
+  fullName: Creature.stun
+- uid: Global.Creature.Stunned
+  commentId: P:Global.Creature.Stunned
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Stunned
+  name: Stunned
+  nameWithType: Creature.Stunned
+  fullName: Creature.Stunned
+- uid: Global.Creature.Blinded
+  commentId: P:Global.Creature.Blinded
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Blinded
+  name: Blinded
+  nameWithType: Creature.Blinded
+  fullName: Creature.Blinded
+- uid: Global.Creature.Deaf
+  commentId: P:Global.Creature.Deaf
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Deaf
+  name: Deaf
+  nameWithType: Creature.Deaf
+  fullName: Creature.Deaf
+- uid: Global.Creature.mainBodyChunkIndex
+  commentId: P:Global.Creature.mainBodyChunkIndex
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_mainBodyChunkIndex
+  name: mainBodyChunkIndex
+  nameWithType: Creature.mainBodyChunkIndex
+  fullName: Creature.mainBodyChunkIndex
+- uid: Global.Creature.mainBodyChunk
+  commentId: P:Global.Creature.mainBodyChunk
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_mainBodyChunk
+  name: mainBodyChunk
+  nameWithType: Creature.mainBodyChunk
+  fullName: Creature.mainBodyChunk
+- uid: Global.Creature.dead
+  commentId: P:Global.Creature.dead
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_dead
+  name: dead
+  nameWithType: Creature.dead
+  fullName: Creature.dead
+- uid: Global.Creature.Consious
+  commentId: P:Global.Creature.Consious
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Consious
+  name: Consious
+  nameWithType: Creature.Consious
+  fullName: Creature.Consious
+- uid: Global.Creature.VisionPoint
+  commentId: P:Global.Creature.VisionPoint
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_VisionPoint
+  name: VisionPoint
+  nameWithType: Creature.VisionPoint
+  fullName: Creature.VisionPoint
+- uid: Global.Creature.inShortcut
+  commentId: P:Global.Creature.inShortcut
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_inShortcut
+  name: inShortcut
+  nameWithType: Creature.inShortcut
+  fullName: Creature.inShortcut
+- uid: Global.Creature.grasps
+  commentId: P:Global.Creature.grasps
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_grasps
+  name: grasps
+  nameWithType: Creature.grasps
+  fullName: Creature.grasps
+- uid: Global.Creature.DangerPos
+  commentId: P:Global.Creature.DangerPos
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_DangerPos
+  name: DangerPos
+  nameWithType: Creature.DangerPos
+  fullName: Creature.DangerPos
+- uid: Global.Creature.abstractCreature
+  commentId: P:Global.Creature.abstractCreature
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_abstractCreature
+  name: abstractCreature
+  nameWithType: Creature.abstractCreature
+  fullName: Creature.abstractCreature
+- uid: Global.Creature.Template
+  commentId: P:Global.Creature.Template
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Template
+  name: Template
+  nameWithType: Creature.Template
+  fullName: Creature.Template
+- uid: Global.Creature.State
+  commentId: P:Global.Creature.State
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_State
+  name: State
+  nameWithType: Creature.State
+  fullName: Creature.State
+- uid: Global.Creature.coord
+  commentId: P:Global.Creature.coord
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_coord
+  name: coord
+  nameWithType: Creature.coord
+  fullName: Creature.coord
+- uid: Global.Creature.safariControlled
+  commentId: P:Global.Creature.safariControlled
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_safariControlled
+  name: safariControlled
+  nameWithType: Creature.safariControlled
+  fullName: Creature.safariControlled
+- uid: Global.Creature.Hypothermia
+  commentId: P:Global.Creature.Hypothermia
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Hypothermia
+  name: Hypothermia
+  nameWithType: Creature.Hypothermia
+  fullName: Creature.Hypothermia
+- uid: Global.Creature.WormGrassGooduckyImmune
+  commentId: P:Global.Creature.WormGrassGooduckyImmune
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_WormGrassGooduckyImmune
+  name: WormGrassGooduckyImmune
+  nameWithType: Creature.WormGrassGooduckyImmune
+  fullName: Creature.WormGrassGooduckyImmune
+- uid: Global.PhysicalObject.bodyChunkConnections
+  commentId: F:Global.PhysicalObject.bodyChunkConnections
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_bodyChunkConnections
+  name: bodyChunkConnections
+  nameWithType: PhysicalObject.bodyChunkConnections
+  fullName: PhysicalObject.bodyChunkConnections
+- uid: Global.PhysicalObject.grabbedBy
+  commentId: F:Global.PhysicalObject.grabbedBy
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_grabbedBy
+  name: grabbedBy
+  nameWithType: PhysicalObject.grabbedBy
+  fullName: PhysicalObject.grabbedBy
+- uid: Global.PhysicalObject.collisionRange
+  commentId: F:Global.PhysicalObject.collisionRange
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_collisionRange
+  name: collisionRange
+  nameWithType: PhysicalObject.collisionRange
+  fullName: PhysicalObject.collisionRange
+- uid: Global.PhysicalObject.collisionLayer
+  commentId: F:Global.PhysicalObject.collisionLayer
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_collisionLayer
+  name: collisionLayer
+  nameWithType: PhysicalObject.collisionLayer
+  fullName: PhysicalObject.collisionLayer
+- uid: Global.PhysicalObject.abstractPhysicalObject
+  commentId: F:Global.PhysicalObject.abstractPhysicalObject
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_abstractPhysicalObject
+  name: abstractPhysicalObject
+  nameWithType: PhysicalObject.abstractPhysicalObject
+  fullName: PhysicalObject.abstractPhysicalObject
+- uid: Global.PhysicalObject.surfaceFriction
+  commentId: F:Global.PhysicalObject.surfaceFriction
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_surfaceFriction
+  name: surfaceFriction
+  nameWithType: PhysicalObject.surfaceFriction
+  fullName: PhysicalObject.surfaceFriction
+- uid: Global.PhysicalObject.bounce
+  commentId: F:Global.PhysicalObject.bounce
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_bounce
+  name: bounce
+  nameWithType: PhysicalObject.bounce
+  fullName: PhysicalObject.bounce
+- uid: Global.PhysicalObject.impactTreshhold
+  commentId: F:Global.PhysicalObject.impactTreshhold
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_impactTreshhold
+  name: impactTreshhold
+  nameWithType: PhysicalObject.impactTreshhold
+  fullName: PhysicalObject.impactTreshhold
+- uid: Global.PhysicalObject.waterRetardationImmunity
+  commentId: F:Global.PhysicalObject.waterRetardationImmunity
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_waterRetardationImmunity
+  name: waterRetardationImmunity
+  nameWithType: PhysicalObject.waterRetardationImmunity
+  fullName: PhysicalObject.waterRetardationImmunity
+- uid: Global.PhysicalObject.burrowFriction
+  commentId: F:Global.PhysicalObject.burrowFriction
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_burrowFriction
+  name: burrowFriction
+  nameWithType: PhysicalObject.burrowFriction
+  fullName: PhysicalObject.burrowFriction
+- uid: Global.PhysicalObject.sticksRespawned
+  commentId: F:Global.PhysicalObject.sticksRespawned
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_sticksRespawned
+  name: sticksRespawned
+  nameWithType: PhysicalObject.sticksRespawned
+  fullName: PhysicalObject.sticksRespawned
+- uid: Global.PhysicalObject.appendages
+  commentId: F:Global.PhysicalObject.appendages
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_appendages
+  name: appendages
+  nameWithType: PhysicalObject.appendages
+  fullName: PhysicalObject.appendages
+- uid: Global.PhysicalObject.canBeHitByWeapons
+  commentId: F:Global.PhysicalObject.canBeHitByWeapons
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_canBeHitByWeapons
+  name: canBeHitByWeapons
+  nameWithType: PhysicalObject.canBeHitByWeapons
+  fullName: PhysicalObject.canBeHitByWeapons
+- uid: Global.PhysicalObject.jollyBeingPointedCounter
+  commentId: F:Global.PhysicalObject.jollyBeingPointedCounter
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_jollyBeingPointedCounter
+  name: jollyBeingPointedCounter
+  nameWithType: PhysicalObject.jollyBeingPointedCounter
+  fullName: PhysicalObject.jollyBeingPointedCounter
+- uid: Global.PhysicalObject.FirstChunk
+  commentId: M:Global.PhysicalObject.FirstChunk
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_FirstChunk
+  name: FirstChunk()
+  nameWithType: PhysicalObject.FirstChunk()
+  fullName: PhysicalObject.FirstChunk()
+  spec.csharp:
+  - uid: Global.PhysicalObject.FirstChunk
+    name: FirstChunk
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_FirstChunk
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.FirstChunk
+    name: FirstChunk
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_FirstChunk
+  - name: (
+  - name: )
+- uid: Global.PhysicalObject.ChangeCollisionLayer(System.Int32)
+  commentId: M:Global.PhysicalObject.ChangeCollisionLayer(System.Int32)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_ChangeCollisionLayer_System_Int32_
+  name: ChangeCollisionLayer(int)
+  nameWithType: PhysicalObject.ChangeCollisionLayer(int)
+  fullName: PhysicalObject.ChangeCollisionLayer(int)
+  nameWithType.vb: PhysicalObject.ChangeCollisionLayer(Integer)
+  fullName.vb: PhysicalObject.ChangeCollisionLayer(Integer)
+  name.vb: ChangeCollisionLayer(Integer)
+  spec.csharp:
+  - uid: Global.PhysicalObject.ChangeCollisionLayer(System.Int32)
+    name: ChangeCollisionLayer
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_ChangeCollisionLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.ChangeCollisionLayer(System.Int32)
+    name: ChangeCollisionLayer
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_ChangeCollisionLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)
+  commentId: M:Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_
+  name: Collide(PhysicalObject, int, int)
+  nameWithType: PhysicalObject.Collide(PhysicalObject, int, int)
+  fullName: PhysicalObject.Collide(PhysicalObject, int, int)
+  nameWithType.vb: PhysicalObject.Collide(PhysicalObject, Integer, Integer)
+  fullName.vb: PhysicalObject.Collide(PhysicalObject, Integer, Integer)
+  name.vb: Collide(PhysicalObject, Integer, Integer)
+  spec.csharp:
+  - uid: Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)
+    name: Collide
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.Collide(PhysicalObject,System.Int32,System.Int32)
+    name: Collide
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PhysicalObject.ChangeRippleLayer(System.Int32)
+  commentId: M:Global.PhysicalObject.ChangeRippleLayer(System.Int32)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_ChangeRippleLayer_System_Int32_
+  name: ChangeRippleLayer(int)
+  nameWithType: PhysicalObject.ChangeRippleLayer(int)
+  fullName: PhysicalObject.ChangeRippleLayer(int)
+  nameWithType.vb: PhysicalObject.ChangeRippleLayer(Integer)
+  fullName.vb: PhysicalObject.ChangeRippleLayer(Integer)
+  name.vb: ChangeRippleLayer(Integer)
+  spec.csharp:
+  - uid: Global.PhysicalObject.ChangeRippleLayer(System.Int32)
+    name: ChangeRippleLayer
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_ChangeRippleLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.ChangeRippleLayer(System.Int32)
+    name: ChangeRippleLayer
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_ChangeRippleLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PhysicalObject.HitByWeapon(Weapon)
+  commentId: M:Global.PhysicalObject.HitByWeapon(Weapon)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_HitByWeapon_Weapon_
+  name: HitByWeapon(Weapon)
+  nameWithType: PhysicalObject.HitByWeapon(Weapon)
+  fullName: PhysicalObject.HitByWeapon(Weapon)
+  spec.csharp:
+  - uid: Global.PhysicalObject.HitByWeapon(Weapon)
+    name: HitByWeapon
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_HitByWeapon_Weapon_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.HitByWeapon(Weapon)
+    name: HitByWeapon
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_HitByWeapon_Weapon_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: )
+- uid: Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)
+  commentId: M:Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_
+  name: IsTileSolid(int, int, int)
+  nameWithType: PhysicalObject.IsTileSolid(int, int, int)
+  fullName: PhysicalObject.IsTileSolid(int, int, int)
+  nameWithType.vb: PhysicalObject.IsTileSolid(Integer, Integer, Integer)
+  fullName.vb: PhysicalObject.IsTileSolid(Integer, Integer, Integer)
+  name.vb: IsTileSolid(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)
+    name: IsTileSolid
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.IsTileSolid(System.Int32,System.Int32,System.Int32)
+    name: IsTileSolid
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)
+  commentId: M:Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_
+  name: AllGraspsLetGoOfThisObject(bool)
+  nameWithType: PhysicalObject.AllGraspsLetGoOfThisObject(bool)
+  fullName: PhysicalObject.AllGraspsLetGoOfThisObject(bool)
+  nameWithType.vb: PhysicalObject.AllGraspsLetGoOfThisObject(Boolean)
+  fullName.vb: PhysicalObject.AllGraspsLetGoOfThisObject(Boolean)
+  name.vb: AllGraspsLetGoOfThisObject(Boolean)
+  spec.csharp:
+  - uid: Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)
+    name: AllGraspsLetGoOfThisObject
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.AllGraspsLetGoOfThisObject(System.Boolean)
+    name: AllGraspsLetGoOfThisObject
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.PhysicalObject.Grabbed(Creature.Grasp)
+  commentId: M:Global.PhysicalObject.Grabbed(Creature.Grasp)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_Grabbed_Creature_Grasp_
+  name: Grabbed(Grasp)
+  nameWithType: PhysicalObject.Grabbed(Creature.Grasp)
+  fullName: PhysicalObject.Grabbed(Creature.Grasp)
+  spec.csharp:
+  - uid: Global.PhysicalObject.Grabbed(Creature.Grasp)
+    name: Grabbed
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_Grabbed_Creature_Grasp_
+  - name: (
+  - uid: Global.Creature.Grasp
+    name: Grasp
+    isExternal: true
+    href: Creature.Grasp.html
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.Grabbed(Creature.Grasp)
+    name: Grabbed
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_Grabbed_Creature_Grasp_
+  - name: (
+  - uid: Global.Creature.Grasp
+    name: Grasp
+    isExternal: true
+    href: Creature.Grasp.html
+  - name: )
+- uid: Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)
+  commentId: M:Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_
+  name: GraphicsModuleUpdated(bool, bool)
+  nameWithType: PhysicalObject.GraphicsModuleUpdated(bool, bool)
+  fullName: PhysicalObject.GraphicsModuleUpdated(bool, bool)
+  nameWithType.vb: PhysicalObject.GraphicsModuleUpdated(Boolean, Boolean)
+  fullName.vb: PhysicalObject.GraphicsModuleUpdated(Boolean, Boolean)
+  name.vb: GraphicsModuleUpdated(Boolean, Boolean)
+  spec.csharp:
+  - uid: Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)
+    name: GraphicsModuleUpdated
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.GraphicsModuleUpdated(System.Boolean,System.Boolean)
+    name: GraphicsModuleUpdated
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.PhysicalObject.RemoveGraphicsModule
+  commentId: M:Global.PhysicalObject.RemoveGraphicsModule
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_RemoveGraphicsModule
+  name: RemoveGraphicsModule()
+  nameWithType: PhysicalObject.RemoveGraphicsModule()
+  fullName: PhysicalObject.RemoveGraphicsModule()
+  spec.csharp:
+  - uid: Global.PhysicalObject.RemoveGraphicsModule
+    name: RemoveGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_RemoveGraphicsModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.RemoveGraphicsModule
+    name: RemoveGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_RemoveGraphicsModule
+  - name: (
+  - name: )
+- uid: Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)
+  commentId: M:Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_
+  name: WeightedPush(int, int, Vector2, float)
+  nameWithType: PhysicalObject.WeightedPush(int, int, Vector2, float)
+  fullName: PhysicalObject.WeightedPush(int, int, UnityEngine.Vector2, float)
+  nameWithType.vb: PhysicalObject.WeightedPush(Integer, Integer, Vector2, Single)
+  fullName.vb: PhysicalObject.WeightedPush(Integer, Integer, UnityEngine.Vector2, Single)
+  name.vb: WeightedPush(Integer, Integer, Vector2, Single)
+  spec.csharp:
+  - uid: Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)
+    name: WeightedPush
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.WeightedPush(System.Int32,System.Int32,UnityEngine.Vector2,System.Single)
+    name: WeightedPush
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)
+  commentId: M:Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_
+  name: HitByExplosion(float, Explosion, int)
+  nameWithType: PhysicalObject.HitByExplosion(float, Explosion, int)
+  fullName: PhysicalObject.HitByExplosion(float, Explosion, int)
+  nameWithType.vb: PhysicalObject.HitByExplosion(Single, Explosion, Integer)
+  fullName.vb: PhysicalObject.HitByExplosion(Single, Explosion, Integer)
+  name.vb: HitByExplosion(Single, Explosion, Integer)
+  spec.csharp:
+  - uid: Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)
+    name: HitByExplosion
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.HitByExplosion(System.Single,Explosion,System.Int32)
+    name: HitByExplosion
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.Explosion
+    name: Explosion
+    isExternal: true
+    href: Explosion.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.PhysicalObject.SetLocalGravity(System.Single)
+  commentId: M:Global.PhysicalObject.SetLocalGravity(System.Single)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_SetLocalGravity_System_Single_
+  name: SetLocalGravity(float)
+  nameWithType: PhysicalObject.SetLocalGravity(float)
+  fullName: PhysicalObject.SetLocalGravity(float)
+  nameWithType.vb: PhysicalObject.SetLocalGravity(Single)
+  fullName.vb: PhysicalObject.SetLocalGravity(Single)
+  name.vb: SetLocalGravity(Single)
+  spec.csharp:
+  - uid: Global.PhysicalObject.SetLocalGravity(System.Single)
+    name: SetLocalGravity
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_SetLocalGravity_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.SetLocalGravity(System.Single)
+    name: SetLocalGravity
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_SetLocalGravity_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.PhysicalObject.GetLocalGravity
+  commentId: M:Global.PhysicalObject.GetLocalGravity
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_GetLocalGravity
+  name: GetLocalGravity()
+  nameWithType: PhysicalObject.GetLocalGravity()
+  fullName: PhysicalObject.GetLocalGravity()
+  spec.csharp:
+  - uid: Global.PhysicalObject.GetLocalGravity
+    name: GetLocalGravity
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_GetLocalGravity
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.GetLocalGravity
+    name: GetLocalGravity
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_GetLocalGravity
+  - name: (
+  - name: )
+- uid: Global.PhysicalObject.SetLocalAirFriction(System.Single)
+  commentId: M:Global.PhysicalObject.SetLocalAirFriction(System.Single)
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_SetLocalAirFriction_System_Single_
+  name: SetLocalAirFriction(float)
+  nameWithType: PhysicalObject.SetLocalAirFriction(float)
+  fullName: PhysicalObject.SetLocalAirFriction(float)
+  nameWithType.vb: PhysicalObject.SetLocalAirFriction(Single)
+  fullName.vb: PhysicalObject.SetLocalAirFriction(Single)
+  name.vb: SetLocalAirFriction(Single)
+  spec.csharp:
+  - uid: Global.PhysicalObject.SetLocalAirFriction(System.Single)
+    name: SetLocalAirFriction
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_SetLocalAirFriction_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.SetLocalAirFriction(System.Single)
+    name: SetLocalAirFriction
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_SetLocalAirFriction_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.PhysicalObject.WeatherInertia
+  commentId: M:Global.PhysicalObject.WeatherInertia
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_WeatherInertia
+  name: WeatherInertia()
+  nameWithType: PhysicalObject.WeatherInertia()
+  fullName: PhysicalObject.WeatherInertia()
+  spec.csharp:
+  - uid: Global.PhysicalObject.WeatherInertia
+    name: WeatherInertia
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_WeatherInertia
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.WeatherInertia
+    name: WeatherInertia
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_WeatherInertia
+  - name: (
+  - name: )
+- uid: Global.PhysicalObject.DisposeGraphicsModule
+  commentId: M:Global.PhysicalObject.DisposeGraphicsModule
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_DisposeGraphicsModule
+  name: DisposeGraphicsModule()
+  nameWithType: PhysicalObject.DisposeGraphicsModule()
+  fullName: PhysicalObject.DisposeGraphicsModule()
+  spec.csharp:
+  - uid: Global.PhysicalObject.DisposeGraphicsModule
+    name: DisposeGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_DisposeGraphicsModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.DisposeGraphicsModule
+    name: DisposeGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_DisposeGraphicsModule
+  - name: (
+  - name: )
+- uid: Global.PhysicalObject.bodyChunks
+  commentId: P:Global.PhysicalObject.bodyChunks
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_bodyChunks
+  name: bodyChunks
+  nameWithType: PhysicalObject.bodyChunks
+  fullName: PhysicalObject.bodyChunks
+- uid: Global.PhysicalObject.graphicsModule
+  commentId: P:Global.PhysicalObject.graphicsModule
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_graphicsModule
+  name: graphicsModule
+  nameWithType: PhysicalObject.graphicsModule
+  fullName: PhysicalObject.graphicsModule
+- uid: Global.PhysicalObject.firstChunk
+  commentId: P:Global.PhysicalObject.firstChunk
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_firstChunk
+  name: firstChunk
+  nameWithType: PhysicalObject.firstChunk
+  fullName: PhysicalObject.firstChunk
+- uid: Global.PhysicalObject.TotalMass
+  commentId: P:Global.PhysicalObject.TotalMass
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_TotalMass
+  name: TotalMass
+  nameWithType: PhysicalObject.TotalMass
+  fullName: PhysicalObject.TotalMass
+- uid: Global.PhysicalObject.RandomChunk
+  commentId: P:Global.PhysicalObject.RandomChunk
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_RandomChunk
+  name: RandomChunk
+  nameWithType: PhysicalObject.RandomChunk
+  fullName: PhysicalObject.RandomChunk
+- uid: Global.PhysicalObject.gravity
+  commentId: P:Global.PhysicalObject.gravity
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_gravity
+  name: gravity
+  nameWithType: PhysicalObject.gravity
+  fullName: PhysicalObject.gravity
+- uid: Global.PhysicalObject.airFriction
+  commentId: P:Global.PhysicalObject.airFriction
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_airFriction
+  name: airFriction
+  nameWithType: PhysicalObject.airFriction
+  fullName: PhysicalObject.airFriction
+- uid: Global.PhysicalObject.waterFriction
+  commentId: P:Global.PhysicalObject.waterFriction
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_waterFriction
+  name: waterFriction
+  nameWithType: PhysicalObject.waterFriction
+  fullName: PhysicalObject.waterFriction
+- uid: Global.PhysicalObject.buoyancy
+  commentId: P:Global.PhysicalObject.buoyancy
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_buoyancy
+  name: buoyancy
+  nameWithType: PhysicalObject.buoyancy
+  fullName: PhysicalObject.buoyancy
+- uid: Global.PhysicalObject.windAffectiveness
+  commentId: P:Global.PhysicalObject.windAffectiveness
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_windAffectiveness
+  name: windAffectiveness
+  nameWithType: PhysicalObject.windAffectiveness
+  fullName: PhysicalObject.windAffectiveness
+- uid: Global.PhysicalObject.VisibilityBonus
+  commentId: P:Global.PhysicalObject.VisibilityBonus
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_VisibilityBonus
+  name: VisibilityBonus
+  nameWithType: PhysicalObject.VisibilityBonus
+  fullName: PhysicalObject.VisibilityBonus
+- uid: Global.PhysicalObject.GoThroughFloors
+  commentId: P:Global.PhysicalObject.GoThroughFloors
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_GoThroughFloors
+  name: GoThroughFloors
+  nameWithType: PhysicalObject.GoThroughFloors
+  fullName: PhysicalObject.GoThroughFloors
+- uid: Global.PhysicalObject.CollideWithTerrain
+  commentId: P:Global.PhysicalObject.CollideWithTerrain
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_CollideWithTerrain
+  name: CollideWithTerrain
+  nameWithType: PhysicalObject.CollideWithTerrain
+  fullName: PhysicalObject.CollideWithTerrain
+- uid: Global.PhysicalObject.CollideWithSlopes
+  commentId: P:Global.PhysicalObject.CollideWithSlopes
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_CollideWithSlopes
+  name: CollideWithSlopes
+  nameWithType: PhysicalObject.CollideWithSlopes
+  fullName: PhysicalObject.CollideWithSlopes
+- uid: Global.PhysicalObject.CollideWithObjects
+  commentId: P:Global.PhysicalObject.CollideWithObjects
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_CollideWithObjects
+  name: CollideWithObjects
+  nameWithType: PhysicalObject.CollideWithObjects
+  fullName: PhysicalObject.CollideWithObjects
+- uid: Global.PhysicalObject.Buried
+  commentId: P:Global.PhysicalObject.Buried
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_Buried
+  name: Buried
+  nameWithType: PhysicalObject.Buried
+  fullName: PhysicalObject.Buried
+- uid: Global.PhysicalObject.WantsToBurrow
+  commentId: P:Global.PhysicalObject.WantsToBurrow
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_WantsToBurrow
+  name: WantsToBurrow
+  nameWithType: PhysicalObject.WantsToBurrow
+  fullName: PhysicalObject.WantsToBurrow
+- uid: Global.PhysicalObject.Submersion
+  commentId: P:Global.PhysicalObject.Submersion
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_Submersion
+  name: Submersion
+  nameWithType: PhysicalObject.Submersion
+  fullName: PhysicalObject.Submersion
+- uid: Global.PhysicalObject.SandstormImmune
+  commentId: P:Global.PhysicalObject.SandstormImmune
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_SandstormImmune
+  name: SandstormImmune
+  nameWithType: PhysicalObject.SandstormImmune
+  fullName: PhysicalObject.SandstormImmune
+- uid: Global.PhysicalObject.EffectiveRoomGravity
+  commentId: P:Global.PhysicalObject.EffectiveRoomGravity
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_EffectiveRoomGravity
+  name: EffectiveRoomGravity
+  nameWithType: PhysicalObject.EffectiveRoomGravity
+  fullName: PhysicalObject.EffectiveRoomGravity
+- uid: Global.PhysicalObject.LickedByPlayer
+  commentId: P:Global.PhysicalObject.LickedByPlayer
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_LickedByPlayer
+  name: LickedByPlayer
+  nameWithType: PhysicalObject.LickedByPlayer
+  fullName: PhysicalObject.LickedByPlayer
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Watcher.FireSpriteAI
+  commentId: T:Watcher.FireSpriteAI
+  parent: Watcher
+  isExternal: true
+  href: Watcher.FireSpriteAI.html
+  name: FireSpriteAI
+  nameWithType: FireSpriteAI
+  fullName: Watcher.FireSpriteAI
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RWCustom.Counter
+  commentId: T:RWCustom.Counter
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.Counter.html
+  name: Counter
+  nameWithType: Counter
+  fullName: RWCustom.Counter
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Nullable{UnityEngine.Vector2}
+  commentId: T:System.Nullable{UnityEngine.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: UnityEngine.Vector2?
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.StaticSoundLoop
+  commentId: T:Global.StaticSoundLoop
+  isExternal: true
+  href: StaticSoundLoop.html
+  name: StaticSoundLoop
+  nameWithType: StaticSoundLoop
+  fullName: StaticSoundLoop
+- uid: Global.SoundID
+  commentId: T:Global.SoundID
+  isExternal: true
+  href: SoundID.html
+  name: SoundID
+  nameWithType: SoundID
+  fullName: SoundID
+- uid: Watcher.FireSpriteGraphics.Data
+  commentId: T:Watcher.FireSpriteGraphics.Data
+  parent: Watcher
+  isExternal: true
+  href: Watcher.FireSpriteGraphics.html
+  name: FireSpriteGraphics.Data
+  nameWithType: FireSpriteGraphics.Data
+  fullName: Watcher.FireSpriteGraphics.Data
+  spec.csharp:
+  - uid: Watcher.FireSpriteGraphics
+    name: FireSpriteGraphics
+    isExternal: true
+    href: Watcher.FireSpriteGraphics.html
+  - name: .
+  - uid: Watcher.FireSpriteGraphics.Data
+    name: Data
+    isExternal: true
+    href: Watcher.FireSpriteGraphics.Data.html
+  spec.vb:
+  - uid: Watcher.FireSpriteGraphics
+    name: FireSpriteGraphics
+    isExternal: true
+    href: Watcher.FireSpriteGraphics.html
+  - name: .
+  - uid: Watcher.FireSpriteGraphics.Data
+    name: Data
+    isExternal: true
+    href: Watcher.FireSpriteGraphics.Data.html
+- uid: Watcher.FireSprite.#ctor*
+  commentId: Overload:Watcher.FireSprite.#ctor
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite__ctor_AbstractCreature_World_
+  name: FireSprite
+  nameWithType: FireSprite.FireSprite
+  fullName: Watcher.FireSprite.FireSprite
+  nameWithType.vb: FireSprite.New
+  fullName.vb: Watcher.FireSprite.New
+  name.vb: New
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.PhysicalObject.InitiateGraphicsModule
+  commentId: M:Global.PhysicalObject.InitiateGraphicsModule
+  parent: Global.PhysicalObject
+  isExternal: true
+  href: Global.PhysicalObject.html#PhysicalObject_InitiateGraphicsModule
+  name: InitiateGraphicsModule()
+  nameWithType: PhysicalObject.InitiateGraphicsModule()
+  fullName: PhysicalObject.InitiateGraphicsModule()
+  spec.csharp:
+  - uid: Global.PhysicalObject.InitiateGraphicsModule
+    name: InitiateGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_InitiateGraphicsModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.PhysicalObject.InitiateGraphicsModule
+    name: InitiateGraphicsModule
+    isExternal: true
+    href: Global.PhysicalObject.html#PhysicalObject_InitiateGraphicsModule
+  - name: (
+  - name: )
+- uid: Watcher.FireSprite.InitiateGraphicsModule*
+  commentId: Overload:Watcher.FireSprite.InitiateGraphicsModule
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_InitiateGraphicsModule
+  name: InitiateGraphicsModule
+  nameWithType: FireSprite.InitiateGraphicsModule
+  fullName: Watcher.FireSprite.InitiateGraphicsModule
+- uid: Watcher.FireSprite.UpdateTimers*
+  commentId: Overload:Watcher.FireSprite.UpdateTimers
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_UpdateTimers
+  name: UpdateTimers
+  nameWithType: FireSprite.UpdateTimers
+  fullName: Watcher.FireSprite.UpdateTimers
+- uid: Global.Creature.ShortCutColor
+  commentId: M:Global.Creature.ShortCutColor
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_ShortCutColor
+  name: ShortCutColor()
+  nameWithType: Creature.ShortCutColor()
+  fullName: Creature.ShortCutColor()
+  spec.csharp:
+  - uid: Global.Creature.ShortCutColor
+    name: ShortCutColor
+    isExternal: true
+    href: Global.Creature.html#Creature_ShortCutColor
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.ShortCutColor
+    name: ShortCutColor
+    isExternal: true
+    href: Global.Creature.html#Creature_ShortCutColor
+  - name: (
+  - name: )
+- uid: Watcher.FireSprite.ShortCutColor*
+  commentId: Overload:Watcher.FireSprite.ShortCutColor
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_ShortCutColor
+  name: ShortCutColor
+  nameWithType: FireSprite.ShortCutColor
+  fullName: Watcher.FireSprite.ShortCutColor
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Watcher.FireSprite.RoomSwitched*
+  commentId: Overload:Watcher.FireSprite.RoomSwitched
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_RoomSwitched
+  name: RoomSwitched
+  nameWithType: FireSprite.RoomSwitched
+  fullName: Watcher.FireSprite.RoomSwitched
+- uid: Global.Creature.Update(System.Boolean)
+  commentId: M:Global.Creature.Update(System.Boolean)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: Creature.Update(bool)
+  fullName: Creature.Update(bool)
+  nameWithType.vb: Creature.Update(Boolean)
+  fullName.vb: Creature.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.Creature.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.Creature.html#Creature_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.Creature.html#Creature_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Watcher.FireSprite.Update*
+  commentId: Overload:Watcher.FireSprite.Update
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_Update_System_Boolean_
+  name: Update
+  nameWithType: FireSprite.Update
+  fullName: Watcher.FireSprite.Update
+- uid: Watcher.FireSprite.FollowPath*
+  commentId: Overload:Watcher.FireSprite.FollowPath
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_FollowPath
+  name: FollowPath
+  nameWithType: FireSprite.FollowPath
+  fullName: Watcher.FireSprite.FollowPath
+- uid: Watcher.FireSprite.OpenWings*
+  commentId: Overload:Watcher.FireSprite.OpenWings
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_OpenWings
+  name: OpenWings
+  nameWithType: FireSprite.OpenWings
+  fullName: Watcher.FireSprite.OpenWings
+- uid: Global.Creature.Die
+  commentId: M:Global.Creature.Die
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Die
+  name: Die()
+  nameWithType: Creature.Die()
+  fullName: Creature.Die()
+  spec.csharp:
+  - uid: Global.Creature.Die
+    name: Die
+    isExternal: true
+    href: Global.Creature.html#Creature_Die
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Die
+    name: Die
+    isExternal: true
+    href: Global.Creature.html#Creature_Die
+  - name: (
+  - name: )
+- uid: Watcher.FireSprite.Die*
+  commentId: Overload:Watcher.FireSprite.Die
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_Die
+  name: Die
+  nameWithType: FireSprite.Die
+  fullName: Watcher.FireSprite.Die
+- uid: Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  commentId: M:Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_
+  name: Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, float, float)
+  nameWithType: Creature.Violence(BodyChunk, Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, float, float)
+  fullName: Creature.Violence(BodyChunk, UnityEngine.Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, float, float)
+  nameWithType.vb: Creature.Violence(BodyChunk, Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, Single, Single)
+  fullName.vb: Creature.Violence(BodyChunk, UnityEngine.Vector2?, BodyChunk, PhysicalObject.Appendage.Pos, Creature.DamageType, Single, Single)
+  name.vb: Violence(BodyChunk, Vector2?, BodyChunk, Pos, DamageType, Single, Single)
+  spec.csharp:
+  - uid: Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+    name: Violence
+    isExternal: true
+    href: Global.Creature.html#Creature_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature.DamageType
+    name: DamageType
+    isExternal: true
+    href: Creature.DamageType.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.Violence(BodyChunk,System.Nullable{UnityEngine.Vector2},BodyChunk,PhysicalObject.Appendage.Pos,Creature.DamageType,System.Single,System.Single)
+    name: Violence
+    isExternal: true
+    href: Global.Creature.html#Creature_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+  - name: ','
+  - name: " "
+  - uid: Global.Creature.DamageType
+    name: DamageType
+    isExternal: true
+    href: Creature.DamageType.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Watcher.FireSprite.Violence*
+  commentId: Overload:Watcher.FireSprite.Violence
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_Violence_BodyChunk_System_Nullable_UnityEngine_Vector2__BodyChunk_PhysicalObject_Appendage_Pos_Creature_DamageType_System_Single_System_Single_
+  name: Violence
+  nameWithType: FireSprite.Violence
+  fullName: Watcher.FireSprite.Violence
+- uid: Global.BodyChunk
+  commentId: T:Global.BodyChunk
+  isExternal: true
+  href: BodyChunk.html
+  name: BodyChunk
+  nameWithType: BodyChunk
+  fullName: BodyChunk
+- uid: Global.PhysicalObject.Appendage.Pos
+  commentId: T:Global.PhysicalObject.Appendage.Pos
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject.Appendage.Pos
+  nameWithType: PhysicalObject.Appendage.Pos
+  fullName: PhysicalObject.Appendage.Pos
+  spec.csharp:
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: .
+  - uid: Global.PhysicalObject.Appendage
+    name: Appendage
+    isExternal: true
+    href: PhysicalObject.Appendage.html
+  - name: .
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+  spec.vb:
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: .
+  - uid: Global.PhysicalObject.Appendage
+    name: Appendage
+    isExternal: true
+    href: PhysicalObject.Appendage.html
+  - name: .
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+- uid: Global.Creature.DamageType
+  commentId: T:Global.Creature.DamageType
+  isExternal: true
+  href: Creature.html
+  name: Creature.DamageType
+  nameWithType: Creature.DamageType
+  fullName: Creature.DamageType
+  spec.csharp:
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: .
+  - uid: Global.Creature.DamageType
+    name: DamageType
+    isExternal: true
+    href: Creature.DamageType.html
+  spec.vb:
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: .
+  - uid: Global.Creature.DamageType
+    name: DamageType
+    isExternal: true
+    href: Creature.DamageType.html
+- uid: Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  commentId: M:Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+  parent: Global.Creature
+  isExternal: true
+  href: Global.Creature.html#Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_
+  name: SpearStick(Weapon, float, BodyChunk, Pos, Vector2)
+  nameWithType: Creature.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)
+  fullName: Creature.SpearStick(Weapon, float, BodyChunk, PhysicalObject.Appendage.Pos, UnityEngine.Vector2)
+  nameWithType.vb: Creature.SpearStick(Weapon, Single, BodyChunk, PhysicalObject.Appendage.Pos, Vector2)
+  fullName.vb: Creature.SpearStick(Weapon, Single, BodyChunk, PhysicalObject.Appendage.Pos, UnityEngine.Vector2)
+  name.vb: SpearStick(Weapon, Single, BodyChunk, Pos, Vector2)
+  spec.csharp:
+  - uid: Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+    name: SpearStick
+    isExternal: true
+    href: Global.Creature.html#Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Creature.SpearStick(Weapon,System.Single,BodyChunk,PhysicalObject.Appendage.Pos,UnityEngine.Vector2)
+    name: SpearStick
+    isExternal: true
+    href: Global.Creature.html#Creature_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: ','
+  - name: " "
+  - uid: Global.PhysicalObject.Appendage.Pos
+    name: Pos
+    isExternal: true
+    href: PhysicalObject.Appendage.Pos.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Watcher.FireSprite.SpearStick*
+  commentId: Overload:Watcher.FireSprite.SpearStick
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_SpearStick_Weapon_System_Single_BodyChunk_PhysicalObject_Appendage_Pos_UnityEngine_Vector2_
+  name: SpearStick
+  nameWithType: FireSprite.SpearStick
+  fullName: Watcher.FireSprite.SpearStick
+- uid: Global.Weapon
+  commentId: T:Global.Weapon
+  isExternal: true
+  href: Weapon.html
+  name: Weapon
+  nameWithType: Weapon
+  fullName: Weapon
+- uid: Watcher.FireSprite.FlyingWeapon*
+  commentId: Overload:Watcher.FireSprite.FlyingWeapon
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_FlyingWeapon_Weapon_
+  name: FlyingWeapon
+  nameWithType: FireSprite.FlyingWeapon
+  fullName: Watcher.FireSprite.FlyingWeapon
+- uid: Global.Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+  commentId: M:Global.Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+  parent: Global.Weapon.INotifyOfFlyingWeapons
+  isExternal: true
+  href: Global.Weapon.INotifyOfFlyingWeapons.html#Weapon_INotifyOfFlyingWeapons_FlyingWeapon_Weapon_
+  name: FlyingWeapon(Weapon)
+  nameWithType: Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+  fullName: Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+  spec.csharp:
+  - uid: Global.Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+    name: FlyingWeapon
+    isExternal: true
+    href: Global.Weapon.INotifyOfFlyingWeapons.html#Weapon_INotifyOfFlyingWeapons_FlyingWeapon_Weapon_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: )
+  spec.vb:
+  - uid: Global.Weapon.INotifyOfFlyingWeapons.FlyingWeapon(Weapon)
+    name: FlyingWeapon
+    isExternal: true
+    href: Global.Weapon.INotifyOfFlyingWeapons.html#Weapon_INotifyOfFlyingWeapons_FlyingWeapon_Weapon_
+  - name: (
+  - uid: Global.Weapon
+    name: Weapon
+    isExternal: true
+    href: Weapon.html
+  - name: )
+- uid: Watcher.FireSprite.speed*
+  commentId: Overload:Watcher.FireSprite.speed
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_speed
+  name: speed
+  nameWithType: FireSprite.speed
+  fullName: Watcher.FireSprite.speed
+- uid: Watcher.FireSprite.IsFarFromCamera*
+  commentId: Overload:Watcher.FireSprite.IsFarFromCamera
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_IsFarFromCamera
+  name: IsFarFromCamera
+  nameWithType: FireSprite.IsFarFromCamera
+  fullName: Watcher.FireSprite.IsFarFromCamera
+- uid: Watcher.FireSprite.DistanceToDestination*
+  commentId: Overload:Watcher.FireSprite.DistanceToDestination
+  isExternal: true
+  href: Watcher.FireSprite.html#Watcher_FireSprite_DistanceToDestination
+  name: DistanceToDestination
+  nameWithType: FireSprite.DistanceToDestination
+  fullName: Watcher.FireSprite.DistanceToDestination

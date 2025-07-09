@@ -1,0 +1,4037 @@
+### YamlMime:ManagedReference
+items:
+- uid: Watcher.BarnacleAI
+  commentId: T:Watcher.BarnacleAI
+  id: BarnacleAI
+  parent: Watcher
+  children:
+  - Watcher.BarnacleAI.#ctor(AbstractCreature,World)
+  - Watcher.BarnacleAI.AbandonLeader
+  - Watcher.BarnacleAI.Act
+  - Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)
+  - Watcher.BarnacleAI.CombinedFear
+  - Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  - Watcher.BarnacleAI.CreatureUnease(AbstractCreature)
+  - Watcher.BarnacleAI.FollowLeader
+  - Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)
+  - Watcher.BarnacleAI.LeadingUpdate
+  - Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  - Watcher.BarnacleAI.NewRoom(Room)
+  - Watcher.BarnacleAI.OnLoseShell
+  - Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  - Watcher.BarnacleAI.SetGroupDiscomfortTick(System.Single)
+  - Watcher.BarnacleAI.ShufflePanicSpot(System.Boolean)
+  - Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)
+  - Watcher.BarnacleAI.Update
+  - Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  - Watcher.BarnacleAI.UpdateNarrowIdleSpot
+  - Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)
+  - Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle
+  - Watcher.BarnacleAI.WaterIdleSpot
+  - Watcher.BarnacleAI.aiparams
+  - Watcher.BarnacleAI.behavior
+  - Watcher.BarnacleAI.bestNarrowPos
+  - Watcher.BarnacleAI.bestNarrowScore
+  - Watcher.BarnacleAI.blacklistIdlePos
+  - Watcher.BarnacleAI.currentUtility
+  - Watcher.BarnacleAI.excitement
+  - Watcher.BarnacleAI.exploreCoordinate
+  - Watcher.BarnacleAI.fear
+  - Watcher.BarnacleAI.floatGoalPos
+  - Watcher.BarnacleAI.focusCreature
+  - Watcher.BarnacleAI.groupDiscomfort
+  - Watcher.BarnacleAI.hunger
+  - Watcher.BarnacleAI.idleSplash
+  - Watcher.BarnacleAI.inSubBehaviorTime
+  - Watcher.BarnacleAI.inWaterTime
+  - Watcher.BarnacleAI.invalidLeaderTime
+  - Watcher.BarnacleAI.lastDistressLength
+  - Watcher.BarnacleAI.leader
+  - Watcher.BarnacleAI.leaderIdleSpot
+  - Watcher.BarnacleAI.leaderIdleSpotExpiry
+  - Watcher.BarnacleAI.leaderIdleSpotWasDistant
+  - Watcher.BarnacleAI.leading
+  - Watcher.BarnacleAI.narrowAttempts
+  - Watcher.BarnacleAI.nearNarrowPos
+  - Watcher.BarnacleAI.nextGroupDiscomfortTick
+  - Watcher.BarnacleAI.nextPanicSpotShuffle
+  - Watcher.BarnacleAI.nextSubBehaviorTime
+  - Watcher.BarnacleAI.panic
+  - Watcher.BarnacleAI.panicSpot
+  - Watcher.BarnacleAI.rainFear
+  - Watcher.BarnacleAI.realizedCreature
+  - Watcher.BarnacleAI.runAwayTime
+  - Watcher.BarnacleAI.runSpeed
+  - Watcher.BarnacleAI.scattering
+  - Watcher.BarnacleAI.subBehavior
+  - Watcher.BarnacleAI.temporaryPanic
+  - Watcher.BarnacleAI.waterIdleSpot
+  langs:
+  - csharp
+  - vb
+  name: BarnacleAI
+  nameWithType: BarnacleAI
+  fullName: Watcher.BarnacleAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Watcher.BarnacleAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class BarnacleAI : ArtificialIntelligence, IUseARelationshipTracker, IAINoiseReaction'
+    content.vb: Public Class BarnacleAI Inherits ArtificialIntelligence Implements IUseARelationshipTracker, IAINoiseReaction
+  inheritance:
+  - System.Object
+  - Global.ArtificialIntelligence
+  implements:
+  - Global.IUseARelationshipTracker
+  - Global.IAINoiseReaction
+  inheritedMembers:
+  - Global.ArtificialIntelligence.creature
+  - Global.ArtificialIntelligence.modules
+  - Global.ArtificialIntelligence.stranded
+  - Global.ArtificialIntelligence.seeThroughWalls
+  - Global.ArtificialIntelligence.timeInRoom
+  - Global.ArtificialIntelligence.lastRoom
+  - Global.ArtificialIntelligence.ripplePathingTarget
+  - Global.ArtificialIntelligence.ripplePathingTime
+  - Global.ArtificialIntelligence.AddModule(AIModule)
+  - Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  - Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  - Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  - Global.ArtificialIntelligence.NewArea(System.Boolean)
+  - Global.ArtificialIntelligence.DenPosition
+  - Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  - Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  - Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  - Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  - Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  - Global.ArtificialIntelligence.pathFinder
+  - Global.ArtificialIntelligence.tracker
+  - Global.ArtificialIntelligence.noiseTracker
+  - Global.ArtificialIntelligence.obstacleTracker
+  - Global.ArtificialIntelligence.threatTracker
+  - Global.ArtificialIntelligence.preyTracker
+  - Global.ArtificialIntelligence.rainTracker
+  - Global.ArtificialIntelligence.denFinder
+  - Global.ArtificialIntelligence.agressionTracker
+  - Global.ArtificialIntelligence.utilityComparer
+  - Global.ArtificialIntelligence.missionTracker
+  - Global.ArtificialIntelligence.secondaryNodeFinder
+  - Global.ArtificialIntelligence.relationshipTracker
+  - Global.ArtificialIntelligence.itemTracker
+  - Global.ArtificialIntelligence.discomfortTracker
+  - Global.ArtificialIntelligence.stuckTracker
+  - Global.ArtificialIntelligence.injuryTracker
+  - Global.ArtificialIntelligence.friendTracker
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Watcher.BarnacleAI.realizedCreature
+  commentId: F:Watcher.BarnacleAI.realizedCreature
+  id: realizedCreature
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: realizedCreature
+  nameWithType: BarnacleAI.realizedCreature
+  fullName: Watcher.BarnacleAI.realizedCreature
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.realizedCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Barnacle realizedCreature
+    return:
+      type: Watcher.Barnacle
+    content.vb: Public realizedCreature As Barnacle
+- uid: Watcher.BarnacleAI.leader
+  commentId: F:Watcher.BarnacleAI.leader
+  id: leader
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: leader
+  nameWithType: BarnacleAI.leader
+  fullName: Watcher.BarnacleAI.leader
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.leader</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Barnacle leader
+    return:
+      type: Watcher.Barnacle
+    content.vb: Public leader As Barnacle
+- uid: Watcher.BarnacleAI.leading
+  commentId: F:Watcher.BarnacleAI.leading
+  id: leading
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: leading
+  nameWithType: BarnacleAI.leading
+  fullName: Watcher.BarnacleAI.leading
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.leading</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Barnacle> leading
+    return:
+      type: System.Collections.Generic.List{Watcher.Barnacle}
+    content.vb: Public leading As List(Of Barnacle)
+- uid: Watcher.BarnacleAI.invalidLeaderTime
+  commentId: F:Watcher.BarnacleAI.invalidLeaderTime
+  id: invalidLeaderTime
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: invalidLeaderTime
+  nameWithType: BarnacleAI.invalidLeaderTime
+  fullName: Watcher.BarnacleAI.invalidLeaderTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.invalidLeaderTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int invalidLeaderTime
+    return:
+      type: System.Int32
+    content.vb: Public invalidLeaderTime As Integer
+- uid: Watcher.BarnacleAI.leaderIdleSpot
+  commentId: F:Watcher.BarnacleAI.leaderIdleSpot
+  id: leaderIdleSpot
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: leaderIdleSpot
+  nameWithType: BarnacleAI.leaderIdleSpot
+  fullName: Watcher.BarnacleAI.leaderIdleSpot
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.leaderIdleSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 leaderIdleSpot
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public leaderIdleSpot As Vector2
+- uid: Watcher.BarnacleAI.leaderIdleSpotWasDistant
+  commentId: F:Watcher.BarnacleAI.leaderIdleSpotWasDistant
+  id: leaderIdleSpotWasDistant
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: leaderIdleSpotWasDistant
+  nameWithType: BarnacleAI.leaderIdleSpotWasDistant
+  fullName: Watcher.BarnacleAI.leaderIdleSpotWasDistant
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.leaderIdleSpotWasDistant</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool leaderIdleSpotWasDistant
+    return:
+      type: System.Boolean
+    content.vb: Public leaderIdleSpotWasDistant As Boolean
+- uid: Watcher.BarnacleAI.leaderIdleSpotExpiry
+  commentId: F:Watcher.BarnacleAI.leaderIdleSpotExpiry
+  id: leaderIdleSpotExpiry
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: leaderIdleSpotExpiry
+  nameWithType: BarnacleAI.leaderIdleSpotExpiry
+  fullName: Watcher.BarnacleAI.leaderIdleSpotExpiry
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.leaderIdleSpotExpiry</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int leaderIdleSpotExpiry
+    return:
+      type: System.Int32
+    content.vb: Public leaderIdleSpotExpiry As Integer
+- uid: Watcher.BarnacleAI.groupDiscomfort
+  commentId: F:Watcher.BarnacleAI.groupDiscomfort
+  id: groupDiscomfort
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: groupDiscomfort
+  nameWithType: BarnacleAI.groupDiscomfort
+  fullName: Watcher.BarnacleAI.groupDiscomfort
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.groupDiscomfort</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float groupDiscomfort
+    return:
+      type: System.Single
+    content.vb: Public groupDiscomfort As Single
+- uid: Watcher.BarnacleAI.nextGroupDiscomfortTick
+  commentId: F:Watcher.BarnacleAI.nextGroupDiscomfortTick
+  id: nextGroupDiscomfortTick
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: nextGroupDiscomfortTick
+  nameWithType: BarnacleAI.nextGroupDiscomfortTick
+  fullName: Watcher.BarnacleAI.nextGroupDiscomfortTick
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.nextGroupDiscomfortTick</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float nextGroupDiscomfortTick
+    return:
+      type: System.Single
+    content.vb: Public nextGroupDiscomfortTick As Single
+- uid: Watcher.BarnacleAI.bestNarrowPos
+  commentId: F:Watcher.BarnacleAI.bestNarrowPos
+  id: bestNarrowPos
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: bestNarrowPos
+  nameWithType: BarnacleAI.bestNarrowPos
+  fullName: Watcher.BarnacleAI.bestNarrowPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.bestNarrowPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? bestNarrowPos
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public bestNarrowPos As Vector2?
+- uid: Watcher.BarnacleAI.blacklistIdlePos
+  commentId: F:Watcher.BarnacleAI.blacklistIdlePos
+  id: blacklistIdlePos
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: blacklistIdlePos
+  nameWithType: BarnacleAI.blacklistIdlePos
+  fullName: Watcher.BarnacleAI.blacklistIdlePos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.blacklistIdlePos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? blacklistIdlePos
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public blacklistIdlePos As Vector2?
+- uid: Watcher.BarnacleAI.bestNarrowScore
+  commentId: F:Watcher.BarnacleAI.bestNarrowScore
+  id: bestNarrowScore
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: bestNarrowScore
+  nameWithType: BarnacleAI.bestNarrowScore
+  fullName: Watcher.BarnacleAI.bestNarrowScore
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.bestNarrowScore</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int bestNarrowScore
+    return:
+      type: System.Int32
+    content.vb: Public bestNarrowScore As Integer
+- uid: Watcher.BarnacleAI.narrowAttempts
+  commentId: F:Watcher.BarnacleAI.narrowAttempts
+  id: narrowAttempts
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: narrowAttempts
+  nameWithType: BarnacleAI.narrowAttempts
+  fullName: Watcher.BarnacleAI.narrowAttempts
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.narrowAttempts</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int narrowAttempts
+    return:
+      type: System.Int32
+    content.vb: Public narrowAttempts As Integer
+- uid: Watcher.BarnacleAI.nearNarrowPos
+  commentId: F:Watcher.BarnacleAI.nearNarrowPos
+  id: nearNarrowPos
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: nearNarrowPos
+  nameWithType: BarnacleAI.nearNarrowPos
+  fullName: Watcher.BarnacleAI.nearNarrowPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.nearNarrowPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool nearNarrowPos
+    return:
+      type: System.Boolean
+    content.vb: Public nearNarrowPos As Boolean
+- uid: Watcher.BarnacleAI.excitement
+  commentId: F:Watcher.BarnacleAI.excitement
+  id: excitement
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: excitement
+  nameWithType: BarnacleAI.excitement
+  fullName: Watcher.BarnacleAI.excitement
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.excitement</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float excitement
+    return:
+      type: System.Single
+    content.vb: Public excitement As Single
+- uid: Watcher.BarnacleAI.panic
+  commentId: F:Watcher.BarnacleAI.panic
+  id: panic
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: panic
+  nameWithType: BarnacleAI.panic
+  fullName: Watcher.BarnacleAI.panic
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.panic</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int panic
+    return:
+      type: System.Int32
+    content.vb: Public panic As Integer
+- uid: Watcher.BarnacleAI.scattering
+  commentId: F:Watcher.BarnacleAI.scattering
+  id: scattering
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: scattering
+  nameWithType: BarnacleAI.scattering
+  fullName: Watcher.BarnacleAI.scattering
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.scattering</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool scattering
+    return:
+      type: System.Boolean
+    content.vb: Public scattering As Boolean
+- uid: Watcher.BarnacleAI.idleSplash
+  commentId: F:Watcher.BarnacleAI.idleSplash
+  id: idleSplash
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: idleSplash
+  nameWithType: BarnacleAI.idleSplash
+  fullName: Watcher.BarnacleAI.idleSplash
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.idleSplash</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool idleSplash
+    return:
+      type: System.Boolean
+    content.vb: Public idleSplash As Boolean
+- uid: Watcher.BarnacleAI.temporaryPanic
+  commentId: F:Watcher.BarnacleAI.temporaryPanic
+  id: temporaryPanic
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: temporaryPanic
+  nameWithType: BarnacleAI.temporaryPanic
+  fullName: Watcher.BarnacleAI.temporaryPanic
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.temporaryPanic</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int temporaryPanic
+    return:
+      type: System.Int32
+    content.vb: Public temporaryPanic As Integer
+- uid: Watcher.BarnacleAI.lastDistressLength
+  commentId: F:Watcher.BarnacleAI.lastDistressLength
+  id: lastDistressLength
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: lastDistressLength
+  nameWithType: BarnacleAI.lastDistressLength
+  fullName: Watcher.BarnacleAI.lastDistressLength
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.lastDistressLength</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int lastDistressLength
+    return:
+      type: System.Int32
+    content.vb: Public lastDistressLength As Integer
+- uid: Watcher.BarnacleAI.hunger
+  commentId: F:Watcher.BarnacleAI.hunger
+  id: hunger
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: hunger
+  nameWithType: BarnacleAI.hunger
+  fullName: Watcher.BarnacleAI.hunger
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.hunger</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float hunger
+    return:
+      type: System.Single
+    content.vb: Public hunger As Single
+- uid: Watcher.BarnacleAI.fear
+  commentId: F:Watcher.BarnacleAI.fear
+  id: fear
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: fear
+  nameWithType: BarnacleAI.fear
+  fullName: Watcher.BarnacleAI.fear
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.fear</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float fear
+    return:
+      type: System.Single
+    content.vb: Public fear As Single
+- uid: Watcher.BarnacleAI.rainFear
+  commentId: F:Watcher.BarnacleAI.rainFear
+  id: rainFear
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: rainFear
+  nameWithType: BarnacleAI.rainFear
+  fullName: Watcher.BarnacleAI.rainFear
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.rainFear</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float rainFear
+    return:
+      type: System.Single
+    content.vb: Public rainFear As Single
+- uid: Watcher.BarnacleAI.runAwayTime
+  commentId: F:Watcher.BarnacleAI.runAwayTime
+  id: runAwayTime
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: runAwayTime
+  nameWithType: BarnacleAI.runAwayTime
+  fullName: Watcher.BarnacleAI.runAwayTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.runAwayTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int runAwayTime
+    return:
+      type: System.Int32
+    content.vb: Public runAwayTime As Integer
+- uid: Watcher.BarnacleAI.runSpeed
+  commentId: F:Watcher.BarnacleAI.runSpeed
+  id: runSpeed
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: runSpeed
+  nameWithType: BarnacleAI.runSpeed
+  fullName: Watcher.BarnacleAI.runSpeed
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.runSpeed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float runSpeed
+    return:
+      type: System.Single
+    content.vb: Public runSpeed As Single
+- uid: Watcher.BarnacleAI.focusCreature
+  commentId: F:Watcher.BarnacleAI.focusCreature
+  id: focusCreature
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: focusCreature
+  nameWithType: BarnacleAI.focusCreature
+  fullName: Watcher.BarnacleAI.focusCreature
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.focusCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation focusCreature
+    return:
+      type: Global.Tracker.CreatureRepresentation
+    content.vb: Public focusCreature As Tracker.CreatureRepresentation
+- uid: Watcher.BarnacleAI.exploreCoordinate
+  commentId: F:Watcher.BarnacleAI.exploreCoordinate
+  id: exploreCoordinate
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: exploreCoordinate
+  nameWithType: BarnacleAI.exploreCoordinate
+  fullName: Watcher.BarnacleAI.exploreCoordinate
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.exploreCoordinate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate? exploreCoordinate
+    return:
+      type: System.Nullable{WorldCoordinate}
+    content.vb: Public exploreCoordinate As WorldCoordinate?
+- uid: Watcher.BarnacleAI.currentUtility
+  commentId: F:Watcher.BarnacleAI.currentUtility
+  id: currentUtility
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: currentUtility
+  nameWithType: BarnacleAI.currentUtility
+  fullName: Watcher.BarnacleAI.currentUtility
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.currentUtility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float currentUtility
+    return:
+      type: System.Single
+    content.vb: Public currentUtility As Single
+- uid: Watcher.BarnacleAI.aiparams
+  commentId: F:Watcher.BarnacleAI.aiparams
+  id: aiparams
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: aiparams
+  nameWithType: BarnacleAI.aiparams
+  fullName: Watcher.BarnacleAI.aiparams
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.aiparams</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BarnacleAI.AIParams aiparams
+    return:
+      type: Watcher.BarnacleAI.AIParams
+    content.vb: Public aiparams As BarnacleAI.AIParams
+- uid: Watcher.BarnacleAI.behavior
+  commentId: F:Watcher.BarnacleAI.behavior
+  id: behavior
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: behavior
+  nameWithType: BarnacleAI.behavior
+  fullName: Watcher.BarnacleAI.behavior
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.behavior</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BarnacleAI.Behavior behavior
+    return:
+      type: Watcher.BarnacleAI.Behavior
+    content.vb: Public behavior As BarnacleAI.Behavior
+- uid: Watcher.BarnacleAI.subBehavior
+  commentId: F:Watcher.BarnacleAI.subBehavior
+  id: subBehavior
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: subBehavior
+  nameWithType: BarnacleAI.subBehavior
+  fullName: Watcher.BarnacleAI.subBehavior
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.subBehavior</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BarnacleAI.SubBehavior subBehavior
+    return:
+      type: Watcher.BarnacleAI.SubBehavior
+    content.vb: Public subBehavior As BarnacleAI.SubBehavior
+- uid: Watcher.BarnacleAI.inSubBehaviorTime
+  commentId: F:Watcher.BarnacleAI.inSubBehaviorTime
+  id: inSubBehaviorTime
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: inSubBehaviorTime
+  nameWithType: BarnacleAI.inSubBehaviorTime
+  fullName: Watcher.BarnacleAI.inSubBehaviorTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.inSubBehaviorTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int inSubBehaviorTime
+    return:
+      type: System.Int32
+    content.vb: Public inSubBehaviorTime As Integer
+- uid: Watcher.BarnacleAI.nextSubBehaviorTime
+  commentId: F:Watcher.BarnacleAI.nextSubBehaviorTime
+  id: nextSubBehaviorTime
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: nextSubBehaviorTime
+  nameWithType: BarnacleAI.nextSubBehaviorTime
+  fullName: Watcher.BarnacleAI.nextSubBehaviorTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.nextSubBehaviorTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int nextSubBehaviorTime
+    return:
+      type: System.Int32
+    content.vb: Public nextSubBehaviorTime As Integer
+- uid: Watcher.BarnacleAI.waterIdleSpot
+  commentId: F:Watcher.BarnacleAI.waterIdleSpot
+  id: waterIdleSpot
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: waterIdleSpot
+  nameWithType: BarnacleAI.waterIdleSpot
+  fullName: Watcher.BarnacleAI.waterIdleSpot
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.waterIdleSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? waterIdleSpot
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public waterIdleSpot As Vector2?
+- uid: Watcher.BarnacleAI.panicSpot
+  commentId: F:Watcher.BarnacleAI.panicSpot
+  id: panicSpot
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: panicSpot
+  nameWithType: BarnacleAI.panicSpot
+  fullName: Watcher.BarnacleAI.panicSpot
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.panicSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? panicSpot
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public panicSpot As Vector2?
+- uid: Watcher.BarnacleAI.nextPanicSpotShuffle
+  commentId: F:Watcher.BarnacleAI.nextPanicSpotShuffle
+  id: nextPanicSpotShuffle
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: nextPanicSpotShuffle
+  nameWithType: BarnacleAI.nextPanicSpotShuffle
+  fullName: Watcher.BarnacleAI.nextPanicSpotShuffle
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.nextPanicSpotShuffle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int nextPanicSpotShuffle
+    return:
+      type: System.Int32
+    content.vb: Public nextPanicSpotShuffle As Integer
+- uid: Watcher.BarnacleAI.inWaterTime
+  commentId: F:Watcher.BarnacleAI.inWaterTime
+  id: inWaterTime
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: inWaterTime
+  nameWithType: BarnacleAI.inWaterTime
+  fullName: Watcher.BarnacleAI.inWaterTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.BarnacleAI.inWaterTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int inWaterTime
+    return:
+      type: System.Int32
+    content.vb: Public inWaterTime As Integer
+- uid: Watcher.BarnacleAI.#ctor(AbstractCreature,World)
+  commentId: M:Watcher.BarnacleAI.#ctor(AbstractCreature,World)
+  id: '#ctor(AbstractCreature,World)'
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: BarnacleAI(AbstractCreature, World)
+  nameWithType: BarnacleAI.BarnacleAI(AbstractCreature, World)
+  fullName: Watcher.BarnacleAI.BarnacleAI(AbstractCreature, World)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Watcher.BarnacleAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BarnacleAI(AbstractCreature creature, World world)
+    parameters:
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:Watcher.BarnacleAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:Watcher.BarnacleAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(creature As AbstractCreature, world As World)
+  overload: Watcher.BarnacleAI.#ctor*
+  nameWithType.vb: BarnacleAI.New(AbstractCreature, World)
+  fullName.vb: Watcher.BarnacleAI.New(AbstractCreature, World)
+  name.vb: New(AbstractCreature, World)
+- uid: Watcher.BarnacleAI.NewRoom(Room)
+  commentId: M:Watcher.BarnacleAI.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: BarnacleAI.NewRoom(Room)
+  fullName: Watcher.BarnacleAI.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.BarnacleAI.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.ArtificialIntelligence.NewRoom(Room)
+  overload: Watcher.BarnacleAI.NewRoom*
+- uid: Watcher.BarnacleAI.Update
+  commentId: M:Watcher.BarnacleAI.Update
+  id: Update
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: BarnacleAI.Update()
+  fullName: Watcher.BarnacleAI.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.ArtificialIntelligence.Update
+  overload: Watcher.BarnacleAI.Update*
+- uid: Watcher.BarnacleAI.Act
+  commentId: M:Watcher.BarnacleAI.Act
+  id: Act
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: Act()
+  nameWithType: BarnacleAI.Act()
+  fullName: Watcher.BarnacleAI.Act()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.Act</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Act()
+    content.vb: Public Sub Act()
+  overload: Watcher.BarnacleAI.Act*
+- uid: Watcher.BarnacleAI.SetGroupDiscomfortTick(System.Single)
+  commentId: M:Watcher.BarnacleAI.SetGroupDiscomfortTick(System.Single)
+  id: SetGroupDiscomfortTick(System.Single)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: SetGroupDiscomfortTick(float)
+  nameWithType: BarnacleAI.SetGroupDiscomfortTick(float)
+  fullName: Watcher.BarnacleAI.SetGroupDiscomfortTick(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.SetGroupDiscomfortTick(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SetGroupDiscomfortTick(float targetValue)
+    parameters:
+    - id: targetValue
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>targetValue</parameter>
+            <parameter>M:Watcher.BarnacleAI.SetGroupDiscomfortTick(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SetGroupDiscomfortTick(targetValue As Single)
+  overload: Watcher.BarnacleAI.SetGroupDiscomfortTick*
+  nameWithType.vb: BarnacleAI.SetGroupDiscomfortTick(Single)
+  fullName.vb: Watcher.BarnacleAI.SetGroupDiscomfortTick(Single)
+  name.vb: SetGroupDiscomfortTick(Single)
+- uid: Watcher.BarnacleAI.LeadingUpdate
+  commentId: M:Watcher.BarnacleAI.LeadingUpdate
+  id: LeadingUpdate
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: LeadingUpdate()
+  nameWithType: BarnacleAI.LeadingUpdate()
+  fullName: Watcher.BarnacleAI.LeadingUpdate()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.LeadingUpdate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LeadingUpdate()
+    content.vb: Public Sub LeadingUpdate()
+  overload: Watcher.BarnacleAI.LeadingUpdate*
+- uid: Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)
+  commentId: M:Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)
+  id: CanBeALeader(Watcher.Barnacle)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: CanBeALeader(Barnacle)
+  nameWithType: BarnacleAI.CanBeALeader(Barnacle)
+  fullName: Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool CanBeALeader(Barnacle b)
+    parameters:
+    - id: b
+      type: Watcher.Barnacle
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>b</parameter>
+            <parameter>M:Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.CanBeALeader(Watcher.Barnacle)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CanBeALeader(b As Barnacle) As Boolean
+  overload: Watcher.BarnacleAI.CanBeALeader*
+- uid: Watcher.BarnacleAI.AbandonLeader
+  commentId: M:Watcher.BarnacleAI.AbandonLeader
+  id: AbandonLeader
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: AbandonLeader()
+  nameWithType: BarnacleAI.AbandonLeader()
+  fullName: Watcher.BarnacleAI.AbandonLeader()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.AbandonLeader</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AbandonLeader()
+    content.vb: Public Sub AbandonLeader()
+  overload: Watcher.BarnacleAI.AbandonLeader*
+- uid: Watcher.BarnacleAI.OnLoseShell
+  commentId: M:Watcher.BarnacleAI.OnLoseShell
+  id: OnLoseShell
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: OnLoseShell()
+  nameWithType: BarnacleAI.OnLoseShell()
+  fullName: Watcher.BarnacleAI.OnLoseShell()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.OnLoseShell</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void OnLoseShell()
+    content.vb: Public Sub OnLoseShell()
+  overload: Watcher.BarnacleAI.OnLoseShell*
+- uid: Watcher.BarnacleAI.FollowLeader
+  commentId: M:Watcher.BarnacleAI.FollowLeader
+  id: FollowLeader
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: FollowLeader()
+  nameWithType: BarnacleAI.FollowLeader()
+  fullName: Watcher.BarnacleAI.FollowLeader()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.FollowLeader</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FollowLeader()
+    content.vb: Public Sub FollowLeader()
+  overload: Watcher.BarnacleAI.FollowLeader*
+- uid: Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)
+  commentId: M:Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)
+  id: IdleSpotNearLeader(System.Single,System.Single)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: IdleSpotNearLeader(float, float)
+  nameWithType: BarnacleAI.IdleSpotNearLeader(float, float)
+  fullName: Watcher.BarnacleAI.IdleSpotNearLeader(float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? IdleSpotNearLeader(float minRadius, float maxRadius)
+    parameters:
+    - id: minRadius
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>minRadius</parameter>
+            <parameter>M:Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: maxRadius
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maxRadius</parameter>
+            <parameter>M:Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.IdleSpotNearLeader(System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function IdleSpotNearLeader(minRadius As Single, maxRadius As Single) As Vector2?
+  overload: Watcher.BarnacleAI.IdleSpotNearLeader*
+  nameWithType.vb: BarnacleAI.IdleSpotNearLeader(Single, Single)
+  fullName.vb: Watcher.BarnacleAI.IdleSpotNearLeader(Single, Single)
+  name.vb: IdleSpotNearLeader(Single, Single)
+- uid: Watcher.BarnacleAI.ShufflePanicSpot(System.Boolean)
+  commentId: M:Watcher.BarnacleAI.ShufflePanicSpot(System.Boolean)
+  id: ShufflePanicSpot(System.Boolean)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: ShufflePanicSpot(bool)
+  nameWithType: BarnacleAI.ShufflePanicSpot(bool)
+  fullName: Watcher.BarnacleAI.ShufflePanicSpot(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.ShufflePanicSpot(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ShufflePanicSpot(bool scattering)
+    parameters:
+    - id: scattering
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>scattering</parameter>
+            <parameter>M:Watcher.BarnacleAI.ShufflePanicSpot(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ShufflePanicSpot(scattering As Boolean)
+  overload: Watcher.BarnacleAI.ShufflePanicSpot*
+  nameWithType.vb: BarnacleAI.ShufflePanicSpot(Boolean)
+  fullName.vb: Watcher.BarnacleAI.ShufflePanicSpot(Boolean)
+  name.vb: ShufflePanicSpot(Boolean)
+- uid: Watcher.BarnacleAI.UpdateNarrowIdleSpot
+  commentId: M:Watcher.BarnacleAI.UpdateNarrowIdleSpot
+  id: UpdateNarrowIdleSpot
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: UpdateNarrowIdleSpot()
+  nameWithType: BarnacleAI.UpdateNarrowIdleSpot()
+  fullName: Watcher.BarnacleAI.UpdateNarrowIdleSpot()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.UpdateNarrowIdleSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateNarrowIdleSpot()
+    content.vb: Public Sub UpdateNarrowIdleSpot()
+  overload: Watcher.BarnacleAI.UpdateNarrowIdleSpot*
+- uid: Watcher.BarnacleAI.WaterIdleSpot
+  commentId: M:Watcher.BarnacleAI.WaterIdleSpot
+  id: WaterIdleSpot
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: WaterIdleSpot()
+  nameWithType: BarnacleAI.WaterIdleSpot()
+  fullName: Watcher.BarnacleAI.WaterIdleSpot()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.WaterIdleSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? WaterIdleSpot()
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.WaterIdleSpot</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function WaterIdleSpot() As Vector2?
+  overload: Watcher.BarnacleAI.WaterIdleSpot*
+- uid: Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)
+  commentId: M:Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)
+  id: VisualScore(UnityEngine.Vector2,System.Single)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: VisualScore(Vector2, float)
+  nameWithType: BarnacleAI.VisualScore(Vector2, float)
+  fullName: Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float VisualScore(Vector2 lookAtPoint, float targetSpeed)
+    parameters:
+    - id: lookAtPoint
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>lookAtPoint</parameter>
+            <parameter>M:Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: targetSpeed
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>targetSpeed</parameter>
+            <parameter>M:Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function VisualScore(lookAtPoint As Vector2, targetSpeed As Single) As Single
+  overridden: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  overload: Watcher.BarnacleAI.VisualScore*
+  nameWithType.vb: BarnacleAI.VisualScore(Vector2, Single)
+  fullName.vb: Watcher.BarnacleAI.VisualScore(UnityEngine.Vector2, Single)
+  name.vb: VisualScore(Vector2, Single)
+- uid: Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)
+  commentId: M:Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)
+  id: TravelPreference(MovementConnection,PathCost)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: TravelPreference(MovementConnection, PathCost)
+  nameWithType: BarnacleAI.TravelPreference(MovementConnection, PathCost)
+  fullName: Watcher.BarnacleAI.TravelPreference(MovementConnection, PathCost)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override PathCost TravelPreference(MovementConnection connection, PathCost cost)
+    parameters:
+    - id: connection
+      type: Global.MovementConnection
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>connection</parameter>
+            <parameter>M:Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    - id: cost
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cost</parameter>
+            <parameter>M:Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.PathCost
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.TravelPreference(MovementConnection,PathCost)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function TravelPreference(connection As MovementConnection, cost As PathCost) As PathCost
+  overridden: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  overload: Watcher.BarnacleAI.TravelPreference*
+- uid: Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle
+  commentId: M:Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle
+  id: WantToStayInDenUntilEndOfCycle
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: WantToStayInDenUntilEndOfCycle()
+  nameWithType: BarnacleAI.WantToStayInDenUntilEndOfCycle()
+  fullName: Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override bool WantToStayInDenUntilEndOfCycle()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function WantToStayInDenUntilEndOfCycle() As Boolean
+  overridden: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  overload: Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle*
+- uid: Watcher.BarnacleAI.CreatureUnease(AbstractCreature)
+  commentId: M:Watcher.BarnacleAI.CreatureUnease(AbstractCreature)
+  id: CreatureUnease(AbstractCreature)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: CreatureUnease(AbstractCreature)
+  nameWithType: BarnacleAI.CreatureUnease(AbstractCreature)
+  fullName: Watcher.BarnacleAI.CreatureUnease(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.CreatureUnease(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float CreatureUnease(AbstractCreature crit)
+    parameters:
+    - id: crit
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:Watcher.BarnacleAI.CreatureUnease(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.CreatureUnease(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CreatureUnease(crit As AbstractCreature) As Single
+  overload: Watcher.BarnacleAI.CreatureUnease*
+- uid: Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  commentId: M:Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  id: ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: ModuleToTrackRelationship(Relationship)
+  nameWithType: BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  fullName: Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AIModule ModuleToTrackRelationship(CreatureTemplate.Relationship relationship)
+    parameters:
+    - id: relationship
+      type: Global.CreatureTemplate.Relationship
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>relationship</parameter>
+            <parameter>M:Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.AIModule
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.ModuleToTrackRelationship(CreatureTemplate.Relationship)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ModuleToTrackRelationship(relationship As CreatureTemplate.Relationship) As AIModule
+  overload: Watcher.BarnacleAI.ModuleToTrackRelationship*
+  implements:
+  - Global.IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+- uid: Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  commentId: M:Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  id: UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: UpdateDynamicRelationship(DynamicRelationship)
+  nameWithType: BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  fullName: Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CreatureTemplate.Relationship UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship dRelation)
+    parameters:
+    - id: dRelation
+      type: Global.RelationshipTracker.DynamicRelationship
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dRelation</parameter>
+            <parameter>M:Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.CreatureTemplate.Relationship
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function UpdateDynamicRelationship(dRelation As RelationshipTracker.DynamicRelationship) As CreatureTemplate.Relationship
+  overload: Watcher.BarnacleAI.UpdateDynamicRelationship*
+  implements:
+  - Global.IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+- uid: Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  commentId: M:Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  id: CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: CreateTrackedCreatureState(DynamicRelationship)
+  nameWithType: BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  fullName: Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RelationshipTracker.TrackedCreatureState CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship rel)
+    parameters:
+    - id: rel
+      type: Global.RelationshipTracker.DynamicRelationship
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rel</parameter>
+            <parameter>M:Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.RelationshipTracker.TrackedCreatureState
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.BarnacleAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CreateTrackedCreatureState(rel As RelationshipTracker.DynamicRelationship) As RelationshipTracker.TrackedCreatureState
+  overload: Watcher.BarnacleAI.CreateTrackedCreatureState*
+  implements:
+  - Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+- uid: Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  commentId: M:Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  id: ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: ReactToNoise(TheorizedSource, InGameNoise)
+  nameWithType: BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource, InGameNoise)
+  fullName: Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource, Noise.InGameNoise)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ReactToNoise(NoiseTracker.TheorizedSource source, InGameNoise noise)
+    parameters:
+    - id: source
+      type: Global.NoiseTracker.TheorizedSource
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>source</parameter>
+            <parameter>M:Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)</parameter>
+          </include>
+        </markup>
+    - id: noise
+      type: Noise.InGameNoise
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>noise</parameter>
+            <parameter>M:Watcher.BarnacleAI.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ReactToNoise(source As NoiseTracker.TheorizedSource, noise As InGameNoise)
+  overload: Watcher.BarnacleAI.ReactToNoise*
+  implements:
+  - Global.IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+- uid: Watcher.BarnacleAI.floatGoalPos
+  commentId: P:Watcher.BarnacleAI.floatGoalPos
+  id: floatGoalPos
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: floatGoalPos
+  nameWithType: BarnacleAI.floatGoalPos
+  fullName: Watcher.BarnacleAI.floatGoalPos
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.BarnacleAI.floatGoalPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? floatGoalPos { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+    content.vb: Public Property floatGoalPos As Vector2?
+  overload: Watcher.BarnacleAI.floatGoalPos*
+- uid: Watcher.BarnacleAI.CombinedFear
+  commentId: P:Watcher.BarnacleAI.CombinedFear
+  id: CombinedFear
+  parent: Watcher.BarnacleAI
+  langs:
+  - csharp
+  - vb
+  name: CombinedFear
+  nameWithType: BarnacleAI.CombinedFear
+  fullName: Watcher.BarnacleAI.CombinedFear
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.BarnacleAI.CombinedFear</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float CombinedFear { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property CombinedFear As Single
+  overload: Watcher.BarnacleAI.CombinedFear*
+references:
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.IUseARelationshipTracker
+  commentId: T:Global.IUseARelationshipTracker
+  isExternal: true
+  href: IUseARelationshipTracker.html
+  name: IUseARelationshipTracker
+  nameWithType: IUseARelationshipTracker
+  fullName: IUseARelationshipTracker
+- uid: Global.IAINoiseReaction
+  commentId: T:Global.IAINoiseReaction
+  isExternal: true
+  href: IAINoiseReaction.html
+  name: IAINoiseReaction
+  nameWithType: IAINoiseReaction
+  fullName: IAINoiseReaction
+- uid: Global.ArtificialIntelligence.creature
+  commentId: F:Global.ArtificialIntelligence.creature
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_creature
+  name: creature
+  nameWithType: ArtificialIntelligence.creature
+  fullName: ArtificialIntelligence.creature
+- uid: Global.ArtificialIntelligence.modules
+  commentId: F:Global.ArtificialIntelligence.modules
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_modules
+  name: modules
+  nameWithType: ArtificialIntelligence.modules
+  fullName: ArtificialIntelligence.modules
+- uid: Global.ArtificialIntelligence.stranded
+  commentId: F:Global.ArtificialIntelligence.stranded
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stranded
+  name: stranded
+  nameWithType: ArtificialIntelligence.stranded
+  fullName: ArtificialIntelligence.stranded
+- uid: Global.ArtificialIntelligence.seeThroughWalls
+  commentId: F:Global.ArtificialIntelligence.seeThroughWalls
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_seeThroughWalls
+  name: seeThroughWalls
+  nameWithType: ArtificialIntelligence.seeThroughWalls
+  fullName: ArtificialIntelligence.seeThroughWalls
+- uid: Global.ArtificialIntelligence.timeInRoom
+  commentId: F:Global.ArtificialIntelligence.timeInRoom
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_timeInRoom
+  name: timeInRoom
+  nameWithType: ArtificialIntelligence.timeInRoom
+  fullName: ArtificialIntelligence.timeInRoom
+- uid: Global.ArtificialIntelligence.lastRoom
+  commentId: F:Global.ArtificialIntelligence.lastRoom
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_lastRoom
+  name: lastRoom
+  nameWithType: ArtificialIntelligence.lastRoom
+  fullName: ArtificialIntelligence.lastRoom
+- uid: Global.ArtificialIntelligence.ripplePathingTarget
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTarget
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTarget
+  name: ripplePathingTarget
+  nameWithType: ArtificialIntelligence.ripplePathingTarget
+  fullName: ArtificialIntelligence.ripplePathingTarget
+- uid: Global.ArtificialIntelligence.ripplePathingTime
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTime
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTime
+  name: ripplePathingTime
+  nameWithType: ArtificialIntelligence.ripplePathingTime
+  fullName: ArtificialIntelligence.ripplePathingTime
+- uid: Global.ArtificialIntelligence.AddModule(AIModule)
+  commentId: M:Global.ArtificialIntelligence.AddModule(AIModule)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  name: AddModule(AIModule)
+  nameWithType: ArtificialIntelligence.AddModule(AIModule)
+  fullName: ArtificialIntelligence.AddModule(AIModule)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  name: VisualContact(WorldCoordinate, float)
+  nameWithType: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  fullName: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  name.vb: VisualContact(WorldCoordinate, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  name: VisualContact(Vector2, float)
+  nameWithType: ArtificialIntelligence.VisualContact(Vector2, float)
+  fullName: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(Vector2, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, Single)
+  name.vb: VisualContact(Vector2, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  name: VisualContact(BodyChunk)
+  nameWithType: ArtificialIntelligence.VisualContact(BodyChunk)
+  fullName: ArtificialIntelligence.VisualContact(BodyChunk)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+- uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  commentId: M:Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  name: CreatureSpotted(bool, CreatureRepresentation)
+  nameWithType: ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  fullName: ArtificialIntelligence.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  nameWithType.vb: ArtificialIntelligence.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  fullName.vb: ArtificialIntelligence.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  name.vb: CreatureSpotted(Boolean, CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  commentId: M:Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  name: SetDestination(WorldCoordinate)
+  nameWithType: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  fullName: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+  commentId: M:Global.ArtificialIntelligence.NewArea(System.Boolean)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  name: NewArea(bool)
+  nameWithType: ArtificialIntelligence.NewArea(bool)
+  fullName: ArtificialIntelligence.NewArea(bool)
+  nameWithType.vb: ArtificialIntelligence.NewArea(Boolean)
+  fullName.vb: ArtificialIntelligence.NewArea(Boolean)
+  name.vb: NewArea(Boolean)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ArtificialIntelligence.DenPosition
+  commentId: M:Global.ArtificialIntelligence.DenPosition
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  name: DenPosition()
+  nameWithType: ArtificialIntelligence.DenPosition()
+  fullName: ArtificialIntelligence.DenPosition()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+- uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  name: CreateTrackerRepresentationForCreature(AbstractCreature)
+  nameWithType: ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  fullName: ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  name: DynamicRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  name: DynamicRelationship(CreatureRepresentation)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  name: DynamicRelationship(CreatureRepresentation, AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  name: StaticRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  name: TrackerToDiscardDeadCreature(AbstractCreature)
+  nameWithType: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  fullName: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  commentId: M:Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  name: HeardNoise(InGameNoise)
+  nameWithType: ArtificialIntelligence.HeardNoise(InGameNoise)
+  fullName: ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+- uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  name: CurrentPlayerAggression(AbstractCreature)
+  nameWithType: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  fullName: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.pathFinder
+  commentId: P:Global.ArtificialIntelligence.pathFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_pathFinder
+  name: pathFinder
+  nameWithType: ArtificialIntelligence.pathFinder
+  fullName: ArtificialIntelligence.pathFinder
+- uid: Global.ArtificialIntelligence.tracker
+  commentId: P:Global.ArtificialIntelligence.tracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_tracker
+  name: tracker
+  nameWithType: ArtificialIntelligence.tracker
+  fullName: ArtificialIntelligence.tracker
+- uid: Global.ArtificialIntelligence.noiseTracker
+  commentId: P:Global.ArtificialIntelligence.noiseTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_noiseTracker
+  name: noiseTracker
+  nameWithType: ArtificialIntelligence.noiseTracker
+  fullName: ArtificialIntelligence.noiseTracker
+- uid: Global.ArtificialIntelligence.obstacleTracker
+  commentId: P:Global.ArtificialIntelligence.obstacleTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_obstacleTracker
+  name: obstacleTracker
+  nameWithType: ArtificialIntelligence.obstacleTracker
+  fullName: ArtificialIntelligence.obstacleTracker
+- uid: Global.ArtificialIntelligence.threatTracker
+  commentId: P:Global.ArtificialIntelligence.threatTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_threatTracker
+  name: threatTracker
+  nameWithType: ArtificialIntelligence.threatTracker
+  fullName: ArtificialIntelligence.threatTracker
+- uid: Global.ArtificialIntelligence.preyTracker
+  commentId: P:Global.ArtificialIntelligence.preyTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_preyTracker
+  name: preyTracker
+  nameWithType: ArtificialIntelligence.preyTracker
+  fullName: ArtificialIntelligence.preyTracker
+- uid: Global.ArtificialIntelligence.rainTracker
+  commentId: P:Global.ArtificialIntelligence.rainTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_rainTracker
+  name: rainTracker
+  nameWithType: ArtificialIntelligence.rainTracker
+  fullName: ArtificialIntelligence.rainTracker
+- uid: Global.ArtificialIntelligence.denFinder
+  commentId: P:Global.ArtificialIntelligence.denFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_denFinder
+  name: denFinder
+  nameWithType: ArtificialIntelligence.denFinder
+  fullName: ArtificialIntelligence.denFinder
+- uid: Global.ArtificialIntelligence.agressionTracker
+  commentId: P:Global.ArtificialIntelligence.agressionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_agressionTracker
+  name: agressionTracker
+  nameWithType: ArtificialIntelligence.agressionTracker
+  fullName: ArtificialIntelligence.agressionTracker
+- uid: Global.ArtificialIntelligence.utilityComparer
+  commentId: P:Global.ArtificialIntelligence.utilityComparer
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_utilityComparer
+  name: utilityComparer
+  nameWithType: ArtificialIntelligence.utilityComparer
+  fullName: ArtificialIntelligence.utilityComparer
+- uid: Global.ArtificialIntelligence.missionTracker
+  commentId: P:Global.ArtificialIntelligence.missionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_missionTracker
+  name: missionTracker
+  nameWithType: ArtificialIntelligence.missionTracker
+  fullName: ArtificialIntelligence.missionTracker
+- uid: Global.ArtificialIntelligence.secondaryNodeFinder
+  commentId: P:Global.ArtificialIntelligence.secondaryNodeFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_secondaryNodeFinder
+  name: secondaryNodeFinder
+  nameWithType: ArtificialIntelligence.secondaryNodeFinder
+  fullName: ArtificialIntelligence.secondaryNodeFinder
+- uid: Global.ArtificialIntelligence.relationshipTracker
+  commentId: P:Global.ArtificialIntelligence.relationshipTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_relationshipTracker
+  name: relationshipTracker
+  nameWithType: ArtificialIntelligence.relationshipTracker
+  fullName: ArtificialIntelligence.relationshipTracker
+- uid: Global.ArtificialIntelligence.itemTracker
+  commentId: P:Global.ArtificialIntelligence.itemTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_itemTracker
+  name: itemTracker
+  nameWithType: ArtificialIntelligence.itemTracker
+  fullName: ArtificialIntelligence.itemTracker
+- uid: Global.ArtificialIntelligence.discomfortTracker
+  commentId: P:Global.ArtificialIntelligence.discomfortTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_discomfortTracker
+  name: discomfortTracker
+  nameWithType: ArtificialIntelligence.discomfortTracker
+  fullName: ArtificialIntelligence.discomfortTracker
+- uid: Global.ArtificialIntelligence.stuckTracker
+  commentId: P:Global.ArtificialIntelligence.stuckTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stuckTracker
+  name: stuckTracker
+  nameWithType: ArtificialIntelligence.stuckTracker
+  fullName: ArtificialIntelligence.stuckTracker
+- uid: Global.ArtificialIntelligence.injuryTracker
+  commentId: P:Global.ArtificialIntelligence.injuryTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_injuryTracker
+  name: injuryTracker
+  nameWithType: ArtificialIntelligence.injuryTracker
+  fullName: ArtificialIntelligence.injuryTracker
+- uid: Global.ArtificialIntelligence.friendTracker
+  commentId: P:Global.ArtificialIntelligence.friendTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_friendTracker
+  name: friendTracker
+  nameWithType: ArtificialIntelligence.friendTracker
+  fullName: ArtificialIntelligence.friendTracker
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Watcher.Barnacle
+  commentId: T:Watcher.Barnacle
+  parent: Watcher
+  isExternal: true
+  href: Watcher.Barnacle.html
+  name: Barnacle
+  nameWithType: Barnacle
+  fullName: Watcher.Barnacle
+- uid: System.Collections.Generic.List{Watcher.Barnacle}
+  commentId: T:System.Collections.Generic.List{Watcher.Barnacle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Barnacle>
+  nameWithType: List<Barnacle>
+  fullName: System.Collections.Generic.List<Watcher.Barnacle>
+  nameWithType.vb: List(Of Barnacle)
+  fullName.vb: System.Collections.Generic.List(Of Watcher.Barnacle)
+  name.vb: List(Of Barnacle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Watcher.Barnacle
+    name: Barnacle
+    isExternal: true
+    href: Watcher.Barnacle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Watcher.Barnacle
+    name: Barnacle
+    isExternal: true
+    href: Watcher.Barnacle.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Nullable{UnityEngine.Vector2}
+  commentId: T:System.Nullable{UnityEngine.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: UnityEngine.Vector2?
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: System.Nullable{WorldCoordinate}
+  commentId: T:System.Nullable{WorldCoordinate}
+  parent: System
+  definition: System.Nullable`1
+  href: WorldCoordinate.html
+  name: WorldCoordinate?
+  nameWithType: WorldCoordinate?
+  fullName: WorldCoordinate?
+  spec.csharp:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+  spec.vb:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+- uid: Watcher.BarnacleAI.AIParams
+  commentId: T:Watcher.BarnacleAI.AIParams
+  parent: Watcher
+  isExternal: true
+  href: Watcher.BarnacleAI.html
+  name: BarnacleAI.AIParams
+  nameWithType: BarnacleAI.AIParams
+  fullName: Watcher.BarnacleAI.AIParams
+  spec.csharp:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.AIParams
+    name: AIParams
+    isExternal: true
+    href: Watcher.BarnacleAI.AIParams.html
+  spec.vb:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.AIParams
+    name: AIParams
+    isExternal: true
+    href: Watcher.BarnacleAI.AIParams.html
+- uid: Watcher.BarnacleAI.Behavior
+  commentId: T:Watcher.BarnacleAI.Behavior
+  parent: Watcher
+  isExternal: true
+  href: Watcher.BarnacleAI.html
+  name: BarnacleAI.Behavior
+  nameWithType: BarnacleAI.Behavior
+  fullName: Watcher.BarnacleAI.Behavior
+  spec.csharp:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: Watcher.BarnacleAI.Behavior.html
+  spec.vb:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: Watcher.BarnacleAI.Behavior.html
+- uid: Watcher.BarnacleAI.SubBehavior
+  commentId: T:Watcher.BarnacleAI.SubBehavior
+  parent: Watcher
+  isExternal: true
+  href: Watcher.BarnacleAI.html
+  name: BarnacleAI.SubBehavior
+  nameWithType: BarnacleAI.SubBehavior
+  fullName: Watcher.BarnacleAI.SubBehavior
+  spec.csharp:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.SubBehavior
+    name: SubBehavior
+    isExternal: true
+    href: Watcher.BarnacleAI.SubBehavior.html
+  spec.vb:
+  - uid: Watcher.BarnacleAI
+    name: BarnacleAI
+    isExternal: true
+    href: Watcher.BarnacleAI.html
+  - name: .
+  - uid: Watcher.BarnacleAI.SubBehavior
+    name: SubBehavior
+    isExternal: true
+    href: Watcher.BarnacleAI.SubBehavior.html
+- uid: Watcher.BarnacleAI.#ctor*
+  commentId: Overload:Watcher.BarnacleAI.#ctor
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI__ctor_AbstractCreature_World_
+  name: BarnacleAI
+  nameWithType: BarnacleAI.BarnacleAI
+  fullName: Watcher.BarnacleAI.BarnacleAI
+  nameWithType.vb: BarnacleAI.New
+  fullName.vb: Watcher.BarnacleAI.New
+  name.vb: New
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.ArtificialIntelligence.NewRoom(Room)
+  commentId: M:Global.ArtificialIntelligence.NewRoom(Room)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: ArtificialIntelligence.NewRoom(Room)
+  fullName: ArtificialIntelligence.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Watcher.BarnacleAI.NewRoom*
+  commentId: Overload:Watcher.BarnacleAI.NewRoom
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_NewRoom_Room_
+  name: NewRoom
+  nameWithType: BarnacleAI.NewRoom
+  fullName: Watcher.BarnacleAI.NewRoom
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.ArtificialIntelligence.Update
+  commentId: M:Global.ArtificialIntelligence.Update
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  name: Update()
+  nameWithType: ArtificialIntelligence.Update()
+  fullName: ArtificialIntelligence.Update()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.Update
+    name: Update
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.Update
+    name: Update
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_Update
+  - name: (
+  - name: )
+- uid: Watcher.BarnacleAI.Update*
+  commentId: Overload:Watcher.BarnacleAI.Update
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_Update
+  name: Update
+  nameWithType: BarnacleAI.Update
+  fullName: Watcher.BarnacleAI.Update
+- uid: Watcher.BarnacleAI.Act*
+  commentId: Overload:Watcher.BarnacleAI.Act
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_Act
+  name: Act
+  nameWithType: BarnacleAI.Act
+  fullName: Watcher.BarnacleAI.Act
+- uid: Watcher.BarnacleAI.SetGroupDiscomfortTick*
+  commentId: Overload:Watcher.BarnacleAI.SetGroupDiscomfortTick
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_SetGroupDiscomfortTick_System_Single_
+  name: SetGroupDiscomfortTick
+  nameWithType: BarnacleAI.SetGroupDiscomfortTick
+  fullName: Watcher.BarnacleAI.SetGroupDiscomfortTick
+- uid: Watcher.BarnacleAI.LeadingUpdate*
+  commentId: Overload:Watcher.BarnacleAI.LeadingUpdate
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_LeadingUpdate
+  name: LeadingUpdate
+  nameWithType: BarnacleAI.LeadingUpdate
+  fullName: Watcher.BarnacleAI.LeadingUpdate
+- uid: Watcher.BarnacleAI.CanBeALeader*
+  commentId: Overload:Watcher.BarnacleAI.CanBeALeader
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_CanBeALeader_Watcher_Barnacle_
+  name: CanBeALeader
+  nameWithType: BarnacleAI.CanBeALeader
+  fullName: Watcher.BarnacleAI.CanBeALeader
+- uid: Watcher.BarnacleAI.AbandonLeader*
+  commentId: Overload:Watcher.BarnacleAI.AbandonLeader
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_AbandonLeader
+  name: AbandonLeader
+  nameWithType: BarnacleAI.AbandonLeader
+  fullName: Watcher.BarnacleAI.AbandonLeader
+- uid: Watcher.BarnacleAI.OnLoseShell*
+  commentId: Overload:Watcher.BarnacleAI.OnLoseShell
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_OnLoseShell
+  name: OnLoseShell
+  nameWithType: BarnacleAI.OnLoseShell
+  fullName: Watcher.BarnacleAI.OnLoseShell
+- uid: Watcher.BarnacleAI.FollowLeader*
+  commentId: Overload:Watcher.BarnacleAI.FollowLeader
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_FollowLeader
+  name: FollowLeader
+  nameWithType: BarnacleAI.FollowLeader
+  fullName: Watcher.BarnacleAI.FollowLeader
+- uid: Watcher.BarnacleAI.IdleSpotNearLeader*
+  commentId: Overload:Watcher.BarnacleAI.IdleSpotNearLeader
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_IdleSpotNearLeader_System_Single_System_Single_
+  name: IdleSpotNearLeader
+  nameWithType: BarnacleAI.IdleSpotNearLeader
+  fullName: Watcher.BarnacleAI.IdleSpotNearLeader
+- uid: Watcher.BarnacleAI.ShufflePanicSpot*
+  commentId: Overload:Watcher.BarnacleAI.ShufflePanicSpot
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_ShufflePanicSpot_System_Boolean_
+  name: ShufflePanicSpot
+  nameWithType: BarnacleAI.ShufflePanicSpot
+  fullName: Watcher.BarnacleAI.ShufflePanicSpot
+- uid: Watcher.BarnacleAI.UpdateNarrowIdleSpot*
+  commentId: Overload:Watcher.BarnacleAI.UpdateNarrowIdleSpot
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_UpdateNarrowIdleSpot
+  name: UpdateNarrowIdleSpot
+  nameWithType: BarnacleAI.UpdateNarrowIdleSpot
+  fullName: Watcher.BarnacleAI.UpdateNarrowIdleSpot
+- uid: Watcher.BarnacleAI.WaterIdleSpot*
+  commentId: Overload:Watcher.BarnacleAI.WaterIdleSpot
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_WaterIdleSpot
+  name: WaterIdleSpot
+  nameWithType: BarnacleAI.WaterIdleSpot
+  fullName: Watcher.BarnacleAI.WaterIdleSpot
+- uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  name: VisualScore(Vector2, float)
+  nameWithType: ArtificialIntelligence.VisualScore(Vector2, float)
+  fullName: ArtificialIntelligence.VisualScore(UnityEngine.Vector2, float)
+  nameWithType.vb: ArtificialIntelligence.VisualScore(Vector2, Single)
+  fullName.vb: ArtificialIntelligence.VisualScore(UnityEngine.Vector2, Single)
+  name.vb: VisualScore(Vector2, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Watcher.BarnacleAI.VisualScore*
+  commentId: Overload:Watcher.BarnacleAI.VisualScore
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_VisualScore_UnityEngine_Vector2_System_Single_
+  name: VisualScore
+  nameWithType: BarnacleAI.VisualScore
+  fullName: Watcher.BarnacleAI.VisualScore
+- uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  commentId: M:Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  name: TravelPreference(MovementConnection, PathCost)
+  nameWithType: ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)
+  fullName: ArtificialIntelligence.TravelPreference(MovementConnection, PathCost)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+- uid: Watcher.BarnacleAI.TravelPreference*
+  commentId: Overload:Watcher.BarnacleAI.TravelPreference
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_TravelPreference_MovementConnection_PathCost_
+  name: TravelPreference
+  nameWithType: BarnacleAI.TravelPreference
+  fullName: Watcher.BarnacleAI.TravelPreference
+- uid: Global.MovementConnection
+  commentId: T:Global.MovementConnection
+  isExternal: true
+  href: MovementConnection.html
+  name: MovementConnection
+  nameWithType: MovementConnection
+  fullName: MovementConnection
+- uid: Global.PathCost
+  commentId: T:Global.PathCost
+  isExternal: true
+  href: PathCost.html
+  name: PathCost
+  nameWithType: PathCost
+  fullName: PathCost
+- uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  commentId: M:Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  name: WantToStayInDenUntilEndOfCycle()
+  nameWithType: ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()
+  fullName: ArtificialIntelligence.WantToStayInDenUntilEndOfCycle()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+- uid: Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle*
+  commentId: Overload:Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_WantToStayInDenUntilEndOfCycle
+  name: WantToStayInDenUntilEndOfCycle
+  nameWithType: BarnacleAI.WantToStayInDenUntilEndOfCycle
+  fullName: Watcher.BarnacleAI.WantToStayInDenUntilEndOfCycle
+- uid: Watcher.BarnacleAI.CreatureUnease*
+  commentId: Overload:Watcher.BarnacleAI.CreatureUnease
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_CreatureUnease_AbstractCreature_
+  name: CreatureUnease
+  nameWithType: BarnacleAI.CreatureUnease
+  fullName: Watcher.BarnacleAI.CreatureUnease
+- uid: Watcher.BarnacleAI.ModuleToTrackRelationship*
+  commentId: Overload:Watcher.BarnacleAI.ModuleToTrackRelationship
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_ModuleToTrackRelationship_CreatureTemplate_Relationship_
+  name: ModuleToTrackRelationship
+  nameWithType: BarnacleAI.ModuleToTrackRelationship
+  fullName: Watcher.BarnacleAI.ModuleToTrackRelationship
+- uid: Global.IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  commentId: M:Global.IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  parent: Global.IUseARelationshipTracker
+  isExternal: true
+  href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_ModuleToTrackRelationship_CreatureTemplate_Relationship_
+  name: ModuleToTrackRelationship(Relationship)
+  nameWithType: IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  fullName: IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+  spec.csharp:
+  - uid: Global.IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+    name: ModuleToTrackRelationship
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_ModuleToTrackRelationship_CreatureTemplate_Relationship_
+  - name: (
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+  - name: )
+  spec.vb:
+  - uid: Global.IUseARelationshipTracker.ModuleToTrackRelationship(CreatureTemplate.Relationship)
+    name: ModuleToTrackRelationship
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_ModuleToTrackRelationship_CreatureTemplate_Relationship_
+  - name: (
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+  - name: )
+- uid: Global.CreatureTemplate.Relationship
+  commentId: T:Global.CreatureTemplate.Relationship
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate.Relationship
+  nameWithType: CreatureTemplate.Relationship
+  fullName: CreatureTemplate.Relationship
+  spec.csharp:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+  spec.vb:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Watcher.BarnacleAI.UpdateDynamicRelationship*
+  commentId: Overload:Watcher.BarnacleAI.UpdateDynamicRelationship
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_UpdateDynamicRelationship_RelationshipTracker_DynamicRelationship_
+  name: UpdateDynamicRelationship
+  nameWithType: BarnacleAI.UpdateDynamicRelationship
+  fullName: Watcher.BarnacleAI.UpdateDynamicRelationship
+- uid: Global.IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  commentId: M:Global.IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  parent: Global.IUseARelationshipTracker
+  isExternal: true
+  href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_UpdateDynamicRelationship_RelationshipTracker_DynamicRelationship_
+  name: UpdateDynamicRelationship(DynamicRelationship)
+  nameWithType: IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  fullName: IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+  spec.csharp:
+  - uid: Global.IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+    name: UpdateDynamicRelationship
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_UpdateDynamicRelationship_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+  spec.vb:
+  - uid: Global.IUseARelationshipTracker.UpdateDynamicRelationship(RelationshipTracker.DynamicRelationship)
+    name: UpdateDynamicRelationship
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_UpdateDynamicRelationship_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+- uid: Global.RelationshipTracker.DynamicRelationship
+  commentId: T:Global.RelationshipTracker.DynamicRelationship
+  isExternal: true
+  href: RelationshipTracker.html
+  name: RelationshipTracker.DynamicRelationship
+  nameWithType: RelationshipTracker.DynamicRelationship
+  fullName: RelationshipTracker.DynamicRelationship
+  spec.csharp:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  spec.vb:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+- uid: Watcher.BarnacleAI.CreateTrackedCreatureState*
+  commentId: Overload:Watcher.BarnacleAI.CreateTrackedCreatureState
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  name: CreateTrackedCreatureState
+  nameWithType: BarnacleAI.CreateTrackedCreatureState
+  fullName: Watcher.BarnacleAI.CreateTrackedCreatureState
+- uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  commentId: M:Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  parent: Global.IUseARelationshipTracker
+  isExternal: true
+  href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  name: CreateTrackedCreatureState(DynamicRelationship)
+  nameWithType: IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  fullName: IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  spec.csharp:
+  - uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+    name: CreateTrackedCreatureState
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+  spec.vb:
+  - uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+    name: CreateTrackedCreatureState
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+- uid: Global.RelationshipTracker.TrackedCreatureState
+  commentId: T:Global.RelationshipTracker.TrackedCreatureState
+  isExternal: true
+  href: RelationshipTracker.html
+  name: RelationshipTracker.TrackedCreatureState
+  nameWithType: RelationshipTracker.TrackedCreatureState
+  fullName: RelationshipTracker.TrackedCreatureState
+  spec.csharp:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.TrackedCreatureState
+    name: TrackedCreatureState
+    isExternal: true
+    href: RelationshipTracker.TrackedCreatureState.html
+  spec.vb:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.TrackedCreatureState
+    name: TrackedCreatureState
+    isExternal: true
+    href: RelationshipTracker.TrackedCreatureState.html
+- uid: Watcher.BarnacleAI.ReactToNoise*
+  commentId: Overload:Watcher.BarnacleAI.ReactToNoise
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_
+  name: ReactToNoise
+  nameWithType: BarnacleAI.ReactToNoise
+  fullName: Watcher.BarnacleAI.ReactToNoise
+- uid: Global.IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  commentId: M:Global.IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+  parent: Global.IAINoiseReaction
+  isExternal: true
+  href: Global.IAINoiseReaction.html#IAINoiseReaction_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_
+  name: ReactToNoise(TheorizedSource, InGameNoise)
+  nameWithType: IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource, InGameNoise)
+  fullName: IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource, Noise.InGameNoise)
+  spec.csharp:
+  - uid: Global.IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+    name: ReactToNoise
+    isExternal: true
+    href: Global.IAINoiseReaction.html#IAINoiseReaction_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_
+  - name: (
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  - name: ','
+  - name: " "
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+  spec.vb:
+  - uid: Global.IAINoiseReaction.ReactToNoise(NoiseTracker.TheorizedSource,Noise.InGameNoise)
+    name: ReactToNoise
+    isExternal: true
+    href: Global.IAINoiseReaction.html#IAINoiseReaction_ReactToNoise_NoiseTracker_TheorizedSource_Noise_InGameNoise_
+  - name: (
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  - name: ','
+  - name: " "
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+- uid: Global.NoiseTracker.TheorizedSource
+  commentId: T:Global.NoiseTracker.TheorizedSource
+  isExternal: true
+  href: NoiseTracker.html
+  name: NoiseTracker.TheorizedSource
+  nameWithType: NoiseTracker.TheorizedSource
+  fullName: NoiseTracker.TheorizedSource
+  spec.csharp:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+  spec.vb:
+  - uid: Global.NoiseTracker
+    name: NoiseTracker
+    isExternal: true
+    href: NoiseTracker.html
+  - name: .
+  - uid: Global.NoiseTracker.TheorizedSource
+    name: TheorizedSource
+    isExternal: true
+    href: NoiseTracker.TheorizedSource.html
+- uid: Noise.InGameNoise
+  commentId: T:Noise.InGameNoise
+  parent: Noise
+  isExternal: true
+  href: Noise.InGameNoise.html
+  name: InGameNoise
+  nameWithType: InGameNoise
+  fullName: Noise.InGameNoise
+- uid: Noise
+  commentId: N:Noise
+  isExternal: true
+  href: Noise.html
+  name: Noise
+  nameWithType: Noise
+  fullName: Noise
+- uid: Watcher.BarnacleAI.floatGoalPos*
+  commentId: Overload:Watcher.BarnacleAI.floatGoalPos
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_floatGoalPos
+  name: floatGoalPos
+  nameWithType: BarnacleAI.floatGoalPos
+  fullName: Watcher.BarnacleAI.floatGoalPos
+- uid: Watcher.BarnacleAI.CombinedFear*
+  commentId: Overload:Watcher.BarnacleAI.CombinedFear
+  isExternal: true
+  href: Watcher.BarnacleAI.html#Watcher_BarnacleAI_CombinedFear
+  name: CombinedFear
+  nameWithType: BarnacleAI.CombinedFear
+  fullName: Watcher.BarnacleAI.CombinedFear

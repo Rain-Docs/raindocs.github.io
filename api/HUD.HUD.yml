@@ -1,0 +1,2286 @@
+### YamlMime:ManagedReference
+items:
+- uid: HUD.HUD
+  commentId: T:HUD.HUD
+  id: HUD
+  parent: HUD
+  children:
+  - HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)
+  - HUD.HUD.AddPart(HUD.HudPart)
+  - HUD.HUD.ClearAllSprites
+  - HUD.HUD.DisposeChatLog
+  - HUD.HUD.Draw(System.Single)
+  - HUD.HUD.HideGeneralHud
+  - HUD.HUD.HypoMeter
+  - HUD.HUD.InitChatLog(System.String[])
+  - HUD.HUD.InitDialogBox
+  - HUD.HUD.InitFastTravelHud(HUD.Map.MapData)
+  - HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)
+  - HUD.HUD.InitMultiplayerHud(ArenaGameSession)
+  - HUD.HUD.InitSafariHud(RoomCamera)
+  - HUD.HUD.InitSinglePlayerHud(RoomCamera)
+  - HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)
+  - HUD.HUD.PlaySound(SoundID)
+  - HUD.HUD.ResetMap(HUD.Map.MapData)
+  - HUD.HUD.Update
+  - HUD.HUD.breathMeter
+  - HUD.HUD.camoMeter
+  - HUD.HUD.chatLog
+  - HUD.HUD.dialogBox
+  - HUD.HUD.fContainers
+  - HUD.HUD.fadeCircles
+  - HUD.HUD.foodMeter
+  - HUD.HUD.gourmandmeter
+  - HUD.HUD.jollyMeter
+  - HUD.HUD.karmaMeter
+  - HUD.HUD.map
+  - HUD.HUD.owner
+  - HUD.HUD.parts
+  - HUD.HUD.pointerPositions
+  - HUD.HUD.rainMeter
+  - HUD.HUD.rainWorld
+  - HUD.HUD.showKarmaFoodRain
+  - HUD.HUD.textPrompt
+  - HUD.HUD.threatPulser
+  langs:
+  - csharp
+  - vb
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD.HUD
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:HUD.HUD</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class HUD
+    content.vb: Public Class HUD
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: HUD.HUD.owner
+  commentId: F:HUD.HUD.owner
+  id: owner
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: owner
+  nameWithType: HUD.owner
+  fullName: HUD.HUD.owner
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.owner</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public IOwnAHUD owner
+    return:
+      type: HUD.IOwnAHUD
+    content.vb: Public owner As IOwnAHUD
+- uid: HUD.HUD.rainWorld
+  commentId: F:HUD.HUD.rainWorld
+  id: rainWorld
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: rainWorld
+  nameWithType: HUD.rainWorld
+  fullName: HUD.HUD.rainWorld
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.rainWorld</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RainWorld rainWorld
+    return:
+      type: Global.RainWorld
+    content.vb: Public rainWorld As RainWorld
+- uid: HUD.HUD.parts
+  commentId: F:HUD.HUD.parts
+  id: parts
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: parts
+  nameWithType: HUD.parts
+  fullName: HUD.HUD.parts
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.parts</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<HudPart> parts
+    return:
+      type: System.Collections.Generic.List{HUD.HudPart}
+    content.vb: Public parts As List(Of HudPart)
+- uid: HUD.HUD.fContainers
+  commentId: F:HUD.HUD.fContainers
+  id: fContainers
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: fContainers
+  nameWithType: HUD.fContainers
+  fullName: HUD.HUD.fContainers
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.fContainers</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FContainer[] fContainers
+    return:
+      type: Global.FContainer[]
+    content.vb: Public fContainers As FContainer()
+- uid: HUD.HUD.fadeCircles
+  commentId: F:HUD.HUD.fadeCircles
+  id: fadeCircles
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: fadeCircles
+  nameWithType: HUD.fadeCircles
+  fullName: HUD.HUD.fadeCircles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.fadeCircles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<FadeCircle> fadeCircles
+    return:
+      type: System.Collections.Generic.List{HUD.FadeCircle}
+    content.vb: Public fadeCircles As List(Of FadeCircle)
+- uid: HUD.HUD.showKarmaFoodRain
+  commentId: F:HUD.HUD.showKarmaFoodRain
+  id: showKarmaFoodRain
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: showKarmaFoodRain
+  nameWithType: HUD.showKarmaFoodRain
+  fullName: HUD.HUD.showKarmaFoodRain
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.showKarmaFoodRain</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool showKarmaFoodRain
+    return:
+      type: System.Boolean
+    content.vb: Public showKarmaFoodRain As Boolean
+- uid: HUD.HUD.breathMeter
+  commentId: F:HUD.HUD.breathMeter
+  id: breathMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: breathMeter
+  nameWithType: HUD.breathMeter
+  fullName: HUD.HUD.breathMeter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.breathMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public BreathMeter breathMeter
+    return:
+      type: MoreSlugcats.BreathMeter
+    content.vb: Public breathMeter As BreathMeter
+- uid: HUD.HUD.threatPulser
+  commentId: F:HUD.HUD.threatPulser
+  id: threatPulser
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: threatPulser
+  nameWithType: HUD.threatPulser
+  fullName: HUD.HUD.threatPulser
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.threatPulser</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ThreatPulser threatPulser
+    return:
+      type: MoreSlugcats.ThreatPulser
+    content.vb: Public threatPulser As ThreatPulser
+- uid: HUD.HUD.chatLog
+  commentId: F:HUD.HUD.chatLog
+  id: chatLog
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: chatLog
+  nameWithType: HUD.chatLog
+  fullName: HUD.HUD.chatLog
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.chatLog</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ChatLogDisplay chatLog
+    return:
+      type: MoreSlugcats.ChatLogDisplay
+    content.vb: Public chatLog As ChatLogDisplay
+- uid: HUD.HUD.HypoMeter
+  commentId: F:HUD.HUD.HypoMeter
+  id: HypoMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: HypoMeter
+  nameWithType: HUD.HypoMeter
+  fullName: HUD.HUD.HypoMeter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.HypoMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HypothermiaMeter HypoMeter
+    return:
+      type: MoreSlugcats.HypothermiaMeter
+    content.vb: Public HypoMeter As HypothermiaMeter
+- uid: HUD.HUD.gourmandmeter
+  commentId: F:HUD.HUD.gourmandmeter
+  id: gourmandmeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: gourmandmeter
+  nameWithType: HUD.gourmandmeter
+  fullName: HUD.HUD.gourmandmeter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.gourmandmeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public GourmandMeter gourmandmeter
+    return:
+      type: MoreSlugcats.GourmandMeter
+    content.vb: Public gourmandmeter As GourmandMeter
+- uid: HUD.HUD.jollyMeter
+  commentId: F:HUD.HUD.jollyMeter
+  id: jollyMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: jollyMeter
+  nameWithType: HUD.jollyMeter
+  fullName: HUD.HUD.jollyMeter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.jollyMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public JollyMeter jollyMeter
+    return:
+      type: JollyCoop.JollyHUD.JollyMeter
+    content.vb: Public jollyMeter As JollyMeter
+- uid: HUD.HUD.pointerPositions
+  commentId: F:HUD.HUD.pointerPositions
+  id: pointerPositions
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: pointerPositions
+  nameWithType: HUD.pointerPositions
+  fullName: HUD.HUD.pointerPositions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.pointerPositions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Dictionary<JollyPlayerSpecificHud.JollyPointer, Vector2> pointerPositions
+    return:
+      type: System.Collections.Generic.Dictionary{JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer,UnityEngine.Vector2}
+    content.vb: Public pointerPositions As Dictionary(Of JollyPlayerSpecificHud.JollyPointer, Vector2)
+- uid: HUD.HUD.camoMeter
+  commentId: F:HUD.HUD.camoMeter
+  id: camoMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: camoMeter
+  nameWithType: HUD.camoMeter
+  fullName: HUD.HUD.camoMeter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.HUD.camoMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CamoMeter camoMeter
+    return:
+      type: Watcher.CamoMeter
+    content.vb: Public camoMeter As CamoMeter
+- uid: HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)
+  commentId: M:HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)
+  id: '#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)'
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: HUD(FContainer[], RainWorld, IOwnAHUD)
+  nameWithType: HUD.HUD(FContainer[], RainWorld, IOwnAHUD)
+  fullName: HUD.HUD.HUD(FContainer[], RainWorld, HUD.IOwnAHUD)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>HUD.HUD</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public HUD(FContainer[] fContainers, RainWorld rainWorld, IOwnAHUD owner)
+    parameters:
+    - id: fContainers
+      type: Global.FContainer[]
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fContainers</parameter>
+            <parameter>M:HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)</parameter>
+          </include>
+        </markup>
+    - id: rainWorld
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rainWorld</parameter>
+            <parameter>M:HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)</parameter>
+          </include>
+        </markup>
+    - id: owner
+      type: HUD.IOwnAHUD
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>owner</parameter>
+            <parameter>M:HUD.HUD.#ctor(FContainer[],RainWorld,HUD.IOwnAHUD)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(fContainers As FContainer(), rainWorld As RainWorld, owner As IOwnAHUD)
+  overload: HUD.HUD.#ctor*
+  nameWithType.vb: HUD.New(FContainer(), RainWorld, IOwnAHUD)
+  fullName.vb: HUD.HUD.New(FContainer(), RainWorld, HUD.IOwnAHUD)
+  name.vb: New(FContainer(), RainWorld, IOwnAHUD)
+- uid: HUD.HUD.Update
+  commentId: M:HUD.HUD.Update
+  id: Update
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: HUD.Update()
+  fullName: HUD.HUD.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: HUD.HUD.Update*
+- uid: HUD.HUD.Draw(System.Single)
+  commentId: M:HUD.HUD.Draw(System.Single)
+  id: Draw(System.Single)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: Draw(float)
+  nameWithType: HUD.Draw(float)
+  fullName: HUD.HUD.Draw(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.Draw(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Draw(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.HUD.Draw(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Draw(timeStacker As Single)
+  overload: HUD.HUD.Draw*
+  nameWithType.vb: HUD.Draw(Single)
+  fullName.vb: HUD.HUD.Draw(Single)
+  name.vb: Draw(Single)
+- uid: HUD.HUD.ResetMap(HUD.Map.MapData)
+  commentId: M:HUD.HUD.ResetMap(HUD.Map.MapData)
+  id: ResetMap(HUD.Map.MapData)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: ResetMap(MapData)
+  nameWithType: HUD.ResetMap(Map.MapData)
+  fullName: HUD.HUD.ResetMap(HUD.Map.MapData)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.ResetMap(HUD.Map.MapData)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ResetMap(Map.MapData mapData)
+    parameters:
+    - id: mapData
+      type: HUD.Map.MapData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>mapData</parameter>
+            <parameter>M:HUD.HUD.ResetMap(HUD.Map.MapData)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ResetMap(mapData As Map.MapData)
+  overload: HUD.HUD.ResetMap*
+- uid: HUD.HUD.PlaySound(SoundID)
+  commentId: M:HUD.HUD.PlaySound(SoundID)
+  id: PlaySound(SoundID)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: PlaySound(SoundID)
+  nameWithType: HUD.PlaySound(SoundID)
+  fullName: HUD.HUD.PlaySound(SoundID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.PlaySound(SoundID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlaySound(SoundID soundID)
+    parameters:
+    - id: soundID
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundID</parameter>
+            <parameter>M:HUD.HUD.PlaySound(SoundID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlaySound(soundID As SoundID)
+  overload: HUD.HUD.PlaySound*
+- uid: HUD.HUD.AddPart(HUD.HudPart)
+  commentId: M:HUD.HUD.AddPart(HUD.HudPart)
+  id: AddPart(HUD.HudPart)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: AddPart(HudPart)
+  nameWithType: HUD.AddPart(HudPart)
+  fullName: HUD.HUD.AddPart(HUD.HudPart)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.AddPart(HUD.HudPart)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddPart(HudPart part)
+    parameters:
+    - id: part
+      type: HUD.HudPart
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>part</parameter>
+            <parameter>M:HUD.HUD.AddPart(HUD.HudPart)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddPart(part As HudPart)
+  overload: HUD.HUD.AddPart*
+- uid: HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)
+  commentId: M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)
+  id: InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitGameOverMode(Grasp, int, int, Vector2)
+  nameWithType: HUD.InitGameOverMode(Creature.Grasp, int, int, Vector2)
+  fullName: HUD.HUD.InitGameOverMode(Creature.Grasp, int, int, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitGameOverMode(Creature.Grasp dependentOnGrasp, int foodInStomach, int deathRoom, Vector2 deathPos)
+    parameters:
+    - id: dependentOnGrasp
+      type: Global.Creature.Grasp
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dependentOnGrasp</parameter>
+            <parameter>M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: foodInStomach
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>foodInStomach</parameter>
+            <parameter>M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: deathRoom
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>deathRoom</parameter>
+            <parameter>M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: deathPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>deathPos</parameter>
+            <parameter>M:HUD.HUD.InitGameOverMode(Creature.Grasp,System.Int32,System.Int32,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitGameOverMode(dependentOnGrasp As Creature.Grasp, foodInStomach As Integer, deathRoom As Integer, deathPos As Vector2)
+  overload: HUD.HUD.InitGameOverMode*
+  nameWithType.vb: HUD.InitGameOverMode(Creature.Grasp, Integer, Integer, Vector2)
+  fullName.vb: HUD.HUD.InitGameOverMode(Creature.Grasp, Integer, Integer, UnityEngine.Vector2)
+  name.vb: InitGameOverMode(Grasp, Integer, Integer, Vector2)
+- uid: HUD.HUD.InitSinglePlayerHud(RoomCamera)
+  commentId: M:HUD.HUD.InitSinglePlayerHud(RoomCamera)
+  id: InitSinglePlayerHud(RoomCamera)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitSinglePlayerHud(RoomCamera)
+  nameWithType: HUD.InitSinglePlayerHud(RoomCamera)
+  fullName: HUD.HUD.InitSinglePlayerHud(RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitSinglePlayerHud(RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitSinglePlayerHud(RoomCamera cam)
+    parameters:
+    - id: cam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cam</parameter>
+            <parameter>M:HUD.HUD.InitSinglePlayerHud(RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitSinglePlayerHud(cam As RoomCamera)
+  overload: HUD.HUD.InitSinglePlayerHud*
+- uid: HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)
+  commentId: M:HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)
+  id: InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitSleepHud(SleepAndDeathScreen, MapData, SlugcatStats)
+  nameWithType: HUD.InitSleepHud(SleepAndDeathScreen, Map.MapData, SlugcatStats)
+  fullName: HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen, HUD.Map.MapData, SlugcatStats)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitSleepHud(SleepAndDeathScreen sleepAndDeathScreen, Map.MapData mapData, SlugcatStats charStats)
+    parameters:
+    - id: sleepAndDeathScreen
+      type: Menu.SleepAndDeathScreen
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sleepAndDeathScreen</parameter>
+            <parameter>M:HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)</parameter>
+          </include>
+        </markup>
+    - id: mapData
+      type: HUD.Map.MapData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>mapData</parameter>
+            <parameter>M:HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)</parameter>
+          </include>
+        </markup>
+    - id: charStats
+      type: Global.SlugcatStats
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>charStats</parameter>
+            <parameter>M:HUD.HUD.InitSleepHud(Menu.SleepAndDeathScreen,HUD.Map.MapData,SlugcatStats)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitSleepHud(sleepAndDeathScreen As SleepAndDeathScreen, mapData As Map.MapData, charStats As SlugcatStats)
+  overload: HUD.HUD.InitSleepHud*
+- uid: HUD.HUD.InitFastTravelHud(HUD.Map.MapData)
+  commentId: M:HUD.HUD.InitFastTravelHud(HUD.Map.MapData)
+  id: InitFastTravelHud(HUD.Map.MapData)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitFastTravelHud(MapData)
+  nameWithType: HUD.InitFastTravelHud(Map.MapData)
+  fullName: HUD.HUD.InitFastTravelHud(HUD.Map.MapData)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitFastTravelHud(HUD.Map.MapData)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitFastTravelHud(Map.MapData mapData)
+    parameters:
+    - id: mapData
+      type: HUD.Map.MapData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>mapData</parameter>
+            <parameter>M:HUD.HUD.InitFastTravelHud(HUD.Map.MapData)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitFastTravelHud(mapData As Map.MapData)
+  overload: HUD.HUD.InitFastTravelHud*
+- uid: HUD.HUD.InitMultiplayerHud(ArenaGameSession)
+  commentId: M:HUD.HUD.InitMultiplayerHud(ArenaGameSession)
+  id: InitMultiplayerHud(ArenaGameSession)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitMultiplayerHud(ArenaGameSession)
+  nameWithType: HUD.InitMultiplayerHud(ArenaGameSession)
+  fullName: HUD.HUD.InitMultiplayerHud(ArenaGameSession)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitMultiplayerHud(ArenaGameSession)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitMultiplayerHud(ArenaGameSession session)
+    parameters:
+    - id: session
+      type: Global.ArenaGameSession
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>session</parameter>
+            <parameter>M:HUD.HUD.InitMultiplayerHud(ArenaGameSession)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitMultiplayerHud(session As ArenaGameSession)
+  overload: HUD.HUD.InitMultiplayerHud*
+- uid: HUD.HUD.InitDialogBox
+  commentId: M:HUD.HUD.InitDialogBox
+  id: InitDialogBox
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitDialogBox()
+  nameWithType: HUD.InitDialogBox()
+  fullName: HUD.HUD.InitDialogBox()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitDialogBox</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DialogBox InitDialogBox()
+    return:
+      type: HUD.DialogBox
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.HUD.InitDialogBox</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function InitDialogBox() As DialogBox
+  overload: HUD.HUD.InitDialogBox*
+- uid: HUD.HUD.ClearAllSprites
+  commentId: M:HUD.HUD.ClearAllSprites
+  id: ClearAllSprites
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: ClearAllSprites()
+  nameWithType: HUD.ClearAllSprites()
+  fullName: HUD.HUD.ClearAllSprites()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.ClearAllSprites</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ClearAllSprites()
+    content.vb: Public Sub ClearAllSprites()
+  overload: HUD.HUD.ClearAllSprites*
+- uid: HUD.HUD.InitChatLog(System.String[])
+  commentId: M:HUD.HUD.InitChatLog(System.String[])
+  id: InitChatLog(System.String[])
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitChatLog(string[])
+  nameWithType: HUD.InitChatLog(string[])
+  fullName: HUD.HUD.InitChatLog(string[])
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitChatLog(System.String[])</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ChatLogDisplay InitChatLog(string[] messages)
+    parameters:
+    - id: messages
+      type: System.String[]
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>messages</parameter>
+            <parameter>M:HUD.HUD.InitChatLog(System.String[])</parameter>
+          </include>
+        </markup>
+    return:
+      type: MoreSlugcats.ChatLogDisplay
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.HUD.InitChatLog(System.String[])</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function InitChatLog(messages As String()) As ChatLogDisplay
+  overload: HUD.HUD.InitChatLog*
+  nameWithType.vb: HUD.InitChatLog(String())
+  fullName.vb: HUD.HUD.InitChatLog(String())
+  name.vb: InitChatLog(String())
+- uid: HUD.HUD.DisposeChatLog
+  commentId: M:HUD.HUD.DisposeChatLog
+  id: DisposeChatLog
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: DisposeChatLog()
+  nameWithType: HUD.DisposeChatLog()
+  fullName: HUD.HUD.DisposeChatLog()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.DisposeChatLog</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DisposeChatLog()
+    content.vb: Public Sub DisposeChatLog()
+  overload: HUD.HUD.DisposeChatLog*
+- uid: HUD.HUD.InitSafariHud(RoomCamera)
+  commentId: M:HUD.HUD.InitSafariHud(RoomCamera)
+  id: InitSafariHud(RoomCamera)
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: InitSafariHud(RoomCamera)
+  nameWithType: HUD.InitSafariHud(RoomCamera)
+  fullName: HUD.HUD.InitSafariHud(RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.HUD.InitSafariHud(RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitSafariHud(RoomCamera cam)
+    parameters:
+    - id: cam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cam</parameter>
+            <parameter>M:HUD.HUD.InitSafariHud(RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitSafariHud(cam As RoomCamera)
+  overload: HUD.HUD.InitSafariHud*
+- uid: HUD.HUD.foodMeter
+  commentId: P:HUD.HUD.foodMeter
+  id: foodMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: foodMeter
+  nameWithType: HUD.foodMeter
+  fullName: HUD.HUD.foodMeter
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.foodMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FoodMeter foodMeter { get; }
+    parameters: []
+    return:
+      type: HUD.FoodMeter
+    content.vb: Public ReadOnly Property foodMeter As FoodMeter
+  overload: HUD.HUD.foodMeter*
+- uid: HUD.HUD.map
+  commentId: P:HUD.HUD.map
+  id: map
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: map
+  nameWithType: HUD.map
+  fullName: HUD.HUD.map
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.map</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Map map { get; }
+    parameters: []
+    return:
+      type: HUD.Map
+    content.vb: Public ReadOnly Property map As Map
+  overload: HUD.HUD.map*
+- uid: HUD.HUD.textPrompt
+  commentId: P:HUD.HUD.textPrompt
+  id: textPrompt
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: textPrompt
+  nameWithType: HUD.textPrompt
+  fullName: HUD.HUD.textPrompt
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.textPrompt</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public TextPrompt textPrompt { get; }
+    parameters: []
+    return:
+      type: HUD.TextPrompt
+    content.vb: Public ReadOnly Property textPrompt As TextPrompt
+  overload: HUD.HUD.textPrompt*
+- uid: HUD.HUD.karmaMeter
+  commentId: P:HUD.HUD.karmaMeter
+  id: karmaMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: karmaMeter
+  nameWithType: HUD.karmaMeter
+  fullName: HUD.HUD.karmaMeter
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.karmaMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public KarmaMeter karmaMeter { get; }
+    parameters: []
+    return:
+      type: HUD.KarmaMeter
+    content.vb: Public ReadOnly Property karmaMeter As KarmaMeter
+  overload: HUD.HUD.karmaMeter*
+- uid: HUD.HUD.rainMeter
+  commentId: P:HUD.HUD.rainMeter
+  id: rainMeter
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: rainMeter
+  nameWithType: HUD.rainMeter
+  fullName: HUD.HUD.rainMeter
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.rainMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RainMeter rainMeter { get; }
+    parameters: []
+    return:
+      type: HUD.RainMeter
+    content.vb: Public ReadOnly Property rainMeter As RainMeter
+  overload: HUD.HUD.rainMeter*
+- uid: HUD.HUD.dialogBox
+  commentId: P:HUD.HUD.dialogBox
+  id: dialogBox
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: dialogBox
+  nameWithType: HUD.dialogBox
+  fullName: HUD.HUD.dialogBox
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.dialogBox</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DialogBox dialogBox { get; }
+    parameters: []
+    return:
+      type: HUD.DialogBox
+    content.vb: Public ReadOnly Property dialogBox As DialogBox
+  overload: HUD.HUD.dialogBox*
+- uid: HUD.HUD.HideGeneralHud
+  commentId: P:HUD.HUD.HideGeneralHud
+  id: HideGeneralHud
+  parent: HUD.HUD
+  langs:
+  - csharp
+  - vb
+  name: HideGeneralHud
+  nameWithType: HUD.HideGeneralHud
+  fullName: HUD.HUD.HideGeneralHud
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.HUD.HideGeneralHud</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool HideGeneralHud { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HideGeneralHud As Boolean
+  overload: HUD.HUD.HideGeneralHud*
+references:
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HUD.IOwnAHUD
+  commentId: T:HUD.IOwnAHUD
+  parent: HUD
+  isExternal: true
+  href: HUD.IOwnAHUD.html
+  name: IOwnAHUD
+  nameWithType: IOwnAHUD
+  fullName: HUD.IOwnAHUD
+- uid: Global.RainWorld
+  commentId: T:Global.RainWorld
+  isExternal: true
+  href: RainWorld.html
+  name: RainWorld
+  nameWithType: RainWorld
+  fullName: RainWorld
+- uid: System.Collections.Generic.List{HUD.HudPart}
+  commentId: T:System.Collections.Generic.List{HUD.HudPart}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HudPart>
+  nameWithType: List<HudPart>
+  fullName: System.Collections.Generic.List<HUD.HudPart>
+  nameWithType.vb: List(Of HudPart)
+  fullName.vb: System.Collections.Generic.List(Of HUD.HudPart)
+  name.vb: List(Of HudPart)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.HudPart
+    name: HudPart
+    isExternal: true
+    href: HUD.HudPart.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.HudPart
+    name: HudPart
+    isExternal: true
+    href: HUD.HudPart.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.FContainer[]
+  isExternal: true
+  href: FContainer.html
+  name: FContainer[]
+  nameWithType: FContainer[]
+  fullName: FContainer[]
+  nameWithType.vb: FContainer()
+  fullName.vb: FContainer()
+  name.vb: FContainer()
+  spec.csharp:
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{HUD.FadeCircle}
+  commentId: T:System.Collections.Generic.List{HUD.FadeCircle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FadeCircle>
+  nameWithType: List<FadeCircle>
+  fullName: System.Collections.Generic.List<HUD.FadeCircle>
+  nameWithType.vb: List(Of FadeCircle)
+  fullName.vb: System.Collections.Generic.List(Of HUD.FadeCircle)
+  name.vb: List(Of FadeCircle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.FadeCircle
+    name: FadeCircle
+    isExternal: true
+    href: HUD.FadeCircle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.FadeCircle
+    name: FadeCircle
+    isExternal: true
+    href: HUD.FadeCircle.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoreSlugcats.BreathMeter
+  commentId: T:MoreSlugcats.BreathMeter
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.BreathMeter.html
+  name: BreathMeter
+  nameWithType: BreathMeter
+  fullName: MoreSlugcats.BreathMeter
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: MoreSlugcats.ThreatPulser
+  commentId: T:MoreSlugcats.ThreatPulser
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.ThreatPulser.html
+  name: ThreatPulser
+  nameWithType: ThreatPulser
+  fullName: MoreSlugcats.ThreatPulser
+- uid: MoreSlugcats.ChatLogDisplay
+  commentId: T:MoreSlugcats.ChatLogDisplay
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.ChatLogDisplay.html
+  name: ChatLogDisplay
+  nameWithType: ChatLogDisplay
+  fullName: MoreSlugcats.ChatLogDisplay
+- uid: MoreSlugcats.HypothermiaMeter
+  commentId: T:MoreSlugcats.HypothermiaMeter
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.HypothermiaMeter.html
+  name: HypothermiaMeter
+  nameWithType: HypothermiaMeter
+  fullName: MoreSlugcats.HypothermiaMeter
+- uid: MoreSlugcats.GourmandMeter
+  commentId: T:MoreSlugcats.GourmandMeter
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.GourmandMeter.html
+  name: GourmandMeter
+  nameWithType: GourmandMeter
+  fullName: MoreSlugcats.GourmandMeter
+- uid: JollyCoop.JollyHUD.JollyMeter
+  commentId: T:JollyCoop.JollyHUD.JollyMeter
+  parent: JollyCoop.JollyHUD
+  isExternal: true
+  href: JollyCoop.JollyHUD.JollyMeter.html
+  name: JollyMeter
+  nameWithType: JollyMeter
+  fullName: JollyCoop.JollyHUD.JollyMeter
+- uid: JollyCoop.JollyHUD
+  commentId: N:JollyCoop.JollyHUD
+  isExternal: true
+  href: JollyCoop.html
+  name: JollyCoop.JollyHUD
+  nameWithType: JollyCoop.JollyHUD
+  fullName: JollyCoop.JollyHUD
+  spec.csharp:
+  - uid: JollyCoop
+    name: JollyCoop
+    isExternal: true
+    href: JollyCoop.html
+  - name: .
+  - uid: JollyCoop.JollyHUD
+    name: JollyHUD
+    isExternal: true
+    href: JollyCoop.JollyHUD.html
+  spec.vb:
+  - uid: JollyCoop
+    name: JollyCoop
+    isExternal: true
+    href: JollyCoop.html
+  - name: .
+  - uid: JollyCoop.JollyHUD
+    name: JollyHUD
+    isExternal: true
+    href: JollyCoop.JollyHUD.html
+- uid: System.Collections.Generic.Dictionary{JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer,UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.Dictionary{JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer,UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<JollyPlayerSpecificHud.JollyPointer, Vector2>
+  nameWithType: Dictionary<JollyPlayerSpecificHud.JollyPointer, Vector2>
+  fullName: System.Collections.Generic.Dictionary<JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer, UnityEngine.Vector2>
+  nameWithType.vb: Dictionary(Of JollyPlayerSpecificHud.JollyPointer, Vector2)
+  fullName.vb: System.Collections.Generic.Dictionary(Of JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer, UnityEngine.Vector2)
+  name.vb: Dictionary(Of JollyPlayerSpecificHud.JollyPointer, Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: JollyCoop.JollyHUD.JollyPlayerSpecificHud
+    name: JollyPlayerSpecificHud
+    isExternal: true
+    href: JollyCoop.JollyHUD.JollyPlayerSpecificHud.html
+  - name: .
+  - uid: JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer
+    name: JollyPointer
+    isExternal: true
+    href: JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: JollyCoop.JollyHUD.JollyPlayerSpecificHud
+    name: JollyPlayerSpecificHud
+    isExternal: true
+    href: JollyCoop.JollyHUD.JollyPlayerSpecificHud.html
+  - name: .
+  - uid: JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer
+    name: JollyPointer
+    isExternal: true
+    href: JollyCoop.JollyHUD.JollyPlayerSpecificHud.JollyPointer.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Watcher.CamoMeter
+  commentId: T:Watcher.CamoMeter
+  parent: Watcher
+  isExternal: true
+  href: Watcher.CamoMeter.html
+  name: CamoMeter
+  nameWithType: CamoMeter
+  fullName: Watcher.CamoMeter
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: HUD.HUD.#ctor*
+  commentId: Overload:HUD.HUD.#ctor
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD__ctor_FContainer___RainWorld_HUD_IOwnAHUD_
+  name: HUD
+  nameWithType: HUD.HUD
+  fullName: HUD.HUD.HUD
+  nameWithType.vb: HUD.New
+  fullName.vb: HUD.HUD.New
+  name.vb: New
+- uid: HUD.HUD.Update*
+  commentId: Overload:HUD.HUD.Update
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_Update
+  name: Update
+  nameWithType: HUD.Update
+  fullName: HUD.HUD.Update
+- uid: HUD.HUD.Draw*
+  commentId: Overload:HUD.HUD.Draw
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_Draw_System_Single_
+  name: Draw
+  nameWithType: HUD.Draw
+  fullName: HUD.HUD.Draw
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: HUD.HUD.ResetMap*
+  commentId: Overload:HUD.HUD.ResetMap
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_ResetMap_HUD_Map_MapData_
+  name: ResetMap
+  nameWithType: HUD.ResetMap
+  fullName: HUD.HUD.ResetMap
+- uid: HUD.Map.MapData
+  commentId: T:HUD.Map.MapData
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map.MapData
+  nameWithType: Map.MapData
+  fullName: HUD.Map.MapData
+  spec.csharp:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapData
+    name: MapData
+    isExternal: true
+    href: HUD.Map.MapData.html
+  spec.vb:
+  - uid: HUD.Map
+    name: Map
+    isExternal: true
+    href: HUD.Map.html
+  - name: .
+  - uid: HUD.Map.MapData
+    name: MapData
+    isExternal: true
+    href: HUD.Map.MapData.html
+- uid: HUD.HUD.PlaySound*
+  commentId: Overload:HUD.HUD.PlaySound
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_PlaySound_SoundID_
+  name: PlaySound
+  nameWithType: HUD.PlaySound
+  fullName: HUD.HUD.PlaySound
+- uid: Global.SoundID
+  commentId: T:Global.SoundID
+  isExternal: true
+  href: SoundID.html
+  name: SoundID
+  nameWithType: SoundID
+  fullName: SoundID
+- uid: HUD.HUD.AddPart*
+  commentId: Overload:HUD.HUD.AddPart
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_AddPart_HUD_HudPart_
+  name: AddPart
+  nameWithType: HUD.AddPart
+  fullName: HUD.HUD.AddPart
+- uid: HUD.HudPart
+  commentId: T:HUD.HudPart
+  parent: HUD
+  isExternal: true
+  href: HUD.HudPart.html
+  name: HudPart
+  nameWithType: HudPart
+  fullName: HUD.HudPart
+- uid: HUD.HUD.InitGameOverMode*
+  commentId: Overload:HUD.HUD.InitGameOverMode
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitGameOverMode_Creature_Grasp_System_Int32_System_Int32_UnityEngine_Vector2_
+  name: InitGameOverMode
+  nameWithType: HUD.InitGameOverMode
+  fullName: HUD.HUD.InitGameOverMode
+- uid: Global.Creature.Grasp
+  commentId: T:Global.Creature.Grasp
+  isExternal: true
+  href: Creature.html
+  name: Creature.Grasp
+  nameWithType: Creature.Grasp
+  fullName: Creature.Grasp
+  spec.csharp:
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: .
+  - uid: Global.Creature.Grasp
+    name: Grasp
+    isExternal: true
+    href: Creature.Grasp.html
+  spec.vb:
+  - uid: Global.Creature
+    name: Creature
+    isExternal: true
+    href: Creature.html
+  - name: .
+  - uid: Global.Creature.Grasp
+    name: Grasp
+    isExternal: true
+    href: Creature.Grasp.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: HUD.HUD.InitSinglePlayerHud*
+  commentId: Overload:HUD.HUD.InitSinglePlayerHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitSinglePlayerHud_RoomCamera_
+  name: InitSinglePlayerHud
+  nameWithType: HUD.InitSinglePlayerHud
+  fullName: HUD.HUD.InitSinglePlayerHud
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: HUD.HUD.InitSleepHud*
+  commentId: Overload:HUD.HUD.InitSleepHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitSleepHud_Menu_SleepAndDeathScreen_HUD_Map_MapData_SlugcatStats_
+  name: InitSleepHud
+  nameWithType: HUD.InitSleepHud
+  fullName: HUD.HUD.InitSleepHud
+- uid: Menu.SleepAndDeathScreen
+  commentId: T:Menu.SleepAndDeathScreen
+  parent: Menu
+  isExternal: true
+  href: Menu.SleepAndDeathScreen.html
+  name: SleepAndDeathScreen
+  nameWithType: SleepAndDeathScreen
+  fullName: Menu.SleepAndDeathScreen
+- uid: Global.SlugcatStats
+  commentId: T:Global.SlugcatStats
+  isExternal: true
+  href: SlugcatStats.html
+  name: SlugcatStats
+  nameWithType: SlugcatStats
+  fullName: SlugcatStats
+- uid: Menu
+  commentId: N:Menu
+  isExternal: true
+  href: Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
+- uid: HUD.HUD.InitFastTravelHud*
+  commentId: Overload:HUD.HUD.InitFastTravelHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitFastTravelHud_HUD_Map_MapData_
+  name: InitFastTravelHud
+  nameWithType: HUD.InitFastTravelHud
+  fullName: HUD.HUD.InitFastTravelHud
+- uid: HUD.HUD.InitMultiplayerHud*
+  commentId: Overload:HUD.HUD.InitMultiplayerHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitMultiplayerHud_ArenaGameSession_
+  name: InitMultiplayerHud
+  nameWithType: HUD.InitMultiplayerHud
+  fullName: HUD.HUD.InitMultiplayerHud
+- uid: Global.ArenaGameSession
+  commentId: T:Global.ArenaGameSession
+  isExternal: true
+  href: ArenaGameSession.html
+  name: ArenaGameSession
+  nameWithType: ArenaGameSession
+  fullName: ArenaGameSession
+- uid: HUD.HUD.InitDialogBox*
+  commentId: Overload:HUD.HUD.InitDialogBox
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitDialogBox
+  name: InitDialogBox
+  nameWithType: HUD.InitDialogBox
+  fullName: HUD.HUD.InitDialogBox
+- uid: HUD.DialogBox
+  commentId: T:HUD.DialogBox
+  parent: HUD
+  isExternal: true
+  href: HUD.DialogBox.html
+  name: DialogBox
+  nameWithType: DialogBox
+  fullName: HUD.DialogBox
+- uid: HUD.HUD.ClearAllSprites*
+  commentId: Overload:HUD.HUD.ClearAllSprites
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_ClearAllSprites
+  name: ClearAllSprites
+  nameWithType: HUD.ClearAllSprites
+  fullName: HUD.HUD.ClearAllSprites
+- uid: HUD.HUD.InitChatLog*
+  commentId: Overload:HUD.HUD.InitChatLog
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitChatLog_System_String___
+  name: InitChatLog
+  nameWithType: HUD.InitChatLog
+  fullName: HUD.HUD.InitChatLog
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: HUD.HUD.DisposeChatLog*
+  commentId: Overload:HUD.HUD.DisposeChatLog
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_DisposeChatLog
+  name: DisposeChatLog
+  nameWithType: HUD.DisposeChatLog
+  fullName: HUD.HUD.DisposeChatLog
+- uid: HUD.HUD.InitSafariHud*
+  commentId: Overload:HUD.HUD.InitSafariHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_InitSafariHud_RoomCamera_
+  name: InitSafariHud
+  nameWithType: HUD.InitSafariHud
+  fullName: HUD.HUD.InitSafariHud
+- uid: HUD.HUD.foodMeter*
+  commentId: Overload:HUD.HUD.foodMeter
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_foodMeter
+  name: foodMeter
+  nameWithType: HUD.foodMeter
+  fullName: HUD.HUD.foodMeter
+- uid: HUD.FoodMeter
+  commentId: T:HUD.FoodMeter
+  parent: HUD
+  isExternal: true
+  href: HUD.FoodMeter.html
+  name: FoodMeter
+  nameWithType: FoodMeter
+  fullName: HUD.FoodMeter
+- uid: HUD.HUD.map*
+  commentId: Overload:HUD.HUD.map
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_map
+  name: map
+  nameWithType: HUD.map
+  fullName: HUD.HUD.map
+- uid: HUD.Map
+  commentId: T:HUD.Map
+  parent: HUD
+  isExternal: true
+  href: HUD.Map.html
+  name: Map
+  nameWithType: Map
+  fullName: HUD.Map
+- uid: HUD.HUD.textPrompt*
+  commentId: Overload:HUD.HUD.textPrompt
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_textPrompt
+  name: textPrompt
+  nameWithType: HUD.textPrompt
+  fullName: HUD.HUD.textPrompt
+- uid: HUD.TextPrompt
+  commentId: T:HUD.TextPrompt
+  parent: HUD
+  isExternal: true
+  href: HUD.TextPrompt.html
+  name: TextPrompt
+  nameWithType: TextPrompt
+  fullName: HUD.TextPrompt
+- uid: HUD.HUD.karmaMeter*
+  commentId: Overload:HUD.HUD.karmaMeter
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_karmaMeter
+  name: karmaMeter
+  nameWithType: HUD.karmaMeter
+  fullName: HUD.HUD.karmaMeter
+- uid: HUD.KarmaMeter
+  commentId: T:HUD.KarmaMeter
+  parent: HUD
+  isExternal: true
+  href: HUD.KarmaMeter.html
+  name: KarmaMeter
+  nameWithType: KarmaMeter
+  fullName: HUD.KarmaMeter
+- uid: HUD.HUD.rainMeter*
+  commentId: Overload:HUD.HUD.rainMeter
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_rainMeter
+  name: rainMeter
+  nameWithType: HUD.rainMeter
+  fullName: HUD.HUD.rainMeter
+- uid: HUD.RainMeter
+  commentId: T:HUD.RainMeter
+  parent: HUD
+  isExternal: true
+  href: HUD.RainMeter.html
+  name: RainMeter
+  nameWithType: RainMeter
+  fullName: HUD.RainMeter
+- uid: HUD.HUD.dialogBox*
+  commentId: Overload:HUD.HUD.dialogBox
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_dialogBox
+  name: dialogBox
+  nameWithType: HUD.dialogBox
+  fullName: HUD.HUD.dialogBox
+- uid: HUD.HUD.HideGeneralHud*
+  commentId: Overload:HUD.HUD.HideGeneralHud
+  isExternal: true
+  href: HUD.HUD.html#HUD_HUD_HideGeneralHud
+  name: HideGeneralHud
+  nameWithType: HUD.HideGeneralHud
+  fullName: HUD.HUD.HideGeneralHud

@@ -1,0 +1,1627 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Conversation
+  commentId: T:Global.Conversation
+  id: Conversation
+  parent: Global
+  children:
+  - Global.Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)
+  - Global.Conversation.AddEvents
+  - Global.Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  - Global.Conversation.DecryptAllDialogue
+  - Global.Conversation.Destroy
+  - Global.Conversation.EncryptAllDialogue
+  - Global.Conversation.EventsFileExists(RainWorld,System.Int32)
+  - Global.Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)
+  - Global.Conversation.ForceAddMessage(System.String,System.Int32)
+  - Global.Conversation.Interrupt(System.String,System.Int32)
+  - Global.Conversation.LoadEventsFromFile(System.Int32)
+  - Global.Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)
+  - Global.Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)
+  - Global.Conversation.RestartCurrent
+  - Global.Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)
+  - Global.Conversation.Update
+  - Global.Conversation.colorMode
+  - Global.Conversation.currentSaveFile
+  - Global.Conversation.dialogBox
+  - Global.Conversation.events
+  - Global.Conversation.id
+  - Global.Conversation.interfaceOwner
+  - Global.Conversation.paused
+  - Global.Conversation.slatedForDeletion
+  langs:
+  - csharp
+  - vb
+  name: Conversation
+  nameWithType: Conversation
+  fullName: Conversation
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Conversation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public abstract class Conversation
+    content.vb: Public MustInherit Class Conversation
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - DevInterface.ConversationLoader
+  - Global.GhostConversation
+  - Global.SLOracleBehaviorHasMark.MoonConversation
+  - Global.SSOracleBehavior.PebblesConversation
+  - MoreSlugcats.CLOracleBehavior.CLConversation
+  - MoreSlugcats.CollectionsMenu.ConversationLoader
+  - MoreSlugcats.SSOracleRotBehavior.RMConversation
+  - Watcher.PrinceBehavior.PrinceConversation
+  - Watcher.WatcherRoomSpecificScript.WORA_KarmaSigils.KarmaSigilConversation
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.Conversation.slatedForDeletion
+  commentId: F:Global.Conversation.slatedForDeletion
+  id: slatedForDeletion
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: slatedForDeletion
+  nameWithType: Conversation.slatedForDeletion
+  fullName: Conversation.slatedForDeletion
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.slatedForDeletion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool slatedForDeletion
+    return:
+      type: System.Boolean
+    content.vb: Public slatedForDeletion As Boolean
+- uid: Global.Conversation.id
+  commentId: F:Global.Conversation.id
+  id: id
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: Conversation.id
+  fullName: Conversation.id
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.id</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Conversation.ID id
+    return:
+      type: Global.Conversation.ID
+    content.vb: Public id As Conversation.ID
+- uid: Global.Conversation.dialogBox
+  commentId: F:Global.Conversation.dialogBox
+  id: dialogBox
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: dialogBox
+  nameWithType: Conversation.dialogBox
+  fullName: Conversation.dialogBox
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.dialogBox</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public DialogBox dialogBox
+    return:
+      type: HUD.DialogBox
+    content.vb: Public dialogBox As DialogBox
+- uid: Global.Conversation.events
+  commentId: F:Global.Conversation.events
+  id: events
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: events
+  nameWithType: Conversation.events
+  fullName: Conversation.events
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.events</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Conversation.DialogueEvent> events
+    return:
+      type: System.Collections.Generic.List{Conversation.DialogueEvent}
+    content.vb: Public events As List(Of Conversation.DialogueEvent)
+- uid: Global.Conversation.interfaceOwner
+  commentId: F:Global.Conversation.interfaceOwner
+  id: interfaceOwner
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: interfaceOwner
+  nameWithType: Conversation.interfaceOwner
+  fullName: Conversation.interfaceOwner
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.interfaceOwner</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Conversation.IOwnAConversation interfaceOwner
+    return:
+      type: Global.Conversation.IOwnAConversation
+    content.vb: Public interfaceOwner As Conversation.IOwnAConversation
+- uid: Global.Conversation.paused
+  commentId: F:Global.Conversation.paused
+  id: paused
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: paused
+  nameWithType: Conversation.paused
+  fullName: Conversation.paused
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.paused</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool paused
+    return:
+      type: System.Boolean
+    content.vb: Public paused As Boolean
+- uid: Global.Conversation.colorMode
+  commentId: F:Global.Conversation.colorMode
+  id: colorMode
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: colorMode
+  nameWithType: Conversation.colorMode
+  fullName: Conversation.colorMode
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.colorMode</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool colorMode
+    return:
+      type: System.Boolean
+    content.vb: Public colorMode As Boolean
+- uid: Global.Conversation.currentSaveFile
+  commentId: F:Global.Conversation.currentSaveFile
+  id: currentSaveFile
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: currentSaveFile
+  nameWithType: Conversation.currentSaveFile
+  fullName: Conversation.currentSaveFile
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Conversation.currentSaveFile</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SlugcatStats.Name currentSaveFile
+    return:
+      type: Global.SlugcatStats.Name
+    content.vb: Public currentSaveFile As SlugcatStats.Name
+- uid: Global.Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)
+  commentId: M:Global.Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)
+  id: '#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)'
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: Conversation(IOwnAConversation, ID, DialogBox)
+  nameWithType: Conversation.Conversation(Conversation.IOwnAConversation, Conversation.ID, DialogBox)
+  fullName: Conversation.Conversation(Conversation.IOwnAConversation, Conversation.ID, HUD.DialogBox)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Conversation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Conversation(Conversation.IOwnAConversation interfaceOwner, Conversation.ID id, DialogBox dialogBox)
+    parameters:
+    - id: interfaceOwner
+      type: Global.Conversation.IOwnAConversation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>interfaceOwner</parameter>
+            <parameter>M:Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)</parameter>
+          </include>
+        </markup>
+    - id: id
+      type: Global.Conversation.ID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>id</parameter>
+            <parameter>M:Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)</parameter>
+          </include>
+        </markup>
+    - id: dialogBox
+      type: HUD.DialogBox
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dialogBox</parameter>
+            <parameter>M:Conversation.#ctor(Conversation.IOwnAConversation,Conversation.ID,HUD.DialogBox)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(interfaceOwner As Conversation.IOwnAConversation, id As Conversation.ID, dialogBox As DialogBox)
+  overload: Global.Conversation.#ctor*
+  nameWithType.vb: Conversation.New(Conversation.IOwnAConversation, Conversation.ID, DialogBox)
+  fullName.vb: Conversation.New(Conversation.IOwnAConversation, Conversation.ID, HUD.DialogBox)
+  name.vb: New(IOwnAConversation, ID, DialogBox)
+- uid: Global.Conversation.Update
+  commentId: M:Global.Conversation.Update
+  id: Update
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: Conversation.Update()
+  fullName: Conversation.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual void Update()
+    content.vb: Public Overridable Sub Update()
+  overload: Global.Conversation.Update*
+- uid: Global.Conversation.RestartCurrent
+  commentId: M:Global.Conversation.RestartCurrent
+  id: RestartCurrent
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: RestartCurrent()
+  nameWithType: Conversation.RestartCurrent()
+  fullName: Conversation.RestartCurrent()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.RestartCurrent</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RestartCurrent()
+    content.vb: Public Sub RestartCurrent()
+  overload: Global.Conversation.RestartCurrent*
+- uid: Global.Conversation.Destroy
+  commentId: M:Global.Conversation.Destroy
+  id: Destroy
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: Destroy()
+  nameWithType: Conversation.Destroy()
+  fullName: Conversation.Destroy()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.Destroy</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Destroy()
+    content.vb: Public Sub Destroy()
+  overload: Global.Conversation.Destroy*
+- uid: Global.Conversation.Interrupt(System.String,System.Int32)
+  commentId: M:Global.Conversation.Interrupt(System.String,System.Int32)
+  id: Interrupt(System.String,System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: Interrupt(string, int)
+  nameWithType: Conversation.Interrupt(string, int)
+  fullName: Conversation.Interrupt(string, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.Interrupt(System.String,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Interrupt(string text, int extraLinger)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:Conversation.Interrupt(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: extraLinger
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>extraLinger</parameter>
+            <parameter>M:Conversation.Interrupt(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub Interrupt(text As String, extraLinger As Integer)
+  overload: Global.Conversation.Interrupt*
+  nameWithType.vb: Conversation.Interrupt(String, Integer)
+  fullName.vb: Conversation.Interrupt(String, Integer)
+  name.vb: Interrupt(String, Integer)
+- uid: Global.Conversation.ForceAddMessage(System.String,System.Int32)
+  commentId: M:Global.Conversation.ForceAddMessage(System.String,System.Int32)
+  id: ForceAddMessage(System.String,System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: ForceAddMessage(string, int)
+  nameWithType: Conversation.ForceAddMessage(string, int)
+  fullName: Conversation.ForceAddMessage(string, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.ForceAddMessage(System.String,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ForceAddMessage(string text, int extraLinger)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:Conversation.ForceAddMessage(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: extraLinger
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>extraLinger</parameter>
+            <parameter>M:Conversation.ForceAddMessage(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ForceAddMessage(text As String, extraLinger As Integer)
+  overload: Global.Conversation.ForceAddMessage*
+  nameWithType.vb: Conversation.ForceAddMessage(String, Integer)
+  fullName.vb: Conversation.ForceAddMessage(String, Integer)
+  name.vb: ForceAddMessage(String, Integer)
+- uid: Global.Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)
+  commentId: M:Global.Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)
+  id: TryGetPrefixColor(System.String,UnityEngine.Color@)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: TryGetPrefixColor(string, out Color)
+  nameWithType: Conversation.TryGetPrefixColor(string, out Color)
+  fullName: Conversation.TryGetPrefixColor(string, out UnityEngine.Color)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool TryGetPrefixColor(string text, out Color result)
+    parameters:
+    - id: text
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>text</parameter>
+            <parameter>M:Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)</parameter>
+          </include>
+        </markup>
+    - id: result
+      type: UnityEngine.Color
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>result</parameter>
+            <parameter>M:Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Conversation.TryGetPrefixColor(System.String,UnityEngine.Color@)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function TryGetPrefixColor(text As String, result As Color) As Boolean
+  overload: Global.Conversation.TryGetPrefixColor*
+  nameWithType.vb: Conversation.TryGetPrefixColor(String, Color)
+  fullName.vb: Conversation.TryGetPrefixColor(String, UnityEngine.Color)
+  name.vb: TryGetPrefixColor(String, Color)
+- uid: Global.Conversation.AddEvents
+  commentId: M:Global.Conversation.AddEvents
+  id: AddEvents
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: AddEvents()
+  nameWithType: Conversation.AddEvents()
+  fullName: Conversation.AddEvents()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.AddEvents</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected virtual void AddEvents()
+    content.vb: Protected Overridable Sub AddEvents()
+  overload: Global.Conversation.AddEvents*
+- uid: Global.Conversation.LoadEventsFromFile(System.Int32)
+  commentId: M:Global.Conversation.LoadEventsFromFile(System.Int32)
+  id: LoadEventsFromFile(System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: LoadEventsFromFile(int)
+  nameWithType: Conversation.LoadEventsFromFile(int)
+  fullName: Conversation.LoadEventsFromFile(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.LoadEventsFromFile(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected void LoadEventsFromFile(int fileName)
+    parameters:
+    - id: fileName
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fileName</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Sub LoadEventsFromFile(fileName As Integer)
+  overload: Global.Conversation.LoadEventsFromFile*
+  nameWithType.vb: Conversation.LoadEventsFromFile(Integer)
+  fullName.vb: Conversation.LoadEventsFromFile(Integer)
+  name.vb: LoadEventsFromFile(Integer)
+- uid: Global.Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)
+  commentId: M:Global.Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)
+  id: LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: LoadEventsFromFile(int, bool, int)
+  nameWithType: Conversation.LoadEventsFromFile(int, bool, int)
+  fullName: Conversation.LoadEventsFromFile(int, bool, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected void LoadEventsFromFile(int fileName, bool oneRandomLine, int randomSeed)
+    parameters:
+    - id: fileName
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fileName</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: oneRandomLine
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>oneRandomLine</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: randomSeed
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>randomSeed</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Sub LoadEventsFromFile(fileName As Integer, oneRandomLine As Boolean, randomSeed As Integer)
+  overload: Global.Conversation.LoadEventsFromFile*
+  nameWithType.vb: Conversation.LoadEventsFromFile(Integer, Boolean, Integer)
+  fullName.vb: Conversation.LoadEventsFromFile(Integer, Boolean, Integer)
+  name.vb: LoadEventsFromFile(Integer, Boolean, Integer)
+- uid: Global.Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)
+  commentId: M:Global.Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)
+  id: LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: LoadEventsFromFile(int, Name, bool, int)
+  nameWithType: Conversation.LoadEventsFromFile(int, SlugcatStats.Name, bool, int)
+  fullName: Conversation.LoadEventsFromFile(int, SlugcatStats.Name, bool, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected void LoadEventsFromFile(int fileName, SlugcatStats.Name saveFile, bool oneRandomLine, int randomSeed)
+    parameters:
+    - id: fileName
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fileName</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: saveFile
+      type: Global.SlugcatStats.Name
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>saveFile</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: oneRandomLine
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>oneRandomLine</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: randomSeed
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>randomSeed</parameter>
+            <parameter>M:Conversation.LoadEventsFromFile(System.Int32,SlugcatStats.Name,System.Boolean,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Sub LoadEventsFromFile(fileName As Integer, saveFile As SlugcatStats.Name, oneRandomLine As Boolean, randomSeed As Integer)
+  overload: Global.Conversation.LoadEventsFromFile*
+  nameWithType.vb: Conversation.LoadEventsFromFile(Integer, SlugcatStats.Name, Boolean, Integer)
+  fullName.vb: Conversation.LoadEventsFromFile(Integer, SlugcatStats.Name, Boolean, Integer)
+  name.vb: LoadEventsFromFile(Integer, Name, Boolean, Integer)
+- uid: Global.Conversation.EncryptAllDialogue
+  commentId: M:Global.Conversation.EncryptAllDialogue
+  id: EncryptAllDialogue
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: EncryptAllDialogue()
+  nameWithType: Conversation.EncryptAllDialogue()
+  fullName: Conversation.EncryptAllDialogue()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.EncryptAllDialogue</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void EncryptAllDialogue()
+    content.vb: Public Shared Sub EncryptAllDialogue()
+  overload: Global.Conversation.EncryptAllDialogue*
+- uid: Global.Conversation.DecryptAllDialogue
+  commentId: M:Global.Conversation.DecryptAllDialogue
+  id: DecryptAllDialogue
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: DecryptAllDialogue()
+  nameWithType: Conversation.DecryptAllDialogue()
+  fullName: Conversation.DecryptAllDialogue()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.DecryptAllDialogue</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void DecryptAllDialogue()
+    content.vb: Public Shared Sub DecryptAllDialogue()
+  overload: Global.Conversation.DecryptAllDialogue*
+- uid: Global.Conversation.EventsFileExists(RainWorld,System.Int32)
+  commentId: M:Global.Conversation.EventsFileExists(RainWorld,System.Int32)
+  id: EventsFileExists(RainWorld,System.Int32)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: EventsFileExists(RainWorld, int)
+  nameWithType: Conversation.EventsFileExists(RainWorld, int)
+  fullName: Conversation.EventsFileExists(RainWorld, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool EventsFileExists(RainWorld rw, int fileName)
+    parameters:
+    - id: rw
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rw</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: fileName
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fileName</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function EventsFileExists(rw As RainWorld, fileName As Integer) As Boolean
+  overload: Global.Conversation.EventsFileExists*
+  nameWithType.vb: Conversation.EventsFileExists(RainWorld, Integer)
+  fullName.vb: Conversation.EventsFileExists(RainWorld, Integer)
+  name.vb: EventsFileExists(RainWorld, Integer)
+- uid: Global.Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)
+  commentId: M:Global.Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)
+  id: EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: EventsFileExists(RainWorld, int, Name)
+  nameWithType: Conversation.EventsFileExists(RainWorld, int, SlugcatStats.Name)
+  fullName: Conversation.EventsFileExists(RainWorld, int, SlugcatStats.Name)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool EventsFileExists(RainWorld rw, int fileName, SlugcatStats.Name saveFile)
+    parameters:
+    - id: rw
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rw</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    - id: fileName
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fileName</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    - id: saveFile
+      type: Global.SlugcatStats.Name
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>saveFile</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Conversation.EventsFileExists(RainWorld,System.Int32,SlugcatStats.Name)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function EventsFileExists(rw As RainWorld, fileName As Integer, saveFile As SlugcatStats.Name) As Boolean
+  overload: Global.Conversation.EventsFileExists*
+  nameWithType.vb: Conversation.EventsFileExists(RainWorld, Integer, SlugcatStats.Name)
+  fullName.vb: Conversation.EventsFileExists(RainWorld, Integer, SlugcatStats.Name)
+  name.vb: EventsFileExists(RainWorld, Integer, Name)
+- uid: Global.Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  commentId: M:Global.Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  id: DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  parent: Global.Conversation
+  langs:
+  - csharp
+  - vb
+  name: DataPearlToConversation(DataPearlType)
+  nameWithType: Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  fullName: Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static Conversation.ID DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType type)
+    parameters:
+    - id: type
+      type: Global.DataPearl.AbstractDataPearl.DataPearlType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>type</parameter>
+            <parameter>M:Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.Conversation.ID
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Conversation.DataPearlToConversation(DataPearl.AbstractDataPearl.DataPearlType)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function DataPearlToConversation(type As DataPearl.AbstractDataPearl.DataPearlType) As Conversation.ID
+  overload: Global.Conversation.DataPearlToConversation*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Conversation.ID
+  commentId: T:Global.Conversation.ID
+  isExternal: true
+  href: Conversation.html
+  name: Conversation.ID
+  nameWithType: Conversation.ID
+  fullName: Conversation.ID
+  spec.csharp:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.ID
+    name: ID
+    isExternal: true
+    href: Conversation.ID.html
+  spec.vb:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.ID
+    name: ID
+    isExternal: true
+    href: Conversation.ID.html
+- uid: HUD.DialogBox
+  commentId: T:HUD.DialogBox
+  parent: HUD
+  isExternal: true
+  href: HUD.DialogBox.html
+  name: DialogBox
+  nameWithType: DialogBox
+  fullName: HUD.DialogBox
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: System.Collections.Generic.List{Conversation.DialogueEvent}
+  commentId: T:System.Collections.Generic.List{Conversation.DialogueEvent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Conversation.DialogueEvent>
+  nameWithType: List<Conversation.DialogueEvent>
+  fullName: System.Collections.Generic.List<Conversation.DialogueEvent>
+  nameWithType.vb: List(Of Conversation.DialogueEvent)
+  fullName.vb: System.Collections.Generic.List(Of Conversation.DialogueEvent)
+  name.vb: List(Of Conversation.DialogueEvent)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.DialogueEvent
+    name: DialogueEvent
+    isExternal: true
+    href: Conversation.DialogueEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.DialogueEvent
+    name: DialogueEvent
+    isExternal: true
+    href: Conversation.DialogueEvent.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.Conversation.IOwnAConversation
+  commentId: T:Global.Conversation.IOwnAConversation
+  isExternal: true
+  href: Conversation.html
+  name: Conversation.IOwnAConversation
+  nameWithType: Conversation.IOwnAConversation
+  fullName: Conversation.IOwnAConversation
+  spec.csharp:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.IOwnAConversation
+    name: IOwnAConversation
+    isExternal: true
+    href: Conversation.IOwnAConversation.html
+  spec.vb:
+  - uid: Global.Conversation
+    name: Conversation
+    isExternal: true
+    href: Conversation.html
+  - name: .
+  - uid: Global.Conversation.IOwnAConversation
+    name: IOwnAConversation
+    isExternal: true
+    href: Conversation.IOwnAConversation.html
+- uid: Global.SlugcatStats.Name
+  commentId: T:Global.SlugcatStats.Name
+  isExternal: true
+  href: SlugcatStats.html
+  name: SlugcatStats.Name
+  nameWithType: SlugcatStats.Name
+  fullName: SlugcatStats.Name
+  spec.csharp:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+  spec.vb:
+  - uid: Global.SlugcatStats
+    name: SlugcatStats
+    isExternal: true
+    href: SlugcatStats.html
+  - name: .
+  - uid: Global.SlugcatStats.Name
+    name: Name
+    isExternal: true
+    href: SlugcatStats.Name.html
+- uid: Global.Conversation.#ctor*
+  commentId: Overload:Global.Conversation.#ctor
+  isExternal: true
+  href: Global.Conversation.html#Conversation__ctor_Conversation_IOwnAConversation_Conversation_ID_HUD_DialogBox_
+  name: Conversation
+  nameWithType: Conversation.Conversation
+  fullName: Conversation.Conversation
+  nameWithType.vb: Conversation.New
+  fullName.vb: Conversation.New
+  name.vb: New
+- uid: Global.Conversation.Update*
+  commentId: Overload:Global.Conversation.Update
+  isExternal: true
+  href: Global.Conversation.html#Conversation_Update
+  name: Update
+  nameWithType: Conversation.Update
+  fullName: Conversation.Update
+- uid: Global.Conversation.RestartCurrent*
+  commentId: Overload:Global.Conversation.RestartCurrent
+  isExternal: true
+  href: Global.Conversation.html#Conversation_RestartCurrent
+  name: RestartCurrent
+  nameWithType: Conversation.RestartCurrent
+  fullName: Conversation.RestartCurrent
+- uid: Global.Conversation.Destroy*
+  commentId: Overload:Global.Conversation.Destroy
+  isExternal: true
+  href: Global.Conversation.html#Conversation_Destroy
+  name: Destroy
+  nameWithType: Conversation.Destroy
+  fullName: Conversation.Destroy
+- uid: Global.Conversation.Interrupt*
+  commentId: Overload:Global.Conversation.Interrupt
+  isExternal: true
+  href: Global.Conversation.html#Conversation_Interrupt_System_String_System_Int32_
+  name: Interrupt
+  nameWithType: Conversation.Interrupt
+  fullName: Conversation.Interrupt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Conversation.ForceAddMessage*
+  commentId: Overload:Global.Conversation.ForceAddMessage
+  isExternal: true
+  href: Global.Conversation.html#Conversation_ForceAddMessage_System_String_System_Int32_
+  name: ForceAddMessage
+  nameWithType: Conversation.ForceAddMessage
+  fullName: Conversation.ForceAddMessage
+- uid: Global.Conversation.TryGetPrefixColor*
+  commentId: Overload:Global.Conversation.TryGetPrefixColor
+  isExternal: true
+  href: Global.Conversation.html#Conversation_TryGetPrefixColor_System_String_UnityEngine_Color__
+  name: TryGetPrefixColor
+  nameWithType: Conversation.TryGetPrefixColor
+  fullName: Conversation.TryGetPrefixColor
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Global.Conversation.AddEvents*
+  commentId: Overload:Global.Conversation.AddEvents
+  isExternal: true
+  href: Global.Conversation.html#Conversation_AddEvents
+  name: AddEvents
+  nameWithType: Conversation.AddEvents
+  fullName: Conversation.AddEvents
+- uid: Global.Conversation.LoadEventsFromFile*
+  commentId: Overload:Global.Conversation.LoadEventsFromFile
+  isExternal: true
+  href: Global.Conversation.html#Conversation_LoadEventsFromFile_System_Int32_
+  name: LoadEventsFromFile
+  nameWithType: Conversation.LoadEventsFromFile
+  fullName: Conversation.LoadEventsFromFile
+- uid: Global.Conversation.EncryptAllDialogue*
+  commentId: Overload:Global.Conversation.EncryptAllDialogue
+  isExternal: true
+  href: Global.Conversation.html#Conversation_EncryptAllDialogue
+  name: EncryptAllDialogue
+  nameWithType: Conversation.EncryptAllDialogue
+  fullName: Conversation.EncryptAllDialogue
+- uid: Global.Conversation.DecryptAllDialogue*
+  commentId: Overload:Global.Conversation.DecryptAllDialogue
+  isExternal: true
+  href: Global.Conversation.html#Conversation_DecryptAllDialogue
+  name: DecryptAllDialogue
+  nameWithType: Conversation.DecryptAllDialogue
+  fullName: Conversation.DecryptAllDialogue
+- uid: Global.Conversation.EventsFileExists*
+  commentId: Overload:Global.Conversation.EventsFileExists
+  isExternal: true
+  href: Global.Conversation.html#Conversation_EventsFileExists_RainWorld_System_Int32_
+  name: EventsFileExists
+  nameWithType: Conversation.EventsFileExists
+  fullName: Conversation.EventsFileExists
+- uid: Global.RainWorld
+  commentId: T:Global.RainWorld
+  isExternal: true
+  href: RainWorld.html
+  name: RainWorld
+  nameWithType: RainWorld
+  fullName: RainWorld
+- uid: Global.Conversation.DataPearlToConversation*
+  commentId: Overload:Global.Conversation.DataPearlToConversation
+  isExternal: true
+  href: Global.Conversation.html#Conversation_DataPearlToConversation_DataPearl_AbstractDataPearl_DataPearlType_
+  name: DataPearlToConversation
+  nameWithType: Conversation.DataPearlToConversation
+  fullName: Conversation.DataPearlToConversation
+- uid: Global.DataPearl.AbstractDataPearl.DataPearlType
+  commentId: T:Global.DataPearl.AbstractDataPearl.DataPearlType
+  isExternal: true
+  href: DataPearl.html
+  name: DataPearl.AbstractDataPearl.DataPearlType
+  nameWithType: DataPearl.AbstractDataPearl.DataPearlType
+  fullName: DataPearl.AbstractDataPearl.DataPearlType
+  spec.csharp:
+  - uid: Global.DataPearl
+    name: DataPearl
+    isExternal: true
+    href: DataPearl.html
+  - name: .
+  - uid: Global.DataPearl.AbstractDataPearl
+    name: AbstractDataPearl
+    isExternal: true
+    href: DataPearl.AbstractDataPearl.html
+  - name: .
+  - uid: Global.DataPearl.AbstractDataPearl.DataPearlType
+    name: DataPearlType
+    isExternal: true
+    href: DataPearl.AbstractDataPearl.DataPearlType.html
+  spec.vb:
+  - uid: Global.DataPearl
+    name: DataPearl
+    isExternal: true
+    href: DataPearl.html
+  - name: .
+  - uid: Global.DataPearl.AbstractDataPearl
+    name: AbstractDataPearl
+    isExternal: true
+    href: DataPearl.AbstractDataPearl.html
+  - name: .
+  - uid: Global.DataPearl.AbstractDataPearl.DataPearlType
+    name: DataPearlType
+    isExternal: true
+    href: DataPearl.AbstractDataPearl.DataPearlType.html

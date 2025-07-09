@@ -1,0 +1,2236 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RegionGate
+  commentId: T:Global.RegionGate
+  id: RegionGate
+  parent: Global
+  children:
+  - Global.RegionGate.#ctor(Room)
+  - Global.RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.RegionGate.AllDoorsInPosition
+  - Global.RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)
+  - Global.RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.RegionGate.EnergyEnoughToOpen
+  - Global.RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.RegionGate.KarmaBlinkRed
+  - Global.RegionGate.ListOfPlayersInZone
+  - Global.RegionGate.MeetRequirement
+  - Global.RegionGate.NewWorldLoaded
+  - Global.RegionGate.NewWorldLoaded(Room)
+  - Global.RegionGate.OPENCLOSE
+  - Global.RegionGate.PlayersInZone
+  - Global.RegionGate.Unlock
+  - Global.RegionGate.Update(System.Boolean)
+  - Global.RegionGate.customKarmaGateRequirements
+  - Global.RegionGate.customOEGateRequirements
+  - Global.RegionGate.dontOpen
+  - Global.RegionGate.doors
+  - Global.RegionGate.goalDoorPositions
+  - Global.RegionGate.graphics
+  - Global.RegionGate.karmaGlyphs
+  - Global.RegionGate.karmaRequirements
+  - Global.RegionGate.letThroughDir
+  - Global.RegionGate.mode
+  - Global.RegionGate.rainCycle
+  - Global.RegionGate.startCounter
+  - Global.RegionGate.unlocked
+  - Global.RegionGate.waitingForWorldLoader
+  - Global.RegionGate.washingCounter
+  langs:
+  - csharp
+  - vb
+  name: RegionGate
+  nameWithType: RegionGate
+  fullName: RegionGate
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:RegionGate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public abstract class RegionGate : UpdatableAndDeletable, IDrawable'
+    content.vb: Public MustInherit Class RegionGate Inherits UpdatableAndDeletable Implements IDrawable
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  derivedClasses:
+  - Global.ElectricGate
+  - Global.WaterGate
+  implements:
+  - Global.IDrawable
+  inheritedMembers:
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.RegionGate.rainCycle
+  commentId: F:Global.RegionGate.rainCycle
+  id: rainCycle
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: rainCycle
+  nameWithType: RegionGate.rainCycle
+  fullName: RegionGate.rainCycle
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.rainCycle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RainCycle rainCycle
+    return:
+      type: Global.RainCycle
+    content.vb: Public rainCycle As RainCycle
+- uid: Global.RegionGate.doors
+  commentId: F:Global.RegionGate.doors
+  id: doors
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: doors
+  nameWithType: RegionGate.doors
+  fullName: RegionGate.doors
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.doors</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RegionGate.Door[] doors
+    return:
+      type: Global.RegionGate.Door[]
+    content.vb: Public doors As RegionGate.Door()
+- uid: Global.RegionGate.letThroughDir
+  commentId: F:Global.RegionGate.letThroughDir
+  id: letThroughDir
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: letThroughDir
+  nameWithType: RegionGate.letThroughDir
+  fullName: RegionGate.letThroughDir
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.letThroughDir</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool letThroughDir
+    return:
+      type: System.Boolean
+    content.vb: Public letThroughDir As Boolean
+- uid: Global.RegionGate.dontOpen
+  commentId: F:Global.RegionGate.dontOpen
+  id: dontOpen
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: dontOpen
+  nameWithType: RegionGate.dontOpen
+  fullName: RegionGate.dontOpen
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.dontOpen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool dontOpen
+    return:
+      type: System.Boolean
+    content.vb: Public dontOpen As Boolean
+- uid: Global.RegionGate.waitingForWorldLoader
+  commentId: F:Global.RegionGate.waitingForWorldLoader
+  id: waitingForWorldLoader
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: waitingForWorldLoader
+  nameWithType: RegionGate.waitingForWorldLoader
+  fullName: RegionGate.waitingForWorldLoader
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.waitingForWorldLoader</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool waitingForWorldLoader
+    return:
+      type: System.Boolean
+    content.vb: Public waitingForWorldLoader As Boolean
+- uid: Global.RegionGate.goalDoorPositions
+  commentId: F:Global.RegionGate.goalDoorPositions
+  id: goalDoorPositions
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: goalDoorPositions
+  nameWithType: RegionGate.goalDoorPositions
+  fullName: RegionGate.goalDoorPositions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.goalDoorPositions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float[] goalDoorPositions
+    return:
+      type: System.Single[]
+    content.vb: Public goalDoorPositions As Single()
+- uid: Global.RegionGate.graphics
+  commentId: F:Global.RegionGate.graphics
+  id: graphics
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: graphics
+  nameWithType: RegionGate.graphics
+  fullName: RegionGate.graphics
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.graphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RegionGateGraphics graphics
+    return:
+      type: Global.RegionGateGraphics
+    content.vb: Public graphics As RegionGateGraphics
+- uid: Global.RegionGate.washingCounter
+  commentId: F:Global.RegionGate.washingCounter
+  id: washingCounter
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: washingCounter
+  nameWithType: RegionGate.washingCounter
+  fullName: RegionGate.washingCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.washingCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int washingCounter
+    return:
+      type: System.Int32
+    content.vb: Public washingCounter As Integer
+- uid: Global.RegionGate.startCounter
+  commentId: F:Global.RegionGate.startCounter
+  id: startCounter
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: startCounter
+  nameWithType: RegionGate.startCounter
+  fullName: RegionGate.startCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.startCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int startCounter
+    return:
+      type: System.Int32
+    content.vb: Public startCounter As Integer
+- uid: Global.RegionGate.unlocked
+  commentId: F:Global.RegionGate.unlocked
+  id: unlocked
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: unlocked
+  nameWithType: RegionGate.unlocked
+  fullName: RegionGate.unlocked
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.unlocked</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool unlocked
+    return:
+      type: System.Boolean
+    content.vb: Public unlocked As Boolean
+- uid: Global.RegionGate.mode
+  commentId: F:Global.RegionGate.mode
+  id: mode
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: mode
+  nameWithType: RegionGate.mode
+  fullName: RegionGate.mode
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.mode</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RegionGate.Mode mode
+    return:
+      type: Global.RegionGate.Mode
+    content.vb: Public mode As RegionGate.Mode
+- uid: Global.RegionGate.karmaGlyphs
+  commentId: F:Global.RegionGate.karmaGlyphs
+  id: karmaGlyphs
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: karmaGlyphs
+  nameWithType: RegionGate.karmaGlyphs
+  fullName: RegionGate.karmaGlyphs
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.karmaGlyphs</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public GateKarmaGlyph[] karmaGlyphs
+    return:
+      type: Global.GateKarmaGlyph[]
+    content.vb: Public karmaGlyphs As GateKarmaGlyph()
+- uid: Global.RegionGate.karmaRequirements
+  commentId: F:Global.RegionGate.karmaRequirements
+  id: karmaRequirements
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: karmaRequirements
+  nameWithType: RegionGate.karmaRequirements
+  fullName: RegionGate.karmaRequirements
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:RegionGate.karmaRequirements</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RegionGate.GateRequirement[] karmaRequirements
+    return:
+      type: Global.RegionGate.GateRequirement[]
+    content.vb: Public karmaRequirements As RegionGate.GateRequirement()
+- uid: Global.RegionGate.#ctor(Room)
+  commentId: M:Global.RegionGate.#ctor(Room)
+  id: '#ctor(Room)'
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: RegionGate(Room)
+  nameWithType: RegionGate.RegionGate(Room)
+  fullName: RegionGate.RegionGate(Room)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>RegionGate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RegionGate(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:RegionGate.#ctor(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room)
+  overload: Global.RegionGate.#ctor*
+  nameWithType.vb: RegionGate.New(Room)
+  fullName.vb: RegionGate.New(Room)
+  name.vb: New(Room)
+- uid: Global.RegionGate.OPENCLOSE
+  commentId: M:Global.RegionGate.OPENCLOSE
+  id: OPENCLOSE
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: OPENCLOSE()
+  nameWithType: RegionGate.OPENCLOSE()
+  fullName: RegionGate.OPENCLOSE()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.OPENCLOSE</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void OPENCLOSE()
+    content.vb: Public Sub OPENCLOSE()
+  overload: Global.RegionGate.OPENCLOSE*
+- uid: Global.RegionGate.KarmaBlinkRed
+  commentId: M:Global.RegionGate.KarmaBlinkRed
+  id: KarmaBlinkRed
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: KarmaBlinkRed()
+  nameWithType: RegionGate.KarmaBlinkRed()
+  fullName: RegionGate.KarmaBlinkRed()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.KarmaBlinkRed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool KarmaBlinkRed()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:RegionGate.KarmaBlinkRed</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function KarmaBlinkRed() As Boolean
+  overload: Global.RegionGate.KarmaBlinkRed*
+- uid: Global.RegionGate.Update(System.Boolean)
+  commentId: M:Global.RegionGate.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: RegionGate.Update(bool)
+  fullName: RegionGate.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:RegionGate.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.UpdatableAndDeletable.Update(System.Boolean)
+  overload: Global.RegionGate.Update*
+  nameWithType.vb: RegionGate.Update(Boolean)
+  fullName.vb: RegionGate.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.RegionGate.Unlock
+  commentId: M:Global.RegionGate.Unlock
+  id: Unlock
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: Unlock()
+  nameWithType: RegionGate.Unlock()
+  fullName: RegionGate.Unlock()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.Unlock</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Unlock()
+    content.vb: Public Sub Unlock()
+  overload: Global.RegionGate.Unlock*
+- uid: Global.RegionGate.NewWorldLoaded
+  commentId: M:Global.RegionGate.NewWorldLoaded
+  id: NewWorldLoaded
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: NewWorldLoaded()
+  nameWithType: RegionGate.NewWorldLoaded()
+  fullName: RegionGate.NewWorldLoaded()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.NewWorldLoaded</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use room parameter function instead.")]
+
+      public void NewWorldLoaded()
+    content.vb: >-
+      <Obsolete("Use room parameter function instead.")>
+
+      Public Sub NewWorldLoaded()
+  overload: Global.RegionGate.NewWorldLoaded*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use room parameter function instead.
+- uid: Global.RegionGate.NewWorldLoaded(Room)
+  commentId: M:Global.RegionGate.NewWorldLoaded(Room)
+  id: NewWorldLoaded(Room)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: NewWorldLoaded(Room)
+  nameWithType: RegionGate.NewWorldLoaded(Room)
+  fullName: RegionGate.NewWorldLoaded(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.NewWorldLoaded(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewWorldLoaded(Room newRoom)
+    parameters:
+    - id: newRoom
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRoom</parameter>
+            <parameter>M:RegionGate.NewWorldLoaded(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewWorldLoaded(newRoom As Room)
+  overload: Global.RegionGate.NewWorldLoaded*
+- uid: Global.RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: RegionGate.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: RegionGate.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:RegionGate.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overload: Global.RegionGate.InitiateSprites*
+  implements:
+  - Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+- uid: Global.RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: RegionGate.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: RegionGate.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:RegionGate.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overload: Global.RegionGate.DrawSprites*
+  implements:
+  - Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  nameWithType.vb: RegionGate.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: RegionGate.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: RegionGate.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: RegionGate.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:RegionGate.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overload: Global.RegionGate.ApplyPalette*
+  implements:
+  - Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+- uid: Global.RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: RegionGate.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: RegionGate.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:RegionGate.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overload: Global.RegionGate.AddToContainer*
+  implements:
+  - Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+- uid: Global.RegionGate.PlayersInZone
+  commentId: M:Global.RegionGate.PlayersInZone
+  id: PlayersInZone
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: PlayersInZone()
+  nameWithType: RegionGate.PlayersInZone()
+  fullName: RegionGate.PlayersInZone()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.PlayersInZone</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int PlayersInZone()
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:RegionGate.PlayersInZone</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function PlayersInZone() As Integer
+  overload: Global.RegionGate.PlayersInZone*
+- uid: Global.RegionGate.ListOfPlayersInZone
+  commentId: M:Global.RegionGate.ListOfPlayersInZone
+  id: ListOfPlayersInZone
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: ListOfPlayersInZone()
+  nameWithType: RegionGate.ListOfPlayersInZone()
+  fullName: RegionGate.ListOfPlayersInZone()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.ListOfPlayersInZone</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Player> ListOfPlayersInZone()
+    return:
+      type: System.Collections.Generic.List{Player}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:RegionGate.ListOfPlayersInZone</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ListOfPlayersInZone() As List(Of Player)
+  overload: Global.RegionGate.ListOfPlayersInZone*
+- uid: Global.RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)
+  commentId: M:Global.RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)
+  id: ChangeDoorStatus(System.Int32,System.Boolean)
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: ChangeDoorStatus(int, bool)
+  nameWithType: RegionGate.ChangeDoorStatus(int, bool)
+  fullName: RegionGate.ChangeDoorStatus(int, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ChangeDoorStatus(int door, bool open)
+    parameters:
+    - id: door
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>door</parameter>
+            <parameter>M:RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: open
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>open</parameter>
+            <parameter>M:RegionGate.ChangeDoorStatus(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ChangeDoorStatus(door As Integer, open As Boolean)
+  overload: Global.RegionGate.ChangeDoorStatus*
+  nameWithType.vb: RegionGate.ChangeDoorStatus(Integer, Boolean)
+  fullName.vb: RegionGate.ChangeDoorStatus(Integer, Boolean)
+  name.vb: ChangeDoorStatus(Integer, Boolean)
+- uid: Global.RegionGate.AllDoorsInPosition
+  commentId: M:Global.RegionGate.AllDoorsInPosition
+  id: AllDoorsInPosition
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: AllDoorsInPosition()
+  nameWithType: RegionGate.AllDoorsInPosition()
+  fullName: RegionGate.AllDoorsInPosition()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.AllDoorsInPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected bool AllDoorsInPosition()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:RegionGate.AllDoorsInPosition</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Function AllDoorsInPosition() As Boolean
+  overload: Global.RegionGate.AllDoorsInPosition*
+- uid: Global.RegionGate.customOEGateRequirements
+  commentId: M:Global.RegionGate.customOEGateRequirements
+  id: customOEGateRequirements
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: customOEGateRequirements()
+  nameWithType: RegionGate.customOEGateRequirements()
+  fullName: RegionGate.customOEGateRequirements()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.customOEGateRequirements</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool customOEGateRequirements()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:RegionGate.customOEGateRequirements</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function customOEGateRequirements() As Boolean
+  overload: Global.RegionGate.customOEGateRequirements*
+- uid: Global.RegionGate.customKarmaGateRequirements
+  commentId: M:Global.RegionGate.customKarmaGateRequirements
+  id: customKarmaGateRequirements
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: customKarmaGateRequirements()
+  nameWithType: RegionGate.customKarmaGateRequirements()
+  fullName: RegionGate.customKarmaGateRequirements()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:RegionGate.customKarmaGateRequirements</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void customKarmaGateRequirements()
+    content.vb: Public Sub customKarmaGateRequirements()
+  overload: Global.RegionGate.customKarmaGateRequirements*
+- uid: Global.RegionGate.EnergyEnoughToOpen
+  commentId: P:Global.RegionGate.EnergyEnoughToOpen
+  id: EnergyEnoughToOpen
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: EnergyEnoughToOpen
+  nameWithType: RegionGate.EnergyEnoughToOpen
+  fullName: RegionGate.EnergyEnoughToOpen
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:RegionGate.EnergyEnoughToOpen</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual bool EnergyEnoughToOpen { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property EnergyEnoughToOpen As Boolean
+  overload: Global.RegionGate.EnergyEnoughToOpen*
+- uid: Global.RegionGate.MeetRequirement
+  commentId: P:Global.RegionGate.MeetRequirement
+  id: MeetRequirement
+  parent: Global.RegionGate
+  langs:
+  - csharp
+  - vb
+  name: MeetRequirement
+  nameWithType: RegionGate.MeetRequirement
+  fullName: RegionGate.MeetRequirement
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:RegionGate.MeetRequirement</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public virtual bool MeetRequirement { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property MeetRequirement As Boolean
+  overload: Global.RegionGate.MeetRequirement*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.RainCycle
+  commentId: T:Global.RainCycle
+  isExternal: true
+  href: RainCycle.html
+  name: RainCycle
+  nameWithType: RainCycle
+  fullName: RainCycle
+- uid: Global.RegionGate.Door[]
+  isExternal: true
+  href: RegionGate.Door.html
+  name: Door[]
+  nameWithType: RegionGate.Door[]
+  fullName: RegionGate.Door[]
+  nameWithType.vb: RegionGate.Door()
+  fullName.vb: RegionGate.Door()
+  name.vb: Door()
+  spec.csharp:
+  - uid: Global.RegionGate.Door
+    name: Door
+    isExternal: true
+    href: RegionGate.Door.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.RegionGate.Door
+    name: Door
+    isExternal: true
+    href: RegionGate.Door.html
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: Global.RegionGateGraphics
+  commentId: T:Global.RegionGateGraphics
+  isExternal: true
+  href: RegionGateGraphics.html
+  name: RegionGateGraphics
+  nameWithType: RegionGateGraphics
+  fullName: RegionGateGraphics
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.RegionGate.Mode
+  commentId: T:Global.RegionGate.Mode
+  isExternal: true
+  href: RegionGate.html
+  name: RegionGate.Mode
+  nameWithType: RegionGate.Mode
+  fullName: RegionGate.Mode
+  spec.csharp:
+  - uid: Global.RegionGate
+    name: RegionGate
+    isExternal: true
+    href: RegionGate.html
+  - name: .
+  - uid: Global.RegionGate.Mode
+    name: Mode
+    isExternal: true
+    href: RegionGate.Mode.html
+  spec.vb:
+  - uid: Global.RegionGate
+    name: RegionGate
+    isExternal: true
+    href: RegionGate.html
+  - name: .
+  - uid: Global.RegionGate.Mode
+    name: Mode
+    isExternal: true
+    href: RegionGate.Mode.html
+- uid: Global.GateKarmaGlyph[]
+  isExternal: true
+  href: GateKarmaGlyph.html
+  name: GateKarmaGlyph[]
+  nameWithType: GateKarmaGlyph[]
+  fullName: GateKarmaGlyph[]
+  nameWithType.vb: GateKarmaGlyph()
+  fullName.vb: GateKarmaGlyph()
+  name.vb: GateKarmaGlyph()
+  spec.csharp:
+  - uid: Global.GateKarmaGlyph
+    name: GateKarmaGlyph
+    isExternal: true
+    href: GateKarmaGlyph.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.GateKarmaGlyph
+    name: GateKarmaGlyph
+    isExternal: true
+    href: GateKarmaGlyph.html
+  - name: (
+  - name: )
+- uid: Global.RegionGate.GateRequirement[]
+  isExternal: true
+  href: RegionGate.GateRequirement.html
+  name: GateRequirement[]
+  nameWithType: RegionGate.GateRequirement[]
+  fullName: RegionGate.GateRequirement[]
+  nameWithType.vb: RegionGate.GateRequirement()
+  fullName.vb: RegionGate.GateRequirement()
+  name.vb: GateRequirement()
+  spec.csharp:
+  - uid: Global.RegionGate.GateRequirement
+    name: GateRequirement
+    isExternal: true
+    href: RegionGate.GateRequirement.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.RegionGate.GateRequirement
+    name: GateRequirement
+    isExternal: true
+    href: RegionGate.GateRequirement.html
+  - name: (
+  - name: )
+- uid: Global.RegionGate.#ctor*
+  commentId: Overload:Global.RegionGate.#ctor
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate__ctor_Room_
+  name: RegionGate
+  nameWithType: RegionGate.RegionGate
+  fullName: RegionGate.RegionGate
+  nameWithType.vb: RegionGate.New
+  fullName.vb: RegionGate.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.RegionGate.OPENCLOSE*
+  commentId: Overload:Global.RegionGate.OPENCLOSE
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_OPENCLOSE
+  name: OPENCLOSE
+  nameWithType: RegionGate.OPENCLOSE
+  fullName: RegionGate.OPENCLOSE
+- uid: Global.RegionGate.KarmaBlinkRed*
+  commentId: Overload:Global.RegionGate.KarmaBlinkRed
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_KarmaBlinkRed
+  name: KarmaBlinkRed
+  nameWithType: RegionGate.KarmaBlinkRed
+  fullName: RegionGate.KarmaBlinkRed
+- uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+  commentId: M:Global.UpdatableAndDeletable.Update(System.Boolean)
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: UpdatableAndDeletable.Update(bool)
+  fullName: UpdatableAndDeletable.Update(bool)
+  nameWithType.vb: UpdatableAndDeletable.Update(Boolean)
+  fullName.vb: UpdatableAndDeletable.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.RegionGate.Update*
+  commentId: Overload:Global.RegionGate.Update
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_Update_System_Boolean_
+  name: Update
+  nameWithType: RegionGate.Update
+  fullName: RegionGate.Update
+- uid: Global.RegionGate.Unlock*
+  commentId: Overload:Global.RegionGate.Unlock
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_Unlock
+  name: Unlock
+  nameWithType: RegionGate.Unlock
+  fullName: RegionGate.Unlock
+- uid: Global.RegionGate.NewWorldLoaded*
+  commentId: Overload:Global.RegionGate.NewWorldLoaded
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_NewWorldLoaded
+  name: NewWorldLoaded
+  nameWithType: RegionGate.NewWorldLoaded
+  fullName: RegionGate.NewWorldLoaded
+- uid: Global.RegionGate.InitiateSprites*
+  commentId: Overload:Global.RegionGate.InitiateSprites
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: RegionGate.InitiateSprites
+  fullName: RegionGate.InitiateSprites
+- uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: IDrawable.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.RegionGate.DrawSprites*
+  commentId: Overload:Global.RegionGate.DrawSprites
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: RegionGate.DrawSprites
+  fullName: RegionGate.DrawSprites
+- uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: IDrawable.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.RegionGate.ApplyPalette*
+  commentId: Overload:Global.RegionGate.ApplyPalette
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: RegionGate.ApplyPalette
+  fullName: RegionGate.ApplyPalette
+- uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: IDrawable.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.RegionGate.AddToContainer*
+  commentId: Overload:Global.RegionGate.AddToContainer
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: RegionGate.AddToContainer
+  fullName: RegionGate.AddToContainer
+- uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.IDrawable
+  isExternal: true
+  href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: IDrawable.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.IDrawable.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.IDrawable.html#IDrawable_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.RegionGate.PlayersInZone*
+  commentId: Overload:Global.RegionGate.PlayersInZone
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_PlayersInZone
+  name: PlayersInZone
+  nameWithType: RegionGate.PlayersInZone
+  fullName: RegionGate.PlayersInZone
+- uid: Global.RegionGate.ListOfPlayersInZone*
+  commentId: Overload:Global.RegionGate.ListOfPlayersInZone
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_ListOfPlayersInZone
+  name: ListOfPlayersInZone
+  nameWithType: RegionGate.ListOfPlayersInZone
+  fullName: RegionGate.ListOfPlayersInZone
+- uid: System.Collections.Generic.List{Player}
+  commentId: T:System.Collections.Generic.List{Player}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Player>
+  nameWithType: List<Player>
+  fullName: System.Collections.Generic.List<Player>
+  nameWithType.vb: List(Of Player)
+  fullName.vb: System.Collections.Generic.List(Of Player)
+  name.vb: List(Of Player)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Player
+    name: Player
+    isExternal: true
+    href: Player.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.RegionGate.ChangeDoorStatus*
+  commentId: Overload:Global.RegionGate.ChangeDoorStatus
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_ChangeDoorStatus_System_Int32_System_Boolean_
+  name: ChangeDoorStatus
+  nameWithType: RegionGate.ChangeDoorStatus
+  fullName: RegionGate.ChangeDoorStatus
+- uid: Global.RegionGate.AllDoorsInPosition*
+  commentId: Overload:Global.RegionGate.AllDoorsInPosition
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_AllDoorsInPosition
+  name: AllDoorsInPosition
+  nameWithType: RegionGate.AllDoorsInPosition
+  fullName: RegionGate.AllDoorsInPosition
+- uid: Global.RegionGate.customOEGateRequirements*
+  commentId: Overload:Global.RegionGate.customOEGateRequirements
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_customOEGateRequirements
+  name: customOEGateRequirements
+  nameWithType: RegionGate.customOEGateRequirements
+  fullName: RegionGate.customOEGateRequirements
+- uid: Global.RegionGate.customKarmaGateRequirements*
+  commentId: Overload:Global.RegionGate.customKarmaGateRequirements
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_customKarmaGateRequirements
+  name: customKarmaGateRequirements
+  nameWithType: RegionGate.customKarmaGateRequirements
+  fullName: RegionGate.customKarmaGateRequirements
+- uid: Global.RegionGate.EnergyEnoughToOpen*
+  commentId: Overload:Global.RegionGate.EnergyEnoughToOpen
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_EnergyEnoughToOpen
+  name: EnergyEnoughToOpen
+  nameWithType: RegionGate.EnergyEnoughToOpen
+  fullName: RegionGate.EnergyEnoughToOpen
+- uid: Global.RegionGate.MeetRequirement*
+  commentId: Overload:Global.RegionGate.MeetRequirement
+  isExternal: true
+  href: Global.RegionGate.html#RegionGate_MeetRequirement
+  name: MeetRequirement
+  nameWithType: RegionGate.MeetRequirement
+  fullName: RegionGate.MeetRequirement

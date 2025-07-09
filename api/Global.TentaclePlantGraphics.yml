@@ -1,0 +1,1890 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TentaclePlantGraphics
+  commentId: T:Global.TentaclePlantGraphics
+  id: TentaclePlantGraphics
+  parent: Global
+  children:
+  - Global.TentaclePlantGraphics.#ctor(PhysicalObject)
+  - Global.TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)
+  - Global.TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.TentaclePlantGraphics.Props(System.Int32)
+  - Global.TentaclePlantGraphics.Reset
+  - Global.TentaclePlantGraphics.Update
+  - Global.TentaclePlantGraphics.danglerProps
+  - Global.TentaclePlantGraphics.danglerVals
+  - Global.TentaclePlantGraphics.danglers
+  - Global.TentaclePlantGraphics.plant
+  langs:
+  - csharp
+  - vb
+  name: TentaclePlantGraphics
+  nameWithType: TentaclePlantGraphics
+  fullName: TentaclePlantGraphics
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:TentaclePlantGraphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class TentaclePlantGraphics : GraphicsModule, IDrawable, HasDanglers'
+    content.vb: Public Class TentaclePlantGraphics Inherits GraphicsModule Implements IDrawable, HasDanglers
+  inheritance:
+  - System.Object
+  - Global.GraphicsModule
+  implements:
+  - Global.IDrawable
+  - Global.HasDanglers
+  inheritedMembers:
+  - Global.GraphicsModule.internalContainerObjects
+  - Global.GraphicsModule.bodyParts
+  - Global.GraphicsModule.DEBUGLABELS
+  - Global.GraphicsModule.culled
+  - Global.GraphicsModule.lastCulled
+  - Global.GraphicsModule.dispose
+  - Global.GraphicsModule.cullRange
+  - Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  - Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  - Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  - Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  - Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  - Global.GraphicsModule.BringSpritesToFront
+  - Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  - Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  - Global.GraphicsModule.DeactivateRippleHybrid
+  - Global.GraphicsModule.owner
+  - Global.GraphicsModule.ShouldBeCulled
+  - Global.GraphicsModule.rippleHybridState
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.TentaclePlantGraphics.danglers
+  commentId: F:Global.TentaclePlantGraphics.danglers
+  id: danglers
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: danglers
+  nameWithType: TentaclePlantGraphics.danglers
+  fullName: TentaclePlantGraphics.danglers
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:TentaclePlantGraphics.danglers</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Dangler[] danglers
+    return:
+      type: Global.Dangler[]
+    content.vb: Public danglers As Dangler()
+- uid: Global.TentaclePlantGraphics.danglerProps
+  commentId: F:Global.TentaclePlantGraphics.danglerProps
+  id: danglerProps
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: danglerProps
+  nameWithType: TentaclePlantGraphics.danglerProps
+  fullName: TentaclePlantGraphics.danglerProps
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:TentaclePlantGraphics.danglerProps</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float[,] danglerProps
+    return:
+      type: System.Single[,]
+    content.vb: Public danglerProps As Single(,)
+- uid: Global.TentaclePlantGraphics.danglerVals
+  commentId: F:Global.TentaclePlantGraphics.danglerVals
+  id: danglerVals
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: danglerVals
+  nameWithType: TentaclePlantGraphics.danglerVals
+  fullName: TentaclePlantGraphics.danglerVals
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:TentaclePlantGraphics.danglerVals</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Dangler.DanglerProps danglerVals
+    return:
+      type: Global.Dangler.DanglerProps
+    content.vb: Public danglerVals As Dangler.DanglerProps
+- uid: Global.TentaclePlantGraphics.#ctor(PhysicalObject)
+  commentId: M:Global.TentaclePlantGraphics.#ctor(PhysicalObject)
+  id: '#ctor(PhysicalObject)'
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: TentaclePlantGraphics(PhysicalObject)
+  nameWithType: TentaclePlantGraphics.TentaclePlantGraphics(PhysicalObject)
+  fullName: TentaclePlantGraphics.TentaclePlantGraphics(PhysicalObject)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>TentaclePlantGraphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public TentaclePlantGraphics(PhysicalObject ow)
+    parameters:
+    - id: ow
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ow</parameter>
+            <parameter>M:TentaclePlantGraphics.#ctor(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(ow As PhysicalObject)
+  overload: Global.TentaclePlantGraphics.#ctor*
+  nameWithType.vb: TentaclePlantGraphics.New(PhysicalObject)
+  fullName.vb: TentaclePlantGraphics.New(PhysicalObject)
+  name.vb: New(PhysicalObject)
+- uid: Global.TentaclePlantGraphics.Reset
+  commentId: M:Global.TentaclePlantGraphics.Reset
+  id: Reset
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: TentaclePlantGraphics.Reset()
+  fullName: TentaclePlantGraphics.Reset()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.Reset</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: Global.GraphicsModule.Reset
+  overload: Global.TentaclePlantGraphics.Reset*
+- uid: Global.TentaclePlantGraphics.Update
+  commentId: M:Global.TentaclePlantGraphics.Update
+  id: Update
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: TentaclePlantGraphics.Update()
+  fullName: TentaclePlantGraphics.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.GraphicsModule.Update
+  overload: Global.TentaclePlantGraphics.Update*
+- uid: Global.TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:TentaclePlantGraphics.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Global.TentaclePlantGraphics.InitiateSprites*
+- uid: Global.TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:TentaclePlantGraphics.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overridden: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  overload: Global.TentaclePlantGraphics.AddToContainer*
+- uid: Global.TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Global.TentaclePlantGraphics.DrawSprites*
+  nameWithType.vb: TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: TentaclePlantGraphics.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:TentaclePlantGraphics.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overridden: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  overload: Global.TentaclePlantGraphics.ApplyPalette*
+- uid: Global.TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)
+  commentId: M:Global.TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)
+  id: DanglerConnection(System.Int32,System.Single)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: DanglerConnection(int, float)
+  nameWithType: TentaclePlantGraphics.DanglerConnection(int, float)
+  fullName: TentaclePlantGraphics.DanglerConnection(int, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 DanglerConnection(int index, float timeStacker)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:TentaclePlantGraphics.DanglerConnection(System.Int32,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DanglerConnection(index As Integer, timeStacker As Single) As Vector2
+  overload: Global.TentaclePlantGraphics.DanglerConnection*
+  implements:
+  - Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  nameWithType.vb: TentaclePlantGraphics.DanglerConnection(Integer, Single)
+  fullName.vb: TentaclePlantGraphics.DanglerConnection(Integer, Single)
+  name.vb: DanglerConnection(Integer, Single)
+- uid: Global.TentaclePlantGraphics.Props(System.Int32)
+  commentId: M:Global.TentaclePlantGraphics.Props(System.Int32)
+  id: Props(System.Int32)
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: Props(int)
+  nameWithType: TentaclePlantGraphics.Props(int)
+  fullName: TentaclePlantGraphics.Props(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:TentaclePlantGraphics.Props(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Dangler.DanglerProps Props(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:TentaclePlantGraphics.Props(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.Dangler.DanglerProps
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:TentaclePlantGraphics.Props(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function Props(index As Integer) As Dangler.DanglerProps
+  overload: Global.TentaclePlantGraphics.Props*
+  implements:
+  - Global.HasDanglers.Props(System.Int32)
+  nameWithType.vb: TentaclePlantGraphics.Props(Integer)
+  fullName.vb: TentaclePlantGraphics.Props(Integer)
+  name.vb: Props(Integer)
+- uid: Global.TentaclePlantGraphics.plant
+  commentId: P:Global.TentaclePlantGraphics.plant
+  id: plant
+  parent: Global.TentaclePlantGraphics
+  langs:
+  - csharp
+  - vb
+  name: plant
+  nameWithType: TentaclePlantGraphics.plant
+  fullName: TentaclePlantGraphics.plant
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:TentaclePlantGraphics.plant</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public TentaclePlant plant { get; }
+    parameters: []
+    return:
+      type: Global.TentaclePlant
+    content.vb: Public ReadOnly Property plant As TentaclePlant
+  overload: Global.TentaclePlantGraphics.plant*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.GraphicsModule
+  commentId: T:Global.GraphicsModule
+  isExternal: true
+  href: GraphicsModule.html
+  name: GraphicsModule
+  nameWithType: GraphicsModule
+  fullName: GraphicsModule
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: Global.HasDanglers
+  commentId: T:Global.HasDanglers
+  isExternal: true
+  href: HasDanglers.html
+  name: HasDanglers
+  nameWithType: HasDanglers
+  fullName: HasDanglers
+- uid: Global.GraphicsModule.internalContainerObjects
+  commentId: F:Global.GraphicsModule.internalContainerObjects
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_internalContainerObjects
+  name: internalContainerObjects
+  nameWithType: GraphicsModule.internalContainerObjects
+  fullName: GraphicsModule.internalContainerObjects
+- uid: Global.GraphicsModule.bodyParts
+  commentId: F:Global.GraphicsModule.bodyParts
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_bodyParts
+  name: bodyParts
+  nameWithType: GraphicsModule.bodyParts
+  fullName: GraphicsModule.bodyParts
+- uid: Global.GraphicsModule.DEBUGLABELS
+  commentId: F:Global.GraphicsModule.DEBUGLABELS
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DEBUGLABELS
+  name: DEBUGLABELS
+  nameWithType: GraphicsModule.DEBUGLABELS
+  fullName: GraphicsModule.DEBUGLABELS
+- uid: Global.GraphicsModule.culled
+  commentId: F:Global.GraphicsModule.culled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_culled
+  name: culled
+  nameWithType: GraphicsModule.culled
+  fullName: GraphicsModule.culled
+- uid: Global.GraphicsModule.lastCulled
+  commentId: F:Global.GraphicsModule.lastCulled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_lastCulled
+  name: lastCulled
+  nameWithType: GraphicsModule.lastCulled
+  fullName: GraphicsModule.lastCulled
+- uid: Global.GraphicsModule.dispose
+  commentId: F:Global.GraphicsModule.dispose
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_dispose
+  name: dispose
+  nameWithType: GraphicsModule.dispose
+  fullName: GraphicsModule.dispose
+- uid: Global.GraphicsModule.cullRange
+  commentId: F:Global.GraphicsModule.cullRange
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_cullRange
+  name: cullRange
+  nameWithType: GraphicsModule.cullRange
+  fullName: GraphicsModule.cullRange
+- uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  commentId: M:Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  name: SuckedIntoShortCut(Vector2)
+  nameWithType: GraphicsModule.SuckedIntoShortCut(Vector2)
+  fullName: GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+    name: SuckedIntoShortCut
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.SuckedIntoShortCut(UnityEngine.Vector2)
+    name: SuckedIntoShortCut
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_SuckedIntoShortCut_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  name: PushOutOf(Vector2, float)
+  nameWithType: GraphicsModule.PushOutOf(Vector2, float)
+  fullName: GraphicsModule.PushOutOf(UnityEngine.Vector2, float)
+  nameWithType.vb: GraphicsModule.PushOutOf(Vector2, Single)
+  fullName.vb: GraphicsModule.PushOutOf(UnityEngine.Vector2, Single)
+  name.vb: PushOutOf(Vector2, Single)
+  spec.csharp:
+  - uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+    name: PushOutOf
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.PushOutOf(UnityEngine.Vector2,System.Single)
+    name: PushOutOf
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_PushOutOf_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  commentId: M:Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  name: AddObjectToInternalContainer(IDrawable, int)
+  nameWithType: GraphicsModule.AddObjectToInternalContainer(IDrawable, int)
+  fullName: GraphicsModule.AddObjectToInternalContainer(IDrawable, int)
+  nameWithType.vb: GraphicsModule.AddObjectToInternalContainer(IDrawable, Integer)
+  fullName.vb: GraphicsModule.AddObjectToInternalContainer(IDrawable, Integer)
+  name.vb: AddObjectToInternalContainer(IDrawable, Integer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+    name: AddObjectToInternalContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.AddObjectToInternalContainer(IDrawable,System.Int32)
+    name: AddObjectToInternalContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddObjectToInternalContainer_IDrawable_System_Int32_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  commentId: M:Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  name: ReleaseAllInternallyContainedSprites()
+  nameWithType: GraphicsModule.ReleaseAllInternallyContainedSprites()
+  fullName: GraphicsModule.ReleaseAllInternallyContainedSprites()
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+    name: ReleaseAllInternallyContainedSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseAllInternallyContainedSprites
+    name: ReleaseAllInternallyContainedSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseAllInternallyContainedSprites
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  name: ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(PhysicalObject)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_PhysicalObject_
+  - name: (
+  - uid: Global.PhysicalObject
+    name: PhysicalObject
+    isExternal: true
+    href: PhysicalObject.html
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  name: ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(IDrawable)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_IDrawable_
+  - name: (
+  - uid: Global.IDrawable
+    name: IDrawable
+    isExternal: true
+    href: IDrawable.html
+  - name: )
+- uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  commentId: M:Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  name: ReleaseSpecificInternallyContainedObjectSprites(int)
+  nameWithType: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)
+  fullName: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(int)
+  nameWithType.vb: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  fullName.vb: GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  name.vb: ReleaseSpecificInternallyContainedObjectSprites(Integer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ReleaseSpecificInternallyContainedObjectSprites(System.Int32)
+    name: ReleaseSpecificInternallyContainedObjectSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ReleaseSpecificInternallyContainedObjectSprites_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.GraphicsModule.BringSpritesToFront
+  commentId: M:Global.GraphicsModule.BringSpritesToFront
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  name: BringSpritesToFront()
+  nameWithType: GraphicsModule.BringSpritesToFront()
+  fullName: GraphicsModule.BringSpritesToFront()
+  spec.csharp:
+  - uid: Global.GraphicsModule.BringSpritesToFront
+    name: BringSpritesToFront
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.BringSpritesToFront
+    name: BringSpritesToFront
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_BringSpritesToFront
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  commentId: M:Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  name: HypothermiaColorBlend(Color)
+  nameWithType: GraphicsModule.HypothermiaColorBlend(Color)
+  fullName: GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+  spec.csharp:
+  - uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+    name: HypothermiaColorBlend
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.HypothermiaColorBlend(UnityEngine.Color)
+    name: HypothermiaColorBlend
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_HypothermiaColorBlend_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  commentId: M:Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  name: ActivateRippleHybrid(float, RippleSide)
+  nameWithType: GraphicsModule.ActivateRippleHybrid(float, RippleHybridVFX.RippleSide)
+  fullName: GraphicsModule.ActivateRippleHybrid(float, Watcher.RippleHybridVFX.RippleSide)
+  nameWithType.vb: GraphicsModule.ActivateRippleHybrid(Single, RippleHybridVFX.RippleSide)
+  fullName.vb: GraphicsModule.ActivateRippleHybrid(Single, Watcher.RippleHybridVFX.RippleSide)
+  name.vb: ActivateRippleHybrid(Single, RippleSide)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+    name: ActivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Watcher.RippleHybridVFX.RippleSide
+    name: RippleSide
+    isExternal: true
+    href: Watcher.RippleHybridVFX.RippleSide.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ActivateRippleHybrid(System.Single,Watcher.RippleHybridVFX.RippleSide)
+    name: ActivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ActivateRippleHybrid_System_Single_Watcher_RippleHybridVFX_RippleSide_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Watcher.RippleHybridVFX.RippleSide
+    name: RippleSide
+    isExternal: true
+    href: Watcher.RippleHybridVFX.RippleSide.html
+  - name: )
+- uid: Global.GraphicsModule.DeactivateRippleHybrid
+  commentId: M:Global.GraphicsModule.DeactivateRippleHybrid
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  name: DeactivateRippleHybrid()
+  nameWithType: GraphicsModule.DeactivateRippleHybrid()
+  fullName: GraphicsModule.DeactivateRippleHybrid()
+  spec.csharp:
+  - uid: Global.GraphicsModule.DeactivateRippleHybrid
+    name: DeactivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.DeactivateRippleHybrid
+    name: DeactivateRippleHybrid
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DeactivateRippleHybrid
+  - name: (
+  - name: )
+- uid: Global.GraphicsModule.owner
+  commentId: P:Global.GraphicsModule.owner
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_owner
+  name: owner
+  nameWithType: GraphicsModule.owner
+  fullName: GraphicsModule.owner
+- uid: Global.GraphicsModule.ShouldBeCulled
+  commentId: P:Global.GraphicsModule.ShouldBeCulled
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ShouldBeCulled
+  name: ShouldBeCulled
+  nameWithType: GraphicsModule.ShouldBeCulled
+  fullName: GraphicsModule.ShouldBeCulled
+- uid: Global.GraphicsModule.rippleHybridState
+  commentId: P:Global.GraphicsModule.rippleHybridState
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_rippleHybridState
+  name: rippleHybridState
+  nameWithType: GraphicsModule.rippleHybridState
+  fullName: GraphicsModule.rippleHybridState
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Dangler[]
+  isExternal: true
+  href: Dangler.html
+  name: Dangler[]
+  nameWithType: Dangler[]
+  fullName: Dangler[]
+  nameWithType.vb: Dangler()
+  fullName.vb: Dangler()
+  name.vb: Dangler()
+  spec.csharp:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: (
+  - name: )
+- uid: System.Single[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: ','
+  - name: )
+- uid: Global.Dangler.DanglerProps
+  commentId: T:Global.Dangler.DanglerProps
+  isExternal: true
+  href: Dangler.html
+  name: Dangler.DanglerProps
+  nameWithType: Dangler.DanglerProps
+  fullName: Dangler.DanglerProps
+  spec.csharp:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: .
+  - uid: Global.Dangler.DanglerProps
+    name: DanglerProps
+    isExternal: true
+    href: Dangler.DanglerProps.html
+  spec.vb:
+  - uid: Global.Dangler
+    name: Dangler
+    isExternal: true
+    href: Dangler.html
+  - name: .
+  - uid: Global.Dangler.DanglerProps
+    name: DanglerProps
+    isExternal: true
+    href: Dangler.DanglerProps.html
+- uid: Global.TentaclePlantGraphics.#ctor*
+  commentId: Overload:Global.TentaclePlantGraphics.#ctor
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics__ctor_PhysicalObject_
+  name: TentaclePlantGraphics
+  nameWithType: TentaclePlantGraphics.TentaclePlantGraphics
+  fullName: TentaclePlantGraphics.TentaclePlantGraphics
+  nameWithType.vb: TentaclePlantGraphics.New
+  fullName.vb: TentaclePlantGraphics.New
+  name.vb: New
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Global.GraphicsModule.Reset
+  commentId: M:Global.GraphicsModule.Reset
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_Reset
+  name: Reset()
+  nameWithType: GraphicsModule.Reset()
+  fullName: GraphicsModule.Reset()
+  spec.csharp:
+  - uid: Global.GraphicsModule.Reset
+    name: Reset
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.Reset
+    name: Reset
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Reset
+  - name: (
+  - name: )
+- uid: Global.TentaclePlantGraphics.Reset*
+  commentId: Overload:Global.TentaclePlantGraphics.Reset
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_Reset
+  name: Reset
+  nameWithType: TentaclePlantGraphics.Reset
+  fullName: TentaclePlantGraphics.Reset
+- uid: Global.GraphicsModule.Update
+  commentId: M:Global.GraphicsModule.Update
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_Update
+  name: Update()
+  nameWithType: GraphicsModule.Update()
+  fullName: GraphicsModule.Update()
+  spec.csharp:
+  - uid: Global.GraphicsModule.Update
+    name: Update
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.Update
+    name: Update
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_Update
+  - name: (
+  - name: )
+- uid: Global.TentaclePlantGraphics.Update*
+  commentId: Overload:Global.TentaclePlantGraphics.Update
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_Update
+  name: Update
+  nameWithType: TentaclePlantGraphics.Update
+  fullName: TentaclePlantGraphics.Update
+- uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.TentaclePlantGraphics.InitiateSprites*
+  commentId: Overload:Global.TentaclePlantGraphics.InitiateSprites
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: TentaclePlantGraphics.InitiateSprites
+  fullName: TentaclePlantGraphics.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.TentaclePlantGraphics.AddToContainer*
+  commentId: Overload:Global.TentaclePlantGraphics.AddToContainer
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: TentaclePlantGraphics.AddToContainer
+  fullName: TentaclePlantGraphics.AddToContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.TentaclePlantGraphics.DrawSprites*
+  commentId: Overload:Global.TentaclePlantGraphics.DrawSprites
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: TentaclePlantGraphics.DrawSprites
+  fullName: TentaclePlantGraphics.DrawSprites
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.GraphicsModule
+  isExternal: true
+  href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.GraphicsModule.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.GraphicsModule.html#GraphicsModule_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.TentaclePlantGraphics.ApplyPalette*
+  commentId: Overload:Global.TentaclePlantGraphics.ApplyPalette
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: TentaclePlantGraphics.ApplyPalette
+  fullName: TentaclePlantGraphics.ApplyPalette
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.TentaclePlantGraphics.DanglerConnection*
+  commentId: Overload:Global.TentaclePlantGraphics.DanglerConnection
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_DanglerConnection_System_Int32_System_Single_
+  name: DanglerConnection
+  nameWithType: TentaclePlantGraphics.DanglerConnection
+  fullName: TentaclePlantGraphics.DanglerConnection
+- uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  commentId: M:Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+  parent: Global.HasDanglers
+  isExternal: true
+  href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  name: DanglerConnection(int, float)
+  nameWithType: HasDanglers.DanglerConnection(int, float)
+  fullName: HasDanglers.DanglerConnection(int, float)
+  nameWithType.vb: HasDanglers.DanglerConnection(Integer, Single)
+  fullName.vb: HasDanglers.DanglerConnection(Integer, Single)
+  name.vb: DanglerConnection(Integer, Single)
+  spec.csharp:
+  - uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+    name: DanglerConnection
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.HasDanglers.DanglerConnection(System.Int32,System.Single)
+    name: DanglerConnection
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_DanglerConnection_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.TentaclePlantGraphics.Props*
+  commentId: Overload:Global.TentaclePlantGraphics.Props
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_Props_System_Int32_
+  name: Props
+  nameWithType: TentaclePlantGraphics.Props
+  fullName: TentaclePlantGraphics.Props
+- uid: Global.HasDanglers.Props(System.Int32)
+  commentId: M:Global.HasDanglers.Props(System.Int32)
+  parent: Global.HasDanglers
+  isExternal: true
+  href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  name: Props(int)
+  nameWithType: HasDanglers.Props(int)
+  fullName: HasDanglers.Props(int)
+  nameWithType.vb: HasDanglers.Props(Integer)
+  fullName.vb: HasDanglers.Props(Integer)
+  name.vb: Props(Integer)
+  spec.csharp:
+  - uid: Global.HasDanglers.Props(System.Int32)
+    name: Props
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.HasDanglers.Props(System.Int32)
+    name: Props
+    isExternal: true
+    href: Global.HasDanglers.html#HasDanglers_Props_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.TentaclePlantGraphics.plant*
+  commentId: Overload:Global.TentaclePlantGraphics.plant
+  isExternal: true
+  href: Global.TentaclePlantGraphics.html#TentaclePlantGraphics_plant
+  name: plant
+  nameWithType: TentaclePlantGraphics.plant
+  fullName: TentaclePlantGraphics.plant
+- uid: Global.TentaclePlant
+  commentId: T:Global.TentaclePlant
+  isExternal: true
+  href: TentaclePlant.html
+  name: TentaclePlant
+  nameWithType: TentaclePlant
+  fullName: TentaclePlant

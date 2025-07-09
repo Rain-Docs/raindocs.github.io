@@ -1,0 +1,1622 @@
+### YamlMime:ManagedReference
+items:
+- uid: ArenaBehaviors.SandboxEditor
+  commentId: T:ArenaBehaviors.SandboxEditor
+  id: SandboxEditor
+  parent: ArenaBehaviors
+  children:
+  - ArenaBehaviors.SandboxEditor.#ctor(SandboxGameSession)
+  - ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)
+  - ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)
+  - ArenaBehaviors.SandboxEditor.ClearAll
+  - ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)
+  - ArenaBehaviors.SandboxEditor.DevToolsExportConfig
+  - ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)
+  - ArenaBehaviors.SandboxEditor.Play
+  - ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)
+  - ArenaBehaviors.SandboxEditor.SANDBOX_KEY_FORMAT
+  - ArenaBehaviors.SandboxEditor.SaveConfig
+  - ArenaBehaviors.SandboxEditor.SwitchConfig(System.Int32)
+  - ArenaBehaviors.SandboxEditor.Update
+  - ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate
+  - ArenaBehaviors.SandboxEditor.currentConfig
+  - ArenaBehaviors.SandboxEditor.cursors
+  - ArenaBehaviors.SandboxEditor.icons
+  - ArenaBehaviors.SandboxEditor.overlay
+  - ArenaBehaviors.SandboxEditor.performanceWarning
+  langs:
+  - csharp
+  - vb
+  name: SandboxEditor
+  nameWithType: SandboxEditor
+  fullName: ArenaBehaviors.SandboxEditor
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ArenaBehaviors.SandboxEditor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SandboxEditor : ArenaGameBehavior'
+    content.vb: Public Class SandboxEditor Inherits ArenaGameBehavior
+  inheritance:
+  - System.Object
+  - ArenaBehaviors.ArenaGameBehavior
+  inheritedMembers:
+  - ArenaBehaviors.ArenaGameBehavior.gameSession
+  - ArenaBehaviors.ArenaGameBehavior.slatedForDeletion
+  - ArenaBehaviors.ArenaGameBehavior.Initiate
+  - ArenaBehaviors.ArenaGameBehavior.Destroy
+  - ArenaBehaviors.ArenaGameBehavior.game
+  - ArenaBehaviors.ArenaGameBehavior.world
+  - ArenaBehaviors.ArenaGameBehavior.room
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: ArenaBehaviors.SandboxEditor.SANDBOX_KEY_FORMAT
+  commentId: F:ArenaBehaviors.SandboxEditor.SANDBOX_KEY_FORMAT
+  id: SANDBOX_KEY_FORMAT
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: SANDBOX_KEY_FORMAT
+  nameWithType: SandboxEditor.SANDBOX_KEY_FORMAT
+  fullName: ArenaBehaviors.SandboxEditor.SANDBOX_KEY_FORMAT
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ArenaBehaviors.SandboxEditor.SANDBOX_KEY_FORMAT</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public const string SANDBOX_KEY_FORMAT = "{0}_Sandbox"
+    return:
+      type: System.String
+    content.vb: Public Const SANDBOX_KEY_FORMAT As String = "{0}_Sandbox"
+- uid: ArenaBehaviors.SandboxEditor.cursors
+  commentId: F:ArenaBehaviors.SandboxEditor.cursors
+  id: cursors
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: cursors
+  nameWithType: SandboxEditor.cursors
+  fullName: ArenaBehaviors.SandboxEditor.cursors
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ArenaBehaviors.SandboxEditor.cursors</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<SandboxEditor.EditCursor> cursors
+    return:
+      type: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.EditCursor}
+    content.vb: Public cursors As List(Of SandboxEditor.EditCursor)
+- uid: ArenaBehaviors.SandboxEditor.icons
+  commentId: F:ArenaBehaviors.SandboxEditor.icons
+  id: icons
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: icons
+  nameWithType: SandboxEditor.icons
+  fullName: ArenaBehaviors.SandboxEditor.icons
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ArenaBehaviors.SandboxEditor.icons</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<SandboxEditor.PlacedIcon> icons
+    return:
+      type: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIcon}
+    content.vb: Public icons As List(Of SandboxEditor.PlacedIcon)
+- uid: ArenaBehaviors.SandboxEditor.currentConfig
+  commentId: F:ArenaBehaviors.SandboxEditor.currentConfig
+  id: currentConfig
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: currentConfig
+  nameWithType: SandboxEditor.currentConfig
+  fullName: ArenaBehaviors.SandboxEditor.currentConfig
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ArenaBehaviors.SandboxEditor.currentConfig</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int currentConfig
+    return:
+      type: System.Int32
+    content.vb: Public currentConfig As Integer
+- uid: ArenaBehaviors.SandboxEditor.performanceWarning
+  commentId: F:ArenaBehaviors.SandboxEditor.performanceWarning
+  id: performanceWarning
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: performanceWarning
+  nameWithType: SandboxEditor.performanceWarning
+  fullName: ArenaBehaviors.SandboxEditor.performanceWarning
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ArenaBehaviors.SandboxEditor.performanceWarning</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int performanceWarning
+    return:
+      type: System.Int32
+    content.vb: Public performanceWarning As Integer
+- uid: ArenaBehaviors.SandboxEditor.#ctor(SandboxGameSession)
+  commentId: M:ArenaBehaviors.SandboxEditor.#ctor(SandboxGameSession)
+  id: '#ctor(SandboxGameSession)'
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: SandboxEditor(SandboxGameSession)
+  nameWithType: SandboxEditor.SandboxEditor(SandboxGameSession)
+  fullName: ArenaBehaviors.SandboxEditor.SandboxEditor(SandboxGameSession)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ArenaBehaviors.SandboxEditor</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxEditor(SandboxGameSession sandboxSession)
+    parameters:
+    - id: sandboxSession
+      type: Global.SandboxGameSession
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sandboxSession</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.#ctor(SandboxGameSession)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(sandboxSession As SandboxGameSession)
+  overload: ArenaBehaviors.SandboxEditor.#ctor*
+  nameWithType.vb: SandboxEditor.New(SandboxGameSession)
+  fullName.vb: ArenaBehaviors.SandboxEditor.New(SandboxGameSession)
+  name.vb: New(SandboxGameSession)
+- uid: ArenaBehaviors.SandboxEditor.Update
+  commentId: M:ArenaBehaviors.SandboxEditor.Update
+  id: Update
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SandboxEditor.Update()
+  fullName: ArenaBehaviors.SandboxEditor.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: ArenaBehaviors.ArenaGameBehavior.Update
+  overload: ArenaBehaviors.SandboxEditor.Update*
+- uid: ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)
+  commentId: M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)
+  id: AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: AddIcon(IconSymbolData, Vector2, EntityID, bool, bool)
+  nameWithType: SandboxEditor.AddIcon(IconSymbol.IconSymbolData, Vector2, EntityID, bool, bool)
+  fullName: ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData, UnityEngine.Vector2, EntityID, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxEditor.PlacedIcon AddIcon(IconSymbol.IconSymbolData iconData, Vector2 pos, EntityID ID, bool fadeCircle, bool updatePerfEstimate)
+    parameters:
+    - id: iconData
+      type: Global.IconSymbol.IconSymbolData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>iconData</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: ID
+      type: Global.EntityID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ID</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: fadeCircle
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeCircle</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: updatePerfEstimate
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>updatePerfEstimate</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: ArenaBehaviors.SandboxEditor.PlacedIcon
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData,UnityEngine.Vector2,EntityID,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function AddIcon(iconData As IconSymbol.IconSymbolData, pos As Vector2, ID As EntityID, fadeCircle As Boolean, updatePerfEstimate As Boolean) As SandboxEditor.PlacedIcon
+  overload: ArenaBehaviors.SandboxEditor.AddIcon*
+  nameWithType.vb: SandboxEditor.AddIcon(IconSymbol.IconSymbolData, Vector2, EntityID, Boolean, Boolean)
+  fullName.vb: ArenaBehaviors.SandboxEditor.AddIcon(IconSymbol.IconSymbolData, UnityEngine.Vector2, EntityID, Boolean, Boolean)
+  name.vb: AddIcon(IconSymbolData, Vector2, EntityID, Boolean, Boolean)
+- uid: ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)
+  commentId: M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)
+  id: AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: AddIcon(PlacedIcon, bool, bool)
+  nameWithType: SandboxEditor.AddIcon(SandboxEditor.PlacedIcon, bool, bool)
+  fullName: ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxEditor.PlacedIcon AddIcon(SandboxEditor.PlacedIcon icon, bool fadeCircle, bool updatePerfEstimate)
+    parameters:
+    - id: icon
+      type: ArenaBehaviors.SandboxEditor.PlacedIcon
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>icon</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: fadeCircle
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeCircle</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: updatePerfEstimate
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>updatePerfEstimate</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: ArenaBehaviors.SandboxEditor.PlacedIcon
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function AddIcon(icon As SandboxEditor.PlacedIcon, fadeCircle As Boolean, updatePerfEstimate As Boolean) As SandboxEditor.PlacedIcon
+  overload: ArenaBehaviors.SandboxEditor.AddIcon*
+  nameWithType.vb: SandboxEditor.AddIcon(SandboxEditor.PlacedIcon, Boolean, Boolean)
+  fullName.vb: ArenaBehaviors.SandboxEditor.AddIcon(ArenaBehaviors.SandboxEditor.PlacedIcon, Boolean, Boolean)
+  name.vb: AddIcon(PlacedIcon, Boolean, Boolean)
+- uid: ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)
+  commentId: M:ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)
+  id: RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: RemoveIcon(PlacedIcon, bool)
+  nameWithType: SandboxEditor.RemoveIcon(SandboxEditor.PlacedIcon, bool)
+  fullName: ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RemoveIcon(SandboxEditor.PlacedIcon icon, bool updatePerfEstimate)
+    parameters:
+    - id: icon
+      type: ArenaBehaviors.SandboxEditor.PlacedIcon
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>icon</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: updatePerfEstimate
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>updatePerfEstimate</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RemoveIcon(icon As SandboxEditor.PlacedIcon, updatePerfEstimate As Boolean)
+  overload: ArenaBehaviors.SandboxEditor.RemoveIcon*
+  nameWithType.vb: SandboxEditor.RemoveIcon(SandboxEditor.PlacedIcon, Boolean)
+  fullName.vb: ArenaBehaviors.SandboxEditor.RemoveIcon(ArenaBehaviors.SandboxEditor.PlacedIcon, Boolean)
+  name.vb: RemoveIcon(PlacedIcon, Boolean)
+- uid: ArenaBehaviors.SandboxEditor.ClearAll
+  commentId: M:ArenaBehaviors.SandboxEditor.ClearAll
+  id: ClearAll
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: ClearAll()
+  nameWithType: SandboxEditor.ClearAll()
+  fullName: ArenaBehaviors.SandboxEditor.ClearAll()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.ClearAll</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ClearAll()
+    content.vb: Public Sub ClearAll()
+  overload: ArenaBehaviors.SandboxEditor.ClearAll*
+- uid: ArenaBehaviors.SandboxEditor.SwitchConfig(System.Int32)
+  commentId: M:ArenaBehaviors.SandboxEditor.SwitchConfig(System.Int32)
+  id: SwitchConfig(System.Int32)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: SwitchConfig(int)
+  nameWithType: SandboxEditor.SwitchConfig(int)
+  fullName: ArenaBehaviors.SandboxEditor.SwitchConfig(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.SwitchConfig(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SwitchConfig(int newConfig)
+    parameters:
+    - id: newConfig
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newConfig</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.SwitchConfig(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SwitchConfig(newConfig As Integer)
+  overload: ArenaBehaviors.SandboxEditor.SwitchConfig*
+  nameWithType.vb: SandboxEditor.SwitchConfig(Integer)
+  fullName.vb: ArenaBehaviors.SandboxEditor.SwitchConfig(Integer)
+  name.vb: SwitchConfig(Integer)
+- uid: ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate
+  commentId: M:ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate
+  id: UpdatePerformanceEstimate
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: UpdatePerformanceEstimate()
+  nameWithType: SandboxEditor.UpdatePerformanceEstimate()
+  fullName: ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdatePerformanceEstimate()
+    content.vb: Public Sub UpdatePerformanceEstimate()
+  overload: ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate*
+- uid: ArenaBehaviors.SandboxEditor.Play
+  commentId: M:ArenaBehaviors.SandboxEditor.Play
+  id: Play
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: SandboxEditor.Play()
+  fullName: ArenaBehaviors.SandboxEditor.Play()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.Play</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play()
+  overload: ArenaBehaviors.SandboxEditor.Play*
+- uid: ArenaBehaviors.SandboxEditor.SaveConfig
+  commentId: M:ArenaBehaviors.SandboxEditor.SaveConfig
+  id: SaveConfig
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: SaveConfig()
+  nameWithType: SandboxEditor.SaveConfig()
+  fullName: ArenaBehaviors.SandboxEditor.SaveConfig()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.SaveConfig</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SaveConfig()
+    content.vb: Public Sub SaveConfig()
+  overload: ArenaBehaviors.SandboxEditor.SaveConfig*
+- uid: ArenaBehaviors.SandboxEditor.DevToolsExportConfig
+  commentId: M:ArenaBehaviors.SandboxEditor.DevToolsExportConfig
+  id: DevToolsExportConfig
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: DevToolsExportConfig()
+  nameWithType: SandboxEditor.DevToolsExportConfig()
+  fullName: ArenaBehaviors.SandboxEditor.DevToolsExportConfig()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.DevToolsExportConfig</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DevToolsExportConfig()
+    content.vb: Public Sub DevToolsExportConfig()
+  overload: ArenaBehaviors.SandboxEditor.DevToolsExportConfig*
+- uid: ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)
+  commentId: M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)
+  id: LoadConfiguration(System.Int32@,System.String,RainWorld)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: LoadConfiguration(ref int, string, RainWorld)
+  nameWithType: SandboxEditor.LoadConfiguration(ref int, string, RainWorld)
+  fullName: ArenaBehaviors.SandboxEditor.LoadConfiguration(ref int, string, RainWorld)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<SandboxEditor.PlacedIconData> LoadConfiguration(ref int currConfNumber, string room, RainWorld rainWorld)
+    parameters:
+    - id: currConfNumber
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>currConfNumber</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)</parameter>
+          </include>
+        </markup>
+    - id: rainWorld
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rainWorld</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIconData}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.LoadConfiguration(System.Int32@,System.String,RainWorld)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function LoadConfiguration(currConfNumber As Integer, room As String, rainWorld As RainWorld) As List(Of SandboxEditor.PlacedIconData)
+  overload: ArenaBehaviors.SandboxEditor.LoadConfiguration*
+  nameWithType.vb: SandboxEditor.LoadConfiguration(Integer, String, RainWorld)
+  fullName.vb: ArenaBehaviors.SandboxEditor.LoadConfiguration(Integer, String, RainWorld)
+  name.vb: LoadConfiguration(Integer, String, RainWorld)
+- uid: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)
+  commentId: M:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)
+  id: CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: CreaturePerfEstimate(Type, ref float, ref float)
+  nameWithType: SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type, ref float, ref float)
+  fullName: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type, ref float, ref float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void CreaturePerfEstimate(CreatureTemplate.Type critType, ref float linear, ref float exponential)
+    parameters:
+    - id: critType
+      type: Global.CreatureTemplate.Type
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>critType</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)</parameter>
+          </include>
+        </markup>
+    - id: linear
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>linear</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)</parameter>
+          </include>
+        </markup>
+    - id: exponential
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>exponential</parameter>
+            <parameter>M:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type,System.Single@,System.Single@)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Sub CreaturePerfEstimate(critType As CreatureTemplate.Type, linear As Single, exponential As Single)
+  overload: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate*
+  nameWithType.vb: SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type, Single, Single)
+  fullName.vb: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate(CreatureTemplate.Type, Single, Single)
+  name.vb: CreaturePerfEstimate(Type, Single, Single)
+- uid: ArenaBehaviors.SandboxEditor.overlay
+  commentId: P:ArenaBehaviors.SandboxEditor.overlay
+  id: overlay
+  parent: ArenaBehaviors.SandboxEditor
+  langs:
+  - csharp
+  - vb
+  name: overlay
+  nameWithType: SandboxEditor.overlay
+  fullName: ArenaBehaviors.SandboxEditor.overlay
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: ArenaBehaviors
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ArenaBehaviors.SandboxEditor.overlay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SandboxOverlay overlay { get; }
+    parameters: []
+    return:
+      type: Menu.SandboxOverlay
+    content.vb: Public ReadOnly Property overlay As SandboxOverlay
+  overload: ArenaBehaviors.SandboxEditor.overlay*
+references:
+- uid: ArenaBehaviors
+  commentId: N:ArenaBehaviors
+  isExternal: true
+  href: ArenaBehaviors.html
+  name: ArenaBehaviors
+  nameWithType: ArenaBehaviors
+  fullName: ArenaBehaviors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ArenaBehaviors.ArenaGameBehavior
+  commentId: T:ArenaBehaviors.ArenaGameBehavior
+  parent: ArenaBehaviors
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html
+  name: ArenaGameBehavior
+  nameWithType: ArenaGameBehavior
+  fullName: ArenaBehaviors.ArenaGameBehavior
+- uid: ArenaBehaviors.ArenaGameBehavior.gameSession
+  commentId: F:ArenaBehaviors.ArenaGameBehavior.gameSession
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_gameSession
+  name: gameSession
+  nameWithType: ArenaGameBehavior.gameSession
+  fullName: ArenaBehaviors.ArenaGameBehavior.gameSession
+- uid: ArenaBehaviors.ArenaGameBehavior.slatedForDeletion
+  commentId: F:ArenaBehaviors.ArenaGameBehavior.slatedForDeletion
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_slatedForDeletion
+  name: slatedForDeletion
+  nameWithType: ArenaGameBehavior.slatedForDeletion
+  fullName: ArenaBehaviors.ArenaGameBehavior.slatedForDeletion
+- uid: ArenaBehaviors.ArenaGameBehavior.Initiate
+  commentId: M:ArenaBehaviors.ArenaGameBehavior.Initiate
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Initiate
+  name: Initiate()
+  nameWithType: ArenaGameBehavior.Initiate()
+  fullName: ArenaBehaviors.ArenaGameBehavior.Initiate()
+  spec.csharp:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Initiate
+    name: Initiate
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Initiate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Initiate
+    name: Initiate
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Initiate
+  - name: (
+  - name: )
+- uid: ArenaBehaviors.ArenaGameBehavior.Destroy
+  commentId: M:ArenaBehaviors.ArenaGameBehavior.Destroy
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Destroy
+  name: Destroy()
+  nameWithType: ArenaGameBehavior.Destroy()
+  fullName: ArenaBehaviors.ArenaGameBehavior.Destroy()
+  spec.csharp:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Destroy
+    name: Destroy
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Destroy
+    name: Destroy
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Destroy
+  - name: (
+  - name: )
+- uid: ArenaBehaviors.ArenaGameBehavior.game
+  commentId: P:ArenaBehaviors.ArenaGameBehavior.game
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_game
+  name: game
+  nameWithType: ArenaGameBehavior.game
+  fullName: ArenaBehaviors.ArenaGameBehavior.game
+- uid: ArenaBehaviors.ArenaGameBehavior.world
+  commentId: P:ArenaBehaviors.ArenaGameBehavior.world
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_world
+  name: world
+  nameWithType: ArenaGameBehavior.world
+  fullName: ArenaBehaviors.ArenaGameBehavior.world
+- uid: ArenaBehaviors.ArenaGameBehavior.room
+  commentId: P:ArenaBehaviors.ArenaGameBehavior.room
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_room
+  name: room
+  nameWithType: ArenaGameBehavior.room
+  fullName: ArenaBehaviors.ArenaGameBehavior.room
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.EditCursor}
+  commentId: T:System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.EditCursor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SandboxEditor.EditCursor>
+  nameWithType: List<SandboxEditor.EditCursor>
+  fullName: System.Collections.Generic.List<ArenaBehaviors.SandboxEditor.EditCursor>
+  nameWithType.vb: List(Of SandboxEditor.EditCursor)
+  fullName.vb: System.Collections.Generic.List(Of ArenaBehaviors.SandboxEditor.EditCursor)
+  name.vb: List(Of SandboxEditor.EditCursor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.EditCursor
+    name: EditCursor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.EditCursor.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.EditCursor
+    name: EditCursor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.EditCursor.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIcon}
+  commentId: T:System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIcon}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SandboxEditor.PlacedIcon>
+  nameWithType: List<SandboxEditor.PlacedIcon>
+  fullName: System.Collections.Generic.List<ArenaBehaviors.SandboxEditor.PlacedIcon>
+  nameWithType.vb: List(Of SandboxEditor.PlacedIcon)
+  fullName.vb: System.Collections.Generic.List(Of ArenaBehaviors.SandboxEditor.PlacedIcon)
+  name.vb: List(Of SandboxEditor.PlacedIcon)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIcon
+    name: PlacedIcon
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIcon.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIcon
+    name: PlacedIcon
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIcon.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ArenaBehaviors.SandboxEditor.#ctor*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.#ctor
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor__ctor_SandboxGameSession_
+  name: SandboxEditor
+  nameWithType: SandboxEditor.SandboxEditor
+  fullName: ArenaBehaviors.SandboxEditor.SandboxEditor
+  nameWithType.vb: SandboxEditor.New
+  fullName.vb: ArenaBehaviors.SandboxEditor.New
+  name.vb: New
+- uid: Global.SandboxGameSession
+  commentId: T:Global.SandboxGameSession
+  isExternal: true
+  href: SandboxGameSession.html
+  name: SandboxGameSession
+  nameWithType: SandboxGameSession
+  fullName: SandboxGameSession
+- uid: ArenaBehaviors.ArenaGameBehavior.Update
+  commentId: M:ArenaBehaviors.ArenaGameBehavior.Update
+  parent: ArenaBehaviors.ArenaGameBehavior
+  isExternal: true
+  href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Update
+  name: Update()
+  nameWithType: ArenaGameBehavior.Update()
+  fullName: ArenaBehaviors.ArenaGameBehavior.Update()
+  spec.csharp:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Update
+    name: Update
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ArenaBehaviors.ArenaGameBehavior.Update
+    name: Update
+    isExternal: true
+    href: ArenaBehaviors.ArenaGameBehavior.html#ArenaBehaviors_ArenaGameBehavior_Update
+  - name: (
+  - name: )
+- uid: ArenaBehaviors.SandboxEditor.Update*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.Update
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_Update
+  name: Update
+  nameWithType: SandboxEditor.Update
+  fullName: ArenaBehaviors.SandboxEditor.Update
+- uid: ArenaBehaviors.SandboxEditor.AddIcon*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.AddIcon
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_AddIcon_IconSymbol_IconSymbolData_UnityEngine_Vector2_EntityID_System_Boolean_System_Boolean_
+  name: AddIcon
+  nameWithType: SandboxEditor.AddIcon
+  fullName: ArenaBehaviors.SandboxEditor.AddIcon
+- uid: Global.IconSymbol.IconSymbolData
+  commentId: T:Global.IconSymbol.IconSymbolData
+  isExternal: true
+  href: IconSymbol.html
+  name: IconSymbol.IconSymbolData
+  nameWithType: IconSymbol.IconSymbolData
+  fullName: IconSymbol.IconSymbolData
+  spec.csharp:
+  - uid: Global.IconSymbol
+    name: IconSymbol
+    isExternal: true
+    href: IconSymbol.html
+  - name: .
+  - uid: Global.IconSymbol.IconSymbolData
+    name: IconSymbolData
+    isExternal: true
+    href: IconSymbol.IconSymbolData.html
+  spec.vb:
+  - uid: Global.IconSymbol
+    name: IconSymbol
+    isExternal: true
+    href: IconSymbol.html
+  - name: .
+  - uid: Global.IconSymbol.IconSymbolData
+    name: IconSymbolData
+    isExternal: true
+    href: IconSymbol.IconSymbolData.html
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.EntityID
+  commentId: T:Global.EntityID
+  isExternal: true
+  href: EntityID.html
+  name: EntityID
+  nameWithType: EntityID
+  fullName: EntityID
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ArenaBehaviors.SandboxEditor.PlacedIcon
+  commentId: T:ArenaBehaviors.SandboxEditor.PlacedIcon
+  parent: ArenaBehaviors
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html
+  name: SandboxEditor.PlacedIcon
+  nameWithType: SandboxEditor.PlacedIcon
+  fullName: ArenaBehaviors.SandboxEditor.PlacedIcon
+  spec.csharp:
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIcon
+    name: PlacedIcon
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIcon.html
+  spec.vb:
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIcon
+    name: PlacedIcon
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIcon.html
+- uid: ArenaBehaviors.SandboxEditor.RemoveIcon*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.RemoveIcon
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_RemoveIcon_ArenaBehaviors_SandboxEditor_PlacedIcon_System_Boolean_
+  name: RemoveIcon
+  nameWithType: SandboxEditor.RemoveIcon
+  fullName: ArenaBehaviors.SandboxEditor.RemoveIcon
+- uid: ArenaBehaviors.SandboxEditor.ClearAll*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.ClearAll
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_ClearAll
+  name: ClearAll
+  nameWithType: SandboxEditor.ClearAll
+  fullName: ArenaBehaviors.SandboxEditor.ClearAll
+- uid: ArenaBehaviors.SandboxEditor.SwitchConfig*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.SwitchConfig
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_SwitchConfig_System_Int32_
+  name: SwitchConfig
+  nameWithType: SandboxEditor.SwitchConfig
+  fullName: ArenaBehaviors.SandboxEditor.SwitchConfig
+- uid: ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_UpdatePerformanceEstimate
+  name: UpdatePerformanceEstimate
+  nameWithType: SandboxEditor.UpdatePerformanceEstimate
+  fullName: ArenaBehaviors.SandboxEditor.UpdatePerformanceEstimate
+- uid: ArenaBehaviors.SandboxEditor.Play*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.Play
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_Play
+  name: Play
+  nameWithType: SandboxEditor.Play
+  fullName: ArenaBehaviors.SandboxEditor.Play
+- uid: ArenaBehaviors.SandboxEditor.SaveConfig*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.SaveConfig
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_SaveConfig
+  name: SaveConfig
+  nameWithType: SandboxEditor.SaveConfig
+  fullName: ArenaBehaviors.SandboxEditor.SaveConfig
+- uid: ArenaBehaviors.SandboxEditor.DevToolsExportConfig*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.DevToolsExportConfig
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_DevToolsExportConfig
+  name: DevToolsExportConfig
+  nameWithType: SandboxEditor.DevToolsExportConfig
+  fullName: ArenaBehaviors.SandboxEditor.DevToolsExportConfig
+- uid: ArenaBehaviors.SandboxEditor.LoadConfiguration*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.LoadConfiguration
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_LoadConfiguration_System_Int32__System_String_RainWorld_
+  name: LoadConfiguration
+  nameWithType: SandboxEditor.LoadConfiguration
+  fullName: ArenaBehaviors.SandboxEditor.LoadConfiguration
+- uid: Global.RainWorld
+  commentId: T:Global.RainWorld
+  isExternal: true
+  href: RainWorld.html
+  name: RainWorld
+  nameWithType: RainWorld
+  fullName: RainWorld
+- uid: System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIconData}
+  commentId: T:System.Collections.Generic.List{ArenaBehaviors.SandboxEditor.PlacedIconData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SandboxEditor.PlacedIconData>
+  nameWithType: List<SandboxEditor.PlacedIconData>
+  fullName: System.Collections.Generic.List<ArenaBehaviors.SandboxEditor.PlacedIconData>
+  nameWithType.vb: List(Of SandboxEditor.PlacedIconData)
+  fullName.vb: System.Collections.Generic.List(Of ArenaBehaviors.SandboxEditor.PlacedIconData)
+  name.vb: List(Of SandboxEditor.PlacedIconData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIconData
+    name: PlacedIconData
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIconData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ArenaBehaviors.SandboxEditor
+    name: SandboxEditor
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.html
+  - name: .
+  - uid: ArenaBehaviors.SandboxEditor.PlacedIconData
+    name: PlacedIconData
+    isExternal: true
+    href: ArenaBehaviors.SandboxEditor.PlacedIconData.html
+  - name: )
+- uid: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.CreaturePerfEstimate
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_CreaturePerfEstimate_CreatureTemplate_Type_System_Single__System_Single__
+  name: CreaturePerfEstimate
+  nameWithType: SandboxEditor.CreaturePerfEstimate
+  fullName: ArenaBehaviors.SandboxEditor.CreaturePerfEstimate
+- uid: Global.CreatureTemplate.Type
+  commentId: T:Global.CreatureTemplate.Type
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate.Type
+  nameWithType: CreatureTemplate.Type
+  fullName: CreatureTemplate.Type
+  spec.csharp:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  spec.vb:
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ArenaBehaviors.SandboxEditor.overlay*
+  commentId: Overload:ArenaBehaviors.SandboxEditor.overlay
+  isExternal: true
+  href: ArenaBehaviors.SandboxEditor.html#ArenaBehaviors_SandboxEditor_overlay
+  name: overlay
+  nameWithType: SandboxEditor.overlay
+  fullName: ArenaBehaviors.SandboxEditor.overlay
+- uid: Menu.SandboxOverlay
+  commentId: T:Menu.SandboxOverlay
+  parent: Menu
+  isExternal: true
+  href: Menu.SandboxOverlay.html
+  name: SandboxOverlay
+  nameWithType: SandboxOverlay
+  fullName: Menu.SandboxOverlay
+- uid: Menu
+  commentId: N:Menu
+  isExternal: true
+  href: Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu

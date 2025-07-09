@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Weapon | RainDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Weapon | RainDocs ">
+      
+      <meta name="description" content="summary     T:Weapon">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RainDocs">
+            RainDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Weapon">
+
+
+
+  <h1 id="Global_Weapon" data-uid="Global.Weapon" class="text-break">
+Class Weapon  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>T:Weapon</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Weapon : PlayerCarryableItem, IDrawable, SharedPhysics.IProjectileTracer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.UpdatableAndDeletable.html">UpdatableAndDeletable</a></div>
+      <div><a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></div>
+      <div><a class="xref" href="Global.PlayerCarryableItem.html">PlayerCarryableItem</a></div>
+      <div><span class="xref">Weapon</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Global.IDrawable.html">IDrawable</a></div>
+      <div><a class="xref" href="SharedPhysics.html">SharedPhysics</a>.<a class="xref" href="SharedPhysics.IProjectileTracer.html">IProjectileTracer</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Global.Boomerang.html">Boomerang</a></div>
+      <div><a class="xref" href="Global.FirecrackerPlant.html">FirecrackerPlant</a></div>
+      <div><a class="xref" href="Global.FlareBomb.html">FlareBomb</a></div>
+      <div><a class="xref" href="Global.PuffBall.html">PuffBall</a></div>
+      <div><a class="xref" href="Global.Rock.html">Rock</a></div>
+      <div><a class="xref" href="Global.ScavengerBomb.html">ScavengerBomb</a></div>
+      <div><a class="xref" href="Global.Spear.html">Spear</a></div>
+      <div><a class="xref" href="Global.SporePlant.html">SporePlant</a></div>
+      <div><a class="xref" href="MoreSlugcats.Bullet.html">Bullet</a></div>
+      <div><a class="xref" href="MoreSlugcats.LillyPuck.html">LillyPuck</a></div>
+      <div><a class="xref" href="MoreSlugcats.SingularityBomb.html">SingularityBomb</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_blink">PlayerCarryableItem.blink</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_color">PlayerCarryableItem.color</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_lastOutsideTerrainPos">PlayerCarryableItem.lastOutsideTerrainPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_PickedUp_Creature_">PlayerCarryableItem.PickedUp(Creature)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_Blink">PlayerCarryableItem.Blink()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_Forbid">PlayerCarryableItem.Forbid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_forbiddenToPlayer">PlayerCarryableItem.forbiddenToPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_ThrowPowerFactor">PlayerCarryableItem.ThrowPowerFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PlayerCarryableItem.html#Global_PlayerCarryableItem_blinkColor">PlayerCarryableItem.blinkColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunkConnections">PhysicalObject.bodyChunkConnections</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_grabbedBy">PhysicalObject.grabbedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionRange">PhysicalObject.collisionRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_collisionLayer">PhysicalObject.collisionLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_abstractPhysicalObject">PhysicalObject.abstractPhysicalObject</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_surfaceFriction">PhysicalObject.surfaceFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bounce">PhysicalObject.bounce</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_impactTreshhold">PhysicalObject.impactTreshhold</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterRetardationImmunity">PhysicalObject.waterRetardationImmunity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_burrowFriction">PhysicalObject.burrowFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_sticksRespawned">PhysicalObject.sticksRespawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_appendages">PhysicalObject.appendages</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_canBeHitByWeapons">PhysicalObject.canBeHitByWeapons</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_jollyBeingPointedCounter">PhysicalObject.jollyBeingPointedCounter</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_FirstChunk">PhysicalObject.FirstChunk()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_PushOutOf_UnityEngine_Vector2_System_Single_System_Int32_">PhysicalObject.PushOutOf(Vector2, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeCollisionLayer_System_Int32_">PhysicalObject.ChangeCollisionLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Collide_PhysicalObject_System_Int32_System_Int32_">PhysicalObject.Collide(PhysicalObject, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_ChangeRippleLayer_System_Int32_">PhysicalObject.ChangeRippleLayer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByWeapon_Weapon_">PhysicalObject.HitByWeapon(Weapon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_IsTileSolid_System_Int32_System_Int32_System_Int32_">PhysicalObject.IsTileSolid(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_AllGraspsLetGoOfThisObject_System_Boolean_">PhysicalObject.AllGraspsLetGoOfThisObject(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TerrainImpact_System_Int32_RWCustom_IntVector2_System_Single_System_Boolean_">PhysicalObject.TerrainImpact(int, IntVector2, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GraphicsModuleUpdated_System_Boolean_System_Boolean_">PhysicalObject.GraphicsModuleUpdated(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_InitiateGraphicsModule">PhysicalObject.InitiateGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RemoveGraphicsModule">PhysicalObject.RemoveGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeightedPush_System_Int32_System_Int32_UnityEngine_Vector2_System_Single_">PhysicalObject.WeightedPush(int, int, Vector2, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RecreateSticksFromAbstract">PhysicalObject.RecreateSticksFromAbstract()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_HitByExplosion_System_Single_Explosion_System_Int32_">PhysicalObject.HitByExplosion(float, Explosion, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalGravity_System_Single_">PhysicalObject.SetLocalGravity(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GetLocalGravity">PhysicalObject.GetLocalGravity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SetLocalAirFriction_System_Single_">PhysicalObject.SetLocalAirFriction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WeatherInertia">PhysicalObject.WeatherInertia()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_DisposeGraphicsModule">PhysicalObject.DisposeGraphicsModule()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_bodyChunks">PhysicalObject.bodyChunks</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_graphicsModule">PhysicalObject.graphicsModule</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_firstChunk">PhysicalObject.firstChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_TotalMass">PhysicalObject.TotalMass</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_RandomChunk">PhysicalObject.RandomChunk</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_gravity">PhysicalObject.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_airFriction">PhysicalObject.airFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_waterFriction">PhysicalObject.waterFriction</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_buoyancy">PhysicalObject.buoyancy</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_windAffectiveness">PhysicalObject.windAffectiveness</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_VisibilityBonus">PhysicalObject.VisibilityBonus</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_GoThroughFloors">PhysicalObject.GoThroughFloors</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithTerrain">PhysicalObject.CollideWithTerrain</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithSlopes">PhysicalObject.CollideWithSlopes</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_CollideWithObjects">PhysicalObject.CollideWithObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Buried">PhysicalObject.Buried</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_WantsToBurrow">PhysicalObject.WantsToBurrow</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_Submersion">PhysicalObject.Submersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_SandstormImmune">PhysicalObject.SandstormImmune</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_EffectiveRoomGravity">PhysicalObject.EffectiveRoomGravity</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.PhysicalObject.html#Global_PhysicalObject_LickedByPlayer">PhysicalObject.LickedByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_evenUpdate">UpdatableAndDeletable.evenUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_room">UpdatableAndDeletable.room</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_PausedUpdate">UpdatableAndDeletable.PausedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_RemoveFromRoom">UpdatableAndDeletable.RemoveFromRoom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_Destroy">UpdatableAndDeletable.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.UpdatableAndDeletable.html#Global_UpdatableAndDeletable_slatedForDeletetion">UpdatableAndDeletable.slatedForDeletetion</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Weapon__ctor_" data-uid="Global.Weapon.#ctor*"></a>
+
+  <h3 id="Global_Weapon__ctor_AbstractPhysicalObject_World_" data-uid="Global.Weapon.#ctor(AbstractPhysicalObject,World)">
+  Weapon(AbstractPhysicalObject, World)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCAutoDocConstructor">
+    <parameter>Weapon</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon(AbstractPhysicalObject abstractPhysicalObject, World world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abstractPhysicalObject</code> <a class="xref" href="Global.AbstractPhysicalObject.html">AbstractPhysicalObject</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>abstractPhysicalObject</parameter>
+    <parameter>M:Weapon.#ctor(AbstractPhysicalObject,World)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>world</code> <a class="xref" href="Global.World.html">World</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>world</parameter>
+    <parameter>M:Weapon.#ctor(AbstractPhysicalObject,World)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Weapon_changeDirCounter" data-uid="Global.Weapon.changeDirCounter">
+  changeDirCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.changeDirCounter</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int changeDirCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_closestCritDist" data-uid="Global.Weapon.closestCritDist">
+  closestCritDist
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.closestCritDist</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float closestCritDist</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_doNotTumbleAtLowSpeed" data-uid="Global.Weapon.doNotTumbleAtLowSpeed">
+  doNotTumbleAtLowSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.doNotTumbleAtLowSpeed</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool doNotTumbleAtLowSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_exitThrownModeSpeed" data-uid="Global.Weapon.exitThrownModeSpeed">
+  exitThrownModeSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.exitThrownModeSpeed</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float exitThrownModeSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_firstFrameTraceFromPos" data-uid="Global.Weapon.firstFrameTraceFromPos">
+  firstFrameTraceFromPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.firstFrameTraceFromPos</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? firstFrameTraceFromPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_floorBounceFrames" data-uid="Global.Weapon.floorBounceFrames">
+  floorBounceFrames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.floorBounceFrames</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int floorBounceFrames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_lastMode" data-uid="Global.Weapon.lastMode">
+  lastMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.lastMode</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon.Mode lastMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Weapon.html">Weapon</a>.<a class="xref" href="Weapon.Mode.html">Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_lastRotation" data-uid="Global.Weapon.lastRotation">
+  lastRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.lastRotation</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 lastRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_meleeHitChunk" data-uid="Global.Weapon.meleeHitChunk">
+  meleeHitChunk
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.meleeHitChunk</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyChunk meleeHitChunk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_overrideExitThrownSpeed" data-uid="Global.Weapon.overrideExitThrownSpeed">
+  overrideExitThrownSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.overrideExitThrownSpeed</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float overrideExitThrownSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_rotation" data-uid="Global.Weapon.rotation">
+  rotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.rotation</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 rotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_rotationSpeed" data-uid="Global.Weapon.rotationSpeed">
+  rotationSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.rotationSpeed</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotationSpeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_setRotation" data-uid="Global.Weapon.setRotation">
+  setRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.setRotation</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2? setRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_soundLoop" data-uid="Global.Weapon.soundLoop">
+  soundLoop
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.soundLoop</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DynamicSoundLoop soundLoop</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.DynamicSoundLoop.html">DynamicSoundLoop</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_tailPos" data-uid="Global.Weapon.tailPos">
+  tailPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.tailPos</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 tailPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_throwDir" data-uid="Global.Weapon.throwDir">
+  throwDir
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.throwDir</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IntVector2 throwDir</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_throwModeFrames" data-uid="Global.Weapon.throwModeFrames">
+  throwModeFrames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.throwModeFrames</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int throwModeFrames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_thrownBy" data-uid="Global.Weapon.thrownBy">
+  thrownBy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.thrownBy</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature thrownBy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_thrownClosestToCreature" data-uid="Global.Weapon.thrownClosestToCreature">
+  thrownClosestToCreature
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.thrownClosestToCreature</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Creature thrownClosestToCreature</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_thrownPos" data-uid="Global.Weapon.thrownPos">
+  thrownPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.thrownPos</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 thrownPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Weapon_vibrate" data-uid="Global.Weapon.vibrate">
+  vibrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>F:Weapon.vibrate</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int vibrate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Weapon_DefaultCollLayer_" data-uid="Global.Weapon.DefaultCollLayer*"></a>
+
+  <h3 id="Global_Weapon_DefaultCollLayer" data-uid="Global.Weapon.DefaultCollLayer">
+  DefaultCollLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:Weapon.DefaultCollLayer</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int DefaultCollLayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HeavyWeapon_" data-uid="Global.Weapon.HeavyWeapon*"></a>
+
+  <h3 id="Global_Weapon_HeavyWeapon" data-uid="Global.Weapon.HeavyWeapon">
+  HeavyWeapon
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:Weapon.HeavyWeapon</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HeavyWeapon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_mode_" data-uid="Global.Weapon.mode*"></a>
+
+  <h3 id="Global_Weapon_mode" data-uid="Global.Weapon.mode">
+  mode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>P:Weapon.mode</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Weapon.Mode mode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Weapon.html">Weapon</a>.<a class="xref" href="Weapon.Mode.html">Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Weapon_AddToContainer_" data-uid="Global.Weapon.AddToContainer*"></a>
+
+  <h3 id="Global_Weapon_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_" data-uid="Global.Weapon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)">
+  AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>sLeaser</parameter>
+    <parameter>M:Weapon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>rCam</parameter>
+    <parameter>M:Weapon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>newContatiner</code> <a class="xref" href="Global.FContainer.html">FContainer</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newContatiner</parameter>
+    <parameter>M:Weapon.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_ApplyPalette_" data-uid="Global.Weapon.ApplyPalette*"></a>
+
+  <h3 id="Global_Weapon_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_" data-uid="Global.Weapon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)">
+  ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>sLeaser</parameter>
+    <parameter>M:Weapon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>rCam</parameter>
+    <parameter>M:Weapon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>palette</code> <a class="xref" href="Global.RoomPalette.html">RoomPalette</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>palette</parameter>
+    <parameter>M:Weapon.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_ChangeMode_" data-uid="Global.Weapon.ChangeMode*"></a>
+
+  <h3 id="Global_Weapon_ChangeMode_Weapon_Mode_" data-uid="Global.Weapon.ChangeMode(Weapon.Mode)">
+  ChangeMode(Mode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.ChangeMode(Weapon.Mode)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ChangeMode(Weapon.Mode newMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newMode</code> <a class="xref" href="Weapon.html">Weapon</a>.<a class="xref" href="Weapon.Mode.html">Mode</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newMode</parameter>
+    <parameter>M:Weapon.ChangeMode(Weapon.Mode)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_ChangeOverlap_" data-uid="Global.Weapon.ChangeOverlap*"></a>
+
+  <h3 id="Global_Weapon_ChangeOverlap_System_Boolean_" data-uid="Global.Weapon.ChangeOverlap(System.Boolean)">
+  ChangeOverlap(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.ChangeOverlap(System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeOverlap(bool newOverlap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newOverlap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newOverlap</parameter>
+    <parameter>M:Weapon.ChangeOverlap(System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_DrawSprites_" data-uid="Global.Weapon.DrawSprites*"></a>
+
+  <h3 id="Global_Weapon_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_" data-uid="Global.Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)">
+  DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>sLeaser</parameter>
+    <parameter>M:Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>rCam</parameter>
+    <parameter>M:Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>timeStacker</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>timeStacker</parameter>
+    <parameter>M:Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>camPos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>camPos</parameter>
+    <parameter>M:Weapon.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_Grabbed_" data-uid="Global.Weapon.Grabbed*"></a>
+
+  <h3 id="Global_Weapon_Grabbed_Creature_Grasp_" data-uid="Global.Weapon.Grabbed(Creature.Grasp)">
+  Grabbed(Grasp)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.Grabbed(Creature.Grasp)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Grabbed(Creature.Grasp grasp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>grasp</code> <a class="xref" href="Creature.html">Creature</a>.<a class="xref" href="Creature.Grasp.html">Grasp</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>grasp</parameter>
+    <parameter>M:Weapon.Grabbed(Creature.Grasp)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HitSomething_" data-uid="Global.Weapon.HitSomething*"></a>
+
+  <h3 id="Global_Weapon_HitSomething_SharedPhysics_CollisionResult_System_Boolean_" data-uid="Global.Weapon.HitSomething(SharedPhysics.CollisionResult,System.Boolean)">
+  HitSomething(CollisionResult, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.HitSomething(SharedPhysics.CollisionResult,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HitSomething(SharedPhysics.CollisionResult result, bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="SharedPhysics.html">SharedPhysics</a>.<a class="xref" href="SharedPhysics.CollisionResult.html">CollisionResult</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>result</parameter>
+    <parameter>M:Weapon.HitSomething(SharedPhysics.CollisionResult,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:Weapon.HitSomething(SharedPhysics.CollisionResult,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:Weapon.HitSomething(SharedPhysics.CollisionResult,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HitSomethingWithoutStopping_" data-uid="Global.Weapon.HitSomethingWithoutStopping*"></a>
+
+  <h3 id="Global_Weapon_HitSomethingWithoutStopping_PhysicalObject_BodyChunk_PhysicalObject_Appendage_" data-uid="Global.Weapon.HitSomethingWithoutStopping(PhysicalObject,BodyChunk,PhysicalObject.Appendage)">
+  HitSomethingWithoutStopping(PhysicalObject, BodyChunk, Appendage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.HitSomethingWithoutStopping(PhysicalObject,BodyChunk,PhysicalObject.Appendage)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HitSomethingWithoutStopping(PhysicalObject obj, BodyChunk chunk, PhysicalObject.Appendage appendage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>obj</parameter>
+    <parameter>M:Weapon.HitSomethingWithoutStopping(PhysicalObject,BodyChunk,PhysicalObject.Appendage)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>chunk</parameter>
+    <parameter>M:Weapon.HitSomethingWithoutStopping(PhysicalObject,BodyChunk,PhysicalObject.Appendage)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>appendage</code> <a class="xref" href="PhysicalObject.html">PhysicalObject</a>.<a class="xref" href="PhysicalObject.Appendage.html">Appendage</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>appendage</parameter>
+    <parameter>M:Weapon.HitSomethingWithoutStopping(PhysicalObject,BodyChunk,PhysicalObject.Appendage)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HitThisChunk_" data-uid="Global.Weapon.HitThisChunk*"></a>
+
+  <h3 id="Global_Weapon_HitThisChunk_BodyChunk_" data-uid="Global.Weapon.HitThisChunk(BodyChunk)">
+  HitThisChunk(BodyChunk)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.HitThisChunk(BodyChunk)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HitThisChunk(BodyChunk chunk)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chunk</code> <a class="xref" href="Global.BodyChunk.html">BodyChunk</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>chunk</parameter>
+    <parameter>M:Weapon.HitThisChunk(BodyChunk)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:Weapon.HitThisChunk(BodyChunk)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HitThisObject_" data-uid="Global.Weapon.HitThisObject*"></a>
+
+  <h3 id="Global_Weapon_HitThisObject_PhysicalObject_" data-uid="Global.Weapon.HitThisObject(PhysicalObject)">
+  HitThisObject(PhysicalObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.HitThisObject(PhysicalObject)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HitThisObject(PhysicalObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="Global.PhysicalObject.html">PhysicalObject</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>obj</parameter>
+    <parameter>M:Weapon.HitThisObject(PhysicalObject)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingTag">
+    <parameter>returns</parameter>
+    <parameter>M:Weapon.HitThisObject(PhysicalObject)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_HitWall_" data-uid="Global.Weapon.HitWall*"></a>
+
+  <h3 id="Global_Weapon_HitWall" data-uid="Global.Weapon.HitWall">
+  HitWall()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.HitWall</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void HitWall()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_InitiateSprites_" data-uid="Global.Weapon.InitiateSprites*"></a>
+
+  <h3 id="Global_Weapon_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_" data-uid="Global.Weapon.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)">
+  InitiateSprites(SpriteLeaser, RoomCamera)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sLeaser</code> <a class="xref" href="RoomCamera.html">RoomCamera</a>.<a class="xref" href="RoomCamera.SpriteLeaser.html">SpriteLeaser</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>sLeaser</parameter>
+    <parameter>M:Weapon.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>rCam</code> <a class="xref" href="Global.RoomCamera.html">RoomCamera</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>rCam</parameter>
+    <parameter>M:Weapon.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_NewRoom_" data-uid="Global.Weapon.NewRoom*"></a>
+
+  <h3 id="Global_Weapon_NewRoom_Room_" data-uid="Global.Weapon.NewRoom(Room)">
+  NewRoom(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void NewRoom(Room newRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>newRoom</parameter>
+    <parameter>M:Weapon.NewRoom(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_PlaceInRoom_" data-uid="Global.Weapon.PlaceInRoom*"></a>
+
+  <h3 id="Global_Weapon_PlaceInRoom_Room_" data-uid="Global.Weapon.PlaceInRoom(Room)">
+  PlaceInRoom(Room)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.PlaceInRoom(Room)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PlaceInRoom(Room placeRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeRoom</code> <a class="xref" href="Global.Room.html">Room</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>placeRoom</parameter>
+    <parameter>M:Weapon.PlaceInRoom(Room)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_SetRandomSpin_" data-uid="Global.Weapon.SetRandomSpin*"></a>
+
+  <h3 id="Global_Weapon_SetRandomSpin" data-uid="Global.Weapon.SetRandomSpin">
+  SetRandomSpin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.SetRandomSpin</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetRandomSpin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_Shoot_" data-uid="Global.Weapon.Shoot*"></a>
+
+  <h3 id="Global_Weapon_Shoot_Creature_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_System_Boolean_" data-uid="Global.Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)">
+  Shoot(Creature, Vector2, Vector2, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Shoot(Creature shotBy, Vector2 thrownPos, Vector2 throwDir, float force, bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shotBy</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>shotBy</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>thrownPos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>thrownPos</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>throwDir</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>throwDir</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>force</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>force</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:Weapon.Shoot(Creature,UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_Thrown_" data-uid="Global.Weapon.Thrown*"></a>
+
+  <h3 id="Global_Weapon_Thrown_Creature_UnityEngine_Vector2_System_Nullable_UnityEngine_Vector2__RWCustom_IntVector2_System_Single_System_Boolean_" data-uid="Global.Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)">
+  Thrown(Creature, Vector2, Vector2?, IntVector2, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Thrown(Creature thrownBy, Vector2 thrownPos, Vector2? firstFrameTraceFromPos, IntVector2 throwDir, float frc, bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thrownBy</code> <a class="xref" href="Global.Creature.html">Creature</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>thrownBy</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>thrownPos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>thrownPos</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>firstFrameTraceFromPos</code> <span class="xref">Vector2</span>?</dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>firstFrameTraceFromPos</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>throwDir</code> <a class="xref" href="RWCustom.IntVector2.html">IntVector2</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>throwDir</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>frc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>frc</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:Weapon.Thrown(Creature,UnityEngine.Vector2,System.Nullable{UnityEngine.Vector2},RWCustom.IntVector2,System.Single,System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_Update_" data-uid="Global.Weapon.Update*"></a>
+
+  <h3 id="Global_Weapon_Update_System_Boolean_" data-uid="Global.Weapon.Update(System.Boolean)">
+  Update(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.Update(System.Boolean)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(bool eu)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eu</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>eu</parameter>
+    <parameter>M:Weapon.Update(System.Boolean)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_WeaponDeflect_" data-uid="Global.Weapon.WeaponDeflect*"></a>
+
+  <h3 id="Global_Weapon_WeaponDeflect_UnityEngine_Vector2_UnityEngine_Vector2_System_Single_" data-uid="Global.Weapon.WeaponDeflect(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+  WeaponDeflect(Vector2, Vector2, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.WeaponDeflect(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WeaponDeflect(Vector2 inbetweenPos, Vector2 deflectDir, float bounceSpeed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inbetweenPos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>inbetweenPos</parameter>
+    <parameter>M:Weapon.WeaponDeflect(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>deflectDir</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>deflectDir</parameter>
+    <parameter>M:Weapon.WeaponDeflect(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+    <dt><code>bounceSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>bounceSpeed</parameter>
+    <parameter>M:Weapon.WeaponDeflect(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Weapon_setPosAndTail_" data-uid="Global.Weapon.setPosAndTail*"></a>
+
+  <h3 id="Global_Weapon_setPosAndTail_UnityEngine_Vector2_" data-uid="Global.Weapon.setPosAndTail(UnityEngine.Vector2)">
+  setPosAndTail(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><markup>
+  <include item="SMCMissingTag">
+    <parameter>summary</parameter>
+    <parameter>M:Weapon.setPosAndTail(UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPosAndTail(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd><markup>
+  <include item="SMCMissingParamTag">
+    <parameter>param</parameter>
+    <parameter>pos</parameter>
+    <parameter>M:Weapon.setPosAndTail(UnityEngine.Vector2)</parameter>
+  </include>
+</markup>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ModManager
+  commentId: T:Global.ModManager
+  id: ModManager
+  parent: Global
+  children:
+  - Global.ModManager.#ctor
+  - Global.ModManager.ActiveMods
+  - Global.ModManager.CheckForDeletedBepinexMods(RainWorld)
+  - Global.ModManager.CheckInitIssues(System.Action{System.String})
+  - Global.ModManager.ComputeModChecksum(System.String)
+  - Global.ModManager.CoopAvailable
+  - Global.ModManager.DLCShared
+  - Global.ModManager.DevTools
+  - Global.ModManager.Expedition
+  - Global.ModManager.FailedRequirementIds
+  - Global.ModManager.GameVersionChangedOnThisLaunch
+  - Global.ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)
+  - Global.ModManager.GetDLCMinimumVersion(System.Int32)
+  - Global.ModManager.GetHookMap(System.Reflection.MethodBase)
+  - Global.ModManager.GetModById(System.String)
+  - Global.ModManager.HypothermiaModule
+  - Global.ModManager.InitializationScreenFinished
+  - Global.ModManager.InstalledMods
+  - Global.ModManager.JollyCoop
+  - Global.ModManager.LoadModFromJson(RainWorld,System.String,System.String)
+  - Global.ModManager.MMF
+  - Global.ModManager.MSC
+  - Global.ModManager.MergedModsContentAvailable
+  - Global.ModManager.ModFolderHasDLLContent(System.String)
+  - Global.ModManager.ModdedRegionsEnabled
+  - Global.ModManager.ModdingEnabled
+  - Global.ModManager.NewSlugcatsModule
+  - Global.ModManager.NonPrepackagedModsInstalled
+  - Global.ModManager.PrePackagedModIDs
+  - Global.ModManager.PrecycleModule
+  - Global.ModManager.ProblematicAssemblies
+  - Global.ModManager.RefreshModsLists(RainWorld)
+  - Global.ModManager.TimelineModule
+  - Global.ModManager.Watcher
+  - Global.ModManager.WrapModInitHooks
+  langs:
+  - csharp
+  - vb
+  name: ModManager
+  nameWithType: ModManager
+  fullName: ModManager
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ModManager</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class ModManager
+    content.vb: Public Class ModManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ModManager.ActiveMods
+  commentId: F:Global.ModManager.ActiveMods
+  id: ActiveMods
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ActiveMods
+  nameWithType: ModManager.ActiveMods
+  fullName: ModManager.ActiveMods
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.ActiveMods</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<ModManager.Mod> ActiveMods
+    return:
+      type: System.Collections.Generic.List{ModManager.Mod}
+    content.vb: Public Shared ActiveMods As List(Of ModManager.Mod)
+- uid: Global.ModManager.InstalledMods
+  commentId: F:Global.ModManager.InstalledMods
+  id: InstalledMods
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: InstalledMods
+  nameWithType: ModManager.InstalledMods
+  fullName: ModManager.InstalledMods
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.InstalledMods</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<ModManager.Mod> InstalledMods
+    return:
+      type: System.Collections.Generic.List{ModManager.Mod}
+    content.vb: Public Shared InstalledMods As List(Of ModManager.Mod)
+- uid: Global.ModManager.FailedRequirementIds
+  commentId: F:Global.ModManager.FailedRequirementIds
+  id: FailedRequirementIds
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: FailedRequirementIds
+  nameWithType: ModManager.FailedRequirementIds
+  fullName: ModManager.FailedRequirementIds
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.FailedRequirementIds</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> FailedRequirementIds
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared FailedRequirementIds As List(Of String)
+- uid: Global.ModManager.PrePackagedModIDs
+  commentId: F:Global.ModManager.PrePackagedModIDs
+  id: PrePackagedModIDs
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: PrePackagedModIDs
+  nameWithType: ModManager.PrePackagedModIDs
+  fullName: ModManager.PrePackagedModIDs
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.PrePackagedModIDs</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> PrePackagedModIDs
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared PrePackagedModIDs As List(Of String)
+- uid: Global.ModManager.MSC
+  commentId: F:Global.ModManager.MSC
+  id: MSC
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: MSC
+  nameWithType: ModManager.MSC
+  fullName: ModManager.MSC
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public static bool MSC
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the Downpour DLC (also known as More Slugcats) is enabled; otherwise, <code>false</code>.
+    content.vb: Public Shared MSC As Boolean
+- uid: Global.ModManager.MMF
+  commentId: F:Global.ModManager.MMF
+  id: MMF
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: MMF
+  nameWithType: ModManager.MMF
+  fullName: ModManager.MMF
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.MMF</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool MMF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared MMF As Boolean
+- uid: Global.ModManager.DevTools
+  commentId: F:Global.ModManager.DevTools
+  id: DevTools
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: DevTools
+  nameWithType: ModManager.DevTools
+  fullName: ModManager.DevTools
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public static bool DevTools
+    return:
+      type: System.Boolean
+      description: <code>true</code> if DevTools is enabled in the remix menu; otherwise, <code>false</code>.
+    content.vb: Public Shared DevTools As Boolean
+- uid: Global.ModManager.Expedition
+  commentId: F:Global.ModManager.Expedition
+  id: Expedition
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: Expedition
+  nameWithType: ModManager.Expedition
+  fullName: ModManager.Expedition
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.Expedition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool Expedition
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Expedition As Boolean
+- uid: Global.ModManager.Watcher
+  commentId: F:Global.ModManager.Watcher
+  id: Watcher
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: Watcher
+  nameWithType: ModManager.Watcher
+  fullName: ModManager.Watcher
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public static bool Watcher
+    return:
+      type: System.Boolean
+      description: <code>true</code> if The Watcher DLC is enabled; otherwise, <code>false</code>.
+    content.vb: Public Shared Watcher As Boolean
+- uid: Global.ModManager.NonPrepackagedModsInstalled
+  commentId: F:Global.ModManager.NonPrepackagedModsInstalled
+  id: NonPrepackagedModsInstalled
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: NonPrepackagedModsInstalled
+  nameWithType: ModManager.NonPrepackagedModsInstalled
+  fullName: ModManager.NonPrepackagedModsInstalled
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.NonPrepackagedModsInstalled</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool NonPrepackagedModsInstalled
+    return:
+      type: System.Boolean
+    content.vb: Public Shared NonPrepackagedModsInstalled As Boolean
+- uid: Global.ModManager.InitializationScreenFinished
+  commentId: F:Global.ModManager.InitializationScreenFinished
+  id: InitializationScreenFinished
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: InitializationScreenFinished
+  nameWithType: ModManager.InitializationScreenFinished
+  fullName: ModManager.InitializationScreenFinished
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.InitializationScreenFinished</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool InitializationScreenFinished
+    return:
+      type: System.Boolean
+    content.vb: Public Shared InitializationScreenFinished As Boolean
+- uid: Global.ModManager.CoopAvailable
+  commentId: F:Global.ModManager.CoopAvailable
+  id: CoopAvailable
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: CoopAvailable
+  nameWithType: ModManager.CoopAvailable
+  fullName: ModManager.CoopAvailable
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.CoopAvailable</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool CoopAvailable
+    return:
+      type: System.Boolean
+    content.vb: Public Shared CoopAvailable As Boolean
+- uid: Global.ModManager.JollyCoop
+  commentId: F:Global.ModManager.JollyCoop
+  id: JollyCoop
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: JollyCoop
+  nameWithType: ModManager.JollyCoop
+  fullName: ModManager.JollyCoop
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  example: []
+  syntax:
+    content: public static bool JollyCoop
+    return:
+      type: System.Boolean
+      description: <code>true</code> if JollyCoop is enabled; otherwise, <code>false</code>.
+    content.vb: Public Shared JollyCoop As Boolean
+- uid: Global.ModManager.GameVersionChangedOnThisLaunch
+  commentId: F:Global.ModManager.GameVersionChangedOnThisLaunch
+  id: GameVersionChangedOnThisLaunch
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: GameVersionChangedOnThisLaunch
+  nameWithType: ModManager.GameVersionChangedOnThisLaunch
+  fullName: ModManager.GameVersionChangedOnThisLaunch
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.GameVersionChangedOnThisLaunch</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool GameVersionChangedOnThisLaunch
+    return:
+      type: System.Boolean
+    content.vb: Public Shared GameVersionChangedOnThisLaunch As Boolean
+- uid: Global.ModManager.ProblematicAssemblies
+  commentId: F:Global.ModManager.ProblematicAssemblies
+  id: ProblematicAssemblies
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ProblematicAssemblies
+  nameWithType: ModManager.ProblematicAssemblies
+  fullName: ModManager.ProblematicAssemblies
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ModManager.ProblematicAssemblies</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static Dictionary<Assembly, List<string>> ProblematicAssemblies
+    return:
+      type: System.Collections.Generic.Dictionary{System.Reflection.Assembly,System.Collections.Generic.List{System.String}}
+    content.vb: Public Shared ProblematicAssemblies As Dictionary(Of Assembly, List(Of String))
+- uid: Global.ModManager.MergedModsContentAvailable
+  commentId: M:Global.ModManager.MergedModsContentAvailable
+  id: MergedModsContentAvailable
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: MergedModsContentAvailable()
+  nameWithType: ModManager.MergedModsContentAvailable()
+  fullName: ModManager.MergedModsContentAvailable()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.MergedModsContentAvailable</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool MergedModsContentAvailable()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.MergedModsContentAvailable</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function MergedModsContentAvailable() As Boolean
+  overload: Global.ModManager.MergedModsContentAvailable*
+- uid: Global.ModManager.ModFolderHasDLLContent(System.String)
+  commentId: M:Global.ModManager.ModFolderHasDLLContent(System.String)
+  id: ModFolderHasDLLContent(System.String)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ModFolderHasDLLContent(string)
+  nameWithType: ModManager.ModFolderHasDLLContent(string)
+  fullName: ModManager.ModFolderHasDLLContent(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.ModFolderHasDLLContent(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool ModFolderHasDLLContent(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>folder</parameter>
+            <parameter>M:ModManager.ModFolderHasDLLContent(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.ModFolderHasDLLContent(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function ModFolderHasDLLContent(folder As String) As Boolean
+  overload: Global.ModManager.ModFolderHasDLLContent*
+  nameWithType.vb: ModManager.ModFolderHasDLLContent(String)
+  fullName.vb: ModManager.ModFolderHasDLLContent(String)
+  name.vb: ModFolderHasDLLContent(String)
+- uid: Global.ModManager.RefreshModsLists(RainWorld)
+  commentId: M:Global.ModManager.RefreshModsLists(RainWorld)
+  id: RefreshModsLists(RainWorld)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: RefreshModsLists(RainWorld)
+  nameWithType: ModManager.RefreshModsLists(RainWorld)
+  fullName: ModManager.RefreshModsLists(RainWorld)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.RefreshModsLists(RainWorld)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void RefreshModsLists(RainWorld rainWorld)
+    parameters:
+    - id: rainWorld
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rainWorld</parameter>
+            <parameter>M:ModManager.RefreshModsLists(RainWorld)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Sub RefreshModsLists(rainWorld As RainWorld)
+  overload: Global.ModManager.RefreshModsLists*
+- uid: Global.ModManager.ComputeModChecksum(System.String)
+  commentId: M:Global.ModManager.ComputeModChecksum(System.String)
+  id: ComputeModChecksum(System.String)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ComputeModChecksum(string)
+  nameWithType: ModManager.ComputeModChecksum(string)
+  fullName: ModManager.ComputeModChecksum(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.ComputeModChecksum(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string ComputeModChecksum(string modpath)
+    parameters:
+    - id: modpath
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>modpath</parameter>
+            <parameter>M:ModManager.ComputeModChecksum(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.ComputeModChecksum(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function ComputeModChecksum(modpath As String) As String
+  overload: Global.ModManager.ComputeModChecksum*
+  nameWithType.vb: ModManager.ComputeModChecksum(String)
+  fullName.vb: ModManager.ComputeModChecksum(String)
+  name.vb: ComputeModChecksum(String)
+- uid: Global.ModManager.LoadModFromJson(RainWorld,System.String,System.String)
+  commentId: M:Global.ModManager.LoadModFromJson(RainWorld,System.String,System.String)
+  id: LoadModFromJson(RainWorld,System.String,System.String)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: LoadModFromJson(RainWorld, string, string)
+  nameWithType: ModManager.LoadModFromJson(RainWorld, string, string)
+  fullName: ModManager.LoadModFromJson(RainWorld, string, string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.LoadModFromJson(RainWorld,System.String,System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static ModManager.Mod LoadModFromJson(RainWorld rainWorld, string basepath, string modpath)
+    parameters:
+    - id: rainWorld
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rainWorld</parameter>
+            <parameter>M:ModManager.LoadModFromJson(RainWorld,System.String,System.String)</parameter>
+          </include>
+        </markup>
+    - id: basepath
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>basepath</parameter>
+            <parameter>M:ModManager.LoadModFromJson(RainWorld,System.String,System.String)</parameter>
+          </include>
+        </markup>
+    - id: modpath
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>modpath</parameter>
+            <parameter>M:ModManager.LoadModFromJson(RainWorld,System.String,System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ModManager.Mod
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.LoadModFromJson(RainWorld,System.String,System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function LoadModFromJson(rainWorld As RainWorld, basepath As String, modpath As String) As ModManager.Mod
+  overload: Global.ModManager.LoadModFromJson*
+  nameWithType.vb: ModManager.LoadModFromJson(RainWorld, String, String)
+  fullName.vb: ModManager.LoadModFromJson(RainWorld, String, String)
+  name.vb: LoadModFromJson(RainWorld, String, String)
+- uid: Global.ModManager.GetDLCMinimumVersion(System.Int32)
+  commentId: M:Global.ModManager.GetDLCMinimumVersion(System.Int32)
+  id: GetDLCMinimumVersion(System.Int32)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: GetDLCMinimumVersion(int)
+  nameWithType: ModManager.GetDLCMinimumVersion(int)
+  fullName: ModManager.GetDLCMinimumVersion(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.GetDLCMinimumVersion(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool GetDLCMinimumVersion(int dlcVersion)
+    parameters:
+    - id: dlcVersion
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dlcVersion</parameter>
+            <parameter>M:ModManager.GetDLCMinimumVersion(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.GetDLCMinimumVersion(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetDLCMinimumVersion(dlcVersion As Integer) As Boolean
+  overload: Global.ModManager.GetDLCMinimumVersion*
+  nameWithType.vb: ModManager.GetDLCMinimumVersion(Integer)
+  fullName.vb: ModManager.GetDLCMinimumVersion(Integer)
+  name.vb: GetDLCMinimumVersion(Integer)
+- uid: Global.ModManager.GetModById(System.String)
+  commentId: M:Global.ModManager.GetModById(System.String)
+  id: GetModById(System.String)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: GetModById(string)
+  nameWithType: ModManager.GetModById(string)
+  fullName: ModManager.GetModById(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.GetModById(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static ModManager.Mod GetModById(string Id)
+    parameters:
+    - id: Id
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>Id</parameter>
+            <parameter>M:ModManager.GetModById(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ModManager.Mod
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.GetModById(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetModById(Id As String) As ModManager.Mod
+  overload: Global.ModManager.GetModById*
+  nameWithType.vb: ModManager.GetModById(String)
+  fullName.vb: ModManager.GetModById(String)
+  name.vb: GetModById(String)
+- uid: Global.ModManager.CheckForDeletedBepinexMods(RainWorld)
+  commentId: M:Global.ModManager.CheckForDeletedBepinexMods(RainWorld)
+  id: CheckForDeletedBepinexMods(RainWorld)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: CheckForDeletedBepinexMods(RainWorld)
+  nameWithType: ModManager.CheckForDeletedBepinexMods(RainWorld)
+  fullName: ModManager.CheckForDeletedBepinexMods(RainWorld)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.CheckForDeletedBepinexMods(RainWorld)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool CheckForDeletedBepinexMods(RainWorld rainWorld)
+    parameters:
+    - id: rainWorld
+      type: Global.RainWorld
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rainWorld</parameter>
+            <parameter>M:ModManager.CheckForDeletedBepinexMods(RainWorld)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.CheckForDeletedBepinexMods(RainWorld)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function CheckForDeletedBepinexMods(rainWorld As RainWorld) As Boolean
+  overload: Global.ModManager.CheckForDeletedBepinexMods*
+- uid: Global.ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)
+  commentId: M:Global.ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)
+  id: GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: GenerateMergedMods(ModApplyer, List<bool>, bool)
+  nameWithType: ModManager.GenerateMergedMods(ModManager.ModApplyer, List<bool>, bool)
+  fullName: ModManager.GenerateMergedMods(ModManager.ModApplyer, System.Collections.Generic.List<bool>, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void GenerateMergedMods(ModManager.ModApplyer applyer, List<bool> pendingEnabled, bool hasRegionMods)
+    parameters:
+    - id: applyer
+      type: Global.ModManager.ModApplyer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>applyer</parameter>
+            <parameter>M:ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pendingEnabled
+      type: System.Collections.Generic.List{System.Boolean}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pendingEnabled</parameter>
+            <parameter>M:ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: hasRegionMods
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>hasRegionMods</parameter>
+            <parameter>M:ModManager.GenerateMergedMods(ModManager.ModApplyer,System.Collections.Generic.List{System.Boolean},System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Sub GenerateMergedMods(applyer As ModManager.ModApplyer, pendingEnabled As List(Of Boolean), hasRegionMods As Boolean)
+  overload: Global.ModManager.GenerateMergedMods*
+  nameWithType.vb: ModManager.GenerateMergedMods(ModManager.ModApplyer, List(Of Boolean), Boolean)
+  fullName.vb: ModManager.GenerateMergedMods(ModManager.ModApplyer, System.Collections.Generic.List(Of Boolean), Boolean)
+  name.vb: GenerateMergedMods(ModApplyer, List(Of Boolean), Boolean)
+- uid: Global.ModManager.WrapModInitHooks
+  commentId: M:Global.ModManager.WrapModInitHooks
+  id: WrapModInitHooks
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: WrapModInitHooks()
+  nameWithType: ModManager.WrapModInitHooks()
+  fullName: ModManager.WrapModInitHooks()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.WrapModInitHooks</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void WrapModInitHooks()
+    content.vb: Public Shared Sub WrapModInitHooks()
+  overload: Global.ModManager.WrapModInitHooks*
+- uid: Global.ModManager.GetHookMap(System.Reflection.MethodBase)
+  commentId: M:Global.ModManager.GetHookMap(System.Reflection.MethodBase)
+  id: GetHookMap(System.Reflection.MethodBase)
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: GetHookMap(MethodBase)
+  nameWithType: ModManager.GetHookMap(MethodBase)
+  fullName: ModManager.GetHookMap(System.Reflection.MethodBase)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.GetHookMap(System.Reflection.MethodBase)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static Dictionary<Delegate, Stack<IDetour>> GetHookMap(MethodBase method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodBase
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>method</parameter>
+            <parameter>M:ModManager.GetHookMap(System.Reflection.MethodBase)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.Dictionary{System.Delegate,System.Collections.Generic.Stack{MonoMod.RuntimeDetour.IDetour}}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.GetHookMap(System.Reflection.MethodBase)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetHookMap(method As MethodBase) As Dictionary(Of [Delegate], Stack(Of IDetour))
+  overload: Global.ModManager.GetHookMap*
+- uid: Global.ModManager.CheckInitIssues(System.Action{System.String})
+  commentId: M:Global.ModManager.CheckInitIssues(System.Action{System.String})
+  id: CheckInitIssues(System.Action{System.String})
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: CheckInitIssues(Action<string>)
+  nameWithType: ModManager.CheckInitIssues(Action<string>)
+  fullName: ModManager.CheckInitIssues(System.Action<string>)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ModManager.CheckInitIssues(System.Action{System.String})</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool CheckInitIssues(Action<string> onIssue)
+    parameters:
+    - id: onIssue
+      type: System.Action{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>onIssue</parameter>
+            <parameter>M:ModManager.CheckInitIssues(System.Action{System.String})</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ModManager.CheckInitIssues(System.Action{System.String})</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function CheckInitIssues(onIssue As Action(Of String)) As Boolean
+  overload: Global.ModManager.CheckInitIssues*
+  nameWithType.vb: ModManager.CheckInitIssues(Action(Of String))
+  fullName.vb: ModManager.CheckInitIssues(System.Action(Of String))
+  name.vb: CheckInitIssues(Action(Of String))
+- uid: Global.ModManager.#ctor
+  commentId: M:Global.ModManager.#ctor
+  id: '#ctor'
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ModManager()
+  nameWithType: ModManager.ModManager()
+  fullName: ModManager.ModManager()
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ModManager</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ModManager()
+    content.vb: Public Sub New()
+  overload: Global.ModManager.#ctor*
+  nameWithType.vb: ModManager.New()
+  fullName.vb: ModManager.New()
+  name.vb: New()
+- uid: Global.ModManager.DLCShared
+  commentId: P:Global.ModManager.DLCShared
+  id: DLCShared
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: DLCShared
+  nameWithType: ModManager.DLCShared
+  fullName: ModManager.DLCShared
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: DLC code that is used in both Downpour and The Watcher use this check.
+  example: []
+  syntax:
+    content: public static bool DLCShared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <code>true</code> if Downpour or The Watcher DLCs are enabled; otherwise, <code>false</code>.
+    content.vb: Public Shared ReadOnly Property DLCShared As Boolean
+  overload: Global.ModManager.DLCShared*
+- uid: Global.ModManager.NewSlugcatsModule
+  commentId: P:Global.ModManager.NewSlugcatsModule
+  id: NewSlugcatsModule
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: NewSlugcatsModule
+  nameWithType: ModManager.NewSlugcatsModule
+  fullName: ModManager.NewSlugcatsModule
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.NewSlugcatsModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool NewSlugcatsModule { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property NewSlugcatsModule As Boolean
+  overload: Global.ModManager.NewSlugcatsModule*
+- uid: Global.ModManager.TimelineModule
+  commentId: P:Global.ModManager.TimelineModule
+  id: TimelineModule
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: TimelineModule
+  nameWithType: ModManager.TimelineModule
+  fullName: ModManager.TimelineModule
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.TimelineModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool TimelineModule { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property TimelineModule As Boolean
+  overload: Global.ModManager.TimelineModule*
+- uid: Global.ModManager.HypothermiaModule
+  commentId: P:Global.ModManager.HypothermiaModule
+  id: HypothermiaModule
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: HypothermiaModule
+  nameWithType: ModManager.HypothermiaModule
+  fullName: ModManager.HypothermiaModule
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.HypothermiaModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool HypothermiaModule { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property HypothermiaModule As Boolean
+  overload: Global.ModManager.HypothermiaModule*
+- uid: Global.ModManager.PrecycleModule
+  commentId: P:Global.ModManager.PrecycleModule
+  id: PrecycleModule
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: PrecycleModule
+  nameWithType: ModManager.PrecycleModule
+  fullName: ModManager.PrecycleModule
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.PrecycleModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool PrecycleModule { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property PrecycleModule As Boolean
+  overload: Global.ModManager.PrecycleModule*
+- uid: Global.ModManager.ModdingEnabled
+  commentId: P:Global.ModManager.ModdingEnabled
+  id: ModdingEnabled
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ModdingEnabled
+  nameWithType: ModManager.ModdingEnabled
+  fullName: ModManager.ModdingEnabled
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.ModdingEnabled</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool ModdingEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property ModdingEnabled As Boolean
+  overload: Global.ModManager.ModdingEnabled*
+- uid: Global.ModManager.ModdedRegionsEnabled
+  commentId: P:Global.ModManager.ModdedRegionsEnabled
+  id: ModdedRegionsEnabled
+  parent: Global.ModManager
+  langs:
+  - csharp
+  - vb
+  name: ModdedRegionsEnabled
+  nameWithType: ModManager.ModdedRegionsEnabled
+  fullName: ModManager.ModdedRegionsEnabled
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ModManager.ModdedRegionsEnabled</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool ModdedRegionsEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property ModdedRegionsEnabled As Boolean
+  overload: Global.ModManager.ModdedRegionsEnabled*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{ModManager.Mod}
+  commentId: T:System.Collections.Generic.List{ModManager.Mod}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ModManager.Mod>
+  nameWithType: List<ModManager.Mod>
+  fullName: System.Collections.Generic.List<ModManager.Mod>
+  nameWithType.vb: List(Of ModManager.Mod)
+  fullName.vb: System.Collections.Generic.List(Of ModManager.Mod)
+  name.vb: List(Of ModManager.Mod)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.Mod
+    name: Mod
+    isExternal: true
+    href: ModManager.Mod.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.Mod
+    name: Mod
+    isExternal: true
+    href: ModManager.Mod.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.Dictionary{System.Reflection.Assembly,System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Reflection.Assembly,System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Assembly, List<string>>
+  nameWithType: Dictionary<Assembly, List<string>>
+  fullName: System.Collections.Generic.Dictionary<System.Reflection.Assembly, System.Collections.Generic.List<string>>
+  nameWithType.vb: Dictionary(Of Assembly, List(Of String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Reflection.Assembly, System.Collections.Generic.List(Of String))
+  name.vb: Dictionary(Of Assembly, List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Global.ModManager.MergedModsContentAvailable*
+  commentId: Overload:Global.ModManager.MergedModsContentAvailable
+  isExternal: true
+  href: Global.ModManager.html#ModManager_MergedModsContentAvailable
+  name: MergedModsContentAvailable
+  nameWithType: ModManager.MergedModsContentAvailable
+  fullName: ModManager.MergedModsContentAvailable
+- uid: Global.ModManager.ModFolderHasDLLContent*
+  commentId: Overload:Global.ModManager.ModFolderHasDLLContent
+  isExternal: true
+  href: Global.ModManager.html#ModManager_ModFolderHasDLLContent_System_String_
+  name: ModFolderHasDLLContent
+  nameWithType: ModManager.ModFolderHasDLLContent
+  fullName: ModManager.ModFolderHasDLLContent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.ModManager.RefreshModsLists*
+  commentId: Overload:Global.ModManager.RefreshModsLists
+  isExternal: true
+  href: Global.ModManager.html#ModManager_RefreshModsLists_RainWorld_
+  name: RefreshModsLists
+  nameWithType: ModManager.RefreshModsLists
+  fullName: ModManager.RefreshModsLists
+- uid: Global.RainWorld
+  commentId: T:Global.RainWorld
+  isExternal: true
+  href: RainWorld.html
+  name: RainWorld
+  nameWithType: RainWorld
+  fullName: RainWorld
+- uid: Global.ModManager.ComputeModChecksum*
+  commentId: Overload:Global.ModManager.ComputeModChecksum
+  isExternal: true
+  href: Global.ModManager.html#ModManager_ComputeModChecksum_System_String_
+  name: ComputeModChecksum
+  nameWithType: ModManager.ComputeModChecksum
+  fullName: ModManager.ComputeModChecksum
+- uid: Global.ModManager.LoadModFromJson*
+  commentId: Overload:Global.ModManager.LoadModFromJson
+  isExternal: true
+  href: Global.ModManager.html#ModManager_LoadModFromJson_RainWorld_System_String_System_String_
+  name: LoadModFromJson
+  nameWithType: ModManager.LoadModFromJson
+  fullName: ModManager.LoadModFromJson
+- uid: Global.ModManager.Mod
+  commentId: T:Global.ModManager.Mod
+  isExternal: true
+  href: ModManager.html
+  name: ModManager.Mod
+  nameWithType: ModManager.Mod
+  fullName: ModManager.Mod
+  spec.csharp:
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.Mod
+    name: Mod
+    isExternal: true
+    href: ModManager.Mod.html
+  spec.vb:
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.Mod
+    name: Mod
+    isExternal: true
+    href: ModManager.Mod.html
+- uid: Global.ModManager.GetDLCMinimumVersion*
+  commentId: Overload:Global.ModManager.GetDLCMinimumVersion
+  isExternal: true
+  href: Global.ModManager.html#ModManager_GetDLCMinimumVersion_System_Int32_
+  name: GetDLCMinimumVersion
+  nameWithType: ModManager.GetDLCMinimumVersion
+  fullName: ModManager.GetDLCMinimumVersion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ModManager.GetModById*
+  commentId: Overload:Global.ModManager.GetModById
+  isExternal: true
+  href: Global.ModManager.html#ModManager_GetModById_System_String_
+  name: GetModById
+  nameWithType: ModManager.GetModById
+  fullName: ModManager.GetModById
+- uid: Global.ModManager.CheckForDeletedBepinexMods*
+  commentId: Overload:Global.ModManager.CheckForDeletedBepinexMods
+  isExternal: true
+  href: Global.ModManager.html#ModManager_CheckForDeletedBepinexMods_RainWorld_
+  name: CheckForDeletedBepinexMods
+  nameWithType: ModManager.CheckForDeletedBepinexMods
+  fullName: ModManager.CheckForDeletedBepinexMods
+- uid: Global.ModManager.GenerateMergedMods*
+  commentId: Overload:Global.ModManager.GenerateMergedMods
+  isExternal: true
+  href: Global.ModManager.html#ModManager_GenerateMergedMods_ModManager_ModApplyer_System_Collections_Generic_List_System_Boolean__System_Boolean_
+  name: GenerateMergedMods
+  nameWithType: ModManager.GenerateMergedMods
+  fullName: ModManager.GenerateMergedMods
+- uid: Global.ModManager.ModApplyer
+  commentId: T:Global.ModManager.ModApplyer
+  isExternal: true
+  href: ModManager.html
+  name: ModManager.ModApplyer
+  nameWithType: ModManager.ModApplyer
+  fullName: ModManager.ModApplyer
+  spec.csharp:
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.ModApplyer
+    name: ModApplyer
+    isExternal: true
+    href: ModManager.ModApplyer.html
+  spec.vb:
+  - uid: Global.ModManager
+    name: ModManager
+    isExternal: true
+    href: ModManager.html
+  - name: .
+  - uid: Global.ModManager.ModApplyer
+    name: ModApplyer
+    isExternal: true
+    href: ModManager.ModApplyer.html
+- uid: System.Collections.Generic.List{System.Boolean}
+  commentId: T:System.Collections.Generic.List{System.Boolean}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<bool>
+  nameWithType: List<bool>
+  fullName: System.Collections.Generic.List<bool>
+  nameWithType.vb: List(Of Boolean)
+  fullName.vb: System.Collections.Generic.List(Of Boolean)
+  name.vb: List(Of Boolean)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ModManager.WrapModInitHooks*
+  commentId: Overload:Global.ModManager.WrapModInitHooks
+  isExternal: true
+  href: Global.ModManager.html#ModManager_WrapModInitHooks
+  name: WrapModInitHooks
+  nameWithType: ModManager.WrapModInitHooks
+  fullName: ModManager.WrapModInitHooks
+- uid: Global.ModManager.GetHookMap*
+  commentId: Overload:Global.ModManager.GetHookMap
+  isExternal: true
+  href: Global.ModManager.html#ModManager_GetHookMap_System_Reflection_MethodBase_
+  name: GetHookMap
+  nameWithType: ModManager.GetHookMap
+  fullName: ModManager.GetHookMap
+- uid: System.Reflection.MethodBase
+  commentId: T:System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodbase
+  name: MethodBase
+  nameWithType: MethodBase
+  fullName: System.Reflection.MethodBase
+- uid: System.Collections.Generic.Dictionary{System.Delegate,System.Collections.Generic.Stack{MonoMod.RuntimeDetour.IDetour}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Delegate,System.Collections.Generic.Stack{MonoMod.RuntimeDetour.IDetour}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Delegate, Stack<IDetour>>
+  nameWithType: Dictionary<Delegate, Stack<IDetour>>
+  fullName: System.Collections.Generic.Dictionary<System.Delegate, System.Collections.Generic.Stack<MonoMod.RuntimeDetour.IDetour>>
+  nameWithType.vb: Dictionary(Of Delegate, Stack(Of IDetour))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Delegate, System.Collections.Generic.Stack(Of MonoMod.RuntimeDetour.IDetour))
+  name.vb: Dictionary(Of Delegate, Stack(Of IDetour))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: <
+  - uid: MonoMod.RuntimeDetour.IDetour
+    name: IDetour
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Delegate
+    name: Delegate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.delegate
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MonoMod.RuntimeDetour.IDetour
+    name: IDetour
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: Global.ModManager.CheckInitIssues*
+  commentId: Overload:Global.ModManager.CheckInitIssues
+  isExternal: true
+  href: Global.ModManager.html#ModManager_CheckInitIssues_System_Action_System_String__
+  name: CheckInitIssues
+  nameWithType: ModManager.CheckInitIssues
+  fullName: ModManager.CheckInitIssues
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ModManager.#ctor*
+  commentId: Overload:Global.ModManager.#ctor
+  isExternal: true
+  href: Global.ModManager.html#ModManager__ctor
+  name: ModManager
+  nameWithType: ModManager.ModManager
+  fullName: ModManager.ModManager
+  nameWithType.vb: ModManager.New
+  fullName.vb: ModManager.New
+  name.vb: New
+- uid: Global.ModManager.DLCShared*
+  commentId: Overload:Global.ModManager.DLCShared
+  isExternal: true
+  href: Global.ModManager.html#ModManager_DLCShared
+  name: DLCShared
+  nameWithType: ModManager.DLCShared
+  fullName: ModManager.DLCShared
+- uid: Global.ModManager.NewSlugcatsModule*
+  commentId: Overload:Global.ModManager.NewSlugcatsModule
+  isExternal: true
+  href: Global.ModManager.html#ModManager_NewSlugcatsModule
+  name: NewSlugcatsModule
+  nameWithType: ModManager.NewSlugcatsModule
+  fullName: ModManager.NewSlugcatsModule
+- uid: Global.ModManager.TimelineModule*
+  commentId: Overload:Global.ModManager.TimelineModule
+  isExternal: true
+  href: Global.ModManager.html#ModManager_TimelineModule
+  name: TimelineModule
+  nameWithType: ModManager.TimelineModule
+  fullName: ModManager.TimelineModule
+- uid: Global.ModManager.HypothermiaModule*
+  commentId: Overload:Global.ModManager.HypothermiaModule
+  isExternal: true
+  href: Global.ModManager.html#ModManager_HypothermiaModule
+  name: HypothermiaModule
+  nameWithType: ModManager.HypothermiaModule
+  fullName: ModManager.HypothermiaModule
+- uid: Global.ModManager.PrecycleModule*
+  commentId: Overload:Global.ModManager.PrecycleModule
+  isExternal: true
+  href: Global.ModManager.html#ModManager_PrecycleModule
+  name: PrecycleModule
+  nameWithType: ModManager.PrecycleModule
+  fullName: ModManager.PrecycleModule
+- uid: Global.ModManager.ModdingEnabled*
+  commentId: Overload:Global.ModManager.ModdingEnabled
+  isExternal: true
+  href: Global.ModManager.html#ModManager_ModdingEnabled
+  name: ModdingEnabled
+  nameWithType: ModManager.ModdingEnabled
+  fullName: ModManager.ModdingEnabled
+- uid: Global.ModManager.ModdedRegionsEnabled*
+  commentId: Overload:Global.ModManager.ModdedRegionsEnabled
+  isExternal: true
+  href: Global.ModManager.html#ModManager_ModdedRegionsEnabled
+  name: ModdedRegionsEnabled
+  nameWithType: ModManager.ModdedRegionsEnabled
+  fullName: ModManager.ModdedRegionsEnabled

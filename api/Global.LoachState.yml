@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LoachState
+  commentId: T:Global.LoachState
+  id: LoachState
+  parent: Global
+  children:
+  - Global.LoachState.#ctor(AbstractCreature)
+  - Global.LoachState.SetNewTarget(System.Single)
+  - Global.LoachState.UpdateInterest(System.Int32)
+  - Global.LoachState.angryAt
+  - Global.LoachState.interest
+  - Global.LoachState.isChasing
+  langs:
+  - csharp
+  - vb
+  name: LoachState
+  nameWithType: LoachState
+  fullName: LoachState
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:LoachState</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class LoachState : CreatureState'
+    content.vb: Public Class LoachState Inherits CreatureState
+  inheritance:
+  - System.Object
+  - Global.CreatureState
+  inheritedMembers:
+  - Global.CreatureState.socialMemory
+  - Global.CreatureState.meatLeft
+  - Global.CreatureState.creature
+  - Global.CreatureState.unrecognizedSaveStrings
+  - Global.CreatureState.miscSaveFlags
+  - Global.CreatureState.miscSaveString
+  - Global.CreatureState.miscWatcherSaveFlags
+  - Global.CreatureState.miscWatcherSaveString
+  - Global.CreatureState.Die
+  - Global.CreatureState.BaseSaveString
+  - Global.CreatureState.ToString
+  - Global.CreatureState.LoadFromString(System.String[])
+  - Global.CreatureState.CycleTick
+  - Global.CreatureState.alive
+  - Global.CreatureState.dead
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.LoachState.angryAt
+  commentId: F:Global.LoachState.angryAt
+  id: angryAt
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: angryAt
+  nameWithType: LoachState.angryAt
+  fullName: LoachState.angryAt
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:LoachState.angryAt</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public EntityID angryAt
+    return:
+      type: Global.EntityID
+    content.vb: Public angryAt As EntityID
+- uid: Global.LoachState.interest
+  commentId: F:Global.LoachState.interest
+  id: interest
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: interest
+  nameWithType: LoachState.interest
+  fullName: LoachState.interest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:LoachState.interest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int interest
+    return:
+      type: System.Int32
+    content.vb: Public interest As Integer
+- uid: Global.LoachState.#ctor(AbstractCreature)
+  commentId: M:Global.LoachState.#ctor(AbstractCreature)
+  id: '#ctor(AbstractCreature)'
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: LoachState(AbstractCreature)
+  nameWithType: LoachState.LoachState(AbstractCreature)
+  fullName: LoachState.LoachState(AbstractCreature)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>LoachState</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public LoachState(AbstractCreature crit)
+    parameters:
+    - id: crit
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:LoachState.#ctor(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(crit As AbstractCreature)
+  overload: Global.LoachState.#ctor*
+  nameWithType.vb: LoachState.New(AbstractCreature)
+  fullName.vb: LoachState.New(AbstractCreature)
+  name.vb: New(AbstractCreature)
+- uid: Global.LoachState.SetNewTarget(System.Single)
+  commentId: M:Global.LoachState.SetNewTarget(System.Single)
+  id: SetNewTarget(System.Single)
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: SetNewTarget(float)
+  nameWithType: LoachState.SetNewTarget(float)
+  fullName: LoachState.SetNewTarget(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:LoachState.SetNewTarget(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool SetNewTarget(float bonus = 0)
+    parameters:
+    - id: bonus
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>bonus</parameter>
+            <parameter>M:LoachState.SetNewTarget(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:LoachState.SetNewTarget(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function SetNewTarget(bonus As Single = 0) As Boolean
+  overload: Global.LoachState.SetNewTarget*
+  nameWithType.vb: LoachState.SetNewTarget(Single)
+  fullName.vb: LoachState.SetNewTarget(Single)
+  name.vb: SetNewTarget(Single)
+- uid: Global.LoachState.UpdateInterest(System.Int32)
+  commentId: M:Global.LoachState.UpdateInterest(System.Int32)
+  id: UpdateInterest(System.Int32)
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: UpdateInterest(int)
+  nameWithType: LoachState.UpdateInterest(int)
+  fullName: LoachState.UpdateInterest(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:LoachState.UpdateInterest(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool UpdateInterest(int change)
+    parameters:
+    - id: change
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>change</parameter>
+            <parameter>M:LoachState.UpdateInterest(System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:LoachState.UpdateInterest(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function UpdateInterest(change As Integer) As Boolean
+  overload: Global.LoachState.UpdateInterest*
+  nameWithType.vb: LoachState.UpdateInterest(Integer)
+  fullName.vb: LoachState.UpdateInterest(Integer)
+  name.vb: UpdateInterest(Integer)
+- uid: Global.LoachState.isChasing
+  commentId: P:Global.LoachState.isChasing
+  id: isChasing
+  parent: Global.LoachState
+  langs:
+  - csharp
+  - vb
+  name: isChasing
+  nameWithType: LoachState.isChasing
+  fullName: LoachState.isChasing
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:LoachState.isChasing</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool isChasing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property isChasing As Boolean
+  overload: Global.LoachState.isChasing*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.CreatureState
+  commentId: T:Global.CreatureState
+  isExternal: true
+  href: CreatureState.html
+  name: CreatureState
+  nameWithType: CreatureState
+  fullName: CreatureState
+- uid: Global.CreatureState.socialMemory
+  commentId: F:Global.CreatureState.socialMemory
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_socialMemory
+  name: socialMemory
+  nameWithType: CreatureState.socialMemory
+  fullName: CreatureState.socialMemory
+- uid: Global.CreatureState.meatLeft
+  commentId: F:Global.CreatureState.meatLeft
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_meatLeft
+  name: meatLeft
+  nameWithType: CreatureState.meatLeft
+  fullName: CreatureState.meatLeft
+- uid: Global.CreatureState.creature
+  commentId: F:Global.CreatureState.creature
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_creature
+  name: creature
+  nameWithType: CreatureState.creature
+  fullName: CreatureState.creature
+- uid: Global.CreatureState.unrecognizedSaveStrings
+  commentId: F:Global.CreatureState.unrecognizedSaveStrings
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_unrecognizedSaveStrings
+  name: unrecognizedSaveStrings
+  nameWithType: CreatureState.unrecognizedSaveStrings
+  fullName: CreatureState.unrecognizedSaveStrings
+- uid: Global.CreatureState.miscSaveFlags
+  commentId: F:Global.CreatureState.miscSaveFlags
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_miscSaveFlags
+  name: miscSaveFlags
+  nameWithType: CreatureState.miscSaveFlags
+  fullName: CreatureState.miscSaveFlags
+- uid: Global.CreatureState.miscSaveString
+  commentId: F:Global.CreatureState.miscSaveString
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_miscSaveString
+  name: miscSaveString
+  nameWithType: CreatureState.miscSaveString
+  fullName: CreatureState.miscSaveString
+- uid: Global.CreatureState.miscWatcherSaveFlags
+  commentId: F:Global.CreatureState.miscWatcherSaveFlags
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_miscWatcherSaveFlags
+  name: miscWatcherSaveFlags
+  nameWithType: CreatureState.miscWatcherSaveFlags
+  fullName: CreatureState.miscWatcherSaveFlags
+- uid: Global.CreatureState.miscWatcherSaveString
+  commentId: F:Global.CreatureState.miscWatcherSaveString
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_miscWatcherSaveString
+  name: miscWatcherSaveString
+  nameWithType: CreatureState.miscWatcherSaveString
+  fullName: CreatureState.miscWatcherSaveString
+- uid: Global.CreatureState.Die
+  commentId: M:Global.CreatureState.Die
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_Die
+  name: Die()
+  nameWithType: CreatureState.Die()
+  fullName: CreatureState.Die()
+  spec.csharp:
+  - uid: Global.CreatureState.Die
+    name: Die
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_Die
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CreatureState.Die
+    name: Die
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_Die
+  - name: (
+  - name: )
+- uid: Global.CreatureState.BaseSaveString
+  commentId: M:Global.CreatureState.BaseSaveString
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_BaseSaveString
+  name: BaseSaveString()
+  nameWithType: CreatureState.BaseSaveString()
+  fullName: CreatureState.BaseSaveString()
+  spec.csharp:
+  - uid: Global.CreatureState.BaseSaveString
+    name: BaseSaveString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_BaseSaveString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CreatureState.BaseSaveString
+    name: BaseSaveString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_BaseSaveString
+  - name: (
+  - name: )
+- uid: Global.CreatureState.ToString
+  commentId: M:Global.CreatureState.ToString
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_ToString
+  name: ToString()
+  nameWithType: CreatureState.ToString()
+  fullName: CreatureState.ToString()
+  spec.csharp:
+  - uid: Global.CreatureState.ToString
+    name: ToString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CreatureState.ToString
+    name: ToString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_ToString
+  - name: (
+  - name: )
+- uid: Global.CreatureState.LoadFromString(System.String[])
+  commentId: M:Global.CreatureState.LoadFromString(System.String[])
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_LoadFromString_System_String___
+  name: LoadFromString(string[])
+  nameWithType: CreatureState.LoadFromString(string[])
+  fullName: CreatureState.LoadFromString(string[])
+  nameWithType.vb: CreatureState.LoadFromString(String())
+  fullName.vb: CreatureState.LoadFromString(String())
+  name.vb: LoadFromString(String())
+  spec.csharp:
+  - uid: Global.CreatureState.LoadFromString(System.String[])
+    name: LoadFromString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_LoadFromString_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Global.CreatureState.LoadFromString(System.String[])
+    name: LoadFromString
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_LoadFromString_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: Global.CreatureState.CycleTick
+  commentId: M:Global.CreatureState.CycleTick
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_CycleTick
+  name: CycleTick()
+  nameWithType: CreatureState.CycleTick()
+  fullName: CreatureState.CycleTick()
+  spec.csharp:
+  - uid: Global.CreatureState.CycleTick
+    name: CycleTick
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_CycleTick
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CreatureState.CycleTick
+    name: CycleTick
+    isExternal: true
+    href: Global.CreatureState.html#CreatureState_CycleTick
+  - name: (
+  - name: )
+- uid: Global.CreatureState.alive
+  commentId: P:Global.CreatureState.alive
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_alive
+  name: alive
+  nameWithType: CreatureState.alive
+  fullName: CreatureState.alive
+- uid: Global.CreatureState.dead
+  commentId: P:Global.CreatureState.dead
+  parent: Global.CreatureState
+  isExternal: true
+  href: Global.CreatureState.html#CreatureState_dead
+  name: dead
+  nameWithType: CreatureState.dead
+  fullName: CreatureState.dead
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.EntityID
+  commentId: T:Global.EntityID
+  isExternal: true
+  href: EntityID.html
+  name: EntityID
+  nameWithType: EntityID
+  fullName: EntityID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.LoachState.#ctor*
+  commentId: Overload:Global.LoachState.#ctor
+  isExternal: true
+  href: Global.LoachState.html#LoachState__ctor_AbstractCreature_
+  name: LoachState
+  nameWithType: LoachState.LoachState
+  fullName: LoachState.LoachState
+  nameWithType.vb: LoachState.New
+  fullName.vb: LoachState.New
+  name.vb: New
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.LoachState.SetNewTarget*
+  commentId: Overload:Global.LoachState.SetNewTarget
+  isExternal: true
+  href: Global.LoachState.html#LoachState_SetNewTarget_System_Single_
+  name: SetNewTarget
+  nameWithType: LoachState.SetNewTarget
+  fullName: LoachState.SetNewTarget
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.LoachState.UpdateInterest*
+  commentId: Overload:Global.LoachState.UpdateInterest
+  isExternal: true
+  href: Global.LoachState.html#LoachState_UpdateInterest_System_Int32_
+  name: UpdateInterest
+  nameWithType: LoachState.UpdateInterest
+  fullName: LoachState.UpdateInterest
+- uid: Global.LoachState.isChasing*
+  commentId: Overload:Global.LoachState.isChasing
+  isExternal: true
+  href: Global.LoachState.html#LoachState_isChasing
+  name: isChasing
+  nameWithType: LoachState.isChasing
+  fullName: LoachState.isChasing

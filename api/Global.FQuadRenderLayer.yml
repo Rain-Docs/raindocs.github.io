@@ -1,0 +1,1174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FQuadRenderLayer
+  commentId: T:Global.FQuadRenderLayer
+  id: FQuadRenderLayer
+  parent: Global
+  children:
+  - Global.FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)
+  - Global.FQuadRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  - Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes
+  - Global.FQuadRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: FQuadRenderLayer
+  nameWithType: FQuadRenderLayer
+  fullName: FQuadRenderLayer
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FQuadRenderLayer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FQuadRenderLayer : FFacetRenderLayer, FRenderableLayerInterface'
+    content.vb: Public Class FQuadRenderLayer Inherits FFacetRenderLayer Implements FRenderableLayerInterface
+  inheritance:
+  - System.Object
+  - Global.FFacetRenderLayer
+  implements:
+  - Global.FRenderableLayerInterface
+  inheritedMembers:
+  - Global.FFacetRenderLayer.batchIndex
+  - Global.FFacetRenderLayer._stage
+  - Global.FFacetRenderLayer._facetType
+  - Global.FFacetRenderLayer._atlas
+  - Global.FFacetRenderLayer._shader
+  - Global.FFacetRenderLayer._gameObject
+  - Global.FFacetRenderLayer._transform
+  - Global.FFacetRenderLayer._material
+  - Global.FFacetRenderLayer._meshFilter
+  - Global.FFacetRenderLayer._meshRenderer
+  - Global.FFacetRenderLayer._mesh
+  - Global.FFacetRenderLayer._vertices
+  - Global.FFacetRenderLayer._triangles
+  - Global.FFacetRenderLayer._uvs
+  - Global.FFacetRenderLayer._colors
+  - Global.FFacetRenderLayer._isMeshDirty
+  - Global.FFacetRenderLayer._didVertsChange
+  - Global.FFacetRenderLayer._didUVsChange
+  - Global.FFacetRenderLayer._didColorsChange
+  - Global.FFacetRenderLayer._didVertCountChange
+  - Global.FFacetRenderLayer._doesMeshNeedClear
+  - Global.FFacetRenderLayer._expansionAmount
+  - Global.FFacetRenderLayer._maxEmptyFacets
+  - Global.FFacetRenderLayer._maxFacetCount
+  - Global.FFacetRenderLayer._depth
+  - Global.FFacetRenderLayer._nextAvailableFacetIndex
+  - Global.FFacetRenderLayer._lowestZeroIndex
+  - Global.FFacetRenderLayer.Destroy
+  - Global.FFacetRenderLayer.UpdateTransform
+  - Global.FFacetRenderLayer.AddToWorld
+  - Global.FFacetRenderLayer.RemoveFromWorld
+  - Global.FFacetRenderLayer.Open
+  - Global.FFacetRenderLayer.GetNextFacetIndex(System.Int32)
+  - Global.FFacetRenderLayer.Close
+  - Global.FFacetRenderLayer.Update(System.Int32)
+  - Global.FFacetRenderLayer.UpdateMeshProperties
+  - Global.FFacetRenderLayer.HandleVertsChange
+  - Global.FFacetRenderLayer.expansionAmount
+  - Global.FFacetRenderLayer.vertices
+  - Global.FFacetRenderLayer.uvs
+  - Global.FFacetRenderLayer.colors
+  - Global.FFacetRenderLayer.atlas
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)
+  commentId: M:Global.FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)
+  id: '#ctor(FStage,FFacetType,FAtlas,FShader)'
+  parent: Global.FQuadRenderLayer
+  langs:
+  - csharp
+  - vb
+  name: FQuadRenderLayer(FStage, FFacetType, FAtlas, FShader)
+  nameWithType: FQuadRenderLayer.FQuadRenderLayer(FStage, FFacetType, FAtlas, FShader)
+  fullName: FQuadRenderLayer.FQuadRenderLayer(FStage, FFacetType, FAtlas, FShader)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FQuadRenderLayer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FQuadRenderLayer(FStage stage, FFacetType facetType, FAtlas atlas, FShader shader)
+    parameters:
+    - id: stage
+      type: Global.FStage
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>stage</parameter>
+            <parameter>M:FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)</parameter>
+          </include>
+        </markup>
+    - id: facetType
+      type: Global.FFacetType
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>facetType</parameter>
+            <parameter>M:FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)</parameter>
+          </include>
+        </markup>
+    - id: atlas
+      type: Global.FAtlas
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>atlas</parameter>
+            <parameter>M:FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)</parameter>
+          </include>
+        </markup>
+    - id: shader
+      type: Global.FShader
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shader</parameter>
+            <parameter>M:FQuadRenderLayer.#ctor(FStage,FFacetType,FAtlas,FShader)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(stage As FStage, facetType As FFacetType, atlas As FAtlas, shader As FShader)
+  overload: Global.FQuadRenderLayer.#ctor*
+  nameWithType.vb: FQuadRenderLayer.New(FStage, FFacetType, FAtlas, FShader)
+  fullName.vb: FQuadRenderLayer.New(FStage, FFacetType, FAtlas, FShader)
+  name.vb: New(FStage, FFacetType, FAtlas, FShader)
+- uid: Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes
+  commentId: M:Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes
+  id: FillUnusedFacetsWithZeroes
+  parent: Global.FQuadRenderLayer
+  langs:
+  - csharp
+  - vb
+  name: FillUnusedFacetsWithZeroes()
+  nameWithType: FQuadRenderLayer.FillUnusedFacetsWithZeroes()
+  fullName: FQuadRenderLayer.FillUnusedFacetsWithZeroes()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FQuadRenderLayer.FillUnusedFacetsWithZeroes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override void FillUnusedFacetsWithZeroes()
+    content.vb: Protected Overrides Sub FillUnusedFacetsWithZeroes()
+  overridden: Global.FFacetRenderLayer.FillUnusedFacetsWithZeroes
+  overload: Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes*
+- uid: Global.FQuadRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  commentId: M:Global.FQuadRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  id: ShrinkMaxFacetLimit(System.Int32)
+  parent: Global.FQuadRenderLayer
+  langs:
+  - csharp
+  - vb
+  name: ShrinkMaxFacetLimit(int)
+  nameWithType: FQuadRenderLayer.ShrinkMaxFacetLimit(int)
+  fullName: FQuadRenderLayer.ShrinkMaxFacetLimit(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FQuadRenderLayer.ShrinkMaxFacetLimit(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override void ShrinkMaxFacetLimit(int deltaDecrease)
+    parameters:
+    - id: deltaDecrease
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>deltaDecrease</parameter>
+            <parameter>M:FQuadRenderLayer.ShrinkMaxFacetLimit(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Sub ShrinkMaxFacetLimit(deltaDecrease As Integer)
+  overridden: Global.FFacetRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  overload: Global.FQuadRenderLayer.ShrinkMaxFacetLimit*
+  nameWithType.vb: FQuadRenderLayer.ShrinkMaxFacetLimit(Integer)
+  fullName.vb: FQuadRenderLayer.ShrinkMaxFacetLimit(Integer)
+  name.vb: ShrinkMaxFacetLimit(Integer)
+- uid: Global.FQuadRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  commentId: M:Global.FQuadRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  id: ExpandMaxFacetLimit(System.Int32)
+  parent: Global.FQuadRenderLayer
+  langs:
+  - csharp
+  - vb
+  name: ExpandMaxFacetLimit(int)
+  nameWithType: FQuadRenderLayer.ExpandMaxFacetLimit(int)
+  fullName: FQuadRenderLayer.ExpandMaxFacetLimit(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FQuadRenderLayer.ExpandMaxFacetLimit(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override void ExpandMaxFacetLimit(int deltaIncrease)
+    parameters:
+    - id: deltaIncrease
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>deltaIncrease</parameter>
+            <parameter>M:FQuadRenderLayer.ExpandMaxFacetLimit(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Sub ExpandMaxFacetLimit(deltaIncrease As Integer)
+  overridden: Global.FFacetRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  overload: Global.FQuadRenderLayer.ExpandMaxFacetLimit*
+  nameWithType.vb: FQuadRenderLayer.ExpandMaxFacetLimit(Integer)
+  fullName.vb: FQuadRenderLayer.ExpandMaxFacetLimit(Integer)
+  name.vb: ExpandMaxFacetLimit(Integer)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.FFacetRenderLayer
+  commentId: T:Global.FFacetRenderLayer
+  isExternal: true
+  href: FFacetRenderLayer.html
+  name: FFacetRenderLayer
+  nameWithType: FFacetRenderLayer
+  fullName: FFacetRenderLayer
+- uid: Global.FRenderableLayerInterface
+  commentId: T:Global.FRenderableLayerInterface
+  isExternal: true
+  href: FRenderableLayerInterface.html
+  name: FRenderableLayerInterface
+  nameWithType: FRenderableLayerInterface
+  fullName: FRenderableLayerInterface
+- uid: Global.FFacetRenderLayer.batchIndex
+  commentId: F:Global.FFacetRenderLayer.batchIndex
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_batchIndex
+  name: batchIndex
+  nameWithType: FFacetRenderLayer.batchIndex
+  fullName: FFacetRenderLayer.batchIndex
+- uid: Global.FFacetRenderLayer._stage
+  commentId: F:Global.FFacetRenderLayer._stage
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__stage
+  name: _stage
+  nameWithType: FFacetRenderLayer._stage
+  fullName: FFacetRenderLayer._stage
+- uid: Global.FFacetRenderLayer._facetType
+  commentId: F:Global.FFacetRenderLayer._facetType
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__facetType
+  name: _facetType
+  nameWithType: FFacetRenderLayer._facetType
+  fullName: FFacetRenderLayer._facetType
+- uid: Global.FFacetRenderLayer._atlas
+  commentId: F:Global.FFacetRenderLayer._atlas
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__atlas
+  name: _atlas
+  nameWithType: FFacetRenderLayer._atlas
+  fullName: FFacetRenderLayer._atlas
+- uid: Global.FFacetRenderLayer._shader
+  commentId: F:Global.FFacetRenderLayer._shader
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__shader
+  name: _shader
+  nameWithType: FFacetRenderLayer._shader
+  fullName: FFacetRenderLayer._shader
+- uid: Global.FFacetRenderLayer._gameObject
+  commentId: F:Global.FFacetRenderLayer._gameObject
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__gameObject
+  name: _gameObject
+  nameWithType: FFacetRenderLayer._gameObject
+  fullName: FFacetRenderLayer._gameObject
+- uid: Global.FFacetRenderLayer._transform
+  commentId: F:Global.FFacetRenderLayer._transform
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__transform
+  name: _transform
+  nameWithType: FFacetRenderLayer._transform
+  fullName: FFacetRenderLayer._transform
+- uid: Global.FFacetRenderLayer._material
+  commentId: F:Global.FFacetRenderLayer._material
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__material
+  name: _material
+  nameWithType: FFacetRenderLayer._material
+  fullName: FFacetRenderLayer._material
+- uid: Global.FFacetRenderLayer._meshFilter
+  commentId: F:Global.FFacetRenderLayer._meshFilter
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__meshFilter
+  name: _meshFilter
+  nameWithType: FFacetRenderLayer._meshFilter
+  fullName: FFacetRenderLayer._meshFilter
+- uid: Global.FFacetRenderLayer._meshRenderer
+  commentId: F:Global.FFacetRenderLayer._meshRenderer
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__meshRenderer
+  name: _meshRenderer
+  nameWithType: FFacetRenderLayer._meshRenderer
+  fullName: FFacetRenderLayer._meshRenderer
+- uid: Global.FFacetRenderLayer._mesh
+  commentId: F:Global.FFacetRenderLayer._mesh
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__mesh
+  name: _mesh
+  nameWithType: FFacetRenderLayer._mesh
+  fullName: FFacetRenderLayer._mesh
+- uid: Global.FFacetRenderLayer._vertices
+  commentId: F:Global.FFacetRenderLayer._vertices
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__vertices
+  name: _vertices
+  nameWithType: FFacetRenderLayer._vertices
+  fullName: FFacetRenderLayer._vertices
+- uid: Global.FFacetRenderLayer._triangles
+  commentId: F:Global.FFacetRenderLayer._triangles
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__triangles
+  name: _triangles
+  nameWithType: FFacetRenderLayer._triangles
+  fullName: FFacetRenderLayer._triangles
+- uid: Global.FFacetRenderLayer._uvs
+  commentId: F:Global.FFacetRenderLayer._uvs
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__uvs
+  name: _uvs
+  nameWithType: FFacetRenderLayer._uvs
+  fullName: FFacetRenderLayer._uvs
+- uid: Global.FFacetRenderLayer._colors
+  commentId: F:Global.FFacetRenderLayer._colors
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__colors
+  name: _colors
+  nameWithType: FFacetRenderLayer._colors
+  fullName: FFacetRenderLayer._colors
+- uid: Global.FFacetRenderLayer._isMeshDirty
+  commentId: F:Global.FFacetRenderLayer._isMeshDirty
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__isMeshDirty
+  name: _isMeshDirty
+  nameWithType: FFacetRenderLayer._isMeshDirty
+  fullName: FFacetRenderLayer._isMeshDirty
+- uid: Global.FFacetRenderLayer._didVertsChange
+  commentId: F:Global.FFacetRenderLayer._didVertsChange
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__didVertsChange
+  name: _didVertsChange
+  nameWithType: FFacetRenderLayer._didVertsChange
+  fullName: FFacetRenderLayer._didVertsChange
+- uid: Global.FFacetRenderLayer._didUVsChange
+  commentId: F:Global.FFacetRenderLayer._didUVsChange
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__didUVsChange
+  name: _didUVsChange
+  nameWithType: FFacetRenderLayer._didUVsChange
+  fullName: FFacetRenderLayer._didUVsChange
+- uid: Global.FFacetRenderLayer._didColorsChange
+  commentId: F:Global.FFacetRenderLayer._didColorsChange
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__didColorsChange
+  name: _didColorsChange
+  nameWithType: FFacetRenderLayer._didColorsChange
+  fullName: FFacetRenderLayer._didColorsChange
+- uid: Global.FFacetRenderLayer._didVertCountChange
+  commentId: F:Global.FFacetRenderLayer._didVertCountChange
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__didVertCountChange
+  name: _didVertCountChange
+  nameWithType: FFacetRenderLayer._didVertCountChange
+  fullName: FFacetRenderLayer._didVertCountChange
+- uid: Global.FFacetRenderLayer._doesMeshNeedClear
+  commentId: F:Global.FFacetRenderLayer._doesMeshNeedClear
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__doesMeshNeedClear
+  name: _doesMeshNeedClear
+  nameWithType: FFacetRenderLayer._doesMeshNeedClear
+  fullName: FFacetRenderLayer._doesMeshNeedClear
+- uid: Global.FFacetRenderLayer._expansionAmount
+  commentId: F:Global.FFacetRenderLayer._expansionAmount
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__expansionAmount
+  name: _expansionAmount
+  nameWithType: FFacetRenderLayer._expansionAmount
+  fullName: FFacetRenderLayer._expansionAmount
+- uid: Global.FFacetRenderLayer._maxEmptyFacets
+  commentId: F:Global.FFacetRenderLayer._maxEmptyFacets
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__maxEmptyFacets
+  name: _maxEmptyFacets
+  nameWithType: FFacetRenderLayer._maxEmptyFacets
+  fullName: FFacetRenderLayer._maxEmptyFacets
+- uid: Global.FFacetRenderLayer._maxFacetCount
+  commentId: F:Global.FFacetRenderLayer._maxFacetCount
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__maxFacetCount
+  name: _maxFacetCount
+  nameWithType: FFacetRenderLayer._maxFacetCount
+  fullName: FFacetRenderLayer._maxFacetCount
+- uid: Global.FFacetRenderLayer._depth
+  commentId: F:Global.FFacetRenderLayer._depth
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__depth
+  name: _depth
+  nameWithType: FFacetRenderLayer._depth
+  fullName: FFacetRenderLayer._depth
+- uid: Global.FFacetRenderLayer._nextAvailableFacetIndex
+  commentId: F:Global.FFacetRenderLayer._nextAvailableFacetIndex
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__nextAvailableFacetIndex
+  name: _nextAvailableFacetIndex
+  nameWithType: FFacetRenderLayer._nextAvailableFacetIndex
+  fullName: FFacetRenderLayer._nextAvailableFacetIndex
+- uid: Global.FFacetRenderLayer._lowestZeroIndex
+  commentId: F:Global.FFacetRenderLayer._lowestZeroIndex
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer__lowestZeroIndex
+  name: _lowestZeroIndex
+  nameWithType: FFacetRenderLayer._lowestZeroIndex
+  fullName: FFacetRenderLayer._lowestZeroIndex
+- uid: Global.FFacetRenderLayer.Destroy
+  commentId: M:Global.FFacetRenderLayer.Destroy
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Destroy
+  name: Destroy()
+  nameWithType: FFacetRenderLayer.Destroy()
+  fullName: FFacetRenderLayer.Destroy()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Destroy
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.UpdateTransform
+  commentId: M:Global.FFacetRenderLayer.UpdateTransform
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateTransform
+  name: UpdateTransform()
+  nameWithType: FFacetRenderLayer.UpdateTransform()
+  fullName: FFacetRenderLayer.UpdateTransform()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.UpdateTransform
+    name: UpdateTransform
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateTransform
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.UpdateTransform
+    name: UpdateTransform
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateTransform
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.AddToWorld
+  commentId: M:Global.FFacetRenderLayer.AddToWorld
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_AddToWorld
+  name: AddToWorld()
+  nameWithType: FFacetRenderLayer.AddToWorld()
+  fullName: FFacetRenderLayer.AddToWorld()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.AddToWorld
+    name: AddToWorld
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_AddToWorld
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.AddToWorld
+    name: AddToWorld
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_AddToWorld
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.RemoveFromWorld
+  commentId: M:Global.FFacetRenderLayer.RemoveFromWorld
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_RemoveFromWorld
+  name: RemoveFromWorld()
+  nameWithType: FFacetRenderLayer.RemoveFromWorld()
+  fullName: FFacetRenderLayer.RemoveFromWorld()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.RemoveFromWorld
+    name: RemoveFromWorld
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_RemoveFromWorld
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.RemoveFromWorld
+    name: RemoveFromWorld
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_RemoveFromWorld
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.Open
+  commentId: M:Global.FFacetRenderLayer.Open
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Open
+  name: Open()
+  nameWithType: FFacetRenderLayer.Open()
+  fullName: FFacetRenderLayer.Open()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.Open
+    name: Open
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Open
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.Open
+    name: Open
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Open
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.GetNextFacetIndex(System.Int32)
+  commentId: M:Global.FFacetRenderLayer.GetNextFacetIndex(System.Int32)
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_GetNextFacetIndex_System_Int32_
+  name: GetNextFacetIndex(int)
+  nameWithType: FFacetRenderLayer.GetNextFacetIndex(int)
+  fullName: FFacetRenderLayer.GetNextFacetIndex(int)
+  nameWithType.vb: FFacetRenderLayer.GetNextFacetIndex(Integer)
+  fullName.vb: FFacetRenderLayer.GetNextFacetIndex(Integer)
+  name.vb: GetNextFacetIndex(Integer)
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.GetNextFacetIndex(System.Int32)
+    name: GetNextFacetIndex
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_GetNextFacetIndex_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.GetNextFacetIndex(System.Int32)
+    name: GetNextFacetIndex
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_GetNextFacetIndex_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FFacetRenderLayer.Close
+  commentId: M:Global.FFacetRenderLayer.Close
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Close
+  name: Close()
+  nameWithType: FFacetRenderLayer.Close()
+  fullName: FFacetRenderLayer.Close()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.Close
+    name: Close
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.Close
+    name: Close
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Close
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.Update(System.Int32)
+  commentId: M:Global.FFacetRenderLayer.Update(System.Int32)
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Update_System_Int32_
+  name: Update(int)
+  nameWithType: FFacetRenderLayer.Update(int)
+  fullName: FFacetRenderLayer.Update(int)
+  nameWithType.vb: FFacetRenderLayer.Update(Integer)
+  fullName.vb: FFacetRenderLayer.Update(Integer)
+  name.vb: Update(Integer)
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.Update(System.Int32)
+    name: Update
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Update_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.Update(System.Int32)
+    name: Update
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_Update_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FFacetRenderLayer.UpdateMeshProperties
+  commentId: M:Global.FFacetRenderLayer.UpdateMeshProperties
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateMeshProperties
+  name: UpdateMeshProperties()
+  nameWithType: FFacetRenderLayer.UpdateMeshProperties()
+  fullName: FFacetRenderLayer.UpdateMeshProperties()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.UpdateMeshProperties
+    name: UpdateMeshProperties
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateMeshProperties
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.UpdateMeshProperties
+    name: UpdateMeshProperties
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_UpdateMeshProperties
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.HandleVertsChange
+  commentId: M:Global.FFacetRenderLayer.HandleVertsChange
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_HandleVertsChange
+  name: HandleVertsChange()
+  nameWithType: FFacetRenderLayer.HandleVertsChange()
+  fullName: FFacetRenderLayer.HandleVertsChange()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.HandleVertsChange
+    name: HandleVertsChange
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_HandleVertsChange
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.HandleVertsChange
+    name: HandleVertsChange
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_HandleVertsChange
+  - name: (
+  - name: )
+- uid: Global.FFacetRenderLayer.expansionAmount
+  commentId: P:Global.FFacetRenderLayer.expansionAmount
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_expansionAmount
+  name: expansionAmount
+  nameWithType: FFacetRenderLayer.expansionAmount
+  fullName: FFacetRenderLayer.expansionAmount
+- uid: Global.FFacetRenderLayer.vertices
+  commentId: P:Global.FFacetRenderLayer.vertices
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_vertices
+  name: vertices
+  nameWithType: FFacetRenderLayer.vertices
+  fullName: FFacetRenderLayer.vertices
+- uid: Global.FFacetRenderLayer.uvs
+  commentId: P:Global.FFacetRenderLayer.uvs
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_uvs
+  name: uvs
+  nameWithType: FFacetRenderLayer.uvs
+  fullName: FFacetRenderLayer.uvs
+- uid: Global.FFacetRenderLayer.colors
+  commentId: P:Global.FFacetRenderLayer.colors
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_colors
+  name: colors
+  nameWithType: FFacetRenderLayer.colors
+  fullName: FFacetRenderLayer.colors
+- uid: Global.FFacetRenderLayer.atlas
+  commentId: P:Global.FFacetRenderLayer.atlas
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_atlas
+  name: atlas
+  nameWithType: FFacetRenderLayer.atlas
+  fullName: FFacetRenderLayer.atlas
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.FQuadRenderLayer.#ctor*
+  commentId: Overload:Global.FQuadRenderLayer.#ctor
+  isExternal: true
+  href: Global.FQuadRenderLayer.html#FQuadRenderLayer__ctor_FStage_FFacetType_FAtlas_FShader_
+  name: FQuadRenderLayer
+  nameWithType: FQuadRenderLayer.FQuadRenderLayer
+  fullName: FQuadRenderLayer.FQuadRenderLayer
+  nameWithType.vb: FQuadRenderLayer.New
+  fullName.vb: FQuadRenderLayer.New
+  name.vb: New
+- uid: Global.FStage
+  commentId: T:Global.FStage
+  isExternal: true
+  href: FStage.html
+  name: FStage
+  nameWithType: FStage
+  fullName: FStage
+- uid: Global.FFacetType
+  commentId: T:Global.FFacetType
+  isExternal: true
+  href: FFacetType.html
+  name: FFacetType
+  nameWithType: FFacetType
+  fullName: FFacetType
+- uid: Global.FAtlas
+  commentId: T:Global.FAtlas
+  isExternal: true
+  href: FAtlas.html
+  name: FAtlas
+  nameWithType: FAtlas
+  fullName: FAtlas
+- uid: Global.FShader
+  commentId: T:Global.FShader
+  isExternal: true
+  href: FShader.html
+  name: FShader
+  nameWithType: FShader
+  fullName: FShader
+- uid: Global.FFacetRenderLayer.FillUnusedFacetsWithZeroes
+  commentId: M:Global.FFacetRenderLayer.FillUnusedFacetsWithZeroes
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_FillUnusedFacetsWithZeroes
+  name: FillUnusedFacetsWithZeroes()
+  nameWithType: FFacetRenderLayer.FillUnusedFacetsWithZeroes()
+  fullName: FFacetRenderLayer.FillUnusedFacetsWithZeroes()
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.FillUnusedFacetsWithZeroes
+    name: FillUnusedFacetsWithZeroes
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_FillUnusedFacetsWithZeroes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.FillUnusedFacetsWithZeroes
+    name: FillUnusedFacetsWithZeroes
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_FillUnusedFacetsWithZeroes
+  - name: (
+  - name: )
+- uid: Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes*
+  commentId: Overload:Global.FQuadRenderLayer.FillUnusedFacetsWithZeroes
+  isExternal: true
+  href: Global.FQuadRenderLayer.html#FQuadRenderLayer_FillUnusedFacetsWithZeroes
+  name: FillUnusedFacetsWithZeroes
+  nameWithType: FQuadRenderLayer.FillUnusedFacetsWithZeroes
+  fullName: FQuadRenderLayer.FillUnusedFacetsWithZeroes
+- uid: Global.FFacetRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  commentId: M:Global.FFacetRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ShrinkMaxFacetLimit_System_Int32_
+  name: ShrinkMaxFacetLimit(int)
+  nameWithType: FFacetRenderLayer.ShrinkMaxFacetLimit(int)
+  fullName: FFacetRenderLayer.ShrinkMaxFacetLimit(int)
+  nameWithType.vb: FFacetRenderLayer.ShrinkMaxFacetLimit(Integer)
+  fullName.vb: FFacetRenderLayer.ShrinkMaxFacetLimit(Integer)
+  name.vb: ShrinkMaxFacetLimit(Integer)
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+    name: ShrinkMaxFacetLimit
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ShrinkMaxFacetLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.ShrinkMaxFacetLimit(System.Int32)
+    name: ShrinkMaxFacetLimit
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ShrinkMaxFacetLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FQuadRenderLayer.ShrinkMaxFacetLimit*
+  commentId: Overload:Global.FQuadRenderLayer.ShrinkMaxFacetLimit
+  isExternal: true
+  href: Global.FQuadRenderLayer.html#FQuadRenderLayer_ShrinkMaxFacetLimit_System_Int32_
+  name: ShrinkMaxFacetLimit
+  nameWithType: FQuadRenderLayer.ShrinkMaxFacetLimit
+  fullName: FQuadRenderLayer.ShrinkMaxFacetLimit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.FFacetRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  commentId: M:Global.FFacetRenderLayer.ExpandMaxFacetLimit(System.Int32)
+  parent: Global.FFacetRenderLayer
+  isExternal: true
+  href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ExpandMaxFacetLimit_System_Int32_
+  name: ExpandMaxFacetLimit(int)
+  nameWithType: FFacetRenderLayer.ExpandMaxFacetLimit(int)
+  fullName: FFacetRenderLayer.ExpandMaxFacetLimit(int)
+  nameWithType.vb: FFacetRenderLayer.ExpandMaxFacetLimit(Integer)
+  fullName.vb: FFacetRenderLayer.ExpandMaxFacetLimit(Integer)
+  name.vb: ExpandMaxFacetLimit(Integer)
+  spec.csharp:
+  - uid: Global.FFacetRenderLayer.ExpandMaxFacetLimit(System.Int32)
+    name: ExpandMaxFacetLimit
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ExpandMaxFacetLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Global.FFacetRenderLayer.ExpandMaxFacetLimit(System.Int32)
+    name: ExpandMaxFacetLimit
+    isExternal: true
+    href: Global.FFacetRenderLayer.html#FFacetRenderLayer_ExpandMaxFacetLimit_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Global.FQuadRenderLayer.ExpandMaxFacetLimit*
+  commentId: Overload:Global.FQuadRenderLayer.ExpandMaxFacetLimit
+  isExternal: true
+  href: Global.FQuadRenderLayer.html#FQuadRenderLayer_ExpandMaxFacetLimit_System_Int32_
+  name: ExpandMaxFacetLimit
+  nameWithType: FQuadRenderLayer.ExpandMaxFacetLimit
+  fullName: FQuadRenderLayer.ExpandMaxFacetLimit

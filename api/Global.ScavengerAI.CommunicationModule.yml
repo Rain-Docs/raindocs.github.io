@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ScavengerAI.CommunicationModule
+  commentId: T:Global.ScavengerAI.CommunicationModule
+  id: ScavengerAI.CommunicationModule
+  parent: Global
+  children:
+  - Global.ScavengerAI.CommunicationModule.#ctor(ScavengerAI)
+  - Global.ScavengerAI.CommunicationModule.MoveToSpot
+  - Global.ScavengerAI.CommunicationModule.Update
+  - Global.ScavengerAI.CommunicationModule.Utility
+  - Global.ScavengerAI.CommunicationModule.communicationHistory
+  - Global.ScavengerAI.CommunicationModule.nextAnim
+  - Global.ScavengerAI.CommunicationModule.playingAnim
+  - Global.ScavengerAI.CommunicationModule.scavAI
+  - Global.ScavengerAI.CommunicationModule.target
+  langs:
+  - csharp
+  - vb
+  name: ScavengerAI.CommunicationModule
+  nameWithType: ScavengerAI.CommunicationModule
+  fullName: ScavengerAI.CommunicationModule
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ScavengerAI.CommunicationModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class ScavengerAI.CommunicationModule : AIModule'
+    content.vb: Public Class ScavengerAI.CommunicationModule Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - Global.AIModule.NewRoom(Room)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ScavengerAI.CommunicationModule.scavAI
+  commentId: F:Global.ScavengerAI.CommunicationModule.scavAI
+  id: scavAI
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: scavAI
+  nameWithType: ScavengerAI.CommunicationModule.scavAI
+  fullName: ScavengerAI.CommunicationModule.scavAI
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ScavengerAI.CommunicationModule.scavAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ScavengerAI scavAI
+    return:
+      type: Global.ScavengerAI
+    content.vb: Public scavAI As ScavengerAI
+- uid: Global.ScavengerAI.CommunicationModule.communicationHistory
+  commentId: F:Global.ScavengerAI.CommunicationModule.communicationHistory
+  id: communicationHistory
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: communicationHistory
+  nameWithType: ScavengerAI.CommunicationModule.communicationHistory
+  fullName: ScavengerAI.CommunicationModule.communicationHistory
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ScavengerAI.CommunicationModule.communicationHistory</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<ScavengerAI.CommunicationModule.CommunicationRecord> communicationHistory
+    return:
+      type: System.Collections.Generic.List{ScavengerAI.CommunicationModule.CommunicationRecord}
+    content.vb: Public communicationHistory As List(Of ScavengerAI.CommunicationModule.CommunicationRecord)
+- uid: Global.ScavengerAI.CommunicationModule.target
+  commentId: F:Global.ScavengerAI.CommunicationModule.target
+  id: target
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: ScavengerAI.CommunicationModule.target
+  fullName: ScavengerAI.CommunicationModule.target
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ScavengerAI.CommunicationModule.target</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation target
+    return:
+      type: Global.Tracker.CreatureRepresentation
+    content.vb: Public target As Tracker.CreatureRepresentation
+- uid: Global.ScavengerAI.CommunicationModule.nextAnim
+  commentId: F:Global.ScavengerAI.CommunicationModule.nextAnim
+  id: nextAnim
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: nextAnim
+  nameWithType: ScavengerAI.CommunicationModule.nextAnim
+  fullName: ScavengerAI.CommunicationModule.nextAnim
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ScavengerAI.CommunicationModule.nextAnim</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Scavenger.ScavengerAnimation.ID nextAnim
+    return:
+      type: Global.Scavenger.ScavengerAnimation.ID
+    content.vb: Public nextAnim As Scavenger.ScavengerAnimation.ID
+- uid: Global.ScavengerAI.CommunicationModule.playingAnim
+  commentId: F:Global.ScavengerAI.CommunicationModule.playingAnim
+  id: playingAnim
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: playingAnim
+  nameWithType: ScavengerAI.CommunicationModule.playingAnim
+  fullName: ScavengerAI.CommunicationModule.playingAnim
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ScavengerAI.CommunicationModule.playingAnim</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Scavenger.ScavengerAnimation playingAnim
+    return:
+      type: Global.Scavenger.ScavengerAnimation
+    content.vb: Public playingAnim As Scavenger.ScavengerAnimation
+- uid: Global.ScavengerAI.CommunicationModule.#ctor(ScavengerAI)
+  commentId: M:Global.ScavengerAI.CommunicationModule.#ctor(ScavengerAI)
+  id: '#ctor(ScavengerAI)'
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: CommunicationModule(ScavengerAI)
+  nameWithType: ScavengerAI.CommunicationModule.CommunicationModule(ScavengerAI)
+  fullName: ScavengerAI.CommunicationModule.CommunicationModule(ScavengerAI)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ScavengerAI.CommunicationModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CommunicationModule(ScavengerAI scavAI)
+    parameters:
+    - id: scavAI
+      type: Global.ScavengerAI
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>scavAI</parameter>
+            <parameter>M:ScavengerAI.CommunicationModule.#ctor(ScavengerAI)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(scavAI As ScavengerAI)
+  overload: Global.ScavengerAI.CommunicationModule.#ctor*
+  nameWithType.vb: ScavengerAI.CommunicationModule.New(ScavengerAI)
+  fullName.vb: ScavengerAI.CommunicationModule.New(ScavengerAI)
+  name.vb: New(ScavengerAI)
+- uid: Global.ScavengerAI.CommunicationModule.Update
+  commentId: M:Global.ScavengerAI.CommunicationModule.Update
+  id: Update
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: ScavengerAI.CommunicationModule.Update()
+  fullName: ScavengerAI.CommunicationModule.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ScavengerAI.CommunicationModule.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.ScavengerAI.CommunicationModule.Update*
+- uid: Global.ScavengerAI.CommunicationModule.Utility
+  commentId: M:Global.ScavengerAI.CommunicationModule.Utility
+  id: Utility
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: Utility()
+  nameWithType: ScavengerAI.CommunicationModule.Utility()
+  fullName: ScavengerAI.CommunicationModule.Utility()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ScavengerAI.CommunicationModule.Utility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float Utility()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ScavengerAI.CommunicationModule.Utility</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function Utility() As Single
+  overridden: Global.AIModule.Utility
+  overload: Global.ScavengerAI.CommunicationModule.Utility*
+- uid: Global.ScavengerAI.CommunicationModule.MoveToSpot
+  commentId: P:Global.ScavengerAI.CommunicationModule.MoveToSpot
+  id: MoveToSpot
+  parent: Global.ScavengerAI.CommunicationModule
+  langs:
+  - csharp
+  - vb
+  name: MoveToSpot
+  nameWithType: ScavengerAI.CommunicationModule.MoveToSpot
+  fullName: ScavengerAI.CommunicationModule.MoveToSpot
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ScavengerAI.CommunicationModule.MoveToSpot</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate? MoveToSpot { get; }
+    parameters: []
+    return:
+      type: System.Nullable{WorldCoordinate}
+    content.vb: Public ReadOnly Property MoveToSpot As WorldCoordinate?
+  overload: Global.ScavengerAI.CommunicationModule.MoveToSpot*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ScavengerAI
+  commentId: T:Global.ScavengerAI
+  isExternal: true
+  href: ScavengerAI.html
+  name: ScavengerAI
+  nameWithType: ScavengerAI
+  fullName: ScavengerAI
+- uid: System.Collections.Generic.List{ScavengerAI.CommunicationModule.CommunicationRecord}
+  commentId: T:System.Collections.Generic.List{ScavengerAI.CommunicationModule.CommunicationRecord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ScavengerAI.CommunicationModule.CommunicationRecord>
+  nameWithType: List<ScavengerAI.CommunicationModule.CommunicationRecord>
+  fullName: System.Collections.Generic.List<ScavengerAI.CommunicationModule.CommunicationRecord>
+  nameWithType.vb: List(Of ScavengerAI.CommunicationModule.CommunicationRecord)
+  fullName.vb: System.Collections.Generic.List(Of ScavengerAI.CommunicationModule.CommunicationRecord)
+  name.vb: List(Of ScavengerAI.CommunicationModule.CommunicationRecord)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.ScavengerAI
+    name: ScavengerAI
+    isExternal: true
+    href: ScavengerAI.html
+  - name: .
+  - uid: Global.ScavengerAI.CommunicationModule
+    name: CommunicationModule
+    isExternal: true
+    href: ScavengerAI.CommunicationModule.html
+  - name: .
+  - uid: Global.ScavengerAI.CommunicationModule.CommunicationRecord
+    name: CommunicationRecord
+    isExternal: true
+    href: ScavengerAI.CommunicationModule.CommunicationRecord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ScavengerAI
+    name: ScavengerAI
+    isExternal: true
+    href: ScavengerAI.html
+  - name: .
+  - uid: Global.ScavengerAI.CommunicationModule
+    name: CommunicationModule
+    isExternal: true
+    href: ScavengerAI.CommunicationModule.html
+  - name: .
+  - uid: Global.ScavengerAI.CommunicationModule.CommunicationRecord
+    name: CommunicationRecord
+    isExternal: true
+    href: ScavengerAI.CommunicationModule.CommunicationRecord.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.Scavenger.ScavengerAnimation.ID
+  commentId: T:Global.Scavenger.ScavengerAnimation.ID
+  isExternal: true
+  href: Scavenger.html
+  name: Scavenger.ScavengerAnimation.ID
+  nameWithType: Scavenger.ScavengerAnimation.ID
+  fullName: Scavenger.ScavengerAnimation.ID
+  spec.csharp:
+  - uid: Global.Scavenger
+    name: Scavenger
+    isExternal: true
+    href: Scavenger.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation
+    name: ScavengerAnimation
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation.ID
+    name: ID
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.ID.html
+  spec.vb:
+  - uid: Global.Scavenger
+    name: Scavenger
+    isExternal: true
+    href: Scavenger.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation
+    name: ScavengerAnimation
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation.ID
+    name: ID
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.ID.html
+- uid: Global.Scavenger.ScavengerAnimation
+  commentId: T:Global.Scavenger.ScavengerAnimation
+  isExternal: true
+  href: Scavenger.html
+  name: Scavenger.ScavengerAnimation
+  nameWithType: Scavenger.ScavengerAnimation
+  fullName: Scavenger.ScavengerAnimation
+  spec.csharp:
+  - uid: Global.Scavenger
+    name: Scavenger
+    isExternal: true
+    href: Scavenger.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation
+    name: ScavengerAnimation
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.html
+  spec.vb:
+  - uid: Global.Scavenger
+    name: Scavenger
+    isExternal: true
+    href: Scavenger.html
+  - name: .
+  - uid: Global.Scavenger.ScavengerAnimation
+    name: ScavengerAnimation
+    isExternal: true
+    href: Scavenger.ScavengerAnimation.html
+- uid: Global.ScavengerAI.CommunicationModule.#ctor*
+  commentId: Overload:Global.ScavengerAI.CommunicationModule.#ctor
+  isExternal: true
+  href: Global.ScavengerAI.CommunicationModule.html#ScavengerAI_CommunicationModule__ctor_ScavengerAI_
+  name: CommunicationModule
+  nameWithType: ScavengerAI.CommunicationModule.CommunicationModule
+  fullName: ScavengerAI.CommunicationModule.CommunicationModule
+  nameWithType.vb: ScavengerAI.CommunicationModule.New
+  fullName.vb: ScavengerAI.CommunicationModule.New
+  name.vb: New
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.ScavengerAI.CommunicationModule.Update*
+  commentId: Overload:Global.ScavengerAI.CommunicationModule.Update
+  isExternal: true
+  href: Global.ScavengerAI.CommunicationModule.html#ScavengerAI_CommunicationModule_Update
+  name: Update
+  nameWithType: ScavengerAI.CommunicationModule.Update
+  fullName: ScavengerAI.CommunicationModule.Update
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: Global.ScavengerAI.CommunicationModule.Utility*
+  commentId: Overload:Global.ScavengerAI.CommunicationModule.Utility
+  isExternal: true
+  href: Global.ScavengerAI.CommunicationModule.html#ScavengerAI_CommunicationModule_Utility
+  name: Utility
+  nameWithType: ScavengerAI.CommunicationModule.Utility
+  fullName: ScavengerAI.CommunicationModule.Utility
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.ScavengerAI.CommunicationModule.MoveToSpot*
+  commentId: Overload:Global.ScavengerAI.CommunicationModule.MoveToSpot
+  isExternal: true
+  href: Global.ScavengerAI.CommunicationModule.html#ScavengerAI_CommunicationModule_MoveToSpot
+  name: MoveToSpot
+  nameWithType: ScavengerAI.CommunicationModule.MoveToSpot
+  fullName: ScavengerAI.CommunicationModule.MoveToSpot
+- uid: System.Nullable{WorldCoordinate}
+  commentId: T:System.Nullable{WorldCoordinate}
+  parent: System
+  definition: System.Nullable`1
+  href: WorldCoordinate.html
+  name: WorldCoordinate?
+  nameWithType: WorldCoordinate?
+  fullName: WorldCoordinate?
+  spec.csharp:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+  spec.vb:
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

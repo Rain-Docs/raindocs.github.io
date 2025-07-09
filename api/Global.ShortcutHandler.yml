@@ -1,0 +1,1484 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ShortcutHandler
+  commentId: T:Global.ShortcutHandler
+  id: ShortcutHandler
+  parent: Global
+  children:
+  - Global.ShortcutHandler.#ctor(RainWorldGame)
+  - Global.ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)
+  - Global.ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)
+  - Global.ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)
+  - Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  - Global.ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)
+  - Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)
+  - Global.ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  - Global.ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  - Global.ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)
+  - Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  - Global.ShortcutHandler.Update
+  - Global.ShortcutHandler.betweenRoomsWaitingLobby
+  - Global.ShortcutHandler.borderTravelVessels
+  - Global.ShortcutHandler.transportVessels
+  langs:
+  - csharp
+  - vb
+  name: ShortcutHandler
+  nameWithType: ShortcutHandler
+  fullName: ShortcutHandler
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ShortcutHandler</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public class ShortcutHandler
+    content.vb: Public Class ShortcutHandler
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ShortcutHandler.transportVessels
+  commentId: F:Global.ShortcutHandler.transportVessels
+  id: transportVessels
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: transportVessels
+  nameWithType: ShortcutHandler.transportVessels
+  fullName: ShortcutHandler.transportVessels
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShortcutHandler.transportVessels</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<ShortcutHandler.ShortCutVessel> transportVessels
+    return:
+      type: System.Collections.Generic.List{ShortcutHandler.ShortCutVessel}
+    content.vb: Public transportVessels As List(Of ShortcutHandler.ShortCutVessel)
+- uid: Global.ShortcutHandler.betweenRoomsWaitingLobby
+  commentId: F:Global.ShortcutHandler.betweenRoomsWaitingLobby
+  id: betweenRoomsWaitingLobby
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: betweenRoomsWaitingLobby
+  nameWithType: ShortcutHandler.betweenRoomsWaitingLobby
+  fullName: ShortcutHandler.betweenRoomsWaitingLobby
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShortcutHandler.betweenRoomsWaitingLobby</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<ShortcutHandler.Vessel> betweenRoomsWaitingLobby
+    return:
+      type: System.Collections.Generic.List{ShortcutHandler.Vessel}
+    content.vb: Public betweenRoomsWaitingLobby As List(Of ShortcutHandler.Vessel)
+- uid: Global.ShortcutHandler.borderTravelVessels
+  commentId: F:Global.ShortcutHandler.borderTravelVessels
+  id: borderTravelVessels
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: borderTravelVessels
+  nameWithType: ShortcutHandler.borderTravelVessels
+  fullName: ShortcutHandler.borderTravelVessels
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ShortcutHandler.borderTravelVessels</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<ShortcutHandler.BorderVessel> borderTravelVessels
+    return:
+      type: System.Collections.Generic.List{ShortcutHandler.BorderVessel}
+    content.vb: Public borderTravelVessels As List(Of ShortcutHandler.BorderVessel)
+- uid: Global.ShortcutHandler.#ctor(RainWorldGame)
+  commentId: M:Global.ShortcutHandler.#ctor(RainWorldGame)
+  id: '#ctor(RainWorldGame)'
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: ShortcutHandler(RainWorldGame)
+  nameWithType: ShortcutHandler.ShortcutHandler(RainWorldGame)
+  fullName: ShortcutHandler.ShortcutHandler(RainWorldGame)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ShortcutHandler</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ShortcutHandler(RainWorldGame gm)
+    parameters:
+    - id: gm
+      type: Global.RainWorldGame
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>gm</parameter>
+            <parameter>M:ShortcutHandler.#ctor(RainWorldGame)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(gm As RainWorldGame)
+  overload: Global.ShortcutHandler.#ctor*
+  nameWithType.vb: ShortcutHandler.New(RainWorldGame)
+  fullName.vb: ShortcutHandler.New(RainWorldGame)
+  name.vb: New(RainWorldGame)
+- uid: Global.ShortcutHandler.Update
+  commentId: M:Global.ShortcutHandler.Update
+  id: Update
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: ShortcutHandler.Update()
+  fullName: ShortcutHandler.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: Global.ShortcutHandler.Update*
+- uid: Global.ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)
+  commentId: M:Global.ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)
+  id: NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: NextShortcutPosition(IntVector2, IntVector2, Room)
+  nameWithType: ShortcutHandler.NextShortcutPosition(IntVector2, IntVector2, Room)
+  fullName: ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2, RWCustom.IntVector2, Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static IntVector2 NextShortcutPosition(IntVector2 pos, IntVector2 lastPos, Room room)
+    parameters:
+    - id: pos
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)</parameter>
+          </include>
+        </markup>
+    - id: lastPos
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>lastPos</parameter>
+            <parameter>M:ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)</parameter>
+          </include>
+        </markup>
+    return:
+      type: RWCustom.IntVector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ShortcutHandler.NextShortcutPosition(RWCustom.IntVector2,RWCustom.IntVector2,Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function NextShortcutPosition(pos As IntVector2, lastPos As IntVector2, room As Room) As IntVector2
+  overload: Global.ShortcutHandler.NextShortcutPosition*
+- uid: Global.ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)
+  commentId: M:Global.ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)
+  id: SuckInCreature(Creature,Room,ShortcutData)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: SuckInCreature(Creature, Room, ShortcutData)
+  nameWithType: ShortcutHandler.SuckInCreature(Creature, Room, ShortcutData)
+  fullName: ShortcutHandler.SuckInCreature(Creature, Room, ShortcutData)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SuckInCreature(Creature creature, Room room, ShortcutData shortCut)
+    parameters:
+    - id: creature
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)</parameter>
+          </include>
+        </markup>
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)</parameter>
+          </include>
+        </markup>
+    - id: shortCut
+      type: Global.ShortcutData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>shortCut</parameter>
+            <parameter>M:ShortcutHandler.SuckInCreature(Creature,Room,ShortcutData)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SuckInCreature(creature As Creature, room As Room, shortCut As ShortcutData)
+  overload: Global.ShortcutHandler.SuckInCreature*
+- uid: Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)
+  commentId: M:Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)
+  id: OnScreenPositionOfInShortCutCreature(Room,Creature)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: OnScreenPositionOfInShortCutCreature(Room, Creature)
+  nameWithType: ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room, Creature)
+  fullName: ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room, Creature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2? OnScreenPositionOfInShortCutCreature(Room room, Creature crit)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)</parameter>
+          </include>
+        </markup>
+    - id: crit
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Nullable{UnityEngine.Vector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ShortcutHandler.OnScreenPositionOfInShortCutCreature(Room,Creature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function OnScreenPositionOfInShortCutCreature(room As Room, crit As Creature) As Vector2?
+  overload: Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature*
+- uid: Global.ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)
+  commentId: M:Global.ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)
+  id: CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: CreatureEnterFromAbstractRoom(Creature, AbstractRoom, int)
+  nameWithType: ShortcutHandler.CreatureEnterFromAbstractRoom(Creature, AbstractRoom, int)
+  fullName: ShortcutHandler.CreatureEnterFromAbstractRoom(Creature, AbstractRoom, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CreatureEnterFromAbstractRoom(Creature creature, AbstractRoom enterRoom, int enterNode)
+    parameters:
+    - id: creature
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: enterRoom
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>enterRoom</parameter>
+            <parameter>M:ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: enterNode
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>enterNode</parameter>
+            <parameter>M:ShortcutHandler.CreatureEnterFromAbstractRoom(Creature,AbstractRoom,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub CreatureEnterFromAbstractRoom(creature As Creature, enterRoom As AbstractRoom, enterNode As Integer)
+  overload: Global.ShortcutHandler.CreatureEnterFromAbstractRoom*
+  nameWithType.vb: ShortcutHandler.CreatureEnterFromAbstractRoom(Creature, AbstractRoom, Integer)
+  fullName.vb: ShortcutHandler.CreatureEnterFromAbstractRoom(Creature, AbstractRoom, Integer)
+  name.vb: CreatureEnterFromAbstractRoom(Creature, AbstractRoom, Integer)
+- uid: Global.ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)
+  commentId: M:Global.ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)
+  id: CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: CreatureTakeFlight(Creature, Type, WorldCoordinate, WorldCoordinate)
+  nameWithType: ShortcutHandler.CreatureTakeFlight(Creature, AbstractRoomNode.Type, WorldCoordinate, WorldCoordinate)
+  fullName: ShortcutHandler.CreatureTakeFlight(Creature, AbstractRoomNode.Type, WorldCoordinate, WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CreatureTakeFlight(Creature creature, AbstractRoomNode.Type type, WorldCoordinate start, WorldCoordinate dest)
+    parameters:
+    - id: creature
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    - id: type
+      type: Global.AbstractRoomNode.Type
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>type</parameter>
+            <parameter>M:ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    - id: start
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>start</parameter>
+            <parameter>M:ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    - id: dest
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dest</parameter>
+            <parameter>M:ShortcutHandler.CreatureTakeFlight(Creature,AbstractRoomNode.Type,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub CreatureTakeFlight(creature As Creature, type As AbstractRoomNode.Type, start As WorldCoordinate, dest As WorldCoordinate)
+  overload: Global.ShortcutHandler.CreatureTakeFlight*
+- uid: Global.ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)
+  commentId: M:Global.ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)
+  id: CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: CreatureTeleportOutOfRoom(Creature, WorldCoordinate, WorldCoordinate)
+  nameWithType: ShortcutHandler.CreatureTeleportOutOfRoom(Creature, WorldCoordinate, WorldCoordinate)
+  fullName: ShortcutHandler.CreatureTeleportOutOfRoom(Creature, WorldCoordinate, WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void CreatureTeleportOutOfRoom(Creature creature, WorldCoordinate start, WorldCoordinate dest)
+    parameters:
+    - id: creature
+      type: Global.Creature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    - id: start
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>start</parameter>
+            <parameter>M:ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    - id: dest
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>dest</parameter>
+            <parameter>M:ShortcutHandler.CreatureTeleportOutOfRoom(Creature,WorldCoordinate,WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub CreatureTeleportOutOfRoom(creature As Creature, start As WorldCoordinate, dest As WorldCoordinate)
+  overload: Global.ShortcutHandler.CreatureTeleportOutOfRoom*
+- uid: Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  commentId: M:Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  id: FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: FlyingCreatureArrivedInRealizedRoom(BorderVessel)
+  nameWithType: ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  fullName: ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel fCrit)
+    parameters:
+    - id: fCrit
+      type: Global.ShortcutHandler.BorderVessel
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fCrit</parameter>
+            <parameter>M:ShortcutHandler.FlyingCreatureArrivedInRealizedRoom(ShortcutHandler.BorderVessel)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FlyingCreatureArrivedInRealizedRoom(fCrit As ShortcutHandler.BorderVessel)
+  overload: Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom*
+- uid: Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  commentId: M:Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  id: TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: TeleportingCreatureArrivedInRealizedRoom(TeleportationVessel)
+  nameWithType: ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  fullName: ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel tVessel)
+    parameters:
+    - id: tVessel
+      type: Global.ShortcutHandler.TeleportationVessel
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tVessel</parameter>
+            <parameter>M:ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom(ShortcutHandler.TeleportationVessel)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub TeleportingCreatureArrivedInRealizedRoom(tVessel As ShortcutHandler.TeleportationVessel)
+  overload: Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom*
+- uid: Global.ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  commentId: M:Global.ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  id: PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: PopOutOfBatHive(BatHiveVessel)
+  nameWithType: ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  fullName: ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PopOutOfBatHive(ShortcutHandler.BatHiveVessel vessel)
+    parameters:
+    - id: vessel
+      type: Global.ShortcutHandler.BatHiveVessel
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vessel</parameter>
+            <parameter>M:ShortcutHandler.PopOutOfBatHive(ShortcutHandler.BatHiveVessel)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PopOutOfBatHive(vessel As ShortcutHandler.BatHiveVessel)
+  overload: Global.ShortcutHandler.PopOutOfBatHive*
+- uid: Global.ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  commentId: M:Global.ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  id: SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  parent: Global.ShortcutHandler
+  langs:
+  - csharp
+  - vb
+  name: SpitOutCreature(ShortCutVessel)
+  nameWithType: ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  fullName: ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpitOutCreature(ShortcutHandler.ShortCutVessel vessel)
+    parameters:
+    - id: vessel
+      type: Global.ShortcutHandler.ShortCutVessel
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vessel</parameter>
+            <parameter>M:ShortcutHandler.SpitOutCreature(ShortcutHandler.ShortCutVessel)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SpitOutCreature(vessel As ShortcutHandler.ShortCutVessel)
+  overload: Global.ShortcutHandler.SpitOutCreature*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{ShortcutHandler.ShortCutVessel}
+  commentId: T:System.Collections.Generic.List{ShortcutHandler.ShortCutVessel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ShortcutHandler.ShortCutVessel>
+  nameWithType: List<ShortcutHandler.ShortCutVessel>
+  fullName: System.Collections.Generic.List<ShortcutHandler.ShortCutVessel>
+  nameWithType.vb: List(Of ShortcutHandler.ShortCutVessel)
+  fullName.vb: System.Collections.Generic.List(Of ShortcutHandler.ShortCutVessel)
+  name.vb: List(Of ShortcutHandler.ShortCutVessel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{ShortcutHandler.Vessel}
+  commentId: T:System.Collections.Generic.List{ShortcutHandler.Vessel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ShortcutHandler.Vessel>
+  nameWithType: List<ShortcutHandler.Vessel>
+  fullName: System.Collections.Generic.List<ShortcutHandler.Vessel>
+  nameWithType.vb: List(Of ShortcutHandler.Vessel)
+  fullName.vb: System.Collections.Generic.List(Of ShortcutHandler.Vessel)
+  name.vb: List(Of ShortcutHandler.Vessel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.Vessel
+    name: Vessel
+    isExternal: true
+    href: ShortcutHandler.Vessel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.Vessel
+    name: Vessel
+    isExternal: true
+    href: ShortcutHandler.Vessel.html
+  - name: )
+- uid: System.Collections.Generic.List{ShortcutHandler.BorderVessel}
+  commentId: T:System.Collections.Generic.List{ShortcutHandler.BorderVessel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ShortcutHandler.BorderVessel>
+  nameWithType: List<ShortcutHandler.BorderVessel>
+  fullName: System.Collections.Generic.List<ShortcutHandler.BorderVessel>
+  nameWithType.vb: List(Of ShortcutHandler.BorderVessel)
+  fullName.vb: System.Collections.Generic.List(Of ShortcutHandler.BorderVessel)
+  name.vb: List(Of ShortcutHandler.BorderVessel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BorderVessel
+    name: BorderVessel
+    isExternal: true
+    href: ShortcutHandler.BorderVessel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BorderVessel
+    name: BorderVessel
+    isExternal: true
+    href: ShortcutHandler.BorderVessel.html
+  - name: )
+- uid: Global.ShortcutHandler.#ctor*
+  commentId: Overload:Global.ShortcutHandler.#ctor
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler__ctor_RainWorldGame_
+  name: ShortcutHandler
+  nameWithType: ShortcutHandler.ShortcutHandler
+  fullName: ShortcutHandler.ShortcutHandler
+  nameWithType.vb: ShortcutHandler.New
+  fullName.vb: ShortcutHandler.New
+  name.vb: New
+- uid: Global.RainWorldGame
+  commentId: T:Global.RainWorldGame
+  isExternal: true
+  href: RainWorldGame.html
+  name: RainWorldGame
+  nameWithType: RainWorldGame
+  fullName: RainWorldGame
+- uid: Global.ShortcutHandler.Update*
+  commentId: Overload:Global.ShortcutHandler.Update
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_Update
+  name: Update
+  nameWithType: ShortcutHandler.Update
+  fullName: ShortcutHandler.Update
+- uid: Global.ShortcutHandler.NextShortcutPosition*
+  commentId: Overload:Global.ShortcutHandler.NextShortcutPosition
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_NextShortcutPosition_RWCustom_IntVector2_RWCustom_IntVector2_Room_
+  name: NextShortcutPosition
+  nameWithType: ShortcutHandler.NextShortcutPosition
+  fullName: ShortcutHandler.NextShortcutPosition
+- uid: RWCustom.IntVector2
+  commentId: T:RWCustom.IntVector2
+  parent: RWCustom
+  isExternal: true
+  href: RWCustom.IntVector2.html
+  name: IntVector2
+  nameWithType: IntVector2
+  fullName: RWCustom.IntVector2
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: RWCustom
+  commentId: N:RWCustom
+  isExternal: true
+  href: RWCustom.html
+  name: RWCustom
+  nameWithType: RWCustom
+  fullName: RWCustom
+- uid: Global.ShortcutHandler.SuckInCreature*
+  commentId: Overload:Global.ShortcutHandler.SuckInCreature
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_SuckInCreature_Creature_Room_ShortcutData_
+  name: SuckInCreature
+  nameWithType: ShortcutHandler.SuckInCreature
+  fullName: ShortcutHandler.SuckInCreature
+- uid: Global.Creature
+  commentId: T:Global.Creature
+  isExternal: true
+  href: Creature.html
+  name: Creature
+  nameWithType: Creature
+  fullName: Creature
+- uid: Global.ShortcutData
+  commentId: T:Global.ShortcutData
+  isExternal: true
+  href: ShortcutData.html
+  name: ShortcutData
+  nameWithType: ShortcutData
+  fullName: ShortcutData
+- uid: Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature*
+  commentId: Overload:Global.ShortcutHandler.OnScreenPositionOfInShortCutCreature
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_OnScreenPositionOfInShortCutCreature_Room_Creature_
+  name: OnScreenPositionOfInShortCutCreature
+  nameWithType: ShortcutHandler.OnScreenPositionOfInShortCutCreature
+  fullName: ShortcutHandler.OnScreenPositionOfInShortCutCreature
+- uid: System.Nullable{UnityEngine.Vector2}
+  commentId: T:System.Nullable{UnityEngine.Vector2}
+  parent: System
+  definition: System.Nullable`1
+  name: Vector2?
+  nameWithType: Vector2?
+  fullName: UnityEngine.Vector2?
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.ShortcutHandler.CreatureEnterFromAbstractRoom*
+  commentId: Overload:Global.ShortcutHandler.CreatureEnterFromAbstractRoom
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_CreatureEnterFromAbstractRoom_Creature_AbstractRoom_System_Int32_
+  name: CreatureEnterFromAbstractRoom
+  nameWithType: ShortcutHandler.CreatureEnterFromAbstractRoom
+  fullName: ShortcutHandler.CreatureEnterFromAbstractRoom
+- uid: Global.AbstractRoom
+  commentId: T:Global.AbstractRoom
+  isExternal: true
+  href: AbstractRoom.html
+  name: AbstractRoom
+  nameWithType: AbstractRoom
+  fullName: AbstractRoom
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.ShortcutHandler.CreatureTakeFlight*
+  commentId: Overload:Global.ShortcutHandler.CreatureTakeFlight
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_CreatureTakeFlight_Creature_AbstractRoomNode_Type_WorldCoordinate_WorldCoordinate_
+  name: CreatureTakeFlight
+  nameWithType: ShortcutHandler.CreatureTakeFlight
+  fullName: ShortcutHandler.CreatureTakeFlight
+- uid: Global.AbstractRoomNode.Type
+  commentId: T:Global.AbstractRoomNode.Type
+  isExternal: true
+  href: AbstractRoomNode.html
+  name: AbstractRoomNode.Type
+  nameWithType: AbstractRoomNode.Type
+  fullName: AbstractRoomNode.Type
+  spec.csharp:
+  - uid: Global.AbstractRoomNode
+    name: AbstractRoomNode
+    isExternal: true
+    href: AbstractRoomNode.html
+  - name: .
+  - uid: Global.AbstractRoomNode.Type
+    name: Type
+    isExternal: true
+    href: AbstractRoomNode.Type.html
+  spec.vb:
+  - uid: Global.AbstractRoomNode
+    name: AbstractRoomNode
+    isExternal: true
+    href: AbstractRoomNode.html
+  - name: .
+  - uid: Global.AbstractRoomNode.Type
+    name: Type
+    isExternal: true
+    href: AbstractRoomNode.Type.html
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Global.ShortcutHandler.CreatureTeleportOutOfRoom*
+  commentId: Overload:Global.ShortcutHandler.CreatureTeleportOutOfRoom
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_CreatureTeleportOutOfRoom_Creature_WorldCoordinate_WorldCoordinate_
+  name: CreatureTeleportOutOfRoom
+  nameWithType: ShortcutHandler.CreatureTeleportOutOfRoom
+  fullName: ShortcutHandler.CreatureTeleportOutOfRoom
+- uid: Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom*
+  commentId: Overload:Global.ShortcutHandler.FlyingCreatureArrivedInRealizedRoom
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_FlyingCreatureArrivedInRealizedRoom_ShortcutHandler_BorderVessel_
+  name: FlyingCreatureArrivedInRealizedRoom
+  nameWithType: ShortcutHandler.FlyingCreatureArrivedInRealizedRoom
+  fullName: ShortcutHandler.FlyingCreatureArrivedInRealizedRoom
+- uid: Global.ShortcutHandler.BorderVessel
+  commentId: T:Global.ShortcutHandler.BorderVessel
+  isExternal: true
+  href: ShortcutHandler.html
+  name: ShortcutHandler.BorderVessel
+  nameWithType: ShortcutHandler.BorderVessel
+  fullName: ShortcutHandler.BorderVessel
+  spec.csharp:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BorderVessel
+    name: BorderVessel
+    isExternal: true
+    href: ShortcutHandler.BorderVessel.html
+  spec.vb:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BorderVessel
+    name: BorderVessel
+    isExternal: true
+    href: ShortcutHandler.BorderVessel.html
+- uid: Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom*
+  commentId: Overload:Global.ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_TeleportingCreatureArrivedInRealizedRoom_ShortcutHandler_TeleportationVessel_
+  name: TeleportingCreatureArrivedInRealizedRoom
+  nameWithType: ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom
+  fullName: ShortcutHandler.TeleportingCreatureArrivedInRealizedRoom
+- uid: Global.ShortcutHandler.TeleportationVessel
+  commentId: T:Global.ShortcutHandler.TeleportationVessel
+  isExternal: true
+  href: ShortcutHandler.html
+  name: ShortcutHandler.TeleportationVessel
+  nameWithType: ShortcutHandler.TeleportationVessel
+  fullName: ShortcutHandler.TeleportationVessel
+  spec.csharp:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.TeleportationVessel
+    name: TeleportationVessel
+    isExternal: true
+    href: ShortcutHandler.TeleportationVessel.html
+  spec.vb:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.TeleportationVessel
+    name: TeleportationVessel
+    isExternal: true
+    href: ShortcutHandler.TeleportationVessel.html
+- uid: Global.ShortcutHandler.PopOutOfBatHive*
+  commentId: Overload:Global.ShortcutHandler.PopOutOfBatHive
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_PopOutOfBatHive_ShortcutHandler_BatHiveVessel_
+  name: PopOutOfBatHive
+  nameWithType: ShortcutHandler.PopOutOfBatHive
+  fullName: ShortcutHandler.PopOutOfBatHive
+- uid: Global.ShortcutHandler.BatHiveVessel
+  commentId: T:Global.ShortcutHandler.BatHiveVessel
+  isExternal: true
+  href: ShortcutHandler.html
+  name: ShortcutHandler.BatHiveVessel
+  nameWithType: ShortcutHandler.BatHiveVessel
+  fullName: ShortcutHandler.BatHiveVessel
+  spec.csharp:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BatHiveVessel
+    name: BatHiveVessel
+    isExternal: true
+    href: ShortcutHandler.BatHiveVessel.html
+  spec.vb:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.BatHiveVessel
+    name: BatHiveVessel
+    isExternal: true
+    href: ShortcutHandler.BatHiveVessel.html
+- uid: Global.ShortcutHandler.SpitOutCreature*
+  commentId: Overload:Global.ShortcutHandler.SpitOutCreature
+  isExternal: true
+  href: Global.ShortcutHandler.html#ShortcutHandler_SpitOutCreature_ShortcutHandler_ShortCutVessel_
+  name: SpitOutCreature
+  nameWithType: ShortcutHandler.SpitOutCreature
+  fullName: ShortcutHandler.SpitOutCreature
+- uid: Global.ShortcutHandler.ShortCutVessel
+  commentId: T:Global.ShortcutHandler.ShortCutVessel
+  isExternal: true
+  href: ShortcutHandler.html
+  name: ShortcutHandler.ShortCutVessel
+  nameWithType: ShortcutHandler.ShortCutVessel
+  fullName: ShortcutHandler.ShortCutVessel
+  spec.csharp:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html
+  spec.vb:
+  - uid: Global.ShortcutHandler
+    name: ShortcutHandler
+    isExternal: true
+    href: ShortcutHandler.html
+  - name: .
+  - uid: Global.ShortcutHandler.ShortCutVessel
+    name: ShortCutVessel
+    isExternal: true
+    href: ShortcutHandler.ShortCutVessel.html

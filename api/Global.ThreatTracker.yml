@@ -1,0 +1,1712 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ThreatTracker
+  commentId: T:Global.ThreatTracker
+  id: ThreatTracker
+  parent: Global
+  children:
+  - Global.ThreatTracker.#ctor(ArtificialIntelligence,System.Int32)
+  - Global.ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)
+  - Global.ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)
+  - Global.ThreatTracker.FindMostAttractiveExit
+  - Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)
+  - Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  - Global.ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)
+  - Global.ThreatTracker.GetThreatCreature(AbstractCreature)
+  - Global.ThreatTracker.NewRoom(Room)
+  - Global.ThreatTracker.Panic
+  - Global.ThreatTracker.RemoveThreatCreature(AbstractCreature)
+  - Global.ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  - Global.ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)
+  - Global.ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)
+  - Global.ThreatTracker.TotalTrackedThreatCreatures
+  - Global.ThreatTracker.TotalTrackedThreats
+  - Global.ThreatTracker.Update
+  - Global.ThreatTracker.Utility
+  - Global.ThreatTracker.accessibilityConsideration
+  - Global.ThreatTracker.mostThreateningCreature
+  - Global.ThreatTracker.savedFleeDest
+  - Global.ThreatTracker.testFleeDest
+  langs:
+  - csharp
+  - vb
+  name: ThreatTracker
+  nameWithType: ThreatTracker
+  fullName: ThreatTracker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:ThreatTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class ThreatTracker : AIModule'
+    content.vb: Public Class ThreatTracker Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.ThreatTracker.mostThreateningCreature
+  commentId: F:Global.ThreatTracker.mostThreateningCreature
+  id: mostThreateningCreature
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: mostThreateningCreature
+  nameWithType: ThreatTracker.mostThreateningCreature
+  fullName: ThreatTracker.mostThreateningCreature
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ThreatTracker.mostThreateningCreature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.CreatureRepresentation mostThreateningCreature
+    return:
+      type: Global.Tracker.CreatureRepresentation
+    content.vb: Public mostThreateningCreature As Tracker.CreatureRepresentation
+- uid: Global.ThreatTracker.savedFleeDest
+  commentId: F:Global.ThreatTracker.savedFleeDest
+  id: savedFleeDest
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: savedFleeDest
+  nameWithType: ThreatTracker.savedFleeDest
+  fullName: ThreatTracker.savedFleeDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ThreatTracker.savedFleeDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate savedFleeDest
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public savedFleeDest As WorldCoordinate
+- uid: Global.ThreatTracker.testFleeDest
+  commentId: F:Global.ThreatTracker.testFleeDest
+  id: testFleeDest
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: testFleeDest
+  nameWithType: ThreatTracker.testFleeDest
+  fullName: ThreatTracker.testFleeDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ThreatTracker.testFleeDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate testFleeDest
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public testFleeDest As WorldCoordinate
+- uid: Global.ThreatTracker.accessibilityConsideration
+  commentId: F:Global.ThreatTracker.accessibilityConsideration
+  id: accessibilityConsideration
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: accessibilityConsideration
+  nameWithType: ThreatTracker.accessibilityConsideration
+  fullName: ThreatTracker.accessibilityConsideration
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:ThreatTracker.accessibilityConsideration</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float accessibilityConsideration
+    return:
+      type: System.Single
+    content.vb: Public accessibilityConsideration As Single
+- uid: Global.ThreatTracker.Utility
+  commentId: M:Global.ThreatTracker.Utility
+  id: Utility
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: Utility()
+  nameWithType: ThreatTracker.Utility()
+  fullName: ThreatTracker.Utility()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.Utility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float Utility()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.Utility</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function Utility() As Single
+  overridden: Global.AIModule.Utility
+  overload: Global.ThreatTracker.Utility*
+- uid: Global.ThreatTracker.#ctor(ArtificialIntelligence,System.Int32)
+  commentId: M:Global.ThreatTracker.#ctor(ArtificialIntelligence,System.Int32)
+  id: '#ctor(ArtificialIntelligence,System.Int32)'
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: ThreatTracker(ArtificialIntelligence, int)
+  nameWithType: ThreatTracker.ThreatTracker(ArtificialIntelligence, int)
+  fullName: ThreatTracker.ThreatTracker(ArtificialIntelligence, int)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>ThreatTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ThreatTracker(ArtificialIntelligence AI, int maxRememberedCreatures)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:ThreatTracker.#ctor(ArtificialIntelligence,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: maxRememberedCreatures
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maxRememberedCreatures</parameter>
+            <parameter>M:ThreatTracker.#ctor(ArtificialIntelligence,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, maxRememberedCreatures As Integer)
+  overload: Global.ThreatTracker.#ctor*
+  nameWithType.vb: ThreatTracker.New(ArtificialIntelligence, Integer)
+  fullName.vb: ThreatTracker.New(ArtificialIntelligence, Integer)
+  name.vb: New(ArtificialIntelligence, Integer)
+- uid: Global.ThreatTracker.NewRoom(Room)
+  commentId: M:Global.ThreatTracker.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: ThreatTracker.NewRoom(Room)
+  fullName: ThreatTracker.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:ThreatTracker.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.AIModule.NewRoom(Room)
+  overload: Global.ThreatTracker.NewRoom*
+- uid: Global.ThreatTracker.Update
+  commentId: M:Global.ThreatTracker.Update
+  id: Update
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: ThreatTracker.Update()
+  fullName: ThreatTracker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.ThreatTracker.Update*
+- uid: Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)
+  commentId: M:Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)
+  id: FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: FleeTo(WorldCoordinate, int, int, bool)
+  nameWithType: ThreatTracker.FleeTo(WorldCoordinate, int, int, bool)
+  fullName: ThreatTracker.FleeTo(WorldCoordinate, int, int, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate FleeTo(WorldCoordinate occupyTile, int reevalutaions, int maximumDistance, bool considerLeavingRoom)
+    parameters:
+    - id: occupyTile
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>occupyTile</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: reevalutaions
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>reevalutaions</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: maximumDistance
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maximumDistance</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: considerLeavingRoom
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>considerLeavingRoom</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FleeTo(occupyTile As WorldCoordinate, reevalutaions As Integer, maximumDistance As Integer, considerLeavingRoom As Boolean) As WorldCoordinate
+  overload: Global.ThreatTracker.FleeTo*
+  nameWithType.vb: ThreatTracker.FleeTo(WorldCoordinate, Integer, Integer, Boolean)
+  fullName.vb: ThreatTracker.FleeTo(WorldCoordinate, Integer, Integer, Boolean)
+  name.vb: FleeTo(WorldCoordinate, Integer, Integer, Boolean)
+- uid: Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:Global.ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  id: FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: FleeTo(WorldCoordinate, int, int, bool, bool)
+  nameWithType: ThreatTracker.FleeTo(WorldCoordinate, int, int, bool, bool)
+  fullName: ThreatTracker.FleeTo(WorldCoordinate, int, int, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate FleeTo(WorldCoordinate occupyTile, int reevalutaions, int maximumDistance, bool considerLeavingRoom, bool considerGoingHome)
+    parameters:
+    - id: occupyTile
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>occupyTile</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: reevalutaions
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>reevalutaions</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: maximumDistance
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maximumDistance</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: considerLeavingRoom
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>considerLeavingRoom</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: considerGoingHome
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>considerGoingHome</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.FleeTo(WorldCoordinate,System.Int32,System.Int32,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FleeTo(occupyTile As WorldCoordinate, reevalutaions As Integer, maximumDistance As Integer, considerLeavingRoom As Boolean, considerGoingHome As Boolean) As WorldCoordinate
+  overload: Global.ThreatTracker.FleeTo*
+  nameWithType.vb: ThreatTracker.FleeTo(WorldCoordinate, Integer, Integer, Boolean, Boolean)
+  fullName.vb: ThreatTracker.FleeTo(WorldCoordinate, Integer, Integer, Boolean, Boolean)
+  name.vb: FleeTo(WorldCoordinate, Integer, Integer, Boolean, Boolean)
+- uid: Global.ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)
+  commentId: M:Global.ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)
+  id: GenerateRandomPath(WorldCoordinate,System.Int32)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: GenerateRandomPath(WorldCoordinate, int)
+  nameWithType: ThreatTracker.GenerateRandomPath(WorldCoordinate, int)
+  fullName: ThreatTracker.GenerateRandomPath(WorldCoordinate, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<IntVector2> GenerateRandomPath(WorldCoordinate occupyTile, int length)
+    parameters:
+    - id: occupyTile
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>occupyTile</parameter>
+            <parameter>M:ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: length
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>length</parameter>
+            <parameter>M:ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{RWCustom.IntVector2}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.GenerateRandomPath(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GenerateRandomPath(occupyTile As WorldCoordinate, length As Integer) As List(Of IntVector2)
+  overload: Global.ThreatTracker.GenerateRandomPath*
+  nameWithType.vb: ThreatTracker.GenerateRandomPath(WorldCoordinate, Integer)
+  fullName.vb: ThreatTracker.GenerateRandomPath(WorldCoordinate, Integer)
+  name.vb: GenerateRandomPath(WorldCoordinate, Integer)
+- uid: Global.ThreatTracker.FindMostAttractiveExit
+  commentId: M:Global.ThreatTracker.FindMostAttractiveExit
+  id: FindMostAttractiveExit
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: FindMostAttractiveExit()
+  nameWithType: ThreatTracker.FindMostAttractiveExit()
+  fullName: ThreatTracker.FindMostAttractiveExit()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.FindMostAttractiveExit</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int FindMostAttractiveExit()
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.FindMostAttractiveExit</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FindMostAttractiveExit() As Integer
+  overload: Global.ThreatTracker.FindMostAttractiveExit*
+- uid: Global.ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)
+  commentId: M:Global.ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)
+  id: AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: AddThreatPoint(CreatureTemplate, WorldCoordinate, float)
+  nameWithType: ThreatTracker.AddThreatPoint(CreatureTemplate, WorldCoordinate, float)
+  fullName: ThreatTracker.AddThreatPoint(CreatureTemplate, WorldCoordinate, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ThreatTracker.ThreatPoint AddThreatPoint(CreatureTemplate crit, WorldCoordinate pos, float severity)
+    parameters:
+    - id: crit
+      type: Global.CreatureTemplate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: pos
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: severity
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>severity</parameter>
+            <parameter>M:ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ThreatTracker.ThreatPoint
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.AddThreatPoint(CreatureTemplate,WorldCoordinate,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function AddThreatPoint(crit As CreatureTemplate, pos As WorldCoordinate, severity As Single) As ThreatTracker.ThreatPoint
+  overload: Global.ThreatTracker.AddThreatPoint*
+  nameWithType.vb: ThreatTracker.AddThreatPoint(CreatureTemplate, WorldCoordinate, Single)
+  fullName.vb: ThreatTracker.AddThreatPoint(CreatureTemplate, WorldCoordinate, Single)
+  name.vb: AddThreatPoint(CreatureTemplate, WorldCoordinate, Single)
+- uid: Global.ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  commentId: M:Global.ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  id: RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: RemoveThreatPoint(ThreatPoint)
+  nameWithType: ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  fullName: ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RemoveThreatPoint(ThreatTracker.ThreatPoint tp)
+    parameters:
+    - id: tp
+      type: Global.ThreatTracker.ThreatPoint
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>tp</parameter>
+            <parameter>M:ThreatTracker.RemoveThreatPoint(ThreatTracker.ThreatPoint)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RemoveThreatPoint(tp As ThreatTracker.ThreatPoint)
+  overload: Global.ThreatTracker.RemoveThreatPoint*
+- uid: Global.ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)
+  commentId: M:Global.ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)
+  id: AddThreatCreature(Tracker.CreatureRepresentation)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: AddThreatCreature(CreatureRepresentation)
+  nameWithType: ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)
+  fullName: ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddThreatCreature(Tracker.CreatureRepresentation creature)
+    parameters:
+    - id: creature
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:ThreatTracker.AddThreatCreature(Tracker.CreatureRepresentation)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddThreatCreature(creature As Tracker.CreatureRepresentation)
+  overload: Global.ThreatTracker.AddThreatCreature*
+- uid: Global.ThreatTracker.RemoveThreatCreature(AbstractCreature)
+  commentId: M:Global.ThreatTracker.RemoveThreatCreature(AbstractCreature)
+  id: RemoveThreatCreature(AbstractCreature)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: RemoveThreatCreature(AbstractCreature)
+  nameWithType: ThreatTracker.RemoveThreatCreature(AbstractCreature)
+  fullName: ThreatTracker.RemoveThreatCreature(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.RemoveThreatCreature(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RemoveThreatCreature(AbstractCreature crit)
+    parameters:
+    - id: crit
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:ThreatTracker.RemoveThreatCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RemoveThreatCreature(crit As AbstractCreature)
+  overload: Global.ThreatTracker.RemoveThreatCreature*
+- uid: Global.ThreatTracker.GetThreatCreature(AbstractCreature)
+  commentId: M:Global.ThreatTracker.GetThreatCreature(AbstractCreature)
+  id: GetThreatCreature(AbstractCreature)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: GetThreatCreature(AbstractCreature)
+  nameWithType: ThreatTracker.GetThreatCreature(AbstractCreature)
+  fullName: ThreatTracker.GetThreatCreature(AbstractCreature)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.GetThreatCreature(AbstractCreature)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ThreatTracker.ThreatCreature GetThreatCreature(AbstractCreature crit)
+    parameters:
+    - id: crit
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>crit</parameter>
+            <parameter>M:ThreatTracker.GetThreatCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.ThreatTracker.ThreatCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.GetThreatCreature(AbstractCreature)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetThreatCreature(crit As AbstractCreature) As ThreatTracker.ThreatCreature
+  overload: Global.ThreatTracker.GetThreatCreature*
+- uid: Global.ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)
+  commentId: M:Global.ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)
+  id: ThreatOfArea(WorldCoordinate,System.Boolean)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: ThreatOfArea(WorldCoordinate, bool)
+  nameWithType: ThreatTracker.ThreatOfArea(WorldCoordinate, bool)
+  fullName: ThreatTracker.ThreatOfArea(WorldCoordinate, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ThreatOfArea(WorldCoordinate coord, bool accountThreatCreatureAccessibility)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: accountThreatCreatureAccessibility
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>accountThreatCreatureAccessibility</parameter>
+            <parameter>M:ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.ThreatOfArea(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ThreatOfArea(coord As WorldCoordinate, accountThreatCreatureAccessibility As Boolean) As Single
+  overload: Global.ThreatTracker.ThreatOfArea*
+  nameWithType.vb: ThreatTracker.ThreatOfArea(WorldCoordinate, Boolean)
+  fullName.vb: ThreatTracker.ThreatOfArea(WorldCoordinate, Boolean)
+  name.vb: ThreatOfArea(WorldCoordinate, Boolean)
+- uid: Global.ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)
+  commentId: M:Global.ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)
+  id: ThreatOfTile(WorldCoordinate,System.Boolean)
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: ThreatOfTile(WorldCoordinate, bool)
+  nameWithType: ThreatTracker.ThreatOfTile(WorldCoordinate, bool)
+  fullName: ThreatTracker.ThreatOfTile(WorldCoordinate, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ThreatOfTile(WorldCoordinate coord, bool accountThreatCreatureAccessibility)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: accountThreatCreatureAccessibility
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>accountThreatCreatureAccessibility</parameter>
+            <parameter>M:ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:ThreatTracker.ThreatOfTile(WorldCoordinate,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ThreatOfTile(coord As WorldCoordinate, accountThreatCreatureAccessibility As Boolean) As Single
+  overload: Global.ThreatTracker.ThreatOfTile*
+  nameWithType.vb: ThreatTracker.ThreatOfTile(WorldCoordinate, Boolean)
+  fullName.vb: ThreatTracker.ThreatOfTile(WorldCoordinate, Boolean)
+  name.vb: ThreatOfTile(WorldCoordinate, Boolean)
+- uid: Global.ThreatTracker.TotalTrackedThreats
+  commentId: P:Global.ThreatTracker.TotalTrackedThreats
+  id: TotalTrackedThreats
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: TotalTrackedThreats
+  nameWithType: ThreatTracker.TotalTrackedThreats
+  fullName: ThreatTracker.TotalTrackedThreats
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ThreatTracker.TotalTrackedThreats</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int TotalTrackedThreats { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TotalTrackedThreats As Integer
+  overload: Global.ThreatTracker.TotalTrackedThreats*
+- uid: Global.ThreatTracker.TotalTrackedThreatCreatures
+  commentId: P:Global.ThreatTracker.TotalTrackedThreatCreatures
+  id: TotalTrackedThreatCreatures
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: TotalTrackedThreatCreatures
+  nameWithType: ThreatTracker.TotalTrackedThreatCreatures
+  fullName: ThreatTracker.TotalTrackedThreatCreatures
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ThreatTracker.TotalTrackedThreatCreatures</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int TotalTrackedThreatCreatures { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TotalTrackedThreatCreatures As Integer
+  overload: Global.ThreatTracker.TotalTrackedThreatCreatures*
+- uid: Global.ThreatTracker.Panic
+  commentId: P:Global.ThreatTracker.Panic
+  id: Panic
+  parent: Global.ThreatTracker
+  langs:
+  - csharp
+  - vb
+  name: Panic
+  nameWithType: ThreatTracker.Panic
+  fullName: ThreatTracker.Panic
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:ThreatTracker.Panic</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float Panic { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Panic As Single
+  overload: Global.ThreatTracker.Panic*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: Global.ThreatTracker.Utility*
+  commentId: Overload:Global.ThreatTracker.Utility
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_Utility
+  name: Utility
+  nameWithType: ThreatTracker.Utility
+  fullName: ThreatTracker.Utility
+- uid: Global.ThreatTracker.#ctor*
+  commentId: Overload:Global.ThreatTracker.#ctor
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker__ctor_ArtificialIntelligence_System_Int32_
+  name: ThreatTracker
+  nameWithType: ThreatTracker.ThreatTracker
+  fullName: ThreatTracker.ThreatTracker
+  nameWithType.vb: ThreatTracker.New
+  fullName.vb: ThreatTracker.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.ThreatTracker.NewRoom*
+  commentId: Overload:Global.ThreatTracker.NewRoom
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_NewRoom_Room_
+  name: NewRoom
+  nameWithType: ThreatTracker.NewRoom
+  fullName: ThreatTracker.NewRoom
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.ThreatTracker.Update*
+  commentId: Overload:Global.ThreatTracker.Update
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_Update
+  name: Update
+  nameWithType: ThreatTracker.Update
+  fullName: ThreatTracker.Update
+- uid: Global.ThreatTracker.FleeTo*
+  commentId: Overload:Global.ThreatTracker.FleeTo
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_FleeTo_WorldCoordinate_System_Int32_System_Int32_System_Boolean_
+  name: FleeTo
+  nameWithType: ThreatTracker.FleeTo
+  fullName: ThreatTracker.FleeTo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ThreatTracker.GenerateRandomPath*
+  commentId: Overload:Global.ThreatTracker.GenerateRandomPath
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_GenerateRandomPath_WorldCoordinate_System_Int32_
+  name: GenerateRandomPath
+  nameWithType: ThreatTracker.GenerateRandomPath
+  fullName: ThreatTracker.GenerateRandomPath
+- uid: System.Collections.Generic.List{RWCustom.IntVector2}
+  commentId: T:System.Collections.Generic.List{RWCustom.IntVector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IntVector2>
+  nameWithType: List<IntVector2>
+  fullName: System.Collections.Generic.List<RWCustom.IntVector2>
+  nameWithType.vb: List(Of IntVector2)
+  fullName.vb: System.Collections.Generic.List(Of RWCustom.IntVector2)
+  name.vb: List(Of IntVector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.ThreatTracker.FindMostAttractiveExit*
+  commentId: Overload:Global.ThreatTracker.FindMostAttractiveExit
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_FindMostAttractiveExit
+  name: FindMostAttractiveExit
+  nameWithType: ThreatTracker.FindMostAttractiveExit
+  fullName: ThreatTracker.FindMostAttractiveExit
+- uid: Global.ThreatTracker.AddThreatPoint*
+  commentId: Overload:Global.ThreatTracker.AddThreatPoint
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_AddThreatPoint_CreatureTemplate_WorldCoordinate_System_Single_
+  name: AddThreatPoint
+  nameWithType: ThreatTracker.AddThreatPoint
+  fullName: ThreatTracker.AddThreatPoint
+- uid: Global.CreatureTemplate
+  commentId: T:Global.CreatureTemplate
+  isExternal: true
+  href: CreatureTemplate.html
+  name: CreatureTemplate
+  nameWithType: CreatureTemplate
+  fullName: CreatureTemplate
+- uid: Global.ThreatTracker.ThreatPoint
+  commentId: T:Global.ThreatTracker.ThreatPoint
+  isExternal: true
+  href: ThreatTracker.html
+  name: ThreatTracker.ThreatPoint
+  nameWithType: ThreatTracker.ThreatPoint
+  fullName: ThreatTracker.ThreatPoint
+  spec.csharp:
+  - uid: Global.ThreatTracker
+    name: ThreatTracker
+    isExternal: true
+    href: ThreatTracker.html
+  - name: .
+  - uid: Global.ThreatTracker.ThreatPoint
+    name: ThreatPoint
+    isExternal: true
+    href: ThreatTracker.ThreatPoint.html
+  spec.vb:
+  - uid: Global.ThreatTracker
+    name: ThreatTracker
+    isExternal: true
+    href: ThreatTracker.html
+  - name: .
+  - uid: Global.ThreatTracker.ThreatPoint
+    name: ThreatPoint
+    isExternal: true
+    href: ThreatTracker.ThreatPoint.html
+- uid: Global.ThreatTracker.RemoveThreatPoint*
+  commentId: Overload:Global.ThreatTracker.RemoveThreatPoint
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_RemoveThreatPoint_ThreatTracker_ThreatPoint_
+  name: RemoveThreatPoint
+  nameWithType: ThreatTracker.RemoveThreatPoint
+  fullName: ThreatTracker.RemoveThreatPoint
+- uid: Global.ThreatTracker.AddThreatCreature*
+  commentId: Overload:Global.ThreatTracker.AddThreatCreature
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_AddThreatCreature_Tracker_CreatureRepresentation_
+  name: AddThreatCreature
+  nameWithType: ThreatTracker.AddThreatCreature
+  fullName: ThreatTracker.AddThreatCreature
+- uid: Global.ThreatTracker.RemoveThreatCreature*
+  commentId: Overload:Global.ThreatTracker.RemoveThreatCreature
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_RemoveThreatCreature_AbstractCreature_
+  name: RemoveThreatCreature
+  nameWithType: ThreatTracker.RemoveThreatCreature
+  fullName: ThreatTracker.RemoveThreatCreature
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.ThreatTracker.GetThreatCreature*
+  commentId: Overload:Global.ThreatTracker.GetThreatCreature
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_GetThreatCreature_AbstractCreature_
+  name: GetThreatCreature
+  nameWithType: ThreatTracker.GetThreatCreature
+  fullName: ThreatTracker.GetThreatCreature
+- uid: Global.ThreatTracker.ThreatCreature
+  commentId: T:Global.ThreatTracker.ThreatCreature
+  isExternal: true
+  href: ThreatTracker.html
+  name: ThreatTracker.ThreatCreature
+  nameWithType: ThreatTracker.ThreatCreature
+  fullName: ThreatTracker.ThreatCreature
+  spec.csharp:
+  - uid: Global.ThreatTracker
+    name: ThreatTracker
+    isExternal: true
+    href: ThreatTracker.html
+  - name: .
+  - uid: Global.ThreatTracker.ThreatCreature
+    name: ThreatCreature
+    isExternal: true
+    href: ThreatTracker.ThreatCreature.html
+  spec.vb:
+  - uid: Global.ThreatTracker
+    name: ThreatTracker
+    isExternal: true
+    href: ThreatTracker.html
+  - name: .
+  - uid: Global.ThreatTracker.ThreatCreature
+    name: ThreatCreature
+    isExternal: true
+    href: ThreatTracker.ThreatCreature.html
+- uid: Global.ThreatTracker.ThreatOfArea*
+  commentId: Overload:Global.ThreatTracker.ThreatOfArea
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_ThreatOfArea_WorldCoordinate_System_Boolean_
+  name: ThreatOfArea
+  nameWithType: ThreatTracker.ThreatOfArea
+  fullName: ThreatTracker.ThreatOfArea
+- uid: Global.ThreatTracker.ThreatOfTile*
+  commentId: Overload:Global.ThreatTracker.ThreatOfTile
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_ThreatOfTile_WorldCoordinate_System_Boolean_
+  name: ThreatOfTile
+  nameWithType: ThreatTracker.ThreatOfTile
+  fullName: ThreatTracker.ThreatOfTile
+- uid: Global.ThreatTracker.TotalTrackedThreats*
+  commentId: Overload:Global.ThreatTracker.TotalTrackedThreats
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_TotalTrackedThreats
+  name: TotalTrackedThreats
+  nameWithType: ThreatTracker.TotalTrackedThreats
+  fullName: ThreatTracker.TotalTrackedThreats
+- uid: Global.ThreatTracker.TotalTrackedThreatCreatures*
+  commentId: Overload:Global.ThreatTracker.TotalTrackedThreatCreatures
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_TotalTrackedThreatCreatures
+  name: TotalTrackedThreatCreatures
+  nameWithType: ThreatTracker.TotalTrackedThreatCreatures
+  fullName: ThreatTracker.TotalTrackedThreatCreatures
+- uid: Global.ThreatTracker.Panic*
+  commentId: Overload:Global.ThreatTracker.Panic
+  isExternal: true
+  href: Global.ThreatTracker.html#ThreatTracker_Panic
+  name: Panic
+  nameWithType: ThreatTracker.Panic
+  fullName: ThreatTracker.Panic

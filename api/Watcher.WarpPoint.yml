@@ -1,0 +1,4286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Watcher.WarpPoint
+  commentId: T:Watcher.WarpPoint
+  id: WarpPoint
+  parent: Watcher
+  children:
+  - Watcher.WarpPoint.#ctor(Room,PlacedObject)
+  - Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)
+  - Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)
+  - Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)
+  - Watcher.WarpPoint.Data
+  - Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Watcher.WarpPoint.EaseInOutElastic(System.Single)
+  - Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)
+  - Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)
+  - Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)
+  - Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)
+  - Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)
+  - Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)
+  - Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Watcher.WarpPoint.MyIdentifyingString
+  - Watcher.WarpPoint.NewWorldLoaded
+  - Watcher.WarpPoint.NewWorldLoaded(Room)
+  - Watcher.WarpPoint.PerformWarp
+  - Watcher.WarpPoint.PullRadius
+  - Watcher.WarpPoint.ReduceWind(PhysicalObject)
+  - Watcher.WarpPoint.RemovePlayers(System.Int32)
+  - Watcher.WarpPoint.ResetShaderParams
+  - Watcher.WarpPoint.RoomFromIdentifyingString(System.String)
+  - Watcher.WarpPoint.RoomFromValueString(System.String)
+  - Watcher.WarpPoint.SetRoom(Room)
+  - Watcher.WarpPoint.SlateForDeletion
+  - Watcher.WarpPoint.SpawnBadWarpRipple(System.Boolean)
+  - Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)
+  - Watcher.WarpPoint.Update(System.Boolean)
+  - Watcher.WarpPoint.WarpInProgress
+  - Watcher.WarpPoint.WarpIsBeingActivated
+  - Watcher.WarpPoint.WarpPointAnimationPlaying
+  - Watcher.WarpPoint.WarpPrecast
+  - Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)
+  - Watcher.WarpPoint.activateAnimationTime
+  - Watcher.WarpPoint.activated
+  - Watcher.WarpPoint.activationRadius
+  - Watcher.WarpPoint.activationTime
+  - Watcher.WarpPoint.anyPlayersInRange
+  - Watcher.WarpPoint.blackListedCreatureTypes
+  - Watcher.WarpPoint.blackListedObjectTypes
+  - Watcher.WarpPoint.closesEarly
+  - Watcher.WarpPoint.creatureSuckRadius
+  - Watcher.WarpPoint.easeInExpo(System.Single)
+  - Watcher.WarpPoint.easeInOutQuint(System.Single)
+  - Watcher.WarpPoint.fadeInOnSpawn
+  - Watcher.WarpPoint.getSourceRoom
+  - Watcher.WarpPoint.isARestoralPoint
+  - Watcher.WarpPoint.lastTriggerTime
+  - Watcher.WarpPoint.overrideData
+  - Watcher.WarpPoint.placedObject
+  - Watcher.WarpPoint.playOpenSoundAfterDelay
+  - Watcher.WarpPoint.radius
+  - Watcher.WarpPoint.refreshGraphics
+  - Watcher.WarpPoint.ripple
+  - Watcher.WarpPoint.screenPosition
+  - Watcher.WarpPoint.shouldExpire
+  - Watcher.WarpPoint.spawnTime
+  - Watcher.WarpPoint.specialHandlingHoldTime
+  - Watcher.WarpPoint.startedPendingSpawn
+  - Watcher.WarpPoint.strongPull
+  - Watcher.WarpPoint.successfullWarpCooldownFrames
+  - Watcher.WarpPoint.successfullWarpCooldownTimer
+  - Watcher.WarpPoint.timeWarpTearClosed
+  - Watcher.WarpPoint.triggerActivationTime
+  - Watcher.WarpPoint.triggerTime
+  - Watcher.WarpPoint.visualOpenness
+  - Watcher.WarpPoint.warpSequenceInProgress
+  - Watcher.WarpPoint.warpTear
+  - Watcher.WarpPoint.warpTearOpenTriggered
+  langs:
+  - csharp
+  - vb
+  name: WarpPoint
+  nameWithType: WarpPoint
+  fullName: Watcher.WarpPoint
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Watcher.WarpPoint</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class WarpPoint : CosmeticSprite, IDrawable, IRunDuringDialog, ISpecialWarp'
+    content.vb: Public Class WarpPoint Inherits CosmeticSprite Implements IDrawable, IRunDuringDialog, ISpecialWarp
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.CosmeticSprite
+  implements:
+  - Global.IDrawable
+  - MoreSlugcats.IRunDuringDialog
+  - MoreSlugcats.ISpecialWarp
+  inheritedMembers:
+  - Global.CosmeticSprite.pos
+  - Global.CosmeticSprite.lastPos
+  - Global.CosmeticSprite.vel
+  - Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Watcher.WarpPoint.placedObject
+  commentId: F:Watcher.WarpPoint.placedObject
+  id: placedObject
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: placedObject
+  nameWithType: WarpPoint.placedObject
+  fullName: Watcher.WarpPoint.placedObject
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.placedObject</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public PlacedObject placedObject
+    return:
+      type: Global.PlacedObject
+    content.vb: Public placedObject As PlacedObject
+- uid: Watcher.WarpPoint.overrideData
+  commentId: F:Watcher.WarpPoint.overrideData
+  id: overrideData
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: overrideData
+  nameWithType: WarpPoint.overrideData
+  fullName: Watcher.WarpPoint.overrideData
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.overrideData</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WarpPoint.WarpPointData overrideData
+    return:
+      type: Watcher.WarpPoint.WarpPointData
+    content.vb: Public overrideData As WarpPoint.WarpPointData
+- uid: Watcher.WarpPoint.warpTear
+  commentId: F:Watcher.WarpPoint.warpTear
+  id: warpTear
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: warpTear
+  nameWithType: WarpPoint.warpTear
+  fullName: Watcher.WarpPoint.warpTear
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.warpTear</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WarpTear warpTear
+    return:
+      type: Watcher.WarpTear
+    content.vb: Public warpTear As WarpTear
+- uid: Watcher.WarpPoint.activated
+  commentId: F:Watcher.WarpPoint.activated
+  id: activated
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: activated
+  nameWithType: WarpPoint.activated
+  fullName: Watcher.WarpPoint.activated
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.activated</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool activated
+    return:
+      type: System.Boolean
+    content.vb: Public activated As Boolean
+- uid: Watcher.WarpPoint.activationTime
+  commentId: F:Watcher.WarpPoint.activationTime
+  id: activationTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: activationTime
+  nameWithType: WarpPoint.activationTime
+  fullName: Watcher.WarpPoint.activationTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.activationTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int activationTime
+    return:
+      type: System.Int32
+    content.vb: Public activationTime As Integer
+- uid: Watcher.WarpPoint.triggerTime
+  commentId: F:Watcher.WarpPoint.triggerTime
+  id: triggerTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: triggerTime
+  nameWithType: WarpPoint.triggerTime
+  fullName: Watcher.WarpPoint.triggerTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.triggerTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float triggerTime
+    return:
+      type: System.Single
+    content.vb: Public triggerTime As Single
+- uid: Watcher.WarpPoint.lastTriggerTime
+  commentId: F:Watcher.WarpPoint.lastTriggerTime
+  id: lastTriggerTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: lastTriggerTime
+  nameWithType: WarpPoint.lastTriggerTime
+  fullName: Watcher.WarpPoint.lastTriggerTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.lastTriggerTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastTriggerTime
+    return:
+      type: System.Single
+    content.vb: Public lastTriggerTime As Single
+- uid: Watcher.WarpPoint.strongPull
+  commentId: F:Watcher.WarpPoint.strongPull
+  id: strongPull
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: strongPull
+  nameWithType: WarpPoint.strongPull
+  fullName: Watcher.WarpPoint.strongPull
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.strongPull</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool strongPull
+    return:
+      type: System.Boolean
+    content.vb: Public strongPull As Boolean
+- uid: Watcher.WarpPoint.radius
+  commentId: F:Watcher.WarpPoint.radius
+  id: radius
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: radius
+  nameWithType: WarpPoint.radius
+  fullName: Watcher.WarpPoint.radius
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.radius</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float radius
+    return:
+      type: System.Single
+    content.vb: Public radius As Single
+- uid: Watcher.WarpPoint.creatureSuckRadius
+  commentId: F:Watcher.WarpPoint.creatureSuckRadius
+  id: creatureSuckRadius
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: creatureSuckRadius
+  nameWithType: WarpPoint.creatureSuckRadius
+  fullName: Watcher.WarpPoint.creatureSuckRadius
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.creatureSuckRadius</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float creatureSuckRadius
+    return:
+      type: System.Single
+    content.vb: Public creatureSuckRadius As Single
+- uid: Watcher.WarpPoint.refreshGraphics
+  commentId: F:Watcher.WarpPoint.refreshGraphics
+  id: refreshGraphics
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: refreshGraphics
+  nameWithType: WarpPoint.refreshGraphics
+  fullName: Watcher.WarpPoint.refreshGraphics
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.refreshGraphics</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool refreshGraphics
+    return:
+      type: System.Boolean
+    content.vb: Public refreshGraphics As Boolean
+- uid: Watcher.WarpPoint.isARestoralPoint
+  commentId: F:Watcher.WarpPoint.isARestoralPoint
+  id: isARestoralPoint
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: isARestoralPoint
+  nameWithType: WarpPoint.isARestoralPoint
+  fullName: Watcher.WarpPoint.isARestoralPoint
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.isARestoralPoint</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool isARestoralPoint
+    return:
+      type: System.Boolean
+    content.vb: Public isARestoralPoint As Boolean
+- uid: Watcher.WarpPoint.activationRadius
+  commentId: F:Watcher.WarpPoint.activationRadius
+  id: activationRadius
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: activationRadius
+  nameWithType: WarpPoint.activationRadius
+  fullName: Watcher.WarpPoint.activationRadius
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.activationRadius</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float activationRadius
+    return:
+      type: System.Single
+    content.vb: Public activationRadius As Single
+- uid: Watcher.WarpPoint.activateAnimationTime
+  commentId: F:Watcher.WarpPoint.activateAnimationTime
+  id: activateAnimationTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: activateAnimationTime
+  nameWithType: WarpPoint.activateAnimationTime
+  fullName: Watcher.WarpPoint.activateAnimationTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.activateAnimationTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float activateAnimationTime
+    return:
+      type: System.Single
+    content.vb: Public activateAnimationTime As Single
+- uid: Watcher.WarpPoint.triggerActivationTime
+  commentId: F:Watcher.WarpPoint.triggerActivationTime
+  id: triggerActivationTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: triggerActivationTime
+  nameWithType: WarpPoint.triggerActivationTime
+  fullName: Watcher.WarpPoint.triggerActivationTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.triggerActivationTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float triggerActivationTime
+    return:
+      type: System.Single
+    content.vb: Public triggerActivationTime As Single
+- uid: Watcher.WarpPoint.warpTearOpenTriggered
+  commentId: F:Watcher.WarpPoint.warpTearOpenTriggered
+  id: warpTearOpenTriggered
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: warpTearOpenTriggered
+  nameWithType: WarpPoint.warpTearOpenTriggered
+  fullName: Watcher.WarpPoint.warpTearOpenTriggered
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.warpTearOpenTriggered</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool warpTearOpenTriggered
+    return:
+      type: System.Boolean
+    content.vb: Public warpTearOpenTriggered As Boolean
+- uid: Watcher.WarpPoint.timeWarpTearClosed
+  commentId: F:Watcher.WarpPoint.timeWarpTearClosed
+  id: timeWarpTearClosed
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: timeWarpTearClosed
+  nameWithType: WarpPoint.timeWarpTearClosed
+  fullName: Watcher.WarpPoint.timeWarpTearClosed
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.timeWarpTearClosed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int timeWarpTearClosed
+    return:
+      type: System.Int32
+    content.vb: Public timeWarpTearClosed As Integer
+- uid: Watcher.WarpPoint.successfullWarpCooldownTimer
+  commentId: F:Watcher.WarpPoint.successfullWarpCooldownTimer
+  id: successfullWarpCooldownTimer
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: successfullWarpCooldownTimer
+  nameWithType: WarpPoint.successfullWarpCooldownTimer
+  fullName: Watcher.WarpPoint.successfullWarpCooldownTimer
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.successfullWarpCooldownTimer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float successfullWarpCooldownTimer
+    return:
+      type: System.Single
+    content.vb: Public successfullWarpCooldownTimer As Single
+- uid: Watcher.WarpPoint.successfullWarpCooldownFrames
+  commentId: F:Watcher.WarpPoint.successfullWarpCooldownFrames
+  id: successfullWarpCooldownFrames
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: successfullWarpCooldownFrames
+  nameWithType: WarpPoint.successfullWarpCooldownFrames
+  fullName: Watcher.WarpPoint.successfullWarpCooldownFrames
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.successfullWarpCooldownFrames</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int successfullWarpCooldownFrames
+    return:
+      type: System.Int32
+    content.vb: Public successfullWarpCooldownFrames As Integer
+- uid: Watcher.WarpPoint.closesEarly
+  commentId: F:Watcher.WarpPoint.closesEarly
+  id: closesEarly
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: closesEarly
+  nameWithType: WarpPoint.closesEarly
+  fullName: Watcher.WarpPoint.closesEarly
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.closesEarly</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool closesEarly
+    return:
+      type: System.Boolean
+    content.vb: Public closesEarly As Boolean
+- uid: Watcher.WarpPoint.screenPosition
+  commentId: F:Watcher.WarpPoint.screenPosition
+  id: screenPosition
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: screenPosition
+  nameWithType: WarpPoint.screenPosition
+  fullName: Watcher.WarpPoint.screenPosition
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.screenPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 screenPosition
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public screenPosition As Vector2
+- uid: Watcher.WarpPoint.spawnTime
+  commentId: F:Watcher.WarpPoint.spawnTime
+  id: spawnTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: spawnTime
+  nameWithType: WarpPoint.spawnTime
+  fullName: Watcher.WarpPoint.spawnTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.spawnTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int spawnTime
+    return:
+      type: System.Int32
+    content.vb: Public spawnTime As Integer
+- uid: Watcher.WarpPoint.startedPendingSpawn
+  commentId: F:Watcher.WarpPoint.startedPendingSpawn
+  id: startedPendingSpawn
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: startedPendingSpawn
+  nameWithType: WarpPoint.startedPendingSpawn
+  fullName: Watcher.WarpPoint.startedPendingSpawn
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.startedPendingSpawn</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool startedPendingSpawn
+    return:
+      type: System.Boolean
+    content.vb: Public startedPendingSpawn As Boolean
+- uid: Watcher.WarpPoint.fadeInOnSpawn
+  commentId: F:Watcher.WarpPoint.fadeInOnSpawn
+  id: fadeInOnSpawn
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: fadeInOnSpawn
+  nameWithType: WarpPoint.fadeInOnSpawn
+  fullName: Watcher.WarpPoint.fadeInOnSpawn
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.fadeInOnSpawn</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool fadeInOnSpawn
+    return:
+      type: System.Boolean
+    content.vb: Public fadeInOnSpawn As Boolean
+- uid: Watcher.WarpPoint.playOpenSoundAfterDelay
+  commentId: F:Watcher.WarpPoint.playOpenSoundAfterDelay
+  id: playOpenSoundAfterDelay
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: playOpenSoundAfterDelay
+  nameWithType: WarpPoint.playOpenSoundAfterDelay
+  fullName: Watcher.WarpPoint.playOpenSoundAfterDelay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.playOpenSoundAfterDelay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int playOpenSoundAfterDelay
+    return:
+      type: System.Int32
+    content.vb: Public playOpenSoundAfterDelay As Integer
+- uid: Watcher.WarpPoint.specialHandlingHoldTime
+  commentId: F:Watcher.WarpPoint.specialHandlingHoldTime
+  id: specialHandlingHoldTime
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: specialHandlingHoldTime
+  nameWithType: WarpPoint.specialHandlingHoldTime
+  fullName: Watcher.WarpPoint.specialHandlingHoldTime
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.specialHandlingHoldTime</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int specialHandlingHoldTime
+    return:
+      type: System.Int32
+    content.vb: Public specialHandlingHoldTime As Integer
+- uid: Watcher.WarpPoint.blackListedCreatureTypes
+  commentId: F:Watcher.WarpPoint.blackListedCreatureTypes
+  id: blackListedCreatureTypes
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: blackListedCreatureTypes
+  nameWithType: WarpPoint.blackListedCreatureTypes
+  fullName: Watcher.WarpPoint.blackListedCreatureTypes
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.blackListedCreatureTypes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<CreatureTemplate.Type> blackListedCreatureTypes
+    return:
+      type: System.Collections.Generic.List{CreatureTemplate.Type}
+    content.vb: Public blackListedCreatureTypes As List(Of CreatureTemplate.Type)
+- uid: Watcher.WarpPoint.blackListedObjectTypes
+  commentId: F:Watcher.WarpPoint.blackListedObjectTypes
+  id: blackListedObjectTypes
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: blackListedObjectTypes
+  nameWithType: WarpPoint.blackListedObjectTypes
+  fullName: Watcher.WarpPoint.blackListedObjectTypes
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.blackListedObjectTypes</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<AbstractPhysicalObject.AbstractObjectType> blackListedObjectTypes
+    return:
+      type: System.Collections.Generic.List{AbstractPhysicalObject.AbstractObjectType}
+    content.vb: Public blackListedObjectTypes As List(Of AbstractPhysicalObject.AbstractObjectType)
+- uid: Watcher.WarpPoint.ripple
+  commentId: F:Watcher.WarpPoint.ripple
+  id: ripple
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: ripple
+  nameWithType: WarpPoint.ripple
+  fullName: Watcher.WarpPoint.ripple
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Watcher.WarpPoint.ripple</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public CosmeticRipple ripple
+    return:
+      type: Watcher.CosmeticRipple
+    content.vb: Public ripple As CosmeticRipple
+- uid: Watcher.WarpPoint.#ctor(Room,PlacedObject)
+  commentId: M:Watcher.WarpPoint.#ctor(Room,PlacedObject)
+  id: '#ctor(Room,PlacedObject)'
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpPoint(Room, PlacedObject)
+  nameWithType: WarpPoint.WarpPoint(Room, PlacedObject)
+  fullName: Watcher.WarpPoint.WarpPoint(Room, PlacedObject)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Watcher.WarpPoint</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WarpPoint(Room room, PlacedObject placedObject)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.#ctor(Room,PlacedObject)</parameter>
+          </include>
+        </markup>
+    - id: placedObject
+      type: Global.PlacedObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>placedObject</parameter>
+            <parameter>M:Watcher.WarpPoint.#ctor(Room,PlacedObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room, placedObject As PlacedObject)
+  overload: Watcher.WarpPoint.#ctor*
+  nameWithType.vb: WarpPoint.New(Room, PlacedObject)
+  fullName.vb: Watcher.WarpPoint.New(Room, PlacedObject)
+  name.vb: New(Room, PlacedObject)
+- uid: Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)
+  id: ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: ChooseDynamicWarpTarget(AbstractRoom, bool, bool, bool)
+  nameWithType: WarpPoint.ChooseDynamicWarpTarget(AbstractRoom, bool, bool, bool)
+  fullName: Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom, bool, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string ChooseDynamicWarpTarget(AbstractRoom room, bool badWarp, bool outerRimWarp, bool playerCreated)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: badWarp
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>badWarp</parameter>
+            <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: outerRimWarp
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>outerRimWarp</parameter>
+            <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: playerCreated
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>playerCreated</parameter>
+            <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom,System.Boolean,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function ChooseDynamicWarpTarget(room As AbstractRoom, badWarp As Boolean, outerRimWarp As Boolean, playerCreated As Boolean) As String
+  overload: Watcher.WarpPoint.ChooseDynamicWarpTarget*
+  nameWithType.vb: WarpPoint.ChooseDynamicWarpTarget(AbstractRoom, Boolean, Boolean, Boolean)
+  fullName.vb: Watcher.WarpPoint.ChooseDynamicWarpTarget(AbstractRoom, Boolean, Boolean, Boolean)
+  name.vb: ChooseDynamicWarpTarget(AbstractRoom, Boolean, Boolean, Boolean)
+- uid: Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)
+  commentId: M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)
+  id: CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: CreateOverrideData(AbstractRoom, string, bool, bool)
+  nameWithType: WarpPoint.CreateOverrideData(AbstractRoom, string, bool, bool)
+  fullName: Watcher.WarpPoint.CreateOverrideData(AbstractRoom, string, bool, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static WarpPoint.WarpPointData CreateOverrideData(AbstractRoom room, string chosenRoom, bool limitedUse, bool playerCreated)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: chosenRoom
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>chosenRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: limitedUse
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>limitedUse</parameter>
+            <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: playerCreated
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>playerCreated</parameter>
+            <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Watcher.WarpPoint.WarpPointData
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.CreateOverrideData(AbstractRoom,System.String,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function CreateOverrideData(room As AbstractRoom, chosenRoom As String, limitedUse As Boolean, playerCreated As Boolean) As WarpPoint.WarpPointData
+  overload: Watcher.WarpPoint.CreateOverrideData*
+  nameWithType.vb: WarpPoint.CreateOverrideData(AbstractRoom, String, Boolean, Boolean)
+  fullName.vb: Watcher.WarpPoint.CreateOverrideData(AbstractRoom, String, Boolean, Boolean)
+  name.vb: CreateOverrideData(AbstractRoom, String, Boolean, Boolean)
+- uid: Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)
+  commentId: M:Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)
+  id: GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableDynamicWarpTargets(AbstractRoom, bool)
+  nameWithType: WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom, bool)
+  fullName: Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> GetAvailableDynamicWarpTargets(AbstractRoom room, bool spreadingRot)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: spreadingRot
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>spreadingRot</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetAvailableDynamicWarpTargets(room As AbstractRoom, spreadingRot As Boolean) As List(Of String)
+  overload: Watcher.WarpPoint.GetAvailableDynamicWarpTargets*
+  nameWithType.vb: WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom, Boolean)
+  fullName.vb: Watcher.WarpPoint.GetAvailableDynamicWarpTargets(AbstractRoom, Boolean)
+  name.vb: GetAvailableDynamicWarpTargets(AbstractRoom, Boolean)
+- uid: Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)
+  commentId: M:Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)
+  id: GetAvailableBadWarpTargets(AbstractRoom)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableBadWarpTargets(AbstractRoom)
+  nameWithType: WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)
+  fullName: Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> GetAvailableBadWarpTargets(AbstractRoom room)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableBadWarpTargets(AbstractRoom)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetAvailableBadWarpTargets(room As AbstractRoom) As List(Of String)
+  overload: Watcher.WarpPoint.GetAvailableBadWarpTargets*
+- uid: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)
+  commentId: M:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)
+  id: GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableOuterRimWarpTargets(AbstractRoom, bool)
+  nameWithType: WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom, bool)
+  fullName: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static List<string> GetAvailableOuterRimWarpTargets(AbstractRoom room, bool forceUseMax)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: forceUseMax
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>forceUseMax</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetAvailableOuterRimWarpTargets(room As AbstractRoom, forceUseMax As Boolean) As List(Of String)
+  overload: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets*
+  nameWithType.vb: WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom, Boolean)
+  fullName.vb: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets(AbstractRoom, Boolean)
+  name.vb: GetAvailableOuterRimWarpTargets(AbstractRoom, Boolean)
+- uid: Watcher.WarpPoint.SetRoom(Room)
+  commentId: M:Watcher.WarpPoint.SetRoom(Room)
+  id: SetRoom(Room)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: SetRoom(Room)
+  nameWithType: WarpPoint.SetRoom(Room)
+  fullName: Watcher.WarpPoint.SetRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.SetRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SetRoom(Room newRoom)
+    parameters:
+    - id: newRoom
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.SetRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SetRoom(newRoom As Room)
+  overload: Watcher.WarpPoint.SetRoom*
+- uid: Watcher.WarpPoint.PerformWarp
+  commentId: M:Watcher.WarpPoint.PerformWarp
+  id: PerformWarp
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: PerformWarp()
+  nameWithType: WarpPoint.PerformWarp()
+  fullName: Watcher.WarpPoint.PerformWarp()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.PerformWarp</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PerformWarp()
+    content.vb: Public Sub PerformWarp()
+  overload: Watcher.WarpPoint.PerformWarp*
+- uid: Watcher.WarpPoint.WarpPrecast
+  commentId: M:Watcher.WarpPoint.WarpPrecast
+  id: WarpPrecast
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpPrecast()
+  nameWithType: WarpPoint.WarpPrecast()
+  fullName: Watcher.WarpPoint.WarpPrecast()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.WarpPrecast</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void WarpPrecast()
+    content.vb: Public Sub WarpPrecast()
+  overload: Watcher.WarpPoint.WarpPrecast*
+- uid: Watcher.WarpPoint.ResetShaderParams
+  commentId: M:Watcher.WarpPoint.ResetShaderParams
+  id: ResetShaderParams
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: ResetShaderParams()
+  nameWithType: WarpPoint.ResetShaderParams()
+  fullName: Watcher.WarpPoint.ResetShaderParams()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.ResetShaderParams</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static void ResetShaderParams()
+    content.vb: Public Shared Sub ResetShaderParams()
+  overload: Watcher.WarpPoint.ResetShaderParams*
+- uid: Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)
+  commentId: M:Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)
+  id: GetDestCam(Watcher.WarpPoint.WarpPointData)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: GetDestCam(WarpPointData)
+  nameWithType: WarpPoint.GetDestCam(WarpPoint.WarpPointData)
+  fullName: Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static int GetDestCam(WarpPoint.WarpPointData data)
+    parameters:
+    - id: data
+      type: Watcher.WarpPoint.WarpPointData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.GetDestCam(Watcher.WarpPoint.WarpPointData)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function GetDestCam(data As WarpPoint.WarpPointData) As Integer
+  overload: Watcher.WarpPoint.GetDestCam*
+- uid: Watcher.WarpPoint.Update(System.Boolean)
+  commentId: M:Watcher.WarpPoint.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: WarpPoint.Update(bool)
+  fullName: Watcher.WarpPoint.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:Watcher.WarpPoint.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.CosmeticSprite.Update(System.Boolean)
+  overload: Watcher.WarpPoint.Update*
+  nameWithType.vb: WarpPoint.Update(Boolean)
+  fullName.vb: Watcher.WarpPoint.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Watcher.WarpPoint.ReduceWind(PhysicalObject)
+  commentId: M:Watcher.WarpPoint.ReduceWind(PhysicalObject)
+  id: ReduceWind(PhysicalObject)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: ReduceWind(PhysicalObject)
+  nameWithType: WarpPoint.ReduceWind(PhysicalObject)
+  fullName: Watcher.WarpPoint.ReduceWind(PhysicalObject)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.ReduceWind(PhysicalObject)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float ReduceWind(PhysicalObject pObj)
+    parameters:
+    - id: pObj
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pObj</parameter>
+            <parameter>M:Watcher.WarpPoint.ReduceWind(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.ReduceWind(PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ReduceWind(pObj As PhysicalObject) As Single
+  overload: Watcher.WarpPoint.ReduceWind*
+- uid: Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)
+  commentId: M:Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)
+  id: SpawnPendingObject(AbstractPhysicalObject,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: SpawnPendingObject(AbstractPhysicalObject, bool)
+  nameWithType: WarpPoint.SpawnPendingObject(AbstractPhysicalObject, bool)
+  fullName: Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool SpawnPendingObject(AbstractPhysicalObject nextObject, bool immediateSpawn)
+    parameters:
+    - id: nextObject
+      type: Global.AbstractPhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>nextObject</parameter>
+            <parameter>M:Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: immediateSpawn
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>immediateSpawn</parameter>
+            <parameter>M:Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function SpawnPendingObject(nextObject As AbstractPhysicalObject, immediateSpawn As Boolean) As Boolean
+  overload: Watcher.WarpPoint.SpawnPendingObject*
+  nameWithType.vb: WarpPoint.SpawnPendingObject(AbstractPhysicalObject, Boolean)
+  fullName.vb: Watcher.WarpPoint.SpawnPendingObject(AbstractPhysicalObject, Boolean)
+  name.vb: SpawnPendingObject(AbstractPhysicalObject, Boolean)
+- uid: Watcher.WarpPoint.SlateForDeletion
+  commentId: M:Watcher.WarpPoint.SlateForDeletion
+  id: SlateForDeletion
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: SlateForDeletion()
+  nameWithType: WarpPoint.SlateForDeletion()
+  fullName: Watcher.WarpPoint.SlateForDeletion()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.SlateForDeletion</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SlateForDeletion()
+    content.vb: Public Sub SlateForDeletion()
+  overload: Watcher.WarpPoint.SlateForDeletion*
+- uid: Watcher.WarpPoint.SpawnBadWarpRipple(System.Boolean)
+  commentId: M:Watcher.WarpPoint.SpawnBadWarpRipple(System.Boolean)
+  id: SpawnBadWarpRipple(System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: SpawnBadWarpRipple(bool)
+  nameWithType: WarpPoint.SpawnBadWarpRipple(bool)
+  fullName: Watcher.WarpPoint.SpawnBadWarpRipple(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.SpawnBadWarpRipple(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void SpawnBadWarpRipple(bool animate)
+    parameters:
+    - id: animate
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>animate</parameter>
+            <parameter>M:Watcher.WarpPoint.SpawnBadWarpRipple(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub SpawnBadWarpRipple(animate As Boolean)
+  overload: Watcher.WarpPoint.SpawnBadWarpRipple*
+  nameWithType.vb: WarpPoint.SpawnBadWarpRipple(Boolean)
+  fullName.vb: Watcher.WarpPoint.SpawnBadWarpRipple(Boolean)
+  name.vb: SpawnBadWarpRipple(Boolean)
+- uid: Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.WarpPoint.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Watcher.WarpPoint.InitiateSprites*
+- uid: Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: WarpPoint.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Watcher.WarpPoint.DrawSprites*
+  nameWithType.vb: WarpPoint.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: Watcher.WarpPoint.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:Watcher.WarpPoint.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overridden: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  overload: Watcher.WarpPoint.ApplyPalette*
+- uid: Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: WarpPoint.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:Watcher.WarpPoint.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overridden: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  overload: Watcher.WarpPoint.AddToContainer*
+- uid: Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)
+  commentId: M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)
+  id: IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: IdentifyingString(RainWorldGame, WarpPointData, AbstractRoom)
+  nameWithType: WarpPoint.IdentifyingString(RainWorldGame, WarpPoint.WarpPointData, AbstractRoom)
+  fullName: Watcher.WarpPoint.IdentifyingString(RainWorldGame, Watcher.WarpPoint.WarpPointData, AbstractRoom)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string IdentifyingString(RainWorldGame game, WarpPoint.WarpPointData data, AbstractRoom sourceRoom)
+    parameters:
+    - id: game
+      type: Global.RainWorldGame
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>game</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)</parameter>
+          </include>
+        </markup>
+    - id: data
+      type: Watcher.WarpPoint.WarpPointData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)</parameter>
+          </include>
+        </markup>
+    - id: sourceRoom
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sourceRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,AbstractRoom)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function IdentifyingString(game As RainWorldGame, data As WarpPoint.WarpPointData, sourceRoom As AbstractRoom) As String
+  overload: Watcher.WarpPoint.IdentifyingString*
+- uid: Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)
+  commentId: M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)
+  id: IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: IdentifyingString(RainWorldGame, WarpPointData, string)
+  nameWithType: WarpPoint.IdentifyingString(RainWorldGame, WarpPoint.WarpPointData, string)
+  fullName: Watcher.WarpPoint.IdentifyingString(RainWorldGame, Watcher.WarpPoint.WarpPointData, string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string IdentifyingString(RainWorldGame game, WarpPoint.WarpPointData data, string sourceRoom)
+    parameters:
+    - id: game
+      type: Global.RainWorldGame
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>game</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)</parameter>
+          </include>
+        </markup>
+    - id: data
+      type: Watcher.WarpPoint.WarpPointData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>data</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)</parameter>
+          </include>
+        </markup>
+    - id: sourceRoom
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sourceRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.IdentifyingString(RainWorldGame,Watcher.WarpPoint.WarpPointData,System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function IdentifyingString(game As RainWorldGame, data As WarpPoint.WarpPointData, sourceRoom As String) As String
+  overload: Watcher.WarpPoint.IdentifyingString*
+  nameWithType.vb: WarpPoint.IdentifyingString(RainWorldGame, WarpPoint.WarpPointData, String)
+  fullName.vb: Watcher.WarpPoint.IdentifyingString(RainWorldGame, Watcher.WarpPoint.WarpPointData, String)
+  name.vb: IdentifyingString(RainWorldGame, WarpPointData, String)
+- uid: Watcher.WarpPoint.RoomFromIdentifyingString(System.String)
+  commentId: M:Watcher.WarpPoint.RoomFromIdentifyingString(System.String)
+  id: RoomFromIdentifyingString(System.String)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: RoomFromIdentifyingString(string)
+  nameWithType: WarpPoint.RoomFromIdentifyingString(string)
+  fullName: Watcher.WarpPoint.RoomFromIdentifyingString(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.RoomFromIdentifyingString(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string RoomFromIdentifyingString(string identifyingString)
+    parameters:
+    - id: identifyingString
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>identifyingString</parameter>
+            <parameter>M:Watcher.WarpPoint.RoomFromIdentifyingString(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.RoomFromIdentifyingString(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function RoomFromIdentifyingString(identifyingString As String) As String
+  overload: Watcher.WarpPoint.RoomFromIdentifyingString*
+  nameWithType.vb: WarpPoint.RoomFromIdentifyingString(String)
+  fullName.vb: Watcher.WarpPoint.RoomFromIdentifyingString(String)
+  name.vb: RoomFromIdentifyingString(String)
+- uid: Watcher.WarpPoint.RoomFromValueString(System.String)
+  commentId: M:Watcher.WarpPoint.RoomFromValueString(System.String)
+  id: RoomFromValueString(System.String)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: RoomFromValueString(string)
+  nameWithType: WarpPoint.RoomFromValueString(string)
+  fullName: Watcher.WarpPoint.RoomFromValueString(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.RoomFromValueString(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static string RoomFromValueString(string valueString)
+    parameters:
+    - id: valueString
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>valueString</parameter>
+            <parameter>M:Watcher.WarpPoint.RoomFromValueString(System.String)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.RoomFromValueString(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Shared Function RoomFromValueString(valueString As String) As String
+  overload: Watcher.WarpPoint.RoomFromValueString*
+  nameWithType.vb: WarpPoint.RoomFromValueString(String)
+  fullName.vb: Watcher.WarpPoint.RoomFromValueString(String)
+  name.vb: RoomFromValueString(String)
+- uid: Watcher.WarpPoint.MyIdentifyingString
+  commentId: M:Watcher.WarpPoint.MyIdentifyingString
+  id: MyIdentifyingString
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: MyIdentifyingString()
+  nameWithType: WarpPoint.MyIdentifyingString()
+  fullName: Watcher.WarpPoint.MyIdentifyingString()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.MyIdentifyingString</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public string MyIdentifyingString()
+    return:
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.MyIdentifyingString</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function MyIdentifyingString() As String
+  overload: Watcher.WarpPoint.MyIdentifyingString*
+- uid: Watcher.WarpPoint.EaseInOutElastic(System.Single)
+  commentId: M:Watcher.WarpPoint.EaseInOutElastic(System.Single)
+  id: EaseInOutElastic(System.Single)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: EaseInOutElastic(float)
+  nameWithType: WarpPoint.EaseInOutElastic(float)
+  fullName: Watcher.WarpPoint.EaseInOutElastic(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.EaseInOutElastic(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float EaseInOutElastic(float t)
+    parameters:
+    - id: t
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>t</parameter>
+            <parameter>M:Watcher.WarpPoint.EaseInOutElastic(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.EaseInOutElastic(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function EaseInOutElastic(t As Single) As Single
+  overload: Watcher.WarpPoint.EaseInOutElastic*
+  nameWithType.vb: WarpPoint.EaseInOutElastic(Single)
+  fullName.vb: Watcher.WarpPoint.EaseInOutElastic(Single)
+  name.vb: EaseInOutElastic(Single)
+- uid: Watcher.WarpPoint.easeInOutQuint(System.Single)
+  commentId: M:Watcher.WarpPoint.easeInOutQuint(System.Single)
+  id: easeInOutQuint(System.Single)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: easeInOutQuint(float)
+  nameWithType: WarpPoint.easeInOutQuint(float)
+  fullName: Watcher.WarpPoint.easeInOutQuint(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.easeInOutQuint(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float easeInOutQuint(float t)
+    parameters:
+    - id: t
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>t</parameter>
+            <parameter>M:Watcher.WarpPoint.easeInOutQuint(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.easeInOutQuint(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function easeInOutQuint(t As Single) As Single
+  overload: Watcher.WarpPoint.easeInOutQuint*
+  nameWithType.vb: WarpPoint.easeInOutQuint(Single)
+  fullName.vb: Watcher.WarpPoint.easeInOutQuint(Single)
+  name.vb: easeInOutQuint(Single)
+- uid: Watcher.WarpPoint.easeInExpo(System.Single)
+  commentId: M:Watcher.WarpPoint.easeInExpo(System.Single)
+  id: easeInExpo(System.Single)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: easeInExpo(float)
+  nameWithType: WarpPoint.easeInExpo(float)
+  fullName: Watcher.WarpPoint.easeInExpo(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.easeInExpo(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float easeInExpo(float t)
+    parameters:
+    - id: t
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>t</parameter>
+            <parameter>M:Watcher.WarpPoint.easeInExpo(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.easeInExpo(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function easeInExpo(t As Single) As Single
+  overload: Watcher.WarpPoint.easeInExpo*
+  nameWithType.vb: WarpPoint.easeInExpo(Single)
+  fullName.vb: Watcher.WarpPoint.easeInExpo(Single)
+  name.vb: easeInExpo(Single)
+- uid: Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)
+  commentId: M:Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)
+  id: AddPlayerBackIn(System.Int32,System.Boolean)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: AddPlayerBackIn(int, bool)
+  nameWithType: WarpPoint.AddPlayerBackIn(int, bool)
+  fullName: Watcher.WarpPoint.AddPlayerBackIn(int, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddPlayerBackIn(int i, bool placeInRoom)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>i</parameter>
+            <parameter>M:Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: placeInRoom
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>placeInRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.AddPlayerBackIn(System.Int32,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddPlayerBackIn(i As Integer, placeInRoom As Boolean)
+  overload: Watcher.WarpPoint.AddPlayerBackIn*
+  nameWithType.vb: WarpPoint.AddPlayerBackIn(Integer, Boolean)
+  fullName.vb: Watcher.WarpPoint.AddPlayerBackIn(Integer, Boolean)
+  name.vb: AddPlayerBackIn(Integer, Boolean)
+- uid: Watcher.WarpPoint.RemovePlayers(System.Int32)
+  commentId: M:Watcher.WarpPoint.RemovePlayers(System.Int32)
+  id: RemovePlayers(System.Int32)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayers(int)
+  nameWithType: WarpPoint.RemovePlayers(int)
+  fullName: Watcher.WarpPoint.RemovePlayers(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.RemovePlayers(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RemovePlayers(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>i</parameter>
+            <parameter>M:Watcher.WarpPoint.RemovePlayers(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RemovePlayers(i As Integer)
+  overload: Watcher.WarpPoint.RemovePlayers*
+  nameWithType.vb: WarpPoint.RemovePlayers(Integer)
+  fullName.vb: Watcher.WarpPoint.RemovePlayers(Integer)
+  name.vb: RemovePlayers(Integer)
+- uid: Watcher.WarpPoint.getSourceRoom
+  commentId: M:Watcher.WarpPoint.getSourceRoom
+  id: getSourceRoom
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: getSourceRoom()
+  nameWithType: WarpPoint.getSourceRoom()
+  fullName: Watcher.WarpPoint.getSourceRoom()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.getSourceRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Room getSourceRoom()
+    return:
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Watcher.WarpPoint.getSourceRoom</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function getSourceRoom() As Room
+  overload: Watcher.WarpPoint.getSourceRoom*
+  implements:
+  - MoreSlugcats.ISpecialWarp.getSourceRoom
+- uid: Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)
+  commentId: M:Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)
+  id: WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpTransfer(Room, WarpPointData)
+  nameWithType: WarpPoint.WarpTransfer(Room, WarpPoint.WarpPointData)
+  fullName: Watcher.WarpPoint.WarpTransfer(Room, Watcher.WarpPoint.WarpPointData)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Created as a method of transferring warp points, but this code is irrelevant for now")]
+
+      public void WarpTransfer(Room newRoom, WarpPoint.WarpPointData useData)
+    parameters:
+    - id: newRoom
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)</parameter>
+          </include>
+        </markup>
+    - id: useData
+      type: Watcher.WarpPoint.WarpPointData
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>useData</parameter>
+            <parameter>M:Watcher.WarpPoint.WarpTransfer(Room,Watcher.WarpPoint.WarpPointData)</parameter>
+          </include>
+        </markup>
+    content.vb: >-
+      <Obsolete("Created as a method of transferring warp points, but this code is irrelevant for now")>
+
+      Public Sub WarpTransfer(newRoom As Room, useData As WarpPoint.WarpPointData)
+  overload: Watcher.WarpPoint.WarpTransfer*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Created as a method of transferring warp points, but this code is irrelevant for now
+- uid: Watcher.WarpPoint.NewWorldLoaded
+  commentId: M:Watcher.WarpPoint.NewWorldLoaded
+  id: NewWorldLoaded
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: NewWorldLoaded()
+  nameWithType: WarpPoint.NewWorldLoaded()
+  fullName: Watcher.WarpPoint.NewWorldLoaded()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.NewWorldLoaded</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use room parameter function instead.")]
+
+      public void NewWorldLoaded()
+    content.vb: >-
+      <Obsolete("Use room parameter function instead.")>
+
+      Public Sub NewWorldLoaded()
+  overload: Watcher.WarpPoint.NewWorldLoaded*
+  implements:
+  - MoreSlugcats.ISpecialWarp.NewWorldLoaded
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use room parameter function instead.
+- uid: Watcher.WarpPoint.NewWorldLoaded(Room)
+  commentId: M:Watcher.WarpPoint.NewWorldLoaded(Room)
+  id: NewWorldLoaded(Room)
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: NewWorldLoaded(Room)
+  nameWithType: WarpPoint.NewWorldLoaded(Room)
+  fullName: Watcher.WarpPoint.NewWorldLoaded(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Watcher.WarpPoint.NewWorldLoaded(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewWorldLoaded(Room newRoom)
+    parameters:
+    - id: newRoom
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRoom</parameter>
+            <parameter>M:Watcher.WarpPoint.NewWorldLoaded(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewWorldLoaded(newRoom As Room)
+  overload: Watcher.WarpPoint.NewWorldLoaded*
+  implements:
+  - MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+- uid: Watcher.WarpPoint.Data
+  commentId: P:Watcher.WarpPoint.Data
+  id: Data
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: WarpPoint.Data
+  fullName: Watcher.WarpPoint.Data
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.Data</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WarpPoint.WarpPointData Data { get; }
+    parameters: []
+    return:
+      type: Watcher.WarpPoint.WarpPointData
+    content.vb: Public ReadOnly Property Data As WarpPoint.WarpPointData
+  overload: Watcher.WarpPoint.Data*
+- uid: Watcher.WarpPoint.PullRadius
+  commentId: P:Watcher.WarpPoint.PullRadius
+  id: PullRadius
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: PullRadius
+  nameWithType: WarpPoint.PullRadius
+  fullName: Watcher.WarpPoint.PullRadius
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.PullRadius</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float PullRadius { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property PullRadius As Single
+  overload: Watcher.WarpPoint.PullRadius*
+- uid: Watcher.WarpPoint.visualOpenness
+  commentId: P:Watcher.WarpPoint.visualOpenness
+  id: visualOpenness
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: visualOpenness
+  nameWithType: WarpPoint.visualOpenness
+  fullName: Watcher.WarpPoint.visualOpenness
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.visualOpenness</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float visualOpenness { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property visualOpenness As Single
+  overload: Watcher.WarpPoint.visualOpenness*
+- uid: Watcher.WarpPoint.anyPlayersInRange
+  commentId: P:Watcher.WarpPoint.anyPlayersInRange
+  id: anyPlayersInRange
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: anyPlayersInRange
+  nameWithType: WarpPoint.anyPlayersInRange
+  fullName: Watcher.WarpPoint.anyPlayersInRange
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.anyPlayersInRange</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool anyPlayersInRange { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property anyPlayersInRange As Boolean
+  overload: Watcher.WarpPoint.anyPlayersInRange*
+- uid: Watcher.WarpPoint.warpSequenceInProgress
+  commentId: P:Watcher.WarpPoint.warpSequenceInProgress
+  id: warpSequenceInProgress
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: warpSequenceInProgress
+  nameWithType: WarpPoint.warpSequenceInProgress
+  fullName: Watcher.WarpPoint.warpSequenceInProgress
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.warpSequenceInProgress</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool warpSequenceInProgress { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property warpSequenceInProgress As Boolean
+  overload: Watcher.WarpPoint.warpSequenceInProgress*
+- uid: Watcher.WarpPoint.shouldExpire
+  commentId: P:Watcher.WarpPoint.shouldExpire
+  id: shouldExpire
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: shouldExpire
+  nameWithType: WarpPoint.shouldExpire
+  fullName: Watcher.WarpPoint.shouldExpire
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.shouldExpire</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool shouldExpire { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property shouldExpire As Boolean
+  overload: Watcher.WarpPoint.shouldExpire*
+- uid: Watcher.WarpPoint.WarpPointAnimationPlaying
+  commentId: P:Watcher.WarpPoint.WarpPointAnimationPlaying
+  id: WarpPointAnimationPlaying
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpPointAnimationPlaying
+  nameWithType: WarpPoint.WarpPointAnimationPlaying
+  fullName: Watcher.WarpPoint.WarpPointAnimationPlaying
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.WarpPointAnimationPlaying</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool WarpPointAnimationPlaying { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property WarpPointAnimationPlaying As Boolean
+  overload: Watcher.WarpPoint.WarpPointAnimationPlaying*
+- uid: Watcher.WarpPoint.WarpInProgress
+  commentId: P:Watcher.WarpPoint.WarpInProgress
+  id: WarpInProgress
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpInProgress
+  nameWithType: WarpPoint.WarpInProgress
+  fullName: Watcher.WarpPoint.WarpInProgress
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.WarpInProgress</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool WarpInProgress { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property WarpInProgress As Boolean
+  overload: Watcher.WarpPoint.WarpInProgress*
+- uid: Watcher.WarpPoint.WarpIsBeingActivated
+  commentId: P:Watcher.WarpPoint.WarpIsBeingActivated
+  id: WarpIsBeingActivated
+  parent: Watcher.WarpPoint
+  langs:
+  - csharp
+  - vb
+  name: WarpIsBeingActivated
+  nameWithType: WarpPoint.WarpIsBeingActivated
+  fullName: Watcher.WarpPoint.WarpIsBeingActivated
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Watcher
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Watcher.WarpPoint.WarpIsBeingActivated</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public static bool WarpIsBeingActivated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property WarpIsBeingActivated As Boolean
+  overload: Watcher.WarpPoint.WarpIsBeingActivated*
+references:
+- uid: Watcher
+  commentId: N:Watcher
+  isExternal: true
+  href: Watcher.html
+  name: Watcher
+  nameWithType: Watcher
+  fullName: Watcher
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.CosmeticSprite
+  commentId: T:Global.CosmeticSprite
+  isExternal: true
+  href: CosmeticSprite.html
+  name: CosmeticSprite
+  nameWithType: CosmeticSprite
+  fullName: CosmeticSprite
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: MoreSlugcats.IRunDuringDialog
+  commentId: T:MoreSlugcats.IRunDuringDialog
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.IRunDuringDialog.html
+  name: IRunDuringDialog
+  nameWithType: IRunDuringDialog
+  fullName: MoreSlugcats.IRunDuringDialog
+- uid: MoreSlugcats.ISpecialWarp
+  commentId: T:MoreSlugcats.ISpecialWarp
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.ISpecialWarp.html
+  name: ISpecialWarp
+  nameWithType: ISpecialWarp
+  fullName: MoreSlugcats.ISpecialWarp
+- uid: Global.CosmeticSprite.pos
+  commentId: F:Global.CosmeticSprite.pos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_pos
+  name: pos
+  nameWithType: CosmeticSprite.pos
+  fullName: CosmeticSprite.pos
+- uid: Global.CosmeticSprite.lastPos
+  commentId: F:Global.CosmeticSprite.lastPos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_lastPos
+  name: lastPos
+  nameWithType: CosmeticSprite.lastPos
+  fullName: CosmeticSprite.lastPos
+- uid: Global.CosmeticSprite.vel
+  commentId: F:Global.CosmeticSprite.vel
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_vel
+  name: vel
+  nameWithType: CosmeticSprite.vel
+  fullName: CosmeticSprite.vel
+- uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: PausedDrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: PausedDrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: Global.PlacedObject
+  commentId: T:Global.PlacedObject
+  isExternal: true
+  href: PlacedObject.html
+  name: PlacedObject
+  nameWithType: PlacedObject
+  fullName: PlacedObject
+- uid: Watcher.WarpPoint.WarpPointData
+  commentId: T:Watcher.WarpPoint.WarpPointData
+  parent: Watcher
+  isExternal: true
+  href: Watcher.WarpPoint.html
+  name: WarpPoint.WarpPointData
+  nameWithType: WarpPoint.WarpPointData
+  fullName: Watcher.WarpPoint.WarpPointData
+  spec.csharp:
+  - uid: Watcher.WarpPoint
+    name: WarpPoint
+    isExternal: true
+    href: Watcher.WarpPoint.html
+  - name: .
+  - uid: Watcher.WarpPoint.WarpPointData
+    name: WarpPointData
+    isExternal: true
+    href: Watcher.WarpPoint.WarpPointData.html
+  spec.vb:
+  - uid: Watcher.WarpPoint
+    name: WarpPoint
+    isExternal: true
+    href: Watcher.WarpPoint.html
+  - name: .
+  - uid: Watcher.WarpPoint.WarpPointData
+    name: WarpPointData
+    isExternal: true
+    href: Watcher.WarpPoint.WarpPointData.html
+- uid: Watcher.WarpTear
+  commentId: T:Watcher.WarpTear
+  parent: Watcher
+  isExternal: true
+  href: Watcher.WarpTear.html
+  name: WarpTear
+  nameWithType: WarpTear
+  fullName: Watcher.WarpTear
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Collections.Generic.List{CreatureTemplate.Type}
+  commentId: T:System.Collections.Generic.List{CreatureTemplate.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CreatureTemplate.Type>
+  nameWithType: List<CreatureTemplate.Type>
+  fullName: System.Collections.Generic.List<CreatureTemplate.Type>
+  nameWithType.vb: List(Of CreatureTemplate.Type)
+  fullName.vb: System.Collections.Generic.List(Of CreatureTemplate.Type)
+  name.vb: List(Of CreatureTemplate.Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.CreatureTemplate
+    name: CreatureTemplate
+    isExternal: true
+    href: CreatureTemplate.html
+  - name: .
+  - uid: Global.CreatureTemplate.Type
+    name: Type
+    isExternal: true
+    href: CreatureTemplate.Type.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{AbstractPhysicalObject.AbstractObjectType}
+  commentId: T:System.Collections.Generic.List{AbstractPhysicalObject.AbstractObjectType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AbstractPhysicalObject.AbstractObjectType>
+  nameWithType: List<AbstractPhysicalObject.AbstractObjectType>
+  fullName: System.Collections.Generic.List<AbstractPhysicalObject.AbstractObjectType>
+  nameWithType.vb: List(Of AbstractPhysicalObject.AbstractObjectType)
+  fullName.vb: System.Collections.Generic.List(Of AbstractPhysicalObject.AbstractObjectType)
+  name.vb: List(Of AbstractPhysicalObject.AbstractObjectType)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: .
+  - uid: Global.AbstractPhysicalObject.AbstractObjectType
+    name: AbstractObjectType
+    isExternal: true
+    href: AbstractPhysicalObject.AbstractObjectType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.AbstractPhysicalObject
+    name: AbstractPhysicalObject
+    isExternal: true
+    href: AbstractPhysicalObject.html
+  - name: .
+  - uid: Global.AbstractPhysicalObject.AbstractObjectType
+    name: AbstractObjectType
+    isExternal: true
+    href: AbstractPhysicalObject.AbstractObjectType.html
+  - name: )
+- uid: Watcher.CosmeticRipple
+  commentId: T:Watcher.CosmeticRipple
+  parent: Watcher
+  isExternal: true
+  href: Watcher.CosmeticRipple.html
+  name: CosmeticRipple
+  nameWithType: CosmeticRipple
+  fullName: Watcher.CosmeticRipple
+- uid: Watcher.WarpPoint.#ctor*
+  commentId: Overload:Watcher.WarpPoint.#ctor
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint__ctor_Room_PlacedObject_
+  name: WarpPoint
+  nameWithType: WarpPoint.WarpPoint
+  fullName: Watcher.WarpPoint.WarpPoint
+  nameWithType.vb: WarpPoint.New
+  fullName.vb: Watcher.WarpPoint.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Watcher.WarpPoint.ChooseDynamicWarpTarget*
+  commentId: Overload:Watcher.WarpPoint.ChooseDynamicWarpTarget
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_ChooseDynamicWarpTarget_AbstractRoom_System_Boolean_System_Boolean_System_Boolean_
+  name: ChooseDynamicWarpTarget
+  nameWithType: WarpPoint.ChooseDynamicWarpTarget
+  fullName: Watcher.WarpPoint.ChooseDynamicWarpTarget
+- uid: Global.AbstractRoom
+  commentId: T:Global.AbstractRoom
+  isExternal: true
+  href: AbstractRoom.html
+  name: AbstractRoom
+  nameWithType: AbstractRoom
+  fullName: AbstractRoom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Watcher.WarpPoint.CreateOverrideData*
+  commentId: Overload:Watcher.WarpPoint.CreateOverrideData
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_CreateOverrideData_AbstractRoom_System_String_System_Boolean_System_Boolean_
+  name: CreateOverrideData
+  nameWithType: WarpPoint.CreateOverrideData
+  fullName: Watcher.WarpPoint.CreateOverrideData
+- uid: Watcher.WarpPoint.GetAvailableDynamicWarpTargets*
+  commentId: Overload:Watcher.WarpPoint.GetAvailableDynamicWarpTargets
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_GetAvailableDynamicWarpTargets_AbstractRoom_System_Boolean_
+  name: GetAvailableDynamicWarpTargets
+  nameWithType: WarpPoint.GetAvailableDynamicWarpTargets
+  fullName: Watcher.WarpPoint.GetAvailableDynamicWarpTargets
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Watcher.WarpPoint.GetAvailableBadWarpTargets*
+  commentId: Overload:Watcher.WarpPoint.GetAvailableBadWarpTargets
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_GetAvailableBadWarpTargets_AbstractRoom_
+  name: GetAvailableBadWarpTargets
+  nameWithType: WarpPoint.GetAvailableBadWarpTargets
+  fullName: Watcher.WarpPoint.GetAvailableBadWarpTargets
+- uid: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets*
+  commentId: Overload:Watcher.WarpPoint.GetAvailableOuterRimWarpTargets
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_GetAvailableOuterRimWarpTargets_AbstractRoom_System_Boolean_
+  name: GetAvailableOuterRimWarpTargets
+  nameWithType: WarpPoint.GetAvailableOuterRimWarpTargets
+  fullName: Watcher.WarpPoint.GetAvailableOuterRimWarpTargets
+- uid: Watcher.WarpPoint.SetRoom*
+  commentId: Overload:Watcher.WarpPoint.SetRoom
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_SetRoom_Room_
+  name: SetRoom
+  nameWithType: WarpPoint.SetRoom
+  fullName: Watcher.WarpPoint.SetRoom
+- uid: Watcher.WarpPoint.PerformWarp*
+  commentId: Overload:Watcher.WarpPoint.PerformWarp
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_PerformWarp
+  name: PerformWarp
+  nameWithType: WarpPoint.PerformWarp
+  fullName: Watcher.WarpPoint.PerformWarp
+- uid: Watcher.WarpPoint.WarpPrecast*
+  commentId: Overload:Watcher.WarpPoint.WarpPrecast
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_WarpPrecast
+  name: WarpPrecast
+  nameWithType: WarpPoint.WarpPrecast
+  fullName: Watcher.WarpPoint.WarpPrecast
+- uid: Watcher.WarpPoint.ResetShaderParams*
+  commentId: Overload:Watcher.WarpPoint.ResetShaderParams
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_ResetShaderParams
+  name: ResetShaderParams
+  nameWithType: WarpPoint.ResetShaderParams
+  fullName: Watcher.WarpPoint.ResetShaderParams
+- uid: Watcher.WarpPoint.GetDestCam*
+  commentId: Overload:Watcher.WarpPoint.GetDestCam
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_GetDestCam_Watcher_WarpPoint_WarpPointData_
+  name: GetDestCam
+  nameWithType: WarpPoint.GetDestCam
+  fullName: Watcher.WarpPoint.GetDestCam
+- uid: Global.CosmeticSprite.Update(System.Boolean)
+  commentId: M:Global.CosmeticSprite.Update(System.Boolean)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: CosmeticSprite.Update(bool)
+  fullName: CosmeticSprite.Update(bool)
+  nameWithType.vb: CosmeticSprite.Update(Boolean)
+  fullName.vb: CosmeticSprite.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Watcher.WarpPoint.Update*
+  commentId: Overload:Watcher.WarpPoint.Update
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_Update_System_Boolean_
+  name: Update
+  nameWithType: WarpPoint.Update
+  fullName: Watcher.WarpPoint.Update
+- uid: Watcher.WarpPoint.ReduceWind*
+  commentId: Overload:Watcher.WarpPoint.ReduceWind
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_ReduceWind_PhysicalObject_
+  name: ReduceWind
+  nameWithType: WarpPoint.ReduceWind
+  fullName: Watcher.WarpPoint.ReduceWind
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Watcher.WarpPoint.SpawnPendingObject*
+  commentId: Overload:Watcher.WarpPoint.SpawnPendingObject
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_SpawnPendingObject_AbstractPhysicalObject_System_Boolean_
+  name: SpawnPendingObject
+  nameWithType: WarpPoint.SpawnPendingObject
+  fullName: Watcher.WarpPoint.SpawnPendingObject
+- uid: Global.AbstractPhysicalObject
+  commentId: T:Global.AbstractPhysicalObject
+  isExternal: true
+  href: AbstractPhysicalObject.html
+  name: AbstractPhysicalObject
+  nameWithType: AbstractPhysicalObject
+  fullName: AbstractPhysicalObject
+- uid: Watcher.WarpPoint.SlateForDeletion*
+  commentId: Overload:Watcher.WarpPoint.SlateForDeletion
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_SlateForDeletion
+  name: SlateForDeletion
+  nameWithType: WarpPoint.SlateForDeletion
+  fullName: Watcher.WarpPoint.SlateForDeletion
+- uid: Watcher.WarpPoint.SpawnBadWarpRipple*
+  commentId: Overload:Watcher.WarpPoint.SpawnBadWarpRipple
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_SpawnBadWarpRipple_System_Boolean_
+  name: SpawnBadWarpRipple
+  nameWithType: WarpPoint.SpawnBadWarpRipple
+  fullName: Watcher.WarpPoint.SpawnBadWarpRipple
+- uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Watcher.WarpPoint.InitiateSprites*
+  commentId: Overload:Watcher.WarpPoint.InitiateSprites
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: WarpPoint.InitiateSprites
+  fullName: Watcher.WarpPoint.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Watcher.WarpPoint.DrawSprites*
+  commentId: Overload:Watcher.WarpPoint.DrawSprites
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: WarpPoint.DrawSprites
+  fullName: Watcher.WarpPoint.DrawSprites
+- uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Watcher.WarpPoint.ApplyPalette*
+  commentId: Overload:Watcher.WarpPoint.ApplyPalette
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: WarpPoint.ApplyPalette
+  fullName: Watcher.WarpPoint.ApplyPalette
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Watcher.WarpPoint.AddToContainer*
+  commentId: Overload:Watcher.WarpPoint.AddToContainer
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: WarpPoint.AddToContainer
+  fullName: Watcher.WarpPoint.AddToContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: Watcher.WarpPoint.IdentifyingString*
+  commentId: Overload:Watcher.WarpPoint.IdentifyingString
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_IdentifyingString_RainWorldGame_Watcher_WarpPoint_WarpPointData_AbstractRoom_
+  name: IdentifyingString
+  nameWithType: WarpPoint.IdentifyingString
+  fullName: Watcher.WarpPoint.IdentifyingString
+- uid: Global.RainWorldGame
+  commentId: T:Global.RainWorldGame
+  isExternal: true
+  href: RainWorldGame.html
+  name: RainWorldGame
+  nameWithType: RainWorldGame
+  fullName: RainWorldGame
+- uid: Watcher.WarpPoint.RoomFromIdentifyingString*
+  commentId: Overload:Watcher.WarpPoint.RoomFromIdentifyingString
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_RoomFromIdentifyingString_System_String_
+  name: RoomFromIdentifyingString
+  nameWithType: WarpPoint.RoomFromIdentifyingString
+  fullName: Watcher.WarpPoint.RoomFromIdentifyingString
+- uid: Watcher.WarpPoint.RoomFromValueString*
+  commentId: Overload:Watcher.WarpPoint.RoomFromValueString
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_RoomFromValueString_System_String_
+  name: RoomFromValueString
+  nameWithType: WarpPoint.RoomFromValueString
+  fullName: Watcher.WarpPoint.RoomFromValueString
+- uid: Watcher.WarpPoint.MyIdentifyingString*
+  commentId: Overload:Watcher.WarpPoint.MyIdentifyingString
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_MyIdentifyingString
+  name: MyIdentifyingString
+  nameWithType: WarpPoint.MyIdentifyingString
+  fullName: Watcher.WarpPoint.MyIdentifyingString
+- uid: Watcher.WarpPoint.EaseInOutElastic*
+  commentId: Overload:Watcher.WarpPoint.EaseInOutElastic
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_EaseInOutElastic_System_Single_
+  name: EaseInOutElastic
+  nameWithType: WarpPoint.EaseInOutElastic
+  fullName: Watcher.WarpPoint.EaseInOutElastic
+- uid: Watcher.WarpPoint.easeInOutQuint*
+  commentId: Overload:Watcher.WarpPoint.easeInOutQuint
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_easeInOutQuint_System_Single_
+  name: easeInOutQuint
+  nameWithType: WarpPoint.easeInOutQuint
+  fullName: Watcher.WarpPoint.easeInOutQuint
+- uid: Watcher.WarpPoint.easeInExpo*
+  commentId: Overload:Watcher.WarpPoint.easeInExpo
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_easeInExpo_System_Single_
+  name: easeInExpo
+  nameWithType: WarpPoint.easeInExpo
+  fullName: Watcher.WarpPoint.easeInExpo
+- uid: Watcher.WarpPoint.AddPlayerBackIn*
+  commentId: Overload:Watcher.WarpPoint.AddPlayerBackIn
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_AddPlayerBackIn_System_Int32_System_Boolean_
+  name: AddPlayerBackIn
+  nameWithType: WarpPoint.AddPlayerBackIn
+  fullName: Watcher.WarpPoint.AddPlayerBackIn
+- uid: Watcher.WarpPoint.RemovePlayers*
+  commentId: Overload:Watcher.WarpPoint.RemovePlayers
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_RemovePlayers_System_Int32_
+  name: RemovePlayers
+  nameWithType: WarpPoint.RemovePlayers
+  fullName: Watcher.WarpPoint.RemovePlayers
+- uid: Watcher.WarpPoint.getSourceRoom*
+  commentId: Overload:Watcher.WarpPoint.getSourceRoom
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_getSourceRoom
+  name: getSourceRoom
+  nameWithType: WarpPoint.getSourceRoom
+  fullName: Watcher.WarpPoint.getSourceRoom
+- uid: MoreSlugcats.ISpecialWarp.getSourceRoom
+  commentId: M:MoreSlugcats.ISpecialWarp.getSourceRoom
+  parent: MoreSlugcats.ISpecialWarp
+  isExternal: true
+  href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_getSourceRoom
+  name: getSourceRoom()
+  nameWithType: ISpecialWarp.getSourceRoom()
+  fullName: MoreSlugcats.ISpecialWarp.getSourceRoom()
+  spec.csharp:
+  - uid: MoreSlugcats.ISpecialWarp.getSourceRoom
+    name: getSourceRoom
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_getSourceRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoreSlugcats.ISpecialWarp.getSourceRoom
+    name: getSourceRoom
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_getSourceRoom
+  - name: (
+  - name: )
+- uid: Watcher.WarpPoint.WarpTransfer*
+  commentId: Overload:Watcher.WarpPoint.WarpTransfer
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_WarpTransfer_Room_Watcher_WarpPoint_WarpPointData_
+  name: WarpTransfer
+  nameWithType: WarpPoint.WarpTransfer
+  fullName: Watcher.WarpPoint.WarpTransfer
+- uid: Watcher.WarpPoint.NewWorldLoaded*
+  commentId: Overload:Watcher.WarpPoint.NewWorldLoaded
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_NewWorldLoaded
+  name: NewWorldLoaded
+  nameWithType: WarpPoint.NewWorldLoaded
+  fullName: Watcher.WarpPoint.NewWorldLoaded
+- uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded
+  commentId: M:MoreSlugcats.ISpecialWarp.NewWorldLoaded
+  parent: MoreSlugcats.ISpecialWarp
+  isExternal: true
+  href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded
+  name: NewWorldLoaded()
+  nameWithType: ISpecialWarp.NewWorldLoaded()
+  fullName: MoreSlugcats.ISpecialWarp.NewWorldLoaded()
+  spec.csharp:
+  - uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded
+    name: NewWorldLoaded
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded
+    name: NewWorldLoaded
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded
+  - name: (
+  - name: )
+- uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+  commentId: M:MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+  parent: MoreSlugcats.ISpecialWarp
+  isExternal: true
+  href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded_Room_
+  name: NewWorldLoaded(Room)
+  nameWithType: ISpecialWarp.NewWorldLoaded(Room)
+  fullName: MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+  spec.csharp:
+  - uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+    name: NewWorldLoaded
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: MoreSlugcats.ISpecialWarp.NewWorldLoaded(Room)
+    name: NewWorldLoaded
+    isExternal: true
+    href: MoreSlugcats.ISpecialWarp.html#MoreSlugcats_ISpecialWarp_NewWorldLoaded_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Watcher.WarpPoint.Data*
+  commentId: Overload:Watcher.WarpPoint.Data
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_Data
+  name: Data
+  nameWithType: WarpPoint.Data
+  fullName: Watcher.WarpPoint.Data
+- uid: Watcher.WarpPoint.PullRadius*
+  commentId: Overload:Watcher.WarpPoint.PullRadius
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_PullRadius
+  name: PullRadius
+  nameWithType: WarpPoint.PullRadius
+  fullName: Watcher.WarpPoint.PullRadius
+- uid: Watcher.WarpPoint.visualOpenness*
+  commentId: Overload:Watcher.WarpPoint.visualOpenness
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_visualOpenness
+  name: visualOpenness
+  nameWithType: WarpPoint.visualOpenness
+  fullName: Watcher.WarpPoint.visualOpenness
+- uid: Watcher.WarpPoint.anyPlayersInRange*
+  commentId: Overload:Watcher.WarpPoint.anyPlayersInRange
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_anyPlayersInRange
+  name: anyPlayersInRange
+  nameWithType: WarpPoint.anyPlayersInRange
+  fullName: Watcher.WarpPoint.anyPlayersInRange
+- uid: Watcher.WarpPoint.warpSequenceInProgress*
+  commentId: Overload:Watcher.WarpPoint.warpSequenceInProgress
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_warpSequenceInProgress
+  name: warpSequenceInProgress
+  nameWithType: WarpPoint.warpSequenceInProgress
+  fullName: Watcher.WarpPoint.warpSequenceInProgress
+- uid: Watcher.WarpPoint.shouldExpire*
+  commentId: Overload:Watcher.WarpPoint.shouldExpire
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_shouldExpire
+  name: shouldExpire
+  nameWithType: WarpPoint.shouldExpire
+  fullName: Watcher.WarpPoint.shouldExpire
+- uid: Watcher.WarpPoint.WarpPointAnimationPlaying*
+  commentId: Overload:Watcher.WarpPoint.WarpPointAnimationPlaying
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_WarpPointAnimationPlaying
+  name: WarpPointAnimationPlaying
+  nameWithType: WarpPoint.WarpPointAnimationPlaying
+  fullName: Watcher.WarpPoint.WarpPointAnimationPlaying
+- uid: Watcher.WarpPoint.WarpInProgress*
+  commentId: Overload:Watcher.WarpPoint.WarpInProgress
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_WarpInProgress
+  name: WarpInProgress
+  nameWithType: WarpPoint.WarpInProgress
+  fullName: Watcher.WarpPoint.WarpInProgress
+- uid: Watcher.WarpPoint.WarpIsBeingActivated*
+  commentId: Overload:Watcher.WarpPoint.WarpIsBeingActivated
+  isExternal: true
+  href: Watcher.WarpPoint.html#Watcher_WarpPoint_WarpIsBeingActivated
+  name: WarpIsBeingActivated
+  nameWithType: WarpPoint.WarpIsBeingActivated
+  fullName: Watcher.WarpPoint.WarpIsBeingActivated

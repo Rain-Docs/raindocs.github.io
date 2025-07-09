@@ -1,0 +1,2075 @@
+### YamlMime:ManagedReference
+items:
+- uid: Music.MusicPlayer
+  commentId: T:Music.MusicPlayer
+  id: MusicPlayer
+  parent: Music
+  children:
+  - Music.MusicPlayer.#ctor(ProcessManager)
+  - Music.MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL
+  - Music.MusicPlayer.ASSETBUNDLE_MUSIC_SONGS
+  - Music.MusicPlayer.DeathEvent
+  - Music.MusicPlayer.FadeOutAllNonGhostSongs(System.Single)
+  - Music.MusicPlayer.FadeOutAllSongs(System.Single)
+  - Music.MusicPlayer.GameRequestsSong(MusicEvent)
+  - Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)
+  - Music.MusicPlayer.GateEvent
+  - Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)
+  - Music.MusicPlayer.NewCycleEvent
+  - Music.MusicPlayer.NewRegion(System.String)
+  - Music.MusicPlayer.RainRequestStopSong
+  - Music.MusicPlayer.RequestArenaSong(System.String,System.Single)
+  - Music.MusicPlayer.RequestGhostSong(System.String)
+  - Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)
+  - Music.MusicPlayer.RequestHalcyonSong(System.String)
+  - Music.MusicPlayer.RequestIntroRollMusic
+  - Music.MusicPlayer.RequestMSSirenSong
+  - Music.MusicPlayer.RequestSMEndingSong
+  - Music.MusicPlayer.RequestSSSong
+  - Music.MusicPlayer.RequestSaintEndingSong
+  - Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)
+  - Music.MusicPlayer.ResumeProcedural
+  - Music.MusicPlayer.Update
+  - Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)
+  - Music.MusicPlayer.assetBundlesLoaded
+  - Music.MusicPlayer.droneGoalMix
+  - Music.MusicPlayer.gameObj
+  - Music.MusicPlayer.hasPlayedASongThisCycle
+  - Music.MusicPlayer.mainSongMix
+  - Music.MusicPlayer.multiplayerDJ
+  - Music.MusicPlayer.musicContext
+  - Music.MusicPlayer.nextSong
+  - Music.MusicPlayer.proceduralMusic
+  - Music.MusicPlayer.rippleDimension
+  - Music.MusicPlayer.song
+  - Music.MusicPlayer.threatTracker
+  langs:
+  - csharp
+  - vb
+  name: MusicPlayer
+  nameWithType: MusicPlayer
+  fullName: Music.MusicPlayer
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Music.MusicPlayer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class MusicPlayer : MainLoopProcess'
+    content.vb: Public Class MusicPlayer Inherits MainLoopProcess
+  inheritance:
+  - System.Object
+  - Global.MainLoopProcess
+  inheritedMembers:
+  - Global.MainLoopProcess.manager
+  - Global.MainLoopProcess.ID
+  - Global.MainLoopProcess.framesPerSecond
+  - Global.MainLoopProcess.processActive
+  - Global.MainLoopProcess.RawUpdate(System.Single)
+  - Global.MainLoopProcess.GrafUpdate(System.Single)
+  - Global.MainLoopProcess.ShutDownProcess
+  - Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  - Global.MainLoopProcess.TimeSpeedFac
+  - Global.MainLoopProcess.FadeInTime
+  - Global.MainLoopProcess.InitialBlackSeconds
+  - Global.MainLoopProcess.AllowDialogs
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Music.MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL
+  commentId: F:Music.MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL
+  id: ASSETBUNDLE_MUSIC_PROCEDURAL
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: ASSETBUNDLE_MUSIC_PROCEDURAL
+  nameWithType: MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL
+  fullName: Music.MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.ASSETBUNDLE_MUSIC_PROCEDURAL</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public const string ASSETBUNDLE_MUSIC_PROCEDURAL = "music_procedural"
+    return:
+      type: System.String
+    content.vb: Public Const ASSETBUNDLE_MUSIC_PROCEDURAL As String = "music_procedural"
+- uid: Music.MusicPlayer.ASSETBUNDLE_MUSIC_SONGS
+  commentId: F:Music.MusicPlayer.ASSETBUNDLE_MUSIC_SONGS
+  id: ASSETBUNDLE_MUSIC_SONGS
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: ASSETBUNDLE_MUSIC_SONGS
+  nameWithType: MusicPlayer.ASSETBUNDLE_MUSIC_SONGS
+  fullName: Music.MusicPlayer.ASSETBUNDLE_MUSIC_SONGS
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.ASSETBUNDLE_MUSIC_SONGS</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public const string ASSETBUNDLE_MUSIC_SONGS = "music_songs"
+    return:
+      type: System.String
+    content.vb: Public Const ASSETBUNDLE_MUSIC_SONGS As String = "music_songs"
+- uid: Music.MusicPlayer.gameObj
+  commentId: F:Music.MusicPlayer.gameObj
+  id: gameObj
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: gameObj
+  nameWithType: MusicPlayer.gameObj
+  fullName: Music.MusicPlayer.gameObj
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.gameObj</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public GameObject gameObj
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public gameObj As GameObject
+- uid: Music.MusicPlayer.song
+  commentId: F:Music.MusicPlayer.song
+  id: song
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: song
+  nameWithType: MusicPlayer.song
+  fullName: Music.MusicPlayer.song
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.song</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Song song
+    return:
+      type: Music.Song
+    content.vb: Public song As Song
+- uid: Music.MusicPlayer.nextSong
+  commentId: F:Music.MusicPlayer.nextSong
+  id: nextSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: nextSong
+  nameWithType: MusicPlayer.nextSong
+  fullName: Music.MusicPlayer.nextSong
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.nextSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Song nextSong
+    return:
+      type: Music.Song
+    content.vb: Public nextSong As Song
+- uid: Music.MusicPlayer.mainSongMix
+  commentId: F:Music.MusicPlayer.mainSongMix
+  id: mainSongMix
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: mainSongMix
+  nameWithType: MusicPlayer.mainSongMix
+  fullName: Music.MusicPlayer.mainSongMix
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.mainSongMix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float mainSongMix
+    return:
+      type: System.Single
+    content.vb: Public mainSongMix As Single
+- uid: Music.MusicPlayer.droneGoalMix
+  commentId: F:Music.MusicPlayer.droneGoalMix
+  id: droneGoalMix
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: droneGoalMix
+  nameWithType: MusicPlayer.droneGoalMix
+  fullName: Music.MusicPlayer.droneGoalMix
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.droneGoalMix</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float droneGoalMix
+    return:
+      type: System.Single
+    content.vb: Public droneGoalMix As Single
+- uid: Music.MusicPlayer.rippleDimension
+  commentId: F:Music.MusicPlayer.rippleDimension
+  id: rippleDimension
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: rippleDimension
+  nameWithType: MusicPlayer.rippleDimension
+  fullName: Music.MusicPlayer.rippleDimension
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.rippleDimension</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float rippleDimension
+    return:
+      type: System.Single
+    content.vb: Public rippleDimension As Single
+- uid: Music.MusicPlayer.musicContext
+  commentId: F:Music.MusicPlayer.musicContext
+  id: musicContext
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: musicContext
+  nameWithType: MusicPlayer.musicContext
+  fullName: Music.MusicPlayer.musicContext
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.musicContext</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MusicPlayer.MusicContext musicContext
+    return:
+      type: Music.MusicPlayer.MusicContext
+    content.vb: Public musicContext As MusicPlayer.MusicContext
+- uid: Music.MusicPlayer.threatTracker
+  commentId: F:Music.MusicPlayer.threatTracker
+  id: threatTracker
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: threatTracker
+  nameWithType: MusicPlayer.threatTracker
+  fullName: Music.MusicPlayer.threatTracker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.threatTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public PlayerThreatTracker threatTracker
+    return:
+      type: Music.PlayerThreatTracker
+    content.vb: Public threatTracker As PlayerThreatTracker
+- uid: Music.MusicPlayer.multiplayerDJ
+  commentId: F:Music.MusicPlayer.multiplayerDJ
+  id: multiplayerDJ
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: multiplayerDJ
+  nameWithType: MusicPlayer.multiplayerDJ
+  fullName: Music.MusicPlayer.multiplayerDJ
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.multiplayerDJ</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MultiplayerDJ multiplayerDJ
+    return:
+      type: Music.MultiplayerDJ
+    content.vb: Public multiplayerDJ As MultiplayerDJ
+- uid: Music.MusicPlayer.proceduralMusic
+  commentId: F:Music.MusicPlayer.proceduralMusic
+  id: proceduralMusic
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: proceduralMusic
+  nameWithType: MusicPlayer.proceduralMusic
+  fullName: Music.MusicPlayer.proceduralMusic
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.proceduralMusic</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ProceduralMusic proceduralMusic
+    return:
+      type: Music.ProceduralMusic
+    content.vb: Public proceduralMusic As ProceduralMusic
+- uid: Music.MusicPlayer.hasPlayedASongThisCycle
+  commentId: F:Music.MusicPlayer.hasPlayedASongThisCycle
+  id: hasPlayedASongThisCycle
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: hasPlayedASongThisCycle
+  nameWithType: MusicPlayer.hasPlayedASongThisCycle
+  fullName: Music.MusicPlayer.hasPlayedASongThisCycle
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Music.MusicPlayer.hasPlayedASongThisCycle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool hasPlayedASongThisCycle
+    return:
+      type: System.Boolean
+    content.vb: Public hasPlayedASongThisCycle As Boolean
+- uid: Music.MusicPlayer.#ctor(ProcessManager)
+  commentId: M:Music.MusicPlayer.#ctor(ProcessManager)
+  id: '#ctor(ProcessManager)'
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: MusicPlayer(ProcessManager)
+  nameWithType: MusicPlayer.MusicPlayer(ProcessManager)
+  fullName: Music.MusicPlayer.MusicPlayer(ProcessManager)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Music.MusicPlayer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MusicPlayer(ProcessManager manager)
+    parameters:
+    - id: manager
+      type: Global.ProcessManager
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>manager</parameter>
+            <parameter>M:Music.MusicPlayer.#ctor(ProcessManager)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(manager As ProcessManager)
+  overload: Music.MusicPlayer.#ctor*
+  nameWithType.vb: MusicPlayer.New(ProcessManager)
+  fullName.vb: Music.MusicPlayer.New(ProcessManager)
+  name.vb: New(ProcessManager)
+- uid: Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)
+  commentId: M:Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)
+  id: UpdateMusicContext(MainLoopProcess)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: UpdateMusicContext(MainLoopProcess)
+  nameWithType: MusicPlayer.UpdateMusicContext(MainLoopProcess)
+  fullName: Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void UpdateMusicContext(MainLoopProcess currentProcess)
+    parameters:
+    - id: currentProcess
+      type: Global.MainLoopProcess
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>currentProcess</parameter>
+            <parameter>M:Music.MusicPlayer.UpdateMusicContext(MainLoopProcess)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub UpdateMusicContext(currentProcess As MainLoopProcess)
+  overload: Music.MusicPlayer.UpdateMusicContext*
+- uid: Music.MusicPlayer.Update
+  commentId: M:Music.MusicPlayer.Update
+  id: Update
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: MusicPlayer.Update()
+  fullName: Music.MusicPlayer.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.MainLoopProcess.Update
+  overload: Music.MusicPlayer.Update*
+- uid: Music.MusicPlayer.NewCycleEvent
+  commentId: M:Music.MusicPlayer.NewCycleEvent
+  id: NewCycleEvent
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: NewCycleEvent()
+  nameWithType: MusicPlayer.NewCycleEvent()
+  fullName: Music.MusicPlayer.NewCycleEvent()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.NewCycleEvent</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewCycleEvent()
+    content.vb: Public Sub NewCycleEvent()
+  overload: Music.MusicPlayer.NewCycleEvent*
+- uid: Music.MusicPlayer.DeathEvent
+  commentId: M:Music.MusicPlayer.DeathEvent
+  id: DeathEvent
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: DeathEvent()
+  nameWithType: MusicPlayer.DeathEvent()
+  fullName: Music.MusicPlayer.DeathEvent()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.DeathEvent</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void DeathEvent()
+    content.vb: Public Sub DeathEvent()
+  overload: Music.MusicPlayer.DeathEvent*
+- uid: Music.MusicPlayer.GateEvent
+  commentId: M:Music.MusicPlayer.GateEvent
+  id: GateEvent
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: GateEvent()
+  nameWithType: MusicPlayer.GateEvent()
+  fullName: Music.MusicPlayer.GateEvent()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.GateEvent</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void GateEvent()
+    content.vb: Public Sub GateEvent()
+  overload: Music.MusicPlayer.GateEvent*
+- uid: Music.MusicPlayer.FadeOutAllNonGhostSongs(System.Single)
+  commentId: M:Music.MusicPlayer.FadeOutAllNonGhostSongs(System.Single)
+  id: FadeOutAllNonGhostSongs(System.Single)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: FadeOutAllNonGhostSongs(float)
+  nameWithType: MusicPlayer.FadeOutAllNonGhostSongs(float)
+  fullName: Music.MusicPlayer.FadeOutAllNonGhostSongs(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.FadeOutAllNonGhostSongs(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FadeOutAllNonGhostSongs(float fadeOutTime)
+    parameters:
+    - id: fadeOutTime
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeOutTime</parameter>
+            <parameter>M:Music.MusicPlayer.FadeOutAllNonGhostSongs(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FadeOutAllNonGhostSongs(fadeOutTime As Single)
+  overload: Music.MusicPlayer.FadeOutAllNonGhostSongs*
+  nameWithType.vb: MusicPlayer.FadeOutAllNonGhostSongs(Single)
+  fullName.vb: Music.MusicPlayer.FadeOutAllNonGhostSongs(Single)
+  name.vb: FadeOutAllNonGhostSongs(Single)
+- uid: Music.MusicPlayer.FadeOutAllSongs(System.Single)
+  commentId: M:Music.MusicPlayer.FadeOutAllSongs(System.Single)
+  id: FadeOutAllSongs(System.Single)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: FadeOutAllSongs(float)
+  nameWithType: MusicPlayer.FadeOutAllSongs(float)
+  fullName: Music.MusicPlayer.FadeOutAllSongs(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.FadeOutAllSongs(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void FadeOutAllSongs(float fadeOutTime)
+    parameters:
+    - id: fadeOutTime
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeOutTime</parameter>
+            <parameter>M:Music.MusicPlayer.FadeOutAllSongs(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub FadeOutAllSongs(fadeOutTime As Single)
+  overload: Music.MusicPlayer.FadeOutAllSongs*
+  nameWithType.vb: MusicPlayer.FadeOutAllSongs(Single)
+  fullName.vb: Music.MusicPlayer.FadeOutAllSongs(Single)
+  name.vb: FadeOutAllSongs(Single)
+- uid: Music.MusicPlayer.ResumeProcedural
+  commentId: M:Music.MusicPlayer.ResumeProcedural
+  id: ResumeProcedural
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: ResumeProcedural()
+  nameWithType: MusicPlayer.ResumeProcedural()
+  fullName: Music.MusicPlayer.ResumeProcedural()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.ResumeProcedural</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ResumeProcedural()
+    content.vb: Public Sub ResumeProcedural()
+  overload: Music.MusicPlayer.ResumeProcedural*
+- uid: Music.MusicPlayer.RequestGhostSong(System.String)
+  commentId: M:Music.MusicPlayer.RequestGhostSong(System.String)
+  id: RequestGhostSong(System.String)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestGhostSong(string)
+  nameWithType: MusicPlayer.RequestGhostSong(string)
+  fullName: Music.MusicPlayer.RequestGhostSong(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestGhostSong(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestGhostSong(string ghostSongName)
+    parameters:
+    - id: ghostSongName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ghostSongName</parameter>
+            <parameter>M:Music.MusicPlayer.RequestGhostSong(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RequestGhostSong(ghostSongName As String)
+  overload: Music.MusicPlayer.RequestGhostSong*
+  nameWithType.vb: MusicPlayer.RequestGhostSong(String)
+  fullName.vb: Music.MusicPlayer.RequestGhostSong(String)
+  name.vb: RequestGhostSong(String)
+- uid: Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)
+  commentId: M:Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)
+  id: RequestGhostSong(System.String,System.Int32)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestGhostSong(string, int)
+  nameWithType: MusicPlayer.RequestGhostSong(string, int)
+  fullName: Music.MusicPlayer.RequestGhostSong(string, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestGhostSong(string ghostSongName, int spinningTopSpawnId)
+    parameters:
+    - id: ghostSongName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>ghostSongName</parameter>
+            <parameter>M:Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: spinningTopSpawnId
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>spinningTopSpawnId</parameter>
+            <parameter>M:Music.MusicPlayer.RequestGhostSong(System.String,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RequestGhostSong(ghostSongName As String, spinningTopSpawnId As Integer)
+  overload: Music.MusicPlayer.RequestGhostSong*
+  nameWithType.vb: MusicPlayer.RequestGhostSong(String, Integer)
+  fullName.vb: Music.MusicPlayer.RequestGhostSong(String, Integer)
+  name.vb: RequestGhostSong(String, Integer)
+- uid: Music.MusicPlayer.RequestSSSong
+  commentId: M:Music.MusicPlayer.RequestSSSong
+  id: RequestSSSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestSSSong()
+  nameWithType: MusicPlayer.RequestSSSong()
+  fullName: Music.MusicPlayer.RequestSSSong()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestSSSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestSSSong()
+    content.vb: Public Sub RequestSSSong()
+  overload: Music.MusicPlayer.RequestSSSong*
+- uid: Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)
+  commentId: M:Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)
+  id: RequestVoidSeaMusic(VoidSea.VoidSeaScene)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestVoidSeaMusic(VoidSeaScene)
+  nameWithType: MusicPlayer.RequestVoidSeaMusic(VoidSeaScene)
+  fullName: Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestVoidSeaMusic(VoidSeaScene scene)
+    parameters:
+    - id: scene
+      type: VoidSea.VoidSeaScene
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>scene</parameter>
+            <parameter>M:Music.MusicPlayer.RequestVoidSeaMusic(VoidSea.VoidSeaScene)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RequestVoidSeaMusic(scene As VoidSeaScene)
+  overload: Music.MusicPlayer.RequestVoidSeaMusic*
+- uid: Music.MusicPlayer.RequestIntroRollMusic
+  commentId: M:Music.MusicPlayer.RequestIntroRollMusic
+  id: RequestIntroRollMusic
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestIntroRollMusic()
+  nameWithType: MusicPlayer.RequestIntroRollMusic()
+  fullName: Music.MusicPlayer.RequestIntroRollMusic()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestIntroRollMusic</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestIntroRollMusic()
+    content.vb: Public Sub RequestIntroRollMusic()
+  overload: Music.MusicPlayer.RequestIntroRollMusic*
+- uid: Music.MusicPlayer.RequestArenaSong(System.String,System.Single)
+  commentId: M:Music.MusicPlayer.RequestArenaSong(System.String,System.Single)
+  id: RequestArenaSong(System.String,System.Single)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestArenaSong(string, float)
+  nameWithType: MusicPlayer.RequestArenaSong(string, float)
+  fullName: Music.MusicPlayer.RequestArenaSong(string, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestArenaSong(System.String,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestArenaSong(string songName, float fadeInTime)
+    parameters:
+    - id: songName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>songName</parameter>
+            <parameter>M:Music.MusicPlayer.RequestArenaSong(System.String,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: fadeInTime
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeInTime</parameter>
+            <parameter>M:Music.MusicPlayer.RequestArenaSong(System.String,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RequestArenaSong(songName As String, fadeInTime As Single)
+  overload: Music.MusicPlayer.RequestArenaSong*
+  nameWithType.vb: MusicPlayer.RequestArenaSong(String, Single)
+  fullName.vb: Music.MusicPlayer.RequestArenaSong(String, Single)
+  name.vb: RequestArenaSong(String, Single)
+- uid: Music.MusicPlayer.GameRequestsSong(MusicEvent)
+  commentId: M:Music.MusicPlayer.GameRequestsSong(MusicEvent)
+  id: GameRequestsSong(MusicEvent)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: GameRequestsSong(MusicEvent)
+  nameWithType: MusicPlayer.GameRequestsSong(MusicEvent)
+  fullName: Music.MusicPlayer.GameRequestsSong(MusicEvent)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.GameRequestsSong(MusicEvent)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void GameRequestsSong(MusicEvent musicEvent)
+    parameters:
+    - id: musicEvent
+      type: Global.MusicEvent
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>musicEvent</parameter>
+            <parameter>M:Music.MusicPlayer.GameRequestsSong(MusicEvent)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub GameRequestsSong(musicEvent As MusicEvent)
+  overload: Music.MusicPlayer.GameRequestsSong*
+- uid: Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)
+  commentId: M:Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)
+  id: MenuRequestsSong(System.String,System.Single,System.Single)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: MenuRequestsSong(string, float, float)
+  nameWithType: MusicPlayer.MenuRequestsSong(string, float, float)
+  fullName: Music.MusicPlayer.MenuRequestsSong(string, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void MenuRequestsSong(string name, float priority, float fadeInTime)
+    parameters:
+    - id: name
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>name</parameter>
+            <parameter>M:Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: priority
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>priority</parameter>
+            <parameter>M:Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: fadeInTime
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>fadeInTime</parameter>
+            <parameter>M:Music.MusicPlayer.MenuRequestsSong(System.String,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub MenuRequestsSong(name As String, priority As Single, fadeInTime As Single)
+  overload: Music.MusicPlayer.MenuRequestsSong*
+  nameWithType.vb: MusicPlayer.MenuRequestsSong(String, Single, Single)
+  fullName.vb: Music.MusicPlayer.MenuRequestsSong(String, Single, Single)
+  name.vb: MenuRequestsSong(String, Single, Single)
+- uid: Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)
+  commentId: M:Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)
+  id: GameRequestsSongStop(StopMusicEvent)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: GameRequestsSongStop(StopMusicEvent)
+  nameWithType: MusicPlayer.GameRequestsSongStop(StopMusicEvent)
+  fullName: Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void GameRequestsSongStop(StopMusicEvent stopMusicEvent)
+    parameters:
+    - id: stopMusicEvent
+      type: Global.StopMusicEvent
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>stopMusicEvent</parameter>
+            <parameter>M:Music.MusicPlayer.GameRequestsSongStop(StopMusicEvent)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub GameRequestsSongStop(stopMusicEvent As StopMusicEvent)
+  overload: Music.MusicPlayer.GameRequestsSongStop*
+- uid: Music.MusicPlayer.RainRequestStopSong
+  commentId: M:Music.MusicPlayer.RainRequestStopSong
+  id: RainRequestStopSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RainRequestStopSong()
+  nameWithType: MusicPlayer.RainRequestStopSong()
+  fullName: Music.MusicPlayer.RainRequestStopSong()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RainRequestStopSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RainRequestStopSong()
+    content.vb: Public Sub RainRequestStopSong()
+  overload: Music.MusicPlayer.RainRequestStopSong*
+- uid: Music.MusicPlayer.NewRegion(System.String)
+  commentId: M:Music.MusicPlayer.NewRegion(System.String)
+  id: NewRegion(System.String)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: NewRegion(string)
+  nameWithType: MusicPlayer.NewRegion(string)
+  fullName: Music.MusicPlayer.NewRegion(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.NewRegion(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewRegion(string newRegion)
+    parameters:
+    - id: newRegion
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newRegion</parameter>
+            <parameter>M:Music.MusicPlayer.NewRegion(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewRegion(newRegion As String)
+  overload: Music.MusicPlayer.NewRegion*
+  nameWithType.vb: MusicPlayer.NewRegion(String)
+  fullName.vb: Music.MusicPlayer.NewRegion(String)
+  name.vb: NewRegion(String)
+- uid: Music.MusicPlayer.RequestMSSirenSong
+  commentId: M:Music.MusicPlayer.RequestMSSirenSong
+  id: RequestMSSirenSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestMSSirenSong()
+  nameWithType: MusicPlayer.RequestMSSirenSong()
+  fullName: Music.MusicPlayer.RequestMSSirenSong()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestMSSirenSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestMSSirenSong()
+    content.vb: Public Sub RequestMSSirenSong()
+  overload: Music.MusicPlayer.RequestMSSirenSong*
+- uid: Music.MusicPlayer.RequestSaintEndingSong
+  commentId: M:Music.MusicPlayer.RequestSaintEndingSong
+  id: RequestSaintEndingSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestSaintEndingSong()
+  nameWithType: MusicPlayer.RequestSaintEndingSong()
+  fullName: Music.MusicPlayer.RequestSaintEndingSong()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestSaintEndingSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestSaintEndingSong()
+    content.vb: Public Sub RequestSaintEndingSong()
+  overload: Music.MusicPlayer.RequestSaintEndingSong*
+- uid: Music.MusicPlayer.RequestSMEndingSong
+  commentId: M:Music.MusicPlayer.RequestSMEndingSong
+  id: RequestSMEndingSong
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestSMEndingSong()
+  nameWithType: MusicPlayer.RequestSMEndingSong()
+  fullName: Music.MusicPlayer.RequestSMEndingSong()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestSMEndingSong</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestSMEndingSong()
+    content.vb: Public Sub RequestSMEndingSong()
+  overload: Music.MusicPlayer.RequestSMEndingSong*
+- uid: Music.MusicPlayer.RequestHalcyonSong(System.String)
+  commentId: M:Music.MusicPlayer.RequestHalcyonSong(System.String)
+  id: RequestHalcyonSong(System.String)
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: RequestHalcyonSong(string)
+  nameWithType: MusicPlayer.RequestHalcyonSong(string)
+  fullName: Music.MusicPlayer.RequestHalcyonSong(string)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Music.MusicPlayer.RequestHalcyonSong(System.String)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RequestHalcyonSong(string songName)
+    parameters:
+    - id: songName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>songName</parameter>
+            <parameter>M:Music.MusicPlayer.RequestHalcyonSong(System.String)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub RequestHalcyonSong(songName As String)
+  overload: Music.MusicPlayer.RequestHalcyonSong*
+  nameWithType.vb: MusicPlayer.RequestHalcyonSong(String)
+  fullName.vb: Music.MusicPlayer.RequestHalcyonSong(String)
+  name.vb: RequestHalcyonSong(String)
+- uid: Music.MusicPlayer.assetBundlesLoaded
+  commentId: P:Music.MusicPlayer.assetBundlesLoaded
+  id: assetBundlesLoaded
+  parent: Music.MusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: assetBundlesLoaded
+  nameWithType: MusicPlayer.assetBundlesLoaded
+  fullName: Music.MusicPlayer.assetBundlesLoaded
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Music
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Music.MusicPlayer.assetBundlesLoaded</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool assetBundlesLoaded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property assetBundlesLoaded As Boolean
+  overload: Music.MusicPlayer.assetBundlesLoaded*
+references:
+- uid: Music
+  commentId: N:Music
+  isExternal: true
+  href: Music.html
+  name: Music
+  nameWithType: Music
+  fullName: Music
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.MainLoopProcess
+  commentId: T:Global.MainLoopProcess
+  isExternal: true
+  href: MainLoopProcess.html
+  name: MainLoopProcess
+  nameWithType: MainLoopProcess
+  fullName: MainLoopProcess
+- uid: Global.MainLoopProcess.manager
+  commentId: F:Global.MainLoopProcess.manager
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_manager
+  name: manager
+  nameWithType: MainLoopProcess.manager
+  fullName: MainLoopProcess.manager
+- uid: Global.MainLoopProcess.ID
+  commentId: F:Global.MainLoopProcess.ID
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_ID
+  name: ID
+  nameWithType: MainLoopProcess.ID
+  fullName: MainLoopProcess.ID
+- uid: Global.MainLoopProcess.framesPerSecond
+  commentId: F:Global.MainLoopProcess.framesPerSecond
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_framesPerSecond
+  name: framesPerSecond
+  nameWithType: MainLoopProcess.framesPerSecond
+  fullName: MainLoopProcess.framesPerSecond
+- uid: Global.MainLoopProcess.processActive
+  commentId: F:Global.MainLoopProcess.processActive
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_processActive
+  name: processActive
+  nameWithType: MainLoopProcess.processActive
+  fullName: MainLoopProcess.processActive
+- uid: Global.MainLoopProcess.RawUpdate(System.Single)
+  commentId: M:Global.MainLoopProcess.RawUpdate(System.Single)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  name: RawUpdate(float)
+  nameWithType: MainLoopProcess.RawUpdate(float)
+  fullName: MainLoopProcess.RawUpdate(float)
+  nameWithType.vb: MainLoopProcess.RawUpdate(Single)
+  fullName.vb: MainLoopProcess.RawUpdate(Single)
+  name.vb: RawUpdate(Single)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+  commentId: M:Global.MainLoopProcess.GrafUpdate(System.Single)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  name: GrafUpdate(float)
+  nameWithType: MainLoopProcess.GrafUpdate(float)
+  fullName: MainLoopProcess.GrafUpdate(float)
+  nameWithType.vb: MainLoopProcess.GrafUpdate(Single)
+  fullName.vb: MainLoopProcess.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.MainLoopProcess.ShutDownProcess
+  commentId: M:Global.MainLoopProcess.ShutDownProcess
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  name: ShutDownProcess()
+  nameWithType: MainLoopProcess.ShutDownProcess()
+  fullName: MainLoopProcess.ShutDownProcess()
+  spec.csharp:
+  - uid: Global.MainLoopProcess.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  - name: (
+  - name: )
+- uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  commentId: M:Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  name: CommunicateWithUpcomingProcess(MainLoopProcess)
+  nameWithType: MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  fullName: MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+- uid: Global.MainLoopProcess.TimeSpeedFac
+  commentId: P:Global.MainLoopProcess.TimeSpeedFac
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_TimeSpeedFac
+  name: TimeSpeedFac
+  nameWithType: MainLoopProcess.TimeSpeedFac
+  fullName: MainLoopProcess.TimeSpeedFac
+- uid: Global.MainLoopProcess.FadeInTime
+  commentId: P:Global.MainLoopProcess.FadeInTime
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_FadeInTime
+  name: FadeInTime
+  nameWithType: MainLoopProcess.FadeInTime
+  fullName: MainLoopProcess.FadeInTime
+- uid: Global.MainLoopProcess.InitialBlackSeconds
+  commentId: P:Global.MainLoopProcess.InitialBlackSeconds
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_InitialBlackSeconds
+  name: InitialBlackSeconds
+  nameWithType: MainLoopProcess.InitialBlackSeconds
+  fullName: MainLoopProcess.InitialBlackSeconds
+- uid: Global.MainLoopProcess.AllowDialogs
+  commentId: P:Global.MainLoopProcess.AllowDialogs
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_AllowDialogs
+  name: AllowDialogs
+  nameWithType: MainLoopProcess.AllowDialogs
+  fullName: MainLoopProcess.AllowDialogs
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Music.Song
+  commentId: T:Music.Song
+  parent: Music
+  isExternal: true
+  href: Music.Song.html
+  name: Song
+  nameWithType: Song
+  fullName: Music.Song
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Music.MusicPlayer.MusicContext
+  commentId: T:Music.MusicPlayer.MusicContext
+  parent: Music
+  isExternal: true
+  href: Music.MusicPlayer.html
+  name: MusicPlayer.MusicContext
+  nameWithType: MusicPlayer.MusicContext
+  fullName: Music.MusicPlayer.MusicContext
+  spec.csharp:
+  - uid: Music.MusicPlayer
+    name: MusicPlayer
+    isExternal: true
+    href: Music.MusicPlayer.html
+  - name: .
+  - uid: Music.MusicPlayer.MusicContext
+    name: MusicContext
+    isExternal: true
+    href: Music.MusicPlayer.MusicContext.html
+  spec.vb:
+  - uid: Music.MusicPlayer
+    name: MusicPlayer
+    isExternal: true
+    href: Music.MusicPlayer.html
+  - name: .
+  - uid: Music.MusicPlayer.MusicContext
+    name: MusicContext
+    isExternal: true
+    href: Music.MusicPlayer.MusicContext.html
+- uid: Music.PlayerThreatTracker
+  commentId: T:Music.PlayerThreatTracker
+  parent: Music
+  isExternal: true
+  href: Music.PlayerThreatTracker.html
+  name: PlayerThreatTracker
+  nameWithType: PlayerThreatTracker
+  fullName: Music.PlayerThreatTracker
+- uid: Music.MultiplayerDJ
+  commentId: T:Music.MultiplayerDJ
+  parent: Music
+  isExternal: true
+  href: Music.MultiplayerDJ.html
+  name: MultiplayerDJ
+  nameWithType: MultiplayerDJ
+  fullName: Music.MultiplayerDJ
+- uid: Music.ProceduralMusic
+  commentId: T:Music.ProceduralMusic
+  parent: Music
+  isExternal: true
+  href: Music.ProceduralMusic.html
+  name: ProceduralMusic
+  nameWithType: ProceduralMusic
+  fullName: Music.ProceduralMusic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Music.MusicPlayer.#ctor*
+  commentId: Overload:Music.MusicPlayer.#ctor
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer__ctor_ProcessManager_
+  name: MusicPlayer
+  nameWithType: MusicPlayer.MusicPlayer
+  fullName: Music.MusicPlayer.MusicPlayer
+  nameWithType.vb: MusicPlayer.New
+  fullName.vb: Music.MusicPlayer.New
+  name.vb: New
+- uid: Global.ProcessManager
+  commentId: T:Global.ProcessManager
+  isExternal: true
+  href: ProcessManager.html
+  name: ProcessManager
+  nameWithType: ProcessManager
+  fullName: ProcessManager
+- uid: Music.MusicPlayer.UpdateMusicContext*
+  commentId: Overload:Music.MusicPlayer.UpdateMusicContext
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_UpdateMusicContext_MainLoopProcess_
+  name: UpdateMusicContext
+  nameWithType: MusicPlayer.UpdateMusicContext
+  fullName: Music.MusicPlayer.UpdateMusicContext
+- uid: Global.MainLoopProcess.Update
+  commentId: M:Global.MainLoopProcess.Update
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  name: Update()
+  nameWithType: MainLoopProcess.Update()
+  fullName: MainLoopProcess.Update()
+  spec.csharp:
+  - uid: Global.MainLoopProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  - name: (
+  - name: )
+- uid: Music.MusicPlayer.Update*
+  commentId: Overload:Music.MusicPlayer.Update
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_Update
+  name: Update
+  nameWithType: MusicPlayer.Update
+  fullName: Music.MusicPlayer.Update
+- uid: Music.MusicPlayer.NewCycleEvent*
+  commentId: Overload:Music.MusicPlayer.NewCycleEvent
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_NewCycleEvent
+  name: NewCycleEvent
+  nameWithType: MusicPlayer.NewCycleEvent
+  fullName: Music.MusicPlayer.NewCycleEvent
+- uid: Music.MusicPlayer.DeathEvent*
+  commentId: Overload:Music.MusicPlayer.DeathEvent
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_DeathEvent
+  name: DeathEvent
+  nameWithType: MusicPlayer.DeathEvent
+  fullName: Music.MusicPlayer.DeathEvent
+- uid: Music.MusicPlayer.GateEvent*
+  commentId: Overload:Music.MusicPlayer.GateEvent
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_GateEvent
+  name: GateEvent
+  nameWithType: MusicPlayer.GateEvent
+  fullName: Music.MusicPlayer.GateEvent
+- uid: Music.MusicPlayer.FadeOutAllNonGhostSongs*
+  commentId: Overload:Music.MusicPlayer.FadeOutAllNonGhostSongs
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_FadeOutAllNonGhostSongs_System_Single_
+  name: FadeOutAllNonGhostSongs
+  nameWithType: MusicPlayer.FadeOutAllNonGhostSongs
+  fullName: Music.MusicPlayer.FadeOutAllNonGhostSongs
+- uid: Music.MusicPlayer.FadeOutAllSongs*
+  commentId: Overload:Music.MusicPlayer.FadeOutAllSongs
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_FadeOutAllSongs_System_Single_
+  name: FadeOutAllSongs
+  nameWithType: MusicPlayer.FadeOutAllSongs
+  fullName: Music.MusicPlayer.FadeOutAllSongs
+- uid: Music.MusicPlayer.ResumeProcedural*
+  commentId: Overload:Music.MusicPlayer.ResumeProcedural
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_ResumeProcedural
+  name: ResumeProcedural
+  nameWithType: MusicPlayer.ResumeProcedural
+  fullName: Music.MusicPlayer.ResumeProcedural
+- uid: Music.MusicPlayer.RequestGhostSong*
+  commentId: Overload:Music.MusicPlayer.RequestGhostSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestGhostSong_System_String_
+  name: RequestGhostSong
+  nameWithType: MusicPlayer.RequestGhostSong
+  fullName: Music.MusicPlayer.RequestGhostSong
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Music.MusicPlayer.RequestSSSong*
+  commentId: Overload:Music.MusicPlayer.RequestSSSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestSSSong
+  name: RequestSSSong
+  nameWithType: MusicPlayer.RequestSSSong
+  fullName: Music.MusicPlayer.RequestSSSong
+- uid: Music.MusicPlayer.RequestVoidSeaMusic*
+  commentId: Overload:Music.MusicPlayer.RequestVoidSeaMusic
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestVoidSeaMusic_VoidSea_VoidSeaScene_
+  name: RequestVoidSeaMusic
+  nameWithType: MusicPlayer.RequestVoidSeaMusic
+  fullName: Music.MusicPlayer.RequestVoidSeaMusic
+- uid: VoidSea.VoidSeaScene
+  commentId: T:VoidSea.VoidSeaScene
+  parent: VoidSea
+  isExternal: true
+  href: VoidSea.VoidSeaScene.html
+  name: VoidSeaScene
+  nameWithType: VoidSeaScene
+  fullName: VoidSea.VoidSeaScene
+- uid: VoidSea
+  commentId: N:VoidSea
+  isExternal: true
+  href: VoidSea.html
+  name: VoidSea
+  nameWithType: VoidSea
+  fullName: VoidSea
+- uid: Music.MusicPlayer.RequestIntroRollMusic*
+  commentId: Overload:Music.MusicPlayer.RequestIntroRollMusic
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestIntroRollMusic
+  name: RequestIntroRollMusic
+  nameWithType: MusicPlayer.RequestIntroRollMusic
+  fullName: Music.MusicPlayer.RequestIntroRollMusic
+- uid: Music.MusicPlayer.RequestArenaSong*
+  commentId: Overload:Music.MusicPlayer.RequestArenaSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestArenaSong_System_String_System_Single_
+  name: RequestArenaSong
+  nameWithType: MusicPlayer.RequestArenaSong
+  fullName: Music.MusicPlayer.RequestArenaSong
+- uid: Music.MusicPlayer.GameRequestsSong*
+  commentId: Overload:Music.MusicPlayer.GameRequestsSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_GameRequestsSong_MusicEvent_
+  name: GameRequestsSong
+  nameWithType: MusicPlayer.GameRequestsSong
+  fullName: Music.MusicPlayer.GameRequestsSong
+- uid: Global.MusicEvent
+  commentId: T:Global.MusicEvent
+  isExternal: true
+  href: MusicEvent.html
+  name: MusicEvent
+  nameWithType: MusicEvent
+  fullName: MusicEvent
+- uid: Music.MusicPlayer.MenuRequestsSong*
+  commentId: Overload:Music.MusicPlayer.MenuRequestsSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_MenuRequestsSong_System_String_System_Single_System_Single_
+  name: MenuRequestsSong
+  nameWithType: MusicPlayer.MenuRequestsSong
+  fullName: Music.MusicPlayer.MenuRequestsSong
+- uid: Music.MusicPlayer.GameRequestsSongStop*
+  commentId: Overload:Music.MusicPlayer.GameRequestsSongStop
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_GameRequestsSongStop_StopMusicEvent_
+  name: GameRequestsSongStop
+  nameWithType: MusicPlayer.GameRequestsSongStop
+  fullName: Music.MusicPlayer.GameRequestsSongStop
+- uid: Global.StopMusicEvent
+  commentId: T:Global.StopMusicEvent
+  isExternal: true
+  href: StopMusicEvent.html
+  name: StopMusicEvent
+  nameWithType: StopMusicEvent
+  fullName: StopMusicEvent
+- uid: Music.MusicPlayer.RainRequestStopSong*
+  commentId: Overload:Music.MusicPlayer.RainRequestStopSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RainRequestStopSong
+  name: RainRequestStopSong
+  nameWithType: MusicPlayer.RainRequestStopSong
+  fullName: Music.MusicPlayer.RainRequestStopSong
+- uid: Music.MusicPlayer.NewRegion*
+  commentId: Overload:Music.MusicPlayer.NewRegion
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_NewRegion_System_String_
+  name: NewRegion
+  nameWithType: MusicPlayer.NewRegion
+  fullName: Music.MusicPlayer.NewRegion
+- uid: Music.MusicPlayer.RequestMSSirenSong*
+  commentId: Overload:Music.MusicPlayer.RequestMSSirenSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestMSSirenSong
+  name: RequestMSSirenSong
+  nameWithType: MusicPlayer.RequestMSSirenSong
+  fullName: Music.MusicPlayer.RequestMSSirenSong
+- uid: Music.MusicPlayer.RequestSaintEndingSong*
+  commentId: Overload:Music.MusicPlayer.RequestSaintEndingSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestSaintEndingSong
+  name: RequestSaintEndingSong
+  nameWithType: MusicPlayer.RequestSaintEndingSong
+  fullName: Music.MusicPlayer.RequestSaintEndingSong
+- uid: Music.MusicPlayer.RequestSMEndingSong*
+  commentId: Overload:Music.MusicPlayer.RequestSMEndingSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestSMEndingSong
+  name: RequestSMEndingSong
+  nameWithType: MusicPlayer.RequestSMEndingSong
+  fullName: Music.MusicPlayer.RequestSMEndingSong
+- uid: Music.MusicPlayer.RequestHalcyonSong*
+  commentId: Overload:Music.MusicPlayer.RequestHalcyonSong
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_RequestHalcyonSong_System_String_
+  name: RequestHalcyonSong
+  nameWithType: MusicPlayer.RequestHalcyonSong
+  fullName: Music.MusicPlayer.RequestHalcyonSong
+- uid: Music.MusicPlayer.assetBundlesLoaded*
+  commentId: Overload:Music.MusicPlayer.assetBundlesLoaded
+  isExternal: true
+  href: Music.MusicPlayer.html#Music_MusicPlayer_assetBundlesLoaded
+  name: assetBundlesLoaded
+  nameWithType: MusicPlayer.assetBundlesLoaded
+  fullName: Music.MusicPlayer.assetBundlesLoaded

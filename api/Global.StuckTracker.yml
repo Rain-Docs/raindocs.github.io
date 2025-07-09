@@ -1,0 +1,1456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.StuckTracker
+  commentId: T:Global.StuckTracker
+  id: StuckTracker
+  parent: Global
+  children:
+  - Global.StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)
+  - Global.StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)
+  - Global.StuckTracker.NewRoom(Room)
+  - Global.StuckTracker.Reset
+  - Global.StuckTracker.Update
+  - Global.StuckTracker.Utility
+  - Global.StuckTracker.calculateGetUnstuckPosition
+  - Global.StuckTracker.checkPastPositionsFrom
+  - Global.StuckTracker.closeToGoalButNotSeeingItTracker
+  - Global.StuckTracker.getUnstuckPosCalculator
+  - Global.StuckTracker.goalSatisfactionDistance
+  - Global.StuckTracker.maxStuckCounter
+  - Global.StuckTracker.minStuckCounter
+  - Global.StuckTracker.moveBacklog
+  - Global.StuckTracker.notFollowingCurrentGoalMax
+  - Global.StuckTracker.notFollowingPathToCurrentGoalCounter
+  - Global.StuckTracker.pastPosStuckDistance
+  - Global.StuckTracker.pastPositions
+  - Global.StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter
+  - Global.StuckTracker.satisfiedWithThisPosition
+  - Global.StuckTracker.stuckCloseToShortcutModule
+  - Global.StuckTracker.stuckCounter
+  - Global.StuckTracker.totalTrackedLastPositions
+  - Global.StuckTracker.trackNotFollowingCurrentGoal
+  - Global.StuckTracker.trackPastPositions
+  langs:
+  - csharp
+  - vb
+  name: StuckTracker
+  nameWithType: StuckTracker
+  fullName: StuckTracker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:StuckTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class StuckTracker : AIModule'
+    content.vb: Public Class StuckTracker Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.StuckTracker.pastPositions
+  commentId: F:Global.StuckTracker.pastPositions
+  id: pastPositions
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: pastPositions
+  nameWithType: StuckTracker.pastPositions
+  fullName: StuckTracker.pastPositions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.pastPositions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<IntVector2> pastPositions
+    return:
+      type: System.Collections.Generic.List{RWCustom.IntVector2}
+    content.vb: Public pastPositions As List(Of IntVector2)
+- uid: Global.StuckTracker.stuckCounter
+  commentId: F:Global.StuckTracker.stuckCounter
+  id: stuckCounter
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: stuckCounter
+  nameWithType: StuckTracker.stuckCounter
+  fullName: StuckTracker.stuckCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.stuckCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int stuckCounter
+    return:
+      type: System.Int32
+    content.vb: Public stuckCounter As Integer
+- uid: Global.StuckTracker.notFollowingPathToCurrentGoalCounter
+  commentId: F:Global.StuckTracker.notFollowingPathToCurrentGoalCounter
+  id: notFollowingPathToCurrentGoalCounter
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: notFollowingPathToCurrentGoalCounter
+  nameWithType: StuckTracker.notFollowingPathToCurrentGoalCounter
+  fullName: StuckTracker.notFollowingPathToCurrentGoalCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.notFollowingPathToCurrentGoalCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int notFollowingPathToCurrentGoalCounter
+    return:
+      type: System.Int32
+    content.vb: Public notFollowingPathToCurrentGoalCounter As Integer
+- uid: Global.StuckTracker.notFollowingCurrentGoalMax
+  commentId: F:Global.StuckTracker.notFollowingCurrentGoalMax
+  id: notFollowingCurrentGoalMax
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: notFollowingCurrentGoalMax
+  nameWithType: StuckTracker.notFollowingCurrentGoalMax
+  fullName: StuckTracker.notFollowingCurrentGoalMax
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.notFollowingCurrentGoalMax</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int notFollowingCurrentGoalMax
+    return:
+      type: System.Int32
+    content.vb: Public notFollowingCurrentGoalMax As Integer
+- uid: Global.StuckTracker.goalSatisfactionDistance
+  commentId: F:Global.StuckTracker.goalSatisfactionDistance
+  id: goalSatisfactionDistance
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: goalSatisfactionDistance
+  nameWithType: StuckTracker.goalSatisfactionDistance
+  fullName: StuckTracker.goalSatisfactionDistance
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.goalSatisfactionDistance</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int goalSatisfactionDistance
+    return:
+      type: System.Int32
+    content.vb: Public goalSatisfactionDistance As Integer
+- uid: Global.StuckTracker.totalTrackedLastPositions
+  commentId: F:Global.StuckTracker.totalTrackedLastPositions
+  id: totalTrackedLastPositions
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: totalTrackedLastPositions
+  nameWithType: StuckTracker.totalTrackedLastPositions
+  fullName: StuckTracker.totalTrackedLastPositions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.totalTrackedLastPositions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int totalTrackedLastPositions
+    return:
+      type: System.Int32
+    content.vb: Public totalTrackedLastPositions As Integer
+- uid: Global.StuckTracker.checkPastPositionsFrom
+  commentId: F:Global.StuckTracker.checkPastPositionsFrom
+  id: checkPastPositionsFrom
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: checkPastPositionsFrom
+  nameWithType: StuckTracker.checkPastPositionsFrom
+  fullName: StuckTracker.checkPastPositionsFrom
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.checkPastPositionsFrom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int checkPastPositionsFrom
+    return:
+      type: System.Int32
+    content.vb: Public checkPastPositionsFrom As Integer
+- uid: Global.StuckTracker.pastPosStuckDistance
+  commentId: F:Global.StuckTracker.pastPosStuckDistance
+  id: pastPosStuckDistance
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: pastPosStuckDistance
+  nameWithType: StuckTracker.pastPosStuckDistance
+  fullName: StuckTracker.pastPosStuckDistance
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.pastPosStuckDistance</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int pastPosStuckDistance
+    return:
+      type: System.Int32
+    content.vb: Public pastPosStuckDistance As Integer
+- uid: Global.StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter
+  commentId: F:Global.StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter
+  id: pastStuckPositionsCloseToIncrementStuckCounter
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: pastStuckPositionsCloseToIncrementStuckCounter
+  nameWithType: StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter
+  fullName: StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.pastStuckPositionsCloseToIncrementStuckCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int pastStuckPositionsCloseToIncrementStuckCounter
+    return:
+      type: System.Int32
+    content.vb: Public pastStuckPositionsCloseToIncrementStuckCounter As Integer
+- uid: Global.StuckTracker.minStuckCounter
+  commentId: F:Global.StuckTracker.minStuckCounter
+  id: minStuckCounter
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: minStuckCounter
+  nameWithType: StuckTracker.minStuckCounter
+  fullName: StuckTracker.minStuckCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.minStuckCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int minStuckCounter
+    return:
+      type: System.Int32
+    content.vb: Public minStuckCounter As Integer
+- uid: Global.StuckTracker.maxStuckCounter
+  commentId: F:Global.StuckTracker.maxStuckCounter
+  id: maxStuckCounter
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: maxStuckCounter
+  nameWithType: StuckTracker.maxStuckCounter
+  fullName: StuckTracker.maxStuckCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.maxStuckCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int maxStuckCounter
+    return:
+      type: System.Int32
+    content.vb: Public maxStuckCounter As Integer
+- uid: Global.StuckTracker.trackPastPositions
+  commentId: F:Global.StuckTracker.trackPastPositions
+  id: trackPastPositions
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: trackPastPositions
+  nameWithType: StuckTracker.trackPastPositions
+  fullName: StuckTracker.trackPastPositions
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.trackPastPositions</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool trackPastPositions
+    return:
+      type: System.Boolean
+    content.vb: Public trackPastPositions As Boolean
+- uid: Global.StuckTracker.trackNotFollowingCurrentGoal
+  commentId: F:Global.StuckTracker.trackNotFollowingCurrentGoal
+  id: trackNotFollowingCurrentGoal
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: trackNotFollowingCurrentGoal
+  nameWithType: StuckTracker.trackNotFollowingCurrentGoal
+  fullName: StuckTracker.trackNotFollowingCurrentGoal
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.trackNotFollowingCurrentGoal</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool trackNotFollowingCurrentGoal
+    return:
+      type: System.Boolean
+    content.vb: Public trackNotFollowingCurrentGoal As Boolean
+- uid: Global.StuckTracker.calculateGetUnstuckPosition
+  commentId: F:Global.StuckTracker.calculateGetUnstuckPosition
+  id: calculateGetUnstuckPosition
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: calculateGetUnstuckPosition
+  nameWithType: StuckTracker.calculateGetUnstuckPosition
+  fullName: StuckTracker.calculateGetUnstuckPosition
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.calculateGetUnstuckPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool calculateGetUnstuckPosition
+    return:
+      type: System.Boolean
+    content.vb: Public calculateGetUnstuckPosition As Boolean
+- uid: Global.StuckTracker.satisfiedWithThisPosition
+  commentId: F:Global.StuckTracker.satisfiedWithThisPosition
+  id: satisfiedWithThisPosition
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: satisfiedWithThisPosition
+  nameWithType: StuckTracker.satisfiedWithThisPosition
+  fullName: StuckTracker.satisfiedWithThisPosition
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.satisfiedWithThisPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool satisfiedWithThisPosition
+    return:
+      type: System.Boolean
+    content.vb: Public satisfiedWithThisPosition As Boolean
+- uid: Global.StuckTracker.closeToGoalButNotSeeingItTracker
+  commentId: F:Global.StuckTracker.closeToGoalButNotSeeingItTracker
+  id: closeToGoalButNotSeeingItTracker
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: closeToGoalButNotSeeingItTracker
+  nameWithType: StuckTracker.closeToGoalButNotSeeingItTracker
+  fullName: StuckTracker.closeToGoalButNotSeeingItTracker
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.closeToGoalButNotSeeingItTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StuckTracker.CloseToGoalButNotSeeingItTracker closeToGoalButNotSeeingItTracker
+    return:
+      type: Global.StuckTracker.CloseToGoalButNotSeeingItTracker
+    content.vb: Public closeToGoalButNotSeeingItTracker As StuckTracker.CloseToGoalButNotSeeingItTracker
+- uid: Global.StuckTracker.getUnstuckPosCalculator
+  commentId: F:Global.StuckTracker.getUnstuckPosCalculator
+  id: getUnstuckPosCalculator
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: getUnstuckPosCalculator
+  nameWithType: StuckTracker.getUnstuckPosCalculator
+  fullName: StuckTracker.getUnstuckPosCalculator
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.getUnstuckPosCalculator</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StuckTracker.GetUnstuckPosCalculator getUnstuckPosCalculator
+    return:
+      type: Global.StuckTracker.GetUnstuckPosCalculator
+    content.vb: Public getUnstuckPosCalculator As StuckTracker.GetUnstuckPosCalculator
+- uid: Global.StuckTracker.stuckCloseToShortcutModule
+  commentId: F:Global.StuckTracker.stuckCloseToShortcutModule
+  id: stuckCloseToShortcutModule
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: stuckCloseToShortcutModule
+  nameWithType: StuckTracker.stuckCloseToShortcutModule
+  fullName: StuckTracker.stuckCloseToShortcutModule
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.stuckCloseToShortcutModule</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StuckTracker.StuckCloseToShortcutModule stuckCloseToShortcutModule
+    return:
+      type: Global.StuckTracker.StuckCloseToShortcutModule
+    content.vb: Public stuckCloseToShortcutModule As StuckTracker.StuckCloseToShortcutModule
+- uid: Global.StuckTracker.moveBacklog
+  commentId: F:Global.StuckTracker.moveBacklog
+  id: moveBacklog
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: moveBacklog
+  nameWithType: StuckTracker.moveBacklog
+  fullName: StuckTracker.moveBacklog
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:StuckTracker.moveBacklog</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StuckTracker.MoveBacklog moveBacklog
+    return:
+      type: Global.StuckTracker.MoveBacklog
+    content.vb: Public moveBacklog As StuckTracker.MoveBacklog
+- uid: Global.StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)
+  commentId: M:Global.StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)
+  id: '#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)'
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: StuckTracker(ArtificialIntelligence, bool, bool)
+  nameWithType: StuckTracker.StuckTracker(ArtificialIntelligence, bool, bool)
+  fullName: StuckTracker.StuckTracker(ArtificialIntelligence, bool, bool)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>StuckTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public StuckTracker(ArtificialIntelligence AI, bool trackPastPositions, bool trackNotFollowingCurrentGoal)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: trackPastPositions
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>trackPastPositions</parameter>
+            <parameter>M:StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: trackNotFollowingCurrentGoal
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>trackNotFollowingCurrentGoal</parameter>
+            <parameter>M:StuckTracker.#ctor(ArtificialIntelligence,System.Boolean,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence, trackPastPositions As Boolean, trackNotFollowingCurrentGoal As Boolean)
+  overload: Global.StuckTracker.#ctor*
+  nameWithType.vb: StuckTracker.New(ArtificialIntelligence, Boolean, Boolean)
+  fullName.vb: StuckTracker.New(ArtificialIntelligence, Boolean, Boolean)
+  name.vb: New(ArtificialIntelligence, Boolean, Boolean)
+- uid: Global.StuckTracker.NewRoom(Room)
+  commentId: M:Global.StuckTracker.NewRoom(Room)
+  id: NewRoom(Room)
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: NewRoom(Room)
+  nameWithType: StuckTracker.NewRoom(Room)
+  fullName: StuckTracker.NewRoom(Room)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:StuckTracker.NewRoom(Room)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void NewRoom(Room room)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:StuckTracker.NewRoom(Room)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub NewRoom(room As Room)
+  overridden: Global.AIModule.NewRoom(Room)
+  overload: Global.StuckTracker.NewRoom*
+- uid: Global.StuckTracker.Update
+  commentId: M:Global.StuckTracker.Update
+  id: Update
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: StuckTracker.Update()
+  fullName: StuckTracker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:StuckTracker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.StuckTracker.Update*
+- uid: Global.StuckTracker.Reset
+  commentId: M:Global.StuckTracker.Reset
+  id: Reset
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: StuckTracker.Reset()
+  fullName: StuckTracker.Reset()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:StuckTracker.Reset</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: Global.StuckTracker.Reset*
+- uid: Global.StuckTracker.Utility
+  commentId: M:Global.StuckTracker.Utility
+  id: Utility
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: Utility()
+  nameWithType: StuckTracker.Utility()
+  fullName: StuckTracker.Utility()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:StuckTracker.Utility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float Utility()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:StuckTracker.Utility</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function Utility() As Single
+  overridden: Global.AIModule.Utility
+  overload: Global.StuckTracker.Utility*
+- uid: Global.StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)
+  commentId: M:Global.StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)
+  id: AddSubModule(StuckTracker.StuckTrackerModule)
+  parent: Global.StuckTracker
+  langs:
+  - csharp
+  - vb
+  name: AddSubModule(StuckTrackerModule)
+  nameWithType: StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)
+  fullName: StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AddSubModule(StuckTracker.StuckTrackerModule newModule)
+    parameters:
+    - id: newModule
+      type: Global.StuckTracker.StuckTrackerModule
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newModule</parameter>
+            <parameter>M:StuckTracker.AddSubModule(StuckTracker.StuckTrackerModule)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub AddSubModule(newModule As StuckTracker.StuckTrackerModule)
+  overload: Global.StuckTracker.AddSubModule*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{RWCustom.IntVector2}
+  commentId: T:System.Collections.Generic.List{RWCustom.IntVector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IntVector2>
+  nameWithType: List<IntVector2>
+  fullName: System.Collections.Generic.List<RWCustom.IntVector2>
+  nameWithType.vb: List(Of IntVector2)
+  fullName.vb: System.Collections.Generic.List(Of RWCustom.IntVector2)
+  name.vb: List(Of IntVector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.StuckTracker.CloseToGoalButNotSeeingItTracker
+  commentId: T:Global.StuckTracker.CloseToGoalButNotSeeingItTracker
+  isExternal: true
+  href: StuckTracker.html
+  name: StuckTracker.CloseToGoalButNotSeeingItTracker
+  nameWithType: StuckTracker.CloseToGoalButNotSeeingItTracker
+  fullName: StuckTracker.CloseToGoalButNotSeeingItTracker
+  spec.csharp:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.CloseToGoalButNotSeeingItTracker
+    name: CloseToGoalButNotSeeingItTracker
+    isExternal: true
+    href: StuckTracker.CloseToGoalButNotSeeingItTracker.html
+  spec.vb:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.CloseToGoalButNotSeeingItTracker
+    name: CloseToGoalButNotSeeingItTracker
+    isExternal: true
+    href: StuckTracker.CloseToGoalButNotSeeingItTracker.html
+- uid: Global.StuckTracker.GetUnstuckPosCalculator
+  commentId: T:Global.StuckTracker.GetUnstuckPosCalculator
+  isExternal: true
+  href: StuckTracker.html
+  name: StuckTracker.GetUnstuckPosCalculator
+  nameWithType: StuckTracker.GetUnstuckPosCalculator
+  fullName: StuckTracker.GetUnstuckPosCalculator
+  spec.csharp:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.GetUnstuckPosCalculator
+    name: GetUnstuckPosCalculator
+    isExternal: true
+    href: StuckTracker.GetUnstuckPosCalculator.html
+  spec.vb:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.GetUnstuckPosCalculator
+    name: GetUnstuckPosCalculator
+    isExternal: true
+    href: StuckTracker.GetUnstuckPosCalculator.html
+- uid: Global.StuckTracker.StuckCloseToShortcutModule
+  commentId: T:Global.StuckTracker.StuckCloseToShortcutModule
+  isExternal: true
+  href: StuckTracker.html
+  name: StuckTracker.StuckCloseToShortcutModule
+  nameWithType: StuckTracker.StuckCloseToShortcutModule
+  fullName: StuckTracker.StuckCloseToShortcutModule
+  spec.csharp:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.StuckCloseToShortcutModule
+    name: StuckCloseToShortcutModule
+    isExternal: true
+    href: StuckTracker.StuckCloseToShortcutModule.html
+  spec.vb:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.StuckCloseToShortcutModule
+    name: StuckCloseToShortcutModule
+    isExternal: true
+    href: StuckTracker.StuckCloseToShortcutModule.html
+- uid: Global.StuckTracker.MoveBacklog
+  commentId: T:Global.StuckTracker.MoveBacklog
+  isExternal: true
+  href: StuckTracker.html
+  name: StuckTracker.MoveBacklog
+  nameWithType: StuckTracker.MoveBacklog
+  fullName: StuckTracker.MoveBacklog
+  spec.csharp:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.MoveBacklog
+    name: MoveBacklog
+    isExternal: true
+    href: StuckTracker.MoveBacklog.html
+  spec.vb:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.MoveBacklog
+    name: MoveBacklog
+    isExternal: true
+    href: StuckTracker.MoveBacklog.html
+- uid: Global.StuckTracker.#ctor*
+  commentId: Overload:Global.StuckTracker.#ctor
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker__ctor_ArtificialIntelligence_System_Boolean_System_Boolean_
+  name: StuckTracker
+  nameWithType: StuckTracker.StuckTracker
+  fullName: StuckTracker.StuckTracker
+  nameWithType.vb: StuckTracker.New
+  fullName.vb: StuckTracker.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.StuckTracker.NewRoom*
+  commentId: Overload:Global.StuckTracker.NewRoom
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker_NewRoom_Room_
+  name: NewRoom
+  nameWithType: StuckTracker.NewRoom
+  fullName: StuckTracker.NewRoom
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.StuckTracker.Update*
+  commentId: Overload:Global.StuckTracker.Update
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker_Update
+  name: Update
+  nameWithType: StuckTracker.Update
+  fullName: StuckTracker.Update
+- uid: Global.StuckTracker.Reset*
+  commentId: Overload:Global.StuckTracker.Reset
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker_Reset
+  name: Reset
+  nameWithType: StuckTracker.Reset
+  fullName: StuckTracker.Reset
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: Global.StuckTracker.Utility*
+  commentId: Overload:Global.StuckTracker.Utility
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker_Utility
+  name: Utility
+  nameWithType: StuckTracker.Utility
+  fullName: StuckTracker.Utility
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.StuckTracker.AddSubModule*
+  commentId: Overload:Global.StuckTracker.AddSubModule
+  isExternal: true
+  href: Global.StuckTracker.html#StuckTracker_AddSubModule_StuckTracker_StuckTrackerModule_
+  name: AddSubModule
+  nameWithType: StuckTracker.AddSubModule
+  fullName: StuckTracker.AddSubModule
+- uid: Global.StuckTracker.StuckTrackerModule
+  commentId: T:Global.StuckTracker.StuckTrackerModule
+  isExternal: true
+  href: StuckTracker.html
+  name: StuckTracker.StuckTrackerModule
+  nameWithType: StuckTracker.StuckTrackerModule
+  fullName: StuckTracker.StuckTrackerModule
+  spec.csharp:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.StuckTrackerModule
+    name: StuckTrackerModule
+    isExternal: true
+    href: StuckTracker.StuckTrackerModule.html
+  spec.vb:
+  - uid: Global.StuckTracker
+    name: StuckTracker
+    isExternal: true
+    href: StuckTracker.html
+  - name: .
+  - uid: Global.StuckTracker.StuckTrackerModule
+    name: StuckTrackerModule
+    isExternal: true
+    href: StuckTracker.StuckTrackerModule.html

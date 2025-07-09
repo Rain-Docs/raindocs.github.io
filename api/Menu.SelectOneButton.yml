@@ -1,0 +1,1637 @@
+### YamlMime:ManagedReference
+items:
+- uid: Menu.SelectOneButton
+  commentId: T:Menu.SelectOneButton
+  id: SelectOneButton
+  parent: Menu
+  children:
+  - Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)
+  - Menu.SelectOneButton.AmISelected
+  - Menu.SelectOneButton.Clicked
+  - Menu.SelectOneButton.GrafUpdate(System.Single)
+  - Menu.SelectOneButton.MyColor(System.Single)
+  - Menu.SelectOneButton.Update
+  - Menu.SelectOneButton.buttonArray
+  - Menu.SelectOneButton.buttonArrayIndex
+  - Menu.SelectOneButton.handleSelectedColInChild
+  - Menu.SelectOneButton.lastSelectedCol
+  - Menu.SelectOneButton.outerRect
+  - Menu.SelectOneButton.selectedCol
+  langs:
+  - csharp
+  - vb
+  name: SelectOneButton
+  nameWithType: SelectOneButton
+  fullName: Menu.SelectOneButton
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Menu.SelectOneButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SelectOneButton : SimpleButton, SelectableMenuObject, ButtonMenuObject'
+    content.vb: Public Class SelectOneButton Inherits SimpleButton Implements SelectableMenuObject, ButtonMenuObject
+  inheritance:
+  - System.Object
+  - Menu.MenuObject
+  - Menu.PositionedMenuObject
+  - Menu.RectangularMenuObject
+  - Menu.ButtonTemplate
+  - Menu.SimpleButton
+  derivedClasses:
+  - Menu.InputOptionsMenu.DeviceButton
+  - Menu.InputOptionsMenu.PlayerButton
+  - Menu.MusicTrackButton
+  implements:
+  - Menu.SelectableMenuObject
+  - Menu.ButtonMenuObject
+  inheritedMembers:
+  - Menu.SimpleButton.menuLabel
+  - Menu.SimpleButton.roundedRect
+  - Menu.SimpleButton.selectRect
+  - Menu.SimpleButton.labelColor
+  - Menu.SimpleButton.signalText
+  - Menu.SimpleButton.fadeAlpha
+  - Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+  - Menu.ButtonTemplate.buttonBehav
+  - Menu.ButtonTemplate.black
+  - Menu.ButtonTemplate.rectColor
+  - Menu.ButtonTemplate.InterpColor(System.Single,HSLColor)
+  - Menu.ButtonTemplate.IsMouseOverMe
+  - Menu.ButtonTemplate.CurrentlySelectableMouse
+  - Menu.ButtonTemplate.CurrentlySelectableNonMouse
+  - Menu.ButtonTemplate.GetButtonBehavior
+  - Menu.RectangularMenuObject.size
+  - Menu.RectangularMenuObject.lastSize
+  - Menu.RectangularMenuObject.DrawSize(System.Single)
+  - Menu.RectangularMenuObject.MouseOver
+  - Menu.PositionedMenuObject.pos
+  - Menu.PositionedMenuObject.lastPos
+  - Menu.PositionedMenuObject.DrawPos(System.Single)
+  - Menu.PositionedMenuObject.DrawX(System.Single)
+  - Menu.PositionedMenuObject.DrawY(System.Single)
+  - Menu.PositionedMenuObject.ScreenPos
+  - Menu.PositionedMenuObject.ScreenLastPos
+  - Menu.MenuObject.menu
+  - Menu.MenuObject.subObjects
+  - Menu.MenuObject.owner
+  - Menu.MenuObject.nextSelectable
+  - Menu.MenuObject.toggled
+  - Menu.MenuObject.inactive
+  - Menu.MenuObject.myContainer
+  - Menu.MenuObject.Singal(Menu.MenuObject,System.String)
+  - Menu.MenuObject.RemoveSprites
+  - Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+  - Menu.MenuObject.Container
+  - Menu.MenuObject.Selected
+  - Menu.MenuObject.page
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Menu.SelectOneButton.buttonArray
+  commentId: F:Menu.SelectOneButton.buttonArray
+  id: buttonArray
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: buttonArray
+  nameWithType: SelectOneButton.buttonArray
+  fullName: Menu.SelectOneButton.buttonArray
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.buttonArray</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SelectOneButton[] buttonArray
+    return:
+      type: Menu.SelectOneButton[]
+    content.vb: Public buttonArray As SelectOneButton()
+- uid: Menu.SelectOneButton.buttonArrayIndex
+  commentId: F:Menu.SelectOneButton.buttonArrayIndex
+  id: buttonArrayIndex
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: buttonArrayIndex
+  nameWithType: SelectOneButton.buttonArrayIndex
+  fullName: Menu.SelectOneButton.buttonArrayIndex
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.buttonArrayIndex</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int buttonArrayIndex
+    return:
+      type: System.Int32
+    content.vb: Public buttonArrayIndex As Integer
+- uid: Menu.SelectOneButton.outerRect
+  commentId: F:Menu.SelectOneButton.outerRect
+  id: outerRect
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: outerRect
+  nameWithType: SelectOneButton.outerRect
+  fullName: Menu.SelectOneButton.outerRect
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.outerRect</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RoundedRect outerRect
+    return:
+      type: Menu.RoundedRect
+    content.vb: Public outerRect As RoundedRect
+- uid: Menu.SelectOneButton.selectedCol
+  commentId: F:Menu.SelectOneButton.selectedCol
+  id: selectedCol
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: selectedCol
+  nameWithType: SelectOneButton.selectedCol
+  fullName: Menu.SelectOneButton.selectedCol
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.selectedCol</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float selectedCol
+    return:
+      type: System.Single
+    content.vb: Public selectedCol As Single
+- uid: Menu.SelectOneButton.lastSelectedCol
+  commentId: F:Menu.SelectOneButton.lastSelectedCol
+  id: lastSelectedCol
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: lastSelectedCol
+  nameWithType: SelectOneButton.lastSelectedCol
+  fullName: Menu.SelectOneButton.lastSelectedCol
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.lastSelectedCol</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastSelectedCol
+    return:
+      type: System.Single
+    content.vb: Public lastSelectedCol As Single
+- uid: Menu.SelectOneButton.handleSelectedColInChild
+  commentId: F:Menu.SelectOneButton.handleSelectedColInChild
+  id: handleSelectedColInChild
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: handleSelectedColInChild
+  nameWithType: SelectOneButton.handleSelectedColInChild
+  fullName: Menu.SelectOneButton.handleSelectedColInChild
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Menu.SelectOneButton.handleSelectedColInChild</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool handleSelectedColInChild
+    return:
+      type: System.Boolean
+    content.vb: Public handleSelectedColInChild As Boolean
+- uid: Menu.SelectOneButton.MyColor(System.Single)
+  commentId: M:Menu.SelectOneButton.MyColor(System.Single)
+  id: MyColor(System.Single)
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: MyColor(float)
+  nameWithType: SelectOneButton.MyColor(float)
+  fullName: Menu.SelectOneButton.MyColor(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.SelectOneButton.MyColor(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override Color MyColor(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Menu.SelectOneButton.MyColor(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Color
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Menu.SelectOneButton.MyColor(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function MyColor(timeStacker As Single) As Color
+  overridden: Menu.ButtonTemplate.MyColor(System.Single)
+  overload: Menu.SelectOneButton.MyColor*
+  nameWithType.vb: SelectOneButton.MyColor(Single)
+  fullName.vb: Menu.SelectOneButton.MyColor(Single)
+  name.vb: MyColor(Single)
+- uid: Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)
+  commentId: M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)
+  id: '#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)'
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: SelectOneButton(Menu, MenuObject, string, string, Vector2, Vector2, SelectOneButton[], int)
+  nameWithType: SelectOneButton.SelectOneButton(Menu, MenuObject, string, string, Vector2, Vector2, SelectOneButton[], int)
+  fullName: Menu.SelectOneButton.SelectOneButton(Menu.Menu, Menu.MenuObject, string, string, UnityEngine.Vector2, UnityEngine.Vector2, Menu.SelectOneButton[], int)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Menu.SelectOneButton</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SelectOneButton(Menu menu, MenuObject owner, string displayText, string signalText, Vector2 pos, Vector2 size, SelectOneButton[] buttonArray, int buttonArrayIndex)
+    parameters:
+    - id: menu
+      type: Menu.Menu
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>menu</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: owner
+      type: Menu.MenuObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>owner</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: displayText
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>displayText</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: signalText
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>signalText</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: size
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>size</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: buttonArray
+      type: Menu.SelectOneButton[]
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>buttonArray</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: buttonArrayIndex
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>buttonArrayIndex</parameter>
+            <parameter>M:Menu.SelectOneButton.#ctor(Menu.Menu,Menu.MenuObject,System.String,System.String,UnityEngine.Vector2,UnityEngine.Vector2,Menu.SelectOneButton[],System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(menu As Menu, owner As MenuObject, displayText As String, signalText As String, pos As Vector2, size As Vector2, buttonArray As SelectOneButton(), buttonArrayIndex As Integer)
+  overload: Menu.SelectOneButton.#ctor*
+  nameWithType.vb: SelectOneButton.New(Menu, MenuObject, String, String, Vector2, Vector2, SelectOneButton(), Integer)
+  fullName.vb: Menu.SelectOneButton.New(Menu.Menu, Menu.MenuObject, String, String, UnityEngine.Vector2, UnityEngine.Vector2, Menu.SelectOneButton(), Integer)
+  name.vb: New(Menu, MenuObject, String, String, Vector2, Vector2, SelectOneButton(), Integer)
+- uid: Menu.SelectOneButton.Update
+  commentId: M:Menu.SelectOneButton.Update
+  id: Update
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SelectOneButton.Update()
+  fullName: Menu.SelectOneButton.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.SelectOneButton.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Menu.SimpleButton.Update
+  overload: Menu.SelectOneButton.Update*
+- uid: Menu.SelectOneButton.GrafUpdate(System.Single)
+  commentId: M:Menu.SelectOneButton.GrafUpdate(System.Single)
+  id: GrafUpdate(System.Single)
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: GrafUpdate(float)
+  nameWithType: SelectOneButton.GrafUpdate(float)
+  fullName: Menu.SelectOneButton.GrafUpdate(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.SelectOneButton.GrafUpdate(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void GrafUpdate(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:Menu.SelectOneButton.GrafUpdate(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub GrafUpdate(timeStacker As Single)
+  overridden: Menu.SimpleButton.GrafUpdate(System.Single)
+  overload: Menu.SelectOneButton.GrafUpdate*
+  nameWithType.vb: SelectOneButton.GrafUpdate(Single)
+  fullName.vb: Menu.SelectOneButton.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+- uid: Menu.SelectOneButton.Clicked
+  commentId: M:Menu.SelectOneButton.Clicked
+  id: Clicked
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: Clicked()
+  nameWithType: SelectOneButton.Clicked()
+  fullName: Menu.SelectOneButton.Clicked()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Menu.SelectOneButton.Clicked</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Clicked()
+    content.vb: Public Overrides Sub Clicked()
+  overridden: Menu.SimpleButton.Clicked
+  overload: Menu.SelectOneButton.Clicked*
+- uid: Menu.SelectOneButton.AmISelected
+  commentId: P:Menu.SelectOneButton.AmISelected
+  id: AmISelected
+  parent: Menu.SelectOneButton
+  langs:
+  - csharp
+  - vb
+  name: AmISelected
+  nameWithType: SelectOneButton.AmISelected
+  fullName: Menu.SelectOneButton.AmISelected
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Menu
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Menu.SelectOneButton.AmISelected</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool AmISelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AmISelected As Boolean
+  overload: Menu.SelectOneButton.AmISelected*
+references:
+- uid: Menu
+  commentId: N:Menu
+  isExternal: true
+  href: Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Menu.MenuObject
+  commentId: T:Menu.MenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.MenuObject.html
+  name: MenuObject
+  nameWithType: MenuObject
+  fullName: Menu.MenuObject
+- uid: Menu.PositionedMenuObject
+  commentId: T:Menu.PositionedMenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.PositionedMenuObject.html
+  name: PositionedMenuObject
+  nameWithType: PositionedMenuObject
+  fullName: Menu.PositionedMenuObject
+- uid: Menu.RectangularMenuObject
+  commentId: T:Menu.RectangularMenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.RectangularMenuObject.html
+  name: RectangularMenuObject
+  nameWithType: RectangularMenuObject
+  fullName: Menu.RectangularMenuObject
+- uid: Menu.ButtonTemplate
+  commentId: T:Menu.ButtonTemplate
+  parent: Menu
+  isExternal: true
+  href: Menu.ButtonTemplate.html
+  name: ButtonTemplate
+  nameWithType: ButtonTemplate
+  fullName: Menu.ButtonTemplate
+- uid: Menu.SimpleButton
+  commentId: T:Menu.SimpleButton
+  parent: Menu
+  isExternal: true
+  href: Menu.SimpleButton.html
+  name: SimpleButton
+  nameWithType: SimpleButton
+  fullName: Menu.SimpleButton
+- uid: Menu.SelectableMenuObject
+  commentId: T:Menu.SelectableMenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.SelectableMenuObject.html
+  name: SelectableMenuObject
+  nameWithType: SelectableMenuObject
+  fullName: Menu.SelectableMenuObject
+- uid: Menu.ButtonMenuObject
+  commentId: T:Menu.ButtonMenuObject
+  parent: Menu
+  isExternal: true
+  href: Menu.ButtonMenuObject.html
+  name: ButtonMenuObject
+  nameWithType: ButtonMenuObject
+  fullName: Menu.ButtonMenuObject
+- uid: Menu.SimpleButton.menuLabel
+  commentId: F:Menu.SimpleButton.menuLabel
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_menuLabel
+  name: menuLabel
+  nameWithType: SimpleButton.menuLabel
+  fullName: Menu.SimpleButton.menuLabel
+- uid: Menu.SimpleButton.roundedRect
+  commentId: F:Menu.SimpleButton.roundedRect
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_roundedRect
+  name: roundedRect
+  nameWithType: SimpleButton.roundedRect
+  fullName: Menu.SimpleButton.roundedRect
+- uid: Menu.SimpleButton.selectRect
+  commentId: F:Menu.SimpleButton.selectRect
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_selectRect
+  name: selectRect
+  nameWithType: SimpleButton.selectRect
+  fullName: Menu.SimpleButton.selectRect
+- uid: Menu.SimpleButton.labelColor
+  commentId: F:Menu.SimpleButton.labelColor
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_labelColor
+  name: labelColor
+  nameWithType: SimpleButton.labelColor
+  fullName: Menu.SimpleButton.labelColor
+- uid: Menu.SimpleButton.signalText
+  commentId: F:Menu.SimpleButton.signalText
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_signalText
+  name: signalText
+  nameWithType: SimpleButton.signalText
+  fullName: Menu.SimpleButton.signalText
+- uid: Menu.SimpleButton.fadeAlpha
+  commentId: F:Menu.SimpleButton.fadeAlpha
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_fadeAlpha
+  name: fadeAlpha
+  nameWithType: SimpleButton.fadeAlpha
+  fullName: Menu.SimpleButton.fadeAlpha
+- uid: Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+  commentId: M:Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_SetSize_UnityEngine_Vector2_
+  name: SetSize(Vector2)
+  nameWithType: SimpleButton.SetSize(Vector2)
+  fullName: Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+    name: SetSize
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_SetSize_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Menu.SimpleButton.SetSize(UnityEngine.Vector2)
+    name: SetSize
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_SetSize_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Menu.ButtonTemplate.buttonBehav
+  commentId: F:Menu.ButtonTemplate.buttonBehav
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_buttonBehav
+  name: buttonBehav
+  nameWithType: ButtonTemplate.buttonBehav
+  fullName: Menu.ButtonTemplate.buttonBehav
+- uid: Menu.ButtonTemplate.black
+  commentId: F:Menu.ButtonTemplate.black
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_black
+  name: black
+  nameWithType: ButtonTemplate.black
+  fullName: Menu.ButtonTemplate.black
+- uid: Menu.ButtonTemplate.rectColor
+  commentId: F:Menu.ButtonTemplate.rectColor
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_rectColor
+  name: rectColor
+  nameWithType: ButtonTemplate.rectColor
+  fullName: Menu.ButtonTemplate.rectColor
+- uid: Menu.ButtonTemplate.InterpColor(System.Single,HSLColor)
+  commentId: M:Menu.ButtonTemplate.InterpColor(System.Single,HSLColor)
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_InterpColor_System_Single_HSLColor_
+  name: InterpColor(float, HSLColor)
+  nameWithType: ButtonTemplate.InterpColor(float, HSLColor)
+  fullName: Menu.ButtonTemplate.InterpColor(float, HSLColor)
+  nameWithType.vb: ButtonTemplate.InterpColor(Single, HSLColor)
+  fullName.vb: Menu.ButtonTemplate.InterpColor(Single, HSLColor)
+  name.vb: InterpColor(Single, HSLColor)
+  spec.csharp:
+  - uid: Menu.ButtonTemplate.InterpColor(System.Single,HSLColor)
+    name: InterpColor
+    isExternal: true
+    href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_InterpColor_System_Single_HSLColor_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.HSLColor
+    name: HSLColor
+    isExternal: true
+    href: HSLColor.html
+  - name: )
+  spec.vb:
+  - uid: Menu.ButtonTemplate.InterpColor(System.Single,HSLColor)
+    name: InterpColor
+    isExternal: true
+    href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_InterpColor_System_Single_HSLColor_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: Global.HSLColor
+    name: HSLColor
+    isExternal: true
+    href: HSLColor.html
+  - name: )
+- uid: Menu.ButtonTemplate.IsMouseOverMe
+  commentId: P:Menu.ButtonTemplate.IsMouseOverMe
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_IsMouseOverMe
+  name: IsMouseOverMe
+  nameWithType: ButtonTemplate.IsMouseOverMe
+  fullName: Menu.ButtonTemplate.IsMouseOverMe
+- uid: Menu.ButtonTemplate.CurrentlySelectableMouse
+  commentId: P:Menu.ButtonTemplate.CurrentlySelectableMouse
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_CurrentlySelectableMouse
+  name: CurrentlySelectableMouse
+  nameWithType: ButtonTemplate.CurrentlySelectableMouse
+  fullName: Menu.ButtonTemplate.CurrentlySelectableMouse
+- uid: Menu.ButtonTemplate.CurrentlySelectableNonMouse
+  commentId: P:Menu.ButtonTemplate.CurrentlySelectableNonMouse
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_CurrentlySelectableNonMouse
+  name: CurrentlySelectableNonMouse
+  nameWithType: ButtonTemplate.CurrentlySelectableNonMouse
+  fullName: Menu.ButtonTemplate.CurrentlySelectableNonMouse
+- uid: Menu.ButtonTemplate.GetButtonBehavior
+  commentId: P:Menu.ButtonTemplate.GetButtonBehavior
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_GetButtonBehavior
+  name: GetButtonBehavior
+  nameWithType: ButtonTemplate.GetButtonBehavior
+  fullName: Menu.ButtonTemplate.GetButtonBehavior
+- uid: Menu.RectangularMenuObject.size
+  commentId: F:Menu.RectangularMenuObject.size
+  parent: Menu.RectangularMenuObject
+  isExternal: true
+  href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_size
+  name: size
+  nameWithType: RectangularMenuObject.size
+  fullName: Menu.RectangularMenuObject.size
+- uid: Menu.RectangularMenuObject.lastSize
+  commentId: F:Menu.RectangularMenuObject.lastSize
+  parent: Menu.RectangularMenuObject
+  isExternal: true
+  href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_lastSize
+  name: lastSize
+  nameWithType: RectangularMenuObject.lastSize
+  fullName: Menu.RectangularMenuObject.lastSize
+- uid: Menu.RectangularMenuObject.DrawSize(System.Single)
+  commentId: M:Menu.RectangularMenuObject.DrawSize(System.Single)
+  parent: Menu.RectangularMenuObject
+  isExternal: true
+  href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_DrawSize_System_Single_
+  name: DrawSize(float)
+  nameWithType: RectangularMenuObject.DrawSize(float)
+  fullName: Menu.RectangularMenuObject.DrawSize(float)
+  nameWithType.vb: RectangularMenuObject.DrawSize(Single)
+  fullName.vb: Menu.RectangularMenuObject.DrawSize(Single)
+  name.vb: DrawSize(Single)
+  spec.csharp:
+  - uid: Menu.RectangularMenuObject.DrawSize(System.Single)
+    name: DrawSize
+    isExternal: true
+    href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_DrawSize_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.RectangularMenuObject.DrawSize(System.Single)
+    name: DrawSize
+    isExternal: true
+    href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_DrawSize_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.RectangularMenuObject.MouseOver
+  commentId: P:Menu.RectangularMenuObject.MouseOver
+  parent: Menu.RectangularMenuObject
+  isExternal: true
+  href: Menu.RectangularMenuObject.html#Menu_RectangularMenuObject_MouseOver
+  name: MouseOver
+  nameWithType: RectangularMenuObject.MouseOver
+  fullName: Menu.RectangularMenuObject.MouseOver
+- uid: Menu.PositionedMenuObject.pos
+  commentId: F:Menu.PositionedMenuObject.pos
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_pos
+  name: pos
+  nameWithType: PositionedMenuObject.pos
+  fullName: Menu.PositionedMenuObject.pos
+- uid: Menu.PositionedMenuObject.lastPos
+  commentId: F:Menu.PositionedMenuObject.lastPos
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_lastPos
+  name: lastPos
+  nameWithType: PositionedMenuObject.lastPos
+  fullName: Menu.PositionedMenuObject.lastPos
+- uid: Menu.PositionedMenuObject.DrawPos(System.Single)
+  commentId: M:Menu.PositionedMenuObject.DrawPos(System.Single)
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_
+  name: DrawPos(float)
+  nameWithType: PositionedMenuObject.DrawPos(float)
+  fullName: Menu.PositionedMenuObject.DrawPos(float)
+  nameWithType.vb: PositionedMenuObject.DrawPos(Single)
+  fullName.vb: Menu.PositionedMenuObject.DrawPos(Single)
+  name.vb: DrawPos(Single)
+  spec.csharp:
+  - uid: Menu.PositionedMenuObject.DrawPos(System.Single)
+    name: DrawPos
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.PositionedMenuObject.DrawPos(System.Single)
+    name: DrawPos
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawPos_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.PositionedMenuObject.DrawX(System.Single)
+  commentId: M:Menu.PositionedMenuObject.DrawX(System.Single)
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_
+  name: DrawX(float)
+  nameWithType: PositionedMenuObject.DrawX(float)
+  fullName: Menu.PositionedMenuObject.DrawX(float)
+  nameWithType.vb: PositionedMenuObject.DrawX(Single)
+  fullName.vb: Menu.PositionedMenuObject.DrawX(Single)
+  name.vb: DrawX(Single)
+  spec.csharp:
+  - uid: Menu.PositionedMenuObject.DrawX(System.Single)
+    name: DrawX
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.PositionedMenuObject.DrawX(System.Single)
+    name: DrawX
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawX_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.PositionedMenuObject.DrawY(System.Single)
+  commentId: M:Menu.PositionedMenuObject.DrawY(System.Single)
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_
+  name: DrawY(float)
+  nameWithType: PositionedMenuObject.DrawY(float)
+  fullName: Menu.PositionedMenuObject.DrawY(float)
+  nameWithType.vb: PositionedMenuObject.DrawY(Single)
+  fullName.vb: Menu.PositionedMenuObject.DrawY(Single)
+  name.vb: DrawY(Single)
+  spec.csharp:
+  - uid: Menu.PositionedMenuObject.DrawY(System.Single)
+    name: DrawY
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.PositionedMenuObject.DrawY(System.Single)
+    name: DrawY
+    isExternal: true
+    href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_DrawY_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.PositionedMenuObject.ScreenPos
+  commentId: P:Menu.PositionedMenuObject.ScreenPos
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenPos
+  name: ScreenPos
+  nameWithType: PositionedMenuObject.ScreenPos
+  fullName: Menu.PositionedMenuObject.ScreenPos
+- uid: Menu.PositionedMenuObject.ScreenLastPos
+  commentId: P:Menu.PositionedMenuObject.ScreenLastPos
+  parent: Menu.PositionedMenuObject
+  isExternal: true
+  href: Menu.PositionedMenuObject.html#Menu_PositionedMenuObject_ScreenLastPos
+  name: ScreenLastPos
+  nameWithType: PositionedMenuObject.ScreenLastPos
+  fullName: Menu.PositionedMenuObject.ScreenLastPos
+- uid: Menu.MenuObject.menu
+  commentId: F:Menu.MenuObject.menu
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_menu
+  name: menu
+  nameWithType: MenuObject.menu
+  fullName: Menu.MenuObject.menu
+- uid: Menu.MenuObject.subObjects
+  commentId: F:Menu.MenuObject.subObjects
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_subObjects
+  name: subObjects
+  nameWithType: MenuObject.subObjects
+  fullName: Menu.MenuObject.subObjects
+- uid: Menu.MenuObject.owner
+  commentId: F:Menu.MenuObject.owner
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_owner
+  name: owner
+  nameWithType: MenuObject.owner
+  fullName: Menu.MenuObject.owner
+- uid: Menu.MenuObject.nextSelectable
+  commentId: F:Menu.MenuObject.nextSelectable
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_nextSelectable
+  name: nextSelectable
+  nameWithType: MenuObject.nextSelectable
+  fullName: Menu.MenuObject.nextSelectable
+- uid: Menu.MenuObject.toggled
+  commentId: F:Menu.MenuObject.toggled
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_toggled
+  name: toggled
+  nameWithType: MenuObject.toggled
+  fullName: Menu.MenuObject.toggled
+- uid: Menu.MenuObject.inactive
+  commentId: F:Menu.MenuObject.inactive
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_inactive
+  name: inactive
+  nameWithType: MenuObject.inactive
+  fullName: Menu.MenuObject.inactive
+- uid: Menu.MenuObject.myContainer
+  commentId: F:Menu.MenuObject.myContainer
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_myContainer
+  name: myContainer
+  nameWithType: MenuObject.myContainer
+  fullName: Menu.MenuObject.myContainer
+- uid: Menu.MenuObject.Singal(Menu.MenuObject,System.String)
+  commentId: M:Menu.MenuObject.Singal(Menu.MenuObject,System.String)
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_
+  name: Singal(MenuObject, string)
+  nameWithType: MenuObject.Singal(MenuObject, string)
+  fullName: Menu.MenuObject.Singal(Menu.MenuObject, string)
+  nameWithType.vb: MenuObject.Singal(MenuObject, String)
+  fullName.vb: Menu.MenuObject.Singal(Menu.MenuObject, String)
+  name.vb: Singal(MenuObject, String)
+  spec.csharp:
+  - uid: Menu.MenuObject.Singal(Menu.MenuObject,System.String)
+    name: Singal
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Menu.MenuObject.Singal(Menu.MenuObject,System.String)
+    name: Singal
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_Singal_Menu_MenuObject_System_String_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Menu.MenuObject.RemoveSprites
+  commentId: M:Menu.MenuObject.RemoveSprites
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_RemoveSprites
+  name: RemoveSprites()
+  nameWithType: MenuObject.RemoveSprites()
+  fullName: Menu.MenuObject.RemoveSprites()
+  spec.csharp:
+  - uid: Menu.MenuObject.RemoveSprites
+    name: RemoveSprites
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_RemoveSprites
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.MenuObject.RemoveSprites
+    name: RemoveSprites
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_RemoveSprites
+  - name: (
+  - name: )
+- uid: Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+  commentId: M:Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_
+  name: RemoveSubObject(MenuObject)
+  nameWithType: MenuObject.RemoveSubObject(MenuObject)
+  fullName: Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+  spec.csharp:
+  - uid: Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+    name: RemoveSubObject
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+  spec.vb:
+  - uid: Menu.MenuObject.RemoveSubObject(Menu.MenuObject)
+    name: RemoveSubObject
+    isExternal: true
+    href: Menu.MenuObject.html#Menu_MenuObject_RemoveSubObject_Menu_MenuObject_
+  - name: (
+  - uid: Menu.MenuObject
+    name: MenuObject
+    isExternal: true
+    href: Menu.MenuObject.html
+  - name: )
+- uid: Menu.MenuObject.Container
+  commentId: P:Menu.MenuObject.Container
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_Container
+  name: Container
+  nameWithType: MenuObject.Container
+  fullName: Menu.MenuObject.Container
+- uid: Menu.MenuObject.Selected
+  commentId: P:Menu.MenuObject.Selected
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_Selected
+  name: Selected
+  nameWithType: MenuObject.Selected
+  fullName: Menu.MenuObject.Selected
+- uid: Menu.MenuObject.page
+  commentId: P:Menu.MenuObject.page
+  parent: Menu.MenuObject
+  isExternal: true
+  href: Menu.MenuObject.html#Menu_MenuObject_page
+  name: page
+  nameWithType: MenuObject.page
+  fullName: Menu.MenuObject.page
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Menu.SelectOneButton[]
+  isExternal: true
+  href: Menu.SelectOneButton.html
+  name: SelectOneButton[]
+  nameWithType: SelectOneButton[]
+  fullName: Menu.SelectOneButton[]
+  nameWithType.vb: SelectOneButton()
+  fullName.vb: Menu.SelectOneButton()
+  name.vb: SelectOneButton()
+  spec.csharp:
+  - uid: Menu.SelectOneButton
+    name: SelectOneButton
+    isExternal: true
+    href: Menu.SelectOneButton.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Menu.SelectOneButton
+    name: SelectOneButton
+    isExternal: true
+    href: Menu.SelectOneButton.html
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Menu.RoundedRect
+  commentId: T:Menu.RoundedRect
+  parent: Menu
+  isExternal: true
+  href: Menu.RoundedRect.html
+  name: RoundedRect
+  nameWithType: RoundedRect
+  fullName: Menu.RoundedRect
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Menu.ButtonTemplate.MyColor(System.Single)
+  commentId: M:Menu.ButtonTemplate.MyColor(System.Single)
+  parent: Menu.ButtonTemplate
+  isExternal: true
+  href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_MyColor_System_Single_
+  name: MyColor(float)
+  nameWithType: ButtonTemplate.MyColor(float)
+  fullName: Menu.ButtonTemplate.MyColor(float)
+  nameWithType.vb: ButtonTemplate.MyColor(Single)
+  fullName.vb: Menu.ButtonTemplate.MyColor(Single)
+  name.vb: MyColor(Single)
+  spec.csharp:
+  - uid: Menu.ButtonTemplate.MyColor(System.Single)
+    name: MyColor
+    isExternal: true
+    href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_MyColor_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.ButtonTemplate.MyColor(System.Single)
+    name: MyColor
+    isExternal: true
+    href: Menu.ButtonTemplate.html#Menu_ButtonTemplate_MyColor_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.SelectOneButton.MyColor*
+  commentId: Overload:Menu.SelectOneButton.MyColor
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton_MyColor_System_Single_
+  name: MyColor
+  nameWithType: SelectOneButton.MyColor
+  fullName: Menu.SelectOneButton.MyColor
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: Menu.SelectOneButton.#ctor*
+  commentId: Overload:Menu.SelectOneButton.#ctor
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton__ctor_Menu_Menu_Menu_MenuObject_System_String_System_String_UnityEngine_Vector2_UnityEngine_Vector2_Menu_SelectOneButton___System_Int32_
+  name: SelectOneButton
+  nameWithType: SelectOneButton.SelectOneButton
+  fullName: Menu.SelectOneButton.SelectOneButton
+  nameWithType.vb: SelectOneButton.New
+  fullName.vb: Menu.SelectOneButton.New
+  name.vb: New
+- uid: Menu.Menu
+  commentId: T:Menu.Menu
+  parent: Menu
+  isExternal: true
+  href: Menu.Menu.html
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu.Menu
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Menu.SimpleButton.Update
+  commentId: M:Menu.SimpleButton.Update
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_Update
+  name: Update()
+  nameWithType: SimpleButton.Update()
+  fullName: Menu.SimpleButton.Update()
+  spec.csharp:
+  - uid: Menu.SimpleButton.Update
+    name: Update
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.SimpleButton.Update
+    name: Update
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_Update
+  - name: (
+  - name: )
+- uid: Menu.SelectOneButton.Update*
+  commentId: Overload:Menu.SelectOneButton.Update
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton_Update
+  name: Update
+  nameWithType: SelectOneButton.Update
+  fullName: Menu.SelectOneButton.Update
+- uid: Menu.SimpleButton.GrafUpdate(System.Single)
+  commentId: M:Menu.SimpleButton.GrafUpdate(System.Single)
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_GrafUpdate_System_Single_
+  name: GrafUpdate(float)
+  nameWithType: SimpleButton.GrafUpdate(float)
+  fullName: Menu.SimpleButton.GrafUpdate(float)
+  nameWithType.vb: SimpleButton.GrafUpdate(Single)
+  fullName.vb: Menu.SimpleButton.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+  spec.csharp:
+  - uid: Menu.SimpleButton.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Menu.SimpleButton.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Menu.SelectOneButton.GrafUpdate*
+  commentId: Overload:Menu.SelectOneButton.GrafUpdate
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton_GrafUpdate_System_Single_
+  name: GrafUpdate
+  nameWithType: SelectOneButton.GrafUpdate
+  fullName: Menu.SelectOneButton.GrafUpdate
+- uid: Menu.SimpleButton.Clicked
+  commentId: M:Menu.SimpleButton.Clicked
+  parent: Menu.SimpleButton
+  isExternal: true
+  href: Menu.SimpleButton.html#Menu_SimpleButton_Clicked
+  name: Clicked()
+  nameWithType: SimpleButton.Clicked()
+  fullName: Menu.SimpleButton.Clicked()
+  spec.csharp:
+  - uid: Menu.SimpleButton.Clicked
+    name: Clicked
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_Clicked
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Menu.SimpleButton.Clicked
+    name: Clicked
+    isExternal: true
+    href: Menu.SimpleButton.html#Menu_SimpleButton_Clicked
+  - name: (
+  - name: )
+- uid: Menu.SelectOneButton.Clicked*
+  commentId: Overload:Menu.SelectOneButton.Clicked
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton_Clicked
+  name: Clicked
+  nameWithType: SelectOneButton.Clicked
+  fullName: Menu.SelectOneButton.Clicked
+- uid: Menu.SelectOneButton.AmISelected*
+  commentId: Overload:Menu.SelectOneButton.AmISelected
+  isExternal: true
+  href: Menu.SelectOneButton.html#Menu_SelectOneButton_AmISelected
+  name: AmISelected
+  nameWithType: SelectOneButton.AmISelected
+  fullName: Menu.SelectOneButton.AmISelected

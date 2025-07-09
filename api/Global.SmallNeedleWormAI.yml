@@ -1,0 +1,2016 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SmallNeedleWormAI
+  commentId: T:Global.SmallNeedleWormAI
+  id: SmallNeedleWormAI
+  parent: Global
+  children:
+  - Global.SmallNeedleWormAI.#ctor(AbstractCreature,World)
+  - Global.SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  - Global.SmallNeedleWormAI.IdleScore(WorldCoordinate)
+  - Global.SmallNeedleWormAI.Mother
+  - Global.SmallNeedleWormAI.NeedleWormMother
+  - Global.SmallNeedleWormAI.Update
+  - Global.SmallNeedleWormAI.worm
+  langs:
+  - csharp
+  - vb
+  name: SmallNeedleWormAI
+  nameWithType: SmallNeedleWormAI
+  fullName: SmallNeedleWormAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:SmallNeedleWormAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class SmallNeedleWormAI : NeedleWormAI, IUseARelationshipTracker'
+    content.vb: Public Class SmallNeedleWormAI Inherits NeedleWormAI Implements IUseARelationshipTracker
+  inheritance:
+  - System.Object
+  - Global.ArtificialIntelligence
+  - Global.NeedleWormAI
+  implements:
+  - Global.IUseARelationshipTracker
+  inheritedMembers:
+  - Global.NeedleWormAI.debugDestinationVisualizer
+  - Global.NeedleWormAI.behavior
+  - Global.NeedleWormAI.focusCreature
+  - Global.NeedleWormAI.idlePos
+  - Global.NeedleWormAI.lastAssignedIdlePos
+  - Global.NeedleWormAI.idleCounter
+  - Global.NeedleWormAI.oldIdlePositions
+  - Global.NeedleWormAI.flySpeed
+  - Global.NeedleWormAI.lastRoom
+  - Global.NeedleWormAI.inFreeSpaceCounter
+  - Global.NeedleWormAI.inRoomCounter
+  - Global.NeedleWormAI.LikeRoom
+  - Global.NeedleWormAI.MigrationBehaviorRoll
+  - Global.NeedleWormAI.NewRoom(Room)
+  - Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+  - Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2,System.Boolean)
+  - Global.NeedleWormAI.IdleBehavior
+  - Global.NeedleWormAI.WantToStayInDenUntilEndOfCycle
+  - Global.NeedleWormAI.VisualScore(UnityEngine.Vector2,System.Single)
+  - Global.NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)
+  - Global.NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  - Global.NeedleWormAI.TravelPreference(MovementConnection,PathCost)
+  - Global.NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+  - Global.NeedleWormAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  - Global.ArtificialIntelligence.creature
+  - Global.ArtificialIntelligence.modules
+  - Global.ArtificialIntelligence.stranded
+  - Global.ArtificialIntelligence.seeThroughWalls
+  - Global.ArtificialIntelligence.timeInRoom
+  - Global.ArtificialIntelligence.ripplePathingTarget
+  - Global.ArtificialIntelligence.ripplePathingTime
+  - Global.ArtificialIntelligence.AddModule(AIModule)
+  - Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  - Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  - Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  - Global.ArtificialIntelligence.NewArea(System.Boolean)
+  - Global.ArtificialIntelligence.DenPosition
+  - Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  - Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  - Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  - Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  - Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  - Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  - Global.ArtificialIntelligence.pathFinder
+  - Global.ArtificialIntelligence.tracker
+  - Global.ArtificialIntelligence.noiseTracker
+  - Global.ArtificialIntelligence.obstacleTracker
+  - Global.ArtificialIntelligence.threatTracker
+  - Global.ArtificialIntelligence.preyTracker
+  - Global.ArtificialIntelligence.rainTracker
+  - Global.ArtificialIntelligence.denFinder
+  - Global.ArtificialIntelligence.agressionTracker
+  - Global.ArtificialIntelligence.utilityComparer
+  - Global.ArtificialIntelligence.missionTracker
+  - Global.ArtificialIntelligence.secondaryNodeFinder
+  - Global.ArtificialIntelligence.relationshipTracker
+  - Global.ArtificialIntelligence.itemTracker
+  - Global.ArtificialIntelligence.discomfortTracker
+  - Global.ArtificialIntelligence.stuckTracker
+  - Global.ArtificialIntelligence.injuryTracker
+  - Global.ArtificialIntelligence.friendTracker
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.SmallNeedleWormAI.worm
+  commentId: F:Global.SmallNeedleWormAI.worm
+  id: worm
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: worm
+  nameWithType: SmallNeedleWormAI.worm
+  fullName: SmallNeedleWormAI.worm
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:SmallNeedleWormAI.worm</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SmallNeedleWorm worm
+    return:
+      type: Global.SmallNeedleWorm
+    content.vb: Public worm As SmallNeedleWorm
+- uid: Global.SmallNeedleWormAI.#ctor(AbstractCreature,World)
+  commentId: M:Global.SmallNeedleWormAI.#ctor(AbstractCreature,World)
+  id: '#ctor(AbstractCreature,World)'
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: SmallNeedleWormAI(AbstractCreature, World)
+  nameWithType: SmallNeedleWormAI.SmallNeedleWormAI(AbstractCreature, World)
+  fullName: SmallNeedleWormAI.SmallNeedleWormAI(AbstractCreature, World)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>SmallNeedleWormAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SmallNeedleWormAI(AbstractCreature creature, World world)
+    parameters:
+    - id: creature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>creature</parameter>
+            <parameter>M:SmallNeedleWormAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:SmallNeedleWormAI.#ctor(AbstractCreature,World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(creature As AbstractCreature, world As World)
+  overload: Global.SmallNeedleWormAI.#ctor*
+  nameWithType.vb: SmallNeedleWormAI.New(AbstractCreature, World)
+  fullName.vb: SmallNeedleWormAI.New(AbstractCreature, World)
+  name.vb: New(AbstractCreature, World)
+- uid: Global.SmallNeedleWormAI.Update
+  commentId: M:Global.SmallNeedleWormAI.Update
+  id: Update
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SmallNeedleWormAI.Update()
+  fullName: SmallNeedleWormAI.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SmallNeedleWormAI.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.NeedleWormAI.Update
+  overload: Global.SmallNeedleWormAI.Update*
+- uid: Global.SmallNeedleWormAI.IdleScore(WorldCoordinate)
+  commentId: M:Global.SmallNeedleWormAI.IdleScore(WorldCoordinate)
+  id: IdleScore(WorldCoordinate)
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: IdleScore(WorldCoordinate)
+  nameWithType: SmallNeedleWormAI.IdleScore(WorldCoordinate)
+  fullName: SmallNeedleWormAI.IdleScore(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SmallNeedleWormAI.IdleScore(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override float IdleScore(WorldCoordinate coord)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:SmallNeedleWormAI.IdleScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:SmallNeedleWormAI.IdleScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Protected Overrides Function IdleScore(coord As WorldCoordinate) As Single
+  overridden: Global.NeedleWormAI.IdleScore(WorldCoordinate)
+  overload: Global.SmallNeedleWormAI.IdleScore*
+- uid: Global.SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  commentId: M:Global.SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  id: CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: CreateTrackedCreatureState(DynamicRelationship)
+  nameWithType: SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  fullName: SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public RelationshipTracker.TrackedCreatureState CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship rel)
+    parameters:
+    - id: rel
+      type: Global.RelationshipTracker.DynamicRelationship
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rel</parameter>
+            <parameter>M:SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.RelationshipTracker.TrackedCreatureState
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:SmallNeedleWormAI.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CreateTrackedCreatureState(rel As RelationshipTracker.DynamicRelationship) As RelationshipTracker.TrackedCreatureState
+  overload: Global.SmallNeedleWormAI.CreateTrackedCreatureState*
+  implements:
+  - Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+- uid: Global.SmallNeedleWormAI.Mother
+  commentId: P:Global.SmallNeedleWormAI.Mother
+  id: Mother
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: Mother
+  nameWithType: SmallNeedleWormAI.Mother
+  fullName: SmallNeedleWormAI.Mother
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:SmallNeedleWormAI.Mother</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AbstractCreature Mother { get; }
+    parameters: []
+    return:
+      type: Global.AbstractCreature
+    content.vb: Public ReadOnly Property Mother As AbstractCreature
+  overload: Global.SmallNeedleWormAI.Mother*
+- uid: Global.SmallNeedleWormAI.NeedleWormMother
+  commentId: P:Global.SmallNeedleWormAI.NeedleWormMother
+  id: NeedleWormMother
+  parent: Global.SmallNeedleWormAI
+  langs:
+  - csharp
+  - vb
+  name: NeedleWormMother
+  nameWithType: SmallNeedleWormAI.NeedleWormMother
+  fullName: SmallNeedleWormAI.NeedleWormMother
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:SmallNeedleWormAI.NeedleWormMother</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AbstractCreature NeedleWormMother { get; }
+    parameters: []
+    return:
+      type: Global.AbstractCreature
+    content.vb: Public ReadOnly Property NeedleWormMother As AbstractCreature
+  overload: Global.SmallNeedleWormAI.NeedleWormMother*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.NeedleWormAI
+  commentId: T:Global.NeedleWormAI
+  isExternal: true
+  href: NeedleWormAI.html
+  name: NeedleWormAI
+  nameWithType: NeedleWormAI
+  fullName: NeedleWormAI
+- uid: Global.IUseARelationshipTracker
+  commentId: T:Global.IUseARelationshipTracker
+  isExternal: true
+  href: IUseARelationshipTracker.html
+  name: IUseARelationshipTracker
+  nameWithType: IUseARelationshipTracker
+  fullName: IUseARelationshipTracker
+- uid: Global.NeedleWormAI.debugDestinationVisualizer
+  commentId: F:Global.NeedleWormAI.debugDestinationVisualizer
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_debugDestinationVisualizer
+  name: debugDestinationVisualizer
+  nameWithType: NeedleWormAI.debugDestinationVisualizer
+  fullName: NeedleWormAI.debugDestinationVisualizer
+- uid: Global.NeedleWormAI.behavior
+  commentId: F:Global.NeedleWormAI.behavior
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_behavior
+  name: behavior
+  nameWithType: NeedleWormAI.behavior
+  fullName: NeedleWormAI.behavior
+- uid: Global.NeedleWormAI.focusCreature
+  commentId: F:Global.NeedleWormAI.focusCreature
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_focusCreature
+  name: focusCreature
+  nameWithType: NeedleWormAI.focusCreature
+  fullName: NeedleWormAI.focusCreature
+- uid: Global.NeedleWormAI.idlePos
+  commentId: F:Global.NeedleWormAI.idlePos
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_idlePos
+  name: idlePos
+  nameWithType: NeedleWormAI.idlePos
+  fullName: NeedleWormAI.idlePos
+- uid: Global.NeedleWormAI.lastAssignedIdlePos
+  commentId: F:Global.NeedleWormAI.lastAssignedIdlePos
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_lastAssignedIdlePos
+  name: lastAssignedIdlePos
+  nameWithType: NeedleWormAI.lastAssignedIdlePos
+  fullName: NeedleWormAI.lastAssignedIdlePos
+- uid: Global.NeedleWormAI.idleCounter
+  commentId: F:Global.NeedleWormAI.idleCounter
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_idleCounter
+  name: idleCounter
+  nameWithType: NeedleWormAI.idleCounter
+  fullName: NeedleWormAI.idleCounter
+- uid: Global.NeedleWormAI.oldIdlePositions
+  commentId: F:Global.NeedleWormAI.oldIdlePositions
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_oldIdlePositions
+  name: oldIdlePositions
+  nameWithType: NeedleWormAI.oldIdlePositions
+  fullName: NeedleWormAI.oldIdlePositions
+- uid: Global.NeedleWormAI.flySpeed
+  commentId: F:Global.NeedleWormAI.flySpeed
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_flySpeed
+  name: flySpeed
+  nameWithType: NeedleWormAI.flySpeed
+  fullName: NeedleWormAI.flySpeed
+- uid: Global.NeedleWormAI.lastRoom
+  commentId: F:Global.NeedleWormAI.lastRoom
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_lastRoom
+  name: lastRoom
+  nameWithType: NeedleWormAI.lastRoom
+  fullName: NeedleWormAI.lastRoom
+- uid: Global.NeedleWormAI.inFreeSpaceCounter
+  commentId: F:Global.NeedleWormAI.inFreeSpaceCounter
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_inFreeSpaceCounter
+  name: inFreeSpaceCounter
+  nameWithType: NeedleWormAI.inFreeSpaceCounter
+  fullName: NeedleWormAI.inFreeSpaceCounter
+- uid: Global.NeedleWormAI.inRoomCounter
+  commentId: F:Global.NeedleWormAI.inRoomCounter
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_inRoomCounter
+  name: inRoomCounter
+  nameWithType: NeedleWormAI.inRoomCounter
+  fullName: NeedleWormAI.inRoomCounter
+- uid: Global.NeedleWormAI.LikeRoom
+  commentId: M:Global.NeedleWormAI.LikeRoom
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_LikeRoom
+  name: LikeRoom()
+  nameWithType: NeedleWormAI.LikeRoom()
+  fullName: NeedleWormAI.LikeRoom()
+  spec.csharp:
+  - uid: Global.NeedleWormAI.LikeRoom
+    name: LikeRoom
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_LikeRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.LikeRoom
+    name: LikeRoom
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_LikeRoom
+  - name: (
+  - name: )
+- uid: Global.NeedleWormAI.MigrationBehaviorRoll
+  commentId: M:Global.NeedleWormAI.MigrationBehaviorRoll
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_MigrationBehaviorRoll
+  name: MigrationBehaviorRoll()
+  nameWithType: NeedleWormAI.MigrationBehaviorRoll()
+  fullName: NeedleWormAI.MigrationBehaviorRoll()
+  spec.csharp:
+  - uid: Global.NeedleWormAI.MigrationBehaviorRoll
+    name: MigrationBehaviorRoll
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MigrationBehaviorRoll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.MigrationBehaviorRoll
+    name: MigrationBehaviorRoll
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MigrationBehaviorRoll
+  - name: (
+  - name: )
+- uid: Global.NeedleWormAI.NewRoom(Room)
+  commentId: M:Global.NeedleWormAI.NewRoom(Room)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: NeedleWormAI.NewRoom(Room)
+  fullName: NeedleWormAI.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+  commentId: M:Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_
+  name: MinFlyHeight(IntVector2)
+  nameWithType: NeedleWormAI.MinFlyHeight(IntVector2)
+  fullName: NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+    name: MinFlyHeight
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2)
+    name: MinFlyHeight
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2,System.Boolean)
+  commentId: M:Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2,System.Boolean)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_System_Boolean_
+  name: MinFlyHeight(IntVector2, bool)
+  nameWithType: NeedleWormAI.MinFlyHeight(IntVector2, bool)
+  fullName: NeedleWormAI.MinFlyHeight(RWCustom.IntVector2, bool)
+  nameWithType.vb: NeedleWormAI.MinFlyHeight(IntVector2, Boolean)
+  fullName.vb: NeedleWormAI.MinFlyHeight(RWCustom.IntVector2, Boolean)
+  name.vb: MinFlyHeight(IntVector2, Boolean)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2,System.Boolean)
+    name: MinFlyHeight
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.MinFlyHeight(RWCustom.IntVector2,System.Boolean)
+    name: MinFlyHeight
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_MinFlyHeight_RWCustom_IntVector2_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.NeedleWormAI.IdleBehavior
+  commentId: M:Global.NeedleWormAI.IdleBehavior
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_IdleBehavior
+  name: IdleBehavior()
+  nameWithType: NeedleWormAI.IdleBehavior()
+  fullName: NeedleWormAI.IdleBehavior()
+  spec.csharp:
+  - uid: Global.NeedleWormAI.IdleBehavior
+    name: IdleBehavior
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_IdleBehavior
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.IdleBehavior
+    name: IdleBehavior
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_IdleBehavior
+  - name: (
+  - name: )
+- uid: Global.NeedleWormAI.WantToStayInDenUntilEndOfCycle
+  commentId: M:Global.NeedleWormAI.WantToStayInDenUntilEndOfCycle
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_WantToStayInDenUntilEndOfCycle
+  name: WantToStayInDenUntilEndOfCycle()
+  nameWithType: NeedleWormAI.WantToStayInDenUntilEndOfCycle()
+  fullName: NeedleWormAI.WantToStayInDenUntilEndOfCycle()
+  spec.csharp:
+  - uid: Global.NeedleWormAI.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.WantToStayInDenUntilEndOfCycle
+    name: WantToStayInDenUntilEndOfCycle
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_WantToStayInDenUntilEndOfCycle
+  - name: (
+  - name: )
+- uid: Global.NeedleWormAI.VisualScore(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.NeedleWormAI.VisualScore(UnityEngine.Vector2,System.Single)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_VisualScore_UnityEngine_Vector2_System_Single_
+  name: VisualScore(Vector2, float)
+  nameWithType: NeedleWormAI.VisualScore(Vector2, float)
+  fullName: NeedleWormAI.VisualScore(UnityEngine.Vector2, float)
+  nameWithType.vb: NeedleWormAI.VisualScore(Vector2, Single)
+  fullName.vb: NeedleWormAI.VisualScore(UnityEngine.Vector2, Single)
+  name.vb: VisualScore(Vector2, Single)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.VisualScore(UnityEngine.Vector2,System.Single)
+    name: VisualScore
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_VisualScore_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)
+  commentId: M:Global.NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_UncomfortableToAfraidRelationshipModifier_RelationshipTracker_DynamicRelationship_CreatureTemplate_Relationship_
+  name: UncomfortableToAfraidRelationshipModifier(DynamicRelationship, Relationship)
+  nameWithType: NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship, CreatureTemplate.Relationship)
+  fullName: NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship, CreatureTemplate.Relationship)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)
+    name: UncomfortableToAfraidRelationshipModifier
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_UncomfortableToAfraidRelationshipModifier_RelationshipTracker_DynamicRelationship_CreatureTemplate_Relationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: ','
+  - name: " "
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.UncomfortableToAfraidRelationshipModifier(RelationshipTracker.DynamicRelationship,CreatureTemplate.Relationship)
+    name: UncomfortableToAfraidRelationshipModifier
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_UncomfortableToAfraidRelationshipModifier_RelationshipTracker_DynamicRelationship_CreatureTemplate_Relationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: ','
+  - name: " "
+  - uid: Global.CreatureTemplate.Relationship
+    name: Relationship
+    isExternal: true
+    href: CreatureTemplate.Relationship.html
+  - name: )
+- uid: Global.NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  commentId: M:Global.NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_CreateTrackerRepresentationForCreature_AbstractCreature_
+  name: CreateTrackerRepresentationForCreature(AbstractCreature)
+  nameWithType: NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  fullName: NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.CreateTrackerRepresentationForCreature(AbstractCreature)
+    name: CreateTrackerRepresentationForCreature
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_CreateTrackerRepresentationForCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.NeedleWormAI.TravelPreference(MovementConnection,PathCost)
+  commentId: M:Global.NeedleWormAI.TravelPreference(MovementConnection,PathCost)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_TravelPreference_MovementConnection_PathCost_
+  name: TravelPreference(MovementConnection, PathCost)
+  nameWithType: NeedleWormAI.TravelPreference(MovementConnection, PathCost)
+  fullName: NeedleWormAI.TravelPreference(MovementConnection, PathCost)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.TravelPreference(MovementConnection,PathCost)
+    name: TravelPreference
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_TravelPreference_MovementConnection_PathCost_
+  - name: (
+  - uid: Global.MovementConnection
+    name: MovementConnection
+    isExternal: true
+    href: MovementConnection.html
+  - name: ','
+  - name: " "
+  - uid: Global.PathCost
+    name: PathCost
+    isExternal: true
+    href: PathCost.html
+  - name: )
+- uid: Global.NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+  commentId: M:Global.NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_TileInEnclosedArea_RWCustom_IntVector2_
+  name: TileInEnclosedArea(IntVector2)
+  nameWithType: NeedleWormAI.TileInEnclosedArea(IntVector2)
+  fullName: NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+    name: TileInEnclosedArea
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_TileInEnclosedArea_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.TileInEnclosedArea(RWCustom.IntVector2)
+    name: TileInEnclosedArea
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_TileInEnclosedArea_RWCustom_IntVector2_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: )
+- uid: Global.NeedleWormAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  commentId: M:Global.NeedleWormAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  name: CreatureSpotted(bool, CreatureRepresentation)
+  nameWithType: NeedleWormAI.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  fullName: NeedleWormAI.CreatureSpotted(bool, Tracker.CreatureRepresentation)
+  nameWithType.vb: NeedleWormAI.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  fullName.vb: NeedleWormAI.CreatureSpotted(Boolean, Tracker.CreatureRepresentation)
+  name.vb: CreatureSpotted(Boolean, CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.CreatureSpotted(System.Boolean,Tracker.CreatureRepresentation)
+    name: CreatureSpotted
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_CreatureSpotted_System_Boolean_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.ArtificialIntelligence.creature
+  commentId: F:Global.ArtificialIntelligence.creature
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_creature
+  name: creature
+  nameWithType: ArtificialIntelligence.creature
+  fullName: ArtificialIntelligence.creature
+- uid: Global.ArtificialIntelligence.modules
+  commentId: F:Global.ArtificialIntelligence.modules
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_modules
+  name: modules
+  nameWithType: ArtificialIntelligence.modules
+  fullName: ArtificialIntelligence.modules
+- uid: Global.ArtificialIntelligence.stranded
+  commentId: F:Global.ArtificialIntelligence.stranded
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stranded
+  name: stranded
+  nameWithType: ArtificialIntelligence.stranded
+  fullName: ArtificialIntelligence.stranded
+- uid: Global.ArtificialIntelligence.seeThroughWalls
+  commentId: F:Global.ArtificialIntelligence.seeThroughWalls
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_seeThroughWalls
+  name: seeThroughWalls
+  nameWithType: ArtificialIntelligence.seeThroughWalls
+  fullName: ArtificialIntelligence.seeThroughWalls
+- uid: Global.ArtificialIntelligence.timeInRoom
+  commentId: F:Global.ArtificialIntelligence.timeInRoom
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_timeInRoom
+  name: timeInRoom
+  nameWithType: ArtificialIntelligence.timeInRoom
+  fullName: ArtificialIntelligence.timeInRoom
+- uid: Global.ArtificialIntelligence.ripplePathingTarget
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTarget
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTarget
+  name: ripplePathingTarget
+  nameWithType: ArtificialIntelligence.ripplePathingTarget
+  fullName: ArtificialIntelligence.ripplePathingTarget
+- uid: Global.ArtificialIntelligence.ripplePathingTime
+  commentId: F:Global.ArtificialIntelligence.ripplePathingTime
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_ripplePathingTime
+  name: ripplePathingTime
+  nameWithType: ArtificialIntelligence.ripplePathingTime
+  fullName: ArtificialIntelligence.ripplePathingTime
+- uid: Global.ArtificialIntelligence.AddModule(AIModule)
+  commentId: M:Global.ArtificialIntelligence.AddModule(AIModule)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  name: AddModule(AIModule)
+  nameWithType: ArtificialIntelligence.AddModule(AIModule)
+  fullName: ArtificialIntelligence.AddModule(AIModule)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.AddModule(AIModule)
+    name: AddModule
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_AddModule_AIModule_
+  - name: (
+  - uid: Global.AIModule
+    name: AIModule
+    isExternal: true
+    href: AIModule.html
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  name: VisualContact(WorldCoordinate, float)
+  nameWithType: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  fullName: ArtificialIntelligence.VisualContact(WorldCoordinate, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(WorldCoordinate, Single)
+  name.vb: VisualContact(WorldCoordinate, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(WorldCoordinate,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_WorldCoordinate_System_Single_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  name: VisualContact(Vector2, float)
+  nameWithType: ArtificialIntelligence.VisualContact(Vector2, float)
+  fullName: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, float)
+  nameWithType.vb: ArtificialIntelligence.VisualContact(Vector2, Single)
+  fullName.vb: ArtificialIntelligence.VisualContact(UnityEngine.Vector2, Single)
+  name.vb: VisualContact(Vector2, Single)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(UnityEngine.Vector2,System.Single)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_UnityEngine_Vector2_System_Single_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  commentId: M:Global.ArtificialIntelligence.VisualContact(BodyChunk)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  name: VisualContact(BodyChunk)
+  nameWithType: ArtificialIntelligence.VisualContact(BodyChunk)
+  fullName: ArtificialIntelligence.VisualContact(BodyChunk)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.VisualContact(BodyChunk)
+    name: VisualContact
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_VisualContact_BodyChunk_
+  - name: (
+  - uid: Global.BodyChunk
+    name: BodyChunk
+    isExternal: true
+    href: BodyChunk.html
+  - name: )
+- uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  commentId: M:Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  name: SetDestination(WorldCoordinate)
+  nameWithType: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  fullName: ArtificialIntelligence.SetDestination(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.SetDestination(WorldCoordinate)
+    name: SetDestination
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_SetDestination_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+  commentId: M:Global.ArtificialIntelligence.NewArea(System.Boolean)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  name: NewArea(bool)
+  nameWithType: ArtificialIntelligence.NewArea(bool)
+  fullName: ArtificialIntelligence.NewArea(bool)
+  nameWithType.vb: ArtificialIntelligence.NewArea(Boolean)
+  fullName.vb: ArtificialIntelligence.NewArea(Boolean)
+  name.vb: NewArea(Boolean)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.NewArea(System.Boolean)
+    name: NewArea
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_NewArea_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.ArtificialIntelligence.DenPosition
+  commentId: M:Global.ArtificialIntelligence.DenPosition
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  name: DenPosition()
+  nameWithType: ArtificialIntelligence.DenPosition()
+  fullName: ArtificialIntelligence.DenPosition()
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DenPosition
+    name: DenPosition
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DenPosition
+  - name: (
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  name: DynamicRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  name: DynamicRelationship(CreatureRepresentation)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: )
+- uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  name: DynamicRelationship(CreatureRepresentation, AbstractCreature)
+  nameWithType: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  fullName: ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation, AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.DynamicRelationship(Tracker.CreatureRepresentation,AbstractCreature)
+    name: DynamicRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_DynamicRelationship_Tracker_CreatureRepresentation_AbstractCreature_
+  - name: (
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  - name: ','
+  - name: " "
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  name: StaticRelationship(AbstractCreature)
+  nameWithType: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  fullName: ArtificialIntelligence.StaticRelationship(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.StaticRelationship(AbstractCreature)
+    name: StaticRelationship
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_StaticRelationship_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  name: TrackerToDiscardDeadCreature(AbstractCreature)
+  nameWithType: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  fullName: ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.TrackerToDiscardDeadCreature(AbstractCreature)
+    name: TrackerToDiscardDeadCreature
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_TrackerToDiscardDeadCreature_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  commentId: M:Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  name: HeardNoise(InGameNoise)
+  nameWithType: ArtificialIntelligence.HeardNoise(InGameNoise)
+  fullName: ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.HeardNoise(Noise.InGameNoise)
+    name: HeardNoise
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_HeardNoise_Noise_InGameNoise_
+  - name: (
+  - uid: Noise.InGameNoise
+    name: InGameNoise
+    isExternal: true
+    href: Noise.InGameNoise.html
+  - name: )
+- uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  commentId: M:Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  name: CurrentPlayerAggression(AbstractCreature)
+  nameWithType: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  fullName: ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+  spec.csharp:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+  spec.vb:
+  - uid: Global.ArtificialIntelligence.CurrentPlayerAggression(AbstractCreature)
+    name: CurrentPlayerAggression
+    isExternal: true
+    href: Global.ArtificialIntelligence.html#ArtificialIntelligence_CurrentPlayerAggression_AbstractCreature_
+  - name: (
+  - uid: Global.AbstractCreature
+    name: AbstractCreature
+    isExternal: true
+    href: AbstractCreature.html
+  - name: )
+- uid: Global.ArtificialIntelligence.pathFinder
+  commentId: P:Global.ArtificialIntelligence.pathFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_pathFinder
+  name: pathFinder
+  nameWithType: ArtificialIntelligence.pathFinder
+  fullName: ArtificialIntelligence.pathFinder
+- uid: Global.ArtificialIntelligence.tracker
+  commentId: P:Global.ArtificialIntelligence.tracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_tracker
+  name: tracker
+  nameWithType: ArtificialIntelligence.tracker
+  fullName: ArtificialIntelligence.tracker
+- uid: Global.ArtificialIntelligence.noiseTracker
+  commentId: P:Global.ArtificialIntelligence.noiseTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_noiseTracker
+  name: noiseTracker
+  nameWithType: ArtificialIntelligence.noiseTracker
+  fullName: ArtificialIntelligence.noiseTracker
+- uid: Global.ArtificialIntelligence.obstacleTracker
+  commentId: P:Global.ArtificialIntelligence.obstacleTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_obstacleTracker
+  name: obstacleTracker
+  nameWithType: ArtificialIntelligence.obstacleTracker
+  fullName: ArtificialIntelligence.obstacleTracker
+- uid: Global.ArtificialIntelligence.threatTracker
+  commentId: P:Global.ArtificialIntelligence.threatTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_threatTracker
+  name: threatTracker
+  nameWithType: ArtificialIntelligence.threatTracker
+  fullName: ArtificialIntelligence.threatTracker
+- uid: Global.ArtificialIntelligence.preyTracker
+  commentId: P:Global.ArtificialIntelligence.preyTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_preyTracker
+  name: preyTracker
+  nameWithType: ArtificialIntelligence.preyTracker
+  fullName: ArtificialIntelligence.preyTracker
+- uid: Global.ArtificialIntelligence.rainTracker
+  commentId: P:Global.ArtificialIntelligence.rainTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_rainTracker
+  name: rainTracker
+  nameWithType: ArtificialIntelligence.rainTracker
+  fullName: ArtificialIntelligence.rainTracker
+- uid: Global.ArtificialIntelligence.denFinder
+  commentId: P:Global.ArtificialIntelligence.denFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_denFinder
+  name: denFinder
+  nameWithType: ArtificialIntelligence.denFinder
+  fullName: ArtificialIntelligence.denFinder
+- uid: Global.ArtificialIntelligence.agressionTracker
+  commentId: P:Global.ArtificialIntelligence.agressionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_agressionTracker
+  name: agressionTracker
+  nameWithType: ArtificialIntelligence.agressionTracker
+  fullName: ArtificialIntelligence.agressionTracker
+- uid: Global.ArtificialIntelligence.utilityComparer
+  commentId: P:Global.ArtificialIntelligence.utilityComparer
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_utilityComparer
+  name: utilityComparer
+  nameWithType: ArtificialIntelligence.utilityComparer
+  fullName: ArtificialIntelligence.utilityComparer
+- uid: Global.ArtificialIntelligence.missionTracker
+  commentId: P:Global.ArtificialIntelligence.missionTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_missionTracker
+  name: missionTracker
+  nameWithType: ArtificialIntelligence.missionTracker
+  fullName: ArtificialIntelligence.missionTracker
+- uid: Global.ArtificialIntelligence.secondaryNodeFinder
+  commentId: P:Global.ArtificialIntelligence.secondaryNodeFinder
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_secondaryNodeFinder
+  name: secondaryNodeFinder
+  nameWithType: ArtificialIntelligence.secondaryNodeFinder
+  fullName: ArtificialIntelligence.secondaryNodeFinder
+- uid: Global.ArtificialIntelligence.relationshipTracker
+  commentId: P:Global.ArtificialIntelligence.relationshipTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_relationshipTracker
+  name: relationshipTracker
+  nameWithType: ArtificialIntelligence.relationshipTracker
+  fullName: ArtificialIntelligence.relationshipTracker
+- uid: Global.ArtificialIntelligence.itemTracker
+  commentId: P:Global.ArtificialIntelligence.itemTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_itemTracker
+  name: itemTracker
+  nameWithType: ArtificialIntelligence.itemTracker
+  fullName: ArtificialIntelligence.itemTracker
+- uid: Global.ArtificialIntelligence.discomfortTracker
+  commentId: P:Global.ArtificialIntelligence.discomfortTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_discomfortTracker
+  name: discomfortTracker
+  nameWithType: ArtificialIntelligence.discomfortTracker
+  fullName: ArtificialIntelligence.discomfortTracker
+- uid: Global.ArtificialIntelligence.stuckTracker
+  commentId: P:Global.ArtificialIntelligence.stuckTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_stuckTracker
+  name: stuckTracker
+  nameWithType: ArtificialIntelligence.stuckTracker
+  fullName: ArtificialIntelligence.stuckTracker
+- uid: Global.ArtificialIntelligence.injuryTracker
+  commentId: P:Global.ArtificialIntelligence.injuryTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_injuryTracker
+  name: injuryTracker
+  nameWithType: ArtificialIntelligence.injuryTracker
+  fullName: ArtificialIntelligence.injuryTracker
+- uid: Global.ArtificialIntelligence.friendTracker
+  commentId: P:Global.ArtificialIntelligence.friendTracker
+  parent: Global.ArtificialIntelligence
+  isExternal: true
+  href: Global.ArtificialIntelligence.html#ArtificialIntelligence_friendTracker
+  name: friendTracker
+  nameWithType: ArtificialIntelligence.friendTracker
+  fullName: ArtificialIntelligence.friendTracker
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SmallNeedleWorm
+  commentId: T:Global.SmallNeedleWorm
+  isExternal: true
+  href: SmallNeedleWorm.html
+  name: SmallNeedleWorm
+  nameWithType: SmallNeedleWorm
+  fullName: SmallNeedleWorm
+- uid: Global.SmallNeedleWormAI.#ctor*
+  commentId: Overload:Global.SmallNeedleWormAI.#ctor
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI__ctor_AbstractCreature_World_
+  name: SmallNeedleWormAI
+  nameWithType: SmallNeedleWormAI.SmallNeedleWormAI
+  fullName: SmallNeedleWormAI.SmallNeedleWormAI
+  nameWithType.vb: SmallNeedleWormAI.New
+  fullName.vb: SmallNeedleWormAI.New
+  name.vb: New
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.NeedleWormAI.Update
+  commentId: M:Global.NeedleWormAI.Update
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_Update
+  name: Update()
+  nameWithType: NeedleWormAI.Update()
+  fullName: NeedleWormAI.Update()
+  spec.csharp:
+  - uid: Global.NeedleWormAI.Update
+    name: Update
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.Update
+    name: Update
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_Update
+  - name: (
+  - name: )
+- uid: Global.SmallNeedleWormAI.Update*
+  commentId: Overload:Global.SmallNeedleWormAI.Update
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI_Update
+  name: Update
+  nameWithType: SmallNeedleWormAI.Update
+  fullName: SmallNeedleWormAI.Update
+- uid: Global.NeedleWormAI.IdleScore(WorldCoordinate)
+  commentId: M:Global.NeedleWormAI.IdleScore(WorldCoordinate)
+  parent: Global.NeedleWormAI
+  isExternal: true
+  href: Global.NeedleWormAI.html#NeedleWormAI_IdleScore_WorldCoordinate_
+  name: IdleScore(WorldCoordinate)
+  nameWithType: NeedleWormAI.IdleScore(WorldCoordinate)
+  fullName: NeedleWormAI.IdleScore(WorldCoordinate)
+  spec.csharp:
+  - uid: Global.NeedleWormAI.IdleScore(WorldCoordinate)
+    name: IdleScore
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_IdleScore_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+  spec.vb:
+  - uid: Global.NeedleWormAI.IdleScore(WorldCoordinate)
+    name: IdleScore
+    isExternal: true
+    href: Global.NeedleWormAI.html#NeedleWormAI_IdleScore_WorldCoordinate_
+  - name: (
+  - uid: Global.WorldCoordinate
+    name: WorldCoordinate
+    isExternal: true
+    href: WorldCoordinate.html
+  - name: )
+- uid: Global.SmallNeedleWormAI.IdleScore*
+  commentId: Overload:Global.SmallNeedleWormAI.IdleScore
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI_IdleScore_WorldCoordinate_
+  name: IdleScore
+  nameWithType: SmallNeedleWormAI.IdleScore
+  fullName: SmallNeedleWormAI.IdleScore
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SmallNeedleWormAI.CreateTrackedCreatureState*
+  commentId: Overload:Global.SmallNeedleWormAI.CreateTrackedCreatureState
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  name: CreateTrackedCreatureState
+  nameWithType: SmallNeedleWormAI.CreateTrackedCreatureState
+  fullName: SmallNeedleWormAI.CreateTrackedCreatureState
+- uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  commentId: M:Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  parent: Global.IUseARelationshipTracker
+  isExternal: true
+  href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  name: CreateTrackedCreatureState(DynamicRelationship)
+  nameWithType: IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  fullName: IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+  spec.csharp:
+  - uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+    name: CreateTrackedCreatureState
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+  spec.vb:
+  - uid: Global.IUseARelationshipTracker.CreateTrackedCreatureState(RelationshipTracker.DynamicRelationship)
+    name: CreateTrackedCreatureState
+    isExternal: true
+    href: Global.IUseARelationshipTracker.html#IUseARelationshipTracker_CreateTrackedCreatureState_RelationshipTracker_DynamicRelationship_
+  - name: (
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  - name: )
+- uid: Global.RelationshipTracker.DynamicRelationship
+  commentId: T:Global.RelationshipTracker.DynamicRelationship
+  isExternal: true
+  href: RelationshipTracker.html
+  name: RelationshipTracker.DynamicRelationship
+  nameWithType: RelationshipTracker.DynamicRelationship
+  fullName: RelationshipTracker.DynamicRelationship
+  spec.csharp:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+  spec.vb:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.DynamicRelationship
+    name: DynamicRelationship
+    isExternal: true
+    href: RelationshipTracker.DynamicRelationship.html
+- uid: Global.RelationshipTracker.TrackedCreatureState
+  commentId: T:Global.RelationshipTracker.TrackedCreatureState
+  isExternal: true
+  href: RelationshipTracker.html
+  name: RelationshipTracker.TrackedCreatureState
+  nameWithType: RelationshipTracker.TrackedCreatureState
+  fullName: RelationshipTracker.TrackedCreatureState
+  spec.csharp:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.TrackedCreatureState
+    name: TrackedCreatureState
+    isExternal: true
+    href: RelationshipTracker.TrackedCreatureState.html
+  spec.vb:
+  - uid: Global.RelationshipTracker
+    name: RelationshipTracker
+    isExternal: true
+    href: RelationshipTracker.html
+  - name: .
+  - uid: Global.RelationshipTracker.TrackedCreatureState
+    name: TrackedCreatureState
+    isExternal: true
+    href: RelationshipTracker.TrackedCreatureState.html
+- uid: Global.SmallNeedleWormAI.Mother*
+  commentId: Overload:Global.SmallNeedleWormAI.Mother
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI_Mother
+  name: Mother
+  nameWithType: SmallNeedleWormAI.Mother
+  fullName: SmallNeedleWormAI.Mother
+- uid: Global.SmallNeedleWormAI.NeedleWormMother*
+  commentId: Overload:Global.SmallNeedleWormAI.NeedleWormMother
+  isExternal: true
+  href: Global.SmallNeedleWormAI.html#SmallNeedleWormAI_NeedleWormMother
+  name: NeedleWormMother
+  nameWithType: SmallNeedleWormAI.NeedleWormMother
+  fullName: SmallNeedleWormAI.NeedleWormMother

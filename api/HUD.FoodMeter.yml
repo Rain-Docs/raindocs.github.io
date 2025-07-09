@@ -1,0 +1,2076 @@
+### YamlMime:ManagedReference
+items:
+- uid: HUD.FoodMeter
+  commentId: T:HUD.FoodMeter
+  id: FoodMeter
+  parent: HUD
+  children:
+  - HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)
+  - HUD.FoodMeter.CircleDistance(System.Single)
+  - HUD.FoodMeter.CurrentPupFood
+  - HUD.FoodMeter.Draw(System.Single)
+  - HUD.FoodMeter.DrawPos(System.Single)
+  - HUD.FoodMeter.IsPupFoodMeter
+  - HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)
+  - HUD.FoodMeter.NewShowCount(System.Int32)
+  - HUD.FoodMeter.PupHasDied
+  - HUD.FoodMeter.PupInDanger
+  - HUD.FoodMeter.RefuseFood
+  - HUD.FoodMeter.ShowSurvivalLimit
+  - HUD.FoodMeter.TotalWidth(System.Single)
+  - HUD.FoodMeter.TrySpawnPupBars
+  - HUD.FoodMeter.Update
+  - HUD.FoodMeter.abstractPup
+  - HUD.FoodMeter.circles
+  - HUD.FoodMeter.darkFade
+  - HUD.FoodMeter.downInCorner
+  - HUD.FoodMeter.eatCircleDelay
+  - HUD.FoodMeter.eatCircles
+  - HUD.FoodMeter.fContainer
+  - HUD.FoodMeter.fade
+  - HUD.FoodMeter.forceSleep
+  - HUD.FoodMeter.initPlopCircle
+  - HUD.FoodMeter.initPlopDelay
+  - HUD.FoodMeter.lastCount
+  - HUD.FoodMeter.lastFade
+  - HUD.FoodMeter.lastPos
+  - HUD.FoodMeter.lineSprite
+  - HUD.FoodMeter.maxFood
+  - HUD.FoodMeter.pos
+  - HUD.FoodMeter.pupBars
+  - HUD.FoodMeter.quarterPipShower
+  - HUD.FoodMeter.refuseCounter
+  - HUD.FoodMeter.showCount
+  - HUD.FoodMeter.showCountDelay
+  - HUD.FoodMeter.sleepScreenPhase
+  - HUD.FoodMeter.survivalLimit
+  - HUD.FoodMeter.timeCounter
+  - HUD.FoodMeter.visibleCounter
+  langs:
+  - csharp
+  - vb
+  name: FoodMeter
+  nameWithType: FoodMeter
+  fullName: HUD.FoodMeter
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:HUD.FoodMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FoodMeter : HudPart'
+    content.vb: Public Class FoodMeter Inherits HudPart
+  inheritance:
+  - System.Object
+  - HUD.HudPart
+  inheritedMembers:
+  - HUD.HudPart.hud
+  - HUD.HudPart.slatedForDeletion
+  - HUD.HudPart.ClearSprites
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: HUD.FoodMeter.lineSprite
+  commentId: F:HUD.FoodMeter.lineSprite
+  id: lineSprite
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: lineSprite
+  nameWithType: FoodMeter.lineSprite
+  fullName: HUD.FoodMeter.lineSprite
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.lineSprite</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FSprite lineSprite
+    return:
+      type: Global.FSprite
+    content.vb: Public lineSprite As FSprite
+- uid: HUD.FoodMeter.darkFade
+  commentId: F:HUD.FoodMeter.darkFade
+  id: darkFade
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: darkFade
+  nameWithType: FoodMeter.darkFade
+  fullName: HUD.FoodMeter.darkFade
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.darkFade</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FSprite darkFade
+    return:
+      type: Global.FSprite
+    content.vb: Public darkFade As FSprite
+- uid: HUD.FoodMeter.circles
+  commentId: F:HUD.FoodMeter.circles
+  id: circles
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: circles
+  nameWithType: FoodMeter.circles
+  fullName: HUD.FoodMeter.circles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.circles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<FoodMeter.MeterCircle> circles
+    return:
+      type: System.Collections.Generic.List{HUD.FoodMeter.MeterCircle}
+    content.vb: Public circles As List(Of FoodMeter.MeterCircle)
+- uid: HUD.FoodMeter.pos
+  commentId: F:HUD.FoodMeter.pos
+  id: pos
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: pos
+  nameWithType: FoodMeter.pos
+  fullName: HUD.FoodMeter.pos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.pos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 pos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public pos As Vector2
+- uid: HUD.FoodMeter.lastPos
+  commentId: F:HUD.FoodMeter.lastPos
+  id: lastPos
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: lastPos
+  nameWithType: FoodMeter.lastPos
+  fullName: HUD.FoodMeter.lastPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.lastPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 lastPos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public lastPos As Vector2
+- uid: HUD.FoodMeter.fade
+  commentId: F:HUD.FoodMeter.fade
+  id: fade
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: fade
+  nameWithType: FoodMeter.fade
+  fullName: HUD.FoodMeter.fade
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.fade</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float fade
+    return:
+      type: System.Single
+    content.vb: Public fade As Single
+- uid: HUD.FoodMeter.lastFade
+  commentId: F:HUD.FoodMeter.lastFade
+  id: lastFade
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: lastFade
+  nameWithType: FoodMeter.lastFade
+  fullName: HUD.FoodMeter.lastFade
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.lastFade</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float lastFade
+    return:
+      type: System.Single
+    content.vb: Public lastFade As Single
+- uid: HUD.FoodMeter.lastCount
+  commentId: F:HUD.FoodMeter.lastCount
+  id: lastCount
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: lastCount
+  nameWithType: FoodMeter.lastCount
+  fullName: HUD.FoodMeter.lastCount
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.lastCount</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int lastCount
+    return:
+      type: System.Int32
+    content.vb: Public lastCount As Integer
+- uid: HUD.FoodMeter.visibleCounter
+  commentId: F:HUD.FoodMeter.visibleCounter
+  id: visibleCounter
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: visibleCounter
+  nameWithType: FoodMeter.visibleCounter
+  fullName: HUD.FoodMeter.visibleCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.visibleCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int visibleCounter
+    return:
+      type: System.Int32
+    content.vb: Public visibleCounter As Integer
+- uid: HUD.FoodMeter.showCount
+  commentId: F:HUD.FoodMeter.showCount
+  id: showCount
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: showCount
+  nameWithType: FoodMeter.showCount
+  fullName: HUD.FoodMeter.showCount
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.showCount</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int showCount
+    return:
+      type: System.Int32
+    content.vb: Public showCount As Integer
+- uid: HUD.FoodMeter.showCountDelay
+  commentId: F:HUD.FoodMeter.showCountDelay
+  id: showCountDelay
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: showCountDelay
+  nameWithType: FoodMeter.showCountDelay
+  fullName: HUD.FoodMeter.showCountDelay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.showCountDelay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int showCountDelay
+    return:
+      type: System.Int32
+    content.vb: Public showCountDelay As Integer
+- uid: HUD.FoodMeter.initPlopCircle
+  commentId: F:HUD.FoodMeter.initPlopCircle
+  id: initPlopCircle
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: initPlopCircle
+  nameWithType: FoodMeter.initPlopCircle
+  fullName: HUD.FoodMeter.initPlopCircle
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.initPlopCircle</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int initPlopCircle
+    return:
+      type: System.Int32
+    content.vb: Public initPlopCircle As Integer
+- uid: HUD.FoodMeter.initPlopDelay
+  commentId: F:HUD.FoodMeter.initPlopDelay
+  id: initPlopDelay
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: initPlopDelay
+  nameWithType: FoodMeter.initPlopDelay
+  fullName: HUD.FoodMeter.initPlopDelay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.initPlopDelay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int initPlopDelay
+    return:
+      type: System.Int32
+    content.vb: Public initPlopDelay As Integer
+- uid: HUD.FoodMeter.refuseCounter
+  commentId: F:HUD.FoodMeter.refuseCounter
+  id: refuseCounter
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: refuseCounter
+  nameWithType: FoodMeter.refuseCounter
+  fullName: HUD.FoodMeter.refuseCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.refuseCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int refuseCounter
+    return:
+      type: System.Int32
+    content.vb: Public refuseCounter As Integer
+- uid: HUD.FoodMeter.eatCircles
+  commentId: F:HUD.FoodMeter.eatCircles
+  id: eatCircles
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: eatCircles
+  nameWithType: FoodMeter.eatCircles
+  fullName: HUD.FoodMeter.eatCircles
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.eatCircles</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int eatCircles
+    return:
+      type: System.Int32
+    content.vb: Public eatCircles As Integer
+- uid: HUD.FoodMeter.eatCircleDelay
+  commentId: F:HUD.FoodMeter.eatCircleDelay
+  id: eatCircleDelay
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: eatCircleDelay
+  nameWithType: FoodMeter.eatCircleDelay
+  fullName: HUD.FoodMeter.eatCircleDelay
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.eatCircleDelay</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int eatCircleDelay
+    return:
+      type: System.Int32
+    content.vb: Public eatCircleDelay As Integer
+- uid: HUD.FoodMeter.timeCounter
+  commentId: F:HUD.FoodMeter.timeCounter
+  id: timeCounter
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: timeCounter
+  nameWithType: FoodMeter.timeCounter
+  fullName: HUD.FoodMeter.timeCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.timeCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int timeCounter
+    return:
+      type: System.Int32
+    content.vb: Public timeCounter As Integer
+- uid: HUD.FoodMeter.downInCorner
+  commentId: F:HUD.FoodMeter.downInCorner
+  id: downInCorner
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: downInCorner
+  nameWithType: FoodMeter.downInCorner
+  fullName: HUD.FoodMeter.downInCorner
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.downInCorner</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float downInCorner
+    return:
+      type: System.Single
+    content.vb: Public downInCorner As Single
+- uid: HUD.FoodMeter.maxFood
+  commentId: F:HUD.FoodMeter.maxFood
+  id: maxFood
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: maxFood
+  nameWithType: FoodMeter.maxFood
+  fullName: HUD.FoodMeter.maxFood
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.maxFood</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int maxFood
+    return:
+      type: System.Int32
+    content.vb: Public maxFood As Integer
+- uid: HUD.FoodMeter.survivalLimit
+  commentId: F:HUD.FoodMeter.survivalLimit
+  id: survivalLimit
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: survivalLimit
+  nameWithType: FoodMeter.survivalLimit
+  fullName: HUD.FoodMeter.survivalLimit
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.survivalLimit</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int survivalLimit
+    return:
+      type: System.Int32
+    content.vb: Public survivalLimit As Integer
+- uid: HUD.FoodMeter.quarterPipShower
+  commentId: F:HUD.FoodMeter.quarterPipShower
+  id: quarterPipShower
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: quarterPipShower
+  nameWithType: FoodMeter.quarterPipShower
+  fullName: HUD.FoodMeter.quarterPipShower
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.quarterPipShower</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FoodMeter.QuarterPipShower quarterPipShower
+    return:
+      type: HUD.FoodMeter.QuarterPipShower
+    content.vb: Public quarterPipShower As FoodMeter.QuarterPipShower
+- uid: HUD.FoodMeter.sleepScreenPhase
+  commentId: F:HUD.FoodMeter.sleepScreenPhase
+  id: sleepScreenPhase
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: sleepScreenPhase
+  nameWithType: FoodMeter.sleepScreenPhase
+  fullName: HUD.FoodMeter.sleepScreenPhase
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.sleepScreenPhase</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int sleepScreenPhase
+    return:
+      type: System.Int32
+    content.vb: Public sleepScreenPhase As Integer
+- uid: HUD.FoodMeter.forceSleep
+  commentId: F:HUD.FoodMeter.forceSleep
+  id: forceSleep
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: forceSleep
+  nameWithType: FoodMeter.forceSleep
+  fullName: HUD.FoodMeter.forceSleep
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.forceSleep</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float forceSleep
+    return:
+      type: System.Single
+    content.vb: Public forceSleep As Single
+- uid: HUD.FoodMeter.pupBars
+  commentId: F:HUD.FoodMeter.pupBars
+  id: pupBars
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: pupBars
+  nameWithType: FoodMeter.pupBars
+  fullName: HUD.FoodMeter.pupBars
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.pupBars</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<FoodMeter> pupBars
+    return:
+      type: System.Collections.Generic.List{HUD.FoodMeter}
+    content.vb: Public pupBars As List(Of FoodMeter)
+- uid: HUD.FoodMeter.abstractPup
+  commentId: F:HUD.FoodMeter.abstractPup
+  id: abstractPup
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: abstractPup
+  nameWithType: FoodMeter.abstractPup
+  fullName: HUD.FoodMeter.abstractPup
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:HUD.FoodMeter.abstractPup</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public AbstractCreature abstractPup
+    return:
+      type: Global.AbstractCreature
+    content.vb: Public abstractPup As AbstractCreature
+- uid: HUD.FoodMeter.CircleDistance(System.Single)
+  commentId: M:HUD.FoodMeter.CircleDistance(System.Single)
+  id: CircleDistance(System.Single)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: CircleDistance(float)
+  nameWithType: FoodMeter.CircleDistance(float)
+  fullName: HUD.FoodMeter.CircleDistance(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.CircleDistance(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float CircleDistance(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.FoodMeter.CircleDistance(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.FoodMeter.CircleDistance(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CircleDistance(timeStacker As Single) As Single
+  overload: HUD.FoodMeter.CircleDistance*
+  nameWithType.vb: FoodMeter.CircleDistance(Single)
+  fullName.vb: HUD.FoodMeter.CircleDistance(Single)
+  name.vb: CircleDistance(Single)
+- uid: HUD.FoodMeter.DrawPos(System.Single)
+  commentId: M:HUD.FoodMeter.DrawPos(System.Single)
+  id: DrawPos(System.Single)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: DrawPos(float)
+  nameWithType: FoodMeter.DrawPos(float)
+  fullName: HUD.FoodMeter.DrawPos(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.DrawPos(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Vector2 DrawPos(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.FoodMeter.DrawPos(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.FoodMeter.DrawPos(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function DrawPos(timeStacker As Single) As Vector2
+  overload: HUD.FoodMeter.DrawPos*
+  nameWithType.vb: FoodMeter.DrawPos(Single)
+  fullName.vb: HUD.FoodMeter.DrawPos(Single)
+  name.vb: DrawPos(Single)
+- uid: HUD.FoodMeter.TotalWidth(System.Single)
+  commentId: M:HUD.FoodMeter.TotalWidth(System.Single)
+  id: TotalWidth(System.Single)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: TotalWidth(float)
+  nameWithType: FoodMeter.TotalWidth(float)
+  fullName: HUD.FoodMeter.TotalWidth(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.TotalWidth(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float TotalWidth(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.FoodMeter.TotalWidth(System.Single)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:HUD.FoodMeter.TotalWidth(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function TotalWidth(timeStacker As Single) As Single
+  overload: HUD.FoodMeter.TotalWidth*
+  nameWithType.vb: FoodMeter.TotalWidth(Single)
+  fullName.vb: HUD.FoodMeter.TotalWidth(Single)
+  name.vb: TotalWidth(Single)
+- uid: HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)
+  commentId: M:HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)
+  id: MoveSurvivalLimit(System.Single,System.Boolean)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: MoveSurvivalLimit(float, bool)
+  nameWithType: FoodMeter.MoveSurvivalLimit(float, bool)
+  fullName: HUD.FoodMeter.MoveSurvivalLimit(float, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void MoveSurvivalLimit(float to, bool smooth)
+    parameters:
+    - id: to
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>to</parameter>
+            <parameter>M:HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: smooth
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>smooth</parameter>
+            <parameter>M:HUD.FoodMeter.MoveSurvivalLimit(System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub MoveSurvivalLimit([to] As Single, smooth As Boolean)
+  overload: HUD.FoodMeter.MoveSurvivalLimit*
+  nameWithType.vb: FoodMeter.MoveSurvivalLimit(Single, Boolean)
+  fullName.vb: HUD.FoodMeter.MoveSurvivalLimit(Single, Boolean)
+  name.vb: MoveSurvivalLimit(Single, Boolean)
+- uid: HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)
+  commentId: M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)
+  id: '#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)'
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: FoodMeter(HUD, int, int, Player, int)
+  nameWithType: FoodMeter.FoodMeter(HUD, int, int, Player, int)
+  fullName: HUD.FoodMeter.FoodMeter(HUD.HUD, int, int, Player, int)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>HUD.FoodMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FoodMeter(HUD hud, int maxFood, int survivalLimit, Player associatedPup = null, int pupNumber = 0)
+    parameters:
+    - id: hud
+      type: HUD.HUD
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>hud</parameter>
+            <parameter>M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: maxFood
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maxFood</parameter>
+            <parameter>M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: survivalLimit
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>survivalLimit</parameter>
+            <parameter>M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: associatedPup
+      type: Global.Player
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>associatedPup</parameter>
+            <parameter>M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: pupNumber
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pupNumber</parameter>
+            <parameter>M:HUD.FoodMeter.#ctor(HUD.HUD,System.Int32,System.Int32,Player,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(hud As HUD, maxFood As Integer, survivalLimit As Integer, associatedPup As Player = Nothing, pupNumber As Integer = 0)
+  overload: HUD.FoodMeter.#ctor*
+  nameWithType.vb: FoodMeter.New(HUD, Integer, Integer, Player, Integer)
+  fullName.vb: HUD.FoodMeter.New(HUD.HUD, Integer, Integer, Player, Integer)
+  name.vb: New(HUD, Integer, Integer, Player, Integer)
+- uid: HUD.FoodMeter.NewShowCount(System.Int32)
+  commentId: M:HUD.FoodMeter.NewShowCount(System.Int32)
+  id: NewShowCount(System.Int32)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: NewShowCount(int)
+  nameWithType: FoodMeter.NewShowCount(int)
+  fullName: HUD.FoodMeter.NewShowCount(int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.NewShowCount(System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void NewShowCount(int cnt)
+    parameters:
+    - id: cnt
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>cnt</parameter>
+            <parameter>M:HUD.FoodMeter.NewShowCount(System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub NewShowCount(cnt As Integer)
+  overload: HUD.FoodMeter.NewShowCount*
+  nameWithType.vb: FoodMeter.NewShowCount(Integer)
+  fullName.vb: HUD.FoodMeter.NewShowCount(Integer)
+  name.vb: NewShowCount(Integer)
+- uid: HUD.FoodMeter.TrySpawnPupBars
+  commentId: M:HUD.FoodMeter.TrySpawnPupBars
+  id: TrySpawnPupBars
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: TrySpawnPupBars()
+  nameWithType: FoodMeter.TrySpawnPupBars()
+  fullName: HUD.FoodMeter.TrySpawnPupBars()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.TrySpawnPupBars</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void TrySpawnPupBars()
+    content.vb: Public Sub TrySpawnPupBars()
+  overload: HUD.FoodMeter.TrySpawnPupBars*
+- uid: HUD.FoodMeter.Update
+  commentId: M:HUD.FoodMeter.Update
+  id: Update
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: FoodMeter.Update()
+  fullName: HUD.FoodMeter.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: HUD.HudPart.Update
+  overload: HUD.FoodMeter.Update*
+- uid: HUD.FoodMeter.RefuseFood
+  commentId: M:HUD.FoodMeter.RefuseFood
+  id: RefuseFood
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: RefuseFood()
+  nameWithType: FoodMeter.RefuseFood()
+  fullName: HUD.FoodMeter.RefuseFood()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.RefuseFood</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RefuseFood()
+    content.vb: Public Sub RefuseFood()
+  overload: HUD.FoodMeter.RefuseFood*
+- uid: HUD.FoodMeter.Draw(System.Single)
+  commentId: M:HUD.FoodMeter.Draw(System.Single)
+  id: Draw(System.Single)
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: Draw(float)
+  nameWithType: FoodMeter.Draw(float)
+  fullName: HUD.FoodMeter.Draw(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:HUD.FoodMeter.Draw(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Draw(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:HUD.FoodMeter.Draw(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Draw(timeStacker As Single)
+  overridden: HUD.HudPart.Draw(System.Single)
+  overload: HUD.FoodMeter.Draw*
+  nameWithType.vb: FoodMeter.Draw(Single)
+  fullName.vb: HUD.FoodMeter.Draw(Single)
+  name.vb: Draw(Single)
+- uid: HUD.FoodMeter.fContainer
+  commentId: P:HUD.FoodMeter.fContainer
+  id: fContainer
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: fContainer
+  nameWithType: FoodMeter.fContainer
+  fullName: HUD.FoodMeter.fContainer
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.fContainer</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FContainer fContainer { get; }
+    parameters: []
+    return:
+      type: Global.FContainer
+    content.vb: Public ReadOnly Property fContainer As FContainer
+  overload: HUD.FoodMeter.fContainer*
+- uid: HUD.FoodMeter.ShowSurvivalLimit
+  commentId: P:HUD.FoodMeter.ShowSurvivalLimit
+  id: ShowSurvivalLimit
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: ShowSurvivalLimit
+  nameWithType: FoodMeter.ShowSurvivalLimit
+  fullName: HUD.FoodMeter.ShowSurvivalLimit
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.ShowSurvivalLimit</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int ShowSurvivalLimit { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ShowSurvivalLimit As Integer
+  overload: HUD.FoodMeter.ShowSurvivalLimit*
+- uid: HUD.FoodMeter.IsPupFoodMeter
+  commentId: P:HUD.FoodMeter.IsPupFoodMeter
+  id: IsPupFoodMeter
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: IsPupFoodMeter
+  nameWithType: FoodMeter.IsPupFoodMeter
+  fullName: HUD.FoodMeter.IsPupFoodMeter
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.IsPupFoodMeter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool IsPupFoodMeter { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPupFoodMeter As Boolean
+  overload: HUD.FoodMeter.IsPupFoodMeter*
+- uid: HUD.FoodMeter.PupHasDied
+  commentId: P:HUD.FoodMeter.PupHasDied
+  id: PupHasDied
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: PupHasDied
+  nameWithType: FoodMeter.PupHasDied
+  fullName: HUD.FoodMeter.PupHasDied
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.PupHasDied</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool PupHasDied { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PupHasDied As Boolean
+  overload: HUD.FoodMeter.PupHasDied*
+- uid: HUD.FoodMeter.CurrentPupFood
+  commentId: P:HUD.FoodMeter.CurrentPupFood
+  id: CurrentPupFood
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: CurrentPupFood
+  nameWithType: FoodMeter.CurrentPupFood
+  fullName: HUD.FoodMeter.CurrentPupFood
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.CurrentPupFood</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int CurrentPupFood { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CurrentPupFood As Integer
+  overload: HUD.FoodMeter.CurrentPupFood*
+- uid: HUD.FoodMeter.PupInDanger
+  commentId: P:HUD.FoodMeter.PupInDanger
+  id: PupInDanger
+  parent: HUD.FoodMeter
+  langs:
+  - csharp
+  - vb
+  name: PupInDanger
+  nameWithType: FoodMeter.PupInDanger
+  fullName: HUD.FoodMeter.PupInDanger
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: HUD
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:HUD.FoodMeter.PupInDanger</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool PupInDanger { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PupInDanger As Boolean
+  overload: HUD.FoodMeter.PupInDanger*
+references:
+- uid: HUD
+  commentId: N:HUD
+  isExternal: true
+  href: HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HUD.HudPart
+  commentId: T:HUD.HudPart
+  parent: HUD
+  isExternal: true
+  href: HUD.HudPart.html
+  name: HudPart
+  nameWithType: HudPart
+  fullName: HUD.HudPart
+- uid: HUD.HudPart.hud
+  commentId: F:HUD.HudPart.hud
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_hud
+  name: hud
+  nameWithType: HudPart.hud
+  fullName: HUD.HudPart.hud
+- uid: HUD.HudPart.slatedForDeletion
+  commentId: F:HUD.HudPart.slatedForDeletion
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_slatedForDeletion
+  name: slatedForDeletion
+  nameWithType: HudPart.slatedForDeletion
+  fullName: HUD.HudPart.slatedForDeletion
+- uid: HUD.HudPart.ClearSprites
+  commentId: M:HUD.HudPart.ClearSprites
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  name: ClearSprites()
+  nameWithType: HudPart.ClearSprites()
+  fullName: HUD.HudPart.ClearSprites()
+  spec.csharp:
+  - uid: HUD.HudPart.ClearSprites
+    name: ClearSprites
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.ClearSprites
+    name: ClearSprites
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_ClearSprites
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.FSprite
+  commentId: T:Global.FSprite
+  isExternal: true
+  href: FSprite.html
+  name: FSprite
+  nameWithType: FSprite
+  fullName: FSprite
+- uid: System.Collections.Generic.List{HUD.FoodMeter.MeterCircle}
+  commentId: T:System.Collections.Generic.List{HUD.FoodMeter.MeterCircle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FoodMeter.MeterCircle>
+  nameWithType: List<FoodMeter.MeterCircle>
+  fullName: System.Collections.Generic.List<HUD.FoodMeter.MeterCircle>
+  nameWithType.vb: List(Of FoodMeter.MeterCircle)
+  fullName.vb: System.Collections.Generic.List(Of HUD.FoodMeter.MeterCircle)
+  name.vb: List(Of FoodMeter.MeterCircle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: .
+  - uid: HUD.FoodMeter.MeterCircle
+    name: MeterCircle
+    isExternal: true
+    href: HUD.FoodMeter.MeterCircle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: .
+  - uid: HUD.FoodMeter.MeterCircle
+    name: MeterCircle
+    isExternal: true
+    href: HUD.FoodMeter.MeterCircle.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HUD.FoodMeter.QuarterPipShower
+  commentId: T:HUD.FoodMeter.QuarterPipShower
+  parent: HUD
+  isExternal: true
+  href: HUD.FoodMeter.html
+  name: FoodMeter.QuarterPipShower
+  nameWithType: FoodMeter.QuarterPipShower
+  fullName: HUD.FoodMeter.QuarterPipShower
+  spec.csharp:
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: .
+  - uid: HUD.FoodMeter.QuarterPipShower
+    name: QuarterPipShower
+    isExternal: true
+    href: HUD.FoodMeter.QuarterPipShower.html
+  spec.vb:
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: .
+  - uid: HUD.FoodMeter.QuarterPipShower
+    name: QuarterPipShower
+    isExternal: true
+    href: HUD.FoodMeter.QuarterPipShower.html
+- uid: System.Collections.Generic.List{HUD.FoodMeter}
+  commentId: T:System.Collections.Generic.List{HUD.FoodMeter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FoodMeter>
+  nameWithType: List<FoodMeter>
+  fullName: System.Collections.Generic.List<HUD.FoodMeter>
+  nameWithType.vb: List(Of FoodMeter)
+  fullName.vb: System.Collections.Generic.List(Of HUD.FoodMeter)
+  name.vb: List(Of FoodMeter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HUD.FoodMeter
+    name: FoodMeter
+    isExternal: true
+    href: HUD.FoodMeter.html
+  - name: )
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: HUD.FoodMeter.CircleDistance*
+  commentId: Overload:HUD.FoodMeter.CircleDistance
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_CircleDistance_System_Single_
+  name: CircleDistance
+  nameWithType: FoodMeter.CircleDistance
+  fullName: HUD.FoodMeter.CircleDistance
+- uid: HUD.FoodMeter.DrawPos*
+  commentId: Overload:HUD.FoodMeter.DrawPos
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_DrawPos_System_Single_
+  name: DrawPos
+  nameWithType: FoodMeter.DrawPos
+  fullName: HUD.FoodMeter.DrawPos
+- uid: HUD.FoodMeter.TotalWidth*
+  commentId: Overload:HUD.FoodMeter.TotalWidth
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_TotalWidth_System_Single_
+  name: TotalWidth
+  nameWithType: FoodMeter.TotalWidth
+  fullName: HUD.FoodMeter.TotalWidth
+- uid: HUD.FoodMeter.MoveSurvivalLimit*
+  commentId: Overload:HUD.FoodMeter.MoveSurvivalLimit
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_MoveSurvivalLimit_System_Single_System_Boolean_
+  name: MoveSurvivalLimit
+  nameWithType: FoodMeter.MoveSurvivalLimit
+  fullName: HUD.FoodMeter.MoveSurvivalLimit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: HUD.FoodMeter.#ctor*
+  commentId: Overload:HUD.FoodMeter.#ctor
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter__ctor_HUD_HUD_System_Int32_System_Int32_Player_System_Int32_
+  name: FoodMeter
+  nameWithType: FoodMeter.FoodMeter
+  fullName: HUD.FoodMeter.FoodMeter
+  nameWithType.vb: FoodMeter.New
+  fullName.vb: HUD.FoodMeter.New
+  name.vb: New
+- uid: HUD.HUD
+  commentId: T:HUD.HUD
+  parent: HUD
+  isExternal: true
+  href: HUD.HUD.html
+  name: HUD
+  nameWithType: HUD
+  fullName: HUD.HUD
+- uid: Global.Player
+  commentId: T:Global.Player
+  isExternal: true
+  href: Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Player
+- uid: HUD.FoodMeter.NewShowCount*
+  commentId: Overload:HUD.FoodMeter.NewShowCount
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_NewShowCount_System_Int32_
+  name: NewShowCount
+  nameWithType: FoodMeter.NewShowCount
+  fullName: HUD.FoodMeter.NewShowCount
+- uid: HUD.FoodMeter.TrySpawnPupBars*
+  commentId: Overload:HUD.FoodMeter.TrySpawnPupBars
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_TrySpawnPupBars
+  name: TrySpawnPupBars
+  nameWithType: FoodMeter.TrySpawnPupBars
+  fullName: HUD.FoodMeter.TrySpawnPupBars
+- uid: HUD.HudPart.Update
+  commentId: M:HUD.HudPart.Update
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_Update
+  name: Update()
+  nameWithType: HudPart.Update()
+  fullName: HUD.HudPart.Update()
+  spec.csharp:
+  - uid: HUD.HudPart.Update
+    name: Update
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.Update
+    name: Update
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Update
+  - name: (
+  - name: )
+- uid: HUD.FoodMeter.Update*
+  commentId: Overload:HUD.FoodMeter.Update
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_Update
+  name: Update
+  nameWithType: FoodMeter.Update
+  fullName: HUD.FoodMeter.Update
+- uid: HUD.FoodMeter.RefuseFood*
+  commentId: Overload:HUD.FoodMeter.RefuseFood
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_RefuseFood
+  name: RefuseFood
+  nameWithType: FoodMeter.RefuseFood
+  fullName: HUD.FoodMeter.RefuseFood
+- uid: HUD.HudPart.Draw(System.Single)
+  commentId: M:HUD.HudPart.Draw(System.Single)
+  parent: HUD.HudPart
+  isExternal: true
+  href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  name: Draw(float)
+  nameWithType: HudPart.Draw(float)
+  fullName: HUD.HudPart.Draw(float)
+  nameWithType.vb: HudPart.Draw(Single)
+  fullName.vb: HUD.HudPart.Draw(Single)
+  name.vb: Draw(Single)
+  spec.csharp:
+  - uid: HUD.HudPart.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: HUD.HudPart.Draw(System.Single)
+    name: Draw
+    isExternal: true
+    href: HUD.HudPart.html#HUD_HudPart_Draw_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: HUD.FoodMeter.Draw*
+  commentId: Overload:HUD.FoodMeter.Draw
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_Draw_System_Single_
+  name: Draw
+  nameWithType: FoodMeter.Draw
+  fullName: HUD.FoodMeter.Draw
+- uid: HUD.FoodMeter.fContainer*
+  commentId: Overload:HUD.FoodMeter.fContainer
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_fContainer
+  name: fContainer
+  nameWithType: FoodMeter.fContainer
+  fullName: HUD.FoodMeter.fContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer
+- uid: HUD.FoodMeter.ShowSurvivalLimit*
+  commentId: Overload:HUD.FoodMeter.ShowSurvivalLimit
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_ShowSurvivalLimit
+  name: ShowSurvivalLimit
+  nameWithType: FoodMeter.ShowSurvivalLimit
+  fullName: HUD.FoodMeter.ShowSurvivalLimit
+- uid: HUD.FoodMeter.IsPupFoodMeter*
+  commentId: Overload:HUD.FoodMeter.IsPupFoodMeter
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_IsPupFoodMeter
+  name: IsPupFoodMeter
+  nameWithType: FoodMeter.IsPupFoodMeter
+  fullName: HUD.FoodMeter.IsPupFoodMeter
+- uid: HUD.FoodMeter.PupHasDied*
+  commentId: Overload:HUD.FoodMeter.PupHasDied
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_PupHasDied
+  name: PupHasDied
+  nameWithType: FoodMeter.PupHasDied
+  fullName: HUD.FoodMeter.PupHasDied
+- uid: HUD.FoodMeter.CurrentPupFood*
+  commentId: Overload:HUD.FoodMeter.CurrentPupFood
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_CurrentPupFood
+  name: CurrentPupFood
+  nameWithType: FoodMeter.CurrentPupFood
+  fullName: HUD.FoodMeter.CurrentPupFood
+- uid: HUD.FoodMeter.PupInDanger*
+  commentId: Overload:HUD.FoodMeter.PupInDanger
+  isExternal: true
+  href: HUD.FoodMeter.html#HUD_FoodMeter_PupInDanger
+  name: PupInDanger
+  nameWithType: FoodMeter.PupInDanger
+  fullName: HUD.FoodMeter.PupInDanger

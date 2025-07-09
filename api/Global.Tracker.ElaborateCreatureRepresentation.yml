@@ -1,0 +1,1125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Tracker.ElaborateCreatureRepresentation
+  commentId: T:Global.Tracker.ElaborateCreatureRepresentation
+  id: Tracker.ElaborateCreatureRepresentation
+  parent: Global
+  children:
+  - Global.Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)
+  - Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+  - Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  - Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  - Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+  - Global.Tracker.ElaborateCreatureRepresentation.Update
+  - Global.Tracker.ElaborateCreatureRepresentation.bestGhost
+  - Global.Tracker.ElaborateCreatureRepresentation.bestGhostDirty
+  - Global.Tracker.ElaborateCreatureRepresentation.ghosts
+  langs:
+  - csharp
+  - vb
+  name: Tracker.ElaborateCreatureRepresentation
+  nameWithType: Tracker.ElaborateCreatureRepresentation
+  fullName: Tracker.ElaborateCreatureRepresentation
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:Tracker.ElaborateCreatureRepresentation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class Tracker.ElaborateCreatureRepresentation : Tracker.CreatureRepresentation'
+    content.vb: Public Class Tracker.ElaborateCreatureRepresentation Inherits Tracker.CreatureRepresentation
+  inheritance:
+  - System.Object
+  - Global.Tracker.CreatureRepresentation
+  inheritedMembers:
+  - Global.Tracker.CreatureRepresentation.parent
+  - Global.Tracker.CreatureRepresentation.representedCreature
+  - Global.Tracker.CreatureRepresentation.forgetCounter
+  - Global.Tracker.CreatureRepresentation.age
+  - Global.Tracker.CreatureRepresentation.dynamicRelationship
+  - Global.Tracker.CreatureRepresentation.deleteMeNextFrame
+  - Global.Tracker.CreatureRepresentation.priority
+  - Global.Tracker.CreatureRepresentation.lastSeenCoord
+  - Global.Tracker.CreatureRepresentation.HeardThisCreature
+  - Global.Tracker.CreatureRepresentation.MakeVisible
+  - Global.Tracker.CreatureRepresentation.SetVisualContact(System.Boolean)
+  - Global.Tracker.CreatureRepresentation.Destroy
+  - Global.Tracker.CreatureRepresentation.VisualContact
+  - Global.Tracker.CreatureRepresentation.TicksSinceSeen
+  - Global.Tracker.CreatureRepresentation.EstimatedChanceOfFinding
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.Tracker.ElaborateCreatureRepresentation.ghosts
+  commentId: F:Global.Tracker.ElaborateCreatureRepresentation.ghosts
+  id: ghosts
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: ghosts
+  nameWithType: Tracker.ElaborateCreatureRepresentation.ghosts
+  fullName: Tracker.ElaborateCreatureRepresentation.ghosts
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Tracker.ElaborateCreatureRepresentation.ghosts</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<Tracker.Ghost> ghosts
+    return:
+      type: System.Collections.Generic.List{Tracker.Ghost}
+    content.vb: Public ghosts As List(Of Tracker.Ghost)
+- uid: Global.Tracker.ElaborateCreatureRepresentation.bestGhost
+  commentId: F:Global.Tracker.ElaborateCreatureRepresentation.bestGhost
+  id: bestGhost
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: bestGhost
+  nameWithType: Tracker.ElaborateCreatureRepresentation.bestGhost
+  fullName: Tracker.ElaborateCreatureRepresentation.bestGhost
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Tracker.ElaborateCreatureRepresentation.bestGhost</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Tracker.Ghost bestGhost
+    return:
+      type: Global.Tracker.Ghost
+    content.vb: Public bestGhost As Tracker.Ghost
+- uid: Global.Tracker.ElaborateCreatureRepresentation.bestGhostDirty
+  commentId: F:Global.Tracker.ElaborateCreatureRepresentation.bestGhostDirty
+  id: bestGhostDirty
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: bestGhostDirty
+  nameWithType: Tracker.ElaborateCreatureRepresentation.bestGhostDirty
+  fullName: Tracker.ElaborateCreatureRepresentation.bestGhostDirty
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:Tracker.ElaborateCreatureRepresentation.bestGhostDirty</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool bestGhostDirty
+    return:
+      type: System.Boolean
+    content.vb: Public bestGhostDirty As Boolean
+- uid: Global.Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)
+  commentId: M:Global.Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)
+  id: '#ctor(Tracker,AbstractCreature,System.Single,System.Int32)'
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: ElaborateCreatureRepresentation(Tracker, AbstractCreature, float, int)
+  nameWithType: Tracker.ElaborateCreatureRepresentation.ElaborateCreatureRepresentation(Tracker, AbstractCreature, float, int)
+  fullName: Tracker.ElaborateCreatureRepresentation.ElaborateCreatureRepresentation(Tracker, AbstractCreature, float, int)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>Tracker.ElaborateCreatureRepresentation</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public ElaborateCreatureRepresentation(Tracker parent, AbstractCreature representedCreature, float priority, int maxGhosts)
+    parameters:
+    - id: parent
+      type: Global.Tracker
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>parent</parameter>
+            <parameter>M:Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: representedCreature
+      type: Global.AbstractCreature
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>representedCreature</parameter>
+            <parameter>M:Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: priority
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>priority</parameter>
+            <parameter>M:Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: maxGhosts
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>maxGhosts</parameter>
+            <parameter>M:Tracker.ElaborateCreatureRepresentation.#ctor(Tracker,AbstractCreature,System.Single,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(parent As Tracker, representedCreature As AbstractCreature, priority As Single, maxGhosts As Integer)
+  overload: Global.Tracker.ElaborateCreatureRepresentation.#ctor*
+  nameWithType.vb: Tracker.ElaborateCreatureRepresentation.New(Tracker, AbstractCreature, Single, Integer)
+  fullName.vb: Tracker.ElaborateCreatureRepresentation.New(Tracker, AbstractCreature, Single, Integer)
+  name.vb: New(Tracker, AbstractCreature, Single, Integer)
+- uid: Global.Tracker.ElaborateCreatureRepresentation.Update
+  commentId: M:Global.Tracker.ElaborateCreatureRepresentation.Update
+  id: Update
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: Tracker.ElaborateCreatureRepresentation.Update()
+  fullName: Tracker.ElaborateCreatureRepresentation.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Tracker.ElaborateCreatureRepresentation.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.Tracker.CreatureRepresentation.Update
+  overload: Global.Tracker.ElaborateCreatureRepresentation.Update*
+- uid: Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+  commentId: M:Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+  id: BestGuessForPosition
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: BestGuessForPosition()
+  nameWithType: Tracker.ElaborateCreatureRepresentation.BestGuessForPosition()
+  fullName: Tracker.ElaborateCreatureRepresentation.BestGuessForPosition()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Tracker.ElaborateCreatureRepresentation.BestGuessForPosition</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override WorldCoordinate BestGuessForPosition()
+    return:
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:Tracker.ElaborateCreatureRepresentation.BestGuessForPosition</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function BestGuessForPosition() As WorldCoordinate
+  overridden: Global.Tracker.CreatureRepresentation.BestGuessForPosition
+  overload: Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition*
+- uid: Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+  commentId: M:Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+  id: SenseThatCreatureHasLeftRoom
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: SenseThatCreatureHasLeftRoom()
+  nameWithType: Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom()
+  fullName: Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: protected override void SenseThatCreatureHasLeftRoom()
+    content.vb: Protected Overrides Sub SenseThatCreatureHasLeftRoom()
+  overridden: Global.Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom
+  overload: Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom*
+- uid: Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  commentId: P:Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  id: MaxGhosts
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: MaxGhosts
+  nameWithType: Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  fullName: Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Tracker.ElaborateCreatureRepresentation.MaxGhosts</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int MaxGhosts { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxGhosts As Integer
+  overload: Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts*
+- uid: Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  commentId: P:Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  id: LowestGenerationAvailable
+  parent: Global.Tracker.ElaborateCreatureRepresentation
+  langs:
+  - csharp
+  - vb
+  name: LowestGenerationAvailable
+  nameWithType: Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  fullName: Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override int LowestGenerationAvailable { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides ReadOnly Property LowestGenerationAvailable As Integer
+  overridden: Global.Tracker.CreatureRepresentation.LowestGenerationAvailable
+  overload: Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.Tracker.CreatureRepresentation.parent
+  commentId: F:Global.Tracker.CreatureRepresentation.parent
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_parent
+  name: parent
+  nameWithType: Tracker.CreatureRepresentation.parent
+  fullName: Tracker.CreatureRepresentation.parent
+- uid: Global.Tracker.CreatureRepresentation.representedCreature
+  commentId: F:Global.Tracker.CreatureRepresentation.representedCreature
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_representedCreature
+  name: representedCreature
+  nameWithType: Tracker.CreatureRepresentation.representedCreature
+  fullName: Tracker.CreatureRepresentation.representedCreature
+- uid: Global.Tracker.CreatureRepresentation.forgetCounter
+  commentId: F:Global.Tracker.CreatureRepresentation.forgetCounter
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_forgetCounter
+  name: forgetCounter
+  nameWithType: Tracker.CreatureRepresentation.forgetCounter
+  fullName: Tracker.CreatureRepresentation.forgetCounter
+- uid: Global.Tracker.CreatureRepresentation.age
+  commentId: F:Global.Tracker.CreatureRepresentation.age
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_age
+  name: age
+  nameWithType: Tracker.CreatureRepresentation.age
+  fullName: Tracker.CreatureRepresentation.age
+- uid: Global.Tracker.CreatureRepresentation.dynamicRelationship
+  commentId: F:Global.Tracker.CreatureRepresentation.dynamicRelationship
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_dynamicRelationship
+  name: dynamicRelationship
+  nameWithType: Tracker.CreatureRepresentation.dynamicRelationship
+  fullName: Tracker.CreatureRepresentation.dynamicRelationship
+- uid: Global.Tracker.CreatureRepresentation.deleteMeNextFrame
+  commentId: F:Global.Tracker.CreatureRepresentation.deleteMeNextFrame
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_deleteMeNextFrame
+  name: deleteMeNextFrame
+  nameWithType: Tracker.CreatureRepresentation.deleteMeNextFrame
+  fullName: Tracker.CreatureRepresentation.deleteMeNextFrame
+- uid: Global.Tracker.CreatureRepresentation.priority
+  commentId: F:Global.Tracker.CreatureRepresentation.priority
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_priority
+  name: priority
+  nameWithType: Tracker.CreatureRepresentation.priority
+  fullName: Tracker.CreatureRepresentation.priority
+- uid: Global.Tracker.CreatureRepresentation.lastSeenCoord
+  commentId: F:Global.Tracker.CreatureRepresentation.lastSeenCoord
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_lastSeenCoord
+  name: lastSeenCoord
+  nameWithType: Tracker.CreatureRepresentation.lastSeenCoord
+  fullName: Tracker.CreatureRepresentation.lastSeenCoord
+- uid: Global.Tracker.CreatureRepresentation.HeardThisCreature
+  commentId: M:Global.Tracker.CreatureRepresentation.HeardThisCreature
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_HeardThisCreature
+  name: HeardThisCreature()
+  nameWithType: Tracker.CreatureRepresentation.HeardThisCreature()
+  fullName: Tracker.CreatureRepresentation.HeardThisCreature()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.HeardThisCreature
+    name: HeardThisCreature
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_HeardThisCreature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.HeardThisCreature
+    name: HeardThisCreature
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_HeardThisCreature
+  - name: (
+  - name: )
+- uid: Global.Tracker.CreatureRepresentation.MakeVisible
+  commentId: M:Global.Tracker.CreatureRepresentation.MakeVisible
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_MakeVisible
+  name: MakeVisible()
+  nameWithType: Tracker.CreatureRepresentation.MakeVisible()
+  fullName: Tracker.CreatureRepresentation.MakeVisible()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.MakeVisible
+    name: MakeVisible
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_MakeVisible
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.MakeVisible
+    name: MakeVisible
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_MakeVisible
+  - name: (
+  - name: )
+- uid: Global.Tracker.CreatureRepresentation.SetVisualContact(System.Boolean)
+  commentId: M:Global.Tracker.CreatureRepresentation.SetVisualContact(System.Boolean)
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SetVisualContact_System_Boolean_
+  name: SetVisualContact(bool)
+  nameWithType: Tracker.CreatureRepresentation.SetVisualContact(bool)
+  fullName: Tracker.CreatureRepresentation.SetVisualContact(bool)
+  nameWithType.vb: Tracker.CreatureRepresentation.SetVisualContact(Boolean)
+  fullName.vb: Tracker.CreatureRepresentation.SetVisualContact(Boolean)
+  name.vb: SetVisualContact(Boolean)
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.SetVisualContact(System.Boolean)
+    name: SetVisualContact
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SetVisualContact_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.SetVisualContact(System.Boolean)
+    name: SetVisualContact
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SetVisualContact_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.Tracker.CreatureRepresentation.Destroy
+  commentId: M:Global.Tracker.CreatureRepresentation.Destroy
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Destroy
+  name: Destroy()
+  nameWithType: Tracker.CreatureRepresentation.Destroy()
+  fullName: Tracker.CreatureRepresentation.Destroy()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Destroy
+  - name: (
+  - name: )
+- uid: Global.Tracker.CreatureRepresentation.VisualContact
+  commentId: P:Global.Tracker.CreatureRepresentation.VisualContact
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_VisualContact
+  name: VisualContact
+  nameWithType: Tracker.CreatureRepresentation.VisualContact
+  fullName: Tracker.CreatureRepresentation.VisualContact
+- uid: Global.Tracker.CreatureRepresentation.TicksSinceSeen
+  commentId: P:Global.Tracker.CreatureRepresentation.TicksSinceSeen
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_TicksSinceSeen
+  name: TicksSinceSeen
+  nameWithType: Tracker.CreatureRepresentation.TicksSinceSeen
+  fullName: Tracker.CreatureRepresentation.TicksSinceSeen
+- uid: Global.Tracker.CreatureRepresentation.EstimatedChanceOfFinding
+  commentId: P:Global.Tracker.CreatureRepresentation.EstimatedChanceOfFinding
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_EstimatedChanceOfFinding
+  name: EstimatedChanceOfFinding
+  nameWithType: Tracker.CreatureRepresentation.EstimatedChanceOfFinding
+  fullName: Tracker.CreatureRepresentation.EstimatedChanceOfFinding
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{Tracker.Ghost}
+  commentId: T:System.Collections.Generic.List{Tracker.Ghost}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Tracker.Ghost>
+  nameWithType: List<Tracker.Ghost>
+  fullName: System.Collections.Generic.List<Tracker.Ghost>
+  nameWithType.vb: List(Of Tracker.Ghost)
+  fullName.vb: System.Collections.Generic.List(Of Tracker.Ghost)
+  name.vb: List(Of Tracker.Ghost)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.Ghost
+    name: Ghost
+    isExternal: true
+    href: Tracker.Ghost.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.Ghost
+    name: Ghost
+    isExternal: true
+    href: Tracker.Ghost.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.Tracker.Ghost
+  commentId: T:Global.Tracker.Ghost
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.Ghost
+  nameWithType: Tracker.Ghost
+  fullName: Tracker.Ghost
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.Ghost
+    name: Ghost
+    isExternal: true
+    href: Tracker.Ghost.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.Ghost
+    name: Ghost
+    isExternal: true
+    href: Tracker.Ghost.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Tracker.ElaborateCreatureRepresentation.#ctor*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.#ctor
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation__ctor_Tracker_AbstractCreature_System_Single_System_Int32_
+  name: ElaborateCreatureRepresentation
+  nameWithType: Tracker.ElaborateCreatureRepresentation.ElaborateCreatureRepresentation
+  fullName: Tracker.ElaborateCreatureRepresentation.ElaborateCreatureRepresentation
+  nameWithType.vb: Tracker.ElaborateCreatureRepresentation.New
+  fullName.vb: Tracker.ElaborateCreatureRepresentation.New
+  name.vb: New
+- uid: Global.Tracker
+  commentId: T:Global.Tracker
+  isExternal: true
+  href: Tracker.html
+  name: Tracker
+  nameWithType: Tracker
+  fullName: Tracker
+- uid: Global.AbstractCreature
+  commentId: T:Global.AbstractCreature
+  isExternal: true
+  href: AbstractCreature.html
+  name: AbstractCreature
+  nameWithType: AbstractCreature
+  fullName: AbstractCreature
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Tracker.CreatureRepresentation.Update
+  commentId: M:Global.Tracker.CreatureRepresentation.Update
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Update
+  name: Update()
+  nameWithType: Tracker.CreatureRepresentation.Update()
+  fullName: Tracker.CreatureRepresentation.Update()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.Update
+    name: Update
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.Update
+    name: Update
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_Update
+  - name: (
+  - name: )
+- uid: Global.Tracker.ElaborateCreatureRepresentation.Update*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.Update
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation_Update
+  name: Update
+  nameWithType: Tracker.ElaborateCreatureRepresentation.Update
+  fullName: Tracker.ElaborateCreatureRepresentation.Update
+- uid: Global.Tracker.CreatureRepresentation.BestGuessForPosition
+  commentId: M:Global.Tracker.CreatureRepresentation.BestGuessForPosition
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_BestGuessForPosition
+  name: BestGuessForPosition()
+  nameWithType: Tracker.CreatureRepresentation.BestGuessForPosition()
+  fullName: Tracker.CreatureRepresentation.BestGuessForPosition()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.BestGuessForPosition
+    name: BestGuessForPosition
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_BestGuessForPosition
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.BestGuessForPosition
+    name: BestGuessForPosition
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_BestGuessForPosition
+  - name: (
+  - name: )
+- uid: Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation_BestGuessForPosition
+  name: BestGuessForPosition
+  nameWithType: Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+  fullName: Tracker.ElaborateCreatureRepresentation.BestGuessForPosition
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: Global.Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom
+  commentId: M:Global.Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SenseThatCreatureHasLeftRoom
+  name: SenseThatCreatureHasLeftRoom()
+  nameWithType: Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom()
+  fullName: Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom()
+  spec.csharp:
+  - uid: Global.Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom
+    name: SenseThatCreatureHasLeftRoom
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SenseThatCreatureHasLeftRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Tracker.CreatureRepresentation.SenseThatCreatureHasLeftRoom
+    name: SenseThatCreatureHasLeftRoom
+    isExternal: true
+    href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_SenseThatCreatureHasLeftRoom
+  - name: (
+  - name: )
+- uid: Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation_SenseThatCreatureHasLeftRoom
+  name: SenseThatCreatureHasLeftRoom
+  nameWithType: Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+  fullName: Tracker.ElaborateCreatureRepresentation.SenseThatCreatureHasLeftRoom
+- uid: Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation_MaxGhosts
+  name: MaxGhosts
+  nameWithType: Tracker.ElaborateCreatureRepresentation.MaxGhosts
+  fullName: Tracker.ElaborateCreatureRepresentation.MaxGhosts
+- uid: Global.Tracker.CreatureRepresentation.LowestGenerationAvailable
+  commentId: P:Global.Tracker.CreatureRepresentation.LowestGenerationAvailable
+  parent: Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Global.Tracker.CreatureRepresentation.html#Tracker_CreatureRepresentation_LowestGenerationAvailable
+  name: LowestGenerationAvailable
+  nameWithType: Tracker.CreatureRepresentation.LowestGenerationAvailable
+  fullName: Tracker.CreatureRepresentation.LowestGenerationAvailable
+- uid: Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable*
+  commentId: Overload:Global.Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  isExternal: true
+  href: Global.Tracker.ElaborateCreatureRepresentation.html#Tracker_ElaborateCreatureRepresentation_LowestGenerationAvailable
+  name: LowestGenerationAvailable
+  nameWithType: Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable
+  fullName: Tracker.ElaborateCreatureRepresentation.LowestGenerationAvailable

@@ -1,0 +1,841 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FliesWorldAI
+  commentId: T:Global.FliesWorldAI
+  id: FliesWorldAI
+  parent: Global
+  children:
+  - Global.FliesWorldAI.#ctor(World)
+  - Global.FliesWorldAI.ActiveSwarmRoom(AbstractRoom)
+  - Global.FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)
+  - Global.FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)
+  - Global.FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)
+  - Global.FliesWorldAI.MigrationDirection(WorldCoordinate)
+  - Global.FliesWorldAI.RespawnOneFly
+  - Global.FliesWorldAI.Update
+  - Global.FliesWorldAI.swarmRoomBehaviors
+  langs:
+  - csharp
+  - vb
+  name: FliesWorldAI
+  nameWithType: FliesWorldAI
+  fullName: FliesWorldAI
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FliesWorldAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FliesWorldAI : World.WorldProcess'
+    content.vb: Public Class FliesWorldAI Inherits World.WorldProcess
+  inheritance:
+  - System.Object
+  - Global.World.WorldProcess
+  inheritedMembers:
+  - Global.World.WorldProcess.world
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FliesWorldAI.swarmRoomBehaviors
+  commentId: F:Global.FliesWorldAI.swarmRoomBehaviors
+  id: swarmRoomBehaviors
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: swarmRoomBehaviors
+  nameWithType: FliesWorldAI.swarmRoomBehaviors
+  fullName: FliesWorldAI.swarmRoomBehaviors
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FliesWorldAI.swarmRoomBehaviors</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FliesWorldAI.Behavior[] swarmRoomBehaviors
+    return:
+      type: Global.FliesWorldAI.Behavior[]
+    content.vb: Public swarmRoomBehaviors As FliesWorldAI.Behavior()
+- uid: Global.FliesWorldAI.#ctor(World)
+  commentId: M:Global.FliesWorldAI.#ctor(World)
+  id: '#ctor(World)'
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: FliesWorldAI(World)
+  nameWithType: FliesWorldAI.FliesWorldAI(World)
+  fullName: FliesWorldAI.FliesWorldAI(World)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FliesWorldAI</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FliesWorldAI(World world)
+    parameters:
+    - id: world
+      type: Global.World
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>world</parameter>
+            <parameter>M:FliesWorldAI.#ctor(World)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(world As World)
+  overload: Global.FliesWorldAI.#ctor*
+  nameWithType.vb: FliesWorldAI.New(World)
+  fullName.vb: FliesWorldAI.New(World)
+  name.vb: New(World)
+- uid: Global.FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)
+  commentId: M:Global.FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)
+  id: LoadDijkstraMaps(SwarmRoomMapper)
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: LoadDijkstraMaps(SwarmRoomMapper)
+  nameWithType: FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)
+  fullName: FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void LoadDijkstraMaps(SwarmRoomMapper mapper)
+    parameters:
+    - id: mapper
+      type: Global.SwarmRoomMapper
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>mapper</parameter>
+            <parameter>M:FliesWorldAI.LoadDijkstraMaps(SwarmRoomMapper)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub LoadDijkstraMaps(mapper As SwarmRoomMapper)
+  overload: Global.FliesWorldAI.LoadDijkstraMaps*
+- uid: Global.FliesWorldAI.Update
+  commentId: M:Global.FliesWorldAI.Update
+  id: Update
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: FliesWorldAI.Update()
+  fullName: FliesWorldAI.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.World.WorldProcess.Update
+  overload: Global.FliesWorldAI.Update*
+- uid: Global.FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)
+  commentId: M:Global.FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)
+  id: GetSwarmRoomDistance(WorldCoordinate,System.Int32)
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: GetSwarmRoomDistance(WorldCoordinate, int)
+  nameWithType: FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate, int)
+  fullName: FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float GetSwarmRoomDistance(WorldCoordinate coord, int swarmRoomIndex)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: swarmRoomIndex
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>swarmRoomIndex</parameter>
+            <parameter>M:FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetSwarmRoomDistance(coord As WorldCoordinate, swarmRoomIndex As Integer) As Single
+  overload: Global.FliesWorldAI.GetSwarmRoomDistance*
+  nameWithType.vb: FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate, Integer)
+  fullName.vb: FliesWorldAI.GetSwarmRoomDistance(WorldCoordinate, Integer)
+  name.vb: GetSwarmRoomDistance(WorldCoordinate, Integer)
+- uid: Global.FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)
+  commentId: M:Global.FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)
+  id: ClosestSwarmRoom(WorldCoordinate)
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: ClosestSwarmRoom(WorldCoordinate)
+  nameWithType: FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)
+  fullName: FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int ClosestSwarmRoom(WorldCoordinate coord)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesWorldAI.ClosestSwarmRoom(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ClosestSwarmRoom(coord As WorldCoordinate) As Integer
+  overload: Global.FliesWorldAI.ClosestSwarmRoom*
+- uid: Global.FliesWorldAI.MigrationDirection(WorldCoordinate)
+  commentId: M:Global.FliesWorldAI.MigrationDirection(WorldCoordinate)
+  id: MigrationDirection(WorldCoordinate)
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: MigrationDirection(WorldCoordinate)
+  nameWithType: FliesWorldAI.MigrationDirection(WorldCoordinate)
+  fullName: FliesWorldAI.MigrationDirection(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.MigrationDirection(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int MigrationDirection(WorldCoordinate coord)
+    parameters:
+    - id: coord
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>coord</parameter>
+            <parameter>M:FliesWorldAI.MigrationDirection(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesWorldAI.MigrationDirection(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function MigrationDirection(coord As WorldCoordinate) As Integer
+  overload: Global.FliesWorldAI.MigrationDirection*
+- uid: Global.FliesWorldAI.RespawnOneFly
+  commentId: M:Global.FliesWorldAI.RespawnOneFly
+  id: RespawnOneFly
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: RespawnOneFly()
+  nameWithType: FliesWorldAI.RespawnOneFly()
+  fullName: FliesWorldAI.RespawnOneFly()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.RespawnOneFly</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void RespawnOneFly()
+    content.vb: Public Sub RespawnOneFly()
+  overload: Global.FliesWorldAI.RespawnOneFly*
+- uid: Global.FliesWorldAI.ActiveSwarmRoom(AbstractRoom)
+  commentId: M:Global.FliesWorldAI.ActiveSwarmRoom(AbstractRoom)
+  id: ActiveSwarmRoom(AbstractRoom)
+  parent: Global.FliesWorldAI
+  langs:
+  - csharp
+  - vb
+  name: ActiveSwarmRoom(AbstractRoom)
+  nameWithType: FliesWorldAI.ActiveSwarmRoom(AbstractRoom)
+  fullName: FliesWorldAI.ActiveSwarmRoom(AbstractRoom)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FliesWorldAI.ActiveSwarmRoom(AbstractRoom)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool ActiveSwarmRoom(AbstractRoom room)
+    parameters:
+    - id: room
+      type: Global.AbstractRoom
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:FliesWorldAI.ActiveSwarmRoom(AbstractRoom)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FliesWorldAI.ActiveSwarmRoom(AbstractRoom)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function ActiveSwarmRoom(room As AbstractRoom) As Boolean
+  overload: Global.FliesWorldAI.ActiveSwarmRoom*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.World.WorldProcess
+  commentId: T:Global.World.WorldProcess
+  isExternal: true
+  href: World.html
+  name: World.WorldProcess
+  nameWithType: World.WorldProcess
+  fullName: World.WorldProcess
+  spec.csharp:
+  - uid: Global.World
+    name: World
+    isExternal: true
+    href: World.html
+  - name: .
+  - uid: Global.World.WorldProcess
+    name: WorldProcess
+    isExternal: true
+    href: World.WorldProcess.html
+  spec.vb:
+  - uid: Global.World
+    name: World
+    isExternal: true
+    href: World.html
+  - name: .
+  - uid: Global.World.WorldProcess
+    name: WorldProcess
+    isExternal: true
+    href: World.WorldProcess.html
+- uid: Global.World.WorldProcess.world
+  commentId: F:Global.World.WorldProcess.world
+  parent: Global.World.WorldProcess
+  isExternal: true
+  href: Global.World.WorldProcess.html#World_WorldProcess_world
+  name: world
+  nameWithType: World.WorldProcess.world
+  fullName: World.WorldProcess.world
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.FliesWorldAI.Behavior[]
+  isExternal: true
+  href: FliesWorldAI.Behavior.html
+  name: Behavior[]
+  nameWithType: FliesWorldAI.Behavior[]
+  fullName: FliesWorldAI.Behavior[]
+  nameWithType.vb: FliesWorldAI.Behavior()
+  fullName.vb: FliesWorldAI.Behavior()
+  name.vb: Behavior()
+  spec.csharp:
+  - uid: Global.FliesWorldAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: FliesWorldAI.Behavior.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.FliesWorldAI.Behavior
+    name: Behavior
+    isExternal: true
+    href: FliesWorldAI.Behavior.html
+  - name: (
+  - name: )
+- uid: Global.FliesWorldAI.#ctor*
+  commentId: Overload:Global.FliesWorldAI.#ctor
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI__ctor_World_
+  name: FliesWorldAI
+  nameWithType: FliesWorldAI.FliesWorldAI
+  fullName: FliesWorldAI.FliesWorldAI
+  nameWithType.vb: FliesWorldAI.New
+  fullName.vb: FliesWorldAI.New
+  name.vb: New
+- uid: Global.World
+  commentId: T:Global.World
+  isExternal: true
+  href: World.html
+  name: World
+  nameWithType: World
+  fullName: World
+- uid: Global.FliesWorldAI.LoadDijkstraMaps*
+  commentId: Overload:Global.FliesWorldAI.LoadDijkstraMaps
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_LoadDijkstraMaps_SwarmRoomMapper_
+  name: LoadDijkstraMaps
+  nameWithType: FliesWorldAI.LoadDijkstraMaps
+  fullName: FliesWorldAI.LoadDijkstraMaps
+- uid: Global.SwarmRoomMapper
+  commentId: T:Global.SwarmRoomMapper
+  isExternal: true
+  href: SwarmRoomMapper.html
+  name: SwarmRoomMapper
+  nameWithType: SwarmRoomMapper
+  fullName: SwarmRoomMapper
+- uid: Global.World.WorldProcess.Update
+  commentId: M:Global.World.WorldProcess.Update
+  parent: Global.World.WorldProcess
+  isExternal: true
+  href: Global.World.WorldProcess.html#World_WorldProcess_Update
+  name: Update()
+  nameWithType: World.WorldProcess.Update()
+  fullName: World.WorldProcess.Update()
+  spec.csharp:
+  - uid: Global.World.WorldProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.World.WorldProcess.html#World_WorldProcess_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.World.WorldProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.World.WorldProcess.html#World_WorldProcess_Update
+  - name: (
+  - name: )
+- uid: Global.FliesWorldAI.Update*
+  commentId: Overload:Global.FliesWorldAI.Update
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_Update
+  name: Update
+  nameWithType: FliesWorldAI.Update
+  fullName: FliesWorldAI.Update
+- uid: Global.FliesWorldAI.GetSwarmRoomDistance*
+  commentId: Overload:Global.FliesWorldAI.GetSwarmRoomDistance
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_GetSwarmRoomDistance_WorldCoordinate_System_Int32_
+  name: GetSwarmRoomDistance
+  nameWithType: FliesWorldAI.GetSwarmRoomDistance
+  fullName: FliesWorldAI.GetSwarmRoomDistance
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.FliesWorldAI.ClosestSwarmRoom*
+  commentId: Overload:Global.FliesWorldAI.ClosestSwarmRoom
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_ClosestSwarmRoom_WorldCoordinate_
+  name: ClosestSwarmRoom
+  nameWithType: FliesWorldAI.ClosestSwarmRoom
+  fullName: FliesWorldAI.ClosestSwarmRoom
+- uid: Global.FliesWorldAI.MigrationDirection*
+  commentId: Overload:Global.FliesWorldAI.MigrationDirection
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_MigrationDirection_WorldCoordinate_
+  name: MigrationDirection
+  nameWithType: FliesWorldAI.MigrationDirection
+  fullName: FliesWorldAI.MigrationDirection
+- uid: Global.FliesWorldAI.RespawnOneFly*
+  commentId: Overload:Global.FliesWorldAI.RespawnOneFly
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_RespawnOneFly
+  name: RespawnOneFly
+  nameWithType: FliesWorldAI.RespawnOneFly
+  fullName: FliesWorldAI.RespawnOneFly
+- uid: Global.FliesWorldAI.ActiveSwarmRoom*
+  commentId: Overload:Global.FliesWorldAI.ActiveSwarmRoom
+  isExternal: true
+  href: Global.FliesWorldAI.html#FliesWorldAI_ActiveSwarmRoom_AbstractRoom_
+  name: ActiveSwarmRoom
+  nameWithType: FliesWorldAI.ActiveSwarmRoom
+  fullName: FliesWorldAI.ActiveSwarmRoom
+- uid: Global.AbstractRoom
+  commentId: T:Global.AbstractRoom
+  isExternal: true
+  href: AbstractRoom.html
+  name: AbstractRoom
+  nameWithType: AbstractRoom
+  fullName: AbstractRoom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

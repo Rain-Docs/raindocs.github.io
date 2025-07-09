@@ -1,0 +1,1611 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FireFly
+  commentId: T:Global.FireFly
+  id: FireFly
+  parent: Global
+  children:
+  - Global.FireFly.#ctor(Room,UnityEngine.Vector2)
+  - Global.FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  - Global.FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  - Global.FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.FireFly.EmergeFromGround(UnityEngine.Vector2)
+  - Global.FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  - Global.FireFly.Reset(UnityEngine.Vector2)
+  - Global.FireFly.Update(System.Boolean)
+  - Global.FireFly.col
+  - Global.FireFly.sin
+  langs:
+  - csharp
+  - vb
+  name: FireFly
+  nameWithType: FireFly
+  fullName: FireFly
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FireFly</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FireFly : CosmeticInsect, IDrawable, IRunDuringDialog'
+    content.vb: Public Class FireFly Inherits CosmeticInsect Implements IDrawable, IRunDuringDialog
+  inheritance:
+  - System.Object
+  - Global.UpdatableAndDeletable
+  - Global.CosmeticSprite
+  - Global.CosmeticInsect
+  implements:
+  - Global.IDrawable
+  - MoreSlugcats.IRunDuringDialog
+  inheritedMembers:
+  - Global.CosmeticInsect.terrainCollision
+  - Global.CosmeticInsect.alive
+  - Global.CosmeticInsect.inGround
+  - Global.CosmeticInsect.lastInGround
+  - Global.CosmeticInsect.wantToBurrow
+  - Global.CosmeticInsect.burrowPos
+  - Global.CosmeticInsect.creatureAvoider
+  - Global.CosmeticInsect.submerged
+  - Global.CosmeticInsect.rippleLayer
+  - Global.CosmeticInsect.mySwarm
+  - Global.CosmeticInsect.type
+  - Global.CosmeticInsect.Act
+  - Global.CosmeticInsect.WallCollision(RWCustom.IntVector2,System.Boolean)
+  - Global.CosmeticInsect.OutOfBounds
+  - Global.CosmeticSprite.pos
+  - Global.CosmeticSprite.lastPos
+  - Global.CosmeticSprite.vel
+  - Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  - Global.UpdatableAndDeletable.evenUpdate
+  - Global.UpdatableAndDeletable.room
+  - Global.UpdatableAndDeletable.PausedUpdate
+  - Global.UpdatableAndDeletable.RemoveFromRoom
+  - Global.UpdatableAndDeletable.Destroy
+  - Global.UpdatableAndDeletable.slatedForDeletetion
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FireFly.col
+  commentId: F:Global.FireFly.col
+  id: col
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: col
+  nameWithType: FireFly.col
+  fullName: FireFly.col
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FireFly.col</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Color col
+    return:
+      type: UnityEngine.Color
+    content.vb: Public col As Color
+- uid: Global.FireFly.sin
+  commentId: F:Global.FireFly.sin
+  id: sin
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: sin
+  nameWithType: FireFly.sin
+  fullName: FireFly.sin
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FireFly.sin</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float sin
+    return:
+      type: System.Single
+    content.vb: Public sin As Single
+- uid: Global.FireFly.#ctor(Room,UnityEngine.Vector2)
+  commentId: M:Global.FireFly.#ctor(Room,UnityEngine.Vector2)
+  id: '#ctor(Room,UnityEngine.Vector2)'
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: FireFly(Room, Vector2)
+  nameWithType: FireFly.FireFly(Room, Vector2)
+  fullName: FireFly.FireFly(Room, UnityEngine.Vector2)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FireFly</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FireFly(Room room, Vector2 pos)
+    parameters:
+    - id: room
+      type: Global.Room
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>room</parameter>
+            <parameter>M:FireFly.#ctor(Room,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: pos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pos</parameter>
+            <parameter>M:FireFly.#ctor(Room,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(room As Room, pos As Vector2)
+  overload: Global.FireFly.#ctor*
+  nameWithType.vb: FireFly.New(Room, Vector2)
+  fullName.vb: FireFly.New(Room, UnityEngine.Vector2)
+  name.vb: New(Room, Vector2)
+- uid: Global.FireFly.Reset(UnityEngine.Vector2)
+  commentId: M:Global.FireFly.Reset(UnityEngine.Vector2)
+  id: Reset(UnityEngine.Vector2)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: Reset(Vector2)
+  nameWithType: FireFly.Reset(Vector2)
+  fullName: FireFly.Reset(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.Reset(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Reset(Vector2 resetPos)
+    parameters:
+    - id: resetPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>resetPos</parameter>
+            <parameter>M:FireFly.Reset(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Reset(resetPos As Vector2)
+  overridden: Global.CosmeticInsect.Reset(UnityEngine.Vector2)
+  overload: Global.FireFly.Reset*
+- uid: Global.FireFly.EmergeFromGround(UnityEngine.Vector2)
+  commentId: M:Global.FireFly.EmergeFromGround(UnityEngine.Vector2)
+  id: EmergeFromGround(UnityEngine.Vector2)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: EmergeFromGround(Vector2)
+  nameWithType: FireFly.EmergeFromGround(Vector2)
+  fullName: FireFly.EmergeFromGround(UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.EmergeFromGround(UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void EmergeFromGround(Vector2 emergePos)
+    parameters:
+    - id: emergePos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>emergePos</parameter>
+            <parameter>M:FireFly.EmergeFromGround(UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub EmergeFromGround(emergePos As Vector2)
+  overridden: Global.CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+  overload: Global.FireFly.EmergeFromGround*
+- uid: Global.FireFly.Update(System.Boolean)
+  commentId: M:Global.FireFly.Update(System.Boolean)
+  id: Update(System.Boolean)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: Update(bool)
+  nameWithType: FireFly.Update(bool)
+  fullName: FireFly.Update(bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.Update(System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update(bool eu)
+    parameters:
+    - id: eu
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>eu</parameter>
+            <parameter>M:FireFly.Update(System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub Update(eu As Boolean)
+  overridden: Global.CosmeticInsect.Update(System.Boolean)
+  overload: Global.FireFly.Update*
+  nameWithType.vb: FireFly.Update(Boolean)
+  fullName.vb: FireFly.Update(Boolean)
+  name.vb: Update(Boolean)
+- uid: Global.FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  id: InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: FireFly.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: FireFly.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:FireFly.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub InitiateSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera)
+  overridden: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  overload: Global.FireFly.InitiateSprites*
+- uid: Global.FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  id: DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: FireFly.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: FireFly.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void DrawSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    - id: camPos
+      type: UnityEngine.Vector2
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>camPos</parameter>
+            <parameter>M:FireFly.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub DrawSprites(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, timeStacker As Single, camPos As Vector2)
+  overridden: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  overload: Global.FireFly.DrawSprites*
+  nameWithType.vb: FireFly.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: FireFly.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+- uid: Global.FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  id: ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: FireFly.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: FireFly.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void ApplyPalette(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    - id: palette
+      type: Global.RoomPalette
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>palette</parameter>
+            <parameter>M:FireFly.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub ApplyPalette(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, palette As RoomPalette)
+  overridden: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  overload: Global.FireFly.ApplyPalette*
+- uid: Global.FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  id: AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.FireFly
+  langs:
+  - csharp
+  - vb
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: FireFly.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: FireFly.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void AddToContainer(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, FContainer newContatiner)
+    parameters:
+    - id: sLeaser
+      type: Global.RoomCamera.SpriteLeaser
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sLeaser</parameter>
+            <parameter>M:FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: rCam
+      type: Global.RoomCamera
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>rCam</parameter>
+            <parameter>M:FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    - id: newContatiner
+      type: Global.FContainer
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newContatiner</parameter>
+            <parameter>M:FireFly.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub AddToContainer(sLeaser As RoomCamera.SpriteLeaser, rCam As RoomCamera, newContatiner As FContainer)
+  overridden: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  overload: Global.FireFly.AddToContainer*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.UpdatableAndDeletable
+  commentId: T:Global.UpdatableAndDeletable
+  isExternal: true
+  href: UpdatableAndDeletable.html
+  name: UpdatableAndDeletable
+  nameWithType: UpdatableAndDeletable
+  fullName: UpdatableAndDeletable
+- uid: Global.CosmeticSprite
+  commentId: T:Global.CosmeticSprite
+  isExternal: true
+  href: CosmeticSprite.html
+  name: CosmeticSprite
+  nameWithType: CosmeticSprite
+  fullName: CosmeticSprite
+- uid: Global.CosmeticInsect
+  commentId: T:Global.CosmeticInsect
+  isExternal: true
+  href: CosmeticInsect.html
+  name: CosmeticInsect
+  nameWithType: CosmeticInsect
+  fullName: CosmeticInsect
+- uid: Global.IDrawable
+  commentId: T:Global.IDrawable
+  isExternal: true
+  href: IDrawable.html
+  name: IDrawable
+  nameWithType: IDrawable
+  fullName: IDrawable
+- uid: MoreSlugcats.IRunDuringDialog
+  commentId: T:MoreSlugcats.IRunDuringDialog
+  parent: MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.IRunDuringDialog.html
+  name: IRunDuringDialog
+  nameWithType: IRunDuringDialog
+  fullName: MoreSlugcats.IRunDuringDialog
+- uid: Global.CosmeticInsect.terrainCollision
+  commentId: F:Global.CosmeticInsect.terrainCollision
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_terrainCollision
+  name: terrainCollision
+  nameWithType: CosmeticInsect.terrainCollision
+  fullName: CosmeticInsect.terrainCollision
+- uid: Global.CosmeticInsect.alive
+  commentId: F:Global.CosmeticInsect.alive
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_alive
+  name: alive
+  nameWithType: CosmeticInsect.alive
+  fullName: CosmeticInsect.alive
+- uid: Global.CosmeticInsect.inGround
+  commentId: F:Global.CosmeticInsect.inGround
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_inGround
+  name: inGround
+  nameWithType: CosmeticInsect.inGround
+  fullName: CosmeticInsect.inGround
+- uid: Global.CosmeticInsect.lastInGround
+  commentId: F:Global.CosmeticInsect.lastInGround
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_lastInGround
+  name: lastInGround
+  nameWithType: CosmeticInsect.lastInGround
+  fullName: CosmeticInsect.lastInGround
+- uid: Global.CosmeticInsect.wantToBurrow
+  commentId: F:Global.CosmeticInsect.wantToBurrow
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_wantToBurrow
+  name: wantToBurrow
+  nameWithType: CosmeticInsect.wantToBurrow
+  fullName: CosmeticInsect.wantToBurrow
+- uid: Global.CosmeticInsect.burrowPos
+  commentId: F:Global.CosmeticInsect.burrowPos
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_burrowPos
+  name: burrowPos
+  nameWithType: CosmeticInsect.burrowPos
+  fullName: CosmeticInsect.burrowPos
+- uid: Global.CosmeticInsect.creatureAvoider
+  commentId: F:Global.CosmeticInsect.creatureAvoider
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_creatureAvoider
+  name: creatureAvoider
+  nameWithType: CosmeticInsect.creatureAvoider
+  fullName: CosmeticInsect.creatureAvoider
+- uid: Global.CosmeticInsect.submerged
+  commentId: F:Global.CosmeticInsect.submerged
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_submerged
+  name: submerged
+  nameWithType: CosmeticInsect.submerged
+  fullName: CosmeticInsect.submerged
+- uid: Global.CosmeticInsect.rippleLayer
+  commentId: F:Global.CosmeticInsect.rippleLayer
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_rippleLayer
+  name: rippleLayer
+  nameWithType: CosmeticInsect.rippleLayer
+  fullName: CosmeticInsect.rippleLayer
+- uid: Global.CosmeticInsect.mySwarm
+  commentId: F:Global.CosmeticInsect.mySwarm
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_mySwarm
+  name: mySwarm
+  nameWithType: CosmeticInsect.mySwarm
+  fullName: CosmeticInsect.mySwarm
+- uid: Global.CosmeticInsect.type
+  commentId: F:Global.CosmeticInsect.type
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_type
+  name: type
+  nameWithType: CosmeticInsect.type
+  fullName: CosmeticInsect.type
+- uid: Global.CosmeticInsect.Act
+  commentId: M:Global.CosmeticInsect.Act
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_Act
+  name: Act()
+  nameWithType: CosmeticInsect.Act()
+  fullName: CosmeticInsect.Act()
+  spec.csharp:
+  - uid: Global.CosmeticInsect.Act
+    name: Act
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Act
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticInsect.Act
+    name: Act
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Act
+  - name: (
+  - name: )
+- uid: Global.CosmeticInsect.WallCollision(RWCustom.IntVector2,System.Boolean)
+  commentId: M:Global.CosmeticInsect.WallCollision(RWCustom.IntVector2,System.Boolean)
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_WallCollision_RWCustom_IntVector2_System_Boolean_
+  name: WallCollision(IntVector2, bool)
+  nameWithType: CosmeticInsect.WallCollision(IntVector2, bool)
+  fullName: CosmeticInsect.WallCollision(RWCustom.IntVector2, bool)
+  nameWithType.vb: CosmeticInsect.WallCollision(IntVector2, Boolean)
+  fullName.vb: CosmeticInsect.WallCollision(RWCustom.IntVector2, Boolean)
+  name.vb: WallCollision(IntVector2, Boolean)
+  spec.csharp:
+  - uid: Global.CosmeticInsect.WallCollision(RWCustom.IntVector2,System.Boolean)
+    name: WallCollision
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_WallCollision_RWCustom_IntVector2_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticInsect.WallCollision(RWCustom.IntVector2,System.Boolean)
+    name: WallCollision
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_WallCollision_RWCustom_IntVector2_System_Boolean_
+  - name: (
+  - uid: RWCustom.IntVector2
+    name: IntVector2
+    isExternal: true
+    href: RWCustom.IntVector2.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.CosmeticInsect.OutOfBounds
+  commentId: P:Global.CosmeticInsect.OutOfBounds
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_OutOfBounds
+  name: OutOfBounds
+  nameWithType: CosmeticInsect.OutOfBounds
+  fullName: CosmeticInsect.OutOfBounds
+- uid: Global.CosmeticSprite.pos
+  commentId: F:Global.CosmeticSprite.pos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_pos
+  name: pos
+  nameWithType: CosmeticSprite.pos
+  fullName: CosmeticSprite.pos
+- uid: Global.CosmeticSprite.lastPos
+  commentId: F:Global.CosmeticSprite.lastPos
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_lastPos
+  name: lastPos
+  nameWithType: CosmeticSprite.lastPos
+  fullName: CosmeticSprite.lastPos
+- uid: Global.CosmeticSprite.vel
+  commentId: F:Global.CosmeticSprite.vel
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_vel
+  name: vel
+  nameWithType: CosmeticSprite.vel
+  fullName: CosmeticSprite.vel
+- uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: PausedDrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: PausedDrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.PausedDrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: PausedDrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_PausedDrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.UpdatableAndDeletable.evenUpdate
+  commentId: F:Global.UpdatableAndDeletable.evenUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_evenUpdate
+  name: evenUpdate
+  nameWithType: UpdatableAndDeletable.evenUpdate
+  fullName: UpdatableAndDeletable.evenUpdate
+- uid: Global.UpdatableAndDeletable.room
+  commentId: F:Global.UpdatableAndDeletable.room
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_room
+  name: room
+  nameWithType: UpdatableAndDeletable.room
+  fullName: UpdatableAndDeletable.room
+- uid: Global.UpdatableAndDeletable.PausedUpdate
+  commentId: M:Global.UpdatableAndDeletable.PausedUpdate
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  name: PausedUpdate()
+  nameWithType: UpdatableAndDeletable.PausedUpdate()
+  fullName: UpdatableAndDeletable.PausedUpdate()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.PausedUpdate
+    name: PausedUpdate
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_PausedUpdate
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.RemoveFromRoom
+  commentId: M:Global.UpdatableAndDeletable.RemoveFromRoom
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  name: RemoveFromRoom()
+  nameWithType: UpdatableAndDeletable.RemoveFromRoom()
+  fullName: UpdatableAndDeletable.RemoveFromRoom()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.RemoveFromRoom
+    name: RemoveFromRoom
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_RemoveFromRoom
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.Destroy
+  commentId: M:Global.UpdatableAndDeletable.Destroy
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  name: Destroy()
+  nameWithType: UpdatableAndDeletable.Destroy()
+  fullName: UpdatableAndDeletable.Destroy()
+  spec.csharp:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.UpdatableAndDeletable.Destroy
+    name: Destroy
+    isExternal: true
+    href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_Destroy
+  - name: (
+  - name: )
+- uid: Global.UpdatableAndDeletable.slatedForDeletetion
+  commentId: P:Global.UpdatableAndDeletable.slatedForDeletetion
+  parent: Global.UpdatableAndDeletable
+  isExternal: true
+  href: Global.UpdatableAndDeletable.html#UpdatableAndDeletable_slatedForDeletetion
+  name: slatedForDeletetion
+  nameWithType: UpdatableAndDeletable.slatedForDeletetion
+  fullName: UpdatableAndDeletable.slatedForDeletetion
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoreSlugcats
+  commentId: N:MoreSlugcats
+  isExternal: true
+  href: MoreSlugcats.html
+  name: MoreSlugcats
+  nameWithType: MoreSlugcats
+  fullName: MoreSlugcats
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.FireFly.#ctor*
+  commentId: Overload:Global.FireFly.#ctor
+  isExternal: true
+  href: Global.FireFly.html#FireFly__ctor_Room_UnityEngine_Vector2_
+  name: FireFly
+  nameWithType: FireFly.FireFly
+  fullName: FireFly.FireFly
+  nameWithType.vb: FireFly.New
+  fullName.vb: FireFly.New
+  name.vb: New
+- uid: Global.Room
+  commentId: T:Global.Room
+  isExternal: true
+  href: Room.html
+  name: Room
+  nameWithType: Room
+  fullName: Room
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Global.CosmeticInsect.Reset(UnityEngine.Vector2)
+  commentId: M:Global.CosmeticInsect.Reset(UnityEngine.Vector2)
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_Reset_UnityEngine_Vector2_
+  name: Reset(Vector2)
+  nameWithType: CosmeticInsect.Reset(Vector2)
+  fullName: CosmeticInsect.Reset(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticInsect.Reset(UnityEngine.Vector2)
+    name: Reset
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Reset_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticInsect.Reset(UnityEngine.Vector2)
+    name: Reset
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Reset_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FireFly.Reset*
+  commentId: Overload:Global.FireFly.Reset
+  isExternal: true
+  href: Global.FireFly.html#FireFly_Reset_UnityEngine_Vector2_
+  name: Reset
+  nameWithType: FireFly.Reset
+  fullName: FireFly.Reset
+- uid: Global.CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+  commentId: M:Global.CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_EmergeFromGround_UnityEngine_Vector2_
+  name: EmergeFromGround(Vector2)
+  nameWithType: CosmeticInsect.EmergeFromGround(Vector2)
+  fullName: CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+    name: EmergeFromGround
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_EmergeFromGround_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticInsect.EmergeFromGround(UnityEngine.Vector2)
+    name: EmergeFromGround
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_EmergeFromGround_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FireFly.EmergeFromGround*
+  commentId: Overload:Global.FireFly.EmergeFromGround
+  isExternal: true
+  href: Global.FireFly.html#FireFly_EmergeFromGround_UnityEngine_Vector2_
+  name: EmergeFromGround
+  nameWithType: FireFly.EmergeFromGround
+  fullName: FireFly.EmergeFromGround
+- uid: Global.CosmeticInsect.Update(System.Boolean)
+  commentId: M:Global.CosmeticInsect.Update(System.Boolean)
+  parent: Global.CosmeticInsect
+  isExternal: true
+  href: Global.CosmeticInsect.html#CosmeticInsect_Update_System_Boolean_
+  name: Update(bool)
+  nameWithType: CosmeticInsect.Update(bool)
+  fullName: CosmeticInsect.Update(bool)
+  nameWithType.vb: CosmeticInsect.Update(Boolean)
+  fullName.vb: CosmeticInsect.Update(Boolean)
+  name.vb: Update(Boolean)
+  spec.csharp:
+  - uid: Global.CosmeticInsect.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticInsect.Update(System.Boolean)
+    name: Update
+    isExternal: true
+    href: Global.CosmeticInsect.html#CosmeticInsect_Update_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Global.FireFly.Update*
+  commentId: Overload:Global.FireFly.Update
+  isExternal: true
+  href: Global.FireFly.html#FireFly_Update_System_Boolean_
+  name: Update
+  nameWithType: FireFly.Update
+  fullName: FireFly.Update
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  commentId: M:Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites(SpriteLeaser, RoomCamera)
+  nameWithType: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  fullName: CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser, RoomCamera)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.InitiateSprites(RoomCamera.SpriteLeaser,RoomCamera)
+    name: InitiateSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: )
+- uid: Global.FireFly.InitiateSprites*
+  commentId: Overload:Global.FireFly.InitiateSprites
+  isExternal: true
+  href: Global.FireFly.html#FireFly_InitiateSprites_RoomCamera_SpriteLeaser_RoomCamera_
+  name: InitiateSprites
+  nameWithType: FireFly.InitiateSprites
+  fullName: FireFly.InitiateSprites
+- uid: Global.RoomCamera.SpriteLeaser
+  commentId: T:Global.RoomCamera.SpriteLeaser
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera.SpriteLeaser
+  nameWithType: RoomCamera.SpriteLeaser
+  fullName: RoomCamera.SpriteLeaser
+  spec.csharp:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  spec.vb:
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: .
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+- uid: Global.RoomCamera
+  commentId: T:Global.RoomCamera
+  isExternal: true
+  href: RoomCamera.html
+  name: RoomCamera
+  nameWithType: RoomCamera
+  fullName: RoomCamera
+- uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  commentId: M:Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites(SpriteLeaser, RoomCamera, float, Vector2)
+  nameWithType: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, Vector2)
+  fullName: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, float, UnityEngine.Vector2)
+  nameWithType.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, Vector2)
+  fullName.vb: CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser, RoomCamera, Single, UnityEngine.Vector2)
+  name.vb: DrawSprites(SpriteLeaser, RoomCamera, Single, Vector2)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.DrawSprites(RoomCamera.SpriteLeaser,RoomCamera,System.Single,UnityEngine.Vector2)
+    name: DrawSprites
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Global.FireFly.DrawSprites*
+  commentId: Overload:Global.FireFly.DrawSprites
+  isExternal: true
+  href: Global.FireFly.html#FireFly_DrawSprites_RoomCamera_SpriteLeaser_RoomCamera_System_Single_UnityEngine_Vector2_
+  name: DrawSprites
+  nameWithType: FireFly.DrawSprites
+  fullName: FireFly.DrawSprites
+- uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  commentId: M:Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette(SpriteLeaser, RoomCamera, RoomPalette)
+  nameWithType: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  fullName: CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser, RoomCamera, RoomPalette)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.ApplyPalette(RoomCamera.SpriteLeaser,RoomCamera,RoomPalette)
+    name: ApplyPalette
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomPalette
+    name: RoomPalette
+    isExternal: true
+    href: RoomPalette.html
+  - name: )
+- uid: Global.FireFly.ApplyPalette*
+  commentId: Overload:Global.FireFly.ApplyPalette
+  isExternal: true
+  href: Global.FireFly.html#FireFly_ApplyPalette_RoomCamera_SpriteLeaser_RoomCamera_RoomPalette_
+  name: ApplyPalette
+  nameWithType: FireFly.ApplyPalette
+  fullName: FireFly.ApplyPalette
+- uid: Global.RoomPalette
+  commentId: T:Global.RoomPalette
+  isExternal: true
+  href: RoomPalette.html
+  name: RoomPalette
+  nameWithType: RoomPalette
+  fullName: RoomPalette
+- uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  commentId: M:Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+  parent: Global.CosmeticSprite
+  isExternal: true
+  href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer(SpriteLeaser, RoomCamera, FContainer)
+  nameWithType: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  fullName: CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser, RoomCamera, FContainer)
+  spec.csharp:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+  spec.vb:
+  - uid: Global.CosmeticSprite.AddToContainer(RoomCamera.SpriteLeaser,RoomCamera,FContainer)
+    name: AddToContainer
+    isExternal: true
+    href: Global.CosmeticSprite.html#CosmeticSprite_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  - name: (
+  - uid: Global.RoomCamera.SpriteLeaser
+    name: SpriteLeaser
+    isExternal: true
+    href: RoomCamera.SpriteLeaser.html
+  - name: ','
+  - name: " "
+  - uid: Global.RoomCamera
+    name: RoomCamera
+    isExternal: true
+    href: RoomCamera.html
+  - name: ','
+  - name: " "
+  - uid: Global.FContainer
+    name: FContainer
+    isExternal: true
+    href: FContainer.html
+  - name: )
+- uid: Global.FireFly.AddToContainer*
+  commentId: Overload:Global.FireFly.AddToContainer
+  isExternal: true
+  href: Global.FireFly.html#FireFly_AddToContainer_RoomCamera_SpriteLeaser_RoomCamera_FContainer_
+  name: AddToContainer
+  nameWithType: FireFly.AddToContainer
+  fullName: FireFly.AddToContainer
+- uid: Global.FContainer
+  commentId: T:Global.FContainer
+  isExternal: true
+  href: FContainer.html
+  name: FContainer
+  nameWithType: FContainer
+  fullName: FContainer

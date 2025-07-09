@@ -1,0 +1,1223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.FriendTracker
+  commentId: T:Global.FriendTracker
+  id: FriendTracker
+  parent: Global
+  children:
+  - Global.FriendTracker.#ctor(ArtificialIntelligence)
+  - Global.FriendTracker.CareAboutRain
+  - Global.FriendTracker.FriendDestScore(WorldCoordinate)
+  - Global.FriendTracker.GiftRecieved
+  - Global.FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)
+  - Global.FriendTracker.RunSpeed
+  - Global.FriendTracker.Update
+  - Global.FriendTracker.Urgency
+  - Global.FriendTracker.Utility
+  - Global.FriendTracker.creature
+  - Global.FriendTracker.desiredCloseness
+  - Global.FriendTracker.followClosestFriend
+  - Global.FriendTracker.friend
+  - Global.FriendTracker.friendDest
+  - Global.FriendTracker.friendMovingCounter
+  - Global.FriendTracker.friendRel
+  - Global.FriendTracker.giftOfferedToMe
+  - Global.FriendTracker.lastFriendPos
+  - Global.FriendTracker.tamingDifficlty
+  - Global.FriendTracker.tempFriendDest
+  langs:
+  - csharp
+  - vb
+  name: FriendTracker
+  nameWithType: FriendTracker
+  fullName: FriendTracker
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:FriendTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class FriendTracker : AIModule'
+    content.vb: Public Class FriendTracker Inherits AIModule
+  inheritance:
+  - System.Object
+  - Global.AIModule
+  inheritedMembers:
+  - Global.AIModule.AI
+  - Global.AIModule.NewRoom(Room)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.FriendTracker.giftOfferedToMe
+  commentId: F:Global.FriendTracker.giftOfferedToMe
+  id: giftOfferedToMe
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: giftOfferedToMe
+  nameWithType: FriendTracker.giftOfferedToMe
+  fullName: FriendTracker.giftOfferedToMe
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.giftOfferedToMe</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SocialEventRecognizer.OwnedItemOnGround giftOfferedToMe
+    return:
+      type: Global.SocialEventRecognizer.OwnedItemOnGround
+    content.vb: Public giftOfferedToMe As SocialEventRecognizer.OwnedItemOnGround
+- uid: Global.FriendTracker.followClosestFriend
+  commentId: F:Global.FriendTracker.followClosestFriend
+  id: followClosestFriend
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: followClosestFriend
+  nameWithType: FriendTracker.followClosestFriend
+  fullName: FriendTracker.followClosestFriend
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.followClosestFriend</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool followClosestFriend
+    return:
+      type: System.Boolean
+    content.vb: Public followClosestFriend As Boolean
+- uid: Global.FriendTracker.friend
+  commentId: F:Global.FriendTracker.friend
+  id: friend
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: friend
+  nameWithType: FriendTracker.friend
+  fullName: FriendTracker.friend
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.friend</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Creature friend
+    return:
+      type: Global.Creature
+    content.vb: Public [friend] As Creature
+- uid: Global.FriendTracker.friendRel
+  commentId: F:Global.FriendTracker.friendRel
+  id: friendRel
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: friendRel
+  nameWithType: FriendTracker.friendRel
+  fullName: FriendTracker.friendRel
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.friendRel</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SocialMemory.Relationship friendRel
+    return:
+      type: Global.SocialMemory.Relationship
+    content.vb: Public friendRel As SocialMemory.Relationship
+- uid: Global.FriendTracker.friendDest
+  commentId: F:Global.FriendTracker.friendDest
+  id: friendDest
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: friendDest
+  nameWithType: FriendTracker.friendDest
+  fullName: FriendTracker.friendDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.friendDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate friendDest
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public friendDest As WorldCoordinate
+- uid: Global.FriendTracker.tempFriendDest
+  commentId: F:Global.FriendTracker.tempFriendDest
+  id: tempFriendDest
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: tempFriendDest
+  nameWithType: FriendTracker.tempFriendDest
+  fullName: FriendTracker.tempFriendDest
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.tempFriendDest</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate tempFriendDest
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public tempFriendDest As WorldCoordinate
+- uid: Global.FriendTracker.friendMovingCounter
+  commentId: F:Global.FriendTracker.friendMovingCounter
+  id: friendMovingCounter
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: friendMovingCounter
+  nameWithType: FriendTracker.friendMovingCounter
+  fullName: FriendTracker.friendMovingCounter
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.friendMovingCounter</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public int friendMovingCounter
+    return:
+      type: System.Int32
+    content.vb: Public friendMovingCounter As Integer
+- uid: Global.FriendTracker.lastFriendPos
+  commentId: F:Global.FriendTracker.lastFriendPos
+  id: lastFriendPos
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: lastFriendPos
+  nameWithType: FriendTracker.lastFriendPos
+  fullName: FriendTracker.lastFriendPos
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.lastFriendPos</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public WorldCoordinate lastFriendPos
+    return:
+      type: Global.WorldCoordinate
+    content.vb: Public lastFriendPos As WorldCoordinate
+- uid: Global.FriendTracker.tamingDifficlty
+  commentId: F:Global.FriendTracker.tamingDifficlty
+  id: tamingDifficlty
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: tamingDifficlty
+  nameWithType: FriendTracker.tamingDifficlty
+  fullName: FriendTracker.tamingDifficlty
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.tamingDifficlty</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float tamingDifficlty
+    return:
+      type: System.Single
+    content.vb: Public tamingDifficlty As Single
+- uid: Global.FriendTracker.desiredCloseness
+  commentId: F:Global.FriendTracker.desiredCloseness
+  id: desiredCloseness
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: desiredCloseness
+  nameWithType: FriendTracker.desiredCloseness
+  fullName: FriendTracker.desiredCloseness
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:FriendTracker.desiredCloseness</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float desiredCloseness
+    return:
+      type: System.Single
+    content.vb: Public desiredCloseness As Single
+- uid: Global.FriendTracker.#ctor(ArtificialIntelligence)
+  commentId: M:Global.FriendTracker.#ctor(ArtificialIntelligence)
+  id: '#ctor(ArtificialIntelligence)'
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: FriendTracker(ArtificialIntelligence)
+  nameWithType: FriendTracker.FriendTracker(ArtificialIntelligence)
+  fullName: FriendTracker.FriendTracker(ArtificialIntelligence)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>FriendTracker</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public FriendTracker(ArtificialIntelligence AI)
+    parameters:
+    - id: AI
+      type: Global.ArtificialIntelligence
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>AI</parameter>
+            <parameter>M:FriendTracker.#ctor(ArtificialIntelligence)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(AI As ArtificialIntelligence)
+  overload: Global.FriendTracker.#ctor*
+  nameWithType.vb: FriendTracker.New(ArtificialIntelligence)
+  fullName.vb: FriendTracker.New(ArtificialIntelligence)
+  name.vb: New(ArtificialIntelligence)
+- uid: Global.FriendTracker.Utility
+  commentId: M:Global.FriendTracker.Utility
+  id: Utility
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: Utility()
+  nameWithType: FriendTracker.Utility()
+  fullName: FriendTracker.Utility()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.Utility</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override float Utility()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FriendTracker.Utility</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Function Utility() As Single
+  overridden: Global.AIModule.Utility
+  overload: Global.FriendTracker.Utility*
+- uid: Global.FriendTracker.RunSpeed
+  commentId: M:Global.FriendTracker.RunSpeed
+  id: RunSpeed
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: RunSpeed()
+  nameWithType: FriendTracker.RunSpeed()
+  fullName: FriendTracker.RunSpeed()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.RunSpeed</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float RunSpeed()
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FriendTracker.RunSpeed</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function RunSpeed() As Single
+  overload: Global.FriendTracker.RunSpeed*
+- uid: Global.FriendTracker.CareAboutRain
+  commentId: M:Global.FriendTracker.CareAboutRain
+  id: CareAboutRain
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: CareAboutRain()
+  nameWithType: FriendTracker.CareAboutRain()
+  fullName: FriendTracker.CareAboutRain()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.CareAboutRain</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public bool CareAboutRain()
+    return:
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FriendTracker.CareAboutRain</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function CareAboutRain() As Boolean
+  overload: Global.FriendTracker.CareAboutRain*
+- uid: Global.FriendTracker.Update
+  commentId: M:Global.FriendTracker.Update
+  id: Update
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: FriendTracker.Update()
+  fullName: FriendTracker.Update()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.Update</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void Update()
+    content.vb: Public Overrides Sub Update()
+  overridden: Global.AIModule.Update
+  overload: Global.FriendTracker.Update*
+- uid: Global.FriendTracker.GiftRecieved
+  commentId: M:Global.FriendTracker.GiftRecieved
+  id: GiftRecieved
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: GiftRecieved()
+  nameWithType: FriendTracker.GiftRecieved()
+  fullName: FriendTracker.GiftRecieved()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.GiftRecieved</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void GiftRecieved()
+    content.vb: Public Sub GiftRecieved()
+  overload: Global.FriendTracker.GiftRecieved*
+- uid: Global.FriendTracker.FriendDestScore(WorldCoordinate)
+  commentId: M:Global.FriendTracker.FriendDestScore(WorldCoordinate)
+  id: FriendDestScore(WorldCoordinate)
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: FriendDestScore(WorldCoordinate)
+  nameWithType: FriendTracker.FriendDestScore(WorldCoordinate)
+  fullName: FriendTracker.FriendDestScore(WorldCoordinate)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.FriendDestScore(WorldCoordinate)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float FriendDestScore(WorldCoordinate testPos)
+    parameters:
+    - id: testPos
+      type: Global.WorldCoordinate
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>testPos</parameter>
+            <parameter>M:FriendTracker.FriendDestScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    return:
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:FriendTracker.FriendDestScore(WorldCoordinate)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function FriendDestScore(testPos As WorldCoordinate) As Single
+  overload: Global.FriendTracker.FriendDestScore*
+- uid: Global.FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)
+  commentId: M:Global.FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)
+  id: ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: ItemOffered(CreatureRepresentation, PhysicalObject)
+  nameWithType: FriendTracker.ItemOffered(Tracker.CreatureRepresentation, PhysicalObject)
+  fullName: FriendTracker.ItemOffered(Tracker.CreatureRepresentation, PhysicalObject)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void ItemOffered(Tracker.CreatureRepresentation subjectRep, PhysicalObject involvedItem)
+    parameters:
+    - id: subjectRep
+      type: Global.Tracker.CreatureRepresentation
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>subjectRep</parameter>
+            <parameter>M:FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)</parameter>
+          </include>
+        </markup>
+    - id: involvedItem
+      type: Global.PhysicalObject
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>involvedItem</parameter>
+            <parameter>M:FriendTracker.ItemOffered(Tracker.CreatureRepresentation,PhysicalObject)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub ItemOffered(subjectRep As Tracker.CreatureRepresentation, involvedItem As PhysicalObject)
+  overload: Global.FriendTracker.ItemOffered*
+- uid: Global.FriendTracker.creature
+  commentId: P:Global.FriendTracker.creature
+  id: creature
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: creature
+  nameWithType: FriendTracker.creature
+  fullName: FriendTracker.creature
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FriendTracker.creature</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public Creature creature { get; }
+    parameters: []
+    return:
+      type: Global.Creature
+    content.vb: Public ReadOnly Property creature As Creature
+  overload: Global.FriendTracker.creature*
+- uid: Global.FriendTracker.Urgency
+  commentId: P:Global.FriendTracker.Urgency
+  id: Urgency
+  parent: Global.FriendTracker
+  langs:
+  - csharp
+  - vb
+  name: Urgency
+  nameWithType: FriendTracker.Urgency
+  fullName: FriendTracker.Urgency
+  type: Property
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>P:FriendTracker.Urgency</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public float Urgency { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Urgency As Single
+  overload: Global.FriendTracker.Urgency*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.AIModule
+  commentId: T:Global.AIModule
+  isExternal: true
+  href: AIModule.html
+  name: AIModule
+  nameWithType: AIModule
+  fullName: AIModule
+- uid: Global.AIModule.AI
+  commentId: F:Global.AIModule.AI
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_AI
+  name: AI
+  nameWithType: AIModule.AI
+  fullName: AIModule.AI
+- uid: Global.AIModule.NewRoom(Room)
+  commentId: M:Global.AIModule.NewRoom(Room)
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_NewRoom_Room_
+  name: NewRoom(Room)
+  nameWithType: AIModule.NewRoom(Room)
+  fullName: AIModule.NewRoom(Room)
+  spec.csharp:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.NewRoom(Room)
+    name: NewRoom
+    isExternal: true
+    href: Global.AIModule.html#AIModule_NewRoom_Room_
+  - name: (
+  - uid: Global.Room
+    name: Room
+    isExternal: true
+    href: Room.html
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SocialEventRecognizer.OwnedItemOnGround
+  commentId: T:Global.SocialEventRecognizer.OwnedItemOnGround
+  isExternal: true
+  href: SocialEventRecognizer.html
+  name: SocialEventRecognizer.OwnedItemOnGround
+  nameWithType: SocialEventRecognizer.OwnedItemOnGround
+  fullName: SocialEventRecognizer.OwnedItemOnGround
+  spec.csharp:
+  - uid: Global.SocialEventRecognizer
+    name: SocialEventRecognizer
+    isExternal: true
+    href: SocialEventRecognizer.html
+  - name: .
+  - uid: Global.SocialEventRecognizer.OwnedItemOnGround
+    name: OwnedItemOnGround
+    isExternal: true
+    href: SocialEventRecognizer.OwnedItemOnGround.html
+  spec.vb:
+  - uid: Global.SocialEventRecognizer
+    name: SocialEventRecognizer
+    isExternal: true
+    href: SocialEventRecognizer.html
+  - name: .
+  - uid: Global.SocialEventRecognizer.OwnedItemOnGround
+    name: OwnedItemOnGround
+    isExternal: true
+    href: SocialEventRecognizer.OwnedItemOnGround.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Creature
+  commentId: T:Global.Creature
+  isExternal: true
+  href: Creature.html
+  name: Creature
+  nameWithType: Creature
+  fullName: Creature
+- uid: Global.SocialMemory.Relationship
+  commentId: T:Global.SocialMemory.Relationship
+  isExternal: true
+  href: SocialMemory.html
+  name: SocialMemory.Relationship
+  nameWithType: SocialMemory.Relationship
+  fullName: SocialMemory.Relationship
+  spec.csharp:
+  - uid: Global.SocialMemory
+    name: SocialMemory
+    isExternal: true
+    href: SocialMemory.html
+  - name: .
+  - uid: Global.SocialMemory.Relationship
+    name: Relationship
+    isExternal: true
+    href: SocialMemory.Relationship.html
+  spec.vb:
+  - uid: Global.SocialMemory
+    name: SocialMemory
+    isExternal: true
+    href: SocialMemory.html
+  - name: .
+  - uid: Global.SocialMemory.Relationship
+    name: Relationship
+    isExternal: true
+    href: SocialMemory.Relationship.html
+- uid: Global.WorldCoordinate
+  commentId: T:Global.WorldCoordinate
+  isExternal: true
+  href: WorldCoordinate.html
+  name: WorldCoordinate
+  nameWithType: WorldCoordinate
+  fullName: WorldCoordinate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.FriendTracker.#ctor*
+  commentId: Overload:Global.FriendTracker.#ctor
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker__ctor_ArtificialIntelligence_
+  name: FriendTracker
+  nameWithType: FriendTracker.FriendTracker
+  fullName: FriendTracker.FriendTracker
+  nameWithType.vb: FriendTracker.New
+  fullName.vb: FriendTracker.New
+  name.vb: New
+- uid: Global.ArtificialIntelligence
+  commentId: T:Global.ArtificialIntelligence
+  isExternal: true
+  href: ArtificialIntelligence.html
+  name: ArtificialIntelligence
+  nameWithType: ArtificialIntelligence
+  fullName: ArtificialIntelligence
+- uid: Global.AIModule.Utility
+  commentId: M:Global.AIModule.Utility
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Utility
+  name: Utility()
+  nameWithType: AIModule.Utility()
+  fullName: AIModule.Utility()
+  spec.csharp:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Utility
+    name: Utility
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Utility
+  - name: (
+  - name: )
+- uid: Global.FriendTracker.Utility*
+  commentId: Overload:Global.FriendTracker.Utility
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_Utility
+  name: Utility
+  nameWithType: FriendTracker.Utility
+  fullName: FriendTracker.Utility
+- uid: Global.FriendTracker.RunSpeed*
+  commentId: Overload:Global.FriendTracker.RunSpeed
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_RunSpeed
+  name: RunSpeed
+  nameWithType: FriendTracker.RunSpeed
+  fullName: FriendTracker.RunSpeed
+- uid: Global.FriendTracker.CareAboutRain*
+  commentId: Overload:Global.FriendTracker.CareAboutRain
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_CareAboutRain
+  name: CareAboutRain
+  nameWithType: FriendTracker.CareAboutRain
+  fullName: FriendTracker.CareAboutRain
+- uid: Global.AIModule.Update
+  commentId: M:Global.AIModule.Update
+  parent: Global.AIModule
+  isExternal: true
+  href: Global.AIModule.html#AIModule_Update
+  name: Update()
+  nameWithType: AIModule.Update()
+  fullName: AIModule.Update()
+  spec.csharp:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.AIModule.Update
+    name: Update
+    isExternal: true
+    href: Global.AIModule.html#AIModule_Update
+  - name: (
+  - name: )
+- uid: Global.FriendTracker.Update*
+  commentId: Overload:Global.FriendTracker.Update
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_Update
+  name: Update
+  nameWithType: FriendTracker.Update
+  fullName: FriendTracker.Update
+- uid: Global.FriendTracker.GiftRecieved*
+  commentId: Overload:Global.FriendTracker.GiftRecieved
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_GiftRecieved
+  name: GiftRecieved
+  nameWithType: FriendTracker.GiftRecieved
+  fullName: FriendTracker.GiftRecieved
+- uid: Global.FriendTracker.FriendDestScore*
+  commentId: Overload:Global.FriendTracker.FriendDestScore
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_FriendDestScore_WorldCoordinate_
+  name: FriendDestScore
+  nameWithType: FriendTracker.FriendDestScore
+  fullName: FriendTracker.FriendDestScore
+- uid: Global.FriendTracker.ItemOffered*
+  commentId: Overload:Global.FriendTracker.ItemOffered
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_ItemOffered_Tracker_CreatureRepresentation_PhysicalObject_
+  name: ItemOffered
+  nameWithType: FriendTracker.ItemOffered
+  fullName: FriendTracker.ItemOffered
+- uid: Global.Tracker.CreatureRepresentation
+  commentId: T:Global.Tracker.CreatureRepresentation
+  isExternal: true
+  href: Tracker.html
+  name: Tracker.CreatureRepresentation
+  nameWithType: Tracker.CreatureRepresentation
+  fullName: Tracker.CreatureRepresentation
+  spec.csharp:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+  spec.vb:
+  - uid: Global.Tracker
+    name: Tracker
+    isExternal: true
+    href: Tracker.html
+  - name: .
+  - uid: Global.Tracker.CreatureRepresentation
+    name: CreatureRepresentation
+    isExternal: true
+    href: Tracker.CreatureRepresentation.html
+- uid: Global.PhysicalObject
+  commentId: T:Global.PhysicalObject
+  isExternal: true
+  href: PhysicalObject.html
+  name: PhysicalObject
+  nameWithType: PhysicalObject
+  fullName: PhysicalObject
+- uid: Global.FriendTracker.creature*
+  commentId: Overload:Global.FriendTracker.creature
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_creature
+  name: creature
+  nameWithType: FriendTracker.creature
+  fullName: FriendTracker.creature
+- uid: Global.FriendTracker.Urgency*
+  commentId: Overload:Global.FriendTracker.Urgency
+  isExternal: true
+  href: Global.FriendTracker.html#FriendTracker_Urgency
+  name: Urgency
+  nameWithType: FriendTracker.Urgency
+  fullName: FriendTracker.Urgency

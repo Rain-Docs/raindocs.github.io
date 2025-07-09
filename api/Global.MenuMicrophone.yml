@@ -1,0 +1,1384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MenuMicrophone
+  commentId: T:Global.MenuMicrophone
+  id: MenuMicrophone
+  parent: Global
+  children:
+  - Global.MenuMicrophone.#ctor(ProcessManager,SoundLoader)
+  - Global.MenuMicrophone.AllQuiet
+  - Global.MenuMicrophone.GetSoundData(SoundID,System.Int32)
+  - Global.MenuMicrophone.GrafUpdate(System.Single)
+  - Global.MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  - Global.MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)
+  - Global.MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  - Global.MenuMicrophone.PlaySound(SoundID)
+  - Global.MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  - Global.MenuMicrophone.soundLoader
+  - Global.MenuMicrophone.soundObjects
+  langs:
+  - csharp
+  - vb
+  name: MenuMicrophone
+  nameWithType: MenuMicrophone
+  fullName: MenuMicrophone
+  type: Class
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>T:MenuMicrophone</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: 'public class MenuMicrophone : MainLoopProcess'
+    content.vb: Public Class MenuMicrophone Inherits MainLoopProcess
+  inheritance:
+  - System.Object
+  - Global.MainLoopProcess
+  inheritedMembers:
+  - Global.MainLoopProcess.manager
+  - Global.MainLoopProcess.ID
+  - Global.MainLoopProcess.framesPerSecond
+  - Global.MainLoopProcess.processActive
+  - Global.MainLoopProcess.RawUpdate(System.Single)
+  - Global.MainLoopProcess.Update
+  - Global.MainLoopProcess.ShutDownProcess
+  - Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  - Global.MainLoopProcess.TimeSpeedFac
+  - Global.MainLoopProcess.FadeInTime
+  - Global.MainLoopProcess.InitialBlackSeconds
+  - Global.MainLoopProcess.AllowDialogs
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Global.MenuMicrophone.soundLoader
+  commentId: F:Global.MenuMicrophone.soundLoader
+  id: soundLoader
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: soundLoader
+  nameWithType: MenuMicrophone.soundLoader
+  fullName: MenuMicrophone.soundLoader
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MenuMicrophone.soundLoader</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SoundLoader soundLoader
+    return:
+      type: Global.SoundLoader
+    content.vb: Public soundLoader As SoundLoader
+- uid: Global.MenuMicrophone.soundObjects
+  commentId: F:Global.MenuMicrophone.soundObjects
+  id: soundObjects
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: soundObjects
+  nameWithType: MenuMicrophone.soundObjects
+  fullName: MenuMicrophone.soundObjects
+  type: Field
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>F:MenuMicrophone.soundObjects</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public List<MenuMicrophone.MenuSoundObject> soundObjects
+    return:
+      type: System.Collections.Generic.List{MenuMicrophone.MenuSoundObject}
+    content.vb: Public soundObjects As List(Of MenuMicrophone.MenuSoundObject)
+- uid: Global.MenuMicrophone.#ctor(ProcessManager,SoundLoader)
+  commentId: M:Global.MenuMicrophone.#ctor(ProcessManager,SoundLoader)
+  id: '#ctor(ProcessManager,SoundLoader)'
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: MenuMicrophone(ProcessManager, SoundLoader)
+  nameWithType: MenuMicrophone.MenuMicrophone(ProcessManager, SoundLoader)
+  fullName: MenuMicrophone.MenuMicrophone(ProcessManager, SoundLoader)
+  type: Constructor
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCAutoDocConstructor">
+        <parameter>MenuMicrophone</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuMicrophone(ProcessManager manager, SoundLoader soundLoader)
+    parameters:
+    - id: manager
+      type: Global.ProcessManager
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>manager</parameter>
+            <parameter>M:MenuMicrophone.#ctor(ProcessManager,SoundLoader)</parameter>
+          </include>
+        </markup>
+    - id: soundLoader
+      type: Global.SoundLoader
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundLoader</parameter>
+            <parameter>M:MenuMicrophone.#ctor(ProcessManager,SoundLoader)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub New(manager As ProcessManager, soundLoader As SoundLoader)
+  overload: Global.MenuMicrophone.#ctor*
+  nameWithType.vb: MenuMicrophone.New(ProcessManager, SoundLoader)
+  fullName.vb: MenuMicrophone.New(ProcessManager, SoundLoader)
+  name.vb: New(ProcessManager, SoundLoader)
+- uid: Global.MenuMicrophone.AllQuiet
+  commentId: M:Global.MenuMicrophone.AllQuiet
+  id: AllQuiet
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: AllQuiet()
+  nameWithType: MenuMicrophone.AllQuiet()
+  fullName: MenuMicrophone.AllQuiet()
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.AllQuiet</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void AllQuiet()
+    content.vb: Public Sub AllQuiet()
+  overload: Global.MenuMicrophone.AllQuiet*
+- uid: Global.MenuMicrophone.GrafUpdate(System.Single)
+  commentId: M:Global.MenuMicrophone.GrafUpdate(System.Single)
+  id: GrafUpdate(System.Single)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: GrafUpdate(float)
+  nameWithType: MenuMicrophone.GrafUpdate(float)
+  fullName: MenuMicrophone.GrafUpdate(float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.GrafUpdate(System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public override void GrafUpdate(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>timeStacker</parameter>
+            <parameter>M:MenuMicrophone.GrafUpdate(System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Overrides Sub GrafUpdate(timeStacker As Single)
+  overridden: Global.MainLoopProcess.GrafUpdate(System.Single)
+  overload: Global.MenuMicrophone.GrafUpdate*
+  nameWithType.vb: MenuMicrophone.GrafUpdate(Single)
+  fullName.vb: MenuMicrophone.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+- uid: Global.MenuMicrophone.PlaySound(SoundID)
+  commentId: M:Global.MenuMicrophone.PlaySound(SoundID)
+  id: PlaySound(SoundID)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: PlaySound(SoundID)
+  nameWithType: MenuMicrophone.PlaySound(SoundID)
+  fullName: MenuMicrophone.PlaySound(SoundID)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.PlaySound(SoundID)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlaySound(SoundID soundId)
+    parameters:
+    - id: soundId
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundId</parameter>
+            <parameter>M:MenuMicrophone.PlaySound(SoundID)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlaySound(soundId As SoundID)
+  overload: Global.MenuMicrophone.PlaySound*
+- uid: Global.MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  commentId: M:Global.MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)
+  id: PlaySound(SoundID,System.Single,System.Single,System.Single)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: PlaySound(SoundID, float, float, float)
+  nameWithType: MenuMicrophone.PlaySound(SoundID, float, float, float)
+  fullName: MenuMicrophone.PlaySound(SoundID, float, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlaySound(SoundID soundId, float pan, float vol, float pitch)
+    parameters:
+    - id: soundId
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundId</parameter>
+            <parameter>M:MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: pan
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pan</parameter>
+            <parameter>M:MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: vol
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vol</parameter>
+            <parameter>M:MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: pitch
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pitch</parameter>
+            <parameter>M:MenuMicrophone.PlaySound(SoundID,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlaySound(soundId As SoundID, pan As Single, vol As Single, pitch As Single)
+  overload: Global.MenuMicrophone.PlaySound*
+  nameWithType.vb: MenuMicrophone.PlaySound(SoundID, Single, Single, Single)
+  fullName.vb: MenuMicrophone.PlaySound(SoundID, Single, Single, Single)
+  name.vb: PlaySound(SoundID, Single, Single, Single)
+- uid: Global.MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:Global.MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  id: PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: PlayLoop(SoundID, float, float, float, bool)
+  nameWithType: MenuMicrophone.PlayLoop(SoundID, float, float, float, bool)
+  fullName: MenuMicrophone.PlayLoop(SoundID, float, float, float, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuMicrophone.MenuSoundLoop PlayLoop(SoundID soundId, float pan, float vol, float pitch, bool isBkgLoop)
+    parameters:
+    - id: soundId
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundId</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pan
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pan</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: vol
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vol</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pitch
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pitch</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: isBkgLoop
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>isBkgLoop</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.MenuMicrophone.MenuSoundLoop
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:MenuMicrophone.PlayLoop(SoundID,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function PlayLoop(soundId As SoundID, pan As Single, vol As Single, pitch As Single, isBkgLoop As Boolean) As MenuMicrophone.MenuSoundLoop
+  overload: Global.MenuMicrophone.PlayLoop*
+  nameWithType.vb: MenuMicrophone.PlayLoop(SoundID, Single, Single, Single, Boolean)
+  fullName.vb: MenuMicrophone.PlayLoop(SoundID, Single, Single, Single, Boolean)
+  name.vb: PlayLoop(SoundID, Single, Single, Single, Boolean)
+- uid: Global.MenuMicrophone.GetSoundData(SoundID,System.Int32)
+  commentId: M:Global.MenuMicrophone.GetSoundData(SoundID,System.Int32)
+  id: GetSoundData(SoundID,System.Int32)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: GetSoundData(SoundID, int)
+  nameWithType: MenuMicrophone.GetSoundData(SoundID, int)
+  fullName: MenuMicrophone.GetSoundData(SoundID, int)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.GetSoundData(SoundID,System.Int32)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public SoundLoader.SoundData GetSoundData(SoundID soundId, int index)
+    parameters:
+    - id: soundId
+      type: Global.SoundID
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundId</parameter>
+            <parameter>M:MenuMicrophone.GetSoundData(SoundID,System.Int32)</parameter>
+          </include>
+        </markup>
+    - id: index
+      type: System.Int32
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>index</parameter>
+            <parameter>M:MenuMicrophone.GetSoundData(SoundID,System.Int32)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.SoundLoader.SoundData
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:MenuMicrophone.GetSoundData(SoundID,System.Int32)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function GetSoundData(soundId As SoundID, index As Integer) As SoundLoader.SoundData
+  overload: Global.MenuMicrophone.GetSoundData*
+  nameWithType.vb: MenuMicrophone.GetSoundData(SoundID, Integer)
+  fullName.vb: MenuMicrophone.GetSoundData(SoundID, Integer)
+  name.vb: GetSoundData(SoundID, Integer)
+- uid: Global.MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)
+  commentId: M:Global.MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)
+  id: PlayCustomSound(System.String,System.Single,System.Single,System.Single)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: PlayCustomSound(string, float, float, float)
+  nameWithType: MenuMicrophone.PlayCustomSound(string, float, float, float)
+  fullName: MenuMicrophone.PlayCustomSound(string, float, float, float)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public void PlayCustomSound(string soundName, float pan, float vol, float pitch)
+    parameters:
+    - id: soundName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundName</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: pan
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pan</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: vol
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vol</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    - id: pitch
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pitch</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomSound(System.String,System.Single,System.Single,System.Single)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Sub PlayCustomSound(soundName As String, pan As Single, vol As Single, pitch As Single)
+  overload: Global.MenuMicrophone.PlayCustomSound*
+  nameWithType.vb: MenuMicrophone.PlayCustomSound(String, Single, Single, Single)
+  fullName.vb: MenuMicrophone.PlayCustomSound(String, Single, Single, Single)
+  name.vb: PlayCustomSound(String, Single, Single, Single)
+- uid: Global.MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:Global.MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  id: PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  parent: Global.MenuMicrophone
+  langs:
+  - csharp
+  - vb
+  name: PlayCustomLoop(string, float, float, float, bool)
+  nameWithType: MenuMicrophone.PlayCustomLoop(string, float, float, float, bool)
+  fullName: MenuMicrophone.PlayCustomLoop(string, float, float, float, bool)
+  type: Method
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: >-
+    <markup>
+      <include item="SMCMissingTag">
+        <parameter>summary</parameter>
+        <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+      </include>
+    </markup>
+  example: []
+  syntax:
+    content: public MenuMicrophone.MenuSoundLoop PlayCustomLoop(string soundName, float pan, float vol, float pitch, bool isBkgLoop)
+    parameters:
+    - id: soundName
+      type: System.String
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>soundName</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pan
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pan</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: vol
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>vol</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: pitch
+      type: System.Single
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>pitch</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    - id: isBkgLoop
+      type: System.Boolean
+      description: >-
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>isBkgLoop</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    return:
+      type: Global.MenuMicrophone.MenuSoundLoop
+      description: >-
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>returns</parameter>
+            <parameter>M:MenuMicrophone.PlayCustomLoop(System.String,System.Single,System.Single,System.Single,System.Boolean)</parameter>
+          </include>
+        </markup>
+    content.vb: Public Function PlayCustomLoop(soundName As String, pan As Single, vol As Single, pitch As Single, isBkgLoop As Boolean) As MenuMicrophone.MenuSoundLoop
+  overload: Global.MenuMicrophone.PlayCustomLoop*
+  nameWithType.vb: MenuMicrophone.PlayCustomLoop(String, Single, Single, Single, Boolean)
+  fullName.vb: MenuMicrophone.PlayCustomLoop(String, Single, Single, Single, Boolean)
+  name.vb: PlayCustomLoop(String, Single, Single, Single, Boolean)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Global.MainLoopProcess
+  commentId: T:Global.MainLoopProcess
+  isExternal: true
+  href: MainLoopProcess.html
+  name: MainLoopProcess
+  nameWithType: MainLoopProcess
+  fullName: MainLoopProcess
+- uid: Global.MainLoopProcess.manager
+  commentId: F:Global.MainLoopProcess.manager
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_manager
+  name: manager
+  nameWithType: MainLoopProcess.manager
+  fullName: MainLoopProcess.manager
+- uid: Global.MainLoopProcess.ID
+  commentId: F:Global.MainLoopProcess.ID
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_ID
+  name: ID
+  nameWithType: MainLoopProcess.ID
+  fullName: MainLoopProcess.ID
+- uid: Global.MainLoopProcess.framesPerSecond
+  commentId: F:Global.MainLoopProcess.framesPerSecond
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_framesPerSecond
+  name: framesPerSecond
+  nameWithType: MainLoopProcess.framesPerSecond
+  fullName: MainLoopProcess.framesPerSecond
+- uid: Global.MainLoopProcess.processActive
+  commentId: F:Global.MainLoopProcess.processActive
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_processActive
+  name: processActive
+  nameWithType: MainLoopProcess.processActive
+  fullName: MainLoopProcess.processActive
+- uid: Global.MainLoopProcess.RawUpdate(System.Single)
+  commentId: M:Global.MainLoopProcess.RawUpdate(System.Single)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  name: RawUpdate(float)
+  nameWithType: MainLoopProcess.RawUpdate(float)
+  fullName: MainLoopProcess.RawUpdate(float)
+  nameWithType.vb: MainLoopProcess.RawUpdate(Single)
+  fullName.vb: MainLoopProcess.RawUpdate(Single)
+  name.vb: RawUpdate(Single)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.RawUpdate(System.Single)
+    name: RawUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_RawUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.MainLoopProcess.Update
+  commentId: M:Global.MainLoopProcess.Update
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  name: Update()
+  nameWithType: MainLoopProcess.Update()
+  fullName: MainLoopProcess.Update()
+  spec.csharp:
+  - uid: Global.MainLoopProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.Update
+    name: Update
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_Update
+  - name: (
+  - name: )
+- uid: Global.MainLoopProcess.ShutDownProcess
+  commentId: M:Global.MainLoopProcess.ShutDownProcess
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  name: ShutDownProcess()
+  nameWithType: MainLoopProcess.ShutDownProcess()
+  fullName: MainLoopProcess.ShutDownProcess()
+  spec.csharp:
+  - uid: Global.MainLoopProcess.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.ShutDownProcess
+    name: ShutDownProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_ShutDownProcess
+  - name: (
+  - name: )
+- uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  commentId: M:Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  name: CommunicateWithUpcomingProcess(MainLoopProcess)
+  nameWithType: MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  fullName: MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.CommunicateWithUpcomingProcess(MainLoopProcess)
+    name: CommunicateWithUpcomingProcess
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_CommunicateWithUpcomingProcess_MainLoopProcess_
+  - name: (
+  - uid: Global.MainLoopProcess
+    name: MainLoopProcess
+    isExternal: true
+    href: MainLoopProcess.html
+  - name: )
+- uid: Global.MainLoopProcess.TimeSpeedFac
+  commentId: P:Global.MainLoopProcess.TimeSpeedFac
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_TimeSpeedFac
+  name: TimeSpeedFac
+  nameWithType: MainLoopProcess.TimeSpeedFac
+  fullName: MainLoopProcess.TimeSpeedFac
+- uid: Global.MainLoopProcess.FadeInTime
+  commentId: P:Global.MainLoopProcess.FadeInTime
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_FadeInTime
+  name: FadeInTime
+  nameWithType: MainLoopProcess.FadeInTime
+  fullName: MainLoopProcess.FadeInTime
+- uid: Global.MainLoopProcess.InitialBlackSeconds
+  commentId: P:Global.MainLoopProcess.InitialBlackSeconds
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_InitialBlackSeconds
+  name: InitialBlackSeconds
+  nameWithType: MainLoopProcess.InitialBlackSeconds
+  fullName: MainLoopProcess.InitialBlackSeconds
+- uid: Global.MainLoopProcess.AllowDialogs
+  commentId: P:Global.MainLoopProcess.AllowDialogs
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_AllowDialogs
+  name: AllowDialogs
+  nameWithType: MainLoopProcess.AllowDialogs
+  fullName: MainLoopProcess.AllowDialogs
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SoundLoader
+  commentId: T:Global.SoundLoader
+  isExternal: true
+  href: SoundLoader.html
+  name: SoundLoader
+  nameWithType: SoundLoader
+  fullName: SoundLoader
+- uid: System.Collections.Generic.List{MenuMicrophone.MenuSoundObject}
+  commentId: T:System.Collections.Generic.List{MenuMicrophone.MenuSoundObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MenuMicrophone.MenuSoundObject>
+  nameWithType: List<MenuMicrophone.MenuSoundObject>
+  fullName: System.Collections.Generic.List<MenuMicrophone.MenuSoundObject>
+  nameWithType.vb: List(Of MenuMicrophone.MenuSoundObject)
+  fullName.vb: System.Collections.Generic.List(Of MenuMicrophone.MenuSoundObject)
+  name.vb: List(Of MenuMicrophone.MenuSoundObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Global.MenuMicrophone
+    name: MenuMicrophone
+    isExternal: true
+    href: MenuMicrophone.html
+  - name: .
+  - uid: Global.MenuMicrophone.MenuSoundObject
+    name: MenuSoundObject
+    isExternal: true
+    href: MenuMicrophone.MenuSoundObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.MenuMicrophone
+    name: MenuMicrophone
+    isExternal: true
+    href: MenuMicrophone.html
+  - name: .
+  - uid: Global.MenuMicrophone.MenuSoundObject
+    name: MenuSoundObject
+    isExternal: true
+    href: MenuMicrophone.MenuSoundObject.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Global.MenuMicrophone.#ctor*
+  commentId: Overload:Global.MenuMicrophone.#ctor
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone__ctor_ProcessManager_SoundLoader_
+  name: MenuMicrophone
+  nameWithType: MenuMicrophone.MenuMicrophone
+  fullName: MenuMicrophone.MenuMicrophone
+  nameWithType.vb: MenuMicrophone.New
+  fullName.vb: MenuMicrophone.New
+  name.vb: New
+- uid: Global.ProcessManager
+  commentId: T:Global.ProcessManager
+  isExternal: true
+  href: ProcessManager.html
+  name: ProcessManager
+  nameWithType: ProcessManager
+  fullName: ProcessManager
+- uid: Global.MenuMicrophone.AllQuiet*
+  commentId: Overload:Global.MenuMicrophone.AllQuiet
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_AllQuiet
+  name: AllQuiet
+  nameWithType: MenuMicrophone.AllQuiet
+  fullName: MenuMicrophone.AllQuiet
+- uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+  commentId: M:Global.MainLoopProcess.GrafUpdate(System.Single)
+  parent: Global.MainLoopProcess
+  isExternal: true
+  href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  name: GrafUpdate(float)
+  nameWithType: MainLoopProcess.GrafUpdate(float)
+  fullName: MainLoopProcess.GrafUpdate(float)
+  nameWithType.vb: MainLoopProcess.GrafUpdate(Single)
+  fullName.vb: MainLoopProcess.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+  spec.csharp:
+  - uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Global.MainLoopProcess.GrafUpdate(System.Single)
+    name: GrafUpdate
+    isExternal: true
+    href: Global.MainLoopProcess.html#MainLoopProcess_GrafUpdate_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Global.MenuMicrophone.GrafUpdate*
+  commentId: Overload:Global.MenuMicrophone.GrafUpdate
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_GrafUpdate_System_Single_
+  name: GrafUpdate
+  nameWithType: MenuMicrophone.GrafUpdate
+  fullName: MenuMicrophone.GrafUpdate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.MenuMicrophone.PlaySound*
+  commentId: Overload:Global.MenuMicrophone.PlaySound
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_PlaySound_SoundID_
+  name: PlaySound
+  nameWithType: MenuMicrophone.PlaySound
+  fullName: MenuMicrophone.PlaySound
+- uid: Global.SoundID
+  commentId: T:Global.SoundID
+  isExternal: true
+  href: SoundID.html
+  name: SoundID
+  nameWithType: SoundID
+  fullName: SoundID
+- uid: Global.MenuMicrophone.PlayLoop*
+  commentId: Overload:Global.MenuMicrophone.PlayLoop
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_PlayLoop_SoundID_System_Single_System_Single_System_Single_System_Boolean_
+  name: PlayLoop
+  nameWithType: MenuMicrophone.PlayLoop
+  fullName: MenuMicrophone.PlayLoop
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.MenuMicrophone.MenuSoundLoop
+  commentId: T:Global.MenuMicrophone.MenuSoundLoop
+  isExternal: true
+  href: MenuMicrophone.html
+  name: MenuMicrophone.MenuSoundLoop
+  nameWithType: MenuMicrophone.MenuSoundLoop
+  fullName: MenuMicrophone.MenuSoundLoop
+  spec.csharp:
+  - uid: Global.MenuMicrophone
+    name: MenuMicrophone
+    isExternal: true
+    href: MenuMicrophone.html
+  - name: .
+  - uid: Global.MenuMicrophone.MenuSoundLoop
+    name: MenuSoundLoop
+    isExternal: true
+    href: MenuMicrophone.MenuSoundLoop.html
+  spec.vb:
+  - uid: Global.MenuMicrophone
+    name: MenuMicrophone
+    isExternal: true
+    href: MenuMicrophone.html
+  - name: .
+  - uid: Global.MenuMicrophone.MenuSoundLoop
+    name: MenuSoundLoop
+    isExternal: true
+    href: MenuMicrophone.MenuSoundLoop.html
+- uid: Global.MenuMicrophone.GetSoundData*
+  commentId: Overload:Global.MenuMicrophone.GetSoundData
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_GetSoundData_SoundID_System_Int32_
+  name: GetSoundData
+  nameWithType: MenuMicrophone.GetSoundData
+  fullName: MenuMicrophone.GetSoundData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.SoundLoader.SoundData
+  commentId: T:Global.SoundLoader.SoundData
+  isExternal: true
+  href: SoundLoader.html
+  name: SoundLoader.SoundData
+  nameWithType: SoundLoader.SoundData
+  fullName: SoundLoader.SoundData
+  spec.csharp:
+  - uid: Global.SoundLoader
+    name: SoundLoader
+    isExternal: true
+    href: SoundLoader.html
+  - name: .
+  - uid: Global.SoundLoader.SoundData
+    name: SoundData
+    isExternal: true
+    href: SoundLoader.SoundData.html
+  spec.vb:
+  - uid: Global.SoundLoader
+    name: SoundLoader
+    isExternal: true
+    href: SoundLoader.html
+  - name: .
+  - uid: Global.SoundLoader.SoundData
+    name: SoundData
+    isExternal: true
+    href: SoundLoader.SoundData.html
+- uid: Global.MenuMicrophone.PlayCustomSound*
+  commentId: Overload:Global.MenuMicrophone.PlayCustomSound
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_PlayCustomSound_System_String_System_Single_System_Single_System_Single_
+  name: PlayCustomSound
+  nameWithType: MenuMicrophone.PlayCustomSound
+  fullName: MenuMicrophone.PlayCustomSound
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.MenuMicrophone.PlayCustomLoop*
+  commentId: Overload:Global.MenuMicrophone.PlayCustomLoop
+  isExternal: true
+  href: Global.MenuMicrophone.html#MenuMicrophone_PlayCustomLoop_System_String_System_Single_System_Single_System_Single_System_Boolean_
+  name: PlayCustomLoop
+  nameWithType: MenuMicrophone.PlayCustomLoop
+  fullName: MenuMicrophone.PlayCustomLoop
